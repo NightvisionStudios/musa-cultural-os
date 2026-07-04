@@ -1,0 +1,94 @@
+{
+  "_meta": {
+    "source": "50.themusafamily.com",
+    "status": "LIVE — full real list re-captured 2026-07-04 from the deployed index.html LIST array.",
+    "updated": "2026-07-04",
+    "how_to_update": "When 50.themusafamily.com changes, replace `entries` with the current LIST array (name + url). Re-derive lanes. Keep `_dna` in sync with the list's actual energy."
+  },
+
+  "_dna": {
+    "what_it_is": "Not a list of what's biggest — a list of what's worth attention through Nightvision's lens. The 50 is the taste gate, the aesthetic reference, and the inspiration for THE INDEX. Every entry on a board must rhyme with this DNA or it does not make the board, no matter how much heat it has.",
+    "through_lines": [
+      "Underground & auteur over mainstream — depth, craft, point of view, not scale.",
+      "Heritage & craft with a story — specific objects with a lineage (Finnish running, Japanese pantry, British provisions).",
+      "Black + global diaspora at the root — the cultural center of gravity, not a garnish.",
+      "The operator/builder's toolkit — creative, music, AI, dev and finance tools a maker actually uses.",
+      "Quiet taste authority — editorial and curation that gatekeeps instead of chasing.",
+      "Gatekept, specific, insider — rewards fluency and attention, not reach."
+    ],
+    "sound_lineage": "Underground & diasporic hip-hop, sample culture, auteur rap (Jim Legxacy, Kenny Mason, Chris Crack, Ankhle John, Igwe Aka, Lelo, Starlito, Wallflower McCoy). Music on the Index should descend from THIS, or push it somewhere new.",
+    "fashion_lineage": "Thesis-driven diasporic designers and gatekept streetwear with a real idea (Denim Tears, A Ma Maniere, Joe Freshgoods, Barriers Worldwide, Corteiz, Derschutze) — never logo-luxury cosplay or generic hype.",
+    "the_gate_test": [
+      "ROOT: does it share the 50's root — diasporic, underground, or genuine craft? Or is it mainstream-by-default?",
+      "FIT: could it sit on the 50 without looking out of place next to its nearest neighbor?",
+      "SPECIFICITY: is it specific and gatekept, or big mostly because it's loud?",
+      "TASTE-OVER-REACH: does it reward taste and fluency more than it rewards reach?"
+    ],
+    "anti_patterns": [
+      "Mainstream rock / metal / hardcore bands — the Converge miss. The 50 has no rock lineage; a rock band fails ROOT and FIT. CUT IT.",
+      "Stadium pop and mainstream celebrity that's notable only for size.",
+      "Logo-luxury and generic hype streetwear with no thesis.",
+      "Anything that's culturally 'leading' but shares none of the 50's root or energy — leading is not the bar; rhyming with the 50 is."
+    ],
+    "rule": "If a candidate fails the gate, cut it even if it is objectively the biggest thing in its domain that week. The Index reads culture THROUGH the 50, not culture at large. A high-heat name that doesn't rhyme with the 50 is off-brand by definition. When in doubt, the safest, most on-energy move is to find the version of that story that the 50 would actually co-sign — the underground, diasporic, or craft-rooted entry in the same lane."
+  },
+
+  "lanes": [
+    "underground-rap", "creator-ai-tools", "builder-dev", "finance-operator",
+    "diasporic-fashion", "design-studio", "heritage-craft-product",
+    "editorial-taste", "places", "global-diaspora"
+  ],
+
+  "entries": [
+    { "name": "Jim Legxacy", "url": "https://www.jimlegxacy.com/", "lane": "underground-rap" },
+    { "name": "Karhu", "url": "https://us.karhu.com/collections/mens-running-shoes", "lane": "heritage-craft-product" },
+    { "name": "Mason Prince", "url": "https://masonprince.com/", "lane": "design-studio" },
+    { "name": "Noname Book Club", "url": "https://www.instagram.com/nonamereads", "lane": "global-diaspora" },
+    { "name": "Derschutze", "url": "https://derschutze.com/", "lane": "diasporic-fashion" },
+    { "name": "Mertra", "url": "https://mertra.com/", "lane": "design-studio" },
+    { "name": "Faith Brown Design", "url": "https://faithbrowndesign.com/sweet-dreams-1", "lane": "design-studio" },
+    { "name": "Dead Dilly", "url": "https://www.deaddilly.com/", "lane": "design-studio" },
+    { "name": "Tuhkyjuh", "url": "https://www.instagram.com/tuhkyjuhslife", "lane": "creator-ai-tools" },
+    { "name": "Robert Gallardo", "url": "https://robertgallardo.com/", "lane": "design-studio" },
+    { "name": "Dame Atlas", "url": "https://www.instagram.com/dameatlas/?hl=en", "lane": "heritage-craft-product" },
+    { "name": "Moonshots", "url": "https://moonshots.com/", "lane": "builder-dev" },
+    { "name": "Leveraging AI", "url": "https://leveragingai.buzzsprout.com/", "lane": "finance-operator" },
+    { "name": "Vercel", "url": "https://vercel.com/", "lane": "builder-dev" },
+    { "name": "Higgsfield AI", "url": "https://higgsfield.ai/", "lane": "creator-ai-tools" },
+    { "name": "Y Combinator", "url": "https://www.ycombinator.com/", "lane": "builder-dev" },
+    { "name": "Seeking Alpha", "url": "https://seekingalpha.com/", "lane": "finance-operator" },
+    { "name": "Interval News", "url": "https://apps.apple.com/app/id6756529560", "lane": "creator-ai-tools" },
+    { "name": "Untitled Stream", "url": "https://untitled.stream/", "lane": "creator-ai-tools" },
+    { "name": "Kenny Mason", "url": "https://en.wikipedia.org/wiki/Kenny_Mason", "lane": "underground-rap" },
+    { "name": "Free Game", "url": "https://free---game.com/", "lane": "editorial-taste" },
+    { "name": "Moises AI", "url": "https://moises.ai/", "lane": "creator-ai-tools" },
+    { "name": "Ashley B", "url": "https://www.instagram.com/ashleytheebarroness", "lane": "design-studio" },
+    { "name": "Kimi", "url": "https://www.kimi.com/", "lane": "creator-ai-tools" },
+    { "name": "Koala Sampler", "url": "https://www.koalasampler.com/", "lane": "creator-ai-tools" },
+    { "name": "Chris Crack", "url": "https://chriscrack.bandcamp.com/", "lane": "underground-rap" },
+    { "name": "Ankhle John", "url": "https://www.instagram.com/ankhnasty", "lane": "underground-rap" },
+    { "name": "Igwe Aka", "url": "https://www.instagram.com/igweaka", "lane": "underground-rap" },
+    { "name": "Delta", "url": "https://apps.apple.com/app/id1048524688", "lane": "creator-ai-tools" },
+    { "name": "Monocle", "url": "https://monocle.com/", "lane": "editorial-taste" },
+    { "name": "MAWN Philly", "url": "https://mawnphilly.com/", "lane": "places" },
+    { "name": "Overstory NYC", "url": "https://www.overstory-nyc.com/", "lane": "places" },
+    { "name": "Lelo", "url": "https://www.instagram.com/lelothecorpse", "lane": "underground-rap" },
+    { "name": "Bonito Flakes", "url": "https://anything-from-japan.com/large-and-thick-hana-katsuobushi-bonito-flakes-from-tenpaku-160g", "lane": "heritage-craft-product" },
+    { "name": "Players Magazine", "url": "https://www.instagram.com/players", "lane": "editorial-taste" },
+    { "name": "Starlito", "url": "https://www.instagram.com/starlitogrindhard", "lane": "underground-rap" },
+    { "name": "Wallflower McCoy", "url": "https://www.instagram.com/wallflowermccoy", "lane": "underground-rap" },
+    { "name": "Denim Tears", "url": "https://denimtears.com", "lane": "diasporic-fashion" },
+    { "name": "A Ma Maniere", "url": "https://a-ma-maniere.com", "lane": "diasporic-fashion" },
+    { "name": "Joe Freshgoods", "url": "https://joefreshgoods.com", "lane": "diasporic-fashion" },
+    { "name": "Barriers Worldwide", "url": "https://barriersworldwide.com/", "lane": "diasporic-fashion" },
+    { "name": "Corteiz", "url": "https://crtz.xyz", "lane": "diasporic-fashion" },
+    { "name": "Fortnum & Mason", "url": "https://fortnumandmason.com", "lane": "heritage-craft-product" },
+    { "name": "Setups AI", "url": "https://www.instagram.com/setupsai", "lane": "creator-ai-tools" },
+    { "name": "One54", "url": "https://youtube.com/@one54africa", "lane": "global-diaspora" },
+    { "name": "Project a Black Planet", "url": "https://www.barbican.org.uk/whats-on/2026/event/project-a-black-planet-the-art-and-culture-of-panafrica", "lane": "design-studio" },
+    { "name": "The Prince of Darkness", "url": "https://books.apple.com/book/id979135762", "lane": "editorial-taste" },
+    { "name": "The Shed", "url": "https://www.theshed.org/", "lane": "places" },
+    { "name": "CD Masterizzato", "url": "https://www.instagram.com/cd_masterizzato", "lane": "editorial-taste" },
+    { "name": "Tamera", "url": "https://www.instagram.com/tamera/?hl=en", "lane": "heritage-craft-product" }
+  ]
+}

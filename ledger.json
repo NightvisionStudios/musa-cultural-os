@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "purpose": "The Index memory. Every pull is appended here on publish; verdicts start PENDING and are filled only on the grading pass after real time passes. Append only — never rewrite past issues.",
+    "permanence": "The session filesystem resets. Mirror this file to musa-vault (GitHub) so the cumulative track record survives across sessions.",
+    "updated": "2026-06-17"
+  },
+  "issues": [
+    {
+      "issue": "2026-06-17-0638",
+      "date": "2026-06-17", "time": "06:38 ET",
+      "climate": "Restraint bleeding out; expressive clarity, craft, and gatekept taste taking the bid",
+      "entries": [
+        { "name": "Ibrahim Mahama", "domain": "ART", "score": 9.0, "tier": "HEIRWAVE", "heat": 52, "direction": "up", "flags": ["FIND","BLADE"], "verdict": "PENDING" },
+        { "name": "Álvaro Díaz — Omakase", "domain": "MUSIC", "score": 8.1, "tier": "CROWN", "heat": 44, "direction": "up", "flags": ["FIND","BLADE"], "verdict": "PENDING" },
+        { "name": "Douglas Stuart — John of John", "domain": "BOOKS", "score": 8.2, "tier": "CROWN", "heat": 40, "direction": "up", "flags": ["FIND"], "verdict": "PENDING" },
+        { "name": "Charli XCX — The Moment", "domain": "FILM", "score": 6.6, "tier": "TORCH", "heat": 78, "direction": "flat", "flags": ["HEAT>WORK","BLADE"], "verdict": "PENDING" },
+        { "name": "Taste-as-Gatekeeping", "domain": "SCENE", "score": 7.6, "tier": "FLAME", "heat": 66, "direction": "up", "flags": ["BLADE"], "verdict": "PENDING" }
+      ]
+    },
+    {
+      "issue": "2026-06-17-0702",
+      "date": "2026-06-17", "time": "07:02 ET",
+      "climate": "Center is hollow; authority migrating to the edges — quiet radicals, original work over sequels, slow-built craft over spectacle",
+      "entries": [
+        { "name": "Smiljan Radić", "domain": "ARCHITECTURE", "score": 9.1, "tier": "HEIRWAVE", "heat": 49, "direction": "up", "flags": ["FIND","BLADE"], "verdict": "PENDING" },
+        { "name": "Industry — S4", "domain": "TV", "score": 8.3, "tier": "CROWN", "heat": 71, "direction": "up", "flags": ["ROOMS_RIGHT"], "verdict": "PENDING" },
+        { "name": "Esoteric Ebb", "domain": "GAMES", "score": 7.8, "tier": "FLAME", "heat": 38, "direction": "up", "flags": ["FIND","BLADE"], "verdict": "PENDING" },
+        { "name": "Isaiah Rashad — It's Been Awful", "domain": "MUSIC", "score": 7.7, "tier": "FLAME", "heat": 55, "direction": "up", "flags": ["FIND"], "verdict": "PENDING" },
+        { "name": "New Maximalism / Archive-as-Currency", "domain": "FASHION", "score": 7.4, "tier": "FLAME", "heat": 64, "direction": "up", "flags": ["BLADE"], "verdict": "PENDING" }
+      ]
+    },
+    {
+      "issue": "2026-06-20-0546",
+      "date": "2026-06-20", "time": "05:46 ET",
+      "climate": "Two clocks at once — the last monocultures (World Cup, public spectacle) pull everyone in while everywhere else fragments into micro-tribes; belonging beats reach",
+      "entries": [
+        { "name": "FIFA World Cup 2026", "domain": "SPORT", "score": 8.4, "tier": "CROWN", "heat": 96, "direction": "up", "flags": ["ROOMS_RIGHT","BLADE"], "verdict": "PENDING" },
+        { "name": "JR — Pont Neuf", "domain": "ART", "score": 8.6, "tier": "CROWN", "heat": 74, "direction": "up", "flags": ["EARNED_SPECTACLE"], "verdict": "PENDING" },
+        { "name": "MIKE", "domain": "MUSIC", "score": 8.3, "tier": "CROWN", "heat": 36, "direction": "up", "flags": ["FIND","BLADE"], "verdict": "PENDING" },
+        { "name": "Tech Spec", "domain": "DESIGN", "score": 7.5, "tier": "FLAME", "heat": 58, "direction": "up", "flags": ["FIND","BLADE"], "verdict": "PENDING" },
+        { "name": "Broadcast-to-Belonging", "domain": "SCENE", "score": 7.7, "tier": "FLAME", "heat": 62, "direction": "up", "flags": ["BLADE"], "verdict": "PENDING" }
+      ]
+    }
+  ]
+}
