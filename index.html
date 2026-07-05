@@ -133,6 +133,17 @@ padding:3px 8px;margin-left:auto;flex:none}
 footer{margin-top:34px;border-top:1px solid var(--line);padding-top:16px;display:flex;align-items:flex-start;gap:11px}
 footer .fm{width:24px;height:24px;color:var(--mut);flex:none;margin-top:2px}
 footer .ft{font-size:10px;color:var(--mut);line-height:1.75}footer .ft b{color:#b8b09c;letter-spacing:.16em}
+
+.card{cursor:pointer}
+.card .xp{display:none;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+.card.open .xp{display:block}
+.xread{font-size:13px;line-height:1.7;color:#d8d0bd}
+.xread .nrec{color:var(--mut);font-style:italic;font-size:12px}
+.xbench{margin-top:8px;font-size:11.5px;color:var(--mut);letter-spacing:.04em}
+.xbench b{color:var(--accent)}
+.xhint{margin-top:8px;font-size:9.5px;letter-spacing:.18em;color:var(--mut);opacity:.7}
+.card.open .xhint{display:none}
+.card.canon{cursor:default}
 </style></head><body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="heirwave-paths">
@@ -312,7 +323,8 @@ function build(){
         flags:e.flags||[], verdict:e.verdict||"PENDING",
         date:iss.date, time:iss.time||"", climate:iss.climate||"",
         find:(e.flags||[]).some(f=>f.toUpperCase().includes("FIND")),
-        gap:Math.round((e.score*10)-(e.heat||0))
+        gap:Math.round((e.score*10)-(e.heat||0)),
+        read:e.read||"", benchmark:e.benchmark||"" 
       });
     });
   });
@@ -338,7 +350,7 @@ function matches(r){
     if(c.kind==="lane" && !(r.type==="canon" && r.lane===c.val)) return false;
   }
   if(state.q){
-    const hay=[r.name,r.domain,r.lane,r.tier,r.climate,(r.flags||[]).join(" "),r.verdict,r.type]
+    const hay=[r.name,r.domain,r.lane,r.tier,r.climate,r.read,r.benchmark,(r.flags||[]).join(" "),r.verdict,r.type]
       .filter(Boolean).join(" ").toLowerCase();
     if(!hay.includes(state.q.toLowerCase())) return false;
   }
@@ -380,6 +392,11 @@ function cardIndex(r){
         <span class="dir ${d.c}">${d.g}</span></span>
     </div>
     <div class="climate"><b>CLIMATE:</b> ${esc(r.climate)}</div>
+    <div class="xp">
+      <div class="xread">${r.read?esc(r.read):`<span class="nrec">— original taste read not recovered for this issue —</span>`}</div>
+      ${r.benchmark?`<div class="xbench"><b>BENCHMARK:</b> ${esc(r.benchmark)}</div>`:""}
+    </div>
+    <div class="xhint">TAP FOR THE READ ▾</div>
   </div>`;
 }
 
@@ -429,6 +446,11 @@ function render(){
 }
 
 /* events */
+document.getElementById("results").addEventListener("click",e=>{
+  if(e.target.closest("a"))return;
+  const c=e.target.closest(".card"); if(!c||c.classList.contains("canon"))return;
+  c.classList.toggle("open");
+});
 document.querySelectorAll(".tg").forEach(b=>b.addEventListener("click",()=>{
   document.querySelectorAll(".tg").forEach(x=>x.classList.remove("on"));
   b.classList.add("on"); state.view=b.dataset.view; state.chip=null; state.find=false; render();
