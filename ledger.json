@@ -708,6 +708,81 @@
           "heat_recovered": false
         }
       ]
+    },
+    {
+      "issue": "2026-07-05-1227",
+      "date": "2026-07-05",
+      "time": "12:27 ET",
+      "climate": "Mid-year split: the loudest rooms are pricing anticipation as the product while the first half's most complete work ships without a press cycle — mastery is outrunning marketing",
+      "entries": [
+        {
+          "name": "Is God Is",
+          "domain": "FILM",
+          "score": 8.8,
+          "tier": "CROWN",
+          "heat": 22,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "benchmark": "Black Film Archive",
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Vince Staples — Cry Baby",
+          "domain": "MUSIC",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 74,
+          "direction": "up",
+          "flags": [
+            "ROOMS_RIGHT"
+          ],
+          "benchmark": "Starlito",
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Melvin Gibbs — How Black Music Took Over the World",
+          "domain": "BOOKS",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 26,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "benchmark": "Noname Book Club",
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Nicholas Daley",
+          "domain": "FASHION",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 34,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Denim Tears",
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Mina the Hollower",
+          "domain": "GAMES",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 43,
+          "direction": "flat",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Karhu",
+          "verdict": "PENDING"
+        }
+      ]
     }
   ]
 }
