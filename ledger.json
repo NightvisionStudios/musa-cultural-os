@@ -3,7 +3,7 @@
     "purpose": "The Index memory. Every pull is appended here on publish; verdicts start PENDING and are filled only on the grading pass after real time passes. Append only — never rewrite past issues.",
     "permanence": "The session filesystem resets. Mirror this file to musa-vault (GitHub) so the cumulative track record survives across sessions.",
     "updated": "2026-07-05",
-    "recovery_note": "Issues 2026-06-23 through 2026-07-04 (except 2026-07-02-2315) reconstructed from session history on 2026-07-05. Where heat/flags were not reliably recoverable they are 0/empty and marked heat_recovered:false — not invented. Known drift left as-recorded: LACMA 8.2 (06-27) vs 8.9 (07-02); Pan-African Architecture Biennale 9.0 (07-02) vs 8.7 (07-04); By Storm repeats across 3 issues. June 18 and June 22 pulls existed but scores were unrecoverable and are omitted."
+    "recovery_note": "Recovery pass 2026-07-05: original reads, heat values, benchmarks, flags, and climates restored from session history for issues 06-17 (both), 06-23, 06-25, 06-27, 07-02 10:54, and 07-04 12:36; two previously missing issues restored (06-18 22:36, 07-04 13:56). Grading notes attached to the three Jun 27 verdicts. Where a read/heat is still absent it was not reliably recoverable — nothing invented. Remaining gaps: 06-22 gated board (omitted), reads for 06-20, 06-26, 07-02 23:15, and two 07-04 13:56 entries. Known drift stands as recorded."
   },
   "issues": [
     {
@@ -23,7 +23,8 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING"
+          "verdict": "PENDING",
+          "read": "Canon-tier installation work, #1 on the ArtReview Power 100, still under-clocked in U.S. feeds."
         },
         {
           "name": "Álvaro Díaz — Omakase",
@@ -36,7 +37,8 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING"
+          "verdict": "PENDING",
+          "read": "PR rap auteur the English-speaking room hasn't caught up to yet."
         },
         {
           "name": "Douglas Stuart — John of John",
@@ -48,7 +50,9 @@
           "flags": [
             "FIND"
           ],
-          "verdict": "PENDING"
+          "verdict": "PENDING",
+          "read": "Shuggie Bain Booker winner returns, Hebrides-set; craft over noise, quiet heat is the tell.",
+          "benchmark": "literary-craft lane of the 50"
         },
         {
           "name": "Charli XCX — The Moment",
@@ -61,7 +65,9 @@
             "HEAT>WORK",
             "BLADE"
           ],
-          "verdict": "PENDING"
+          "verdict": "PENDING",
+          "read": "Real cultural object, but attention runs ahead of the work; influence-tier not depth-tier. Watch if heat converts or evaporates.",
+          "benchmark": "orbits the pop-culture-engine lane without entering"
         },
         {
           "name": "Taste-as-Gatekeeping",
@@ -73,7 +79,9 @@
           "flags": [
             "BLADE"
           ],
-          "verdict": "PENDING"
+          "verdict": "PENDING",
+          "read": "The pivot from quiet luxury to expressive clarity and taste-as-currency; the climate the board sits inside — and the premise The Index runs on.",
+          "benchmark": "the operating principle behind the 50, not a neighbor in it"
         }
       ]
     },
@@ -94,7 +102,8 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING"
+          "verdict": "PENDING",
+          "read": "The 2026 Pritzker, architecture's quietest radical. Blade: the prize sits under an Epstein-linked cloud; the work transcends the institution stamping it."
         },
         {
           "name": "Industry — S4",
@@ -106,7 +115,8 @@
           "flags": [
             "ROOMS_RIGHT"
           ],
-          "verdict": "PENDING"
+          "verdict": "PENDING",
+          "read": "Not a hidden gem — the honest counter to a find. Heat catching up to long-proven quality."
         },
         {
           "name": "Esoteric Ebb",
@@ -119,7 +129,9 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING"
+          "verdict": "PENDING",
+          "read": "Indie Disco Elysium-lineage CRPG critics say outclasses its forebear in places; ideas-first, low mainstream heat.",
+          "benchmark": "the 50's ideas / AI-tools lane — first CRPG slot"
         },
         {
           "name": "Isaiah Rashad — It's Been Awful",
@@ -131,7 +143,11 @@
           "flags": [
             "FIND"
           ],
-          "verdict": "HELD"
+          "verdict": "HELD",
+          "read": "TDE auteur ends 5-yr hiatus and lands it; comeback-era depth fitting the climate, heat below the score.",
+          "benchmark": "underground-rap lane — Kenny Mason, Starlito, Jim Legxacy",
+          "graded": "2026-06-27",
+          "note": "HELD — acclaimed release, active tour confirmed the taste read."
         },
         {
           "name": "New Maximalism / Archive-as-Currency",
@@ -143,7 +159,80 @@
           "flags": [
             "BLADE"
           ],
-          "verdict": "PENDING"
+          "verdict": "PENDING",
+          "read": "Full-cycle pivot off quiet luxury; layered, referential expression with archive/resale as the real flex — access over logo.",
+          "benchmark": "the aesthetic shift the 50's design desks track"
+        }
+      ]
+    },
+    {
+      "issue": "2026-06-18-2236",
+      "date": "2026-06-18",
+      "time": "22:36 ET",
+      "recovered": true,
+      "climate": "Recovered pull — original climate copy not preserved; board led by a near-zero-heat flagship FIND with a disciplined NOISE bear call for honesty",
+      "entries": [
+        {
+          "name": "Schrödinger's Call",
+          "domain": "GAMES",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 14,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "verdict": "PENDING",
+          "read": "The flagship FIND of the board — HEAT 14, the widest taste-to-room gap logged to date."
+        },
+        {
+          "name": "Álvaro Díaz — Omakase",
+          "domain": "MUSIC",
+          "score": 8.1,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "flat",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Industry S4",
+          "domain": "TV",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "flat",
+          "flags": [
+            "BLADE"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Technical Mono / Anti-Design",
+          "domain": "DESIGN",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 0,
+          "direction": "flat",
+          "flags": [
+            "BLADE"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "The 2016 Throwback",
+          "domain": "SCENE",
+          "score": 3.9,
+          "tier": "NOISE",
+          "heat": 0,
+          "direction": "down",
+          "flags": [],
+          "verdict": "PENDING",
+          "read": "The disciplined bear call — nostalgia-cycle heat with nothing underneath it.",
+          "heat_recovered": false
         }
       ]
     },
@@ -164,7 +253,9 @@
             "ROOMS_RIGHT",
             "BLADE"
           ],
-          "verdict": "HELD"
+          "verdict": "HELD",
+          "graded": "2026-06-27",
+          "note": "HELD — the monoculture-vs-fragmentation read held; heat stayed maxed. Room was correct."
         },
         {
           "name": "JR — Pont Neuf",
@@ -189,7 +280,10 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "EARLY"
+          "verdict": "EARLY",
+          "graded": "2026-06-27",
+          "heat_now": 42,
+          "note": "EARLY — still the critics' underground anchor; the year's 'breadth over blockbuster' read is validating his lane. Right call, room hasn't fully paid it — heat creeping, not spiking."
         },
         {
           "name": "Tech Spec",
@@ -222,63 +316,80 @@
       "issue": "2026-06-23-2356",
       "date": "2026-06-23",
       "time": "23:56 ET",
-      "climate": "Broadcast to transmission — the room is turning away from feed-scale spectacle toward work built to be passed hand to hand",
-      "recovered": true,
+      "climate": "Field tilting from broadcast to transmission — freshest signal in what you sit with or get let into: diaspora auteurs, cassette-soul, reading rooms, thesis-driven design; loud center running on fumes",
       "entries": [
         {
-          "name": "My Father's Shadow",
+          "name": "My Father's Shadow — Akinola Davies Jr",
           "domain": "FILM",
           "score": 8.6,
           "tier": "CROWN",
-          "heat": 0,
+          "heat": 45,
           "direction": "up",
-          "flags": [],
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "benchmark": "One54",
           "verdict": "PENDING",
-          "heat_recovered": false
+          "read": "Akinola Davies Jr's Cannes-competing British-Nollywood debut. Diaspora at the root, festival-grade. The clearest FIND on the board."
         },
         {
           "name": "iAMLYRIC",
           "domain": "MUSIC",
           "score": 8.0,
           "tier": "CROWN",
-          "heat": 0,
+          "heat": 36,
           "direction": "up",
-          "flags": [],
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Kenny Mason",
           "verdict": "PENDING",
-          "heat_recovered": false
+          "read": "Houston, Punch co-signed, starting a book club. Taste miles ahead of the stream count."
         },
         {
           "name": "Mixtape",
           "domain": "GAMES",
           "score": 8.2,
           "tier": "CROWN",
-          "heat": 0,
+          "heat": 58,
           "direction": "up",
-          "flags": [],
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "benchmark": "Mixtape Classics",
           "verdict": "PENDING",
-          "heat_recovered": false
+          "read": "Cassette-soul made playable; the mixtape's original curation instinct, now in your hands."
         },
         {
           "name": "Willy Chavarria",
           "domain": "FASHION",
           "score": 7.8,
           "tier": "FLAME",
-          "heat": 0,
+          "heat": 80,
           "direction": "up",
-          "flags": [],
+          "flags": [
+            "ROOMS_RIGHT",
+            "BLADE"
+          ],
+          "benchmark": "Joe Freshgoods / Denim Tears",
           "verdict": "PENDING",
-          "heat_recovered": false
+          "read": "The honest counter-read. adidas/World Cup made him loud, and the thesis earned it. Cleared the gate despite the mega-collab anti-pattern because the work carries a real argument — which is exactly why it's ROOM'S RIGHT, not a find."
         },
         {
           "name": "The Reading Room",
           "domain": "SCENE",
           "score": 7.5,
           "tier": "FLAME",
-          "heat": 0,
+          "heat": 63,
           "direction": "up",
-          "flags": [],
+          "flags": [
+            "BLADE"
+          ],
+          "benchmark": "Free Game / Players Magazine",
           "verdict": "PENDING",
-          "heat_recovered": false
+          "read": "Book-club-as-venue, gatekept by attention not money. Transmission gone physical."
         }
       ]
     },
@@ -286,76 +397,81 @@
       "issue": "2026-06-25-0424",
       "date": "2026-06-25",
       "time": "04:24 ET",
-      "climate": "Memory and lineage over scale — diaspora curation, sample-built rap, analog craft on the come-up; sequel logic and hype-without-thesis in decline",
-      "recovered": true,
+      "climate": "Memory and lineage over scale — diasporic curation, sample-built rap, analog craft, mixtape nostalgia all take the bid while sequel-logic and hype-without-thesis go hollow; depth that remembers beats reach that forgets",
       "entries": [
         {
-          "name": "Roc Marciano — 656",
+          "name": "Roc Marciano — 656 (neighbor of the beast)",
           "domain": "MUSIC",
           "score": 8.7,
           "tier": "CROWN",
-          "heat": 0,
+          "heat": 38,
           "direction": "up",
           "flags": [
             "FIND",
             "BLADE"
           ],
+          "benchmark": "underground-rap lane head (Chris Crack / Starlito / Kenny Mason)",
           "verdict": "PENDING",
-          "heat_recovered": false
+          "read": "Self-cut loops, 32 minutes, the luxury-grime blueprint sharpened. Moved rap forward while the scoreboard argued. Arguably enters the 50."
         },
         {
-          "name": "Barbican Pan-African Survey",
+          "name": "Barbican — Pan-African Survey",
           "domain": "ART",
           "score": 8.2,
           "tier": "CROWN",
-          "heat": 0,
+          "heat": 55,
           "direction": "up",
           "flags": [
             "FIND",
             "BLADE"
           ],
+          "benchmark": "One54 / editorial-taste",
           "verdict": "PENDING",
-          "heat_recovered": false
+          "read": "Curation-as-gatekeeping, diaspora as the center of gravity, cross-cutting art/sound/design/politics at once."
         },
         {
           "name": "Mixtape",
           "domain": "GAMES",
           "score": 7.6,
           "tier": "FLAME",
-          "heat": 0,
+          "heat": 60,
           "direction": "up",
           "flags": [
             "ROOMS_RIGHT"
           ],
+          "benchmark": "Mixtape Classics",
           "verdict": "PENDING",
-          "heat_recovered": false
+          "read": "The honest counter-read. Built on the exact mixtape feeling MUSA is, and the room earned its heat this time."
         },
         {
-          "name": "Diaspora-as-Engine — Caracas Merch",
+          "name": "Diaspora-as-Engine / Caracas Merch",
           "domain": "FASHION",
           "score": 7.4,
           "tier": "FLAME",
-          "heat": 0,
+          "heat": 42,
           "direction": "up",
           "flags": [
-            "FIND"
+            "FIND",
+            "EARLY"
           ],
+          "benchmark": "Corteiz / Barriers Worldwide / Denim Tears",
           "verdict": "PENDING",
-          "heat_recovered": false
+          "read": "Belonging outgrowing logos; small on the named brand, real on the engine."
         },
         {
-          "name": "Mark Jenkin — Cornish Trilogy Closer",
+          "name": "Mark Jenkin — Cornish-Trilogy Closer",
           "domain": "FILM",
           "score": 8.0,
           "tier": "CROWN",
-          "heat": 0,
+          "heat": 34,
           "direction": "up",
           "flags": [
             "FIND",
             "BLADE"
           ],
+          "benchmark": "CD Masterizzato (cross-lane energy — analog craft as stance)",
           "verdict": "PENDING",
-          "heat_recovered": false
+          "read": "Hand-cranked 16mm, the analog grain is the point; arthouse-quiet, which is the gap."
         }
       ]
     },
@@ -437,76 +553,75 @@
       "issue": "2026-06-27-1749",
       "date": "2026-06-27",
       "time": "17:49 ET",
-      "climate": "Authority has slid from the center to the edge — diasporic auteurs and curators rebuilding the canon from the margins inward",
-      "recovered": true,
+      "climate": "Center still draws the crowd (World Cup, the blockbuster scoreboard) but authority slid to the edge — diasporic auteurs and curators rebuilding the canon from the margins inward",
       "entries": [
         {
           "name": "Grace Wales Bonner → Hermès",
           "domain": "FASHION",
           "score": 8.7,
           "tier": "CROWN",
-          "heat": 0,
+          "heat": 61,
           "direction": "up",
           "flags": [
             "ROOMS_RIGHT",
             "BLADE"
           ],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "benchmark": "Denim Tears / A Ma Maniere"
         },
         {
           "name": "Roc Marciano — 656",
           "domain": "MUSIC",
           "score": 8.6,
           "tier": "CROWN",
-          "heat": 0,
+          "heat": 34,
           "direction": "up",
           "flags": [
             "FIND",
             "BLADE"
           ],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "benchmark": "Chris Crack / Starlito"
         },
         {
           "name": "LACMA — Imagining Black Diasporas",
           "domain": "ART",
           "score": 8.2,
           "tier": "CROWN",
-          "heat": 0,
+          "heat": 40,
           "direction": "up",
           "flags": [
             "FIND"
           ],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "benchmark": "One54 / Monocle"
         },
         {
           "name": "Cape Verde — World Cup Run",
           "domain": "SPORT",
           "score": 8.0,
           "tier": "CROWN",
-          "heat": 0,
+          "heat": 58,
           "direction": "up",
           "flags": [
             "FIND",
             "BLADE"
           ],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "benchmark": "One54"
         },
         {
           "name": "Breadth Over Blockbuster",
           "domain": "IDEAS",
           "score": 7.6,
           "tier": "FLAME",
-          "heat": 0,
+          "heat": 55,
           "direction": "up",
           "flags": [
             "BLADE"
           ],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "benchmark": "Free Game / Monocle"
         }
       ]
     },
@@ -526,7 +641,8 @@
           "direction": "up",
           "flags": [],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "heat_recovered": false,
+          "read": "Ex-Injury Reserve grief record, sample-literate, room hasn't fully caught up."
         },
         {
           "name": "Adidas × Wales Bonner SS26",
@@ -537,7 +653,8 @@
           "direction": "up",
           "flags": [],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "heat_recovered": false,
+          "read": "The one honest case where the heat is earned, not overdue."
         },
         {
           "name": "LACMA — Imagining Black Diasporas",
@@ -548,7 +665,8 @@
           "direction": "up",
           "flags": [],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "heat_recovered": false,
+          "read": "60 artists, rewrites the Pan-African canon past the Black Atlantic."
         },
         {
           "name": "Splice",
@@ -559,7 +677,8 @@
           "direction": "up",
           "flags": [],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "heat_recovered": false,
+          "read": "Sample culture with the royalty math finally built in."
         },
         {
           "name": "LOVING ROOM",
@@ -570,7 +689,8 @@
           "direction": "up",
           "flags": [],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "heat_recovered": false,
+          "read": "Diaspora books + salon — no algorithm feeds you this shelf; lowest heat on the board."
         }
       ]
     },
@@ -649,63 +769,154 @@
       "issue": "2026-07-04-1236",
       "date": "2026-07-04",
       "time": "12:36 ET",
-      "climate": "Institutional authority is migrating toward work that insists on being read on its own terms",
-      "recovered": true,
+      "climate": "Institutional and critical authority migrating toward work that insists on being read on its own terms — diasporic, myth-rooted, unbothered by mainstream legibility",
       "entries": [
         {
           "name": "Firelei Báez",
           "domain": "ART",
           "score": 8.9,
           "tier": "CROWN",
-          "heat": 0,
-          "direction": "up",
-          "flags": [],
+          "heat": 52,
+          "direction": "flat",
+          "flags": [
+            "FIND"
+          ],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "benchmark": "Denim Tears",
+          "read": "Mid-career survey consolidating a decade of myth-rooted diasporic painting."
         },
         {
           "name": "Pan-African Architecture Biennale",
           "domain": "ARCHITECTURE",
           "score": 8.7,
           "tier": "CROWN",
-          "heat": 0,
+          "heat": 29,
           "direction": "up",
-          "flags": [],
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "benchmark": "The Shed",
+          "read": "First continent-wide architecture biennale — infrastructure, not exhibition."
         },
         {
           "name": "By Storm — My Ghosts Go Ghost",
           "domain": "MUSIC",
           "score": 8.4,
           "tier": "CROWN",
-          "heat": 0,
+          "heat": 34,
           "direction": "up",
-          "flags": [],
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "benchmark": "Kenny Mason",
+          "read": "Ex-Injury Reserve; third board appearance — the room still hasn't paid it."
         },
         {
           "name": "Tasteslop — Nemesis Memos",
           "domain": "SCENE",
           "score": 7.8,
           "tier": "FLAME",
-          "heat": 0,
+          "heat": 31,
           "direction": "up",
-          "flags": [],
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "benchmark": "Free Game",
+          "read": "Internet essay on taste and AI — the discourse the Index runs inside."
         },
         {
           "name": "Nardos Imam — The Infinite Banquet",
           "domain": "FASHION",
           "score": 7.6,
           "tier": "FLAME",
-          "heat": 0,
+          "heat": 48,
           "direction": "up",
-          "flags": [],
+          "flags": [
+            "FIND"
+          ],
           "verdict": "PENDING",
-          "heat_recovered": false
+          "benchmark": "A Ma Maniere",
+          "read": "NYFW collection — Ethiopian-rooted eveningwear read as heritage craft."
+        }
+      ]
+    },
+    {
+      "issue": "2026-07-04-1356",
+      "date": "2026-07-04",
+      "time": "13:56 ET",
+      "climate": "Ownership is the new drop — archives, biennials, and bookshelves pulling more heat than any single release; Afro-Atlantic craft quietly outscores the loudest collabs",
+      "entries": [
+        {
+          "name": "Wales Bonner × adidas — On Pitch SS26",
+          "domain": "FASHION",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 78,
+          "direction": "up",
+          "flags": [
+            "ROOMS_RIGHT",
+            "BLADE"
+          ],
+          "verdict": "PENDING",
+          "read": "The room already knew this was canon; the World Cup just gave it a stage."
+        },
+        {
+          "name": "Space Afrika",
+          "domain": "MUSIC",
+          "score": 8.7,
+          "tier": "CROWN",
+          "heat": 41,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "PENDING",
+          "read": "New album named after a Glenn Ligon painting, shot for New Balance's Made in UK line — streams haven't caught up yet."
+        },
+        {
+          "name": "Pan-African Biennale — Nairobi",
+          "domain": "ARCHITECTURE",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 33,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "PENDING",
+          "read": "First continent-wide architecture biennale, curated by Omar Degan, still under the radar."
+        },
+        {
+          "name": "Black-Owned Bookstore Resurgence",
+          "domain": "BOOKS",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 46,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "verdict": "PENDING"
+        },
+        {
+          "name": "The Chi — Final Season",
+          "domain": "TV",
+          "score": 6.6,
+          "tier": "TORCH",
+          "heat": 58,
+          "direction": "flat",
+          "flags": [
+            "HEAT>WORK"
+          ],
+          "verdict": "PENDING"
         }
       ]
     },
