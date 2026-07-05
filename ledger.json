@@ -2,43 +2,711 @@
   "_meta": {
     "purpose": "The Index memory. Every pull is appended here on publish; verdicts start PENDING and are filled only on the grading pass after real time passes. Append only — never rewrite past issues.",
     "permanence": "The session filesystem resets. Mirror this file to musa-vault (GitHub) so the cumulative track record survives across sessions.",
-    "updated": "2026-06-17"
+    "updated": "2026-07-05",
+    "recovery_note": "Issues 2026-06-23 through 2026-07-04 (except 2026-07-02-2315) reconstructed from session history on 2026-07-05. Where heat/flags were not reliably recoverable they are 0/empty and marked heat_recovered:false — not invented. Known drift left as-recorded: LACMA 8.2 (06-27) vs 8.9 (07-02); Pan-African Architecture Biennale 9.0 (07-02) vs 8.7 (07-04); By Storm repeats across 3 issues. June 18 and June 22 pulls existed but scores were unrecoverable and are omitted."
   },
   "issues": [
     {
       "issue": "2026-06-17-0638",
-      "date": "2026-06-17", "time": "06:38 ET",
+      "date": "2026-06-17",
+      "time": "06:38 ET",
       "climate": "Restraint bleeding out; expressive clarity, craft, and gatekept taste taking the bid",
       "entries": [
-        { "name": "Ibrahim Mahama", "domain": "ART", "score": 9.0, "tier": "HEIRWAVE", "heat": 52, "direction": "up", "flags": ["FIND","BLADE"], "verdict": "PENDING" },
-        { "name": "Álvaro Díaz — Omakase", "domain": "MUSIC", "score": 8.1, "tier": "CROWN", "heat": 44, "direction": "up", "flags": ["FIND","BLADE"], "verdict": "PENDING" },
-        { "name": "Douglas Stuart — John of John", "domain": "BOOKS", "score": 8.2, "tier": "CROWN", "heat": 40, "direction": "up", "flags": ["FIND"], "verdict": "PENDING" },
-        { "name": "Charli XCX — The Moment", "domain": "FILM", "score": 6.6, "tier": "TORCH", "heat": 78, "direction": "flat", "flags": ["HEAT>WORK","BLADE"], "verdict": "PENDING" },
-        { "name": "Taste-as-Gatekeeping", "domain": "SCENE", "score": 7.6, "tier": "FLAME", "heat": 66, "direction": "up", "flags": ["BLADE"], "verdict": "PENDING" }
+        {
+          "name": "Ibrahim Mahama",
+          "domain": "ART",
+          "score": 9.0,
+          "tier": "HEIRWAVE",
+          "heat": 52,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Álvaro Díaz — Omakase",
+          "domain": "MUSIC",
+          "score": 8.1,
+          "tier": "CROWN",
+          "heat": 44,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Douglas Stuart — John of John",
+          "domain": "BOOKS",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 40,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Charli XCX — The Moment",
+          "domain": "FILM",
+          "score": 6.6,
+          "tier": "TORCH",
+          "heat": 78,
+          "direction": "flat",
+          "flags": [
+            "HEAT>WORK",
+            "BLADE"
+          ],
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Taste-as-Gatekeeping",
+          "domain": "SCENE",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 66,
+          "direction": "up",
+          "flags": [
+            "BLADE"
+          ],
+          "verdict": "PENDING"
+        }
       ]
     },
     {
       "issue": "2026-06-17-0702",
-      "date": "2026-06-17", "time": "07:02 ET",
+      "date": "2026-06-17",
+      "time": "07:02 ET",
       "climate": "Center is hollow; authority migrating to the edges — quiet radicals, original work over sequels, slow-built craft over spectacle",
       "entries": [
-        { "name": "Smiljan Radić", "domain": "ARCHITECTURE", "score": 9.1, "tier": "HEIRWAVE", "heat": 49, "direction": "up", "flags": ["FIND","BLADE"], "verdict": "PENDING" },
-        { "name": "Industry — S4", "domain": "TV", "score": 8.3, "tier": "CROWN", "heat": 71, "direction": "up", "flags": ["ROOMS_RIGHT"], "verdict": "PENDING" },
-        { "name": "Esoteric Ebb", "domain": "GAMES", "score": 7.8, "tier": "FLAME", "heat": 38, "direction": "up", "flags": ["FIND","BLADE"], "verdict": "PENDING" },
-        { "name": "Isaiah Rashad — It's Been Awful", "domain": "MUSIC", "score": 7.7, "tier": "FLAME", "heat": 55, "direction": "up", "flags": ["FIND"], "verdict": "PENDING" },
-        { "name": "New Maximalism / Archive-as-Currency", "domain": "FASHION", "score": 7.4, "tier": "FLAME", "heat": 64, "direction": "up", "flags": ["BLADE"], "verdict": "PENDING" }
+        {
+          "name": "Smiljan Radić",
+          "domain": "ARCHITECTURE",
+          "score": 9.1,
+          "tier": "HEIRWAVE",
+          "heat": 49,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Industry — S4",
+          "domain": "TV",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 71,
+          "direction": "up",
+          "flags": [
+            "ROOMS_RIGHT"
+          ],
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Esoteric Ebb",
+          "domain": "GAMES",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 38,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Isaiah Rashad — It's Been Awful",
+          "domain": "MUSIC",
+          "score": 7.7,
+          "tier": "FLAME",
+          "heat": 55,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "verdict": "HELD"
+        },
+        {
+          "name": "New Maximalism / Archive-as-Currency",
+          "domain": "FASHION",
+          "score": 7.4,
+          "tier": "FLAME",
+          "heat": 64,
+          "direction": "up",
+          "flags": [
+            "BLADE"
+          ],
+          "verdict": "PENDING"
+        }
       ]
     },
     {
       "issue": "2026-06-20-0546",
-      "date": "2026-06-20", "time": "05:46 ET",
+      "date": "2026-06-20",
+      "time": "05:46 ET",
       "climate": "Two clocks at once — the last monocultures (World Cup, public spectacle) pull everyone in while everywhere else fragments into micro-tribes; belonging beats reach",
       "entries": [
-        { "name": "FIFA World Cup 2026", "domain": "SPORT", "score": 8.4, "tier": "CROWN", "heat": 96, "direction": "up", "flags": ["ROOMS_RIGHT","BLADE"], "verdict": "PENDING" },
-        { "name": "JR — Pont Neuf", "domain": "ART", "score": 8.6, "tier": "CROWN", "heat": 74, "direction": "up", "flags": ["EARNED_SPECTACLE"], "verdict": "PENDING" },
-        { "name": "MIKE", "domain": "MUSIC", "score": 8.3, "tier": "CROWN", "heat": 36, "direction": "up", "flags": ["FIND","BLADE"], "verdict": "PENDING" },
-        { "name": "Tech Spec", "domain": "DESIGN", "score": 7.5, "tier": "FLAME", "heat": 58, "direction": "up", "flags": ["FIND","BLADE"], "verdict": "PENDING" },
-        { "name": "Broadcast-to-Belonging", "domain": "SCENE", "score": 7.7, "tier": "FLAME", "heat": 62, "direction": "up", "flags": ["BLADE"], "verdict": "PENDING" }
+        {
+          "name": "FIFA World Cup 2026",
+          "domain": "SPORT",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 96,
+          "direction": "up",
+          "flags": [
+            "ROOMS_RIGHT",
+            "BLADE"
+          ],
+          "verdict": "HELD"
+        },
+        {
+          "name": "JR — Pont Neuf",
+          "domain": "ART",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 74,
+          "direction": "up",
+          "flags": [
+            "EARNED_SPECTACLE"
+          ],
+          "verdict": "PENDING"
+        },
+        {
+          "name": "MIKE",
+          "domain": "MUSIC",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 36,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "EARLY"
+        },
+        {
+          "name": "Tech Spec",
+          "domain": "DESIGN",
+          "score": 7.5,
+          "tier": "FLAME",
+          "heat": 58,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Broadcast-to-Belonging",
+          "domain": "SCENE",
+          "score": 7.7,
+          "tier": "FLAME",
+          "heat": 62,
+          "direction": "up",
+          "flags": [
+            "BLADE"
+          ],
+          "verdict": "PENDING"
+        }
+      ]
+    },
+    {
+      "issue": "2026-06-23-2356",
+      "date": "2026-06-23",
+      "time": "23:56 ET",
+      "climate": "Broadcast to transmission — the room is turning away from feed-scale spectacle toward work built to be passed hand to hand",
+      "recovered": true,
+      "entries": [
+        {
+          "name": "My Father's Shadow",
+          "domain": "FILM",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "iAMLYRIC",
+          "domain": "MUSIC",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Mixtape",
+          "domain": "GAMES",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Willy Chavarria",
+          "domain": "FASHION",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "The Reading Room",
+          "domain": "SCENE",
+          "score": 7.5,
+          "tier": "FLAME",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        }
+      ]
+    },
+    {
+      "issue": "2026-06-25-0424",
+      "date": "2026-06-25",
+      "time": "04:24 ET",
+      "climate": "Memory and lineage over scale — diaspora curation, sample-built rap, analog craft on the come-up; sequel logic and hype-without-thesis in decline",
+      "recovered": true,
+      "entries": [
+        {
+          "name": "Roc Marciano — 656",
+          "domain": "MUSIC",
+          "score": 8.7,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Barbican Pan-African Survey",
+          "domain": "ART",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Mixtape",
+          "domain": "GAMES",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "ROOMS_RIGHT"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Diaspora-as-Engine — Caracas Merch",
+          "domain": "FASHION",
+          "score": 7.4,
+          "tier": "FLAME",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Mark Jenkin — Cornish Trilogy Closer",
+          "domain": "FILM",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        }
+      ]
+    },
+    {
+      "issue": "2026-06-26-1048",
+      "date": "2026-06-26",
+      "time": "10:48 ET",
+      "climate": "Diaspora as center of gravity — transmission over spectacle",
+      "recovered": true,
+      "entries": [
+        {
+          "name": "Project a Black Planet",
+          "domain": "ART",
+          "score": 9.0,
+          "tier": "HEIRWAVE",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "ROOMS_RIGHT"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Yaya Bey — Fidelity",
+          "domain": "MUSIC",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Drunken Noodles",
+          "domain": "FILM",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Willy Chavarria × adidas",
+          "domain": "FASHION",
+          "score": 6.5,
+          "tier": "TORCH",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "HEAT>WORK"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "T Clark — Debut Collection",
+          "domain": "BOOKS",
+          "score": 7.4,
+          "tier": "FLAME",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        }
+      ]
+    },
+    {
+      "issue": "2026-06-27-1749",
+      "date": "2026-06-27",
+      "time": "17:49 ET",
+      "climate": "Authority has slid from the center to the edge — diasporic auteurs and curators rebuilding the canon from the margins inward",
+      "recovered": true,
+      "entries": [
+        {
+          "name": "Grace Wales Bonner → Hermès",
+          "domain": "FASHION",
+          "score": 8.7,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "ROOMS_RIGHT",
+            "BLADE"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Roc Marciano — 656",
+          "domain": "MUSIC",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "LACMA — Imagining Black Diasporas",
+          "domain": "ART",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Cape Verde — World Cup Run",
+          "domain": "SPORT",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Breadth Over Blockbuster",
+          "domain": "IDEAS",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 0,
+          "direction": "up",
+          "flags": [
+            "BLADE"
+          ],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        }
+      ]
+    },
+    {
+      "issue": "2026-07-02-1054",
+      "date": "2026-07-02",
+      "time": "10:54 ET",
+      "climate": "",
+      "recovered": true,
+      "entries": [
+        {
+          "name": "By Storm — My Ghosts Go Ghost",
+          "domain": "MUSIC",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Adidas × Wales Bonner SS26",
+          "domain": "FASHION",
+          "score": 8.7,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "LACMA — Imagining Black Diasporas",
+          "domain": "ART",
+          "score": 8.9,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Splice",
+          "domain": "CREATOR-AI",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "LOVING ROOM",
+          "domain": "EDITORIAL",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        }
+      ]
+    },
+    {
+      "issue": "2026-07-02-2315",
+      "date": "2026-07-02",
+      "time": "23:15 ET",
+      "climate": "Diasporic authority moving from commentary to infrastructure — a continental biennale, a repatriation heist game, a museum survey of Black design — while streetwear cycles the same collab loop and AI-music floods the middle",
+      "entries": [
+        {
+          "name": "Pan-African Architecture Biennale",
+          "domain": "ARCHITECTURE",
+          "score": 9.0,
+          "tier": "HEIRWAVE",
+          "heat": 45,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Relooted",
+          "domain": "GAMES",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 52,
+          "direction": "up",
+          "flags": [
+            "ROOMS_RIGHT",
+            "BLADE"
+          ],
+          "verdict": "PENDING"
+        },
+        {
+          "name": "By Storm — My Ghosts Go Ghost",
+          "domain": "MUSIC",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 33,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "verdict": "PENDING"
+        },
+        {
+          "name": "The Nue Black Aesthetic",
+          "domain": "DESIGN",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 41,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "verdict": "PENDING"
+        },
+        {
+          "name": "House of Aama — Folk Grounds",
+          "domain": "FASHION",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 39,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "verdict": "PENDING"
+        }
+      ]
+    },
+    {
+      "issue": "2026-07-04-1236",
+      "date": "2026-07-04",
+      "time": "12:36 ET",
+      "climate": "Institutional authority is migrating toward work that insists on being read on its own terms",
+      "recovered": true,
+      "entries": [
+        {
+          "name": "Firelei Báez",
+          "domain": "ART",
+          "score": 8.9,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Pan-African Architecture Biennale",
+          "domain": "ARCHITECTURE",
+          "score": 8.7,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "By Storm — My Ghosts Go Ghost",
+          "domain": "MUSIC",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Tasteslop — Nemesis Memos",
+          "domain": "SCENE",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        },
+        {
+          "name": "Nardos Imam — The Infinite Banquet",
+          "domain": "FASHION",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 0,
+          "direction": "up",
+          "flags": [],
+          "verdict": "PENDING",
+          "heat_recovered": false
+        }
       ]
     }
   ]
