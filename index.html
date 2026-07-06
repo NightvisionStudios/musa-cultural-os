@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <!--
-  MUSA CULTURAL OS — THE ARCHIVE
-  The combined, searchable memory of THE 50 (canon) and THE INDEX (every read ever).
-  This replaces the old Supabase submit/review/archive pipeline. It is read-first: the OS
-  is the archive of both streams, nothing more, nothing less.
+MUSA CULTURAL OS — THE ARCHIVE
 
-  ── HOW TO KEEP IT LIVING ──────────────────────────────────────────────────────────────
-  Two ways, both supported:
+The combined, searchable memory of THE 50 (canon) and THE INDEX (every read ever).
+This replaces the old Supabase submit/review/archive pipeline. It is read-first: the OS
+is the archive of both streams, nothing more, nothing less.
 
-  1) PASTE + REDEPLOY (same as the 50 workflow):
-     • New Index issue published? Paste the new issue object into INDEX_SEED.issues (newest
-       anywhere — it sorts by date). Append-only; never rewrite past issues.
-     • 50 changed on 50.themusafamily.com? Replace CANON_SEED.entries with the current LIST.
+── HOW TO KEEP IT LIVING ──────────────────────────────────────────────────────────────
+Two ways, both supported:
 
-  2) AUTO-LIVE FROM THE VAULT (no manual paste):
-     • Drop the raw GitHub URLs for your mirrored ledger.json + musa-50.json into CONFIG below.
-     • On load it fetches the vault; if the fetch works it shows "SOURCE: LIVE VAULT" and uses
-       the freshest data. If it can't reach the vault, it silently falls back to the embedded
-       snapshot below and shows "SOURCE: SNAPSHOT". Either way the page always works.
-  ─────────────────────────────────────────────────────────────────────────────────────────
+1) PASTE + REDEPLOY (same as the 50 workflow):
+   • New Index issue published? Paste the new issue object into INDEX_SEED.issues (newest
+     anywhere — it sorts by date). Append-only; never rewrite past issues.
+   • 50 changed on 50.themusafamily.com? Replace CANON_SEED.entries with the current LIST.
+
+2) AUTO-LIVE FROM THE VAULT (no manual paste):
+   • Drop the raw GitHub URLs for your mirrored ledger.json + musa-50.json into CONFIG below.
+   • On load it fetches the vault; if the fetch works it shows "SOURCE: LIVE VAULT" and uses
+     the freshest data. If it can't reach the vault, it silently falls back to the embedded
+     snapshot below and shows "SOURCE: SNAPSHOT". Either way the page always works.
+─────────────────────────────────────────────────────────────────────────────────────────
 -->
 <html lang="en"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +32,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#0a0a0a;--panel:#111110;--panel2:#151412;--line:#26241f;--fg:#f2ead5;--mut:#8c887e;
---green:#3fb56b;--red:#e4533a;--amber:#e8c96d;--accent:var(--amber);}
+--green:#3fb56b;--red:#e4533a;--amber:#e8c96d;--accent:var(--amber);--yellow:#f4d93e;--yellow2:#fff2a0;}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:var(--bg);color:var(--fg);font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
 body{max-width:920px;margin:0 auto;padding:24px 16px 70px;position:relative;overflow-x:hidden}
@@ -39,16 +40,12 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:99;
 background:repeating-linear-gradient(0deg,rgba(255,255,255,.014) 0 1px,transparent 1px 3px)}
 .fade{opacity:0;transform:translateY(10px);animation:rise .5s ease forwards}
 @keyframes rise{to{opacity:1;transform:none}}
-
-/* header */
 header{display:flex;align-items:center;gap:14px;border-bottom:1px solid var(--line);padding-bottom:16px}
 .mark{width:46px;height:46px;color:var(--fg);flex:none}
 .lock h1{font-size:20px;letter-spacing:.20em;font-weight:600}
 .lock .sub{font-size:10.5px;color:var(--mut);letter-spacing:.28em;margin-top:4px}
 .src{margin-left:auto;text-align:right;font-size:9.5px;color:var(--mut);line-height:1.7;letter-spacing:.12em}
 .src b{color:var(--amber)}.src .snap b{color:var(--mut)}
-
-/* controls (sticky) */
 .controls{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,var(--bg) 72%,transparent);
 padding:16px 0 10px;margin-top:6px}
 .searchwrap{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);
@@ -59,7 +56,6 @@ padding:13px 0;letter-spacing:.02em}
 #q::placeholder{color:var(--mut)}
 .clearbtn{background:none;border:none;color:var(--mut);font-family:inherit;font-size:16px;cursor:pointer;
 padding:4px 2px;display:none}.clearbtn.on{display:block}
-
 .toggles{display:flex;gap:7px;margin-top:11px;flex-wrap:wrap;align-items:center}
 .tg{background:var(--panel);border:1px solid var(--line);color:var(--mut);font-family:inherit;
 font-size:11px;letter-spacing:.14em;padding:7px 13px;border-radius:6px;cursor:pointer;transition:.15s}
@@ -69,7 +65,6 @@ font-size:11px;letter-spacing:.14em;padding:7px 13px;border-radius:6px;cursor:po
 .sortwrap{display:flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.12em;color:var(--mut)}
 #sort{background:var(--panel);border:1px solid var(--line);color:var(--fg);font-family:inherit;
 font-size:10.5px;letter-spacing:.1em;padding:6px 8px;border-radius:6px;cursor:pointer;outline:none}
-
 .chips{display:flex;gap:6px;margin-top:9px;flex-wrap:wrap}
 .chip{background:var(--panel2);border:1px solid var(--line);color:var(--mut);font-family:inherit;
 font-size:9.5px;letter-spacing:.12em;padding:5px 9px;border-radius:4px;cursor:pointer;transition:.15s}
@@ -79,29 +74,22 @@ font-size:9.5px;letter-spacing:.12em;padding:5px 9px;border-radius:4px;cursor:po
 .chip.on.dom{background:#cdbf99;border-color:#cdbf99}
 .chip.on.lane{background:#cdbf99;border-color:#cdbf99}
 .chip.on.find{background:var(--green);border-color:var(--green);color:#0a0a0a}
-
-/* stat line */
 .stat{font-size:10.5px;letter-spacing:.14em;color:var(--mut);margin:16px 2px 4px}
 .stat b{color:var(--fg)}.stat .a{color:var(--amber)}
-
-/* results */
 .results{display:flex;flex-direction:column;gap:9px;margin-top:10px}
-
 .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 15px;position:relative}
 .card.find{border-color:#2f3a28}
 .card.canon{border-left:3px solid #5a5446;background:var(--panel2)}
-
 .ctop{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap}
 .kind{font-size:8.5px;letter-spacing:.16em;color:var(--mut);border:1px solid var(--line);
 border-radius:3px;padding:2px 6px;flex:none}
 .kind.k-idx{color:var(--amber);border-color:#3a2f1c}
 .kind.k-can{color:#cdbf99;border-color:#3a3526}
 .nm{font-size:15px;font-weight:600;letter-spacing:.01em}
-.nm a{color:inherit;text-decoration:none;border-bottom:1px solid transparent;transition:.15s}
-.nm a:hover{border-bottom-color:var(--amber)}
+.nm a{color:var(--yellow);text-decoration:none;border-bottom:1px dotted var(--yellow);transition:.15s}
+.nm a:hover{color:var(--yellow2);border-bottom-color:var(--yellow2)}
 .dom{font-size:9.5px;color:var(--mut);letter-spacing:.12em;margin-left:auto;flex:none}
 .when{font-size:9.5px;color:var(--mut);letter-spacing:.08em;flex:none}
-
 .scorerow{display:flex;align-items:center;gap:11px;margin-top:11px;flex-wrap:wrap}
 .score{font-size:23px;font-weight:600;line-height:1}
 .tier{font-size:9px;letter-spacing:.13em;padding:3px 8px;border-radius:3px;border:1px solid var(--line)}
@@ -115,25 +103,22 @@ border-radius:3px;padding:2px 6px;flex:none}
 .heatbar{width:70px;height:5px;background:#1c1a16;border-radius:3px;overflow:hidden}
 .heatfill{height:100%;background:linear-gradient(90deg,#7a6f4a,var(--amber))}
 .dir{font-size:11px;font-weight:600}.dir.u{color:var(--green)}.dir.d{color:var(--red)}.dir.f{color:var(--mut)}
-
 .climate{font-size:11px;line-height:1.55;color:#a39e90;margin-top:11px;padding-top:9px;border-top:1px solid var(--line)}
 .climate b{color:#cdbf99;letter-spacing:.06em;font-weight:500}
-
 .lane{font-size:9px;letter-spacing:.12em;color:#cdbf99;border:1px solid #3a3526;border-radius:3px;
 padding:3px 8px;margin-left:auto;flex:none}
 .canline{font-size:10.5px;color:var(--mut);margin-top:9px;letter-spacing:.04em}
-.canline a{color:var(--amber);text-decoration:none}.canline a:hover{text-decoration:underline}
-
+.canline a{color:var(--yellow);text-decoration:none}.canline a:hover{color:var(--yellow2);text-decoration:underline}
+.preview{display:flex;gap:11px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+.preview img{width:72px;height:72px;object-fit:cover;border-radius:5px;border:1px solid var(--line);flex:none;background:#1c1a16}
+.preview .cap{font-size:10.5px;color:var(--mut);line-height:1.5;align-self:center}
 .verdict{position:absolute;top:13px;right:14px;font-size:8px;letter-spacing:.14em;color:var(--mut)}
 .verdict.pending{color:#6f6a5e}
 .verdict.hit{color:var(--green)}.verdict.miss{color:var(--red)}
-
 .empty{text-align:center;color:var(--mut);font-size:12px;letter-spacing:.1em;padding:50px 0}
-
 footer{margin-top:34px;border-top:1px solid var(--line);padding-top:16px;display:flex;align-items:flex-start;gap:11px}
 footer .fm{width:24px;height:24px;color:var(--mut);flex:none;margin-top:2px}
 footer .ft{font-size:10px;color:var(--mut);line-height:1.75}footer .ft b{color:#b8b09c;letter-spacing:.16em}
-
 .card{cursor:pointer}
 .card .xp{display:none;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
 .card.open .xp{display:block}
@@ -145,67 +130,51 @@ footer .ft{font-size:10px;color:var(--mut);line-height:1.75}footer .ft b{color:#
 .card.open .xhint{display:none}
 .card.canon{cursor:default}
 </style></head><body>
-
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="heirwave-paths">
 <path fill="currentColor" d="M 409.22 581.23 C 431.01 544.52 457.46 513.04 486.65 480.40 C 511.81 452.27 539.03 429.05 573.06 412.87 C 601.81 399.20 632.08 394.30 663.88 398.17 C 689.29 401.26 712.87 408.73 734.62 420.58 C 735.15 420.87 735.29 420.74 735.04 420.19 C 734.71 419.46 734.21 418.47 733.54 417.21 C 720.25 392.39 703.73 370.82 681.24 354.61 C 636.99 322.71 579.95 325.48 535.13 354.36 C 525.31 360.69 515.70 367.33 506.30 374.27 C 499.25 379.47 493.66 383.00 489.51 384.85 C 455.28 400.19 433.99 368.46 423.30 341.98 C 423.19 341.71 422.80 341.72 422.70 341.99 C 409.98 376.24 393.75 408.67 374.00 439.28 C 348.81 478.32 313.17 515.01 265.54 524.57 C 247.66 528.16 229.56 528.93 211.25 526.90 C 209.30 526.69 207.31 526.54 205.26 526.45 C 204.94 526.44 204.70 526.73 204.77 527.04 C 206.96 536.19 210.42 546.40 215.17 557.66 C 215.45 558.32 215.71 558.84 215.95 559.21 C 216.21 559.63 216.67 559.89 217.34 559.98 C 251.25 564.81 284.45 559.28 315.71 545.43 C 337.28 535.87 357.51 524.03 376.41 509.90 C 399.06 492.97 421.50 475.59 443.75 457.78 C 444.11 457.49 444.62 457.88 444.43 458.30 C 434.83 479.91 422.74 500.37 408.89 519.58 C 389.16 546.93 361.45 573.94 331.71 589.22 C 304.51 603.19 275.66 608.56 245.17 605.31 C 244.79 605.27 244.53 605.69 244.74 606.01 C 252.29 617.67 261.04 628.25 271.00 637.75 C 290.86 656.69 314.53 667.52 342.02 670.25 C 392.20 675.23 434.79 647.48 471.84 617.57 C 484.00 607.75 496.19 597.99 508.13 587.89 C 545.82 556.03 589.86 526.93 636.30 510.35 C 669.33 498.56 703.53 495.45 738.92 501.02 C 764.79 505.09 787.94 514.79 808.37 530.11 C 809.24 530.76 809.52 530.57 809.21 529.53 C 801.59 504.17 787.61 483.31 767.27 466.96 C 745.17 449.19 720.08 437.92 691.99 433.13 C 650.69 426.08 609.77 436.18 574.00 457.02 C 542.68 475.27 513.69 497.96 486.12 521.39 C 461.43 542.38 436.65 563.52 409.54 581.54 C 409.34 581.67 409.10 581.44 409.22 581.23 Z"/>
 <path fill="currentColor" d="M 706.74 554.09 C 740.01 549.91 776.76 554.53 807.12 569.89 C 807.41 570.04 807.56 570.37 807.48 570.68 C 794.06 623.73 756.43 663.86 700.24 669.37 C 649.64 674.34 611.18 649.17 584.47 608.10 C 584.38 607.90 584.34 607.63 584.58 607.48 C 620.35 581.03 661.73 559.75 706.74 554.09 Z"/>
 </g></defs></svg>
-
 <header class="fade">
 <svg class="mark" viewBox="180 320 660 360"><use href="#heirwave-paths"/></svg>
 <div class="lock"><h1>MUSA CULTURAL OS</h1><div class="sub">THE ARCHIVE · THE 50 × THE INDEX</div></div>
 <div class="src" id="src">SOURCE: SNAPSHOT</div>
 </header>
-
 <div class="controls fade">
-  <div class="searchwrap">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-    <input id="q" type="text" placeholder="Search the archive — name, domain, lane, tier, flag, climate…" autocomplete="off" spellcheck="false">
-    <button class="clearbtn" id="clear" aria-label="clear">✕</button>
-  </div>
-  <div class="toggles">
-    <button class="tg on" data-view="all">ALL</button>
-    <button class="tg" data-view="index">THE INDEX</button>
-    <button class="tg" data-view="canon">THE 50</button>
-    <span class="spacer"></span>
-    <span class="sortwrap" id="sortwrap">SORT
-      <select id="sort">
-        <option value="new">NEWEST</option>
-        <option value="score">HIGHEST SCORE</option>
-        <option value="heat">HIGHEST HEAT</option>
-        <option value="find">BIGGEST FIND</option>
-      </select>
-    </span>
-  </div>
-  <div class="chips" id="chips"></div>
+<div class="searchwrap">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+<input id="q" type="text" placeholder="Search the archive — name, domain, lane, tier, flag, climate…" autocomplete="off" spellcheck="false">
+<button class="clearbtn" id="clear" aria-label="clear">✕</button>
 </div>
-
+<div class="toggles">
+<button class="tg on" data-view="all">ALL</button>
+<button class="tg" data-view="index">THE INDEX</button>
+<button class="tg" data-view="canon">THE 50</button>
+<span class="spacer"></span>
+<span class="sortwrap" id="sortwrap">SORT
+<select id="sort">
+<option value="new">NEWEST</option>
+<option value="score">HIGHEST SCORE</option>
+<option value="heat">HIGHEST HEAT</option>
+<option value="find">BIGGEST FIND</option>
+</select>
+</span>
+</div>
+<div class="chips" id="chips"></div>
+</div>
 <div class="stat fade" id="stat"></div>
 <div class="results" id="results"></div>
-
 <footer class="fade">
 <svg class="fm" viewBox="180 320 660 360"><use href="#heirwave-paths"/></svg>
 <div class="ft"><b>THE MUSA FAMILY · HEIRWAVE</b><br>
 The OS is the memory of the system: THE 50 is the canon and the gate, THE INDEX is every read made through it. Scores and heat are editorial taste reads, not metrics. Verdicts are receipts — graded only after real time passes. Royalty runs in the blood, not the crown.</div>
 </footer>
-
 <script>
-/* ════════════════════════════════════════════════════════════════════════════
-   CONFIG — the data feed. By default reads ledger.json + musa-50.json sitting
-   NEXT TO this file (same Cloudflare Pages deploy). Every Index run drops fresh
-   copies of those two files into the deploy → this page shows the latest with
-   zero edits here. If a fetch fails, it falls back to the embedded snapshot below,
-   so the page never breaks. cacheBust defeats edge caching so updates show fast.
-   ════════════════════════════════════════════════════════════════════════════ */
 const CONFIG = {
   ledgerURL: "./ledger.json",
-  canonURL:  "./musa-50.json",
+  canonURL: "./musa-50.json",
   cacheBust: true
 };
 
-/* ════════════════════════════════════════════════════════════════════════════
-   EMBEDDED SNAPSHOT — the fallback / seed. Append-only for the ledger.
-   ════════════════════════════════════════════════════════════════════════════ */
 const INDEX_SEED = {
   issues: [
     { issue:"2026-06-17-0638", date:"2026-06-17", time:"06:38 ET",
@@ -234,6 +203,35 @@ const INDEX_SEED = {
         {name:"MIKE",domain:"MUSIC",score:8.3,tier:"CROWN",heat:36,direction:"up",flags:["FIND","BLADE"],verdict:"PENDING"},
         {name:"Tech Spec",domain:"DESIGN",score:7.5,tier:"FLAME",heat:58,direction:"up",flags:["FIND","BLADE"],verdict:"PENDING"},
         {name:"Broadcast-to-Belonging",domain:"SCENE",score:7.7,tier:"FLAME",heat:62,direction:"up",flags:["BLADE"],verdict:"PENDING"}
+      ]},
+    { issue:"2026-07-06-0834", date:"2026-07-06", time:"08:34 ET",
+      climate:"Stadium spectacle is loud enough to feel like the whole story, but the real export is coming from cities the algorithm still treats as periphery — Lagos chief among them",
+      entries:[
+        {name:"My Father's Shadow — Akinola Davies Jr.",domain:"FILM",score:9.1,tier:"HEIRWAVE",heat:58,direction:"up",flags:["ROOMS_RIGHT"],verdict:"PENDING",
+         url:"https://mubi.com/en/us/films/my-father-s-shadow",
+         image:"https://images.mubicdn.net/images/film/410994/cache-1050258-1745503807/image-w1280.jpg",
+         read:"First Nigerian film ever in Cannes' Official Selection, a Caméra d'Or special mention, a BAFTA for Best Debut — a single day in 1993 Lagos, told small and specific, earning every inch of the attention now landing on it. This isn't heat outrunning the work; it's the room finally catching up to it.",
+         benchmark:"No direct neighbor yet on the 50 — closest in spirit to the diasporic-storytelling thread running through Denim Tears and One54."},
+        {name:"Firelei Báez — mid-career survey",domain:"ART",score:8.8,tier:"CROWN",heat:45,direction:"up",flags:["FIND"],verdict:"PENDING",
+         url:"https://visit.mcachicago.org/exhibitions/firelei-baez-2/",
+         image:"https://visit.mcachicago.org/wp-content/uploads/2025/10/85_FB_Untitled-Les-tables-de-geographie-reduites-en-un-jeu-de-cartes.webp",
+         read:"Two decades of drawings, paintings, and installations built from folklore, fantasy, and Caribbean diasporic myth, now touring ICA Boston to MCA Chicago — museum-earned, not algorithm-earned.",
+         benchmark:"Mason Prince — same craft-first, story-driven register, different medium."},
+        {name:"Alewya — \"Zero\"",domain:"MUSIC",score:8.6,tier:"CROWN",heat:34,direction:"up",flags:["FIND","BLADE"],verdict:"PENDING",
+         url:"https://alewya.bandcamp.com/album/zero-1",
+         image:"https://f4.bcbits.com/img/a3150029086_7.jpg",
+         read:"London underground fused with Egyptian and Ethiopian rhythm, critics reaching for M.I.A.'s Kala as the last time diasporic music re-drew the map this confidently. No feature run, no rollout theater.",
+         benchmark:"Jim Legxacy — same instinct to let root and lineage do the talking over reach."},
+        {name:"WAFFLESNCREAM",domain:"FASHION",score:8.3,tier:"CROWN",heat:30,direction:"up",flags:["FIND","BLADE"],verdict:"PENDING",
+         url:"https://www.wafflesncream.com/",
+         image:"https://www.wafflesncream.com/cdn/shop/files/lookbook-01_grande.jpg?v=1743681553",
+         read:"A Lagos skate shop since 2012 that never tried to be a brand first — it raised a scene instead, the one that produced Olaolu Slawn and the Motherlan collective. Community before commerce.",
+         benchmark:"Corteiz — cult-built, community-first, allergic to logo-as-content."},
+        {name:"Shihara — Yuta Ishihara",domain:"DESIGN",score:7.6,tier:"FLAME",heat:28,direction:"flat",flags:["FIND"],verdict:"PENDING",
+         url:"https://shihara.com/",
+         image:"https://shihara.com/cdn/shop/files/ogp.png?v=1738219458",
+         read:"Tokyo jewelry built on \"reconstructing essential functions\" — 18ct gold pared down until the idea is the only ornament left. Quiet craft authority that has never needed a drop calendar.",
+         benchmark:"Karhu — heritage craft revisited with the same patience, different continent."}
       ]}
   ]
 };
@@ -243,18 +241,18 @@ const CANON_SEED = {
     {name:"Jim Legxacy",url:"https://www.jimlegxacy.com/",lane:"underground-rap"},
     {name:"Karhu",url:"https://us.karhu.com/collections/mens-running-shoes",lane:"heritage-craft-product"},
     {name:"Mason Prince",url:"https://masonprince.com/",lane:"design-studio"},
-    {name:"Taobao",url:"https://main.m.taobao.com/",lane:"global-diaspora"},
+    {name:"Noname Book Club",url:"https://nonamebooks.com/",lane:"global-diaspora"},
     {name:"Derschutze",url:"https://derschutze.com/",lane:"diasporic-fashion"},
     {name:"Mertra",url:"https://mertra.com/",lane:"design-studio"},
     {name:"Faith Brown Design",url:"https://faithbrowndesign.com/sweet-dreams-1",lane:"design-studio"},
     {name:"Dead Dilly",url:"https://www.deaddilly.com/",lane:"design-studio"},
     {name:"Luma Labs",url:"https://lumalabs.ai/app",lane:"creator-ai-tools"},
     {name:"Robert Gallardo",url:"https://robertgallardo.com/",lane:"design-studio"},
-    {name:"Mixtape Classics",url:"https://mixtapeclassics.sellfy.store/flash-drives",lane:"heritage-craft-product"},
+    {name:"Dame Atlas",url:"https://damemtlas.com/",lane:"heritage-craft-product"},
     {name:"Moonshots",url:"https://moonshots.com/",lane:"builder-dev"},
     {name:"Leveraging AI",url:"https://leveragingai.buzzsprout.com/",lane:"finance-operator"},
     {name:"Vercel",url:"https://vercel.com/",lane:"builder-dev"},
-    {name:"Higgsfield AI",url:"https://higgsfield.ai/",lane:"creator-ai-tools"},
+    {name:"Black Film Archive",url:"https://www.blackfilmarchive.com/",lane:"creator-ai-tools"},
     {name:"Y Combinator",url:"https://www.ycombinator.com/",lane:"builder-dev"},
     {name:"Seeking Alpha",url:"https://seekingalpha.com/",lane:"finance-operator"},
     {name:"Riverside",url:"https://riverside.com/",lane:"creator-ai-tools"},
@@ -285,21 +283,17 @@ const CANON_SEED = {
     {name:"Fortnum & Mason",url:"https://fortnumandmason.com",lane:"heritage-craft-product"},
     {name:"Setups AI",url:"https://www.instagram.com/setupsai",lane:"creator-ai-tools"},
     {name:"One54",url:"https://youtube.com/@one54africa",lane:"global-diaspora"},
-    {name:"Above & Beyond Group",url:"https://www.instagram.com/aboveandbeyondgroup",lane:"design-studio"},
+    {name:"Project a Black Planet",url:"https://www.aaihs.org/project-a-black-planet/",lane:"design-studio"},
     {name:"The Prince of Darkness",url:"https://books.apple.com/book/id979135762",lane:"editorial-taste"},
     {name:"The Shed",url:"https://www.theshed.org/",lane:"places"},
     {name:"CD Masterizzato",url:"https://www.instagram.com/cd_masterizzato",lane:"editorial-taste"},
-    {name:"Goshi Washcloth",url:"https://amzn.to/3RyHFh5",lane:"heritage-craft-product"}
+    {name:"Tamera",url:"https://tameraworld.com/",lane:"heritage-craft-product"}
   ]
 };
 
-/* ════════════════════════════════════════════════════════════════════════════
-   ENGINE
-   ════════════════════════════════════════════════════════════════════════════ */
 let LEDGER = INDEX_SEED, CANON = CANON_SEED;
-let RECORDS = [];                       // unified, flattened
+let RECORDS = [];
 const state = { view:"all", q:"", sort:"new", chip:null, find:false };
-
 const TIER_CLASS = {HEIRWAVE:"t-heir",CROWN:"t-crown",FLAME:"t-flame",TORCH:"t-torch",SPARK:"t-spark",NOISE:"t-noise"};
 const DIR = {up:{c:"u",g:"▲"},down:{c:"d",g:"▼"},flat:{c:"f",g:"▮"}};
 
@@ -314,7 +308,6 @@ function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;","
 
 function build(){
   RECORDS = [];
-  // INDEX entries — flattened, issue context attached
   (LEDGER.issues||[]).forEach(iss=>{
     (iss.entries||[]).forEach(e=>{
       RECORDS.push({
@@ -324,11 +317,11 @@ function build(){
         date:iss.date, time:iss.time||"", climate:iss.climate||"",
         find:(e.flags||[]).some(f=>f.toUpperCase().includes("FIND")),
         gap:Math.round((e.score*10)-(e.heat||0)),
-        read:e.read||"", benchmark:e.benchmark||"" 
+        read:e.read||"", benchmark:e.benchmark||"",
+        url:e.url||"", image:e.image||""
       });
     });
   });
-  // CANON entries
   (CANON.entries||[]).forEach(e=>{
     RECORDS.push({type:"canon", name:e.name, lane:e.lane||"", url:e.url||"", date:"", flags:[]});
   });
@@ -346,7 +339,7 @@ function matches(r){
   if(state.chip){
     const c=state.chip;
     if(c.kind==="tier" && !(r.type==="index" && r.tier===c.val)) return false;
-    if(c.kind==="dom"  && !(r.type==="index" && r.domain===c.val)) return false;
+    if(c.kind==="dom" && !(r.type==="index" && r.domain===c.val)) return false;
     if(c.kind==="lane" && !(r.type==="canon" && r.lane===c.val)) return false;
   }
   if(state.q){
@@ -363,11 +356,10 @@ function sortRecs(list){
   if(s==="score") idx.sort((a,b)=>b.score-a.score||b.date.localeCompare(a.date));
   else if(s==="heat") idx.sort((a,b)=>b.heat-a.heat);
   else if(s==="find") idx.sort((a,b)=>b.gap-a.gap);
-  else idx.sort((a,b)=>(b.date+b.time).localeCompare(a.date+a.time)); // newest
-  // canon keeps canonical order (its position IS the ranking on the 50)
+  else idx.sort((a,b)=>(b.date+b.time).localeCompare(a.date+a.time));
   if(state.view==="canon") return can;
   if(state.view==="index") return idx;
-  return [...idx, ...can]; // ALL: reads first (the live memory), then the canon
+  return [...idx, ...can];
 }
 
 function cardIndex(r){
@@ -375,11 +367,13 @@ function cardIndex(r){
   const d=DIR[r.direction]||DIR.flat;
   const flags=(r.flags||[]).map(f=>`<span class="flag ${flagClass(f)}">${esc(f)}</span>`).join("");
   const vClass=r.verdict==="PENDING"?"pending":(/HIT|RIGHT|✓/i.test(r.verdict)?"hit":(/MISS|WRONG|✕/i.test(r.verdict)?"miss":"pending"));
+  const nameHtml = r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name);
+  const previewHtml = r.image ? `<div class="preview"><img src="${esc(r.image)}" alt="${esc(r.name)}" loading="lazy"><span class="cap">${esc(r.name)}</span></div>` : "";
   return `<div class="card ${r.find?"find":""}">
     <div class="verdict ${vClass}">${esc(r.verdict)}</div>
     <div class="ctop">
       <span class="kind k-idx">INDEX</span>
-      <span class="nm">${esc(r.name)}</span>
+      <span class="nm">${nameHtml}</span>
       <span class="when">${esc(r.date)}</span>
     </div>
     <div class="scorerow">
@@ -395,6 +389,7 @@ function cardIndex(r){
     <div class="xp">
       <div class="xread">${r.read?esc(r.read):`<span class="nrec">— original taste read not recovered for this issue —</span>`}</div>
       ${r.benchmark?`<div class="xbench"><b>BENCHMARK:</b> ${esc(r.benchmark)}</div>`:""}
+      ${previewHtml}
     </div>
     <div class="xhint">TAP FOR THE READ ▾</div>
   </div>`;
@@ -445,7 +440,6 @@ function render(){
   }).join("");
 }
 
-/* events */
 document.getElementById("results").addEventListener("click",e=>{
   if(e.target.closest("a"))return;
   const c=e.target.closest(".card"); if(!c||c.classList.contains("canon"))return;
@@ -469,7 +463,6 @@ q.addEventListener("input",()=>{state.q=q.value.trim();clear.classList.toggle("o
 clear.addEventListener("click",()=>{q.value="";state.q="";clear.classList.remove("on");render();q.focus();});
 document.getElementById("sort").addEventListener("change",e=>{state.sort=e.target.value;render();});
 
-/* live same-origin fetch with graceful fallback to the embedded snapshot */
 async function boot(){
   build(); render();
   const set=live=>{document.getElementById("src").innerHTML =
