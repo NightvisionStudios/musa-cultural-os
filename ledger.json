@@ -1,9 +1,8 @@
 {
   "_meta": {
-    "purpose": "The Index memory. Every pull is appended here on publish; verdicts start PENDING and are filled only on the grading pass after real time passes. Append only — never rewrite past issues.",
-    "permanence": "The session filesystem resets. Mirror this file to musa-vault (GitHub) so the cumulative track record survives across sessions.",
-    "updated": "2026-07-06",
-    "recovery_note": "Recovery pass 2026-07-05: original reads, heat values, benchmarks, flags, and climates restored from session history for issues 06-17 (both), 06-23, 06-25, 06-27, 07-02 10:54, and 07-04 12:36; two previously missing issues restored (06-18 22:36, 07-04 13:56). Grading notes attached to the three Jun 27 verdicts. Where a read/heat is still absent it was not reliably recoverable — nothing invented. Remaining gaps: 06-22 gated board (omitted), reads for 06-20, 06-26, 07-02 23:15, and two 07-04 13:56 entries. Known drift stands as recorded. 2026-07-06: added url/image fields going forward — first issue carrying them is 2026-07-06-0834. | 2026-07-06 backfill: url added to historical entries across 13 issues (2026-06-17 through 2026-07-05); trend/scene entries with no single linkable artifact intentionally left without url."
+    "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
+    "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
+    "updated": "2026-07-07"
   },
   "issues": [
     {
@@ -23,7 +22,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "read": "Canon-tier installation work, #1 on the ArtReview Power 100, still under-clocked in U.S. feeds.",
           "url": "https://www.whitecube.com/artists/ibrahim-mahama"
         },
@@ -38,7 +36,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "read": "PR rap auteur the English-speaking room hasn't caught up to yet.",
           "url": "https://music.apple.com/us/album/omakase/6771082594"
         },
@@ -52,7 +49,6 @@
           "flags": [
             "FIND"
           ],
-          "verdict": "PENDING",
           "read": "Shuggie Bain Booker winner returns, Hebrides-set; craft over noise, quiet heat is the tell.",
           "benchmark": "literary-craft lane of the 50",
           "url": "https://groveatlantic.com/book/john-of-john/"
@@ -68,7 +64,6 @@
             "HEAT>WORK",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "read": "Real cultural object, but attention runs ahead of the work; influence-tier not depth-tier. Watch if heat converts or evaporates.",
           "benchmark": "orbits the pop-culture-engine lane without entering",
           "url": "https://en.wikipedia.org/wiki/The_Moment_(2026_film)"
@@ -83,7 +78,6 @@
           "flags": [
             "BLADE"
           ],
-          "verdict": "PENDING",
           "read": "The pivot from quiet luxury to expressive clarity and taste-as-currency; the climate the board sits inside — and the premise The Index runs on.",
           "benchmark": "the operating principle behind the 50, not a neighbor in it"
         }
@@ -106,7 +100,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "read": "The 2026 Pritzker, architecture's quietest radical. Blade: the prize sits under an Epstein-linked cloud; the work transcends the institution stamping it.",
           "url": "https://www.pritzkerprize.com/laureates/smiljan-radic-clarke"
         },
@@ -120,7 +113,6 @@
           "flags": [
             "ROOMS_RIGHT"
           ],
-          "verdict": "PENDING",
           "read": "Not a hidden gem — the honest counter to a find. Heat catching up to long-proven quality.",
           "url": "https://www.hbomax.com/shows/industry/9e51c88c-7a28-40ee-8269-e16572e02a07"
         },
@@ -135,7 +127,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "read": "Indie Disco Elysium-lineage CRPG critics say outclasses its forebear in places; ideas-first, low mainstream heat.",
           "benchmark": "the 50's ideas / AI-tools lane — first CRPG slot",
           "url": "https://christofferbodegard.itch.io/esoteric-ebb"
@@ -150,7 +141,6 @@
           "flags": [
             "FIND"
           ],
-          "verdict": "HELD",
           "read": "TDE auteur ends 5-yr hiatus and lands it; comeback-era depth fitting the climate, heat below the score.",
           "benchmark": "underground-rap lane — Kenny Mason, Starlito, Jim Legxacy",
           "graded": "2026-06-27",
@@ -167,7 +157,6 @@
           "flags": [
             "BLADE"
           ],
-          "verdict": "PENDING",
           "read": "Full-cycle pivot off quiet luxury; layered, referential expression with archive/resale as the real flex — access over logo.",
           "benchmark": "the aesthetic shift the 50's design desks track"
         }
@@ -190,7 +179,6 @@
           "flags": [
             "FIND"
           ],
-          "verdict": "PENDING",
           "read": "The flagship FIND of the board — HEAT 14, the widest taste-to-room gap logged to date.",
           "url": "https://store.steampowered.com/app/2090390/Schrdingers_Call/"
         },
@@ -202,7 +190,6 @@
           "heat": 0,
           "direction": "flat",
           "flags": [],
-          "verdict": "PENDING",
           "heat_recovered": false,
           "url": "https://music.apple.com/us/album/omakase/6771082594"
         },
@@ -216,7 +203,6 @@
           "flags": [
             "BLADE"
           ],
-          "verdict": "PENDING",
           "heat_recovered": false,
           "url": "https://www.hbomax.com/shows/industry/9e51c88c-7a28-40ee-8269-e16572e02a07"
         },
@@ -230,7 +216,6 @@
           "flags": [
             "BLADE"
           ],
-          "verdict": "PENDING",
           "heat_recovered": false
         },
         {
@@ -241,7 +226,6 @@
           "heat": 0,
           "direction": "down",
           "flags": [],
-          "verdict": "PENDING",
           "read": "The disciplined bear call — nostalgia-cycle heat with nothing underneath it.",
           "heat_recovered": false
         }
@@ -264,7 +248,6 @@
             "ROOMS_RIGHT",
             "BLADE"
           ],
-          "verdict": "HELD",
           "graded": "2026-06-27",
           "note": "HELD — the monoculture-vs-fragmentation read held; heat stayed maxed. Room was correct.",
           "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026"
@@ -279,7 +262,6 @@
           "flags": [
             "EARNED_SPECTACLE"
           ],
-          "verdict": "PENDING",
           "url": "https://www.jr-art.net/projects/la-caverne-du-pont-neuf"
         },
         {
@@ -293,7 +275,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "EARLY",
           "graded": "2026-06-27",
           "heat_now": 42,
           "note": "EARLY — still the critics' underground anchor; the year's 'breadth over blockbuster' read is validating his lane. Right call, room hasn't fully paid it — heat creeping, not spiking.",
@@ -309,8 +290,7 @@
           "flags": [
             "FIND",
             "BLADE"
-          ],
-          "verdict": "PENDING"
+          ]
         },
         {
           "name": "Broadcast-to-Belonging",
@@ -321,8 +301,7 @@
           "direction": "up",
           "flags": [
             "BLADE"
-          ],
-          "verdict": "PENDING"
+          ]
         }
       ]
     },
@@ -344,7 +323,6 @@
             "BLADE"
           ],
           "benchmark": "One54",
-          "verdict": "PENDING",
           "read": "Akinola Davies Jr's Cannes-competing British-Nollywood debut. Diaspora at the root, festival-grade. The clearest FIND on the board.",
           "url": "https://mubi.com/en/us/films/my-father-s-shadow"
         },
@@ -359,7 +337,6 @@
             "FIND"
           ],
           "benchmark": "Kenny Mason",
-          "verdict": "PENDING",
           "read": "Houston, Punch co-signed, starting a book club. Taste miles ahead of the stream count.",
           "url": "https://www.iamlyricofficial.com/"
         },
@@ -375,7 +352,6 @@
             "BLADE"
           ],
           "benchmark": "Mixtape Classics",
-          "verdict": "PENDING",
           "read": "Cassette-soul made playable; the mixtape's original curation instinct, now in your hands.",
           "url": "https://store.steampowered.com/app/2582320/Mixtape/"
         },
@@ -391,7 +367,6 @@
             "BLADE"
           ],
           "benchmark": "Joe Freshgoods / Denim Tears",
-          "verdict": "PENDING",
           "read": "The honest counter-read. adidas/World Cup made him loud, and the thesis earned it. Cleared the gate despite the mega-collab anti-pattern because the work carries a real argument — which is exactly why it's ROOM'S RIGHT, not a find.",
           "url": "https://willychavarria.com/"
         },
@@ -406,7 +381,6 @@
             "BLADE"
           ],
           "benchmark": "Free Game / Players Magazine",
-          "verdict": "PENDING",
           "read": "Book-club-as-venue, gatekept by attention not money. Transmission gone physical."
         }
       ]
@@ -429,7 +403,6 @@
             "BLADE"
           ],
           "benchmark": "underground-rap lane head (Chris Crack / Starlito / Kenny Mason)",
-          "verdict": "PENDING",
           "read": "Self-cut loops, 32 minutes, the luxury-grime blueprint sharpened. Moved rap forward while the scoreboard argued. Arguably enters the 50.",
           "url": "https://music.apple.com/us/album/656/1870984094"
         },
@@ -445,7 +418,6 @@
             "BLADE"
           ],
           "benchmark": "One54 / editorial-taste",
-          "verdict": "PENDING",
           "read": "Curation-as-gatekeeping, diaspora as the center of gravity, cross-cutting art/sound/design/politics at once.",
           "url": "https://www.barbican.org.uk/whats-on/2026/event/project-a-black-planet-the-art-and-culture-of-panafrica"
         },
@@ -460,7 +432,6 @@
             "ROOMS_RIGHT"
           ],
           "benchmark": "Mixtape Classics",
-          "verdict": "PENDING",
           "read": "The honest counter-read. Built on the exact mixtape feeling MUSA is, and the room earned its heat this time.",
           "url": "https://store.steampowered.com/app/2582320/Mixtape/"
         },
@@ -476,7 +447,6 @@
             "EARLY"
           ],
           "benchmark": "Corteiz / Barriers Worldwide / Denim Tears",
-          "verdict": "PENDING",
           "read": "Belonging outgrowing logos; small on the named brand, real on the engine."
         },
         {
@@ -491,7 +461,6 @@
             "BLADE"
           ],
           "benchmark": "CD Masterizzato (cross-lane energy — analog craft as stance)",
-          "verdict": "PENDING",
           "read": "Hand-cranked 16mm, the analog grain is the point; arthouse-quiet, which is the gap.",
           "url": "https://en.wikipedia.org/wiki/Rose_of_Nevada"
         }
@@ -514,7 +483,6 @@
           "flags": [
             "ROOMS_RIGHT"
           ],
-          "verdict": "PENDING",
           "heat_recovered": false,
           "url": "https://www.barbican.org.uk/whats-on/2026/event/project-a-black-planet-the-art-and-culture-of-panafrica"
         },
@@ -528,7 +496,6 @@
           "flags": [
             "FIND"
           ],
-          "verdict": "PENDING",
           "heat_recovered": false,
           "url": "https://yayabey.bandcamp.com/album/fidelity"
         },
@@ -542,7 +509,6 @@
           "flags": [
             "FIND"
           ],
-          "verdict": "PENDING",
           "heat_recovered": false,
           "url": "https://mubi.com/en/us/films/drunken-noodles"
         },
@@ -556,7 +522,6 @@
           "flags": [
             "HEAT>WORK"
           ],
-          "verdict": "PENDING",
           "heat_recovered": false,
           "url": "https://willychavarria.com/collections/adidas"
         },
@@ -570,7 +535,6 @@
           "flags": [
             "FIND"
           ],
-          "verdict": "PENDING",
           "heat_recovered": false,
           "url": "http://www.tia-clark.com/"
         }
@@ -593,7 +557,6 @@
             "ROOMS_RIGHT",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "benchmark": "Denim Tears / A Ma Maniere",
           "url": "https://finance.hermes.com/en/publications/grace-wales-bonner-joins-hermes-creative-director-mens-ready-wear/"
         },
@@ -608,7 +571,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "benchmark": "Chris Crack / Starlito",
           "url": "https://music.apple.com/us/album/656/1870984094"
         },
@@ -622,7 +584,6 @@
           "flags": [
             "FIND"
           ],
-          "verdict": "PENDING",
           "benchmark": "One54 / Monocle",
           "url": "https://www.lacma.org/art/exhibition/imagining-black-diasporas-21st-century-art-and-poetics"
         },
@@ -637,7 +598,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "benchmark": "One54",
           "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams/cabo-verde/team-news"
         },
@@ -651,7 +611,6 @@
           "flags": [
             "BLADE"
           ],
-          "verdict": "PENDING",
           "benchmark": "Free Game / Monocle"
         }
       ]
@@ -671,7 +630,6 @@
           "heat": 0,
           "direction": "up",
           "flags": [],
-          "verdict": "PENDING",
           "heat_recovered": false,
           "read": "Ex-Injury Reserve grief record, sample-literate, room hasn't fully caught up.",
           "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost"
@@ -684,7 +642,6 @@
           "heat": 0,
           "direction": "up",
           "flags": [],
-          "verdict": "PENDING",
           "heat_recovered": false,
           "read": "The one honest case where the heat is earned, not overdue.",
           "url": "https://www.adidas.com/us/wales_bonner"
@@ -697,7 +654,6 @@
           "heat": 0,
           "direction": "up",
           "flags": [],
-          "verdict": "PENDING",
           "heat_recovered": false,
           "read": "60 artists, rewrites the Pan-African canon past the Black Atlantic.",
           "url": "https://www.lacma.org/art/exhibition/imagining-black-diasporas-21st-century-art-and-poetics"
@@ -710,7 +666,6 @@
           "heat": 0,
           "direction": "up",
           "flags": [],
-          "verdict": "PENDING",
           "heat_recovered": false,
           "read": "Sample culture with the royalty math finally built in.",
           "url": "https://splice.com/innovation"
@@ -723,7 +678,6 @@
           "heat": 0,
           "direction": "up",
           "flags": [],
-          "verdict": "PENDING",
           "heat_recovered": false,
           "read": "Diaspora books + salon — no algorithm feeds you this shelf; lowest heat on the board."
         }
@@ -746,7 +700,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "url": "https://www.panafricanbiennale.org/"
         },
         {
@@ -760,7 +713,6 @@
             "ROOMS_RIGHT",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "url": "https://store.steampowered.com/app/3255890/Relooted/"
         },
         {
@@ -774,7 +726,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost"
         },
         {
@@ -786,8 +737,7 @@
           "direction": "up",
           "flags": [
             "FIND"
-          ],
-          "verdict": "PENDING"
+          ]
         },
         {
           "name": "House of Aama — Folk Grounds",
@@ -799,7 +749,6 @@
           "flags": [
             "FIND"
           ],
-          "verdict": "PENDING",
           "url": "https://houseofaama.com/"
         }
       ]
@@ -820,7 +769,6 @@
           "flags": [
             "FIND"
           ],
-          "verdict": "PENDING",
           "benchmark": "Denim Tears",
           "read": "Mid-career survey consolidating a decade of myth-rooted diasporic painting.",
           "url": "https://visit.mcachicago.org/exhibitions/firelei-baez-2/"
@@ -836,7 +784,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "benchmark": "The Shed",
           "read": "First continent-wide architecture biennale — infrastructure, not exhibition.",
           "url": "https://www.panafricanbiennale.org/"
@@ -852,7 +799,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "benchmark": "Kenny Mason",
           "read": "Ex-Injury Reserve; third board appearance — the room still hasn't paid it.",
           "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost"
@@ -868,7 +814,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "benchmark": "Free Game",
           "read": "Internet essay on taste and AI — the discourse the Index runs inside."
         },
@@ -882,7 +827,6 @@
           "flags": [
             "FIND"
           ],
-          "verdict": "PENDING",
           "benchmark": "A Ma Maniere",
           "read": "NYFW collection — Ethiopian-rooted eveningwear read as heritage craft.",
           "url": "https://www.nardosdesign.com/blogs/news"
@@ -906,7 +850,6 @@
             "ROOMS_RIGHT",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "read": "The room already knew this was canon; the World Cup just gave it a stage.",
           "url": "https://walesbonner.com/collections/adidas-originals-by-wales-bonner"
         },
@@ -921,7 +864,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "read": "New album named after a Glenn Ligon painting, shot for New Balance's Made in UK line — streams haven't caught up yet.",
           "url": "https://space-afrika.bandcamp.com/"
         },
@@ -936,7 +878,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "read": "First continent-wide architecture biennale, curated by Omar Degan, still under the radar.",
           "url": "https://www.panafricanbiennale.org/"
         },
@@ -949,8 +890,7 @@
           "direction": "up",
           "flags": [
             "FIND"
-          ],
-          "verdict": "PENDING"
+          ]
         },
         {
           "name": "The Chi — Final Season",
@@ -962,7 +902,6 @@
           "flags": [
             "HEAT>WORK"
           ],
-          "verdict": "PENDING",
           "url": "https://www.paramountplus.com/shows/the-chi/"
         }
       ]
@@ -985,7 +924,6 @@
             "BLADE"
           ],
           "benchmark": "Black Film Archive",
-          "verdict": "PENDING",
           "read": "Aleshea Harris put her own play on screen — twin sisters, a debt of scars, revenge written in scripture cadence — and it opened in May to near silence. Two-time Tony winner Kara Young opposite Mallori Johnson, Sterling K. Brown and Janelle Monáe in the frame, and most critics still don't know it exists. The room missed a canon entry in real time.",
           "url": "https://en.wikipedia.org/wiki/Is_God_Is_(film)"
         },
@@ -1000,7 +938,6 @@
             "ROOMS_RIGHT"
           ],
           "benchmark": "Starlito",
-          "verdict": "PENDING",
           "read": "The honest counter-read: the room is loud on this one and the room is correct. Pointed politics without preaching, accessible without thinning out — the most complete statement of his run, landing harder than the year's bigger-billed rap events. Earned heat, not borrowed.",
           "url": "https://vincestaples.bandcamp.com/album/cry-baby"
         },
@@ -1016,7 +953,6 @@
             "BLADE"
           ],
           "benchmark": "Noname Book Club",
-          "verdict": "PENDING",
           "read": "A working master — Rollins Band, Defunkt, decades of sessions — tracing how Africa's musical inheritance became the operating system of everything on your speakers. Theory from inside the craft, not above it. The curator's textbook, priced like a quiet release.",
           "url": "https://www.hachettebookgroup.com/titles/melvin-gibbs/how-black-music-took-over-the-world/9781541603240/"
         },
@@ -1031,7 +967,6 @@
             "FIND"
           ],
           "benchmark": "Denim Tears",
-          "verdict": "PENDING",
           "read": "Jamaican-Scottish menswear as a sustained inquiry — reggae lineage, British cloth, live music sewn into the label's program. While the collab loop recycles logos, Daley builds community as the product. A decade of quiet compounding the room keeps filing under \"emerging.\"",
           "url": "https://nicholasdaley.net/"
         },
@@ -1046,7 +981,6 @@
             "FIND"
           ],
           "benchmark": "Karhu",
-          "verdict": "PENDING",
           "read": "Yacht Club's Game Boy-lineage epic — 91 on the meters, Game of the Year math — and the timeline barely mentions it. Craft object first: 8-bit discipline, modern feel, a decade of Shovel Knight trust spent on restraint instead of scale. Acclaim without chatter is the gap talking.",
           "url": "https://store.steampowered.com/app/1875580/Mina_the_Hollower/"
         }
@@ -1068,7 +1002,6 @@
           "flags": [
             "ROOMS_RIGHT"
           ],
-          "verdict": "PENDING",
           "url": "https://mubi.com/en/us/films/my-father-s-shadow",
           "image": "https://images.mubicdn.net/images/film/410994/cache-1050258-1745503807/image-w1280.jpg",
           "read": "First Nigerian film ever in Cannes' Official Selection, a Caméra d'Or special mention, a BAFTA for Best Debut — a single day in 1993 Lagos, told small and specific, earning every inch of the attention now landing on it. This isn't heat outrunning the work; it's the room finally catching up to it.",
@@ -1085,7 +1018,6 @@
           "flags": [
             "FIND"
           ],
-          "verdict": "PENDING",
           "url": "https://visit.mcachicago.org/exhibitions/firelei-baez-2/",
           "image": "https://visit.mcachicago.org/wp-content/uploads/2025/10/85_FB_Untitled-Les-tables-de-geographie-reduites-en-un-jeu-de-cartes.webp",
           "read": "Two decades of drawings, paintings, and installations built from folklore, fantasy, and Caribbean diasporic myth, now touring ICA Boston to MCA Chicago — museum-earned, not algorithm-earned.",
@@ -1103,7 +1035,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "url": "https://alewya.bandcamp.com/album/zero-1",
           "image": "https://f4.bcbits.com/img/a3150029086_7.jpg",
           "read": "London underground fused with Egyptian and Ethiopian rhythm, critics reaching for M.I.A.'s Kala as the last time diasporic music re-drew the map this confidently. No feature run, no rollout theater.",
@@ -1120,7 +1051,6 @@
             "FIND",
             "BLADE"
           ],
-          "verdict": "PENDING",
           "url": "https://www.wafflesncream.com/",
           "image": "https://www.wafflesncream.com/cdn/shop/files/lookbook-01_grande.jpg?v=1743681553",
           "read": "A Lagos skate shop since 2012 that never tried to be a brand first — it raised a scene instead, the one that produced Olaolu Slawn and the Motherlan collective. Community before commerce.",
@@ -1136,11 +1066,227 @@
           "flags": [
             "FIND"
           ],
-          "verdict": "PENDING",
           "url": "https://shihara.com/",
           "image": "https://shihara.com/cdn/shop/files/ogp.png?v=1738219458",
           "read": "Tokyo jewelry built on \"reconstructing essential functions\" — 18ct gold pared down until the idea is the only ornament left. Quiet craft authority that has never needed a drop calendar.",
           "benchmark": "Karhu — heritage craft revisited with the same patience, different continent."
+        }
+      ]
+    },
+    {
+      "issue": "2026-07-07-1441",
+      "date": "2026-07-07",
+      "time": "14:41 ET",
+      "climate": "The fight moved to memory — museums canonize the underground's founders while a state deletes a film in real time; whoever holds the archive sets the price",
+      "entries": [
+        {
+          "name": "NIGO — From Japan with Love",
+          "domain": "FASHION",
+          "score": 9.0,
+          "tier": "HEIRWAVE",
+          "heat": 78,
+          "direction": "up",
+          "flags": [
+            "ROOMS_RIGHT"
+          ],
+          "benchmark": "Denim Tears",
+          "url": "https://designmuseum.org/exhibitions/nigo-from-japan-with-love",
+          "read": "Thirty years after NOWHERE, the Design Museum hangs the whole method on a wall — 700 objects, 600 from his own archive, his first Air Force 1 landing the same season. NIGO ran sample culture on clothing: loop the archive, flip the reference, press it small. The room is loud and the room is correct — earned canon, not a rediscovery. The blueprint every thesis-driven label on the 50 works from just got a museum wing."
+        },
+        {
+          "name": "Donald Locke — Resistant Forms",
+          "domain": "ART",
+          "score": 8.8,
+          "tier": "CROWN",
+          "heat": 31,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Project a Black Planet",
+          "url": "https://camdenartcentre.org/whats-on/resistant-forms",
+          "read": "Guyanese-British sculptor of the Windrush generation — biomorphic ceramics, the Plantation Series, Trophies of Empire — a whole grammar of post-war British sculpture the institutions skipped for fifty years. Camden Art Centre finally does the deep dive: 80-plus works, five decades. The room hasn't arrived; the correction is just starting and the work was never what was missing."
+        },
+        {
+          "name": "Satluj — Honey Trehan",
+          "domain": "FILM",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 82,
+          "direction": "up",
+          "flags": [
+            "BLADE"
+          ],
+          "benchmark": "One54",
+          "url": "https://www.zee5.com/",
+          "read": "Three years of certification war, 127 cut demands, forced retitles — then an uncut global stream July 3, and India's own platform deleted it from the domestic catalogue inside 48 hours. It's still up everywhere else: the diaspora is the distribution now. A film about a man who documented disappearances, getting disappeared — the ban is the co-sign."
+        },
+        {
+          "name": "Navy Blue — Sir Render",
+          "domain": "MUSIC",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 40,
+          "direction": "flat",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Ankhle John",
+          "url": "https://navybluethetruest.bandcamp.com/album/sir-render",
+          "read": "Sage Elsesser closes the run — Sir Render as surrender, every bar footnoted twice over, Ka answering from the other side on Circa. Self-released on Freedom Sounds, mountains of records built one by one, skate-culture blood in a sLUms lineage. The room already scrolled to the next drop; this one was pressed for the shelf, not the cycle."
+        },
+        {
+          "name": "Kendra Allen — Good Morning Means I Love You",
+          "domain": "BOOKS",
+          "score": 7.9,
+          "tier": "FLAME",
+          "heat": 24,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "The Prince of Darkness",
+          "url": "https://kindredstorieshtx.com/products/good-morning-means-i-love-you-a-novel",
+          "read": "Out today. Dallas essayist — Iowa Prize, Jason Reynolds calling her a generational talent — turns to fiction: one woman, two partners, sons named Morning and Night, Black maternal mental health written in prose that moves like verse. Built to polarize on purpose. Debut-novel heat is near zero; the sentences say she doesn't need the room's permission."
+        }
+      ]
+    }
+  ],
+  "holding": [
+    {
+      "name": "Álvaro Díaz — Omakase",
+      "first_issue": "2026-06-17-0638",
+      "first_date": "2026-06-17",
+      "resurfaced": [
+        {
+          "date": "2026-06-18",
+          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+        }
+      ]
+    },
+    {
+      "name": "Mixtape",
+      "first_issue": "2026-06-23-2356",
+      "first_date": "2026-06-23",
+      "resurfaced": [
+        {
+          "date": "2026-06-25",
+          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+        },
+        {
+          "date": "2026-07-07",
+          "note": "still ranking in mid-year best-of-2026 coverage; GOTY conversation ongoing"
+        }
+      ]
+    },
+    {
+      "name": "Roc Marciano — 656 (neighbor of the beast)",
+      "first_issue": "2026-06-25-0424",
+      "first_date": "2026-06-25",
+      "resurfaced": [
+        {
+          "date": "2026-06-27",
+          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+        }
+      ]
+    },
+    {
+      "name": "LACMA — Imagining Black Diasporas",
+      "first_issue": "2026-06-27-1749",
+      "first_date": "2026-06-27",
+      "resurfaced": [
+        {
+          "date": "2026-07-02",
+          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+        }
+      ]
+    },
+    {
+      "name": "By Storm — My Ghosts Go Ghost",
+      "first_issue": "2026-07-02-1054",
+      "first_date": "2026-07-02",
+      "resurfaced": [
+        {
+          "date": "2026-07-02",
+          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+        },
+        {
+          "date": "2026-07-04",
+          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+        },
+        {
+          "date": "2026-07-07",
+          "note": "My Ghosts Go Ghost holding among the year's most acclaimed underground rap releases at the half"
+        }
+      ]
+    },
+    {
+      "name": "Pan-African Architecture Biennale",
+      "first_issue": "2026-07-02-2315",
+      "first_date": "2026-07-02",
+      "resurfaced": [
+        {
+          "date": "2026-07-04",
+          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+        },
+        {
+          "date": "2026-07-04",
+          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+        }
+      ]
+    },
+    {
+      "name": "My Father's Shadow — Akinola Davies Jr",
+      "first_issue": "2026-06-23-2356",
+      "first_date": "2026-06-23",
+      "resurfaced": [
+        {
+          "date": "2026-07-06",
+          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+        }
+      ]
+    },
+    {
+      "name": "Firelei Báez",
+      "first_issue": "2026-07-04-1236",
+      "first_date": "2026-07-04",
+      "resurfaced": [
+        {
+          "date": "2026-07-06",
+          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+        }
+      ]
+    },
+    {
+      "name": "Mina the Hollower",
+      "first_issue": "2026-07-05-1227",
+      "first_date": "2026-07-05",
+      "resurfaced": [
+        {
+          "date": "2026-07-07",
+          "note": "91 Metacritic holding; cited across mid-year GOTY lists"
+        }
+      ]
+    },
+    {
+      "name": "Yaya Bey — Fidelity",
+      "first_issue": "2026-06-26-1048",
+      "first_date": "2026-06-26",
+      "resurfaced": [
+        {
+          "date": "2026-07-07",
+          "note": "Fidelity closing a three-album streak critics call one for the ages; acclaim compounding since April"
+        }
+      ]
+    },
+    {
+      "name": "Willy Chavarria",
+      "first_issue": "2026-06-23-2356",
+      "first_date": "2026-06-23",
+      "resurfaced": [
+        {
+          "date": "2026-07-07",
+          "note": "SS27 Paris men's show ranked among the week's strongest — heat caught the June call"
         }
       ]
     }
