@@ -129,6 +129,19 @@ footer .ft{font-size:10px;color:var(--mut);line-height:1.75}footer .ft b{color:#
 .xhint{margin-top:8px;font-size:9.5px;letter-spacing:.18em;color:var(--mut);opacity:.7}
 .card.open .xhint{display:none}
 .card.canon{cursor:default}
+.keylabel{font-size:10.5px;letter-spacing:.28em;color:var(--mut);margin:22px 2px 10px}
+.keybox{background:var(--panel);border:1px dashed var(--line);border-radius:10px;padding:20px 22px;font-size:13px;line-height:1.85;color:#d8d0bd}
+.keybox b{color:var(--fg)}
+.keybox .kfind{color:var(--green);font-weight:600}
+.keybox .knoise{color:var(--red);font-weight:600}
+.keytiers{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+.keytier{border:1px solid var(--line);border-radius:6px;padding:9px 14px;font-size:11px;letter-spacing:.08em;flex:1 1 200px}
+.keytier.kt-heir{border-color:#5a5446;color:#f2ead5}
+.keytier.kt-crown{border-color:#3a2f1c;color:var(--amber)}
+.keytier.kt-flame{border-color:#3a2a1c;color:#e89a5a}
+.keytier.kt-torch{border-color:#312b1c;color:#c9b27a}
+.keytier.kt-spark{border-color:#1f3a28;color:var(--green)}
+.keytier.kt-noise{border-color:#3a2020;color:var(--red)}
 </style></head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="heirwave-paths">
 <path fill="currentColor" d="M 409.22 581.23 C 431.01 544.52 457.46 513.04 486.65 480.40 C 511.81 452.27 539.03 429.05 573.06 412.87 C 601.81 399.20 632.08 394.30 663.88 398.17 C 689.29 401.26 712.87 408.73 734.62 420.58 C 735.15 420.87 735.29 420.74 735.04 420.19 C 734.71 419.46 734.21 418.47 733.54 417.21 C 720.25 392.39 703.73 370.82 681.24 354.61 C 636.99 322.71 579.95 325.48 535.13 354.36 C 525.31 360.69 515.70 367.33 506.30 374.27 C 499.25 379.47 493.66 383.00 489.51 384.85 C 455.28 400.19 433.99 368.46 423.30 341.98 C 423.19 341.71 422.80 341.72 422.70 341.99 C 409.98 376.24 393.75 408.67 374.00 439.28 C 348.81 478.32 313.17 515.01 265.54 524.57 C 247.66 528.16 229.56 528.93 211.25 526.90 C 209.30 526.69 207.31 526.54 205.26 526.45 C 204.94 526.44 204.70 526.73 204.77 527.04 C 206.96 536.19 210.42 546.40 215.17 557.66 C 215.45 558.32 215.71 558.84 215.95 559.21 C 216.21 559.63 216.67 559.89 217.34 559.98 C 251.25 564.81 284.45 559.28 315.71 545.43 C 337.28 535.87 357.51 524.03 376.41 509.90 C 399.06 492.97 421.50 475.59 443.75 457.78 C 444.11 457.49 444.62 457.88 444.43 458.30 C 434.83 479.91 422.74 500.37 408.89 519.58 C 389.16 546.93 361.45 573.94 331.71 589.22 C 304.51 603.19 275.66 608.56 245.17 605.31 C 244.79 605.27 244.53 605.69 244.74 606.01 C 252.29 617.67 261.04 628.25 271.00 637.75 C 290.86 656.69 314.53 667.52 342.02 670.25 C 392.20 675.23 434.79 647.48 471.84 617.57 C 484.00 607.75 496.19 597.99 508.13 587.89 C 545.82 556.03 589.86 526.93 636.30 510.35 C 669.33 498.56 703.53 495.45 738.92 501.02 C 764.79 505.09 787.94 514.79 808.37 530.11 C 809.24 530.76 809.52 530.57 809.21 529.53 C 801.59 504.17 787.61 483.31 767.27 466.96 C 745.17 449.19 720.08 437.92 691.99 433.13 C 650.69 426.08 609.77 436.18 574.00 457.02 C 542.68 475.27 513.69 497.96 486.12 521.39 C 461.43 542.38 436.65 563.52 409.54 581.54 C 409.34 581.67 409.10 581.44 409.22 581.23 Z"/>
@@ -139,6 +152,18 @@ footer .ft{font-size:10px;color:var(--mut);line-height:1.75}footer .ft b{color:#
 <div class="lock"><h1>MUSA CULTURAL OS</h1><div class="sub">THE ARCHIVE · THE 50 × THE INDEX</div></div>
 <div class="src" id="src">SOURCE: SNAPSHOT</div>
 </header>
+<div class="keylabel fade">THE KEY</div>
+<div class="keybox fade">
+<b>MUSA SCORE</b> (1–10) is the taste read — where it sits against the MUSA 50 canon. <b>HEAT</b> (0–100) is how loud the room is right now. The gap is the whole point: high score + low heat is a <span class="kfind">FIND</span> (taste ahead of the room); high heat + low score is <span class="knoise">NOISE</span>. <b>BENCHMARK</b> names its nearest neighbor in the 50.
+<div class="keytiers">
+<span class="keytier kt-heir">HEIRWAVE 9–10 · CANON</span>
+<span class="keytier kt-crown">CROWN 8–8.9 · MASTERY</span>
+<span class="keytier kt-flame">FLAME 7–7.9 · DEPTH</span>
+<span class="keytier kt-torch">TORCH 6–6.9 · INFLUENCE</span>
+<span class="keytier kt-spark">SPARK 5–5.9 · FRESH</span>
+<span class="keytier kt-noise">NOISE &lt;5</span>
+</div>
+</div>
 <div class="controls fade">
 <div class="searchwrap">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
