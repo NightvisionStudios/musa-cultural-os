@@ -112,9 +112,8 @@ padding:3px 8px;margin-left:auto;flex:none}
 .preview{display:flex;gap:11px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
 .preview img{width:72px;height:72px;object-fit:cover;border-radius:5px;border:1px solid var(--line);flex:none;background:#1c1a16}
 .preview .cap{font-size:10.5px;color:var(--mut);line-height:1.5;align-self:center}
-.verdict{position:absolute;top:13px;right:14px;font-size:8px;letter-spacing:.14em;color:var(--mut)}
-.verdict.pending{color:#6f6a5e}
-.verdict.hit{color:var(--green)}.verdict.miss{color:var(--red)}
+.holdbadge{position:absolute;top:13px;right:14px;font-size:8px;letter-spacing:.14em;color:var(--green);
+border:1px solid #2f3a28;border-radius:3px;padding:2px 6px}
 .empty{text-align:center;color:var(--mut);font-size:12px;letter-spacing:.1em;padding:50px 0}
 footer{margin-top:34px;border-top:1px solid var(--line);padding-top:16px;display:flex;align-items:flex-start;gap:11px}
 footer .fm{width:24px;height:24px;color:var(--mut);flex:none;margin-top:2px}
@@ -191,7 +190,7 @@ footer .ft{font-size:10px;color:var(--mut);line-height:1.75}footer .ft b{color:#
 <footer class="fade">
 <svg class="fm" viewBox="180 320 660 360"><use href="#heirwave-paths"/></svg>
 <div class="ft"><b>THE MUSA FAMILY · HEIRWAVE</b><br>
-The OS is the memory of the system: THE 50 is the canon and the gate, THE INDEX is every read made through it. Scores and heat are editorial taste reads, not metrics. Verdicts are receipts — graded only after real time passes. Royalty runs in the blood, not the crown.</div>
+The OS is the memory of the system: THE 50 is the canon and the gate, THE INDEX is every read made through it. Scores and heat are editorial taste reads, not metrics. No name runs twice — when a past call clears the gate again it moves to HOLDING, and the count is the receipt. Royalty runs in the blood, not the crown.</div>
 </footer>
 <script>
 const CONFIG = {
@@ -205,54 +204,54 @@ const INDEX_SEED = {
     { issue:"2026-06-17-0638", date:"2026-06-17", time:"06:38 ET",
       climate:"Restraint bleeding out; expressive clarity, craft, and gatekept taste taking the bid",
       entries:[
-        {name:"Ibrahim Mahama",domain:"ART",score:9.0,tier:"HEIRWAVE",heat:52,direction:"up",flags:["FIND","BLADE"],verdict:"PENDING"},
-        {name:"Álvaro Díaz — Omakase",domain:"MUSIC",score:8.1,tier:"CROWN",heat:44,direction:"up",flags:["FIND","BLADE"],verdict:"PENDING"},
-        {name:"Douglas Stuart — John of John",domain:"BOOKS",score:8.2,tier:"CROWN",heat:40,direction:"up",flags:["FIND"],verdict:"PENDING"},
-        {name:"Charli XCX — The Moment",domain:"FILM",score:6.6,tier:"TORCH",heat:78,direction:"flat",flags:["HEAT>WORK","BLADE"],verdict:"PENDING"},
-        {name:"Taste-as-Gatekeeping",domain:"SCENE",score:7.6,tier:"FLAME",heat:66,direction:"up",flags:["BLADE"],verdict:"PENDING"}
+        {name:"Ibrahim Mahama",domain:"ART",score:9.0,tier:"HEIRWAVE",heat:52,direction:"up",flags:["FIND","BLADE"]},
+        {name:"Álvaro Díaz — Omakase",domain:"MUSIC",score:8.1,tier:"CROWN",heat:44,direction:"up",flags:["FIND","BLADE"]},
+        {name:"Douglas Stuart — John of John",domain:"BOOKS",score:8.2,tier:"CROWN",heat:40,direction:"up",flags:["FIND"]},
+        {name:"Charli XCX — The Moment",domain:"FILM",score:6.6,tier:"TORCH",heat:78,direction:"flat",flags:["HEAT>WORK","BLADE"]},
+        {name:"Taste-as-Gatekeeping",domain:"SCENE",score:7.6,tier:"FLAME",heat:66,direction:"up",flags:["BLADE"]}
       ]},
     { issue:"2026-06-17-0702", date:"2026-06-17", time:"07:02 ET",
       climate:"Center is hollow; authority migrating to the edges — quiet radicals, original work over sequels, slow-built craft over spectacle",
       entries:[
-        {name:"Smiljan Radić",domain:"ARCHITECTURE",score:9.1,tier:"HEIRWAVE",heat:49,direction:"up",flags:["FIND","BLADE"],verdict:"PENDING"},
-        {name:"Industry — S4",domain:"TV",score:8.3,tier:"CROWN",heat:71,direction:"up",flags:["ROOMS_RIGHT"],verdict:"PENDING"},
-        {name:"Esoteric Ebb",domain:"GAMES",score:7.8,tier:"FLAME",heat:38,direction:"up",flags:["FIND","BLADE"],verdict:"PENDING"},
-        {name:"Isaiah Rashad — It's Been Awful",domain:"MUSIC",score:7.7,tier:"FLAME",heat:55,direction:"up",flags:["FIND"],verdict:"PENDING"},
-        {name:"New Maximalism / Archive-as-Currency",domain:"FASHION",score:7.4,tier:"FLAME",heat:64,direction:"up",flags:["BLADE"],verdict:"PENDING"}
+        {name:"Smiljan Radić",domain:"ARCHITECTURE",score:9.1,tier:"HEIRWAVE",heat:49,direction:"up",flags:["FIND","BLADE"]},
+        {name:"Industry — S4",domain:"TV",score:8.3,tier:"CROWN",heat:71,direction:"up",flags:["ROOMS_RIGHT"]},
+        {name:"Esoteric Ebb",domain:"GAMES",score:7.8,tier:"FLAME",heat:38,direction:"up",flags:["FIND","BLADE"]},
+        {name:"Isaiah Rashad — It's Been Awful",domain:"MUSIC",score:7.7,tier:"FLAME",heat:55,direction:"up",flags:["FIND"]},
+        {name:"New Maximalism / Archive-as-Currency",domain:"FASHION",score:7.4,tier:"FLAME",heat:64,direction:"up",flags:["BLADE"]}
       ]},
     { issue:"2026-06-20-0546", date:"2026-06-20", time:"05:46 ET",
       climate:"Two clocks at once — the last monocultures (World Cup, public spectacle) pull everyone in while everywhere else fragments into micro-tribes; belonging beats reach",
       entries:[
-        {name:"FIFA World Cup 2026",domain:"SPORT",score:8.4,tier:"CROWN",heat:96,direction:"up",flags:["ROOMS_RIGHT","BLADE"],verdict:"PENDING"},
-        {name:"JR — Pont Neuf",domain:"ART",score:8.6,tier:"CROWN",heat:74,direction:"up",flags:["EARNED_SPECTACLE"],verdict:"PENDING"},
-        {name:"MIKE",domain:"MUSIC",score:8.3,tier:"CROWN",heat:36,direction:"up",flags:["FIND","BLADE"],verdict:"PENDING"},
-        {name:"Tech Spec",domain:"DESIGN",score:7.5,tier:"FLAME",heat:58,direction:"up",flags:["FIND","BLADE"],verdict:"PENDING"},
-        {name:"Broadcast-to-Belonging",domain:"SCENE",score:7.7,tier:"FLAME",heat:62,direction:"up",flags:["BLADE"],verdict:"PENDING"}
+        {name:"FIFA World Cup 2026",domain:"SPORT",score:8.4,tier:"CROWN",heat:96,direction:"up",flags:["ROOMS_RIGHT","BLADE"]},
+        {name:"JR — Pont Neuf",domain:"ART",score:8.6,tier:"CROWN",heat:74,direction:"up",flags:["EARNED_SPECTACLE"]},
+        {name:"MIKE",domain:"MUSIC",score:8.3,tier:"CROWN",heat:36,direction:"up",flags:["FIND","BLADE"]},
+        {name:"Tech Spec",domain:"DESIGN",score:7.5,tier:"FLAME",heat:58,direction:"up",flags:["FIND","BLADE"]},
+        {name:"Broadcast-to-Belonging",domain:"SCENE",score:7.7,tier:"FLAME",heat:62,direction:"up",flags:["BLADE"]}
       ]},
     { issue:"2026-07-06-0834", date:"2026-07-06", time:"08:34 ET",
       climate:"Stadium spectacle is loud enough to feel like the whole story, but the real export is coming from cities the algorithm still treats as periphery — Lagos chief among them",
       entries:[
-        {name:"My Father's Shadow — Akinola Davies Jr.",domain:"FILM",score:9.1,tier:"HEIRWAVE",heat:58,direction:"up",flags:["ROOMS_RIGHT"],verdict:"PENDING",
+        {name:"My Father's Shadow — Akinola Davies Jr.",domain:"FILM",score:9.1,tier:"HEIRWAVE",heat:58,direction:"up",flags:["ROOMS_RIGHT"],
          url:"https://mubi.com/en/us/films/my-father-s-shadow",
          image:"https://images.mubicdn.net/images/film/410994/cache-1050258-1745503807/image-w1280.jpg",
          read:"First Nigerian film ever in Cannes' Official Selection, a Caméra d'Or special mention, a BAFTA for Best Debut — a single day in 1993 Lagos, told small and specific, earning every inch of the attention now landing on it. This isn't heat outrunning the work; it's the room finally catching up to it.",
          benchmark:"No direct neighbor yet on the 50 — closest in spirit to the diasporic-storytelling thread running through Denim Tears and One54."},
-        {name:"Firelei Báez — mid-career survey",domain:"ART",score:8.8,tier:"CROWN",heat:45,direction:"up",flags:["FIND"],verdict:"PENDING",
+        {name:"Firelei Báez — mid-career survey",domain:"ART",score:8.8,tier:"CROWN",heat:45,direction:"up",flags:["FIND"],
          url:"https://visit.mcachicago.org/exhibitions/firelei-baez-2/",
          image:"https://visit.mcachicago.org/wp-content/uploads/2025/10/85_FB_Untitled-Les-tables-de-geographie-reduites-en-un-jeu-de-cartes.webp",
          read:"Two decades of drawings, paintings, and installations built from folklore, fantasy, and Caribbean diasporic myth, now touring ICA Boston to MCA Chicago — museum-earned, not algorithm-earned.",
          benchmark:"Mason Prince — same craft-first, story-driven register, different medium."},
-        {name:"Alewya — \"Zero\"",domain:"MUSIC",score:8.6,tier:"CROWN",heat:34,direction:"up",flags:["FIND","BLADE"],verdict:"PENDING",
+        {name:"Alewya — \"Zero\"",domain:"MUSIC",score:8.6,tier:"CROWN",heat:34,direction:"up",flags:["FIND","BLADE"],
          url:"https://alewya.bandcamp.com/album/zero-1",
          image:"https://f4.bcbits.com/img/a3150029086_7.jpg",
          read:"London underground fused with Egyptian and Ethiopian rhythm, critics reaching for M.I.A.'s Kala as the last time diasporic music re-drew the map this confidently. No feature run, no rollout theater.",
          benchmark:"Jim Legxacy — same instinct to let root and lineage do the talking over reach."},
-        {name:"WAFFLESNCREAM",domain:"FASHION",score:8.3,tier:"CROWN",heat:30,direction:"up",flags:["FIND","BLADE"],verdict:"PENDING",
+        {name:"WAFFLESNCREAM",domain:"FASHION",score:8.3,tier:"CROWN",heat:30,direction:"up",flags:["FIND","BLADE"],
          url:"https://www.wafflesncream.com/",
          image:"https://www.wafflesncream.com/cdn/shop/files/lookbook-01_grande.jpg?v=1743681553",
          read:"A Lagos skate shop since 2012 that never tried to be a brand first — it raised a scene instead, the one that produced Olaolu Slawn and the Motherlan collective. Community before commerce.",
          benchmark:"Corteiz — cult-built, community-first, allergic to logo-as-content."},
-        {name:"Shihara — Yuta Ishihara",domain:"DESIGN",score:7.6,tier:"FLAME",heat:28,direction:"flat",flags:["FIND"],verdict:"PENDING",
+        {name:"Shihara — Yuta Ishihara",domain:"DESIGN",score:7.6,tier:"FLAME",heat:28,direction:"flat",flags:["FIND"],
          url:"https://shihara.com/",
          image:"https://shihara.com/cdn/shop/files/ogp.png?v=1738219458",
          read:"Tokyo jewelry built on \"reconstructing essential functions\" — 18ct gold pared down until the idea is the only ornament left. Quiet craft authority that has never needed a drop calendar.",
@@ -331,14 +330,17 @@ function flagClass(f){
 }
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
 
+function baseName(n){n=String(n).split(" — ")[0].trim().replace(/\.$/,"");return n.indexOf("Pan-African")===0?"Pan-African Biennale":n;}
 function build(){
   RECORDS = [];
+  const HOLD = {};
+  (LEDGER.holding||[]).forEach(h=>{ HOLD[baseName(h.name)] = (h.resurfaced||[]).length; });
   (LEDGER.issues||[]).forEach(iss=>{
     (iss.entries||[]).forEach(e=>{
       RECORDS.push({
         type:"index", name:e.name, domain:e.domain||"", score:e.score,
         tier:e.tier||"", heat:e.heat||0, direction:e.direction||"flat",
-        flags:e.flags||[], verdict:e.verdict||"PENDING",
+        flags:e.flags||[], holding:HOLD[baseName(e.name)]||0,
         date:iss.date, time:iss.time||"", climate:iss.climate||"",
         find:(e.flags||[]).some(f=>f.toUpperCase().includes("FIND")),
         gap:Math.round((e.score*10)-(e.heat||0)),
@@ -368,7 +370,7 @@ function matches(r){
     if(c.kind==="lane" && !(r.type==="canon" && r.lane===c.val)) return false;
   }
   if(state.q){
-    const hay=[r.name,r.domain,r.lane,r.tier,r.climate,r.read,r.benchmark,(r.flags||[]).join(" "),r.verdict,r.type]
+    const hay=[r.name,r.domain,r.lane,r.tier,r.climate,r.read,r.benchmark,(r.flags||[]).join(" "),(r.holding?"holding":""),r.type]
       .filter(Boolean).join(" ").toLowerCase();
     if(!hay.includes(state.q.toLowerCase())) return false;
   }
@@ -391,11 +393,11 @@ function cardIndex(r){
   const tc=TIER_CLASS[r.tier]||"";
   const d=DIR[r.direction]||DIR.flat;
   const flags=(r.flags||[]).map(f=>`<span class="flag ${flagClass(f)}">${esc(f)}</span>`).join("");
-  const vClass=r.verdict==="PENDING"?"pending":(/HIT|RIGHT|✓/i.test(r.verdict)?"hit":(/MISS|WRONG|✕/i.test(r.verdict)?"miss":"pending"));
+  const holdHtml = r.holding ? `<div class="holdbadge">HOLDING ×${r.holding}</div>` : "";
   const nameHtml = r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name);
   const previewHtml = r.image ? `<div class="preview"><img src="${esc(r.image)}" alt="${esc(r.name)}" loading="lazy"><span class="cap">${esc(r.name)}</span></div>` : "";
   return `<div class="card ${r.find?"find":""}">
-    <div class="verdict ${vClass}">${esc(r.verdict)}</div>
+    ${holdHtml}
     <div class="ctop">
       <span class="kind k-idx">INDEX</span>
       <span class="nm">${nameHtml}</span>
@@ -455,8 +457,9 @@ function render(){
   const idxTotal=RECORDS.filter(r=>r.type==="index").length;
   const canTotal=RECORDS.filter(r=>r.type==="canon").length;
   const issues=(LEDGER.issues||[]).length;
+  const holdTotal=(LEDGER.holding||[]).length;
   document.getElementById("stat").innerHTML =
-    `<b>${shown.length}</b> shown · <span class="a">${idxTotal}</span> index reads across <b>${issues}</b> issues · <span class="a">${canTotal}</span> on the 50`;
+    `<b>${shown.length}</b> shown · <span class="a">${idxTotal}</span> index reads across <b>${issues}</b> issues · <span class="a">${holdTotal}</span> holding · <span class="a">${canTotal}</span> on the 50`;
   const res=document.getElementById("results");
   if(!shown.length){res.innerHTML=`<div class="empty">— nothing in the archive matches —</div>`;return;}
   res.innerHTML=shown.map((r,i)=>{
