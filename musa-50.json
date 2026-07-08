@@ -3,7 +3,16 @@
     "source": "50.themusafamily.com",
     "status": "LIVE — full real list re-captured 2026-07-04 from the deployed index.html LIST array.",
     "updated": "2026-07-04",
-    "how_to_update": "When 50.themusafamily.com changes, replace `entries` with the current LIST array (name + url). Re-derive lanes. Keep `_dna` in sync with the list's actual energy."
+    "how_to_update": "When 50.themusafamily.com changes, replace `entries` with the current LIST array (name + url). Re-derive lanes. Keep `_dna` in sync with the list's actual energy.",
+    "alumni_rule": "The 50 has memory. On every roster swap, BEFORE removing a name, log the outgoing name to the top-level `alumni` array. Never let a rotated name vanish — the gate keeps a record. Append-only, newest last. This is what makes the 50 read as curated, not edited.",
+    "alumni_schema": {
+      "name": "exact name as it sat on the 50",
+      "url": "its official/primary url, same as when it was live",
+      "lane": "the lane it held — one of the top-level `lanes` values",
+      "tenure_in": "YYYY-MM-DD it entered the 50 (best-known; prefix ~ if approximate)",
+      "tenure_out": "YYYY-MM-DD it rotated off",
+      "why": "one line — why it rotated (replaced by X / lane refresh / drifted from DNA / graduated)"
+    }
   },
   "_dna": {
     "what_it_is": "Not a list of what's biggest — a list of what's worth attention through Nightvision's lens. The 50 is the taste gate, the aesthetic reference, and the inspiration for THE INDEX. Every entry on a board must rhyme with this DNA or it does not make the board, no matter how much heat it has.",
@@ -294,5 +303,6 @@
       "url": "https://www.instagram.com/tamera/?hl=en",
       "lane": "heritage-craft-product"
     }
-  ]
+  ],
+  "alumni": []
 }
