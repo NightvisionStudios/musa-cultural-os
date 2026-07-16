@@ -1,1294 +1,1391 @@
 {
-  "_meta": {
-    "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
-    "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-07-07"
+ "_meta": {
+  "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
+  "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
+  "updated": "2026-07-15"
+ },
+ "issues": [
+  {
+   "issue": "2026-06-17-0638",
+   "date": "2026-06-17",
+   "time": "06:38 ET",
+   "climate": "Restraint bleeding out; expressive clarity, craft, and gatekept taste taking the bid",
+   "entries": [
+    {
+     "name": "Ibrahim Mahama",
+     "domain": "ART",
+     "score": 9.0,
+     "tier": "HEIRWAVE",
+     "heat": 52,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "read": "Canon-tier installation work, #1 on the ArtReview Power 100, still under-clocked in U.S. feeds.",
+     "url": "https://www.whitecube.com/artists/ibrahim-mahama"
+    },
+    {
+     "name": "Álvaro Díaz — Omakase",
+     "domain": "MUSIC",
+     "score": 8.1,
+     "tier": "CROWN",
+     "heat": 44,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "read": "PR rap auteur the English-speaking room hasn't caught up to yet.",
+     "url": "https://music.apple.com/us/album/omakase/6771082594"
+    },
+    {
+     "name": "Douglas Stuart — John of John",
+     "domain": "BOOKS",
+     "score": 8.2,
+     "tier": "CROWN",
+     "heat": 40,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "read": "Shuggie Bain Booker winner returns, Hebrides-set; craft over noise, quiet heat is the tell.",
+     "benchmark": "literary-craft lane of the 50",
+     "url": "https://groveatlantic.com/book/john-of-john/"
+    },
+    {
+     "name": "Charli XCX — The Moment",
+     "domain": "FILM",
+     "score": 6.6,
+     "tier": "TORCH",
+     "heat": 78,
+     "direction": "flat",
+     "flags": [
+      "HEAT>WORK",
+      "BLADE"
+     ],
+     "read": "Real cultural object, but attention runs ahead of the work; influence-tier not depth-tier. Watch if heat converts or evaporates.",
+     "benchmark": "orbits the pop-culture-engine lane without entering",
+     "url": "https://en.wikipedia.org/wiki/The_Moment_(2026_film)"
+    },
+    {
+     "name": "Taste-as-Gatekeeping",
+     "domain": "SCENE",
+     "score": 7.6,
+     "tier": "FLAME",
+     "heat": 66,
+     "direction": "up",
+     "flags": [
+      "BLADE"
+     ],
+     "read": "The pivot from quiet luxury to expressive clarity and taste-as-currency; the climate the board sits inside — and the premise The Index runs on.",
+     "benchmark": "the operating principle behind the 50, not a neighbor in it"
+    }
+   ]
   },
-  "issues": [
+  {
+   "issue": "2026-06-17-0702",
+   "date": "2026-06-17",
+   "time": "07:02 ET",
+   "climate": "Center is hollow; authority migrating to the edges — quiet radicals, original work over sequels, slow-built craft over spectacle",
+   "entries": [
     {
-      "issue": "2026-06-17-0638",
-      "date": "2026-06-17",
-      "time": "06:38 ET",
-      "climate": "Restraint bleeding out; expressive clarity, craft, and gatekept taste taking the bid",
-      "entries": [
-        {
-          "name": "Ibrahim Mahama",
-          "domain": "ART",
-          "score": 9.0,
-          "tier": "HEIRWAVE",
-          "heat": 52,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "read": "Canon-tier installation work, #1 on the ArtReview Power 100, still under-clocked in U.S. feeds.",
-          "url": "https://www.whitecube.com/artists/ibrahim-mahama"
-        },
-        {
-          "name": "Álvaro Díaz — Omakase",
-          "domain": "MUSIC",
-          "score": 8.1,
-          "tier": "CROWN",
-          "heat": 44,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "read": "PR rap auteur the English-speaking room hasn't caught up to yet.",
-          "url": "https://music.apple.com/us/album/omakase/6771082594"
-        },
-        {
-          "name": "Douglas Stuart — John of John",
-          "domain": "BOOKS",
-          "score": 8.2,
-          "tier": "CROWN",
-          "heat": 40,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ],
-          "read": "Shuggie Bain Booker winner returns, Hebrides-set; craft over noise, quiet heat is the tell.",
-          "benchmark": "literary-craft lane of the 50",
-          "url": "https://groveatlantic.com/book/john-of-john/"
-        },
-        {
-          "name": "Charli XCX — The Moment",
-          "domain": "FILM",
-          "score": 6.6,
-          "tier": "TORCH",
-          "heat": 78,
-          "direction": "flat",
-          "flags": [
-            "HEAT>WORK",
-            "BLADE"
-          ],
-          "read": "Real cultural object, but attention runs ahead of the work; influence-tier not depth-tier. Watch if heat converts or evaporates.",
-          "benchmark": "orbits the pop-culture-engine lane without entering",
-          "url": "https://en.wikipedia.org/wiki/The_Moment_(2026_film)"
-        },
-        {
-          "name": "Taste-as-Gatekeeping",
-          "domain": "SCENE",
-          "score": 7.6,
-          "tier": "FLAME",
-          "heat": 66,
-          "direction": "up",
-          "flags": [
-            "BLADE"
-          ],
-          "read": "The pivot from quiet luxury to expressive clarity and taste-as-currency; the climate the board sits inside — and the premise The Index runs on.",
-          "benchmark": "the operating principle behind the 50, not a neighbor in it"
-        }
-      ]
+     "name": "Smiljan Radić",
+     "domain": "ARCHITECTURE",
+     "score": 9.1,
+     "tier": "HEIRWAVE",
+     "heat": 49,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "read": "The 2026 Pritzker, architecture's quietest radical. Blade: the prize sits under an Epstein-linked cloud; the work transcends the institution stamping it.",
+     "url": "https://www.pritzkerprize.com/laureates/smiljan-radic-clarke"
     },
     {
-      "issue": "2026-06-17-0702",
-      "date": "2026-06-17",
-      "time": "07:02 ET",
-      "climate": "Center is hollow; authority migrating to the edges — quiet radicals, original work over sequels, slow-built craft over spectacle",
-      "entries": [
-        {
-          "name": "Smiljan Radić",
-          "domain": "ARCHITECTURE",
-          "score": 9.1,
-          "tier": "HEIRWAVE",
-          "heat": 49,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "read": "The 2026 Pritzker, architecture's quietest radical. Blade: the prize sits under an Epstein-linked cloud; the work transcends the institution stamping it.",
-          "url": "https://www.pritzkerprize.com/laureates/smiljan-radic-clarke"
-        },
-        {
-          "name": "Industry — S4",
-          "domain": "TV",
-          "score": 8.3,
-          "tier": "CROWN",
-          "heat": 71,
-          "direction": "up",
-          "flags": [
-            "ROOMS_RIGHT"
-          ],
-          "read": "Not a hidden gem — the honest counter to a find. Heat catching up to long-proven quality.",
-          "url": "https://www.hbomax.com/shows/industry/9e51c88c-7a28-40ee-8269-e16572e02a07"
-        },
-        {
-          "name": "Esoteric Ebb",
-          "domain": "GAMES",
-          "score": 7.8,
-          "tier": "FLAME",
-          "heat": 38,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "read": "Indie Disco Elysium-lineage CRPG critics say outclasses its forebear in places; ideas-first, low mainstream heat.",
-          "benchmark": "the 50's ideas / AI-tools lane — first CRPG slot",
-          "url": "https://christofferbodegard.itch.io/esoteric-ebb"
-        },
-        {
-          "name": "Isaiah Rashad — It's Been Awful",
-          "domain": "MUSIC",
-          "score": 7.7,
-          "tier": "FLAME",
-          "heat": 55,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ],
-          "read": "TDE auteur ends 5-yr hiatus and lands it; comeback-era depth fitting the climate, heat below the score.",
-          "benchmark": "underground-rap lane — Kenny Mason, Starlito, Jim Legxacy",
-          "graded": "2026-06-27",
-          "note": "HELD — acclaimed release, active tour confirmed the taste read.",
-          "url": "https://itsbeenawful.com/"
-        },
-        {
-          "name": "New Maximalism / Archive-as-Currency",
-          "domain": "FASHION",
-          "score": 7.4,
-          "tier": "FLAME",
-          "heat": 64,
-          "direction": "up",
-          "flags": [
-            "BLADE"
-          ],
-          "read": "Full-cycle pivot off quiet luxury; layered, referential expression with archive/resale as the real flex — access over logo.",
-          "benchmark": "the aesthetic shift the 50's design desks track"
-        }
-      ]
+     "name": "Industry — S4",
+     "domain": "TV",
+     "score": 8.3,
+     "tier": "CROWN",
+     "heat": 71,
+     "direction": "up",
+     "flags": [
+      "ROOMS_RIGHT"
+     ],
+     "read": "Not a hidden gem — the honest counter to a find. Heat catching up to long-proven quality.",
+     "url": "https://www.hbomax.com/shows/industry/9e51c88c-7a28-40ee-8269-e16572e02a07"
     },
     {
-      "issue": "2026-06-18-2236",
-      "date": "2026-06-18",
-      "time": "22:36 ET",
-      "recovered": true,
-      "climate": "Recovered pull — original climate copy not preserved; board led by a near-zero-heat flagship FIND with a disciplined NOISE bear call for honesty",
-      "entries": [
-        {
-          "name": "Schrödinger's Call",
-          "domain": "GAMES",
-          "score": 8.4,
-          "tier": "CROWN",
-          "heat": 14,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ],
-          "read": "The flagship FIND of the board — HEAT 14, the widest taste-to-room gap logged to date.",
-          "url": "https://store.steampowered.com/app/2090390/Schrdingers_Call/"
-        },
-        {
-          "name": "Álvaro Díaz — Omakase",
-          "domain": "MUSIC",
-          "score": 8.1,
-          "tier": "CROWN",
-          "heat": 0,
-          "direction": "flat",
-          "flags": [],
-          "heat_recovered": false,
-          "url": "https://music.apple.com/us/album/omakase/6771082594"
-        },
-        {
-          "name": "Industry S4",
-          "domain": "TV",
-          "score": 8.0,
-          "tier": "CROWN",
-          "heat": 0,
-          "direction": "flat",
-          "flags": [
-            "BLADE"
-          ],
-          "heat_recovered": false,
-          "url": "https://www.hbomax.com/shows/industry/9e51c88c-7a28-40ee-8269-e16572e02a07"
-        },
-        {
-          "name": "Technical Mono / Anti-Design",
-          "domain": "DESIGN",
-          "score": 7.6,
-          "tier": "FLAME",
-          "heat": 0,
-          "direction": "flat",
-          "flags": [
-            "BLADE"
-          ],
-          "heat_recovered": false
-        },
-        {
-          "name": "The 2016 Throwback",
-          "domain": "SCENE",
-          "score": 3.9,
-          "tier": "NOISE",
-          "heat": 0,
-          "direction": "down",
-          "flags": [],
-          "read": "The disciplined bear call — nostalgia-cycle heat with nothing underneath it.",
-          "heat_recovered": false
-        }
-      ]
+     "name": "Esoteric Ebb",
+     "domain": "GAMES",
+     "score": 7.8,
+     "tier": "FLAME",
+     "heat": 38,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "read": "Indie Disco Elysium-lineage CRPG critics say outclasses its forebear in places; ideas-first, low mainstream heat.",
+     "benchmark": "the 50's ideas / AI-tools lane — first CRPG slot",
+     "url": "https://christofferbodegard.itch.io/esoteric-ebb"
     },
     {
-      "issue": "2026-06-20-0546",
-      "date": "2026-06-20",
-      "time": "05:46 ET",
-      "climate": "Two clocks at once — the last monocultures (World Cup, public spectacle) pull everyone in while everywhere else fragments into micro-tribes; belonging beats reach",
-      "entries": [
-        {
-          "name": "FIFA World Cup 2026",
-          "domain": "SPORT",
-          "score": 8.4,
-          "tier": "CROWN",
-          "heat": 96,
-          "direction": "up",
-          "flags": [
-            "ROOMS_RIGHT",
-            "BLADE"
-          ],
-          "graded": "2026-06-27",
-          "note": "HELD — the monoculture-vs-fragmentation read held; heat stayed maxed. Room was correct.",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026"
-        },
-        {
-          "name": "JR — Pont Neuf",
-          "domain": "ART",
-          "score": 8.6,
-          "tier": "CROWN",
-          "heat": 74,
-          "direction": "up",
-          "flags": [
-            "EARNED_SPECTACLE"
-          ],
-          "url": "https://www.jr-art.net/projects/la-caverne-du-pont-neuf"
-        },
-        {
-          "name": "MIKE",
-          "domain": "MUSIC",
-          "score": 8.3,
-          "tier": "CROWN",
-          "heat": 36,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "graded": "2026-06-27",
-          "heat_now": 42,
-          "note": "EARLY — still the critics' underground anchor; the year's 'breadth over blockbuster' read is validating his lane. Right call, room hasn't fully paid it — heat creeping, not spiking.",
-          "url": "https://mikelikesrap.bandcamp.com/"
-        },
-        {
-          "name": "Tech Spec",
-          "domain": "DESIGN",
-          "score": 7.5,
-          "tier": "FLAME",
-          "heat": 58,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ]
-        },
-        {
-          "name": "Broadcast-to-Belonging",
-          "domain": "SCENE",
-          "score": 7.7,
-          "tier": "FLAME",
-          "heat": 62,
-          "direction": "up",
-          "flags": [
-            "BLADE"
-          ]
-        }
-      ]
+     "name": "Isaiah Rashad — It's Been Awful",
+     "domain": "MUSIC",
+     "score": 7.7,
+     "tier": "FLAME",
+     "heat": 55,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "read": "TDE auteur ends 5-yr hiatus and lands it; comeback-era depth fitting the climate, heat below the score.",
+     "benchmark": "underground-rap lane — Kenny Mason, Starlito, Jim Legxacy",
+     "graded": "2026-06-27",
+     "note": "HELD — acclaimed release, active tour confirmed the taste read.",
+     "url": "https://itsbeenawful.com/"
     },
     {
-      "issue": "2026-06-23-2356",
-      "date": "2026-06-23",
-      "time": "23:56 ET",
-      "climate": "Field tilting from broadcast to transmission — freshest signal in what you sit with or get let into: diaspora auteurs, cassette-soul, reading rooms, thesis-driven design; loud center running on fumes",
-      "entries": [
-        {
-          "name": "My Father's Shadow — Akinola Davies Jr",
-          "domain": "FILM",
-          "score": 8.6,
-          "tier": "CROWN",
-          "heat": 45,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "benchmark": "One54",
-          "read": "Akinola Davies Jr's Cannes-competing British-Nollywood debut. Diaspora at the root, festival-grade. The clearest FIND on the board.",
-          "url": "https://mubi.com/en/us/films/my-father-s-shadow"
-        },
-        {
-          "name": "iAMLYRIC",
-          "domain": "MUSIC",
-          "score": 8.0,
-          "tier": "CROWN",
-          "heat": 36,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ],
-          "benchmark": "Kenny Mason",
-          "read": "Houston, Punch co-signed, starting a book club. Taste miles ahead of the stream count.",
-          "url": "https://www.iamlyricofficial.com/"
-        },
-        {
-          "name": "Mixtape",
-          "domain": "GAMES",
-          "score": 8.2,
-          "tier": "CROWN",
-          "heat": 58,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "benchmark": "Mixtape Classics",
-          "read": "Cassette-soul made playable; the mixtape's original curation instinct, now in your hands.",
-          "url": "https://store.steampowered.com/app/2582320/Mixtape/"
-        },
-        {
-          "name": "Willy Chavarria",
-          "domain": "FASHION",
-          "score": 7.8,
-          "tier": "FLAME",
-          "heat": 80,
-          "direction": "up",
-          "flags": [
-            "ROOMS_RIGHT",
-            "BLADE"
-          ],
-          "benchmark": "Joe Freshgoods / Denim Tears",
-          "read": "The honest counter-read. adidas/World Cup made him loud, and the thesis earned it. Cleared the gate despite the mega-collab anti-pattern because the work carries a real argument — which is exactly why it's ROOM'S RIGHT, not a find.",
-          "url": "https://willychavarria.com/"
-        },
-        {
-          "name": "The Reading Room",
-          "domain": "SCENE",
-          "score": 7.5,
-          "tier": "FLAME",
-          "heat": 63,
-          "direction": "up",
-          "flags": [
-            "BLADE"
-          ],
-          "benchmark": "Free Game / Players Magazine",
-          "read": "Book-club-as-venue, gatekept by attention not money. Transmission gone physical."
-        }
-      ]
-    },
-    {
-      "issue": "2026-06-25-0424",
-      "date": "2026-06-25",
-      "time": "04:24 ET",
-      "climate": "Memory and lineage over scale — diasporic curation, sample-built rap, analog craft, mixtape nostalgia all take the bid while sequel-logic and hype-without-thesis go hollow; depth that remembers beats reach that forgets",
-      "entries": [
-        {
-          "name": "Roc Marciano — 656 (neighbor of the beast)",
-          "domain": "MUSIC",
-          "score": 8.7,
-          "tier": "CROWN",
-          "heat": 38,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "benchmark": "underground-rap lane head (Chris Crack / Starlito / Kenny Mason)",
-          "read": "Self-cut loops, 32 minutes, the luxury-grime blueprint sharpened. Moved rap forward while the scoreboard argued. Arguably enters the 50.",
-          "url": "https://music.apple.com/us/album/656/1870984094"
-        },
-        {
-          "name": "Barbican — Pan-African Survey",
-          "domain": "ART",
-          "score": 8.2,
-          "tier": "CROWN",
-          "heat": 55,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "benchmark": "One54 / editorial-taste",
-          "read": "Curation-as-gatekeeping, diaspora as the center of gravity, cross-cutting art/sound/design/politics at once.",
-          "url": "https://www.barbican.org.uk/whats-on/2026/event/project-a-black-planet-the-art-and-culture-of-panafrica"
-        },
-        {
-          "name": "Mixtape",
-          "domain": "GAMES",
-          "score": 7.6,
-          "tier": "FLAME",
-          "heat": 60,
-          "direction": "up",
-          "flags": [
-            "ROOMS_RIGHT"
-          ],
-          "benchmark": "Mixtape Classics",
-          "read": "The honest counter-read. Built on the exact mixtape feeling MUSA is, and the room earned its heat this time.",
-          "url": "https://store.steampowered.com/app/2582320/Mixtape/"
-        },
-        {
-          "name": "Diaspora-as-Engine / Caracas Merch",
-          "domain": "FASHION",
-          "score": 7.4,
-          "tier": "FLAME",
-          "heat": 42,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "EARLY"
-          ],
-          "benchmark": "Corteiz / Barriers Worldwide / Denim Tears",
-          "read": "Belonging outgrowing logos; small on the named brand, real on the engine."
-        },
-        {
-          "name": "Mark Jenkin — Cornish-Trilogy Closer",
-          "domain": "FILM",
-          "score": 8.0,
-          "tier": "CROWN",
-          "heat": 34,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "benchmark": "CD Masterizzato (cross-lane energy — analog craft as stance)",
-          "read": "Hand-cranked 16mm, the analog grain is the point; arthouse-quiet, which is the gap.",
-          "url": "https://en.wikipedia.org/wiki/Rose_of_Nevada"
-        }
-      ]
-    },
-    {
-      "issue": "2026-06-26-1048",
-      "date": "2026-06-26",
-      "time": "10:48 ET",
-      "climate": "Diaspora as center of gravity — transmission over spectacle",
-      "recovered": true,
-      "entries": [
-        {
-          "name": "Project a Black Planet",
-          "domain": "ART",
-          "score": 9.0,
-          "tier": "HEIRWAVE",
-          "heat": 0,
-          "direction": "up",
-          "flags": [
-            "ROOMS_RIGHT"
-          ],
-          "heat_recovered": false,
-          "url": "https://www.barbican.org.uk/whats-on/2026/event/project-a-black-planet-the-art-and-culture-of-panafrica"
-        },
-        {
-          "name": "Yaya Bey — Fidelity",
-          "domain": "MUSIC",
-          "score": 8.3,
-          "tier": "CROWN",
-          "heat": 0,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ],
-          "heat_recovered": false,
-          "url": "https://yayabey.bandcamp.com/album/fidelity"
-        },
-        {
-          "name": "Drunken Noodles",
-          "domain": "FILM",
-          "score": 7.6,
-          "tier": "FLAME",
-          "heat": 0,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ],
-          "heat_recovered": false,
-          "url": "https://mubi.com/en/us/films/drunken-noodles"
-        },
-        {
-          "name": "Willy Chavarria × adidas",
-          "domain": "FASHION",
-          "score": 6.5,
-          "tier": "TORCH",
-          "heat": 0,
-          "direction": "up",
-          "flags": [
-            "HEAT>WORK"
-          ],
-          "heat_recovered": false,
-          "url": "https://willychavarria.com/collections/adidas"
-        },
-        {
-          "name": "T Clark — Debut Collection",
-          "domain": "BOOKS",
-          "score": 7.4,
-          "tier": "FLAME",
-          "heat": 0,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ],
-          "heat_recovered": false,
-          "url": "http://www.tia-clark.com/"
-        }
-      ]
-    },
-    {
-      "issue": "2026-06-27-1749",
-      "date": "2026-06-27",
-      "time": "17:49 ET",
-      "climate": "Center still draws the crowd (World Cup, the blockbuster scoreboard) but authority slid to the edge — diasporic auteurs and curators rebuilding the canon from the margins inward",
-      "entries": [
-        {
-          "name": "Grace Wales Bonner → Hermès",
-          "domain": "FASHION",
-          "score": 8.7,
-          "tier": "CROWN",
-          "heat": 61,
-          "direction": "up",
-          "flags": [
-            "ROOMS_RIGHT",
-            "BLADE"
-          ],
-          "benchmark": "Denim Tears / A Ma Maniere",
-          "url": "https://finance.hermes.com/en/publications/grace-wales-bonner-joins-hermes-creative-director-mens-ready-wear/"
-        },
-        {
-          "name": "Roc Marciano — 656",
-          "domain": "MUSIC",
-          "score": 8.6,
-          "tier": "CROWN",
-          "heat": 34,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "benchmark": "Chris Crack / Starlito",
-          "url": "https://music.apple.com/us/album/656/1870984094"
-        },
-        {
-          "name": "LACMA — Imagining Black Diasporas",
-          "domain": "ART",
-          "score": 8.2,
-          "tier": "CROWN",
-          "heat": 40,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ],
-          "benchmark": "One54 / Monocle",
-          "url": "https://www.lacma.org/art/exhibition/imagining-black-diasporas-21st-century-art-and-poetics"
-        },
-        {
-          "name": "Cape Verde — World Cup Run",
-          "domain": "SPORT",
-          "score": 8.0,
-          "tier": "CROWN",
-          "heat": 58,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "benchmark": "One54",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams/cabo-verde/team-news"
-        },
-        {
-          "name": "Breadth Over Blockbuster",
-          "domain": "IDEAS",
-          "score": 7.6,
-          "tier": "FLAME",
-          "heat": 55,
-          "direction": "up",
-          "flags": [
-            "BLADE"
-          ],
-          "benchmark": "Free Game / Monocle"
-        }
-      ]
-    },
-    {
-      "issue": "2026-07-02-1054",
-      "date": "2026-07-02",
-      "time": "10:54 ET",
-      "climate": "",
-      "recovered": true,
-      "entries": [
-        {
-          "name": "By Storm — My Ghosts Go Ghost",
-          "domain": "MUSIC",
-          "score": 8.4,
-          "tier": "CROWN",
-          "heat": 0,
-          "direction": "up",
-          "flags": [],
-          "heat_recovered": false,
-          "read": "Ex-Injury Reserve grief record, sample-literate, room hasn't fully caught up.",
-          "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost"
-        },
-        {
-          "name": "Adidas × Wales Bonner SS26",
-          "domain": "FASHION",
-          "score": 8.7,
-          "tier": "CROWN",
-          "heat": 0,
-          "direction": "up",
-          "flags": [],
-          "heat_recovered": false,
-          "read": "The one honest case where the heat is earned, not overdue.",
-          "url": "https://www.adidas.com/us/wales_bonner"
-        },
-        {
-          "name": "LACMA — Imagining Black Diasporas",
-          "domain": "ART",
-          "score": 8.9,
-          "tier": "CROWN",
-          "heat": 0,
-          "direction": "up",
-          "flags": [],
-          "heat_recovered": false,
-          "read": "60 artists, rewrites the Pan-African canon past the Black Atlantic.",
-          "url": "https://www.lacma.org/art/exhibition/imagining-black-diasporas-21st-century-art-and-poetics"
-        },
-        {
-          "name": "Splice",
-          "domain": "CREATOR-AI",
-          "score": 7.8,
-          "tier": "FLAME",
-          "heat": 0,
-          "direction": "up",
-          "flags": [],
-          "heat_recovered": false,
-          "read": "Sample culture with the royalty math finally built in.",
-          "url": "https://splice.com/innovation"
-        },
-        {
-          "name": "LOVING ROOM",
-          "domain": "EDITORIAL",
-          "score": 7.6,
-          "tier": "FLAME",
-          "heat": 0,
-          "direction": "up",
-          "flags": [],
-          "heat_recovered": false,
-          "read": "Diaspora books + salon — no algorithm feeds you this shelf; lowest heat on the board."
-        }
-      ]
-    },
-    {
-      "issue": "2026-07-02-2315",
-      "date": "2026-07-02",
-      "time": "23:15 ET",
-      "climate": "Diasporic authority moving from commentary to infrastructure — a continental biennale, a repatriation heist game, a museum survey of Black design — while streetwear cycles the same collab loop and AI-music floods the middle",
-      "entries": [
-        {
-          "name": "Pan-African Architecture Biennale",
-          "domain": "ARCHITECTURE",
-          "score": 9.0,
-          "tier": "HEIRWAVE",
-          "heat": 45,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "url": "https://www.panafricanbiennale.org/"
-        },
-        {
-          "name": "Relooted",
-          "domain": "GAMES",
-          "score": 8.2,
-          "tier": "CROWN",
-          "heat": 52,
-          "direction": "up",
-          "flags": [
-            "ROOMS_RIGHT",
-            "BLADE"
-          ],
-          "url": "https://store.steampowered.com/app/3255890/Relooted/"
-        },
-        {
-          "name": "By Storm — My Ghosts Go Ghost",
-          "domain": "MUSIC",
-          "score": 8.4,
-          "tier": "CROWN",
-          "heat": 33,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost"
-        },
-        {
-          "name": "The Nue Black Aesthetic",
-          "domain": "DESIGN",
-          "score": 8.6,
-          "tier": "CROWN",
-          "heat": 41,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ]
-        },
-        {
-          "name": "House of Aama — Folk Grounds",
-          "domain": "FASHION",
-          "score": 7.8,
-          "tier": "FLAME",
-          "heat": 39,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ],
-          "url": "https://houseofaama.com/"
-        }
-      ]
-    },
-    {
-      "issue": "2026-07-04-1236",
-      "date": "2026-07-04",
-      "time": "12:36 ET",
-      "climate": "Institutional and critical authority migrating toward work that insists on being read on its own terms — diasporic, myth-rooted, unbothered by mainstream legibility",
-      "entries": [
-        {
-          "name": "Firelei Báez",
-          "domain": "ART",
-          "score": 8.9,
-          "tier": "CROWN",
-          "heat": 52,
-          "direction": "flat",
-          "flags": [
-            "FIND"
-          ],
-          "benchmark": "Denim Tears",
-          "read": "Mid-career survey consolidating a decade of myth-rooted diasporic painting.",
-          "url": "https://visit.mcachicago.org/exhibitions/firelei-baez-2/"
-        },
-        {
-          "name": "Pan-African Architecture Biennale",
-          "domain": "ARCHITECTURE",
-          "score": 8.7,
-          "tier": "CROWN",
-          "heat": 29,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "benchmark": "The Shed",
-          "read": "First continent-wide architecture biennale — infrastructure, not exhibition.",
-          "url": "https://www.panafricanbiennale.org/"
-        },
-        {
-          "name": "By Storm — My Ghosts Go Ghost",
-          "domain": "MUSIC",
-          "score": 8.4,
-          "tier": "CROWN",
-          "heat": 34,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "benchmark": "Kenny Mason",
-          "read": "Ex-Injury Reserve; third board appearance — the room still hasn't paid it.",
-          "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost"
-        },
-        {
-          "name": "Tasteslop — Nemesis Memos",
-          "domain": "SCENE",
-          "score": 7.8,
-          "tier": "FLAME",
-          "heat": 31,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "benchmark": "Free Game",
-          "read": "Internet essay on taste and AI — the discourse the Index runs inside."
-        },
-        {
-          "name": "Nardos Imam — The Infinite Banquet",
-          "domain": "FASHION",
-          "score": 7.6,
-          "tier": "FLAME",
-          "heat": 48,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ],
-          "benchmark": "A Ma Maniere",
-          "read": "NYFW collection — Ethiopian-rooted eveningwear read as heritage craft.",
-          "url": "https://www.nardosdesign.com/blogs/news"
-        }
-      ]
-    },
-    {
-      "issue": "2026-07-04-1356",
-      "date": "2026-07-04",
-      "time": "13:56 ET",
-      "climate": "Ownership is the new drop — archives, biennials, and bookshelves pulling more heat than any single release; Afro-Atlantic craft quietly outscores the loudest collabs",
-      "entries": [
-        {
-          "name": "Wales Bonner × adidas — On Pitch SS26",
-          "domain": "FASHION",
-          "score": 8.6,
-          "tier": "CROWN",
-          "heat": 78,
-          "direction": "up",
-          "flags": [
-            "ROOMS_RIGHT",
-            "BLADE"
-          ],
-          "read": "The room already knew this was canon; the World Cup just gave it a stage.",
-          "url": "https://walesbonner.com/collections/adidas-originals-by-wales-bonner"
-        },
-        {
-          "name": "Space Afrika",
-          "domain": "MUSIC",
-          "score": 8.7,
-          "tier": "CROWN",
-          "heat": 41,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "read": "New album named after a Glenn Ligon painting, shot for New Balance's Made in UK line — streams haven't caught up yet.",
-          "url": "https://space-afrika.bandcamp.com/"
-        },
-        {
-          "name": "Pan-African Biennale — Nairobi",
-          "domain": "ARCHITECTURE",
-          "score": 8.3,
-          "tier": "CROWN",
-          "heat": 33,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "read": "First continent-wide architecture biennale, curated by Omar Degan, still under the radar.",
-          "url": "https://www.panafricanbiennale.org/"
-        },
-        {
-          "name": "Black-Owned Bookstore Resurgence",
-          "domain": "BOOKS",
-          "score": 8.0,
-          "tier": "CROWN",
-          "heat": 46,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ]
-        },
-        {
-          "name": "The Chi — Final Season",
-          "domain": "TV",
-          "score": 6.6,
-          "tier": "TORCH",
-          "heat": 58,
-          "direction": "flat",
-          "flags": [
-            "HEAT>WORK"
-          ],
-          "url": "https://www.paramountplus.com/shows/the-chi/"
-        }
-      ]
-    },
-    {
-      "issue": "2026-07-05-1227",
-      "date": "2026-07-05",
-      "time": "12:27 ET",
-      "climate": "Mid-year split: the loudest rooms are pricing anticipation as the product while the first half's most complete work ships without a press cycle — mastery is outrunning marketing",
-      "entries": [
-        {
-          "name": "Is God Is",
-          "domain": "FILM",
-          "score": 8.8,
-          "tier": "CROWN",
-          "heat": 22,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "benchmark": "Black Film Archive",
-          "read": "Aleshea Harris put her own play on screen — twin sisters, a debt of scars, revenge written in scripture cadence — and it opened in May to near silence. Two-time Tony winner Kara Young opposite Mallori Johnson, Sterling K. Brown and Janelle Monáe in the frame, and most critics still don't know it exists. The room missed a canon entry in real time.",
-          "url": "https://en.wikipedia.org/wiki/Is_God_Is_(film)"
-        },
-        {
-          "name": "Vince Staples — Cry Baby",
-          "domain": "MUSIC",
-          "score": 8.6,
-          "tier": "CROWN",
-          "heat": 74,
-          "direction": "up",
-          "flags": [
-            "ROOMS_RIGHT"
-          ],
-          "benchmark": "Starlito",
-          "read": "The honest counter-read: the room is loud on this one and the room is correct. Pointed politics without preaching, accessible without thinning out — the most complete statement of his run, landing harder than the year's bigger-billed rap events. Earned heat, not borrowed.",
-          "url": "https://vincestaples.bandcamp.com/album/cry-baby"
-        },
-        {
-          "name": "Melvin Gibbs — How Black Music Took Over the World",
-          "domain": "BOOKS",
-          "score": 8.4,
-          "tier": "CROWN",
-          "heat": 26,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "benchmark": "Noname Book Club",
-          "read": "A working master — Rollins Band, Defunkt, decades of sessions — tracing how Africa's musical inheritance became the operating system of everything on your speakers. Theory from inside the craft, not above it. The curator's textbook, priced like a quiet release.",
-          "url": "https://www.hachettebookgroup.com/titles/melvin-gibbs/how-black-music-took-over-the-world/9781541603240/"
-        },
-        {
-          "name": "Nicholas Daley",
-          "domain": "FASHION",
-          "score": 8.3,
-          "tier": "CROWN",
-          "heat": 34,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ],
-          "benchmark": "Denim Tears",
-          "read": "Jamaican-Scottish menswear as a sustained inquiry — reggae lineage, British cloth, live music sewn into the label's program. While the collab loop recycles logos, Daley builds community as the product. A decade of quiet compounding the room keeps filing under \"emerging.\"",
-          "url": "https://nicholasdaley.net/"
-        },
-        {
-          "name": "Mina the Hollower",
-          "domain": "GAMES",
-          "score": 8.2,
-          "tier": "CROWN",
-          "heat": 43,
-          "direction": "flat",
-          "flags": [
-            "FIND"
-          ],
-          "benchmark": "Karhu",
-          "read": "Yacht Club's Game Boy-lineage epic — 91 on the meters, Game of the Year math — and the timeline barely mentions it. Craft object first: 8-bit discipline, modern feel, a decade of Shovel Knight trust spent on restraint instead of scale. Acclaim without chatter is the gap talking.",
-          "url": "https://store.steampowered.com/app/1875580/Mina_the_Hollower/"
-        }
-      ]
-    },
-    {
-      "issue": "2026-07-06-0834",
-      "date": "2026-07-06",
-      "time": "08:34 ET",
-      "climate": "Stadium spectacle is loud enough to feel like the whole story, but the real export is coming from cities the algorithm still treats as periphery — Lagos chief among them",
-      "entries": [
-        {
-          "name": "My Father's Shadow — Akinola Davies Jr.",
-          "domain": "FILM",
-          "score": 9.1,
-          "tier": "HEIRWAVE",
-          "heat": 58,
-          "direction": "up",
-          "flags": [
-            "ROOMS_RIGHT"
-          ],
-          "url": "https://mubi.com/en/us/films/my-father-s-shadow",
-          "image": "https://images.mubicdn.net/images/film/410994/cache-1050258-1745503807/image-w1280.jpg",
-          "read": "First Nigerian film ever in Cannes' Official Selection, a Caméra d'Or special mention, a BAFTA for Best Debut — a single day in 1993 Lagos, told small and specific, earning every inch of the attention now landing on it. This isn't heat outrunning the work; it's the room finally catching up to it.",
-          "benchmark": "No direct neighbor yet on the 50 — closest in spirit to the diasporic-storytelling thread running through Denim Tears and One54.",
-          "note": "This is the fourth appearance of this same film across the ledger (also 06-23, as 'My Father's Shadow — Akinola Davies Jr'), independently re-surfaced — the room genuinely has not let go of it."
-        },
-        {
-          "name": "Firelei Báez — mid-career survey",
-          "domain": "ART",
-          "score": 8.8,
-          "tier": "CROWN",
-          "heat": 45,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ],
-          "url": "https://visit.mcachicago.org/exhibitions/firelei-baez-2/",
-          "image": "https://visit.mcachicago.org/wp-content/uploads/2025/10/85_FB_Untitled-Les-tables-de-geographie-reduites-en-un-jeu-de-cartes.webp",
-          "read": "Two decades of drawings, paintings, and installations built from folklore, fantasy, and Caribbean diasporic myth, now touring ICA Boston to MCA Chicago — museum-earned, not algorithm-earned.",
-          "benchmark": "Mason Prince — same craft-first, story-driven register, different medium.",
-          "note": "Third appearance of this same survey (also 07-04-1236 as 'Firelei Báez'). Ledger drift — same entry, independently re-surfaced across sessions."
-        },
-        {
-          "name": "Alewya — \"Zero\"",
-          "domain": "MUSIC",
-          "score": 8.6,
-          "tier": "CROWN",
-          "heat": 34,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "url": "https://alewya.bandcamp.com/album/zero-1",
-          "image": "https://f4.bcbits.com/img/a3150029086_7.jpg",
-          "read": "London underground fused with Egyptian and Ethiopian rhythm, critics reaching for M.I.A.'s Kala as the last time diasporic music re-drew the map this confidently. No feature run, no rollout theater.",
-          "benchmark": "Jim Legxacy — same instinct to let root and lineage do the talking over reach."
-        },
-        {
-          "name": "WAFFLESNCREAM",
-          "domain": "FASHION",
-          "score": 8.3,
-          "tier": "CROWN",
-          "heat": 30,
-          "direction": "up",
-          "flags": [
-            "FIND",
-            "BLADE"
-          ],
-          "url": "https://www.wafflesncream.com/",
-          "image": "https://www.wafflesncream.com/cdn/shop/files/lookbook-01_grande.jpg?v=1743681553",
-          "read": "A Lagos skate shop since 2012 that never tried to be a brand first — it raised a scene instead, the one that produced Olaolu Slawn and the Motherlan collective. Community before commerce.",
-          "benchmark": "Corteiz — cult-built, community-first, allergic to logo-as-content."
-        },
-        {
-          "name": "Shihara — Yuta Ishihara",
-          "domain": "DESIGN",
-          "score": 7.6,
-          "tier": "FLAME",
-          "heat": 28,
-          "direction": "flat",
-          "flags": [
-            "FIND"
-          ],
-          "url": "https://shihara.com/",
-          "image": "https://shihara.com/cdn/shop/files/ogp.png?v=1738219458",
-          "read": "Tokyo jewelry built on \"reconstructing essential functions\" — 18ct gold pared down until the idea is the only ornament left. Quiet craft authority that has never needed a drop calendar.",
-          "benchmark": "Karhu — heritage craft revisited with the same patience, different continent."
-        }
-      ]
-    },
-    {
-      "issue": "2026-07-07-1441",
-      "date": "2026-07-07",
-      "time": "14:41 ET",
-      "climate": "The fight moved to memory — museums canonize the underground's founders while a state deletes a film in real time; whoever holds the archive sets the price",
-      "entries": [
-        {
-          "name": "NIGO — From Japan with Love",
-          "domain": "FASHION",
-          "score": 9.0,
-          "tier": "HEIRWAVE",
-          "heat": 78,
-          "direction": "up",
-          "flags": [
-            "ROOMS_RIGHT"
-          ],
-          "benchmark": "Denim Tears",
-          "url": "https://designmuseum.org/exhibitions/nigo-from-japan-with-love",
-          "read": "Thirty years after NOWHERE, the Design Museum hangs the whole method on a wall — 700 objects, 600 from his own archive, his first Air Force 1 landing the same season. NIGO ran sample culture on clothing: loop the archive, flip the reference, press it small. The room is loud and the room is correct — earned canon, not a rediscovery. The blueprint every thesis-driven label on the 50 works from just got a museum wing."
-        },
-        {
-          "name": "Donald Locke — Resistant Forms",
-          "domain": "ART",
-          "score": 8.8,
-          "tier": "CROWN",
-          "heat": 31,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ],
-          "benchmark": "Project a Black Planet",
-          "url": "https://camdenartcentre.org/whats-on/resistant-forms",
-          "read": "Guyanese-British sculptor of the Windrush generation — biomorphic ceramics, the Plantation Series, Trophies of Empire — a whole grammar of post-war British sculpture the institutions skipped for fifty years. Camden Art Centre finally does the deep dive: 80-plus works, five decades. The room hasn't arrived; the correction is just starting and the work was never what was missing."
-        },
-        {
-          "name": "Satluj — Honey Trehan",
-          "domain": "FILM",
-          "score": 8.3,
-          "tier": "CROWN",
-          "heat": 82,
-          "direction": "up",
-          "flags": [
-            "BLADE"
-          ],
-          "benchmark": "One54",
-          "url": "https://www.zee5.com/",
-          "read": "Three years of certification war, 127 cut demands, forced retitles — then an uncut global stream July 3, and India's own platform deleted it from the domestic catalogue inside 48 hours. It's still up everywhere else: the diaspora is the distribution now. A film about a man who documented disappearances, getting disappeared — the ban is the co-sign."
-        },
-        {
-          "name": "Navy Blue — Sir Render",
-          "domain": "MUSIC",
-          "score": 8.2,
-          "tier": "CROWN",
-          "heat": 40,
-          "direction": "flat",
-          "flags": [
-            "FIND"
-          ],
-          "benchmark": "Ankhle John",
-          "url": "https://navybluethetruest.bandcamp.com/album/sir-render",
-          "read": "Sage Elsesser closes the run — Sir Render as surrender, every bar footnoted twice over, Ka answering from the other side on Circa. Self-released on Freedom Sounds, mountains of records built one by one, skate-culture blood in a sLUms lineage. The room already scrolled to the next drop; this one was pressed for the shelf, not the cycle."
-        },
-        {
-          "name": "Kendra Allen — Good Morning Means I Love You",
-          "domain": "BOOKS",
-          "score": 7.9,
-          "tier": "FLAME",
-          "heat": 24,
-          "direction": "up",
-          "flags": [
-            "FIND"
-          ],
-          "benchmark": "The Prince of Darkness",
-          "url": "https://kindredstorieshtx.com/products/good-morning-means-i-love-you-a-novel",
-          "read": "Out today. Dallas essayist — Iowa Prize, Jason Reynolds calling her a generational talent — turns to fiction: one woman, two partners, sons named Morning and Night, Black maternal mental health written in prose that moves like verse. Built to polarize on purpose. Debut-novel heat is near zero; the sentences say she doesn't need the room's permission."
-        }
-      ]
+     "name": "New Maximalism / Archive-as-Currency",
+     "domain": "FASHION",
+     "score": 7.4,
+     "tier": "FLAME",
+     "heat": 64,
+     "direction": "up",
+     "flags": [
+      "BLADE"
+     ],
+     "read": "Full-cycle pivot off quiet luxury; layered, referential expression with archive/resale as the real flex — access over logo.",
+     "benchmark": "the aesthetic shift the 50's design desks track"
     }
-  ],
-  "holding": [
+   ]
+  },
+  {
+   "issue": "2026-06-18-2236",
+   "date": "2026-06-18",
+   "time": "22:36 ET",
+   "recovered": true,
+   "climate": "Recovered pull — original climate copy not preserved; board led by a near-zero-heat flagship FIND with a disciplined NOISE bear call for honesty",
+   "entries": [
     {
-      "name": "Álvaro Díaz — Omakase",
-      "first_issue": "2026-06-17-0638",
-      "first_date": "2026-06-17",
-      "resurfaced": [
-        {
-          "date": "2026-06-18",
-          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
-        }
-      ]
+     "name": "Schrödinger's Call",
+     "domain": "GAMES",
+     "score": 8.4,
+     "tier": "CROWN",
+     "heat": 14,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "read": "The flagship FIND of the board — HEAT 14, the widest taste-to-room gap logged to date.",
+     "url": "https://store.steampowered.com/app/2090390/Schrdingers_Call/"
     },
     {
-      "name": "Mixtape",
-      "first_issue": "2026-06-23-2356",
-      "first_date": "2026-06-23",
-      "resurfaced": [
-        {
-          "date": "2026-06-25",
-          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
-        },
-        {
-          "date": "2026-07-07",
-          "note": "still ranking in mid-year best-of-2026 coverage; GOTY conversation ongoing"
-        }
-      ]
+     "name": "Álvaro Díaz — Omakase",
+     "domain": "MUSIC",
+     "score": 8.1,
+     "tier": "CROWN",
+     "heat": 0,
+     "direction": "flat",
+     "flags": [],
+     "heat_recovered": false,
+     "url": "https://music.apple.com/us/album/omakase/6771082594"
     },
     {
-      "name": "Roc Marciano — 656 (neighbor of the beast)",
-      "first_issue": "2026-06-25-0424",
-      "first_date": "2026-06-25",
-      "resurfaced": [
-        {
-          "date": "2026-06-27",
-          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
-        }
-      ]
+     "name": "Industry S4",
+     "domain": "TV",
+     "score": 8.0,
+     "tier": "CROWN",
+     "heat": 0,
+     "direction": "flat",
+     "flags": [
+      "BLADE"
+     ],
+     "heat_recovered": false,
+     "url": "https://www.hbomax.com/shows/industry/9e51c88c-7a28-40ee-8269-e16572e02a07"
     },
     {
-      "name": "LACMA — Imagining Black Diasporas",
-      "first_issue": "2026-06-27-1749",
-      "first_date": "2026-06-27",
-      "resurfaced": [
-        {
-          "date": "2026-07-02",
-          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
-        }
-      ]
+     "name": "Technical Mono / Anti-Design",
+     "domain": "DESIGN",
+     "score": 7.6,
+     "tier": "FLAME",
+     "heat": 0,
+     "direction": "flat",
+     "flags": [
+      "BLADE"
+     ],
+     "heat_recovered": false
     },
     {
-      "name": "By Storm — My Ghosts Go Ghost",
-      "first_issue": "2026-07-02-1054",
-      "first_date": "2026-07-02",
-      "resurfaced": [
-        {
-          "date": "2026-07-02",
-          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
-        },
-        {
-          "date": "2026-07-04",
-          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
-        },
-        {
-          "date": "2026-07-07",
-          "note": "My Ghosts Go Ghost holding among the year's most acclaimed underground rap releases at the half"
-        }
-      ]
-    },
-    {
-      "name": "Pan-African Architecture Biennale",
-      "first_issue": "2026-07-02-2315",
-      "first_date": "2026-07-02",
-      "resurfaced": [
-        {
-          "date": "2026-07-04",
-          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
-        },
-        {
-          "date": "2026-07-04",
-          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
-        }
-      ]
-    },
-    {
-      "name": "My Father's Shadow — Akinola Davies Jr",
-      "first_issue": "2026-06-23-2356",
-      "first_date": "2026-06-23",
-      "resurfaced": [
-        {
-          "date": "2026-07-06",
-          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
-        }
-      ]
-    },
-    {
-      "name": "Firelei Báez",
-      "first_issue": "2026-07-04-1236",
-      "first_date": "2026-07-04",
-      "resurfaced": [
-        {
-          "date": "2026-07-06",
-          "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
-        }
-      ]
-    },
-    {
-      "name": "Mina the Hollower",
-      "first_issue": "2026-07-05-1227",
-      "first_date": "2026-07-05",
-      "resurfaced": [
-        {
-          "date": "2026-07-07",
-          "note": "91 Metacritic holding; cited across mid-year GOTY lists"
-        }
-      ]
-    },
-    {
-      "name": "Yaya Bey — Fidelity",
-      "first_issue": "2026-06-26-1048",
-      "first_date": "2026-06-26",
-      "resurfaced": [
-        {
-          "date": "2026-07-07",
-          "note": "Fidelity closing a three-album streak critics call one for the ages; acclaim compounding since April"
-        }
-      ]
-    },
-    {
-      "name": "Willy Chavarria",
-      "first_issue": "2026-06-23-2356",
-      "first_date": "2026-06-23",
-      "resurfaced": [
-        {
-          "date": "2026-07-07",
-          "note": "SS27 Paris men's show ranked among the week's strongest — heat caught the June call"
-        }
-      ]
+     "name": "The 2016 Throwback",
+     "domain": "SCENE",
+     "score": 3.9,
+     "tier": "NOISE",
+     "heat": 0,
+     "direction": "down",
+     "flags": [],
+     "read": "The disciplined bear call — nostalgia-cycle heat with nothing underneath it.",
+     "heat_recovered": false
     }
-  ]
+   ]
+  },
+  {
+   "issue": "2026-06-20-0546",
+   "date": "2026-06-20",
+   "time": "05:46 ET",
+   "climate": "Two clocks at once — the last monocultures (World Cup, public spectacle) pull everyone in while everywhere else fragments into micro-tribes; belonging beats reach",
+   "entries": [
+    {
+     "name": "FIFA World Cup 2026",
+     "domain": "SPORT",
+     "score": 8.4,
+     "tier": "CROWN",
+     "heat": 96,
+     "direction": "up",
+     "flags": [
+      "ROOMS_RIGHT",
+      "BLADE"
+     ],
+     "graded": "2026-06-27",
+     "note": "HELD — the monoculture-vs-fragmentation read held; heat stayed maxed. Room was correct.",
+     "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026"
+    },
+    {
+     "name": "JR — Pont Neuf",
+     "domain": "ART",
+     "score": 8.6,
+     "tier": "CROWN",
+     "heat": 74,
+     "direction": "up",
+     "flags": [
+      "EARNED_SPECTACLE"
+     ],
+     "url": "https://www.jr-art.net/projects/la-caverne-du-pont-neuf"
+    },
+    {
+     "name": "MIKE",
+     "domain": "MUSIC",
+     "score": 8.3,
+     "tier": "CROWN",
+     "heat": 36,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "graded": "2026-06-27",
+     "heat_now": 42,
+     "note": "EARLY — still the critics' underground anchor; the year's 'breadth over blockbuster' read is validating his lane. Right call, room hasn't fully paid it — heat creeping, not spiking.",
+     "url": "https://mikelikesrap.bandcamp.com/"
+    },
+    {
+     "name": "Tech Spec",
+     "domain": "DESIGN",
+     "score": 7.5,
+     "tier": "FLAME",
+     "heat": 58,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ]
+    },
+    {
+     "name": "Broadcast-to-Belonging",
+     "domain": "SCENE",
+     "score": 7.7,
+     "tier": "FLAME",
+     "heat": 62,
+     "direction": "up",
+     "flags": [
+      "BLADE"
+     ]
+    }
+   ]
+  },
+  {
+   "issue": "2026-06-23-2356",
+   "date": "2026-06-23",
+   "time": "23:56 ET",
+   "climate": "Field tilting from broadcast to transmission — freshest signal in what you sit with or get let into: diaspora auteurs, cassette-soul, reading rooms, thesis-driven design; loud center running on fumes",
+   "entries": [
+    {
+     "name": "My Father's Shadow — Akinola Davies Jr",
+     "domain": "FILM",
+     "score": 8.6,
+     "tier": "CROWN",
+     "heat": 45,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "One54",
+     "read": "Akinola Davies Jr's Cannes-competing British-Nollywood debut. Diaspora at the root, festival-grade. The clearest FIND on the board.",
+     "url": "https://mubi.com/en/us/films/my-father-s-shadow"
+    },
+    {
+     "name": "iAMLYRIC",
+     "domain": "MUSIC",
+     "score": 8.0,
+     "tier": "CROWN",
+     "heat": 36,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "benchmark": "Kenny Mason",
+     "read": "Houston, Punch co-signed, starting a book club. Taste miles ahead of the stream count.",
+     "url": "https://www.iamlyricofficial.com/"
+    },
+    {
+     "name": "Mixtape",
+     "domain": "GAMES",
+     "score": 8.2,
+     "tier": "CROWN",
+     "heat": 58,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "Mixtape Classics",
+     "read": "Cassette-soul made playable; the mixtape's original curation instinct, now in your hands.",
+     "url": "https://store.steampowered.com/app/2582320/Mixtape/"
+    },
+    {
+     "name": "Willy Chavarria",
+     "domain": "FASHION",
+     "score": 7.8,
+     "tier": "FLAME",
+     "heat": 80,
+     "direction": "up",
+     "flags": [
+      "ROOMS_RIGHT",
+      "BLADE"
+     ],
+     "benchmark": "Joe Freshgoods / Denim Tears",
+     "read": "The honest counter-read. adidas/World Cup made him loud, and the thesis earned it. Cleared the gate despite the mega-collab anti-pattern because the work carries a real argument — which is exactly why it's ROOM'S RIGHT, not a find.",
+     "url": "https://willychavarria.com/"
+    },
+    {
+     "name": "The Reading Room",
+     "domain": "SCENE",
+     "score": 7.5,
+     "tier": "FLAME",
+     "heat": 63,
+     "direction": "up",
+     "flags": [
+      "BLADE"
+     ],
+     "benchmark": "Free Game / Players Magazine",
+     "read": "Book-club-as-venue, gatekept by attention not money. Transmission gone physical."
+    }
+   ]
+  },
+  {
+   "issue": "2026-06-25-0424",
+   "date": "2026-06-25",
+   "time": "04:24 ET",
+   "climate": "Memory and lineage over scale — diasporic curation, sample-built rap, analog craft, mixtape nostalgia all take the bid while sequel-logic and hype-without-thesis go hollow; depth that remembers beats reach that forgets",
+   "entries": [
+    {
+     "name": "Roc Marciano — 656 (neighbor of the beast)",
+     "domain": "MUSIC",
+     "score": 8.7,
+     "tier": "CROWN",
+     "heat": 38,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "underground-rap lane head (Chris Crack / Starlito / Kenny Mason)",
+     "read": "Self-cut loops, 32 minutes, the luxury-grime blueprint sharpened. Moved rap forward while the scoreboard argued. Arguably enters the 50.",
+     "url": "https://music.apple.com/us/album/656/1870984094"
+    },
+    {
+     "name": "Barbican — Pan-African Survey",
+     "domain": "ART",
+     "score": 8.2,
+     "tier": "CROWN",
+     "heat": 55,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "One54 / editorial-taste",
+     "read": "Curation-as-gatekeeping, diaspora as the center of gravity, cross-cutting art/sound/design/politics at once.",
+     "url": "https://www.barbican.org.uk/whats-on/2026/event/project-a-black-planet-the-art-and-culture-of-panafrica"
+    },
+    {
+     "name": "Mixtape",
+     "domain": "GAMES",
+     "score": 7.6,
+     "tier": "FLAME",
+     "heat": 60,
+     "direction": "up",
+     "flags": [
+      "ROOMS_RIGHT"
+     ],
+     "benchmark": "Mixtape Classics",
+     "read": "The honest counter-read. Built on the exact mixtape feeling MUSA is, and the room earned its heat this time.",
+     "url": "https://store.steampowered.com/app/2582320/Mixtape/"
+    },
+    {
+     "name": "Diaspora-as-Engine / Caracas Merch",
+     "domain": "FASHION",
+     "score": 7.4,
+     "tier": "FLAME",
+     "heat": 42,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "EARLY"
+     ],
+     "benchmark": "Corteiz / Barriers Worldwide / Denim Tears",
+     "read": "Belonging outgrowing logos; small on the named brand, real on the engine."
+    },
+    {
+     "name": "Mark Jenkin — Cornish-Trilogy Closer",
+     "domain": "FILM",
+     "score": 8.0,
+     "tier": "CROWN",
+     "heat": 34,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "CD Masterizzato (cross-lane energy — analog craft as stance)",
+     "read": "Hand-cranked 16mm, the analog grain is the point; arthouse-quiet, which is the gap.",
+     "url": "https://en.wikipedia.org/wiki/Rose_of_Nevada"
+    }
+   ]
+  },
+  {
+   "issue": "2026-06-26-1048",
+   "date": "2026-06-26",
+   "time": "10:48 ET",
+   "climate": "Diaspora as center of gravity — transmission over spectacle",
+   "recovered": true,
+   "entries": [
+    {
+     "name": "Project a Black Planet",
+     "domain": "ART",
+     "score": 9.0,
+     "tier": "HEIRWAVE",
+     "heat": 0,
+     "direction": "up",
+     "flags": [
+      "ROOMS_RIGHT"
+     ],
+     "heat_recovered": false,
+     "url": "https://www.barbican.org.uk/whats-on/2026/event/project-a-black-planet-the-art-and-culture-of-panafrica"
+    },
+    {
+     "name": "Yaya Bey — Fidelity",
+     "domain": "MUSIC",
+     "score": 8.3,
+     "tier": "CROWN",
+     "heat": 0,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "heat_recovered": false,
+     "url": "https://yayabey.bandcamp.com/album/fidelity"
+    },
+    {
+     "name": "Drunken Noodles",
+     "domain": "FILM",
+     "score": 7.6,
+     "tier": "FLAME",
+     "heat": 0,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "heat_recovered": false,
+     "url": "https://mubi.com/en/us/films/drunken-noodles"
+    },
+    {
+     "name": "Willy Chavarria × adidas",
+     "domain": "FASHION",
+     "score": 6.5,
+     "tier": "TORCH",
+     "heat": 0,
+     "direction": "up",
+     "flags": [
+      "HEAT>WORK"
+     ],
+     "heat_recovered": false,
+     "url": "https://willychavarria.com/collections/adidas"
+    },
+    {
+     "name": "T Clark — Debut Collection",
+     "domain": "BOOKS",
+     "score": 7.4,
+     "tier": "FLAME",
+     "heat": 0,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "heat_recovered": false,
+     "url": "http://www.tia-clark.com/"
+    }
+   ]
+  },
+  {
+   "issue": "2026-06-27-1749",
+   "date": "2026-06-27",
+   "time": "17:49 ET",
+   "climate": "Center still draws the crowd (World Cup, the blockbuster scoreboard) but authority slid to the edge — diasporic auteurs and curators rebuilding the canon from the margins inward",
+   "entries": [
+    {
+     "name": "Grace Wales Bonner → Hermès",
+     "domain": "FASHION",
+     "score": 8.7,
+     "tier": "CROWN",
+     "heat": 61,
+     "direction": "up",
+     "flags": [
+      "ROOMS_RIGHT",
+      "BLADE"
+     ],
+     "benchmark": "Denim Tears / A Ma Maniere",
+     "url": "https://finance.hermes.com/en/publications/grace-wales-bonner-joins-hermes-creative-director-mens-ready-wear/"
+    },
+    {
+     "name": "Roc Marciano — 656",
+     "domain": "MUSIC",
+     "score": 8.6,
+     "tier": "CROWN",
+     "heat": 34,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "Chris Crack / Starlito",
+     "url": "https://music.apple.com/us/album/656/1870984094"
+    },
+    {
+     "name": "LACMA — Imagining Black Diasporas",
+     "domain": "ART",
+     "score": 8.2,
+     "tier": "CROWN",
+     "heat": 40,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "benchmark": "One54 / Monocle",
+     "url": "https://www.lacma.org/art/exhibition/imagining-black-diasporas-21st-century-art-and-poetics"
+    },
+    {
+     "name": "Cape Verde — World Cup Run",
+     "domain": "SPORT",
+     "score": 8.0,
+     "tier": "CROWN",
+     "heat": 58,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "One54",
+     "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams/cabo-verde/team-news"
+    },
+    {
+     "name": "Breadth Over Blockbuster",
+     "domain": "IDEAS",
+     "score": 7.6,
+     "tier": "FLAME",
+     "heat": 55,
+     "direction": "up",
+     "flags": [
+      "BLADE"
+     ],
+     "benchmark": "Free Game / Monocle"
+    }
+   ]
+  },
+  {
+   "issue": "2026-07-02-1054",
+   "date": "2026-07-02",
+   "time": "10:54 ET",
+   "climate": "",
+   "recovered": true,
+   "entries": [
+    {
+     "name": "By Storm — My Ghosts Go Ghost",
+     "domain": "MUSIC",
+     "score": 8.4,
+     "tier": "CROWN",
+     "heat": 0,
+     "direction": "up",
+     "flags": [],
+     "heat_recovered": false,
+     "read": "Ex-Injury Reserve grief record, sample-literate, room hasn't fully caught up.",
+     "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost"
+    },
+    {
+     "name": "Adidas × Wales Bonner SS26",
+     "domain": "FASHION",
+     "score": 8.7,
+     "tier": "CROWN",
+     "heat": 0,
+     "direction": "up",
+     "flags": [],
+     "heat_recovered": false,
+     "read": "The one honest case where the heat is earned, not overdue.",
+     "url": "https://www.adidas.com/us/wales_bonner"
+    },
+    {
+     "name": "LACMA — Imagining Black Diasporas",
+     "domain": "ART",
+     "score": 8.9,
+     "tier": "CROWN",
+     "heat": 0,
+     "direction": "up",
+     "flags": [],
+     "heat_recovered": false,
+     "read": "60 artists, rewrites the Pan-African canon past the Black Atlantic.",
+     "url": "https://www.lacma.org/art/exhibition/imagining-black-diasporas-21st-century-art-and-poetics"
+    },
+    {
+     "name": "Splice",
+     "domain": "CREATOR-AI",
+     "score": 7.8,
+     "tier": "FLAME",
+     "heat": 0,
+     "direction": "up",
+     "flags": [],
+     "heat_recovered": false,
+     "read": "Sample culture with the royalty math finally built in.",
+     "url": "https://splice.com/innovation"
+    },
+    {
+     "name": "LOVING ROOM",
+     "domain": "EDITORIAL",
+     "score": 7.6,
+     "tier": "FLAME",
+     "heat": 0,
+     "direction": "up",
+     "flags": [],
+     "heat_recovered": false,
+     "read": "Diaspora books + salon — no algorithm feeds you this shelf; lowest heat on the board."
+    }
+   ]
+  },
+  {
+   "issue": "2026-07-02-2315",
+   "date": "2026-07-02",
+   "time": "23:15 ET",
+   "climate": "Diasporic authority moving from commentary to infrastructure — a continental biennale, a repatriation heist game, a museum survey of Black design — while streetwear cycles the same collab loop and AI-music floods the middle",
+   "entries": [
+    {
+     "name": "Pan-African Architecture Biennale",
+     "domain": "ARCHITECTURE",
+     "score": 9.0,
+     "tier": "HEIRWAVE",
+     "heat": 45,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "url": "https://www.panafricanbiennale.org/"
+    },
+    {
+     "name": "Relooted",
+     "domain": "GAMES",
+     "score": 8.2,
+     "tier": "CROWN",
+     "heat": 52,
+     "direction": "up",
+     "flags": [
+      "ROOMS_RIGHT",
+      "BLADE"
+     ],
+     "url": "https://store.steampowered.com/app/3255890/Relooted/"
+    },
+    {
+     "name": "By Storm — My Ghosts Go Ghost",
+     "domain": "MUSIC",
+     "score": 8.4,
+     "tier": "CROWN",
+     "heat": 33,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost"
+    },
+    {
+     "name": "The Nue Black Aesthetic",
+     "domain": "DESIGN",
+     "score": 8.6,
+     "tier": "CROWN",
+     "heat": 41,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ]
+    },
+    {
+     "name": "House of Aama — Folk Grounds",
+     "domain": "FASHION",
+     "score": 7.8,
+     "tier": "FLAME",
+     "heat": 39,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "url": "https://houseofaama.com/"
+    }
+   ]
+  },
+  {
+   "issue": "2026-07-04-1236",
+   "date": "2026-07-04",
+   "time": "12:36 ET",
+   "climate": "Institutional and critical authority migrating toward work that insists on being read on its own terms — diasporic, myth-rooted, unbothered by mainstream legibility",
+   "entries": [
+    {
+     "name": "Firelei Báez",
+     "domain": "ART",
+     "score": 8.9,
+     "tier": "CROWN",
+     "heat": 52,
+     "direction": "flat",
+     "flags": [
+      "FIND"
+     ],
+     "benchmark": "Denim Tears",
+     "read": "Mid-career survey consolidating a decade of myth-rooted diasporic painting.",
+     "url": "https://visit.mcachicago.org/exhibitions/firelei-baez-2/"
+    },
+    {
+     "name": "Pan-African Architecture Biennale",
+     "domain": "ARCHITECTURE",
+     "score": 8.7,
+     "tier": "CROWN",
+     "heat": 29,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "The Shed",
+     "read": "First continent-wide architecture biennale — infrastructure, not exhibition.",
+     "url": "https://www.panafricanbiennale.org/"
+    },
+    {
+     "name": "By Storm — My Ghosts Go Ghost",
+     "domain": "MUSIC",
+     "score": 8.4,
+     "tier": "CROWN",
+     "heat": 34,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "Kenny Mason",
+     "read": "Ex-Injury Reserve; third board appearance — the room still hasn't paid it.",
+     "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost"
+    },
+    {
+     "name": "Tasteslop — Nemesis Memos",
+     "domain": "SCENE",
+     "score": 7.8,
+     "tier": "FLAME",
+     "heat": 31,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "Free Game",
+     "read": "Internet essay on taste and AI — the discourse the Index runs inside."
+    },
+    {
+     "name": "Nardos Imam — The Infinite Banquet",
+     "domain": "FASHION",
+     "score": 7.6,
+     "tier": "FLAME",
+     "heat": 48,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "benchmark": "A Ma Maniere",
+     "read": "NYFW collection — Ethiopian-rooted eveningwear read as heritage craft.",
+     "url": "https://www.nardosdesign.com/blogs/news"
+    }
+   ]
+  },
+  {
+   "issue": "2026-07-04-1356",
+   "date": "2026-07-04",
+   "time": "13:56 ET",
+   "climate": "Ownership is the new drop — archives, biennials, and bookshelves pulling more heat than any single release; Afro-Atlantic craft quietly outscores the loudest collabs",
+   "entries": [
+    {
+     "name": "Wales Bonner × adidas — On Pitch SS26",
+     "domain": "FASHION",
+     "score": 8.6,
+     "tier": "CROWN",
+     "heat": 78,
+     "direction": "up",
+     "flags": [
+      "ROOMS_RIGHT",
+      "BLADE"
+     ],
+     "read": "The room already knew this was canon; the World Cup just gave it a stage.",
+     "url": "https://walesbonner.com/collections/adidas-originals-by-wales-bonner"
+    },
+    {
+     "name": "Space Afrika",
+     "domain": "MUSIC",
+     "score": 8.7,
+     "tier": "CROWN",
+     "heat": 41,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "read": "New album named after a Glenn Ligon painting, shot for New Balance's Made in UK line — streams haven't caught up yet.",
+     "url": "https://space-afrika.bandcamp.com/"
+    },
+    {
+     "name": "Pan-African Biennale — Nairobi",
+     "domain": "ARCHITECTURE",
+     "score": 8.3,
+     "tier": "CROWN",
+     "heat": 33,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "read": "First continent-wide architecture biennale, curated by Omar Degan, still under the radar.",
+     "url": "https://www.panafricanbiennale.org/"
+    },
+    {
+     "name": "Black-Owned Bookstore Resurgence",
+     "domain": "BOOKS",
+     "score": 8.0,
+     "tier": "CROWN",
+     "heat": 46,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ]
+    },
+    {
+     "name": "The Chi — Final Season",
+     "domain": "TV",
+     "score": 6.6,
+     "tier": "TORCH",
+     "heat": 58,
+     "direction": "flat",
+     "flags": [
+      "HEAT>WORK"
+     ],
+     "url": "https://www.paramountplus.com/shows/the-chi/"
+    }
+   ]
+  },
+  {
+   "issue": "2026-07-05-1227",
+   "date": "2026-07-05",
+   "time": "12:27 ET",
+   "climate": "Mid-year split: the loudest rooms are pricing anticipation as the product while the first half's most complete work ships without a press cycle — mastery is outrunning marketing",
+   "entries": [
+    {
+     "name": "Is God Is",
+     "domain": "FILM",
+     "score": 8.8,
+     "tier": "CROWN",
+     "heat": 22,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "Black Film Archive",
+     "read": "Aleshea Harris put her own play on screen — twin sisters, a debt of scars, revenge written in scripture cadence — and it opened in May to near silence. Two-time Tony winner Kara Young opposite Mallori Johnson, Sterling K. Brown and Janelle Monáe in the frame, and most critics still don't know it exists. The room missed a canon entry in real time.",
+     "url": "https://en.wikipedia.org/wiki/Is_God_Is_(film)"
+    },
+    {
+     "name": "Vince Staples — Cry Baby",
+     "domain": "MUSIC",
+     "score": 8.6,
+     "tier": "CROWN",
+     "heat": 74,
+     "direction": "up",
+     "flags": [
+      "ROOMS_RIGHT"
+     ],
+     "benchmark": "Starlito",
+     "read": "The honest counter-read: the room is loud on this one and the room is correct. Pointed politics without preaching, accessible without thinning out — the most complete statement of his run, landing harder than the year's bigger-billed rap events. Earned heat, not borrowed.",
+     "url": "https://vincestaples.bandcamp.com/album/cry-baby"
+    },
+    {
+     "name": "Melvin Gibbs — How Black Music Took Over the World",
+     "domain": "BOOKS",
+     "score": 8.4,
+     "tier": "CROWN",
+     "heat": 26,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "Noname Book Club",
+     "read": "A working master — Rollins Band, Defunkt, decades of sessions — tracing how Africa's musical inheritance became the operating system of everything on your speakers. Theory from inside the craft, not above it. The curator's textbook, priced like a quiet release.",
+     "url": "https://www.hachettebookgroup.com/titles/melvin-gibbs/how-black-music-took-over-the-world/9781541603240/"
+    },
+    {
+     "name": "Nicholas Daley",
+     "domain": "FASHION",
+     "score": 8.3,
+     "tier": "CROWN",
+     "heat": 34,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "benchmark": "Denim Tears",
+     "read": "Jamaican-Scottish menswear as a sustained inquiry — reggae lineage, British cloth, live music sewn into the label's program. While the collab loop recycles logos, Daley builds community as the product. A decade of quiet compounding the room keeps filing under \"emerging.\"",
+     "url": "https://nicholasdaley.net/"
+    },
+    {
+     "name": "Mina the Hollower",
+     "domain": "GAMES",
+     "score": 8.2,
+     "tier": "CROWN",
+     "heat": 43,
+     "direction": "flat",
+     "flags": [
+      "FIND"
+     ],
+     "benchmark": "Karhu",
+     "read": "Yacht Club's Game Boy-lineage epic — 91 on the meters, Game of the Year math — and the timeline barely mentions it. Craft object first: 8-bit discipline, modern feel, a decade of Shovel Knight trust spent on restraint instead of scale. Acclaim without chatter is the gap talking.",
+     "url": "https://store.steampowered.com/app/1875580/Mina_the_Hollower/"
+    }
+   ]
+  },
+  {
+   "issue": "2026-07-06-0834",
+   "date": "2026-07-06",
+   "time": "08:34 ET",
+   "climate": "Stadium spectacle is loud enough to feel like the whole story, but the real export is coming from cities the algorithm still treats as periphery — Lagos chief among them",
+   "entries": [
+    {
+     "name": "My Father's Shadow — Akinola Davies Jr.",
+     "domain": "FILM",
+     "score": 9.1,
+     "tier": "HEIRWAVE",
+     "heat": 58,
+     "direction": "up",
+     "flags": [
+      "ROOMS_RIGHT"
+     ],
+     "url": "https://mubi.com/en/us/films/my-father-s-shadow",
+     "image": "https://images.mubicdn.net/images/film/410994/cache-1050258-1745503807/image-w1280.jpg",
+     "read": "First Nigerian film ever in Cannes' Official Selection, a Caméra d'Or special mention, a BAFTA for Best Debut — a single day in 1993 Lagos, told small and specific, earning every inch of the attention now landing on it. This isn't heat outrunning the work; it's the room finally catching up to it.",
+     "benchmark": "No direct neighbor yet on the 50 — closest in spirit to the diasporic-storytelling thread running through Denim Tears and One54.",
+     "note": "This is the fourth appearance of this same film across the ledger (also 06-23, as 'My Father's Shadow — Akinola Davies Jr'), independently re-surfaced — the room genuinely has not let go of it."
+    },
+    {
+     "name": "Firelei Báez — mid-career survey",
+     "domain": "ART",
+     "score": 8.8,
+     "tier": "CROWN",
+     "heat": 45,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "url": "https://visit.mcachicago.org/exhibitions/firelei-baez-2/",
+     "image": "https://visit.mcachicago.org/wp-content/uploads/2025/10/85_FB_Untitled-Les-tables-de-geographie-reduites-en-un-jeu-de-cartes.webp",
+     "read": "Two decades of drawings, paintings, and installations built from folklore, fantasy, and Caribbean diasporic myth, now touring ICA Boston to MCA Chicago — museum-earned, not algorithm-earned.",
+     "benchmark": "Mason Prince — same craft-first, story-driven register, different medium.",
+     "note": "Third appearance of this same survey (also 07-04-1236 as 'Firelei Báez'). Ledger drift — same entry, independently re-surfaced across sessions."
+    },
+    {
+     "name": "Alewya — \"Zero\"",
+     "domain": "MUSIC",
+     "score": 8.6,
+     "tier": "CROWN",
+     "heat": 34,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "url": "https://alewya.bandcamp.com/album/zero-1",
+     "image": "https://f4.bcbits.com/img/a3150029086_7.jpg",
+     "read": "London underground fused with Egyptian and Ethiopian rhythm, critics reaching for M.I.A.'s Kala as the last time diasporic music re-drew the map this confidently. No feature run, no rollout theater.",
+     "benchmark": "Jim Legxacy — same instinct to let root and lineage do the talking over reach."
+    },
+    {
+     "name": "WAFFLESNCREAM",
+     "domain": "FASHION",
+     "score": 8.3,
+     "tier": "CROWN",
+     "heat": 30,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "url": "https://www.wafflesncream.com/",
+     "image": "https://www.wafflesncream.com/cdn/shop/files/lookbook-01_grande.jpg?v=1743681553",
+     "read": "A Lagos skate shop since 2012 that never tried to be a brand first — it raised a scene instead, the one that produced Olaolu Slawn and the Motherlan collective. Community before commerce.",
+     "benchmark": "Corteiz — cult-built, community-first, allergic to logo-as-content."
+    },
+    {
+     "name": "Shihara — Yuta Ishihara",
+     "domain": "DESIGN",
+     "score": 7.6,
+     "tier": "FLAME",
+     "heat": 28,
+     "direction": "flat",
+     "flags": [
+      "FIND"
+     ],
+     "url": "https://shihara.com/",
+     "image": "https://shihara.com/cdn/shop/files/ogp.png?v=1738219458",
+     "read": "Tokyo jewelry built on \"reconstructing essential functions\" — 18ct gold pared down until the idea is the only ornament left. Quiet craft authority that has never needed a drop calendar.",
+     "benchmark": "Karhu — heritage craft revisited with the same patience, different continent."
+    }
+   ]
+  },
+  {
+   "issue": "2026-07-07-1441",
+   "date": "2026-07-07",
+   "time": "14:41 ET",
+   "climate": "The fight moved to memory — museums canonize the underground's founders while a state deletes a film in real time; whoever holds the archive sets the price",
+   "entries": [
+    {
+     "name": "NIGO — From Japan with Love",
+     "domain": "FASHION",
+     "score": 9.0,
+     "tier": "HEIRWAVE",
+     "heat": 78,
+     "direction": "up",
+     "flags": [
+      "ROOMS_RIGHT"
+     ],
+     "benchmark": "Denim Tears",
+     "url": "https://designmuseum.org/exhibitions/nigo-from-japan-with-love",
+     "read": "Thirty years after NOWHERE, the Design Museum hangs the whole method on a wall — 700 objects, 600 from his own archive, his first Air Force 1 landing the same season. NIGO ran sample culture on clothing: loop the archive, flip the reference, press it small. The room is loud and the room is correct — earned canon, not a rediscovery. The blueprint every thesis-driven label on the 50 works from just got a museum wing."
+    },
+    {
+     "name": "Donald Locke — Resistant Forms",
+     "domain": "ART",
+     "score": 8.8,
+     "tier": "CROWN",
+     "heat": 31,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "benchmark": "Project a Black Planet",
+     "url": "https://camdenartcentre.org/whats-on/resistant-forms",
+     "read": "Guyanese-British sculptor of the Windrush generation — biomorphic ceramics, the Plantation Series, Trophies of Empire — a whole grammar of post-war British sculpture the institutions skipped for fifty years. Camden Art Centre finally does the deep dive: 80-plus works, five decades. The room hasn't arrived; the correction is just starting and the work was never what was missing."
+    },
+    {
+     "name": "Satluj — Honey Trehan",
+     "domain": "FILM",
+     "score": 8.3,
+     "tier": "CROWN",
+     "heat": 82,
+     "direction": "up",
+     "flags": [
+      "BLADE"
+     ],
+     "benchmark": "One54",
+     "url": "https://www.zee5.com/",
+     "read": "Three years of certification war, 127 cut demands, forced retitles — then an uncut global stream July 3, and India's own platform deleted it from the domestic catalogue inside 48 hours. It's still up everywhere else: the diaspora is the distribution now. A film about a man who documented disappearances, getting disappeared — the ban is the co-sign."
+    },
+    {
+     "name": "Navy Blue — Sir Render",
+     "domain": "MUSIC",
+     "score": 8.2,
+     "tier": "CROWN",
+     "heat": 40,
+     "direction": "flat",
+     "flags": [
+      "FIND"
+     ],
+     "benchmark": "Ankhle John",
+     "url": "https://navybluethetruest.bandcamp.com/album/sir-render",
+     "read": "Sage Elsesser closes the run — Sir Render as surrender, every bar footnoted twice over, Ka answering from the other side on Circa. Self-released on Freedom Sounds, mountains of records built one by one, skate-culture blood in a sLUms lineage. The room already scrolled to the next drop; this one was pressed for the shelf, not the cycle."
+    },
+    {
+     "name": "Kendra Allen — Good Morning Means I Love You",
+     "domain": "BOOKS",
+     "score": 7.9,
+     "tier": "FLAME",
+     "heat": 24,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "benchmark": "The Prince of Darkness",
+     "url": "https://kindredstorieshtx.com/products/good-morning-means-i-love-you-a-novel",
+     "read": "Out today. Dallas essayist — Iowa Prize, Jason Reynolds calling her a generational talent — turns to fiction: one woman, two partners, sons named Morning and Night, Black maternal mental health written in prose that moves like verse. Built to polarize on purpose. Debut-novel heat is near zero; the sentences say she doesn't need the room's permission."
+    }
+   ]
+  },
+  {
+   "issue_id": "2026-07-13-1332",
+   "date": "2026-07-13",
+   "time": "13:32 ET",
+   "climate": "The room spent the week grading debuts — Balenciaga, Gaultier, a Stones record, a Future drop — while the field's real motion was in closures: masters sealing decade-long arcs quietly, and the archive out-working the premiere.",
+   "entries": [
+    {
+     "name": "Colson Whitehead — Cool Machine",
+     "domain": "BOOKS",
+     "score": 9.1,
+     "tier": "HEIRWAVE",
+     "heat": 72,
+     "direction": "up",
+     "flags": [
+      "ROOMS_RIGHT"
+     ],
+     "benchmark": "The Prince of Darkness",
+     "url": "https://www.colsonwhitehead.com/",
+     "verdict": "PENDING",
+     "heat_now": null,
+     "note": null,
+     "graded": null,
+     "read": "Ray Carney's last job. Whitehead closes the Harlem Trilogy in Reagan's New York — three stories, '81/'83/'86, skyscrapers rising over people sleeping in the tunnels beneath them. Two Pulitzers already banked and he spent the decade building a crime saga about a fence on 125th: the heist as archive, the archive as heist. PW calls it the greatest New York novel in years; for once the volume matches the work. Canon closing on its own terms."
+    },
+    {
+     "name": "Zizipho Poswa — iMbewu (The Seed)",
+     "domain": "ART",
+     "score": 8.8,
+     "tier": "CROWN",
+     "heat": 34,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "benchmark": "Karhu",
+     "url": "https://southernguild.com/exhibitions/imbewu-the-seed",
+     "verdict": "PENDING",
+     "heat_now": null,
+     "note": null,
+     "graded": null,
+     "read": "Ten-year survey of hand-coiled clay filling Southern Guild's new Tribeca space through September. Xhosa women's daily labor — the carried load, the braided crown, the lobola negotiation — built into monuments the Met, LACMA and the Art Institute bought while the wider room wasn't looking. Clay as archive, not material. Monograph landed July 1. The window between institutional conviction and public heat is where taste moves first."
+    },
+    {
+     "name": "Imane Ayissi — Ozouandam Ollat",
+     "domain": "FASHION",
+     "score": 8.5,
+     "tier": "CROWN",
+     "heat": 26,
+     "direction": "flat",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "Denim Tears",
+     "url": "https://imane-ayissi.com/en/pages/collections-imane-ayissi",
+     "verdict": "PENDING",
+     "heat_now": null,
+     "note": null,
+     "graded": null,
+     "read": "While Paris graded the Piccioli and Lantink debuts like a scoreboard, the only sub-Saharan African couturier on the official calendar opened the week with Ozouandam Ollat — 'haute couture' in Ewondo — raffia wings and saturated silk at the Aero-Club, a tribute to his late mother, former Miss Cameroon and flight attendant. Decades of Cameroonian craft inside couture's oldest gate, and the debut circus still swallowed the coverage. That gap is the entry."
+    },
+    {
+     "name": "Phiik & Lungs — People Are Not Your Friends",
+     "domain": "MUSIC",
+     "score": 7.9,
+     "tier": "FLAME",
+     "heat": 16,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "benchmark": "Chris Crack",
+     "url": "https://daily.bandcamp.com/essential-releases/essential-releases-july-10-2026",
+     "verdict": "PENDING",
+     "heat_now": null,
+     "note": null,
+     "graded": null,
+     "read": "The NY duo (as Another Planet) with steel tipped dove on the boards — Bandcamp's Album of the Day the same Friday the majors dropped Future and a Stones record. Dense, tangled New York underground rap: bars stacked like scaffolding, production that trusts the listener. Zero rollout, all fluency — the exact lineage the 50 protects, with Blu & Exile and Coldchain × Craven loading behind it."
+    },
+    {
+     "name": "They Fight — Sheldon Candis",
+     "domain": "FILM",
+     "score": 7.1,
+     "tier": "FLAME",
+     "heat": 44,
+     "direction": "up",
+     "flags": [],
+     "benchmark": "MAWN Philly",
+     "url": "https://tribecafilm.com/films/they-fight-2026",
+     "verdict": "PENDING",
+     "heat_now": null,
+     "note": null,
+     "graded": null,
+     "read": "A Washington Post story and a 2018 doc turned into an Avildsen-lineage boxing drama: Andre Holland as Walt Manigan coaching Southeast D.C. kids toward junior nationals under Wendell Pierce's Slim. Hulu Friday. Streamer-shaped and earnest to a fault, but the root is real — mentorship as community infrastructure, a rec center as the last institution standing. Honest FLAME; the room will meet this one on time."
+    }
+   ]
+  }
+ ],
+ "holding": [
+  {
+   "name": "Álvaro Díaz — Omakase",
+   "first_issue": "2026-06-17-0638",
+   "first_date": "2026-06-17",
+   "resurfaced": [
+    {
+     "date": "2026-06-18",
+     "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+    }
+   ]
+  },
+  {
+   "name": "Mixtape",
+   "first_issue": "2026-06-23-2356",
+   "first_date": "2026-06-23",
+   "resurfaced": [
+    {
+     "date": "2026-06-25",
+     "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+    },
+    {
+     "date": "2026-07-07",
+     "note": "still ranking in mid-year best-of-2026 coverage; GOTY conversation ongoing"
+    }
+   ]
+  },
+  {
+   "name": "Roc Marciano — 656 (neighbor of the beast)",
+   "first_issue": "2026-06-25-0424",
+   "first_date": "2026-06-25",
+   "resurfaced": [
+    {
+     "date": "2026-06-27",
+     "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+    }
+   ]
+  },
+  {
+   "name": "LACMA — Imagining Black Diasporas",
+   "first_issue": "2026-06-27-1749",
+   "first_date": "2026-06-27",
+   "resurfaced": [
+    {
+     "date": "2026-07-02",
+     "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+    }
+   ]
+  },
+  {
+   "name": "By Storm — My Ghosts Go Ghost",
+   "first_issue": "2026-07-02-1054",
+   "first_date": "2026-07-02",
+   "resurfaced": [
+    {
+     "date": "2026-07-02",
+     "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+    },
+    {
+     "date": "2026-07-04",
+     "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+    },
+    {
+     "date": "2026-07-07",
+     "note": "My Ghosts Go Ghost holding among the year's most acclaimed underground rap releases at the half"
+    }
+   ]
+  },
+  {
+   "name": "Pan-African Architecture Biennale",
+   "first_issue": "2026-07-02-2315",
+   "first_date": "2026-07-02",
+   "resurfaced": [
+    {
+     "date": "2026-07-04",
+     "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+    },
+    {
+     "date": "2026-07-04",
+     "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+    }
+   ]
+  },
+  {
+   "name": "My Father's Shadow — Akinola Davies Jr",
+   "first_issue": "2026-06-23-2356",
+   "first_date": "2026-06-23",
+   "resurfaced": [
+    {
+     "date": "2026-07-06",
+     "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+    }
+   ]
+  },
+  {
+   "name": "Firelei Báez",
+   "first_issue": "2026-07-04-1236",
+   "first_date": "2026-07-04",
+   "resurfaced": [
+    {
+     "date": "2026-07-06",
+     "note": "returned in a later pull (pre-rule repeat, converted to a confirmation)"
+    }
+   ]
+  },
+  {
+   "name": "Mina the Hollower",
+   "first_issue": "2026-07-05-1227",
+   "first_date": "2026-07-05",
+   "resurfaced": [
+    {
+     "date": "2026-07-07",
+     "note": "91 Metacritic holding; cited across mid-year GOTY lists"
+    }
+   ]
+  },
+  {
+   "name": "Yaya Bey — Fidelity",
+   "first_issue": "2026-06-26-1048",
+   "first_date": "2026-06-26",
+   "resurfaced": [
+    {
+     "date": "2026-07-07",
+     "note": "Fidelity closing a three-album streak critics call one for the ages; acclaim compounding since April"
+    }
+   ]
+  },
+  {
+   "name": "Willy Chavarria",
+   "first_issue": "2026-06-23-2356",
+   "first_date": "2026-06-23",
+   "resurfaced": [
+    {
+     "date": "2026-07-07",
+     "note": "SS27 Paris men's show ranked among the week's strongest — heat caught the June call"
+    }
+   ]
+  }
+ ]
 }
