@@ -127,6 +127,11 @@ footer .ft{font-size:10px;color:var(--mut);line-height:1.75}footer .ft b{color:#
 .xbench b{color:var(--accent)}
 .xhint{margin-top:8px;font-size:9.5px;letter-spacing:.18em;color:var(--mut);opacity:.7}
 .card.open .xhint{display:none}
+.swapbtn{display:inline-block;margin-top:10px;padding:5px 10px;font-size:9.5px;letter-spacing:.14em;
+color:var(--yellow);border:1px solid #4a3f22;border-radius:3px;text-decoration:none}
+.swapbtn:hover{color:var(--yellow2);border-color:var(--yellow2)}
+.promobadge{display:inline-block;margin-top:10px;padding:5px 10px;font-size:9px;letter-spacing:.12em;
+color:var(--green);border:1px solid #2f3a28;border-radius:3px}
 .card.canon{cursor:default}
 .keylabel{font-size:10.5px;letter-spacing:.28em;color:var(--mut);margin:22px 2px 10px}
 .keybox{background:var(--panel);border:1px dashed var(--line);border-radius:10px;padding:20px 22px;font-size:13px;line-height:1.85;color:#d8d0bd}
@@ -345,7 +350,8 @@ function build(){
         find:(e.flags||[]).some(f=>f.toUpperCase().includes("FIND")),
         gap:Math.round((e.score*10)-(e.heat||0)),
         read:e.read||"", benchmark:e.benchmark||"",
-        url:e.url||"", image:e.image||""
+        url:e.url||"", image:e.image||"",
+        issue:iss.issue_id||iss.issue||"", promoted:e.promoted_to_50||null
       });
     });
   });
@@ -396,6 +402,9 @@ function cardIndex(r){
   const holdHtml = r.holding ? `<div class="holdbadge">HOLDING ×${r.holding}</div>` : "";
   const nameHtml = r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name);
   const previewHtml = r.image ? `<div class="preview"><img src="${esc(r.image)}" alt="${esc(r.name)}" loading="lazy"><span class="cap">${esc(r.name)}</span></div>` : "";
+  const swapHtml = r.promoted
+    ? `<div class="promobadge">★ ENTERED THE 50 — ${esc(r.promoted.into_lane||"")} · ${esc(r.promoted.date||"")}</div>`
+    : `<a class="swapbtn" href="https://admin.themusafamily.com/swap?issue=${encodeURIComponent(r.issue)}&name=${encodeURIComponent(r.name)}&domain=${encodeURIComponent(r.domain)}&url=${encodeURIComponent(r.url||"")}" target="_blank" rel="noopener" onclick="event.stopPropagation()">SWAP → 50</a>`;
   return `<div class="card ${r.find?"find":""}">
     ${holdHtml}
     <div class="ctop">
@@ -417,6 +426,7 @@ function cardIndex(r){
       <div class="xread">${r.read?esc(r.read):`<span class="nrec">— original taste read not recovered for this issue —</span>`}</div>
       ${r.benchmark?`<div class="xbench"><b>BENCHMARK:</b> ${esc(r.benchmark)}</div>`:""}
       ${previewHtml}
+      ${swapHtml}
     </div>
     <div class="xhint">TAP FOR THE READ ▾</div>
   </div>`;
