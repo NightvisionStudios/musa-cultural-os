@@ -1346,6 +1346,85 @@
           "read": "Lena Jameson takes over her dead father's rum-running route in 1923 Martha's Vineyard and ends up in gangland Boston, then Harlem at the start of its Renaissance — Lattimore's second novel naming a Black seafaring community the genre usually skips. Publishers Weekly and a starred Booklist review landed two weeks ahead of the July 28 pub date. The heat is already outrunning the release — the good kind of early."
         }
       ]
+    },
+    {
+      "issue_id": "2026-07-16-1050",
+      "date": "2026-07-16",
+      "time": "10:50 ET",
+      "climate": "A canon-tier institution finally caught up to a story the underground has been telling for a decade, while the freshest work this week came from people splicing lineages instead of guarding one -- a mashup veteran reaching into rap's small rooms, a craft-first designer working two heritages into one hand, a film festival restoring a 1982 auteur next to a 2026 world premiere.",
+      "entries": [
+        {
+          "name": "Ideas of Africa: Portraiture and Political Imagination",
+          "domain": "ART",
+          "score": 8.8,
+          "tier": "CROWN",
+          "heat": 58,
+          "direction": "down",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Project a Black Planet",
+          "url": "https://www.moma.org/calendar/exhibitions/5817",
+          "read": "MoMA closes its Pigozzi-gift survey July 25 with Seydou Keita and Samuel Fosso next to Njideka Akunyili-Crosby and Silvia Rosi -- portraiture as Pan-African political argument. The room's attention matches the work; an earned verdict, not a find."
+        },
+        {
+          "name": "BlackStar Film Festival 2026",
+          "domain": "FILM",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 21,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Black Film Archive",
+          "url": "https://blackstarfest.org/",
+          "read": "15th edition, 91 films from 40+ countries; a new 4K restoration of Alile Sharon Larkin's 1982 A Different Image sits on the same closing weekend as a 2026 Haile Gerima premiere -- the archive treated as current, not nostalgia."
+        },
+        {
+          "name": "Girl Talk, Michael Christmas & Chris Crack -- Don't Come To My House Sharing Your Location",
+          "domain": "MUSIC",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 17,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "benchmark": "Chris Crack (direct confirmation -- co-star on the 50)",
+          "url": "https://razfrescomusic.bandcamp.com/",
+          "read": "A plunderphonics mashup veteran walking into underground rap's smallest room instead of sampling it from a distance. Pitchfork caught the announcement; the room hasn't caught the EP."
+        },
+        {
+          "name": "Dijágo",
+          "domain": "FASHION",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 14,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Denim Tears",
+          "url": "https://www.dijago.com/",
+          "read": "Khudija Zaib Lughmani and Gracey Owusu-Agyemang build womenswear carrying Pakistani and Ghanaian-Namibian craft lineages in the same seam, hand-stitched in Baffa. Two heritages, one hand, zero logo."
+        },
+        {
+          "name": "La Réunion Studio",
+          "domain": "DESIGN",
+          "score": 7.5,
+          "tier": "FLAME",
+          "heat": 11,
+          "direction": "flat",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Dame Atlas",
+          "url": "https://www.lareunionstudio.com/",
+          "read": "Sarah Nsikak repurposes deadstock fabric and antique textiles into patchwork home goods honoring the Gee's Bend quilting community. Craft with a named lineage, no press cycle."
+        }
+      ]
     }
   ],
   "holding": [
