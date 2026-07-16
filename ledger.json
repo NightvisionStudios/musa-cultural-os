@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-07-15"
+    "updated": "2026-07-16"
   },
   "issues": [
     {
@@ -1423,6 +1423,84 @@
           "benchmark": "Dame Atlas",
           "url": "https://www.lareunionstudio.com/",
           "read": "Sarah Nsikak repurposes deadstock fabric and antique textiles into patchwork home goods honoring the Gee's Bend quilting community. Craft with a named lineage, no press cycle."
+        }
+      ]
+    },
+    {
+      "issue_id": "2026-07-16-1530",
+      "date": "2026-07-16",
+      "time": "15:30 ET",
+      "climate": "The field is leaning toward diaspora-rooted craft that treats making as ritual and archive -- jazz, quilling, poetry and textile all reaching back to lineage -- while the loud discourse scrambles to name what the makers already built. This afternoon's cut trades the morning's fashion-and-film angle for the quiet-craft spine of the field.",
+      "entries": [
+        {
+          "name": "Nduduzo Makhathini -- The Myth We Choose",
+          "domain": "MUSIC",
+          "score": 8.7,
+          "tier": "CROWN",
+          "heat": 46,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Igwe Aka (cross-idiom; diaspora-root, making-as-ceremony)",
+          "url": "https://www.bluenote.com/spotlight/nduduzo-makhathini-the-myth-we-choose/",
+          "read": "Fourth Blue Note LP from the Zulu healer-pianist -- songs as ritual, forgiveness as form. Coltrane/Tyner underneath, 18-year-old son dragging the electronics somewhere new; Shabaka, Black Coffee, township choir. Spiritual jazz reaching back to lineage and forward to posterity at once. Enters as the 50's first spiritual-jazz name."
+        },
+        {
+          "name": "Fatimah Asghar -- Daughter of the Mountains",
+          "domain": "BOOKS",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 40,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Noname Book Club",
+          "url": "https://blueflowerarts.com/new-releases/daughter-of-the-mountains/",
+          "read": "Sophomore collection from the If They Come For Us poet -- Partition-line grief unwoven into homecoming, Allah, ancestral landscape, love. Formal invention that disrupts on purpose; Danez Smith calls it 'all soul.' The lit room is early and, this time, right."
+        },
+        {
+          "name": "Ayobola Kekere-Ekun -- Let Us Go Where the Ones Who Sleep Dance",
+          "domain": "ART",
+          "score": 8.1,
+          "tier": "CROWN",
+          "heat": 32,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Project a Black Planet",
+          "url": "https://www.rele.co/",
+          "read": "Nigerian artist working in quilling -- paper strips rolled into portraits -- at Rele, the first African gallery to plant a flag in LA. Belonging and existence as subject, craft as the argument. Gatekept show, gallery-world signal, near-zero broad heat."
+        },
+        {
+          "name": "Shamikha Malik -- Aam",
+          "domain": "DESIGN",
+          "score": 7.3,
+          "tier": "FLAME",
+          "heat": 14,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Dame Atlas / Tamera",
+          "url": "https://www.newdesigners.com/discover-the-directors-highlights-new-designers-2026/",
+          "read": "A side table shaped by the mango -- British Bangladeshi heritage, Jamdani weaving motifs translated to surface. A grad-show whisper at New Designers London, basically no heat. But a specific object with a real lineage -- the version of heritage craft that isn't cosplay."
+        },
+        {
+          "name": "The Death of 'African Fashion'",
+          "domain": "IDEAS",
+          "score": 6.6,
+          "tier": "TORCH",
+          "heat": 58,
+          "direction": "flat",
+          "flags": [
+            "HEAT>WORK"
+          ],
+          "benchmark": "Free Game / The Prince of Darkness",
+          "url": "https://fablstyle.com/death-of-african-fashion-term-obsolete/",
+          "read": "The argument gaining ground in fashion-crit: the umbrella label flattens, and designers like Magugu are just fashion -- protection should sit with IP, textile heritage and who profits, not the marketing bucket. A real read, but louder than it is resolved. The honest counter-read on a board of quiet finds."
         }
       ]
     }
