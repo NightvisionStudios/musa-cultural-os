@@ -80,11 +80,13 @@ font-size:9.5px;letter-spacing:.12em;padding:5px 9px;border-radius:4px;cursor:po
 .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 15px;position:relative}
 .card.find{border-color:#2f3a28}
 .card.canon{border-left:3px solid #5a5446;background:var(--panel2)}
+.card.alumni{border-left:3px solid #3a382f;background:var(--panel2);opacity:.82}
 .ctop{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap}
 .kind{font-size:8.5px;letter-spacing:.16em;color:var(--mut);border:1px solid var(--line);
 border-radius:3px;padding:2px 6px;flex:none}
 .kind.k-idx{color:var(--amber);border-color:#3a2f1c}
 .kind.k-can{color:#cdbf99;border-color:#3a3526}
+.kind.k-alu{color:var(--mut);border-color:#333}
 .nm{font-size:15px;font-weight:600;letter-spacing:.01em}
 .nm a{color:var(--yellow);text-decoration:none;border-bottom:1px dotted var(--yellow);transition:.15s}
 .nm a:hover{color:var(--yellow2);border-bottom-color:var(--yellow2)}
@@ -133,6 +135,7 @@ color:var(--yellow);border:1px solid #4a3f22;border-radius:3px;text-decoration:n
 .promobadge{display:inline-block;margin-top:10px;padding:5px 10px;font-size:9px;letter-spacing:.12em;
 color:var(--green);border:1px solid #2f3a28;border-radius:3px}
 .card.canon{cursor:default}
+.card.alumni{cursor:default}
 .keylabel{font-size:10.5px;letter-spacing:.28em;color:var(--mut);margin:22px 2px 10px}
 .keybox{background:var(--panel);border:1px dashed var(--line);border-radius:10px;padding:20px 22px;font-size:13px;line-height:1.85;color:#d8d0bd}
 .keybox b{color:var(--fg)}
@@ -178,6 +181,7 @@ color:var(--green);border:1px solid #2f3a28;border-radius:3px}
 <button class="tg on" data-view="all">ALL</button>
 <button class="tg" data-view="index">THE INDEX</button>
 <button class="tg" data-view="canon">THE 50</button>
+<button class="tg" data-view="alumni">ALUMNI</button>
 <span class="spacer"></span>
 <span class="sortwrap" id="sortwrap">SORT
 <select id="sort">
@@ -358,25 +362,29 @@ function build(){
   (CANON.entries||[]).forEach(e=>{
     RECORDS.push({type:"canon", name:e.name, lane:e.lane||"", url:e.url||"", date:"", flags:[]});
   });
+  (CANON.alumni||[]).forEach(a=>{
+    RECORDS.push({type:"alumni", name:a.name, lane:a.lane||"", url:a.url||"", date:a.tenure_out||"", tenure_in:a.tenure_in||"", why:a.why||"", flags:[]});
+  });
 }
 
 function domains(){return [...new Set(RECORDS.filter(r=>r.type==="index").map(r=>r.domain).filter(Boolean))].sort();}
 function tiers(){const order=["HEIRWAVE","CROWN","FLAME","TORCH","SPARK","NOISE"];
   const have=new Set(RECORDS.filter(r=>r.type==="index").map(r=>r.tier));return order.filter(t=>have.has(t));}
-function lanes(){return [...new Set(RECORDS.filter(r=>r.type==="canon").map(r=>r.lane).filter(Boolean))].sort();}
+function lanes(){return [...new Set(RECORDS.filter(r=>r.type==="canon"||r.type==="alumni").map(r=>r.lane).filter(Boolean))].sort();}
 
 function matches(r){
   if(state.view==="index" && r.type!=="index") return false;
   if(state.view==="canon" && r.type!=="canon") return false;
+  if(state.view==="alumni" && r.type!=="alumni") return false;
   if(state.find && !(r.type==="index" && r.find)) return false;
   if(state.chip){
     const c=state.chip;
     if(c.kind==="tier" && !(r.type==="index" && r.tier===c.val)) return false;
     if(c.kind==="dom" && !(r.type==="index" && r.domain===c.val)) return false;
-    if(c.kind==="lane" && !(r.type==="canon" && r.lane===c.val)) return false;
+    if(c.kind==="lane" && !((r.type==="canon"||r.type==="alumni") && r.lane===c.val)) return false;
   }
   if(state.q){
-    const hay=[r.name,r.domain,r.lane,r.tier,r.climate,r.read,r.benchmark,(r.flags||[]).join(" "),(r.holding?"holding":""),r.type]
+    const hay=[r.name,r.domain,r.lane,r.tier,r.climate,r.read,r.benchmark,r.why,(r.flags||[]).join(" "),(r.holding?"holding":""),r.type]
       .filter(Boolean).join(" ").toLowerCase();
     if(!hay.includes(state.q.toLowerCase())) return false;
   }
@@ -384,15 +392,17 @@ function matches(r){
 }
 
 function sortRecs(list){
-  const idx=list.filter(r=>r.type==="index"), can=list.filter(r=>r.type==="canon");
+  const idx=list.filter(r=>r.type==="index"), can=list.filter(r=>r.type==="canon"), alu=list.filter(r=>r.type==="alumni");
   const s=state.sort;
   if(s==="score") idx.sort((a,b)=>b.score-a.score||b.date.localeCompare(a.date));
   else if(s==="heat") idx.sort((a,b)=>b.heat-a.heat);
   else if(s==="find") idx.sort((a,b)=>b.gap-a.gap);
   else idx.sort((a,b)=>(b.date+b.time).localeCompare(a.date+a.time));
+  alu.sort((a,b)=>String(b.date).localeCompare(String(a.date))||a.name.localeCompare(b.name));
   if(state.view==="canon") return can;
   if(state.view==="index") return idx;
-  return [...idx, ...can];
+  if(state.view==="alumni") return alu;
+  return [...idx, ...can, ...alu];
 }
 
 function cardIndex(r){
@@ -444,9 +454,21 @@ function cardCanon(r){
   </div>`;
 }
 
+function cardAlumni(r){
+  const host=(()=>{try{return new URL(r.url).hostname.replace(/^www\./,"");}catch(_){return r.url;}})();
+  return `<div class="card alumni">
+    <div class="ctop">
+      <span class="kind k-alu">OFF THE 50</span>
+      <span class="nm">${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>`:esc(r.name)}</span>
+      <span class="lane">${esc(r.lane)}</span>
+    </div>
+    <div class="canline">ROTATED OFF${r.date?` · ${esc(r.date)}`:""}${r.why?` — ${esc(r.why)}`:""}${r.url?` · <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(host)} ↗</a>`:""}</div>
+  </div>`;
+}
+
 function renderChips(){
   const wrap=document.getElementById("chips"); let html="";
-  if(state.view==="canon"){
+  if(state.view==="canon"||state.view==="alumni"){
     lanes().forEach(l=>{const on=state.chip&&state.chip.kind==="lane"&&state.chip.val===l;
       html+=`<button class="chip lane ${on?"on":""}" data-kind="lane" data-val="${esc(l)}">${esc(l)}</button>`;});
   } else {
@@ -461,26 +483,27 @@ function renderChips(){
 }
 
 function render(){
-  document.getElementById("sortwrap").style.visibility = state.view==="canon" ? "hidden" : "visible";
+  document.getElementById("sortwrap").style.visibility = (state.view==="canon"||state.view==="alumni") ? "hidden" : "visible";
   renderChips();
   const shown=sortRecs(RECORDS.filter(matches));
   const idxTotal=RECORDS.filter(r=>r.type==="index").length;
   const canTotal=RECORDS.filter(r=>r.type==="canon").length;
+  const aluTotal=RECORDS.filter(r=>r.type==="alumni").length;
   const issues=(LEDGER.issues||[]).length;
   const holdTotal=(LEDGER.holding||[]).length;
   document.getElementById("stat").innerHTML =
-    `<b>${shown.length}</b> shown · <span class="a">${idxTotal}</span> index reads across <b>${issues}</b> issues · <span class="a">${holdTotal}</span> holding · <span class="a">${canTotal}</span> on the 50`;
+    `<b>${shown.length}</b> shown · <span class="a">${idxTotal}</span> index reads across <b>${issues}</b> issues · <span class="a">${holdTotal}</span> holding · <span class="a">${canTotal}</span> on the 50${aluTotal?` · <span class="a">${aluTotal}</span> off the 50`:""}`;
   const res=document.getElementById("results");
   if(!shown.length){res.innerHTML=`<div class="empty">— nothing in the archive matches —</div>`;return;}
   res.innerHTML=shown.map((r,i)=>{
-    const el=r.type==="index"?cardIndex(r):cardCanon(r);
+    const el=r.type==="index"?cardIndex(r):r.type==="alumni"?cardAlumni(r):cardCanon(r);
     return el.replace('class="card', `style="animation-delay:${Math.min(i*22,420)}ms" class="fade card`);
   }).join("");
 }
 
 document.getElementById("results").addEventListener("click",e=>{
   if(e.target.closest("a"))return;
-  const c=e.target.closest(".card"); if(!c||c.classList.contains("canon"))return;
+  const c=e.target.closest(".card"); if(!c||c.classList.contains("canon")||c.classList.contains("alumni"))return;
   c.classList.toggle("open");
 });
 document.querySelectorAll(".tg").forEach(b=>b.addEventListener("click",()=>{
