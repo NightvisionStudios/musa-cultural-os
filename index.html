@@ -458,11 +458,11 @@ function cardAlumni(r){
   const host=(()=>{try{return new URL(r.url).hostname.replace(/^www\./,"");}catch(_){return r.url;}})();
   return `<div class="card alumni">
     <div class="ctop">
-      <span class="kind k-alu">OFF THE 50</span>
+      <span class="kind k-alu">ALUMNI</span>
       <span class="nm">${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>`:esc(r.name)}</span>
       <span class="lane">${esc(r.lane)}</span>
     </div>
-    <div class="canline">ROTATED OFF${r.date?` · ${esc(r.date)}`:""}${r.why?` — ${esc(r.why)}`:""}${r.url?` · <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(host)} ↗</a>`:""}</div>
+    <div class="canline">ALUMNI${r.date?` · ${esc(r.date)}`:""}${r.why?` — ${esc(r.why)}`:""}${r.url?` · <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(host)} ↗</a>`:""}</div>
   </div>`;
 }
 
@@ -492,7 +492,7 @@ function render(){
   const issues=(LEDGER.issues||[]).length;
   const holdTotal=(LEDGER.holding||[]).length;
   document.getElementById("stat").innerHTML =
-    `<b>${shown.length}</b> shown · <span class="a">${idxTotal}</span> index reads across <b>${issues}</b> issues · <span class="a">${holdTotal}</span> holding · <span class="a">${canTotal}</span> on the 50${aluTotal?` · <span class="a">${aluTotal}</span> off the 50`:""}`;
+    `<b>${shown.length}</b> shown · <span class="a">${idxTotal}</span> index reads across <b>${issues}</b> issues · <span class="a">${holdTotal}</span> holding · <span class="a">${canTotal}</span> on the 50${aluTotal?` · <span class="a">${aluTotal}</span> alumni`:""}`;
   const res=document.getElementById("results");
   if(!shown.length){res.innerHTML=`<div class="empty">— nothing in the archive matches —</div>`;return;}
   res.innerHTML=shown.map((r,i)=>{
