@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>MUSA 50 — The Musa Family</title>
+  <meta name="description" content="50 people, places, and things worth your attention. Curated by Nightvision." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MUSA 50" />
+  <meta property="og:description" content="50 people, places, and things worth your attention. Curated by Nightvision." />
+  <meta property="og:image" content="https://50.themusafamily.com/og-image.png" />
+  <meta property="og:url" content="https://50.themusafamily.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MUSA 50" />
+  <meta name="twitter:description" content="50 people, places, and things worth your attention. Curated by Nightvision." />
+  <meta name="twitter:image" content="https://50.themusafamily.com/og-image.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:        #000000;
+      --bg-card:   #0a0a0a;
+      --white:     #ffffff;
+      --grey-hi:   #999999;
+      --grey-mid:  #555555;
+      --grey-lo:   #222222;
+      --rule:      rgba(255,255,255,0.08);
+      --rule-hover:rgba(255,255,255,0.3);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: 'IBM Plex Mono', monospace;
+      min-height: 100dvh;
+      padding-bottom: env(safe-area-inset-bottom, 24px);
+      overflow-x: hidden;
+    }
+
+    /* subtle grain */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── HEADER ── */
+    header {
+      padding: 56px 0 48px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .heirwave-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .heirwave-wrap svg {
+      width: 52px;
+      height: 28px;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    .site-name {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--grey-hi);
+    }
+
+    .list-title {
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(64px, 14vw, 108px);
+      line-height: 0.9;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .list-title span {
+      color: var(--grey-hi);
+    }
+
+    .tagline {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 15px;
+      color: var(--grey-hi);
+      line-height: 1.5;
+      max-width: 420px;
+    }
+
+    .meta-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .meta-badge {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--white);
+      border: 1px solid var(--grey-mid);
+      padding: 4px 10px;
+    }
+
+    .meta-count {
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      color: var(--grey-mid);
+    }
+
+    /* ── LIST ── */
+    .list-section {
+      padding: 16px 0 48px;
+    }
+
+    .list-item {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 0 20px;
+      align-items: baseline;
+      border-bottom: 1px solid var(--rule);
+      transition: border-color 0.2s ease;
+      opacity: 0;
+      transform: translateY(8px);
+      animation: fadeUp 0.4s ease forwards;
+    }
+
+    .list-item:hover {
+      border-bottom-color: var(--rule-hover);
+    }
+
+    .list-item a {
+      display: block;
+      padding: 18px 0 17px;
+      color: var(--white);
+      text-decoration: none;
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(18px, 4.5vw, 26px);
+      letter-spacing: 0.01em;
+      line-height: 1;
+      transition: color 0.15s ease;
+    }
+
+    .list-item:hover a {
+      color: var(--grey-hi);
+    }
+
+    .list-num {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--grey-lo);
+      letter-spacing: 0.05em;
+      padding-top: 20px;
+      text-align: right;
+      transition: color 0.15s ease;
+      user-select: none;
+    }
+
+    .list-item:hover .list-num {
+      color: var(--grey-mid);
+    }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── ARCHIVE ── */
+    .archive-section {
+      border-top: 1px solid var(--rule);
+      padding: 40px 0 64px;
+    }
+
+    .archive-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 8px 0;
+      user-select: none;
+      background: none;
+      border: none;
+      width: 100%;
+      color: inherit;
+    }
+
+    .archive-toggle-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .archive-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--grey-hi);
+    }
+
+    .archive-count-badge {
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      color: var(--grey-mid);
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .archive-chevron {
+      color: var(--grey-mid);
+      font-size: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .archive-chevron.open { transform: rotate(180deg); }
+
+    .archive-list {
+      display: none;
+      padding-top: 8px;
+    }
+
+    .archive-list.open { display: block; }
+
+    .archive-list .list-item {
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
+
+    .archive-list .list-item a {
+      font-size: clamp(15px, 3.5vw, 20px);
+      color: var(--grey-mid);
+    }
+
+    .archive-list .list-item:hover a { color: var(--white); }
+
+    .archive-list .list-num { color: #1a1a1a; }
+    .archive-list .list-item:hover .list-num { color: var(--grey-mid); }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 28px 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-left {
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--grey-mid);
+    }
+
+    .footer-right {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 12px;
+      color: var(--grey-mid);
+    }
+
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--grey-lo); }
+
+    @media (max-width: 480px) {
+      header { padding: 40px 0 36px; }
+      .list-item { grid-template-columns: 36px 1fr; gap: 0 12px; }
+      .list-num { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <g id="heirwave-paths">
+      <path d="M 409.22 581.23 C 431.01 544.52 457.46 513.04 486.65 480.40 C 511.81 452.27 539.03 429.05 573.06 412.87 C 601.81 399.20 632.08 394.30 663.88 398.17 C 689.29 401.26 712.87 408.73 734.62 420.58 C 735.15 420.87 735.29 420.74 735.04 420.19 C 734.71 419.46 734.21 418.47 733.54 417.21 C 720.25 392.39 703.73 370.82 681.24 354.61 C 636.99 322.71 579.95 325.48 535.13 354.36 C 525.31 360.69 515.70 367.33 506.30 374.27 C 499.25 379.47 493.66 383.00 489.51 384.85 C 455.28 400.19 433.99 368.46 423.30 341.98 C 423.19 341.71 422.80 341.72 422.70 341.99 C 409.98 376.24 393.75 408.67 374.00 439.28 C 348.81 478.32 313.17 515.01 265.54 524.57 C 247.66 528.16 229.56 528.93 211.25 526.90 C 209.30 526.69 207.31 526.54 205.26 526.45 C 204.94 526.44 204.70 526.73 204.77 527.04 C 206.96 536.19 210.42 546.40 215.17 557.66 C 215.45 558.32 215.71 558.84 215.95 559.21 C 216.21 559.63 216.67 559.89 217.34 559.98 C 251.25 564.81 284.45 559.28 315.71 545.43 C 337.28 535.87 357.51 524.03 376.41 509.90 C 399.06 492.97 421.50 475.59 443.75 457.78 C 444.11 457.49 444.62 457.88 444.43 458.30 C 434.83 479.91 422.74 500.37 408.89 519.58 C 389.16 546.93 361.45 573.94 331.71 589.22 C 304.51 603.19 275.66 608.56 245.17 605.31 C 244.79 605.27 244.53 605.69 244.74 606.01 C 252.29 617.67 261.04 628.25 271.00 637.75 C 290.86 656.69 314.53 667.52 342.02 670.25 C 392.20 675.23 434.79 647.48 471.84 617.57 C 484.00 607.75 496.19 597.99 508.13 587.89 C 545.82 556.03 589.86 526.93 636.30 510.35 C 669.33 498.56 703.53 495.45 738.92 501.02 C 764.79 505.09 787.94 514.79 808.37 530.11 C 809.24 530.76 809.52 530.57 809.21 529.53 C 801.59 504.17 787.61 483.31 767.27 466.96 C 745.17 449.19 720.08 437.92 691.99 433.13 C 650.69 426.08 609.77 436.18 574.00 457.02 C 542.68 475.27 513.69 497.96 486.12 521.39 C 461.43 542.38 436.65 563.52 409.54 581.54 C 409.34 581.67 409.10 581.44 409.22 581.23 Z"/>
+      <path d="M 706.74 554.09 C 740.01 549.91 776.76 554.53 807.12 569.89 C 807.41 570.04 807.56 570.37 807.48 570.68 C 794.06 623.73 756.43 663.86 700.24 669.37 C 649.64 674.34 611.18 649.17 584.47 608.10 C 584.38 607.90 584.34 607.63 584.58 607.48 C 620.35 581.03 661.73 559.75 706.74 554.09 Z"/>
+    </g>
+  </defs>
+</svg>
+
+<div class="wrap">
+
+  <header>
+    <div class="heirwave-wrap">
+      <svg viewBox="180 320 660 360" fill="currentColor" aria-label="Heirwave">
+        <use href="#heirwave-paths"/>
+      </svg>
+      <span class="site-name">The Musa Family</span>
+    </div>
+    <h1 class="list-title">MUSA<br><span>50</span></h1>
+    <p class="tagline">The MUSA 50. People, places, & things worth your attention. A running list that matches the MUSA aesthetic.</p>
+    <div class="meta-row">
+      <span class="meta-badge">Curated by Nightvision</span>
+      <span class="meta-count" id="live-count"></span>
+    </div>
+  </header>
+
+  <section class="list-section" id="main-list" aria-label="MUSA 50 List"></section>
+
+  <section class="archive-section" id="archive-section" style="display:none">
+    <button class="archive-toggle" id="archive-toggle" aria-expanded="false">
+      <div class="archive-toggle-left">
+        <span class="archive-label">Archive</span>
+        <span class="archive-count-badge" id="archive-count"></span>
+      </div>
+      <span class="archive-chevron" id="archive-chevron">▾</span>
+    </button>
+    <div class="archive-list" id="archive-list" aria-label="Archived items"></div>
+  </section>
+
+  <footer>
+    <span class="footer-left">© The Musa Family</span>
+    <span class="footer-right">Royalty runs in the blood, not the crown.</span>
+  </footer>
+
+</div>
+
+<script>
+  // ─────────────────────────────────────────────────────────────────────────
+  //  MUSA 50 — Data
+  //  To add: prepend a new { name, url } object to LIST (newest at top).
+  //  Items past index 49 auto-slide into ARCHIVE. No other edits needed.
+  //  To update via Claude: paste new items and Claude returns the new LIST.
+  // ─────────────────────────────────────────────────────────────────────────
+
+  const LIST = [
+    { name: "Jim Legxacy",            url: "https://www.jimlegxacy.com/" },
+    { name: "Karhu",                  url: "https://us.karhu.com/collections/mens-running-shoes" },
+    { name: "Mason Prince",           url: "https://masonprince.com/" },
+    { name: "Noname Book Club",       url: "https://www.instagram.com/nonamereads" },
+    { name: "Derschutze",             url: "https://derschutze.com/" },
+    { name: "Mertra",                 url: "https://mertra.com/" },
+    { name: "Faith Brown Design",     url: "https://faithbrowndesign.com/sweet-dreams-1" },
+    { name: "Dead Dilly",             url: "https://www.deaddilly.com/" },
+    { name: "Tuhkyjuh",               url: "https://www.instagram.com/tuhkyjuhslife" },
+    { name: "Robert Gallardo",        url: "https://robertgallardo.com/" },
+    { name: "Dame Atlas",             url: "https://www.instagram.com/dameatlas/?hl=en" },
+    { name: "Moonshots",              url: "https://moonshots.com/" },
+    { name: "Leveraging AI",          url: "https://leveragingai.buzzsprout.com/" },
+    { name: "Vercel",                 url: "https://vercel.com/" },
+    { name: "Black Film Archive",     url: "https://blackfilmarchive.com/" },
+    { name: "Y Combinator",           url: "https://www.ycombinator.com/" },
+    { name: "Seeking Alpha",          url: "https://seekingalpha.com/" },
+    { name: "Interval News",          url: "https://apps.apple.com/app/id6756529560" },
+    { name: "Untitled Stream",        url: "https://untitled.stream/" },
+    { name: "Kenny Mason",            url: "https://en.wikipedia.org/wiki/Kenny_Mason" },
+    { name: "Free Game",              url: "https://free---game.com/" },
+    { name: "Moises AI",              url: "https://moises.ai/" },
+    { name: "Ashley B",               url: "https://www.instagram.com/ashleytheebarroness" },
+    { name: "Dave Hunter",            url: "https://www.instagram.com/__davehunter" },
+    { name: "Koala Sampler",          url: "https://www.koalasampler.com/" },
+    { name: "Chris Crack",            url: "https://chriscrack.bandcamp.com/" },
+    { name: "Jiah",                   url: "https://www.instagram.com/jiahstar" },
+    { name: "Gr8",                    url: "https://gr8.jp/" },
+    { name: "Delta",                  url: "https://apps.apple.com/app/id1048524688" },
+    { name: "Monocle",                url: "https://monocle.com/" },
+    { name: "MAWN Philly",            url: "https://mawnphilly.com/" },
+    { name: "Overstory NYC",          url: "https://www.overstory-nyc.com/" },
+    { name: "KB",                     url: "https://www.instagram.com/kblikesart" },
+    { name: "Bonito Flakes",          url: "https://anything-from-japan.com/large-and-thick-hana-katsuobushi-bonito-flakes-from-tenpaku-160g" },
+    { name: "Players Magazine",       url: "https://www.instagram.com/players" },
+    { name: "Starlito",               url: "https://www.instagram.com/starlitogrindhard" },
+    { name: "Wallflower McCoy",       url: "https://www.instagram.com/wallflowermccoy" },
+    { name: "Denim Tears",            url: "https://denimtears.com" },
+    { name: "A Ma Maniere",           url: "https://a-ma-maniere.com" },
+    { name: "Joe Freshgoods",         url: "https://joefreshgoods.com" },
+    { name: "Barriers Worldwide",     url: "https://barriersworldwide.com/" },
+    { name: "Corteiz",                url: "https://crtz.xyz" },
+    { name: "Fortnum & Mason",        url: "https://fortnumandmason.com" },
+    { name: "Setups AI",              url: "https://www.instagram.com/setupsai" },
+    { name: "One54",                  url: "https://youtube.com/@one54africa" },
+    { name: "Project a Black Planet", url: "https://www.barbican.org.uk/whats-on/2026/event/project-a-black-planet-the-art-and-culture-of-panafrica" },
+    { name: "The Prince of Darkness", url: "https://books.apple.com/book/id979135762" },
+    { name: "The Shed",               url: "https://www.theshed.org/" },
+    { name: "CD Masterizzato",        url: "https://www.instagram.com/cd_masterizzato" },
+    { name: "Tamera",                 url: "https://www.instagram.com/tamera/?hl=en" },
+  ];
+
+  // Items beyond index 49 auto-archive. Add new items to LIST above, not here.
+  const ARCHIVE = [];
+
+  // ─── RENDER ────────────────────────────────────────────────────────────
+  const CAP     = 50;
+  const active  = LIST.slice(0, CAP);
+  const overflow = [...LIST.slice(CAP), ...ARCHIVE];
+
+  function buildItem(item, index, isArchive) {
+    const el = document.createElement('div');
+    el.className = 'list-item';
+    if (!isArchive) {
+      el.style.animationDelay = `${Math.min(index * 16, 560)}ms`;
+    } else {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      el.style.animation = 'none';
+    }
+    el.innerHTML = `
+      <span class="list-num">${String(index + 1).padStart(2, '0')}</span>
+      <a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.name}</a>
+    `;
+    return el;
+  }
+
+  const mainEl = document.getElementById('main-list');
+  active.forEach((item, i) => mainEl.appendChild(buildItem(item, i, false)));
+  document.getElementById('live-count').textContent = `${active.length} entries`;
+
+  if (overflow.length > 0) {
+    document.getElementById('archive-section').style.display = 'block';
+    document.getElementById('archive-count').textContent = overflow.length;
+    const archiveListEl = document.getElementById('archive-list');
+    overflow.forEach((item, i) => archiveListEl.appendChild(buildItem(item, i, true)));
+
+    const toggleBtn   = document.getElementById('archive-toggle');
+    const archiveList = document.getElementById('archive-list');
+    const chevron     = document.getElementById('archive-chevron');
+
+    toggleBtn.addEventListener('click', () => {
+      const isOpen = archiveList.classList.toggle('open');
+      chevron.classList.toggle('open', isOpen);
+      toggleBtn.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+</script>
+
+</body>
+</html>
