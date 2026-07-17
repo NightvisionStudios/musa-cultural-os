@@ -107,6 +107,12 @@ border-radius:3px;padding:2px 6px;flex:none}
 .dir{font-size:11px;font-weight:600}.dir.u{color:var(--green)}.dir.d{color:var(--red)}.dir.f{color:var(--mut)}
 .climate{font-size:11px;line-height:1.55;color:#a39e90;margin-top:11px;padding-top:9px;border-top:1px solid var(--line)}
 .climate b{color:#cdbf99;letter-spacing:.06em;font-weight:500}
+.climate-toggle{display:inline-flex;align-items:center;gap:6px;margin-top:11px;padding:4px 9px;font-family:inherit;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);background:var(--panel2);border:1px solid var(--line);border-radius:4px;cursor:pointer}
+.climate-toggle:hover{color:#cdbf99;border-color:#3a3526}
+.climate-toggle .chev{font-size:8px;transition:transform .25s ease}
+.card.climate-open .climate-toggle .chev{transform:rotate(180deg)}
+.climate-body{display:none;font-size:11px;line-height:1.55;color:#a39e90;margin-top:9px;padding-top:9px;border-top:1px solid var(--line)}
+.card.climate-open .climate-body{display:block}
 .lane{font-size:9px;letter-spacing:.12em;color:#cdbf99;border:1px solid #3a3526;border-radius:3px;
 padding:3px 8px;margin-left:auto;flex:none}
 .canline{font-size:10.5px;color:var(--mut);margin-top:9px;letter-spacing:.04em}
@@ -121,7 +127,7 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding-top:16px;display
 footer .fm{width:24px;height:24px;color:var(--mut);flex:none;margin-top:2px}
 footer .ft{font-size:10px;color:var(--mut);line-height:1.75}footer .ft b{color:#b8b09c;letter-spacing:.16em}
 .card{cursor:pointer}
-.card .xp{display:none;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+.card .xp{display:block;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
 .card.open .xp{display:block}
 .xread{font-size:13px;line-height:1.7;color:#d8d0bd}
 .xread .nrec{color:var(--mut);font-style:italic;font-size:12px}
@@ -431,14 +437,13 @@ function cardIndex(r){
         <span class="heatbar"><span class="heatfill" style="width:${Math.min(100,r.heat)}%"></span></span>
         <span class="dir ${d.c}">${d.g}</span></span>
     </div>
-    <div class="climate"><b>CLIMATE:</b> ${esc(r.climate)}</div>
     <div class="xp">
       <div class="xread">${r.read?esc(r.read):`<span class="nrec">— original taste read not recovered for this issue —</span>`}</div>
       ${r.benchmark?`<div class="xbench"><b>BENCHMARK:</b> ${esc(r.benchmark)}</div>`:""}
       ${previewHtml}
       ${swapHtml}
     </div>
-    <div class="xhint">TAP FOR THE READ ▾</div>
+    ${r.climate?`<button class="climate-toggle" type="button">CLIMATE <span class="chev">▾</span></button><div class="climate-body">${esc(r.climate)}</div>`:""}
   </div>`;
 }
 
@@ -503,8 +508,8 @@ function render(){
 
 document.getElementById("results").addEventListener("click",e=>{
   if(e.target.closest("a"))return;
-  const c=e.target.closest(".card"); if(!c||c.classList.contains("canon")||c.classList.contains("alumni"))return;
-  c.classList.toggle("open");
+  const t=e.target.closest(".climate-toggle"); if(!t)return;
+  const card=t.closest(".card"); if(card) card.classList.toggle("climate-open");
 });
 document.querySelectorAll(".tg").forEach(b=>b.addEventListener("click",()=>{
   document.querySelectorAll(".tg").forEach(x=>x.classList.remove("on"));
