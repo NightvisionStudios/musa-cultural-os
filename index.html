@@ -120,8 +120,6 @@ padding:3px 8px;margin-left:auto;flex:none}
 .preview{display:flex;gap:11px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
 .preview img{width:72px;height:72px;object-fit:cover;border-radius:5px;border:1px solid var(--line);flex:none;background:#1c1a16}
 .preview .cap{font-size:10.5px;color:var(--mut);line-height:1.5;align-self:center}
-.holdbadge{position:absolute;top:13px;right:14px;font-size:8px;letter-spacing:.14em;color:var(--green);
-border:1px solid #2f3a28;border-radius:3px;padding:2px 6px}
 .empty{text-align:center;color:var(--mut);font-size:12px;letter-spacing:.1em;padding:50px 0}
 footer{margin-top:34px;border-top:1px solid var(--line);padding-top:16px;display:flex;align-items:flex-start;gap:11px}
 footer .fm{width:24px;height:24px;color:var(--mut);flex:none;margin-top:2px}
@@ -205,7 +203,7 @@ color:var(--green);border:1px solid #2f3a28;border-radius:3px}
 <footer class="fade">
 <svg class="fm" viewBox="180 320 660 360"><use href="#heirwave-paths"/></svg>
 <div class="ft"><b>THE MUSA FAMILY · HEIRWAVE</b><br>
-The OS is the memory of the system: THE 50 is the canon and the gate, THE INDEX is every read made through it. Scores and heat are editorial taste reads, not metrics. No name runs twice — when a past call clears the gate again it moves to HOLDING, and the count is the receipt. Royalty runs in the blood, not the crown.</div>
+The OS is the memory of the system: THE 50 is the canon and the gate, THE INDEX is every read made through it. Scores and heat are editorial taste reads, not metrics. No name runs twice — when a name rotates off the 50 it lives on as ALUMNI, the receipt of who held the gate. Royalty runs in the blood, not the crown.</div>
 </footer>
 <script>
 const CONFIG = {
@@ -345,17 +343,14 @@ function flagClass(f){
 }
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
 
-function baseName(n){n=String(n).split(" — ")[0].trim().replace(/\.$/,"");return n.indexOf("Pan-African")===0?"Pan-African Biennale":n;}
 function build(){
   RECORDS = [];
-  const HOLD = {};
-  (LEDGER.holding||[]).forEach(h=>{ HOLD[baseName(h.name)] = (h.resurfaced||[]).length; });
   (LEDGER.issues||[]).forEach(iss=>{
     (iss.entries||[]).forEach(e=>{
       RECORDS.push({
         type:"index", name:e.name, domain:e.domain||"", score:e.score,
         tier:e.tier||"", heat:e.heat||0, direction:e.direction||"flat",
-        flags:e.flags||[], holding:HOLD[baseName(e.name)]||0,
+        flags:e.flags||[],
         date:iss.date, time:iss.time||"", climate:iss.climate||"",
         find:(e.flags||[]).some(f=>f.toUpperCase().includes("FIND")),
         gap:Math.round((e.score*10)-(e.heat||0)),
@@ -390,7 +385,7 @@ function matches(r){
     if(c.kind==="lane" && !((r.type==="canon"||r.type==="alumni") && r.lane===c.val)) return false;
   }
   if(state.q){
-    const hay=[r.name,r.domain,r.lane,r.tier,r.climate,r.read,r.benchmark,r.why,(r.flags||[]).join(" "),(r.holding?"holding":""),r.type]
+    const hay=[r.name,r.domain,r.lane,r.tier,r.climate,r.read,r.benchmark,r.why,(r.flags||[]).join(" "),r.type]
       .filter(Boolean).join(" ").toLowerCase();
     if(!hay.includes(state.q.toLowerCase())) return false;
   }
@@ -415,14 +410,12 @@ function cardIndex(r){
   const tc=TIER_CLASS[r.tier]||"";
   const d=DIR[r.direction]||DIR.flat;
   const flags=(r.flags||[]).map(f=>`<span class="flag ${flagClass(f)}">${esc(f)}</span>`).join("");
-  const holdHtml = r.holding ? `<div class="holdbadge">HOLDING ×${r.holding}</div>` : "";
   const nameHtml = r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name);
   const previewHtml = r.image ? `<div class="preview"><img src="${esc(r.image)}" alt="${esc(r.name)}" loading="lazy"><span class="cap">${esc(r.name)}</span></div>` : "";
   const swapHtml = r.promoted
     ? `<div class="promobadge">★ ENTERED THE 50 — ${esc(r.promoted.into_lane||"")} · ${esc(r.promoted.date||"")}</div>`
     : `<a class="swapbtn" href="https://admin.themusafamily.com/swap?issue=${encodeURIComponent(r.issue)}&name=${encodeURIComponent(r.name)}&domain=${encodeURIComponent(r.domain)}&url=${encodeURIComponent(r.url||"")}" target="_blank" rel="noopener" onclick="event.stopPropagation()">SWAP → 50</a>`;
   return `<div class="card ${r.find?"find":""}">
-    ${holdHtml}
     <div class="ctop">
       <span class="kind k-idx">INDEX</span>
       <span class="nm">${nameHtml}</span>
@@ -495,9 +488,8 @@ function render(){
   const canTotal=RECORDS.filter(r=>r.type==="canon").length;
   const aluTotal=RECORDS.filter(r=>r.type==="alumni").length;
   const issues=(LEDGER.issues||[]).length;
-  const holdTotal=(LEDGER.holding||[]).length;
   document.getElementById("stat").innerHTML =
-    `<b>${shown.length}</b> shown · <span class="a">${idxTotal}</span> index reads across <b>${issues}</b> issues · <span class="a">${holdTotal}</span> holding · <span class="a">${canTotal}</span> on the 50${aluTotal?` · <span class="a">${aluTotal}</span> alumni`:""}`;
+    `<b>${shown.length}</b> shown · <span class="a">${idxTotal}</span> index reads across <b>${issues}</b> issues · <span class="a">${canTotal}</span> on the 50${aluTotal?` · <span class="a">${aluTotal}</span> alumni`:""}`;
   const res=document.getElementById("results");
   if(!shown.length){res.innerHTML=`<div class="empty">— nothing in the archive matches —</div>`;return;}
   res.innerHTML=shown.map((r,i)=>{

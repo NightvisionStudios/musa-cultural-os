@@ -23,7 +23,8 @@
             "BLADE"
           ],
           "read": "Canon-tier installation work, #1 on the ArtReview Power 100, still under-clocked in U.S. feeds.",
-          "url": "https://www.whitecube.com/artists/ibrahim-mahama"
+          "url": "https://www.whitecube.com/artists/ibrahim-mahama",
+          "image": "https://white-cube.transforms.svdcdn.com/production/uploads/Headers/Artist-Pages/Ibrahim-Mahama-CHIYAAMA-2019-thumbnail.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1683797408&s=2849cb4ca7302328646e223326789899"
         },
         {
           "name": "Álvaro Díaz — Omakase",
@@ -37,7 +38,8 @@
             "BLADE"
           ],
           "read": "PR rap auteur the English-speaking room hasn't caught up to yet.",
-          "url": "https://music.apple.com/us/album/omakase/6771082594"
+          "url": "https://music.apple.com/us/album/omakase/6771082594",
+          "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/53/3a/bd/533abda9-b144-defd-84d8-bc203757c32a/26UMGIM52886.rgb.jpg/1200x630wp-60.jpg"
         },
         {
           "name": "Douglas Stuart — John of John",
@@ -114,7 +116,8 @@
             "ROOMS_RIGHT"
           ],
           "read": "Not a hidden gem — the honest counter to a find. Heat catching up to long-proven quality.",
-          "url": "https://www.hbomax.com/shows/industry/9e51c88c-7a28-40ee-8269-e16572e02a07"
+          "url": "https://www.hbomax.com/shows/industry/9e51c88c-7a28-40ee-8269-e16572e02a07",
+          "image": "https://beam-images.warnermediacdn.com/2026-01/Industry-S4-KA-16x9.jpg?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com"
         },
         {
           "name": "Esoteric Ebb",
@@ -129,7 +132,8 @@
           ],
           "read": "Indie Disco Elysium-lineage CRPG critics say outclasses its forebear in places; ideas-first, low mainstream heat.",
           "benchmark": "the 50's ideas / AI-tools lane — first CRPG slot",
-          "url": "https://christofferbodegard.itch.io/esoteric-ebb"
+          "url": "https://christofferbodegard.itch.io/esoteric-ebb",
+          "image": "https://img.itch.zone/aW1nLzIzNTU3NjczLmdpZg==/original/89kyve.gif"
         },
         {
           "name": "Isaiah Rashad — It's Been Awful",
@@ -145,7 +149,8 @@
           "benchmark": "underground-rap lane — Kenny Mason, Starlito, Jim Legxacy",
           "graded": "2026-06-27",
           "note": "HELD — acclaimed release, active tour confirmed the taste read.",
-          "url": "https://itsbeenawful.com/"
+          "url": "https://itsbeenawful.com/",
+          "image": "https://s3.amazonaws.com/busites_www/itsbeenawful-com/media/MetaImage.jpg"
         },
         {
           "name": "New Maximalism / Archive-as-Currency",
@@ -180,7 +185,8 @@
             "FIND"
           ],
           "read": "The flagship FIND of the board — HEAT 14, the widest taste-to-room gap logged to date.",
-          "url": "https://store.steampowered.com/app/2090390/Schrdingers_Call/"
+          "url": "https://store.steampowered.com/app/2090390/Schrdingers_Call/",
+          "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2090390/cf392a432cd179617533fb7735725623adee4839/capsule_616x353.jpg?t=1776235455"
         },
         {
           "name": "Álvaro Díaz — Omakase",
@@ -191,7 +197,8 @@
           "direction": "flat",
           "flags": [],
           "heat_recovered": false,
-          "url": "https://music.apple.com/us/album/omakase/6771082594"
+          "url": "https://music.apple.com/us/album/omakase/6771082594",
+          "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/53/3a/bd/533abda9-b144-defd-84d8-bc203757c32a/26UMGIM52886.rgb.jpg/1200x630wp-60.jpg"
         },
         {
           "name": "Industry S4",
@@ -204,7 +211,8 @@
             "BLADE"
           ],
           "heat_recovered": false,
-          "url": "https://www.hbomax.com/shows/industry/9e51c88c-7a28-40ee-8269-e16572e02a07"
+          "url": "https://www.hbomax.com/shows/industry/9e51c88c-7a28-40ee-8269-e16572e02a07",
+          "image": "https://beam-images.warnermediacdn.com/2026-01/Industry-S4-KA-16x9.jpg?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com"
         },
         {
           "name": "Technical Mono / Anti-Design",
@@ -262,7 +270,8 @@
           "flags": [
             "EARNED_SPECTACLE"
           ],
-          "url": "https://www.jr-art.net/projects/la-caverne-du-pont-neuf"
+          "url": "https://www.jr-art.net/projects/la-caverne-du-pont-neuf",
+          "image": "https://www.jr-art.net/fbshare.jpg"
         },
         {
           "name": "MIKE",
@@ -278,7 +287,8 @@
           "graded": "2026-06-27",
           "heat_now": 42,
           "note": "EARLY — still the critics' underground anchor; the year's 'breadth over blockbuster' read is validating his lane. Right call, room hasn't fully paid it — heat creeping, not spiking.",
-          "url": "https://mikelikesrap.bandcamp.com/"
+          "url": "https://mikelikesrap.bandcamp.com/",
+          "image": "https://f4.bcbits.com/img/0006443358_23.jpg"
         },
         {
           "name": "Tech Spec",
@@ -324,7 +334,8 @@
           ],
           "benchmark": "One54",
           "read": "Akinola Davies Jr's Cannes-competing British-Nollywood debut. Diaspora at the root, festival-grade. The clearest FIND on the board.",
-          "url": "https://mubi.com/en/us/films/my-father-s-shadow"
+          "url": "https://mubi.com/en/us/films/my-father-s-shadow",
+          "image": "https://images.mubicdn.net/images/film/410994/cache-1050258-1745503807/image-w1280.jpg"
         },
         {
           "name": "iAMLYRIC",
@@ -338,7 +349,8 @@
           ],
           "benchmark": "Kenny Mason",
           "read": "Houston, Punch co-signed, starting a book club. Taste miles ahead of the stream count.",
-          "url": "https://www.iamlyricofficial.com/"
+          "url": "https://www.iamlyricofficial.com/",
+          "image": "https://iamlyricofficial.com/assets/img/og.jpg"
         },
         {
           "name": "Mixtape",
@@ -353,7 +365,8 @@
           ],
           "benchmark": "Mixtape Classics",
           "read": "Cassette-soul made playable; the mixtape's original curation instinct, now in your hands.",
-          "url": "https://store.steampowered.com/app/2582320/Mixtape/"
+          "url": "https://store.steampowered.com/app/2582320/Mixtape/",
+          "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2582320/95bbf1097b6f66f39b56f6388250c97a2f43b59e/header.jpg?t=1782504939"
         },
         {
           "name": "Willy Chavarria",
@@ -368,7 +381,8 @@
           ],
           "benchmark": "Joe Freshgoods / Denim Tears",
           "read": "The honest counter-read. adidas/World Cup made him loud, and the thesis earned it. Cleared the gate despite the mega-collab anti-pattern because the work carries a real argument — which is exactly why it's ROOM'S RIGHT, not a find.",
-          "url": "https://willychavarria.com/"
+          "url": "https://willychavarria.com/",
+          "image": "https://cdn.shopify.com/s/files/1/0815/1914/9336/files/Willy_Logo.png?height=628&pad_color=fff&v=1699737607&width=1200"
         },
         {
           "name": "The Reading Room",
@@ -404,7 +418,8 @@
           ],
           "benchmark": "underground-rap lane head (Chris Crack / Starlito / Kenny Mason)",
           "read": "Self-cut loops, 32 minutes, the luxury-grime blueprint sharpened. Moved rap forward while the scoreboard argued. Arguably enters the 50.",
-          "url": "https://music.apple.com/us/album/656/1870984094"
+          "url": "https://music.apple.com/us/album/656/1870984094",
+          "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/63/1e/9b/631e9bb5-b1ac-8fa8-9c4d-23f70560ef0e/8721465577143.png/1200x630wp-60.jpg"
         },
         {
           "name": "Barbican — Pan-African Survey",
@@ -419,7 +434,8 @@
           ],
           "benchmark": "One54 / editorial-taste",
           "read": "Curation-as-gatekeeping, diaspora as the center of gravity, cross-cutting art/sound/design/politics at once.",
-          "url": "https://www.barbican.org.uk/whats-on/2026/event/project-a-black-planet-the-art-and-culture-of-panafrica"
+          "url": "https://www.barbican.org.uk/whats-on/2026/event/project-a-black-planet-the-art-and-culture-of-panafrica",
+          "image": "https://www.barbican.org.uk/sites/default/files/styles/large/public/images/2026-07/2%20%281%29.jpg?itok=jbUBvxgR"
         },
         {
           "name": "Mixtape",
@@ -433,7 +449,8 @@
           ],
           "benchmark": "Mixtape Classics",
           "read": "The honest counter-read. Built on the exact mixtape feeling MUSA is, and the room earned its heat this time.",
-          "url": "https://store.steampowered.com/app/2582320/Mixtape/"
+          "url": "https://store.steampowered.com/app/2582320/Mixtape/",
+          "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2582320/95bbf1097b6f66f39b56f6388250c97a2f43b59e/header.jpg?t=1782504939"
         },
         {
           "name": "Diaspora-as-Engine / Caracas Merch",
@@ -484,7 +501,8 @@
             "ROOMS_RIGHT"
           ],
           "heat_recovered": false,
-          "url": "https://www.barbican.org.uk/whats-on/2026/event/project-a-black-planet-the-art-and-culture-of-panafrica"
+          "url": "https://www.barbican.org.uk/whats-on/2026/event/project-a-black-planet-the-art-and-culture-of-panafrica",
+          "image": "https://www.barbican.org.uk/sites/default/files/styles/large/public/images/2026-07/2%20%281%29.jpg?itok=jbUBvxgR"
         },
         {
           "name": "Yaya Bey — Fidelity",
@@ -510,7 +528,8 @@
             "FIND"
           ],
           "heat_recovered": false,
-          "url": "https://mubi.com/en/us/films/drunken-noodles"
+          "url": "https://mubi.com/en/us/films/drunken-noodles",
+          "image": "https://images.mubicdn.net/images/film/441924/cache-1050988-1745503816/image-w1280.jpg"
         },
         {
           "name": "Willy Chavarria × adidas",
@@ -523,7 +542,8 @@
             "HEAT>WORK"
           ],
           "heat_recovered": false,
-          "url": "https://willychavarria.com/collections/adidas"
+          "url": "https://willychavarria.com/collections/adidas",
+          "image": "https://willychavarria.com/cdn/shop/collections/BANNER-adidas-3_1200x630.jpg?v=1765475890"
         },
         {
           "name": "T Clark — Debut Collection",
@@ -558,7 +578,8 @@
             "BLADE"
           ],
           "benchmark": "Denim Tears / A Ma Maniere",
-          "url": "https://finance.hermes.com/en/publications/grace-wales-bonner-joins-hermes-creative-director-mens-ready-wear/"
+          "url": "https://finance.hermes.com/en/publications/grace-wales-bonner-joins-hermes-creative-director-mens-ready-wear/",
+          "image": "https://finance.hermes.com/static/og-image-aa62bcb6135d7a3f25cd89cde027926f.jpg"
         },
         {
           "name": "Roc Marciano — 656",
@@ -572,7 +593,8 @@
             "BLADE"
           ],
           "benchmark": "Chris Crack / Starlito",
-          "url": "https://music.apple.com/us/album/656/1870984094"
+          "url": "https://music.apple.com/us/album/656/1870984094",
+          "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/63/1e/9b/631e9bb5-b1ac-8fa8-9c4d-23f70560ef0e/8721465577143.png/1200x630wp-60.jpg"
         },
         {
           "name": "LACMA — Imagining Black Diasporas",
@@ -585,7 +607,8 @@
             "FIND"
           ],
           "benchmark": "One54 / Monocle",
-          "url": "https://www.lacma.org/art/exhibition/imagining-black-diasporas-21st-century-art-and-poetics"
+          "url": "https://www.lacma.org/art/exhibition/imagining-black-diasporas-21st-century-art-and-poetics",
+          "image": "https://www-images.lacma.org/s3fs-public/styles/max_1300x1300/public/primary_image/2025-05/LACMA_WebBanner_IBD_2025_2000.jpg?VersionId=SHU.O5R0wbsidfee1.Rfqtz0hi3qmRLB&itok=01GGTIyf"
         },
         {
           "name": "Cape Verde — World Cup Run",
@@ -632,7 +655,8 @@
           "flags": [],
           "heat_recovered": false,
           "read": "Ex-Injury Reserve grief record, sample-literate, room hasn't fully caught up.",
-          "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost"
+          "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost",
+          "image": "https://f4.bcbits.com/img/a2609335608_5.jpg"
         },
         {
           "name": "Adidas × Wales Bonner SS26",
@@ -656,7 +680,8 @@
           "flags": [],
           "heat_recovered": false,
           "read": "60 artists, rewrites the Pan-African canon past the Black Atlantic.",
-          "url": "https://www.lacma.org/art/exhibition/imagining-black-diasporas-21st-century-art-and-poetics"
+          "url": "https://www.lacma.org/art/exhibition/imagining-black-diasporas-21st-century-art-and-poetics",
+          "image": "https://www-images.lacma.org/s3fs-public/styles/max_1300x1300/public/primary_image/2025-05/LACMA_WebBanner_IBD_2025_2000.jpg?VersionId=SHU.O5R0wbsidfee1.Rfqtz0hi3qmRLB&itok=01GGTIyf"
         },
         {
           "name": "Splice",
@@ -668,7 +693,8 @@
           "flags": [],
           "heat_recovered": false,
           "read": "Sample culture with the royalty math finally built in.",
-          "url": "https://splice.com/innovation"
+          "url": "https://splice.com/innovation",
+          "image": "https://res.cloudinary.com/splice/image/upload/f_auto,q_auto/v1/app-assets/general/og-image"
         },
         {
           "name": "LOVING ROOM",
@@ -700,7 +726,8 @@
             "FIND",
             "BLADE"
           ],
-          "url": "https://www.panafricanbiennale.org/"
+          "url": "https://www.panafricanbiennale.org/",
+          "image": "http://static1.squarespace.com/static/68850d8363f1ff0207429b1e/t/68fec2e0d9443222b58dfe8e/1761526496507/Screenshot+2025-10-26+at+8.54.42%E2%80%AFPM.png?format=1500w"
         },
         {
           "name": "Relooted",
@@ -713,7 +740,8 @@
             "ROOMS_RIGHT",
             "BLADE"
           ],
-          "url": "https://store.steampowered.com/app/3255890/Relooted/"
+          "url": "https://store.steampowered.com/app/3255890/Relooted/",
+          "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3255890/b7441465b0d2a6e496fbc8869cd93df3ec9c3c36/capsule_616x353.jpg?t=1771833572"
         },
         {
           "name": "By Storm — My Ghosts Go Ghost",
@@ -726,7 +754,8 @@
             "FIND",
             "BLADE"
           ],
-          "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost"
+          "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost",
+          "image": "https://f4.bcbits.com/img/a2609335608_5.jpg"
         },
         {
           "name": "The Nue Black Aesthetic",
@@ -786,7 +815,8 @@
           ],
           "benchmark": "The Shed",
           "read": "First continent-wide architecture biennale — infrastructure, not exhibition.",
-          "url": "https://www.panafricanbiennale.org/"
+          "url": "https://www.panafricanbiennale.org/",
+          "image": "http://static1.squarespace.com/static/68850d8363f1ff0207429b1e/t/68fec2e0d9443222b58dfe8e/1761526496507/Screenshot+2025-10-26+at+8.54.42%E2%80%AFPM.png?format=1500w"
         },
         {
           "name": "By Storm — My Ghosts Go Ghost",
@@ -801,7 +831,8 @@
           ],
           "benchmark": "Kenny Mason",
           "read": "Ex-Injury Reserve; third board appearance — the room still hasn't paid it.",
-          "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost"
+          "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost",
+          "image": "https://f4.bcbits.com/img/a2609335608_5.jpg"
         },
         {
           "name": "Tasteslop — Nemesis Memos",
@@ -829,7 +860,8 @@
           ],
           "benchmark": "A Ma Maniere",
           "read": "NYFW collection — Ethiopian-rooted eveningwear read as heritage craft.",
-          "url": "https://www.nardosdesign.com/blogs/news"
+          "url": "https://www.nardosdesign.com/blogs/news",
+          "image": "https://www.nardosdesign.com/cdn/shop/files/Main_Page_2_1200x1200.jpg?v=1744139187"
         }
       ]
     },
@@ -865,7 +897,8 @@
             "BLADE"
           ],
           "read": "New album named after a Glenn Ligon painting, shot for New Balance's Made in UK line — streams haven't caught up yet.",
-          "url": "https://space-afrika.bandcamp.com/"
+          "url": "https://space-afrika.bandcamp.com/",
+          "image": "https://f4.bcbits.com/img/a2279058220_5.jpg"
         },
         {
           "name": "Pan-African Biennale — Nairobi",
@@ -879,7 +912,8 @@
             "BLADE"
           ],
           "read": "First continent-wide architecture biennale, curated by Omar Degan, still under the radar.",
-          "url": "https://www.panafricanbiennale.org/"
+          "url": "https://www.panafricanbiennale.org/",
+          "image": "http://static1.squarespace.com/static/68850d8363f1ff0207429b1e/t/68fec2e0d9443222b58dfe8e/1761526496507/Screenshot+2025-10-26+at+8.54.42%E2%80%AFPM.png?format=1500w"
         },
         {
           "name": "Black-Owned Bookstore Resurgence",
@@ -939,7 +973,8 @@
           ],
           "benchmark": "Starlito",
           "read": "The honest counter-read: the room is loud on this one and the room is correct. Pointed politics without preaching, accessible without thinning out — the most complete statement of his run, landing harder than the year's bigger-billed rap events. Earned heat, not borrowed.",
-          "url": "https://vincestaples.bandcamp.com/album/cry-baby"
+          "url": "https://vincestaples.bandcamp.com/album/cry-baby",
+          "image": "https://f4.bcbits.com/img/a3886585815_5.jpg"
         },
         {
           "name": "Melvin Gibbs — How Black Music Took Over the World",
@@ -968,7 +1003,8 @@
           ],
           "benchmark": "Denim Tears",
           "read": "Jamaican-Scottish menswear as a sustained inquiry — reggae lineage, British cloth, live music sewn into the label's program. While the collab loop recycles logos, Daley builds community as the product. A decade of quiet compounding the room keeps filing under \"emerging.\"",
-          "url": "https://nicholasdaley.net/"
+          "url": "https://nicholasdaley.net/",
+          "image": "https://nicholasdaley.net/cdn/shop/files/social-image.jpg?v=11336"
         },
         {
           "name": "Mina the Hollower",
@@ -982,7 +1018,8 @@
           ],
           "benchmark": "Karhu",
           "read": "Yacht Club's Game Boy-lineage epic — 91 on the meters, Game of the Year math — and the timeline barely mentions it. Craft object first: 8-bit discipline, modern feel, a decade of Shovel Knight trust spent on restraint instead of scale. Acclaim without chatter is the gap talking.",
-          "url": "https://store.steampowered.com/app/1875580/Mina_the_Hollower/"
+          "url": "https://store.steampowered.com/app/1875580/Mina_the_Hollower/",
+          "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1875580/ba1e750e24c1a6218b22a4777a4020d967b8f1e1/capsule_616x353.jpg?t=1780605554"
         }
       ]
     },
@@ -1091,7 +1128,8 @@
           ],
           "benchmark": "Denim Tears",
           "url": "https://designmuseum.org/exhibitions/nigo-from-japan-with-love",
-          "read": "Thirty years after NOWHERE, the Design Museum hangs the whole method on a wall — 700 objects, 600 from his own archive, his first Air Force 1 landing the same season. NIGO ran sample culture on clothing: loop the archive, flip the reference, press it small. The room is loud and the room is correct — earned canon, not a rediscovery. The blueprint every thesis-driven label on the 50 works from just got a museum wing."
+          "read": "Thirty years after NOWHERE, the Design Museum hangs the whole method on a wall — 700 objects, 600 from his own archive, his first Air Force 1 landing the same season. NIGO ran sample culture on clothing: loop the archive, flip the reference, press it small. The room is loud and the room is correct — earned canon, not a rediscovery. The blueprint every thesis-driven label on the 50 works from just got a museum wing.",
+          "image": "http://designmuseum.org//image/9f82f5ba-e557-4bf9-81ad-f20ee212954b?width=1920?width=240&height=240"
         },
         {
           "name": "Donald Locke — Resistant Forms",
@@ -1133,7 +1171,8 @@
           ],
           "benchmark": "Ankhle John",
           "url": "https://navybluethetruest.bandcamp.com/album/sir-render",
-          "read": "Sage Elsesser closes the run — Sir Render as surrender, every bar footnoted twice over, Ka answering from the other side on Circa. Self-released on Freedom Sounds, mountains of records built one by one, skate-culture blood in a sLUms lineage. The room already scrolled to the next drop; this one was pressed for the shelf, not the cycle."
+          "read": "Sage Elsesser closes the run — Sir Render as surrender, every bar footnoted twice over, Ka answering from the other side on Circa. Self-released on Freedom Sounds, mountains of records built one by one, skate-culture blood in a sLUms lineage. The room already scrolled to the next drop; this one was pressed for the shelf, not the cycle.",
+          "image": "https://f4.bcbits.com/img/a2440048003_5.jpg"
         },
         {
           "name": "Kendra Allen — Good Morning Means I Love You",
@@ -1147,7 +1186,8 @@
           ],
           "benchmark": "The Prince of Darkness",
           "url": "https://kindredstorieshtx.com/products/good-morning-means-i-love-you-a-novel",
-          "read": "Out today. Dallas essayist — Iowa Prize, Jason Reynolds calling her a generational talent — turns to fiction: one woman, two partners, sons named Morning and Night, Black maternal mental health written in prose that moves like verse. Built to polarize on purpose. Debut-novel heat is near zero; the sentences say she doesn't need the room's permission."
+          "read": "Out today. Dallas essayist — Iowa Prize, Jason Reynolds calling her a generational talent — turns to fiction: one woman, two partners, sons named Morning and Night, Black maternal mental health written in prose that moves like verse. Built to polarize on purpose. Debut-novel heat is near zero; the sentences say she doesn't need the room's permission.",
+          "image": "https://kindredstorieshtx.com/cdn/shop/files/9780063388413.jpg?v=1777925599"
         }
       ]
     },
@@ -1191,7 +1231,8 @@
           "heat_now": null,
           "note": null,
           "graded": null,
-          "read": "Ten-year survey of hand-coiled clay filling Southern Guild's new Tribeca space through September. Xhosa women's daily labor — the carried load, the braided crown, the lobola negotiation — built into monuments the Met, LACMA and the Art Institute bought while the wider room wasn't looking. Clay as archive, not material. Monograph landed July 1. The window between institutional conviction and public heat is where taste moves first."
+          "read": "Ten-year survey of hand-coiled clay filling Southern Guild's new Tribeca space through September. Xhosa women's daily labor — the carried load, the braided crown, the lobola negotiation — built into monuments the Met, LACMA and the Art Institute bought while the wider room wasn't looking. Clay as archive, not material. Monograph landed July 1. The window between institutional conviction and public heat is where taste moves first.",
+          "image": "https://cdn.sanity.io/images/33elzic6/production/3ffaa6d7b85698e06faf760bb05efe7d72d69272-4480x2078.gif"
         },
         {
           "name": "Imane Ayissi — Ozouandam Ollat",
@@ -1210,7 +1251,8 @@
           "heat_now": null,
           "note": null,
           "graded": null,
-          "read": "While Paris graded the Piccioli and Lantink debuts like a scoreboard, the only sub-Saharan African couturier on the official calendar opened the week with Ozouandam Ollat — 'haute couture' in Ewondo — raffia wings and saturated silk at the Aero-Club, a tribute to his late mother, former Miss Cameroon and flight attendant. Decades of Cameroonian craft inside couture's oldest gate, and the debut circus still swallowed the coverage. That gap is the entry."
+          "read": "While Paris graded the Piccioli and Lantink debuts like a scoreboard, the only sub-Saharan African couturier on the official calendar opened the week with Ozouandam Ollat — 'haute couture' in Ewondo — raffia wings and saturated silk at the Aero-Club, a tribute to his late mother, former Miss Cameroon and flight attendant. Decades of Cameroonian craft inside couture's oldest gate, and the debut circus still swallowed the coverage. That gap is the entry.",
+          "image": "https://imane-ayissi.com/cdn/shop/files/logo.png?v=1779026465"
         },
         {
           "name": "Phiik & Lungs — People Are Not Your Friends",
@@ -1228,7 +1270,8 @@
           "heat_now": null,
           "note": null,
           "graded": null,
-          "read": "The NY duo (as Another Planet) with steel tipped dove on the boards — Bandcamp's Album of the Day the same Friday the majors dropped Future and a Stones record. Dense, tangled New York underground rap: bars stacked like scaffolding, production that trusts the listener. Zero rollout, all fluency — the exact lineage the 50 protects, with Blu & Exile and Coldchain × Craven loading behind it."
+          "read": "The NY duo (as Another Planet) with steel tipped dove on the boards — Bandcamp's Album of the Day the same Friday the majors dropped Future and a Stones record. Dense, tangled New York underground rap: bars stacked like scaffolding, production that trusts the listener. Zero rollout, all fluency — the exact lineage the 50 protects, with Blu & Exile and Coldchain × Craven loading behind it.",
+          "image": "https://f4.bcbits.com/img/0045998238_171.jpg"
         },
         {
           "name": "They Fight — Sheldon Candis",
@@ -1244,7 +1287,8 @@
           "heat_now": null,
           "note": null,
           "graded": null,
-          "read": "A Washington Post story and a 2018 doc turned into an Avildsen-lineage boxing drama: Andre Holland as Walt Manigan coaching Southeast D.C. kids toward junior nationals under Wendell Pierce's Slim. Hulu Friday. Streamer-shaped and earnest to a fault, but the root is real — mentorship as community infrastructure, a rec center as the last institution standing. Honest FLAME; the room will meet this one on time."
+          "read": "A Washington Post story and a 2018 doc turned into an Avildsen-lineage boxing drama: Andre Holland as Walt Manigan coaching Southeast D.C. kids toward junior nationals under Wendell Pierce's Slim. Hulu Friday. Streamer-shaped and earnest to a fault, but the root is real — mentorship as community infrastructure, a rec center as the last institution standing. Honest FLAME; the room will meet this one on time.",
+          "image": "https://d13jj08vfqimqg.cloudfront.net/uploads/film/photo_1/7042/medium_They_Fight-Clean-16x9-01.jpg"
         }
       ]
     },
@@ -1499,7 +1543,7 @@
           "benchmark": "Dame Atlas / Tamera",
           "url": "https://www.newdesigners.com/discover-the-directors-highlights-new-designers-2026/",
           "read": "A side table shaped by the mango -- British Bangladeshi heritage, Jamdani weaving motifs translated to surface. A grad-show whisper at New Designers London, basically no heat. But a specific object with a real lineage -- the version of heritage craft that isn't cosplay.",
-          "image": ""
+          "image": "https://www.newdesigners.com/wp-content/uploads/2026/06/RooNicholsonwork-1-copy-1-scaled.jpg"
         },
         {
           "name": "The Death of 'African Fashion'",
