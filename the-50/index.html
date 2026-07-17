@@ -457,5 +457,102 @@
   }
 </script>
 
+<!-- ── MUSA 50 · ENHANCER ───────────────────────────────────────────────────
+     Reads lanes + alumni from the canon (musa-50.json) at load, then:
+       • drops a subtle lane tag beside each entry (matched by URL)
+       • renders a "ROTATED OFF" strip below the 50 when alumni is non-empty
+     Fully defensive — any failure leaves the page exactly as-is. Nothing to
+     maintain: it derives everything from the live canon, so it stays in sync
+     with every future swap automatically.
+─────────────────────────────────────────────────────────────────────────── -->
+<style>
+  .lane-tag{
+    display:inline-block; vertical-align:middle; transform:translateY(-2px);
+    margin-left:12px; padding:2px 6px; line-height:1;
+    font-family:'IBM Plex Mono',monospace; font-size:9px; font-weight:500;
+    letter-spacing:0.12em; text-transform:lowercase;
+    color:#cdbf99; border:1px solid #3a3526; border-radius:3px;
+    white-space:nowrap; user-select:none;
+  }
+  @media (max-width:480px){ .lane-tag{ margin-left:8px; } }
+  .rotated-section{ border-top:1px solid var(--rule); padding:40px 0 8px; }
+  .rotated-head{
+    font-family:'IBM Plex Mono',monospace; font-size:10px; font-weight:500;
+    letter-spacing:0.22em; text-transform:uppercase; color:var(--grey-hi);
+    display:flex; align-items:center; gap:12px; margin-bottom:4px;
+  }
+  .rotated-head .rc{ color:var(--grey-mid); letter-spacing:0.1em; }
+  .rotated-sub{
+    font-family:'Fraunces',serif; font-style:italic; font-size:12px;
+    color:var(--grey-mid); margin-bottom:20px;
+  }
+  .rotated-item{
+    display:grid; grid-template-columns:1fr auto; gap:0 16px; align-items:baseline;
+    padding:12px 0; border-bottom:1px solid var(--rule);
+  }
+  .rotated-item a, .rotated-item span.nm{
+    font-family:'Anton',sans-serif; font-size:clamp(15px,3.5vw,20px);
+    color:var(--grey-mid); text-decoration:none; letter-spacing:0.01em;
+  }
+  .rotated-item a:hover{ color:var(--white); }
+  .rotated-meta{
+    font-family:'IBM Plex Mono',monospace; font-size:9px; letter-spacing:0.1em;
+    color:var(--grey-lo); text-align:right; white-space:nowrap; padding-left:12px;
+  }
+</style>
+<script>
+(function(){
+  var CONFIG = {
+    canonURL: "https://raw.githubusercontent.com/NightvisionStudios/musa-cultural-os/main/musa-50.json",
+    listSelector: "#main-list .list-item a, #archive-list .list-item a"
+  };
+  function norm(u){
+    try{ var x=new URL(u); return (x.hostname.replace(/^www\./,"")+x.pathname.replace(/\/$/,"")).toLowerCase(); }
+    catch(e){ return String(u||"").replace(/\/$/,"").toLowerCase(); }
+  }
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+  try{
+    fetch(CONFIG.canonURL + "?v=" + Date.now())
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(data){
+        if(!data) return;
+        var laneByUrl = {};
+        (data.entries||[]).forEach(function(e){ if(e && e.url && e.lane) laneByUrl[norm(e.url)] = e.lane; });
+        document.querySelectorAll(CONFIG.listSelector).forEach(function(a){
+          if(a.querySelector(".lane-tag")) return;
+          var lane = laneByUrl[norm(a.getAttribute("href"))];
+          if(!lane) return;
+          var tag = document.createElement("span");
+          tag.className = "lane-tag";
+          tag.textContent = lane;
+          a.appendChild(tag);
+        });
+        var alu = (data.alumni||[]).slice();
+        if(alu.length){
+          alu.sort(function(a,b){ return String(b.tenure_out||"").localeCompare(String(a.tenure_out||"")); });
+          var wrap = document.querySelector(".wrap");
+          if(!wrap) return;
+          var foot = wrap.querySelector("footer");
+          var sec = document.createElement("section");
+          sec.className = "rotated-section";
+          var rows = alu.map(function(a){
+            var nm = a.url
+              ? '<a href="'+esc(a.url)+'" target="_blank" rel="noopener noreferrer">'+esc(a.name)+'</a>'
+              : '<span class="nm">'+esc(a.name)+'</span>';
+            var meta = esc(a.lane||"") + (a.tenure_out ? (" \u00b7 "+esc(a.tenure_out)) : "");
+            return '<div class="rotated-item">'+nm+'<span class="rotated-meta">'+meta+'</span></div>';
+          }).join("");
+          sec.innerHTML =
+            '<div class="rotated-head">ROTATED OFF <span class="rc">'+alu.length+'</span></div>'+
+            '<div class="rotated-sub">The 50 keeps a record \u2014 names that rotated off. The gate remembers.</div>'+
+            rows;
+          if(foot) wrap.insertBefore(sec, foot); else wrap.appendChild(sec);
+        }
+      })
+      .catch(function(){});
+  }catch(e){}
+})();
+</script>
+
 </body>
 </html>
