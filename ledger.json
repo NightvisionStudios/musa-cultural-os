@@ -1647,6 +1647,97 @@
      "image": ""
     }
    ]
+  },
+  {
+   "issue_id": "2026-07-18-0632",
+   "date": "2026-07-18",
+   "time": "06:32 ET",
+   "climate": "The field is running on institutions rather than releases — a thirty-year retrospective five weeks from closing, an inaugural African design ceremony a week out, a festival lineup locked, an artist releasing her first record in six years on the label she owns — while the loudest story in music is a labeling scheme with nothing behind it. Quiet infrastructure being built against loud process being announced. That gap is the read.",
+   "entries": [
+    {
+     "name": "Somi — What Does It Take to Bloom?",
+     "domain": "MUSIC",
+     "score": 8.6,
+     "tier": "CROWN",
+     "heat": 24,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "One54 (global-diaspora — the African story carried at full scale on a platform its maker controls)",
+     "url": "https://www.somimusic.com/",
+     "image": "https://images.squarespace-cdn.com/content/v1/536027d3e4b00858cf8b5807/87c49091-f9a1-467c-a377-efc822bc1e44/Knoor_MCA7162-1_BORDER.jpg",
+     "read": "First original songs in six years, written across Dakar, Lagos, Paris and New York and released on Salon Africana, the label she owns. Rwandan-Ugandan by blood, Midwestern by birth, first African woman nominated in a Grammy jazz category. The Cavemen on one single, Lakecia Benjamin on the other. Out Aug 7.",
+     "verdict": "PENDING"
+    },
+    {
+     "name": "Hurvin Anderson — Tate Britain",
+     "domain": "ART",
+     "score": 8.9,
+     "tier": "CROWN",
+     "heat": 62,
+     "direction": "flat",
+     "flags": [
+      "ROOM'S RIGHT"
+     ],
+     "benchmark": "Project a Black Planet (design-studio — the museum-scale diaspora survey, done properly)",
+     "url": "https://www.tate.org.uk/press/press-releases/hurvin-anderson",
+     "image": "https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/Hawksbill_Bay_2020__Hurvin_Anderson._Courtesy..width-600.jpg",
+     "read": "Thirty years, ~80 paintings, first full survey. The Barbershop series reads makeshift front-room shops as Caribbean London's own social infrastructure; the Welcome paintings keep a security grille between viewer and scene. Passenger Opportunity (24 panels, off two 1985 Norman Manley airport murals) makes its UK debut. Closes Aug 23.",
+     "verdict": "PENDING"
+    },
+    {
+     "name": "AIDA Awards — Cotonou, Jul 24–25",
+     "domain": "DESIGN",
+     "score": 8.3,
+     "tier": "CROWN",
+     "heat": 16,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "Black Film Archive (editorial-taste — a field building its own record-keeping instead of waiting to be catalogued)",
+     "url": "https://africainternationaldesignawards.com/a-global-stage-revealing-exceptional-talents-from-africa-and-beyond-aida-awards-winners-2026/",
+     "image": "https://africainternationaldesignawards.com/wp-content/uploads/2026/05/SILENCE-THE-GUN-COLLECTION-@Brandon-Barnard.jpg",
+     "read": "Inaugural edition: 300+ submissions, 40 countries, 41-person jury across 18 nationalities under Bibi Seck. Winners include the Bidi Bidi Performing Arts Centre (270,000 South Sudanese refugees, Yumbe District), Ndebele beading as sculpture, a Vodoun temple reinterpreted, Keiskamma embroidery turned homeware. Ceremony during African Design Week.",
+     "verdict": "PENDING"
+    },
+    {
+     "name": "West Side Familia — Taylor Hosking",
+     "domain": "FILM",
+     "score": 8.0,
+     "tier": "CROWN",
+     "heat": 11,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "benchmark": "Noname Book Club (global-diaspora — preservation practiced as community work, not commemorated)",
+     "url": "https://www.westsidefamiliafilm.com/",
+     "image": "https://images.squarespace-cdn.com/content/v1/65b0a22e7cb94d0ac2e086ea/265c9cba-b785-4ff0-870b-deec9819eba7/34140009.jpeg",
+     "read": "BlackStar opening night world premiere. First feature on a Puerto Rican-led '70s biker crew and community care group on the Upper West Side holding its public traditions in a neighborhood that priced out the story. Hosking is third-generation UWS; her own godfather gives the first interview.",
+     "verdict": "PENDING"
+    },
+    {
+     "name": "The AI Label",
+     "domain": "TECH · SCENE",
+     "score": 5.4,
+     "tier": "SPARK",
+     "heat": 79,
+     "direction": "up",
+     "flags": [
+      "HEAT>WORK",
+      "BLADE"
+     ],
+     "benchmark": "Moises AI (creator-ai-tools — tools judged by what they hand the maker, not what they announce)",
+     "url": "https://www.musicbusinessworldwide.com/record-industry-proposes-ai-labeling-system-for-streaming-platforms/",
+     "image": "",
+     "read": "Eight bodies (RIAA, IFPI, Recording Academy, SAG-AFTRA and others) proposed AI-Generated / AI-Assisted tags on Jul 10, riding DDEX. TIDAL cut royalty eligibility on wholly-AI tracks Jul 15. But it is voluntary and self-reported — a blank field travels as nothing. Deezer reports 44% of daily uploads machine-made. EU AI Act Article 50 lands Aug 2.",
+     "verdict": "PENDING"
+    }
+   ]
   }
  ],
  "holding": [
