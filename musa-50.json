@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "50.themusafamily.com",
-    "status": "LIVE — 4-name roster swap 2026-07-16 (Igwe Aka→Gr8, Kimi→Dave Hunter, Ankhle John→Jiah, Lelo→KB); outgoing logged to alumni.",
+    "status": "LIVE — 4-name roster swap 2026-07-16 (Igwe Aka→Gr8, Kimi→Dave Hunter, Ankhle John→Jiah, Lelo→KB) + Higgsfield AI→Black Film Archive (2026-07-05) backfilled; 5 outgoing logged to alumni.",
     "updated": "2026-07-16",
     "how_to_update": "When 50.themusafamily.com changes, replace `entries` with the current LIST array (name + url). Re-derive lanes. Keep `_dna` in sync with the list's actual energy.",
     "alumni_rule": "The 50 has memory. On every roster swap, BEFORE removing a name, log the outgoing name to the top-level `alumni` array. Never let a rotated name vanish — the gate keeps a record. Append-only, newest last. This is what makes the 50 read as curated, not edited.",
@@ -305,6 +305,7 @@
     }
   ],
   "alumni": [
+    { "name": "Higgsfield AI", "url": "https://higgsfield.ai/", "lane": "creator-ai-tools", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-05", "why": "Replaced by Black Film Archive." },
     {
       "name": "Igwe Aka",
       "url": "https://www.instagram.com/igweaka",
