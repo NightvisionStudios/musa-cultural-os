@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-07-19"
+    "updated": "2026-07-20"
   },
   "issues": [
     {
@@ -1917,6 +1917,97 @@
           "url": "https://www.lvmh.com/en/news-lvmh/2026-lvmh-prize-for-young-fashion-designers-13th-edition",
           "image": "",
           "read": "Nairobi womenswear, and the first Kenyan label ever to reach the LVMH Prize final — 2,400 applicants cut to twenty at La Samaritaine, then to nine. Final is Sep 4 at the Fondation Louis Vuitton, jury stacked with Philo, Nigo, Anderson, Chiuri. Arnault's framing for this shortlist was craftsmanship, not novelty, which is the right read. The work is barely documented outside the shortlist itself — that thinness is both the find and the risk. Six weeks to see whether a Nairobi atelier gets the room on its own terms or gets absorbed by it.",
+          "verdict": "PENDING"
+        }
+      ]
+    },
+    {
+      "issue_id": "2026-07-20-1402",
+      "date": "2026-07-20",
+      "time": "14:02 ET",
+      "climate": "Monday afternoon and the field is thick with money and platforms offering to carry the work — a fellowship, a fund, an artist program, a festival wing — so the read this week is not who is being supported but what the terms actually say: rent and a studio with nothing asked back, versus a grant that is also a distribution deal, versus a development program with a non-disparagement clause and no end date.",
+      "entries": [
+        {
+          "name": "FAUZIA — I Was Here For a Moment",
+          "domain": "MUSIC",
+          "score": 8.1,
+          "tier": "CROWN",
+          "heat": 19,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Jim Legxacy (underground-rap — London, diasporic, refuses to be held in one genre)",
+          "url": "https://fauzia.bandcamp.com/album/i-was-here-for-a-moment",
+          "image": "https://f4.bcbits.com/img/a2801655360_5.jpg",
+          "read": "Out Jul 17, her first for Mexican Summer, four tracks she wrote and produced herself. Decade-long NTS show, Berghain, Unsound, Tate Modern, St Paul's opening for Patti Smith — and production credits for Kelela, Duval Timothy and Tirzah before most people knew her name. Jungle and downtempo underneath, shoegaze guitars on top, strings that arrive late and earn it. The closer came out of a jam at Gary's Electric after her Pioneer Works set. Twenty minutes long and it does not raise its voice once. She's said herself she'd rather not be the subject; the work is better for it.",
+          "verdict": "PENDING"
+        },
+        {
+          "name": "NXTHVN Cohort 07 — Material Conditions of Becoming",
+          "domain": "ART",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 24,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "benchmark": "Noname Book Club (global-diaspora — build the institution instead of petitioning one)",
+          "url": "https://marianneboeskygallery.com/exhibitions/346-nxthvn-cohort-07-material-conditions-of-becoming/press_release_text/",
+          "image": "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-artlogicwebsite0074/usr/images/exhibitions/main_image_override/346/chayse-sampy-chs.23167-web-wide.jpg",
+          "read": "Closes Jul 24 at Boesky. Seven studio fellows and two curatorial fellows out of Titus Kaphar and Jason Price's New Haven model: ten months of studio space, a stipend, subsidised housing, and each fellow paired with a local high school apprentice. Adeyemo paints onto material recovered from the street, working from memory jugs and bottle trees. Olufani traces tamarind, okra and rice across the Middle Passage in a three-metre sculpture. Alexandra Bell takes newspapers apart. The show is good; the model is the actual work — support measured in rent and time while everyone else discusses precarity.",
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Paul Kodjo — Photoromance",
+          "domain": "PHOTOGRAPHY",
+          "score": 8.7,
+          "tier": "CROWN",
+          "heat": 17,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "benchmark": "Players Magazine (editorial-taste — popular image-making held to the standard of canon)",
+          "url": "https://www.rencontres-arles.com/en/expositions/2026/paul-kodjo",
+          "image": "",
+          "read": "Arles, La Croisière, through Oct 4 — the first major solo show in France for the Ivorian photographer, curated by Amandine Nana, co-produced with Palais de Tokyo. Back in Abidjan from 1970 he founded MAMEDIS, an avant-garde agency doing photography, cinema and publishing, and from 1971 ran photo-novels in the weekly Ivoire Dimanche — romantic comedies with twists that doubled as a record of a country building its own image. The negatives survive because Ananias Léki Dago's Rencontres du Sud spent fifteen years preserving them, with UCLA's Modern Endangered Archives Program picking it up in 2025. Kodjo died in 2021. The show is what fifteen unpaid years buys.",
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Google Play Indie Games Fund — Africa",
+          "domain": "GAMES",
+          "score": 7.3,
+          "tier": "FLAME",
+          "heat": 31,
+          "direction": "up",
+          "flags": [
+            "BLADE"
+          ],
+          "benchmark": "Y Combinator (builder-dev — capital plus a curriculum, and terms worth reading twice)",
+          "url": "https://blog.google/products-and-platforms/platforms/google-play/indie-games-fund-africa/",
+          "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/indiegamesfund_socialshare.max-1440x810.png",
+          "read": "First one on the continent: $1M across ten Sub-Saharan studios, $50k–$200k each, no equity taken, plus mentorship. Thirty-two eligible countries, 50-employee cap, and you must already have shipped — no prototypes. Applications close noon UTC Jul 31, eleven days out. The catch is in the back half: winners ship to Google Play if they haven't and join Play Pass non-exclusively for two years. Real money into a scene that has been building on its own for a decade — and also a distribution play. Both things are true and the studios can read.",
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Suno Spark",
+          "domain": "TECH · SCENE",
+          "score": 5.1,
+          "tier": "SPARK",
+          "heat": 74,
+          "direction": "up",
+          "flags": [
+            "HEAT>WORK",
+            "BLADE"
+          ],
+          "benchmark": "Koala Sampler (creator-ai-tools — hands the maker something and asks for nothing back)",
+          "url": "https://celebrityaccess.com/2026/06/27/suno-launches-spark-program-to-help-independent-artists/",
+          "image": "",
+          "read": "An artist-development program from an AI music platform: grants, mentorship, marketing for unsigned singers, songwriters and producers releasing under their own names. Artists keep creative control, commercial rights, and their own distributor — all of that is real. Then the fine print bars participants from portraying Suno negatively \"during the Term and thereafter,\" with no end date. That is not artist development, that is buying silence at a discount, from exactly the people with the most standing to speak. HEAT>WORK — the announcement is louder than the offer.",
           "verdict": "PENDING"
         }
       ]
