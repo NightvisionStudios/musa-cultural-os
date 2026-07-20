@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-07-18"
+    "updated": "2026-07-19"
   },
   "issues": [
     {
@@ -1826,6 +1826,97 @@
           "url": "https://store.steampowered.com/app/3041730/Go_North/",
           "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3041730/da71d28a87fc9e2702d46cf5340ba568881c8a7c/capsule_616x353.jpg?t=1780433811",
           "read": "Ten days out — July 28, Steam and Xbox, Switch later. One man in Lagos, Tade Ajiboye, no publisher. You play Dara looking for the Maze God, and the only rule is the exit is always north. He built the whole loop around patience with no penalty: no combat, no timer, wander and look. A cozy game is easy to dismiss until you notice how few of them come from anywhere but the same three countries. Zero reviews on the page. That is the position.",
+          "verdict": "PENDING"
+        }
+      ]
+    },
+    {
+      "issue_id": "2026-07-19-2155",
+      "date": "2026-07-19",
+      "time": "21:55 ET",
+      "climate": "Sunday night the planet is pointed at one whistle, and everything actually worth keeping is being put on the record instead of on the screen — a museum finally naming West African modernism's architects, a Chicano auteur's decaying archive rescued frame by frame, a producer handing away his own boards to sharpen his pen, walnut benches cut for elders, and a Nairobi atelier holding a Paris door open until September.",
+      "entries": [
+        {
+          "name": "Chuck Strangers — Glory of the King's Hand",
+          "domain": "MUSIC",
+          "score": 8.5,
+          "tier": "CROWN",
+          "heat": 27,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Chris Crack (underground-rap — prolific, idiosyncratic songcraft that never once chases the room)",
+          "url": "https://chuckstrangers.bandcamp.com/album/glory-of-the-kings-hand",
+          "image": "https://f4.bcbits.com/img/a1847515120_5.jpg",
+          "read": "Out Jul 10 on Lex, Bandcamp's Album of the Day Jul 17. East Flatbush, Pro Era-raised, fourteen years in, and he can make an entire record alone — so he made one beat and handed the rest to Alchemist, Preservation, Kenny Segal, Animoss, Theravada, Child Actor. Producer in the Quincy Jones sense. billy woods and Zeroh over Human Error Club improvisations on \"Breaking Atoms.\" Ka and Alchemist as the mentors, and it shows in the restraint: Spam on the plate before Bob Barker turns up in the dream, city lockup without shoelaces, a life lived out of a carry-on. Seventeen tracks, forty-one minutes, none of it begging.",
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Architects of Liberation: Modernism in Western Africa",
+          "domain": "ARCHITECTURE",
+          "score": 8.8,
+          "tier": "CROWN",
+          "heat": 33,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "benchmark": "Project a Black Planet (design-studio — the Pan-African survey built as an argument, then hung)",
+          "url": "https://press.moma.org/exhibition/architects-of-liberation-modernism-in-western-africa/",
+          "image": "https://press.moma.org/wp-content/uploads/2026/02/architects_of_liberation_004_PRESS.jpg",
+          "read": "MoMA, opened Jul 5, runs to Jan 2. The first major show of West African modernism from the late '50s to the early '80s — Benin, Cameroon, Côte d'Ivoire, Ghana, Nigeria, Senegal, Togo. Roughly 450 objects, 50-plus lenders across 17 countries, four years of fieldwork. Most of it has never been shown publicly, and most of the architects have never appeared in any exhibition or scholarly publication. La Pyramide in Abidjan, the BOAD tower in Lomé, children outside Bolgatanga Library in 1967. Stierli and Ikem Stanley Okoye put the weight on the first generation of trained African architects — named, not credited to a European office. That naming is the show.",
+          "verdict": "PENDING"
+        },
+        {
+          "name": "American Pachuco: The Legend of Luis Valdez",
+          "domain": "FILM",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 11,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Black Film Archive (editorial-taste — keeping a cinema tradition legible while the canon looks elsewhere)",
+          "url": "https://www.thefilmcollaborative.org/films/americanpachuco",
+          "image": "https://www.thefilmcollaborative.org/films/img/slate_images/americanpachuco/americanpachuco-still.jpg",
+          "read": "In theaters Jul 17, PBS this fall. David Alvarado on Luis Valdez: migrant farmworker to El Teatro Campesino performing off flatbed trucks on the picket lines, to the first Chicano play on Broadway, to La Bamba. Sundance Audience Award and Festival Favorite, Lavine/Ken Burns Prize. Narrated by Edward James Olmos, who was in Zoot Suit — and the film opens on Valdez still turning over the New York reviews that killed the show in 1979. Archival footage rescued from decay, a pachuco narrator cutting in. El Teatro is sixty years old and still running. Ninety-two minutes, low heat, and a thesis that lands harder in 2026 than it did in 1981.",
+          "verdict": "PENDING"
+        },
+        {
+          "name": "Norman Teague — the Obama Center benches",
+          "domain": "DESIGN",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 61,
+          "direction": "flat",
+          "flags": [
+            "ROOM'S RIGHT",
+            "BLADE"
+          ],
+          "benchmark": "KB (design-studio — object-making where the reference is the block, not the market)",
+          "url": "https://chicago.suntimes.com/art/2026/06/16/norman-teague-bench-obama-presidential-center",
+          "image": "https://cst.brightspotcdn.com/dims4/default/f1997c7/2147483647/strip/true/crop/2500x1427+0+120/resize/1461x834!/quality/90/?url=https%3A%2F%2Fchorus-production-cst-web.s3.us-east-1.amazonaws.com%2Fbrightspot%2F41%2F5d%2F0f8cad2e48519131588a6da8dcf9%2Fnormanteague-260614-22.png",
+          "read": "The Center opened on Juneteenth and the room went straight to the 225-foot tower. The thing worth keeping is nine walnut benches. Ten years on the project — consultant first, designer second. Wood joints based on Adinkra symbols; grains chosen in the beige, brown and black of his own neighborhood; ridges that read as ornament but are there so elders can push themselves up; seat depths varied for different bodies. He argued a South Side build should employ South Siders and ended up one of them. This is ROOM'S RIGHT — the heat is earned, it's just aimed at the building. Next up: affordable-housing prototypes, and curating Lagos Design Week 2027.",
+          "verdict": "PENDING"
+        },
+        {
+          "name": "YOSHITA 1967 — Anil Padia",
+          "domain": "FASHION",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 13,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "benchmark": "Derschutze (diasporic-fashion — a thesis-first label that makes the room come to it)",
+          "url": "https://www.lvmh.com/en/news-lvmh/2026-lvmh-prize-for-young-fashion-designers-13th-edition",
+          "image": "",
+          "read": "Nairobi womenswear, and the first Kenyan label ever to reach the LVMH Prize final — 2,400 applicants cut to twenty at La Samaritaine, then to nine. Final is Sep 4 at the Fondation Louis Vuitton, jury stacked with Philo, Nigo, Anderson, Chiuri. Arnault's framing for this shortlist was craftsmanship, not novelty, which is the right read. The work is barely documented outside the shortlist itself — that thinness is both the find and the risk. Six weeks to see whether a Nairobi atelier gets the room on its own terms or gets absorbed by it.",
           "verdict": "PENDING"
         }
       ]
