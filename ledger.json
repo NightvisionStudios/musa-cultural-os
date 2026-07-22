@@ -2,7 +2,7 @@
  "_meta": {
   "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
   "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-  "updated": "2026-07-20"
+  "updated": "2026-07-22"
  },
  "issues": [
   {
@@ -2278,6 +2278,97 @@
      "url": "https://www.complex.com/style/a/mike-destefano/best-streetwear-collabs-2026",
      "image": "",
      "read": "Supreme × MM6, NIGO's Air Force 1, Swatch × Audemars Piguet. Half of 2026's most-covered fashion moments are two logos occupying the same garment, reported as year-defining. A collab is a distribution trick, not an idea. The ones that last carry a thesis into the object. Heat is real and will stay real; the work underneath is thinner than the noise.",
+     "verdict": "PENDING"
+    }
+   ]
+  },
+  {
+   "issue_id": "2026-07-22-1531",
+   "date": "2026-07-22",
+   "time": "15:31 ET",
+   "climate": "The field is sorting by lineage over the moment. The strongest signal is coming from makers building on an inherited form — adobe ovens reconstructing an Indigenous canon, a boom-bap trilogy in its third act, a solo dev simulating the literal origin of culture, a diaspora mother's story crossing a border into English. Everything loud this week is built on the instant; everything that lasts is built on a line.",
+   "entries": [
+    {
+     "name": "Gabriel Chaile — Archaeology of Memory",
+     "domain": "ART · SCULPTURE",
+     "score": 8.7,
+     "tier": "CROWN",
+     "heat": 14,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "Dame Atlas (heritage-craft-product — the object carries the lineage; the form is the archive)",
+     "url": "https://www.whitechapelgallery.org/exhibitions/gabriel-chaile-archaeology-of-memory/",
+     "image": "https://www.whitechapelgallery.org/wp-content/uploads/2026/01/Gabriel-Chaile-Studio-Portrait.jpg",
+     "read": "Chaile's first London institutional solo, on now at Whitechapel through Sep 6. Monumental adobe figures built from local organic clay, reinterpreting the ceremonial forms of north-west Argentina and holding ceramics he scavenged from the East End — a 'migrant collection' where the journey of the object mirrors the journey of the people. He calls it the genealogy of form. The ovens don't just sit there; in past shows they bake and feed. Craft as canon-keeping, not nostalgia.",
+     "verdict": "PENDING"
+    },
+    {
+     "name": "The Winds of Maracaibo — María Elena Morán",
+     "domain": "BOOKS · DIASPORA FICTION",
+     "score": 8.3,
+     "tier": "CROWN",
+     "heat": 10,
+     "direction": "up",
+     "flags": [
+      "FIND"
+     ],
+     "benchmark": "Noname Book Club (global-diaspora — the diaspora telling its own story, reading as reclamation)",
+     "url": "https://www.penguin.com.au/books/the-winds-of-maracaibo-9780593803943",
+     "image": "https://cdn2.penguin.com.au/covers/400/9780593803943.jpg",
+     "read": "Out Jul 28. Morán — Venezuelan, based in Brazil — won Spain's Café Gijón Prize for this (as Volver a cuándo); now it lands in English, translated by Madeline Jones. A mother cleaning houses in a Porto Alegre storage room gets the text that her ex has taken their daughter across the border. Told through the whole family, dead relatives included. Lyrical, seething, and specific — a furious reversal of the American Dream, not a generalization about a crisis.",
+     "verdict": "PENDING"
+    },
+    {
+     "name": "Mickey Diamond x Big Ghost Ltd — Blood Of The Lamb",
+     "domain": "MUSIC · UNDERGROUND RAP",
+     "score": 8.1,
+     "tier": "CROWN",
+     "heat": 16,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "Chris Crack (underground-rap — prolific, gatekept, drops on his own clock)",
+     "url": "https://bigghostlimited.bandcamp.com/album/blood-of-the-lamb",
+     "image": "https://f4.bcbits.com/img/a2841479745_5.jpg",
+     "read": "The third chapter of the 'Wolf, Sheep & Goat' series. Detroit's Mickey Diamond over a full board from Big Ghost Ltd — booming kicks, church organs flipped into horror-film boom-bap, gospel choirs turned rugged. 'Stigmata' opens on generational-wealth talk; Daniel Son pulls up on 'PREYers.' He gets in the spiritual bag without preaching — the edge is that it's reverent and grimy at once. Self-paced, self-released, no campaign.",
+     "verdict": "PENDING"
+    },
+    {
+     "name": "Folk Emerging — Curious Dynamics",
+     "domain": "GAMES · SOLO DEV",
+     "score": 7.4,
+     "tier": "FLAME",
+     "heat": 29,
+     "direction": "up",
+     "flags": [
+      "FIND",
+      "BLADE"
+     ],
+     "benchmark": "Robert Gallardo (design-studio — one maker's obsessive, specific world over scale)",
+     "url": "https://store.steampowered.com/app/2275300/Folk_Emerging/",
+     "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2275300/6e4d98f6245acf5405fd883e8041a81a1773b83b/capsule_616x353.jpg?t=1778497826",
+     "read": "A stone-age 4X from one EU-based solo developer — demo out now, full game this summer. You lead nomadic families across a procedurally simulated Pleistocene: heritable traits, evolving cultural norms, a tech tree from controlled fire to the first cities. Rock Paper Shotgun called it the most intriguing 4X in a while precisely because it declines to fully become one — 'the first five turns of Civilization, made into a game.' A game about the origin of culture, built the way the 50 respects: one person, deep and specific.",
+     "verdict": "PENDING"
+    },
+    {
+     "name": "AZ — Doe Or Die III",
+     "domain": "MUSIC · BOOM BAP",
+     "score": 8.4,
+     "tier": "CROWN",
+     "heat": 68,
+     "direction": "flat",
+     "flags": [
+      "ROOM'S RIGHT"
+     ],
+     "benchmark": "Starlito (underground-rap — catalogue over campaign, discipline across decades)",
+     "url": "https://shop.massappeal.com/products/az-doe-or-die-iii-cd",
+     "image": "https://shop.massappeal.com/cdn/shop/files/dcf4091867afc5918d5bbdfafa3103f5_1024x.png?v=1777948712",
+     "read": "The counter-read: high heat the room got correct. AZ closes his trilogy 30 years after the 1995 debut — the first voice on Nas's Illmatic, reunited with Nas here on 'Surprise,' over K-Def, Buckwild, Large Professor, Statik. This isn't a find and it isn't noise. It's a master technician who never chased a trend getting his flowers on time. Heat's settled since May; the bars don't need it to move.",
      "verdict": "PENDING"
     }
    ]
