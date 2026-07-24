@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-07-23"
+    "updated": "2026-07-24"
   },
   "issues": [
     {
@@ -2462,6 +2462,105 @@
           "read": "The Alchemist and Oh No's fifth as Gangrene, out Jul 17 — eleven tracks, with Estee Nack, Boldy James, Armand Hammer, Rome Streetz, Ab-Soul, Meyhem Lauren and Wildchild. The premise still holds: two producers who both rap, choosing loops on the basis of how ugly they are, each handing the other the beat no paying client would take. But this one landed lighter than the catalogue — writers who love the duo are calling it their least favourite, and the deliberately AI-looking cover (hand-painted, Al insists) ate more oxygen than the record did. Prolific is not the same as necessary. The honest counter-read on this board.",
           "verdict": "PENDING"
         }
+      ]
+    },
+    {
+      "issue": 30,
+      "date": "2026-07-24",
+      "time": "14:52 ET",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Lynette Yiadom-Boakye — Many A Moonlit Caveat",
+          "domain": "Art",
+          "url": "https://brooklynrail.org/2026/06/artseen/lynette-yiadom-boakye-many-a-moonlit-caveat",
+          "image": "https://studio.brooklynrail.org/assets/79edbbfb-bb49-4f75-96f1-38d8670fa940.jpg",
+          "score": 9.2,
+          "tier": "HEIRWAVE",
+          "heat": 82,
+          "direction": "flat",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Noname Book Club",
+          "verdict": "PENDING"
+        },
+        {
+          "rank": 2,
+          "name": "Theophilio",
+          "domain": "Fashion",
+          "url": "https://theophilio.com/pages/about-us",
+          "image": "https://theophilio.com/cdn/shop/files/OHP_THEO_5337_6v_FIN_sRGB_dd722565-1b72-49da-964e-d0ca95e79049.jpg?v=1682047501",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 58,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Denim Tears",
+          "verdict": "PENDING"
+        },
+        {
+          "rank": 3,
+          "name": "Black Zombie — Maya Annik Bedward",
+          "domain": "Film",
+          "url": "https://povmagazine.com/the-roots-of-black-zombie/",
+          "image": "https://povmagazine.com/wp-content/uploads/2026/03/BZ-STL46.jpg",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 38,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Black Film Archive",
+          "verdict": "PENDING"
+        },
+        {
+          "rank": 4,
+          "name": "Speedtest — Pedro Chediak",
+          "domain": "Music",
+          "url": "https://daily.bandcamp.com/scene-report/brazil-uk-garage-feature",
+          "image": "https://f4.bcbits.com/img/0046261647_171.jpg",
+          "score": 7.4,
+          "tier": "FLAME",
+          "heat": 45,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "benchmark": "Jim Legxacy",
+          "verdict": "PENDING"
+        },
+        {
+          "rank": 5,
+          "name": "Odu: Ancestral Nexus — Odu Studios",
+          "domain": "Games",
+          "url": "https://store.steampowered.com/app/3733610/",
+          "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3733610/1d66eed3b25a1b2f8fda5eb478e233f073e23ffd/header.jpg",
+          "score": 7.2,
+          "tier": "FLAME",
+          "heat": 30,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "One54",
+          "verdict": "PENDING"
+        }
+      ],
+      "forecast": "Diaspora work isn't asking to be seen this week — it's rewriting the source material before anyone else gets a take, from the horror reel to the drum pattern to the character sheet.",
+      "come_up": [
+        "Vodou reclaimed on its own terms, not Hollywood's",
+        "Baile funk × UK garage bloodline, out in the open",
+        "Ancestral myth as game mechanic, not set dressing"
+      ],
+      "decline": [
+        "Logo-luxury streetwear collabs",
+        "AI-hype content with nothing under the hood",
+        "Legacy-rock nostalgia reissue cycle"
       ]
     }
   ],
