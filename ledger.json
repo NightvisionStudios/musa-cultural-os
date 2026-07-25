@@ -2562,6 +2562,105 @@
         "AI-hype content with nothing under the hood",
         "Legacy-rock nostalgia reissue cycle"
       ]
+    },
+    {
+      "issue": 31,
+      "date": "2026-07-25",
+      "time": "18:22 ET",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Rosco P Coldchain & Nicholas Craven — Play With Something Safe",
+          "domain": "Music",
+          "url": "https://nicholascraven.bandcamp.com/album/play-with-something-safe",
+          "image": "https://f4.bcbits.com/img/a2696760643_5.jpg",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 24,
+          "direction": "up",
+          "flags": [
+            "FIND",
+            "BLADE"
+          ],
+          "benchmark": "Chris Crack",
+          "verdict": "PENDING"
+        },
+        {
+          "rank": 2,
+          "name": "Blu & Exile — Time Heals Everything",
+          "domain": "Music",
+          "url": "https://bluandexile.bandcamp.com/album/time-heals-everything",
+          "image": "https://f4.bcbits.com/img/a3856796124_5.jpg",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 33,
+          "direction": "flat",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Starlito",
+          "verdict": "PENDING"
+        },
+        {
+          "rank": 3,
+          "name": "Dao — Alain Gomis",
+          "domain": "Film",
+          "url": "https://www.cinemadureel.org/en/film/dao-2/",
+          "image": "https://www.cinemadureel.org/wp-content/uploads/2026/03/ss-dao-2-alain-gomis---les-films-du-wordo---srab-films.jpg",
+          "score": 7.9,
+          "tier": "FLAME",
+          "heat": 41,
+          "direction": "up",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Black Film Archive",
+          "verdict": "PENDING"
+        },
+        {
+          "rank": 4,
+          "name": "Beatmakers of L.A. Underground Hip Hop",
+          "domain": "Books",
+          "url": "https://medium.com/@prkrpubs/new-book-beatmakers-of-l-a-underground-hip-hop-1fd9cafca244",
+          "image": "https://miro.medium.com/v2/resize:fill:1200:632/g:fp:0.5:0.1/1*vgUireKvQiwSc3hzzhKrHQ.jpeg",
+          "score": 7.7,
+          "tier": "FLAME",
+          "heat": 14,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Noname Book Club",
+          "verdict": "PENDING"
+        },
+        {
+          "rank": 5,
+          "name": "Suez Studio",
+          "domain": "Fashion",
+          "url": "https://suezstudio.com/pages/about",
+          "image": "https://suezstudio.com/cdn/shop/files/22.jpg?v=1730116968",
+          "score": 7.3,
+          "tier": "FLAME",
+          "heat": 22,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Derschutze",
+          "verdict": "PENDING"
+        }
+      ],
+      "forecast": "The heaviest work this cycle isn't chasing the room — it's settling old scores, from a Philly voice back from a fourteen-year sentence to a beat scene finally getting its own written history.",
+      "come_up": [
+        "Grimy soul-loop rap reclaiming its elders",
+        "Oral history over hot takes",
+        "Heritage craft worn, not framed behind glass"
+      ],
+      "decline": [
+        "Logo-luxury streetwear collabs",
+        "Nostalgia tours dressed as reinvention",
+        "Hype-cycle debuts with no craft under the hood"
+      ]
     }
   ],
   "holding": [
