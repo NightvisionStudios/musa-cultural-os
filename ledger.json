@@ -2910,6 +2910,121 @@
           "slug": "karmzah-leti-arts"
         }
       ]
+    },
+    {
+      "issue": 33,
+      "issue_id": "2026-07-26-1759",
+      "date": "2026-07-26",
+      "time": "17:59 ET",
+      "forecast": "Portraiture is walking into the rooms that used to shut it out, and the insider's insider record - the one made by the person who used to be behind the glass - is having its own quiet moment across genre.",
+      "come_up": [
+        "Diasporic portraiture inside old-world institutions, not just blue-chip fairs",
+        "Black-owned galleries exporting their own curatorial thesis to new cities",
+        "Backing-band members stepping out solo on their own pedigree, not a features run"
+      ],
+      "decline": [
+        "Topical-only comedy specials with no shelf life past the news cycle",
+        "Single-review hype cycles standing in for an actual body of work",
+        "Logo-luxury cosplay passing itself off as diasporic fashion"
+      ],
+      "climate": "taste-forward, insider-credentialed",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Amoako Boafo — It Doesn't Have to Always Make Sense",
+          "domain": "ART",
+          "domain_detail": "ART · PORTRAITURE",
+          "url": "https://gagosian.com/news/museum-exhibitions/amoako-boafo-museo-di-palazzo-grimani-venice/",
+          "image": "https://gagosian.com/media/images/gallery/news/2026/p-k4feV0_K-x_1200x1200.jpg",
+          "score": 8.7,
+          "tier": "CROWN",
+          "heat": 78,
+          "direction": "up",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Derschutze — thesis-driven diasporic work with a real idea behind it, not decoration.",
+          "read": "First solo show in Italy, staged inside a 16th-century Venetian palazzo timed to the Biennale — and instead of treating the room as a backdrop, Boafo makes new work that argues directly with the portrait tradition hanging on those same walls. The finger-paint technique is still the signature, but the thesis has sharpened: Black diasporic subjects installed in the exact architecture that used to define whose face counted as art. Heat and craft are pointed the same direction here — the room caught up to what Accra already knew.",
+          "verdict": "PENDING",
+          "slug": "amoako-boafo-it-doesn-t-have-to-always-make-sense"
+        },
+        {
+          "rank": 2,
+          "name": "Felix Ames — Did The Rain Stop?",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · R&B",
+          "url": "https://ratedrnb.com/2026/07/new-releases-kenyon-dixon-felix-ames-syrai/",
+          "image": "https://ratedrnb.com/cdn/2026/07/kenyon-dixon-felix-ames-syrai-scaled.jpg",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 34,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Jim Legxacy — sample culture and lived specifics turned into an album-as-document.",
+          "read": "Third LP, and the pattern is set now: a Milwaukee soul singer who names his albums after the actual geography of his family's story — this one named for his ancestors' Louisiana hometown — and treats each record as a documented stretch of healing rather than a moodboard. D'Angelo and Maxwell are the obvious reference points, but the discipline is his own. Nobody's playing this loud yet — that's the find.",
+          "verdict": "PENDING",
+          "slug": "felix-ames-did-the-rain-stop"
+        },
+        {
+          "rank": 3,
+          "name": "What the Eye Beholds — curated by September Gray",
+          "domain": "ART",
+          "domain_detail": "ART · CURATION",
+          "url": "https://thevisualist.org/2026/07/what-the-eye-beholds/",
+          "image": "https://thevisualist.org/wp-content/uploads/2026/07/What-the-Eye-Beholds-Opening.jpg",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 28,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Black Film Archive — quiet curatorial authority building its own canon on its own terms.",
+          "read": "An Atlanta gallery exports its own curatorial point of view to Chicago instead of waiting to be included in someone else's group show — seven artists across painting, sculpture, and mixed media, unified by one woman's thesis about perception rather than a theme picked to fit a press release. That's the model: taste as the export, not the artwork alone.",
+          "verdict": "PENDING",
+          "slug": "what-the-eye-beholds-curated-by-september-gray"
+        },
+        {
+          "rank": 4,
+          "name": "Josh Johnson — Comedy Band Camp",
+          "domain": "TV",
+          "domain_detail": "TV · STAND-UP COMEDY",
+          "url": "https://www.televisionacademy.com/features/online-originals/josh-johnson-symphony-hbo-max",
+          "image": "https://www.televisionacademy.com/files/assets_r/containers/assets/photos-article/josh-johnson-hbo-special-900x600.jpg/9101ad2600e479a56719b7a842b87711/josh-johnson-hbo-special-900x600.jpg",
+          "score": 7.4,
+          "tier": "FLAME",
+          "heat": 52,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Chris Crack — a prolific, DIY body of work built entirely on the artist's own terms.",
+          "read": "Johnson built his audience the hard way — a new hour every week on YouTube for three years, for free, before HBO ever called — and his first special, Symphony, deliberately skips the topical jokes so it still plays years from now. The touring show now running through the year leans further into that instinct: worldbuilding over headline-chasing. The craft is ahead of the mainstream conversation about him, which is still mostly \"Daily Show guy.\"",
+          "verdict": "PENDING",
+          "slug": "josh-johnson-comedy-band-camp"
+        },
+        {
+          "rank": 5,
+          "name": "Chris Crispy — Behind The Shades",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · R&B",
+          "url": "https://www.shatterthestandards.com/p/album-review-behind-the-shades-by",
+          "image": "https://substackcdn.com/image/fetch/$s_!Eazd!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7d8b3907-0814-4583-b28d-4b1ed2dccdf8_6250x3125.jpeg",
+          "score": 6.2,
+          "tier": "TORCH",
+          "heat": 58,
+          "direction": "up",
+          "flags": [
+            "HEAT>WORK"
+          ],
+          "benchmark": "Jiah — an insider's insider release, gatekept by proximity before it's gatekept by the work.",
+          "read": "The Internet's drummer steps out from behind the kit for a solo debut, dropping the same day as two of his former bandmates' own records — and the pedigree is doing real work here. The songs themselves are pleasant, laid-back, unresolved in a way that's more shy than intentional. The attention is riding the name on the credits more than the record standing alone.",
+          "verdict": "PENDING",
+          "slug": "chris-crispy-behind-the-shades"
+        }
+      ]
     }
   ],
   "holding": [
@@ -3077,6 +3192,36 @@
     {
       "name": "Karmzah — Leti Arts",
       "first_issue": "2026-07-26-1707",
+      "first_date": "2026-07-26",
+      "resurfaced": []
+    },
+    {
+      "name": "Amoako Boafo — It Doesn't Have to Always Make Sense",
+      "first_issue": "2026-07-26-1759",
+      "first_date": "2026-07-26",
+      "resurfaced": []
+    },
+    {
+      "name": "Felix Ames — Did The Rain Stop?",
+      "first_issue": "2026-07-26-1759",
+      "first_date": "2026-07-26",
+      "resurfaced": []
+    },
+    {
+      "name": "What the Eye Beholds — curated by September Gray",
+      "first_issue": "2026-07-26-1759",
+      "first_date": "2026-07-26",
+      "resurfaced": []
+    },
+    {
+      "name": "Josh Johnson — Comedy Band Camp",
+      "first_issue": "2026-07-26-1759",
+      "first_date": "2026-07-26",
+      "resurfaced": []
+    },
+    {
+      "name": "Chris Crispy — Behind The Shades",
+      "first_issue": "2026-07-26-1759",
       "first_date": "2026-07-26",
       "resurfaced": []
     }
