@@ -1,0 +1,10 @@
+# HTML and data must never be served stale — a new issue has to appear immediately.
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Share cards are content-addressed by slug and only change when an entry changes,
+# so they can be cached hard. This is what keeps the site fast despite the no-cache above.
+/cards/*
+  Cache-Control: public, max-age=31536000, immutable
+/build/*
+  X-Robots-Tag: noindex
