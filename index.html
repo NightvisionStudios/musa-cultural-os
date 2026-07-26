@@ -18,6 +18,11 @@ to surface it.
 <title>MUSA — The Index</title>
 <meta name="description" content="A taste system from The Musa Family. THE INDEX reads culture through THE 50 — every call scored, dated and kept on the record.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://archive.themusafamily.com/cards/home-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://archive.themusafamily.com/cards/home-og.jpg">
+<link rel="canonical" href="https://archive.themusafamily.com/">
 <meta property="og:title" content="MUSA — The Index">
 <meta property="og:description" content="A taste system from The Musa Family. THE INDEX reads culture through THE 50 — every call scored, dated and kept on the record.">
 <meta name="twitter:card" content="summary_large_image">
@@ -225,6 +230,12 @@ border:1px solid #3a3526;border-radius:3px;padding:3px 8px;margin-left:auto;flex
 .preview{display:flex;gap:12px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
 .preview img{width:74px;height:74px;object-fit:cover;border-radius:5px;border:1px solid var(--line);flex:none;background:#1c1a16}
 .preview .cap{font-family:var(--mono);font-size:10px;color:var(--mut);line-height:1.6;align-self:center;letter-spacing:.05em}
+.srclink{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;color:var(--yellow);text-decoration:none}
+.srclink:hover{color:var(--yellow2);text-decoration:underline}
+.xlinks{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:12px}
+.readbtn{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;color:var(--yellow);
+border:1px solid #4a3f22;border-radius:3px;padding:7px 12px;text-decoration:none}
+.readbtn:hover{color:var(--yellow2);border-color:var(--yellow2)}
 .swapbtn{display:inline-block;margin-top:11px;padding:5px 10px;font-family:var(--mono);font-size:9.5px;
 letter-spacing:.14em;color:var(--yellow);border:1px solid #4a3f22;border-radius:3px;text-decoration:none}
 .swapbtn:hover{color:var(--yellow2);border-color:var(--yellow2)}
@@ -536,8 +547,19 @@ function railHtml(r){
       <span class="dir ${d.c}">${d.g}</span></span>
   </div>`;
 }
+/* Headlines go to the entry's own page — that page carries the OG card and links
+   out to the source. Canon/alumni have no page, so they still link straight out. */
+function permalink(r){ return r.slug ? `/i/${r.slug}/` : ""; }
 function linkName(r){
-  return r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name);
+  const p=permalink(r);
+  if(p)     return `<a href="${p}">${esc(r.name)}</a>`;
+  if(r.url) return `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>`;
+  return esc(r.name);
+}
+function sourceLink(r){
+  if(!r.url) return "";
+  let host=r.url; try{host=new URL(r.url).hostname.replace(/^www\./,"");}catch(_){}
+  return `<a class="srclink" href="${esc(r.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(host)} ↗</a>`;
 }
 
 /* ── COVER ─────────────────────────────────────────────── */
@@ -563,7 +585,7 @@ function renderCover(){
       <h3>${linkName(lead)}</h3>
       <div class="dek">${esc(lead.read||"")}</div>
       ${railHtml(lead)}
-      ${lead.benchmark?`<div class="byline">BENCHMARK IN THE 50 · <b>${esc(lead.benchmark)}</b></div>`:""}
+      <div class="byline">${lead.benchmark?`BENCHMARK IN THE 50 · <b>${esc(lead.benchmark)}</b>`:""}${lead.url?` &nbsp;·&nbsp; ${sourceLink(lead)}`:""}</div>
     </div>`;
 
   const up=(iss.come_up||[]), dn=(iss.decline||[]);
@@ -581,7 +603,7 @@ function renderCover(){
       <h4>${linkName(e)}</h4>
       <div class="dek">${esc(e.read||"")}</div>
       ${railHtml(e)}
-      ${e.benchmark?`<div class="byline">BENCHMARK · <b>${esc(e.benchmark)}</b></div>`:""}
+      <div class="byline">${e.benchmark?`BENCHMARK · <b>${esc(e.benchmark)}</b>`:""}${e.url?` &nbsp;·&nbsp; ${sourceLink(e)}`:""}</div>
     </article>`).join("");
 }
 
@@ -610,7 +632,7 @@ function build(){
         find:flags.some(f=>String(f).toUpperCase().includes("FIND")),
         gap:Math.round((e.score*10)-(e.heat||0)),
         read:e.read||"", benchmark:e.benchmark||"",
-        url:e.url||"", image:e.image||"",
+        url:e.url||"", image:e.image||"", slug:e.slug||"",
         issue:iss.issue_id||iss.issue||"", promoted:e.promoted_to_50||null
       });
     });
@@ -690,6 +712,7 @@ function cardIndex(r){
       <div class="xread">${r.read?esc(r.read):`<span class="nrec">— original taste read not recovered for this issue —</span>`}</div>
       ${r.benchmark?`<div class="xbench"><b>BENCHMARK:</b> ${esc(r.benchmark)}</div>`:""}
       ${previewHtml}
+      <div class="xlinks">${r.slug?`<a class="readbtn" href="/i/${r.slug}/">READ THE FULL ENTRY →</a>`:""}${sourceLink(r)}</div>
       ${swapHtml}
     </div>
     ${r.climate?`<button class="climate-toggle" type="button">CLIMATE <span class="chev">▾</span></button><div class="climate-body">${esc(r.climate)}</div>`:""}
