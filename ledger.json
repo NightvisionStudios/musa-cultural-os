@@ -2795,6 +2795,121 @@
       ],
       "climate": "The heaviest work this cycle isn't chasing the room — it's settling old scores, from a Philly voice back from a fourteen-year sentence to a beat scene finally getting its own written history.",
       "issue_id": "2026-07-25-1822"
+    },
+    {
+      "issue": 32,
+      "issue_id": "2026-07-26-1707",
+      "date": "2026-07-26",
+      "time": "17:07 ET",
+      "forecast": "Nothing leading this week is translating itself — the strongest work is first-person, built for the room it came from, and content to let everyone else catch up on their own time.",
+      "come_up": [
+        "Lagos print that treats craft and AI as one sentence",
+        "Photographers crossing into sound as a primary medium",
+        "African material intelligence named as a discipline, not a look"
+      ],
+      "decline": [
+        "Logo-luxury streetwear collabs",
+        "Diaspora work packaged for outside explanation",
+        "AI-generated 'culture' with no maker standing behind it"
+      ],
+      "climate": "Nothing leading this week is translating itself. A Lagos journal treating West African craft and AI as one sentence, a photographer who answered a retrospective with an album, a rapper who left the voicemails in — all of it first-person, none of it explained for an outside room.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Origho Journal #1",
+          "domain": "EDITORIAL",
+          "domain_detail": "EDITORIAL · INDEPENDENT PRINT",
+          "url": "https://magculture.com/products/origho-journal-1",
+          "image": "https://magculture.com/cdn/shop/files/OrighoJournal1_1200x1549.jpg?v=1768568278",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 9,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Players Magazine",
+          "read": "A hundred pages out of Lagos, edited and art-directed by one person. Anita Orighomisan Dafeta gives most of the debut to Allamaya: A New World — a three-part sculptural project entangling traditional West African architecture, craftsmanship and language with AI and cognition. Not a trend piece about Africa and technology; a journal that assumes the two were never separate. One London shop carries it. That is the entire distribution and it is the correct one.",
+          "verdict": "PENDING",
+          "slug": "origho-journal-1"
+        },
+        {
+          "rank": 2,
+          "name": "IAMISIGO — Bubu Ogisi",
+          "domain": "FASHION",
+          "domain_detail": "FASHION · WEARABLE ART",
+          "url": "https://iamisigo.com/",
+          "image": "https://www.villa88.com/wp-content/uploads/2026/07/iamisigo.webp",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 62,
+          "direction": "up",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Derschutze",
+          "read": "Hand-weaving raw fibre across Lagos, Nairobi and Accra, with the thesis said out loud: garments as vessels for indigenous storytelling, African material intelligence as a discipline rather than a mood. The LVMH semifinal seat is the room arriving late to a practice that has not moved in years. Nothing here needed the prize to make sense — which is exactly why the prize found it.",
+          "verdict": "PENDING",
+          "slug": "iamisigo-bubu-ogisi"
+        },
+        {
+          "rank": 3,
+          "name": "Mohamed Bourouissa — LILA",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · EXPERIMENTAL",
+          "url": "https://mohamedbourouissa.bandcamp.com/album/lila",
+          "image": "https://f4.bcbits.com/img/a1759351095_5.jpg",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 31,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Jim Legxacy",
+          "read": "Twelve tracks, each named for a person he was thinking about while making it. The Algeria-born, Paris-based artist behind the Palais de Tokyo retrospective treats sound the way he treats an image — a vector for memory, mostly the traumatic kind. Le Diouck and Mushy show up, PAN put it out, and he calls it a \"musical object\" rather than an album. The classification problem is the work.",
+          "verdict": "PENDING",
+          "slug": "mohamed-bourouissa-lila"
+        },
+        {
+          "rank": 4,
+          "name": "WÜLF & CASHEW — rebirth/rebrand",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · UNDERGROUND RAP",
+          "url": "https://wulfyseason.bandcamp.com/album/rebirth-rebrand",
+          "image": "https://f4.bcbits.com/img/a2676771927_5.jpg",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 15,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Kenny Mason",
+          "read": "Queens rapper, Russian producer, thirteen tracks assembled out of Santería ritual and DMT nights under Jones Beach and Flushing Meadows — with friends' voicemails left in as structure. He sells a Westside Gunn hoodie to get his car out of impound and it lands harder than any flex on the record. Cashew blurs every edge until the whole thing feels humid. Out on his thirty-third birthday.",
+          "verdict": "PENDING",
+          "slug": "wulf-and-cashew-rebirth-rebrand"
+        },
+        {
+          "rank": 5,
+          "name": "Karmzah — Leti Arts",
+          "domain": "GAMES",
+          "domain_detail": "GAMES · ACTION-ADVENTURE",
+          "url": "https://store.steampowered.com/app/3757620/Karmzah/",
+          "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3757620/640a0b961fae0492a5c805673ffa6e0cf15b60c6/capsule_616x353.jpg?t=1774461041",
+          "score": 7.2,
+          "tier": "FLAME",
+          "heat": 26,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "One54",
+          "read": "Accra's Leti Arts has been building African-mythology comics and games since before anyone was buying them, and Karmzah is the studio's move onto PC — a Ghanaian archaeologist with cerebral palsy who fights with her crutches. The demo is live; the release date is not. The disability is not a difficulty setting or a lesson. It is the moveset.",
+          "verdict": "PENDING",
+          "slug": "karmzah-leti-arts"
+        }
+      ]
     }
   ],
   "holding": [
@@ -2934,6 +3049,36 @@
           "note": "SS27 Paris men's show ranked among the week's strongest — heat caught the June call"
         }
       ]
+    },
+    {
+      "name": "Origho Journal #1",
+      "first_issue": "2026-07-26-1707",
+      "first_date": "2026-07-26",
+      "resurfaced": []
+    },
+    {
+      "name": "IAMISIGO — Bubu Ogisi",
+      "first_issue": "2026-07-26-1707",
+      "first_date": "2026-07-26",
+      "resurfaced": []
+    },
+    {
+      "name": "Mohamed Bourouissa — LILA",
+      "first_issue": "2026-07-26-1707",
+      "first_date": "2026-07-26",
+      "resurfaced": []
+    },
+    {
+      "name": "WÜLF & CASHEW — rebirth/rebrand",
+      "first_issue": "2026-07-26-1707",
+      "first_date": "2026-07-26",
+      "resurfaced": []
+    },
+    {
+      "name": "Karmzah — Leti Arts",
+      "first_issue": "2026-07-26-1707",
+      "first_date": "2026-07-26",
+      "resurfaced": []
     }
   ]
 }
