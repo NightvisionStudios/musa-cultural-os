@@ -1,171 +1,315 @@
 <!DOCTYPE html>
 <!--
-MUSA CULTURAL OS — THE ARCHIVE
+MUSA — THE INDEX
+The Musa Family's cultural magazine. Front page = the latest INDEX issue, read as a cover story.
+Behind it: THE 50 (the canon / the gate) and THE ARCHIVE (every read ever, searchable).
 
-The combined, searchable memory of THE 50 (canon) and THE INDEX (every read ever).
-This replaces the old Supabase submit/review/archive pipeline. It is read-first: the OS
-is the archive of both streams, nothing more, nothing less.
+── HOW IT STAYS LIVING ────────────────────────────────────────────────────────────────
+Data comes from ./ledger.json (every INDEX issue) and ./musa-50.json (the canon + alumni),
+both committed to NightvisionStudios/musa-cultural-os. Cloudflare Pages redeploys on commit.
+If a fetch fails the page falls back to the embedded snapshot and still works.
 
-── HOW TO KEEP IT LIVING ──────────────────────────────────────────────────────────────
-Two ways, both supported:
-
-1) PASTE + REDEPLOY (same as the 50 workflow):
-   • New Index issue published? Paste the new issue object into INDEX_SEED.issues (newest
-     anywhere — it sorts by date). Append-only; never rewrite past issues.
-   • 50 changed on 50.themusafamily.com? Replace CANON_SEED.entries with the current LIST.
-
-2) AUTO-LIVE FROM THE VAULT (no manual paste):
-   • Drop the raw GitHub URLs for your mirrored ledger.json + musa-50.json into CONFIG below.
-   • On load it fetches the vault; if the fetch works it shows "SOURCE: LIVE VAULT" and uses
-     the freshest data. If it can't reach the vault, it silently falls back to the embedded
-     snapshot below and shows "SOURCE: SNAPSHOT". Either way the page always works.
+Admin note: the SWAP → 50 control is hidden on the public page. Append ?admin=1 to the URL
+to surface it.
 ─────────────────────────────────────────────────────────────────────────────────────────
 -->
 <html lang="en"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MUSA CULTURAL OS — The Archive</title>
-<meta property="og:title" content="MUSA CULTURAL OS — The Archive">
-<meta property="og:description" content="The combined memory of the MUSA 50 and THE INDEX. Every read ever, scored against the canon. Searchable. A Musa Family taste system.">
+<title>MUSA — The Index</title>
+<meta name="description" content="A taste system from The Musa Family. THE INDEX reads culture through THE 50 — every call scored, dated and kept on the record.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MUSA — The Index">
+<meta property="og:description" content="A taste system from The Musa Family. THE INDEX reads culture through THE 50 — every call scored, dated and kept on the record.">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0a0a0a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0a0a;--panel:#111110;--panel2:#151412;--line:#26241f;--fg:#f2ead5;--mut:#8c887e;
---green:#3fb56b;--red:#e4533a;--amber:#e8c96d;--accent:var(--amber);--yellow:#f4d93e;--yellow2:#fff2a0;}
+:root{
+--bg:#0a0a0a;--panel:#111110;--panel2:#151412;--line:#26241f;--line2:#332f27;
+--fg:#f2ead5;--fg2:#d6cdb8;--mut:#8c887e;--mut2:#6d6a62;
+--green:#3fb56b;--red:#e4533a;--amber:#e8c96d;--accent:var(--amber);
+--yellow:#f4d93e;--yellow2:#fff2a0;--sand:#cdbf99;
+--serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+--text:"Newsreader",Georgia,serif;
+--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{background:var(--bg);color:var(--fg);font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
-body{max-width:920px;margin:0 auto;padding:24px 16px 70px;position:relative;overflow-x:hidden}
+html{scroll-behavior:smooth}
+html,body{background:var(--bg);color:var(--fg);font-family:var(--mono);-webkit-font-smoothing:antialiased}
+body{max-width:1080px;margin:0 auto;padding:22px 20px 80px;position:relative;overflow-x:hidden}
 body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:99;
-background:repeating-linear-gradient(0deg,rgba(255,255,255,.014) 0 1px,transparent 1px 3px)}
-.fade{opacity:0;transform:translateY(10px);animation:rise .5s ease forwards}
+background:repeating-linear-gradient(0deg,rgba(255,255,255,.013) 0 1px,transparent 1px 3px)}
+a{color:inherit}
+.fade{opacity:0;transform:translateY(10px);animation:rise .55s ease forwards}
 @keyframes rise{to{opacity:1;transform:none}}
-header{display:flex;align-items:center;gap:14px;border-bottom:1px solid var(--line);padding-bottom:16px}
-.mark{width:46px;height:46px;color:var(--fg);flex:none}
-.lock h1{font-size:20px;letter-spacing:.20em;font-weight:600}
-.lock .sub{font-size:10.5px;color:var(--mut);letter-spacing:.28em;margin-top:4px}
-.src{margin-left:auto;text-align:right;font-size:9.5px;color:var(--mut);line-height:1.7;letter-spacing:.12em}
-.src b{color:var(--amber)}.src .snap b{color:var(--mut)}
-.controls{position:sticky;top:0;z-index:50;background:var(--bg);
-padding:16px 0 13px;margin-top:6px;border-bottom:1px solid var(--line)}
-.searchwrap{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);
-border-left:3px solid var(--accent);border-radius:8px;padding:0 14px}
-.searchwrap svg{width:15px;height:15px;color:var(--mut);flex:none}
-#q{flex:1;background:none;border:none;outline:none;color:var(--fg);font-family:inherit;font-size:14px;
-padding:13px 0;letter-spacing:.02em}
-#q::placeholder{color:var(--mut)}
-.clearbtn{background:none;border:none;color:var(--mut);font-family:inherit;font-size:16px;cursor:pointer;
-padding:4px 2px;display:none}.clearbtn.on{display:block}
-.toggles{display:flex;gap:7px;margin-top:11px;flex-wrap:wrap;align-items:center}
-.tg{background:var(--panel);border:1px solid var(--line);color:var(--mut);font-family:inherit;
-font-size:11px;letter-spacing:.14em;padding:7px 13px;border-radius:6px;cursor:pointer;transition:.15s}
-.tg:hover{color:var(--fg);border-color:#3a3526}
-.tg.on{background:var(--accent);color:#1a1610;border-color:var(--accent);font-weight:600}
-.spacer{flex:1}
-.sortwrap{display:flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.12em;color:var(--mut)}
-#sort{background:var(--panel);border:1px solid var(--line);color:var(--fg);font-family:inherit;
-font-size:10.5px;letter-spacing:.1em;padding:6px 8px;border-radius:6px;cursor:pointer;outline:none}
-.chips{display:flex;gap:6px;margin-top:9px;flex-wrap:wrap}
-.chip{background:var(--panel2);border:1px solid var(--line);color:var(--mut);font-family:inherit;
-font-size:9.5px;letter-spacing:.12em;padding:5px 9px;border-radius:4px;cursor:pointer;transition:.15s}
-.chip:hover{color:var(--fg)}
-.chip.on{color:#1a1610;font-weight:600}
-.chip.on.tier{background:var(--amber);border-color:var(--amber)}
-.chip.on.dom{background:#cdbf99;border-color:#cdbf99}
-.chip.on.lane{background:#cdbf99;border-color:#cdbf99}
-.chip.on.find{background:var(--green);border-color:var(--green);color:#0a0a0a}
-.stat{font-size:10.5px;letter-spacing:.14em;color:var(--mut);margin:16px 2px 4px}
-.stat b{color:var(--fg)}.stat .a{color:var(--amber)}
-.results{display:flex;flex-direction:column;gap:9px;margin-top:10px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 15px;position:relative}
-.card.find{border-color:#2f3a28}
-.card.canon{border-left:3px solid #5a5446;background:var(--panel2)}
-.card.alumni{border-left:3px solid #3a382f;background:var(--panel2);opacity:.82}
-.ctop{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap}
-.kind{font-size:8.5px;letter-spacing:.16em;color:var(--mut);border:1px solid var(--line);
-border-radius:3px;padding:2px 6px;flex:none}
-.kind.k-idx{color:var(--amber);border-color:#3a2f1c}
-.kind.k-can{color:#cdbf99;border-color:#3a3526}
-.kind.k-alu{color:var(--mut);border-color:#333}
-.nm{font-size:15px;font-weight:600;letter-spacing:.01em}
-.nm a{color:var(--yellow);text-decoration:none;border-bottom:1px dotted var(--yellow);transition:.15s}
-.nm a:hover{color:var(--yellow2);border-bottom-color:var(--yellow2)}
-.dom{font-size:9.5px;color:var(--mut);letter-spacing:.12em;margin-left:auto;flex:none}
-.when{font-size:9.5px;color:var(--mut);letter-spacing:.08em;flex:none}
-.scorerow{display:flex;align-items:center;gap:11px;margin-top:11px;flex-wrap:wrap}
-.score{font-size:23px;font-weight:600;line-height:1}
-.tier{font-size:9px;letter-spacing:.13em;padding:3px 8px;border-radius:3px;border:1px solid var(--line)}
+.eyebrow{font-family:var(--mono);font-size:9.5px;letter-spacing:.24em;color:var(--mut);text-transform:uppercase}
+.eyebrow .a{color:var(--amber)}
+
+/* ── MASTHEAD ─────────────────────────────────────────────── */
+.masthead{display:flex;align-items:center;gap:16px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.mark{width:52px;height:52px;color:var(--fg);flex:none}
+.wordmark{font-family:var(--serif);font-size:38px;line-height:.95;letter-spacing:.05em}
+.wordmark .thin{color:var(--sand)}
+.mh-sub{font-family:var(--mono);font-size:9px;letter-spacing:.34em;color:var(--mut);margin-top:6px}
+.mh-right{margin-left:auto;text-align:right;font-family:var(--mono);font-size:9px;letter-spacing:.16em;color:var(--mut);line-height:1.9}
+.mh-right b{color:var(--amber);font-weight:500}
+.mh-right .snap b{color:var(--mut2)}
+
+/* ── NAV ──────────────────────────────────────────────────── */
+.nav{position:sticky;top:0;z-index:60;background:rgba(10,10,10,.94);backdrop-filter:blur(8px);
+display:flex;gap:22px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line);margin-bottom:6px}
+.nav a{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--mut);text-decoration:none;transition:.15s}
+.nav a:hover{color:var(--fg)}
+.nav a.here{color:var(--amber)}
+.nav .sp{flex:1}
+
+/* ── SECTION RULE ─────────────────────────────────────────── */
+.rule{display:flex;align-items:center;gap:14px;margin:56px 0 22px}
+.rule h2{font-family:var(--serif);font-size:26px;letter-spacing:.03em;color:var(--fg);white-space:nowrap}
+.rule .ln{flex:1;height:1px;background:var(--line)}
+.rule .note{font-family:var(--mono);font-size:9px;letter-spacing:.2em;color:var(--mut);white-space:nowrap}
+
+/* ── COVER ────────────────────────────────────────────────── */
+.cover{padding-top:34px}
+.cover .stamp{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;margin-bottom:16px}
+.cover .issno{font-family:var(--serif);font-size:15px;color:var(--amber);letter-spacing:.06em}
+.forecast{font-family:var(--serif);font-size:clamp(27px,4.4vw,44px);line-height:1.16;letter-spacing:.005em;
+color:var(--fg);max-width:22ch;max-width:none}
+.forecast em{font-style:italic;color:var(--sand)}
+
+.story{margin-top:34px;display:grid;grid-template-columns:1fr;gap:22px}
+.story .art{position:relative;width:100%;aspect-ratio:16/9;border-radius:10px;overflow:hidden;
+border:1px solid var(--line);background:linear-gradient(135deg,#1a1815,#0f0e0c)}
+.story .art img{width:100%;height:100%;object-fit:cover;display:block}
+.story .art .noart{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+font-family:var(--serif);font-size:64px;color:#241f19;letter-spacing:.1em}
+.story .art .tag{position:absolute;left:0;bottom:0;background:rgba(10,10,10,.86);backdrop-filter:blur(6px);
+font-family:var(--mono);font-size:9px;letter-spacing:.2em;color:var(--sand);padding:8px 13px;border-top-right-radius:8px}
+.story h3{font-family:var(--serif);font-size:clamp(26px,3.6vw,38px);line-height:1.14;letter-spacing:.01em}
+.story h3 a{color:var(--fg);text-decoration:none;border-bottom:1px solid #4a4437;transition:.15s}
+.story h3 a:hover{color:var(--yellow2);border-bottom-color:var(--yellow2)}
+.dek{font-family:var(--text);font-size:17.5px;line-height:1.62;color:var(--fg2);margin-top:14px;max-width:66ch}
+.byline{font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--mut);margin-top:16px}
+.byline b{color:var(--sand);font-weight:500}
+
+/* score rail */
+.rail{display:flex;align-items:center;gap:13px;flex-wrap:wrap;margin-top:18px;
+padding:13px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rail .sc{font-family:var(--serif);font-size:32px;line-height:1;color:var(--fg)}
+.rail .sc small{font-family:var(--mono);font-size:9px;letter-spacing:.18em;color:var(--mut);margin-left:5px;vertical-align:6px}
+.tier{font-family:var(--mono);font-size:9px;letter-spacing:.14em;padding:4px 9px;border-radius:3px;border:1px solid var(--line)}
 .t-heir{color:#f2ead5;border-color:#5a5446}.t-crown{color:var(--amber);border-color:#3a2f1c}
 .t-flame{color:#e89a5a;border-color:#3a2a1c}.t-torch{color:#c9b27a;border-color:#312b1c}
 .t-spark{color:var(--green);border-color:#1f3a28}.t-noise{color:var(--red);border-color:#3a2020}
-.flag{font-size:8.5px;letter-spacing:.11em;color:var(--green);border:1px solid #2f3a28;border-radius:3px;padding:2px 6px}
-.flag.blade{color:#cdbf99;border-color:#3a3526}.flag.held{color:var(--amber);border-color:#3a2f1c}
+.flag{font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;color:var(--green);
+border:1px solid #2f3a28;border-radius:3px;padding:3px 7px}
+.flag.held{color:var(--amber);border-color:#3a2f1c}
 .flag.heat{color:var(--red);border-color:#3a2020}
-.heatwrap{display:flex;align-items:center;gap:7px;font-size:10px;color:var(--mut);margin-left:auto}
-.heatbar{width:70px;height:5px;background:#1c1a16;border-radius:3px;overflow:hidden}
+.heatwrap{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:9.5px;
+letter-spacing:.12em;color:var(--mut);margin-left:auto}
+.heatbar{width:76px;height:5px;background:#1c1a16;border-radius:3px;overflow:hidden}
 .heatfill{height:100%;background:linear-gradient(90deg,#7a6f4a,var(--amber))}
 .dir{font-size:11px;font-weight:600}.dir.u{color:var(--green)}.dir.d{color:var(--red)}.dir.f{color:var(--mut)}
-.climate{font-size:11px;line-height:1.55;color:#a39e90;margin-top:11px;padding-top:9px;border-top:1px solid var(--line)}
-.climate b{color:#cdbf99;letter-spacing:.06em;font-weight:500}
-.climate-toggle{display:inline-flex;align-items:center;gap:6px;margin-top:11px;padding:4px 9px;font-family:inherit;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);background:var(--panel2);border:1px solid var(--line);border-radius:4px;cursor:pointer}
-.climate-toggle:hover{color:#cdbf99;border-color:#3a3526}
-.climate-toggle .chev{font-size:8px;transition:transform .25s ease}
-.card.climate-open .climate-toggle .chev{transform:rotate(180deg)}
-.climate-body{display:none;font-size:11px;line-height:1.55;color:#a39e90;margin-top:9px;padding-top:9px;border-top:1px solid var(--line)}
-.card.climate-open .climate-body{display:block}
-.lane{font-size:9px;letter-spacing:.12em;color:#cdbf99;border:1px solid #3a3526;border-radius:3px;
-padding:3px 8px;margin-left:auto;flex:none}
-.canline{font-size:10.5px;color:var(--mut);margin-top:9px;letter-spacing:.04em}
-.canline a{color:var(--yellow);text-decoration:none}.canline a:hover{color:var(--yellow2);text-decoration:underline}
-.preview{display:flex;gap:11px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
-.preview img{width:72px;height:72px;object-fit:cover;border-radius:5px;border:1px solid var(--line);flex:none;background:#1c1a16}
-.preview .cap{font-size:10.5px;color:var(--mut);line-height:1.5;align-self:center}
-.empty{text-align:center;color:var(--mut);font-size:12px;letter-spacing:.1em;padding:50px 0}
-footer{margin-top:34px;border-top:1px solid var(--line);padding-top:16px;display:flex;align-items:flex-start;gap:11px}
-footer .fm{width:24px;height:24px;color:var(--mut);flex:none;margin-top:2px}
-footer .ft{font-size:10px;color:var(--mut);line-height:1.75}footer .ft b{color:#b8b09c;letter-spacing:.16em}
-.card{cursor:pointer}
-.card .xp{display:block;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
-.card.open .xp{display:block}
-.xread{font-size:13px;line-height:1.7;color:#d8d0bd}
-.xread .nrec{color:var(--mut);font-style:italic;font-size:12px}
-.xbench{margin-top:8px;font-size:11.5px;color:var(--mut);letter-spacing:.04em}
-.xbench b{color:var(--accent)}
-.xhint{margin-top:8px;font-size:9.5px;letter-spacing:.18em;color:var(--mut);opacity:.7}
-.card.open .xhint{display:none}
-.swapbtn{display:inline-block;margin-top:10px;padding:5px 10px;font-size:9.5px;letter-spacing:.14em;
-color:var(--yellow);border:1px solid #4a3f22;border-radius:3px;text-decoration:none}
-.swapbtn:hover{color:var(--yellow2);border-color:var(--yellow2)}
-.promobadge{display:inline-block;margin-top:10px;padding:5px 10px;font-size:9px;letter-spacing:.12em;
-color:var(--green);border:1px solid #2f3a28;border-radius:3px}
-.card.canon{cursor:default}
-.card.alumni{cursor:default}
-.keylabel{font-size:10.5px;letter-spacing:.28em;color:var(--mut);margin:22px 2px 10px}
-.keybox{background:var(--panel);border:1px dashed var(--line);border-radius:10px;padding:20px 22px;font-size:13px;line-height:1.85;color:#d8d0bd}
-.keybox b{color:var(--fg)}
-.keybox .kfind{color:var(--green);font-weight:600}
-.keybox .knoise{color:var(--red);font-weight:600}
-.keytiers{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
-.keytier{border:1px solid var(--line);border-radius:6px;padding:9px 14px;font-size:11px;letter-spacing:.08em;flex:1 1 200px}
+
+/* ── CLIMATE COLUMNS ──────────────────────────────────────── */
+.climate{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);
+border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:38px}
+.climate .col{background:var(--panel);padding:20px 22px}
+.climate .ch{font-family:var(--mono);font-size:9.5px;letter-spacing:.22em;margin-bottom:14px}
+.climate .up .ch{color:var(--green)}.climate .dn .ch{color:var(--red)}
+.climate li{list-style:none;font-family:var(--text);font-size:15.5px;line-height:1.5;color:var(--fg2);
+padding:9px 0;border-top:1px solid var(--line)}
+.climate li:first-child{border-top:none;padding-top:0}
+
+/* ── FEATURES ─────────────────────────────────────────────── */
+.features{display:grid;grid-template-columns:1fr 1fr;gap:30px 26px}
+.feat .art{position:relative;width:100%;aspect-ratio:4/3;border-radius:9px;overflow:hidden;
+border:1px solid var(--line);background:linear-gradient(135deg,#1a1815,#0f0e0c);margin-bottom:15px}
+.feat .art img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.feat:hover .art img{transform:scale(1.032)}
+.feat .art .noart{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+font-family:var(--serif);font-size:44px;color:#241f19}
+.feat .dom{font-family:var(--mono);font-size:9px;letter-spacing:.22em;color:var(--mut)}
+.feat h4{font-family:var(--serif);font-size:23px;line-height:1.2;margin-top:9px}
+.feat h4 a{color:var(--fg);text-decoration:none;border-bottom:1px solid #3a352b;transition:.15s}
+.feat h4 a:hover{color:var(--yellow2);border-bottom-color:var(--yellow2)}
+.feat .dek{font-size:15.5px;margin-top:11px;line-height:1.58}
+.feat .rail{margin-top:14px;padding:11px 0;gap:10px}
+.feat .rail .sc{font-size:24px}
+
+/* ── THE 50 RAIL ──────────────────────────────────────────── */
+.canonwrap{border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:22px 24px}
+.canonwrap .intro{font-family:var(--text);font-size:16px;line-height:1.6;color:var(--fg2);max-width:70ch}
+.canonlist{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+.canonlist a,.canonlist span{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--fg2);
+background:var(--panel2);border:1px solid var(--line);border-radius:5px;padding:7px 11px;text-decoration:none;transition:.15s}
+.canonlist a:hover{color:var(--yellow2);border-color:#4a3f22}
+.canonmore{font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--mut);margin-top:16px}
+.canonmore a{color:var(--yellow);text-decoration:none}.canonmore a:hover{color:var(--yellow2)}
+
+/* ── THE KEY ──────────────────────────────────────────────── */
+.keybox{background:var(--panel);border:1px dashed var(--line);border-radius:10px;padding:22px 24px;
+font-family:var(--text);font-size:16px;line-height:1.7;color:var(--fg2)}
+.keybox b{color:var(--fg);font-weight:500}
+.keybox .kfind{color:var(--green)}.keybox .knoise{color:var(--red)}
+.keytiers{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.keytier{font-family:var(--mono);border:1px solid var(--line);border-radius:6px;padding:9px 14px;
+font-size:10px;letter-spacing:.1em;flex:1 1 190px}
 .keytier.kt-heir{border-color:#5a5446;color:#f2ead5}
 .keytier.kt-crown{border-color:#3a2f1c;color:var(--amber)}
 .keytier.kt-flame{border-color:#3a2a1c;color:#e89a5a}
 .keytier.kt-torch{border-color:#312b1c;color:#c9b27a}
 .keytier.kt-spark{border-color:#1f3a28;color:var(--green)}
 .keytier.kt-noise{border-color:#3a2020;color:var(--red)}
+
+/* ── ARCHIVE ──────────────────────────────────────────────── */
+.controls{position:sticky;top:44px;z-index:50;background:var(--bg);padding:4px 0 13px;border-bottom:1px solid var(--line)}
+.searchwrap{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);
+border-left:3px solid var(--accent);border-radius:8px;padding:0 14px}
+.searchwrap svg{width:15px;height:15px;color:var(--mut);flex:none}
+#q{flex:1;background:none;border:none;outline:none;color:var(--fg);font-family:var(--mono);font-size:14px;padding:13px 0}
+#q::placeholder{color:var(--mut2)}
+.clearbtn{background:none;border:none;color:var(--mut);font-family:inherit;font-size:16px;cursor:pointer;padding:4px 2px;display:none}
+.clearbtn.on{display:block}
+.toggles{display:flex;gap:7px;margin-top:11px;flex-wrap:wrap;align-items:center}
+.tg{background:var(--panel);border:1px solid var(--line);color:var(--mut);font-family:var(--mono);
+font-size:10.5px;letter-spacing:.15em;padding:7px 13px;border-radius:6px;cursor:pointer;transition:.15s}
+.tg:hover{color:var(--fg);border-color:#3a3526}
+.tg.on{background:var(--accent);color:#1a1610;border-color:var(--accent);font-weight:600}
+.spacer{flex:1}
+.sortwrap{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;color:var(--mut)}
+#sort{background:var(--panel);border:1px solid var(--line);color:var(--fg);font-family:var(--mono);
+font-size:10px;letter-spacing:.1em;padding:6px 8px;border-radius:6px;cursor:pointer;outline:none}
+.chips{display:flex;gap:6px;margin-top:9px;flex-wrap:wrap}
+.chip{background:var(--panel2);border:1px solid var(--line);color:var(--mut);font-family:var(--mono);
+font-size:9.5px;letter-spacing:.13em;padding:5px 9px;border-radius:4px;cursor:pointer;transition:.15s}
+.chip:hover{color:var(--fg)}
+.chip.on{color:#1a1610;font-weight:600}
+.chip.on.tier{background:var(--amber);border-color:var(--amber)}
+.chip.on.dom,.chip.on.lane{background:var(--sand);border-color:var(--sand)}
+.chip.on.find{background:var(--green);border-color:var(--green);color:#0a0a0a}
+.stat{font-family:var(--mono);font-size:10px;letter-spacing:.15em;color:var(--mut);margin:18px 2px 6px}
+.stat b{color:var(--fg)}.stat .a{color:var(--amber)}
+.results{display:flex;flex-direction:column;gap:9px;margin-top:10px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:15px 16px;position:relative;cursor:pointer}
+.card.find{border-color:#2f3a28}
+.card.canon{border-left:3px solid #5a5446;background:var(--panel2);cursor:default}
+.card.alumni{border-left:3px solid #3a382f;background:var(--panel2);opacity:.84;cursor:default}
+.ctop{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap}
+.kind{font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;color:var(--mut);
+border:1px solid var(--line);border-radius:3px;padding:2px 6px;flex:none}
+.kind.k-idx{color:var(--amber);border-color:#3a2f1c}
+.kind.k-can{color:var(--sand);border-color:#3a3526}
+.kind.k-alu{color:var(--mut);border-color:#333}
+.nm{font-family:var(--serif);font-size:19px;letter-spacing:.01em}
+.nm a{color:var(--yellow);text-decoration:none;border-bottom:1px dotted var(--yellow);transition:.15s}
+.nm a:hover{color:var(--yellow2);border-bottom-color:var(--yellow2)}
+.dom{font-family:var(--mono);font-size:9.5px;color:var(--mut);letter-spacing:.13em;margin-left:auto;flex:none}
+.when{font-family:var(--mono);font-size:9.5px;color:var(--mut);letter-spacing:.08em;flex:none}
+.scorerow{display:flex;align-items:center;gap:11px;margin-top:11px;flex-wrap:wrap}
+.score{font-family:var(--serif);font-size:26px;line-height:1}
+.lane{font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:var(--sand);
+border:1px solid #3a3526;border-radius:3px;padding:3px 8px;margin-left:auto;flex:none}
+.canline{font-family:var(--mono);font-size:10px;color:var(--mut);margin-top:9px;letter-spacing:.04em;line-height:1.7}
+.canline a{color:var(--yellow);text-decoration:none}.canline a:hover{color:var(--yellow2)}
+.xp{display:none;margin-top:11px;padding-top:11px;border-top:1px solid var(--line)}
+.card.open .xp{display:block}
+.xread{font-family:var(--text);font-size:16px;line-height:1.62;color:var(--fg2)}
+.xread .nrec{color:var(--mut);font-style:italic;font-size:14px}
+.xbench{margin-top:10px;font-family:var(--mono);font-size:10px;letter-spacing:.13em;color:var(--mut)}
+.xbench b{color:var(--accent);font-weight:500}
+.xhint{margin-top:9px;font-family:var(--mono);font-size:9px;letter-spacing:.2em;color:var(--mut2)}
+.card.open .xhint{display:none}
+.preview{display:flex;gap:12px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+.preview img{width:74px;height:74px;object-fit:cover;border-radius:5px;border:1px solid var(--line);flex:none;background:#1c1a16}
+.preview .cap{font-family:var(--mono);font-size:10px;color:var(--mut);line-height:1.6;align-self:center;letter-spacing:.05em}
+.swapbtn{display:inline-block;margin-top:11px;padding:5px 10px;font-family:var(--mono);font-size:9.5px;
+letter-spacing:.14em;color:var(--yellow);border:1px solid #4a3f22;border-radius:3px;text-decoration:none}
+.swapbtn:hover{color:var(--yellow2);border-color:var(--yellow2)}
+.promobadge{display:inline-block;margin-top:11px;padding:5px 10px;font-family:var(--mono);font-size:9px;
+letter-spacing:.13em;color:var(--green);border:1px solid #2f3a28;border-radius:3px}
+.climate-toggle{display:inline-flex;align-items:center;gap:6px;margin-top:11px;padding:4px 9px;
+font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);
+background:var(--panel2);border:1px solid var(--line);border-radius:4px;cursor:pointer}
+.climate-toggle:hover{color:var(--sand);border-color:#3a3526}
+.climate-toggle .chev{font-size:8px;transition:transform .25s ease}
+.card.climate-open .climate-toggle .chev{transform:rotate(180deg)}
+.climate-body{display:none;font-family:var(--text);font-size:15px;line-height:1.6;color:#a39e90;
+margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+.card.climate-open .climate-body{display:block}
+.empty{text-align:center;color:var(--mut);font-family:var(--mono);font-size:12px;letter-spacing:.1em;padding:50px 0}
+
+/* ── FOOTER ───────────────────────────────────────────────── */
+footer{margin-top:64px;border-top:1px solid var(--line);padding-top:22px;display:flex;align-items:flex-start;gap:13px}
+footer .fm{width:28px;height:28px;color:var(--mut);flex:none;margin-top:3px}
+footer .ft{font-family:var(--text);font-size:14.5px;color:var(--mut);line-height:1.7;max-width:76ch}
+footer .ft b{font-family:var(--mono);font-size:9.5px;color:#b8b09c;letter-spacing:.2em;display:block;margin-bottom:8px}
+
+@media(max-width:760px){
+  body{padding:18px 15px 60px}
+  .wordmark{font-size:30px}
+  .mark{width:42px;height:42px}
+  .mh-right{font-size:8.5px}
+  .nav{gap:15px;overflow-x:auto;white-space:nowrap}
+  .climate{grid-template-columns:1fr}
+  .features{grid-template-columns:1fr;gap:34px}
+  .story .art{aspect-ratio:3/2}
+  .controls{top:41px}
+  .rule{margin:42px 0 18px}.rule h2{font-size:21px}
+  .rule .note{display:none}
+}
 </style></head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="heirwave-paths">
 <path fill="currentColor" d="M 409.22 581.23 C 431.01 544.52 457.46 513.04 486.65 480.40 C 511.81 452.27 539.03 429.05 573.06 412.87 C 601.81 399.20 632.08 394.30 663.88 398.17 C 689.29 401.26 712.87 408.73 734.62 420.58 C 735.15 420.87 735.29 420.74 735.04 420.19 C 734.71 419.46 734.21 418.47 733.54 417.21 C 720.25 392.39 703.73 370.82 681.24 354.61 C 636.99 322.71 579.95 325.48 535.13 354.36 C 525.31 360.69 515.70 367.33 506.30 374.27 C 499.25 379.47 493.66 383.00 489.51 384.85 C 455.28 400.19 433.99 368.46 423.30 341.98 C 423.19 341.71 422.80 341.72 422.70 341.99 C 409.98 376.24 393.75 408.67 374.00 439.28 C 348.81 478.32 313.17 515.01 265.54 524.57 C 247.66 528.16 229.56 528.93 211.25 526.90 C 209.30 526.69 207.31 526.54 205.26 526.45 C 204.94 526.44 204.70 526.73 204.77 527.04 C 206.96 536.19 210.42 546.40 215.17 557.66 C 215.45 558.32 215.71 558.84 215.95 559.21 C 216.21 559.63 216.67 559.89 217.34 559.98 C 251.25 564.81 284.45 559.28 315.71 545.43 C 337.28 535.87 357.51 524.03 376.41 509.90 C 399.06 492.97 421.50 475.59 443.75 457.78 C 444.11 457.49 444.62 457.88 444.43 458.30 C 434.83 479.91 422.74 500.37 408.89 519.58 C 389.16 546.93 361.45 573.94 331.71 589.22 C 304.51 603.19 275.66 608.56 245.17 605.31 C 244.79 605.27 244.53 605.69 244.74 606.01 C 252.29 617.67 261.04 628.25 271.00 637.75 C 290.86 656.69 314.53 667.52 342.02 670.25 C 392.20 675.23 434.79 647.48 471.84 617.57 C 484.00 607.75 496.19 597.99 508.13 587.89 C 545.82 556.03 589.86 526.93 636.30 510.35 C 669.33 498.56 703.53 495.45 738.92 501.02 C 764.79 505.09 787.94 514.79 808.37 530.11 C 809.24 530.76 809.52 530.57 809.21 529.53 C 801.59 504.17 787.61 483.31 767.27 466.96 C 745.17 449.19 720.08 437.92 691.99 433.13 C 650.69 426.08 609.77 436.18 574.00 457.02 C 542.68 475.27 513.69 497.96 486.12 521.39 C 461.43 542.38 436.65 563.52 409.54 581.54 C 409.34 581.67 409.10 581.44 409.22 581.23 Z"/>
 <path fill="currentColor" d="M 706.74 554.09 C 740.01 549.91 776.76 554.53 807.12 569.89 C 807.41 570.04 807.56 570.37 807.48 570.68 C 794.06 623.73 756.43 663.86 700.24 669.37 C 649.64 674.34 611.18 649.17 584.47 608.10 C 584.38 607.90 584.34 607.63 584.58 607.48 C 620.35 581.03 661.73 559.75 706.74 554.09 Z"/>
 </g></defs></svg>
-<header class="fade">
+
+<header class="masthead fade">
 <svg class="mark" viewBox="180 320 660 360"><use href="#heirwave-paths"/></svg>
-<div class="lock"><h1>MUSA CULTURAL OS</h1><div class="sub">THE ARCHIVE · THE 50 × THE INDEX</div></div>
-<div class="src" id="src">SOURCE: SNAPSHOT</div>
+<div class="lock">
+  <div class="wordmark">MUSA</div>
+  <div class="mh-sub">THE MUSA FAMILY · HEIRWAVE</div>
+</div>
+<div class="mh-right" id="src">SOURCE: SNAPSHOT</div>
 </header>
-<div class="keylabel fade">THE KEY</div>
-<div class="keybox fade">
-<b>MUSA SCORE</b> (1–10) is the taste read — where it sits against the MUSA 50 canon. <b>HEAT</b> (0–100) is how loud the room is right now. The gap is the whole point: high score + low heat is a <span class="kfind">FIND</span> (taste ahead of the room); high heat + low score is <span class="knoise">NOISE</span>. <b>BENCHMARK</b> names its nearest neighbor in the 50.
+
+<nav class="nav">
+  <a href="#theindex" class="here">THE INDEX</a>
+  <a href="#the50">THE 50</a>
+  <a href="#archive">THE ARCHIVE</a>
+  <span class="sp"></span>
+  <a href="#key">THE KEY</a>
+</nav>
+
+<!-- ═══ COVER ═══ -->
+<section class="cover fade" id="theindex">
+  <div class="stamp">
+    <span class="issno" id="issno">—</span>
+    <span class="eyebrow" id="issdate"></span>
+  </div>
+  <div class="forecast" id="forecast"></div>
+  <div class="story" id="story"></div>
+  <div class="climate" id="climatecols"></div>
+</section>
+
+<!-- ═══ FEATURES ═══ -->
+<div class="rule fade"><h2>Also In This Issue</h2><span class="ln"></span><span class="note" id="featnote"></span></div>
+<section class="features fade" id="features"></section>
+
+<!-- ═══ THE 50 ═══ -->
+<div class="rule fade" id="the50"><h2>The 50</h2><span class="ln"></span><span class="note">THE CANON · THE GATE</span></div>
+<section class="canonwrap fade">
+  <div class="intro">The 50 is the canon — Nightvision's taste rendered as a list. Nothing reaches THE INDEX without rhyming with it. It is the gate, the benchmark and the north star, in that order. When a name rotates off, it lives on as <b>alumni</b>: the receipt of who held the gate.</div>
+  <div class="canonlist" id="canonlist"></div>
+  <div class="canonmore" id="canonmore"></div>
+</section>
+
+<!-- ═══ THE KEY ═══ -->
+<div class="rule fade" id="key"><h2>The Key</h2><span class="ln"></span><span class="note">HOW TO READ A SCORE</span></div>
+<section class="keybox fade">
+<b>MUSA SCORE</b> (1–10) is the taste read — where a name sits against the canon. <b>HEAT</b> (0–100) is how loud the room is right now. The gap between them is the whole point: high score, low heat is a <b class="kfind">FIND</b> — taste ahead of the room. High heat, low score is <b class="knoise">NOISE</b>. When both run high and the room is right, that's earned. <b>BENCHMARK</b> names the nearest neighbour in the 50, so no score floats.
 <div class="keytiers">
 <span class="keytier kt-heir">HEIRWAVE 9–10 · CANON</span>
 <span class="keytier kt-crown">CROWN 8–8.9 · MASTERY</span>
@@ -174,11 +318,15 @@ color:var(--green);border:1px solid #2f3a28;border-radius:3px}
 <span class="keytier kt-spark">SPARK 5–5.9 · FRESH</span>
 <span class="keytier kt-noise">NOISE &lt;5</span>
 </div>
-</div>
-<div class="controls fade">
+</section>
+
+<!-- ═══ ARCHIVE ═══ -->
+<div class="rule fade" id="archive"><h2>The Archive</h2><span class="ln"></span><span class="note">EVERY READ EVER MADE</span></div>
+<section class="fade">
+<div class="controls">
 <div class="searchwrap">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-<input id="q" type="text" placeholder="Search the archive — name, domain, lane, tier, flag, climate…" autocomplete="off" spellcheck="false">
+<input id="q" type="text" placeholder="Search the archive — name, domain, lane, tier, climate…" autocomplete="off" spellcheck="false">
 <button class="clearbtn" id="clear" aria-label="clear">✕</button>
 </div>
 <div class="toggles">
@@ -198,48 +346,46 @@ color:var(--green);border:1px solid #2f3a28;border-radius:3px}
 </div>
 <div class="chips" id="chips"></div>
 </div>
-<div class="stat fade" id="stat"></div>
+<div class="stat" id="stat"></div>
 <div class="results" id="results"></div>
+</section>
+
 <footer class="fade">
 <svg class="fm" viewBox="180 320 660 360"><use href="#heirwave-paths"/></svg>
-<div class="ft"><b>THE MUSA FAMILY · HEIRWAVE</b><br>
-The OS is the memory of the system: THE 50 is the canon and the gate, THE INDEX is every read made through it. Scores and heat are editorial taste reads, not metrics. No name runs twice — when a name rotates off the 50 it lives on as ALUMNI, the receipt of who held the gate. Royalty runs in the blood, not the crown.</div>
+<div class="ft"><b>THE MUSA FAMILY · HEIRWAVE</b>
+THE 50 is the canon and the gate. THE INDEX is every read made through it. Scores and heat are editorial taste reads, not metrics — and every one of them is dated, kept and never quietly rewritten. No name runs twice. Royalty runs in the blood, not the crown.</div>
 </footer>
 <script>
-const CONFIG = {
-  ledgerURL: "./ledger.json",
-  canonURL: "./musa-50.json",
-  cacheBust: true
-};
+const CONFIG = { ledgerURL:"./ledger.json", canonURL:"./musa-50.json", cacheBust:true };
 
 const INDEX_SEED = {
   issues: [
     { issue:"2026-06-17-0638", date:"2026-06-17", time:"06:38 ET",
       climate:"Restraint bleeding out; expressive clarity, craft, and gatekept taste taking the bid",
       entries:[
-        {name:"Ibrahim Mahama",domain:"ART",score:9.0,tier:"HEIRWAVE",heat:52,direction:"up",flags:["FIND","BLADE"]},
-        {name:"Álvaro Díaz — Omakase",domain:"MUSIC",score:8.1,tier:"CROWN",heat:44,direction:"up",flags:["FIND","BLADE"]},
+        {name:"Ibrahim Mahama",domain:"ART",score:9.0,tier:"HEIRWAVE",heat:52,direction:"up",flags:["FIND"]},
+        {name:"Álvaro Díaz — Omakase",domain:"MUSIC",score:8.1,tier:"CROWN",heat:44,direction:"up",flags:["FIND"]},
         {name:"Douglas Stuart — John of John",domain:"BOOKS",score:8.2,tier:"CROWN",heat:40,direction:"up",flags:["FIND"]},
-        {name:"Charli XCX — The Moment",domain:"FILM",score:6.6,tier:"TORCH",heat:78,direction:"flat",flags:["HEAT>WORK","BLADE"]},
-        {name:"Taste-as-Gatekeeping",domain:"SCENE",score:7.6,tier:"FLAME",heat:66,direction:"up",flags:["BLADE"]}
+        {name:"Charli XCX — The Moment",domain:"FILM",score:6.6,tier:"TORCH",heat:78,direction:"flat",flags:["HEAT>WORK"]},
+        {name:"Taste-as-Gatekeeping",domain:"SCENE",score:7.6,tier:"FLAME",heat:66,direction:"up",flags:[]}
       ]},
     { issue:"2026-06-17-0702", date:"2026-06-17", time:"07:02 ET",
       climate:"Center is hollow; authority migrating to the edges — quiet radicals, original work over sequels, slow-built craft over spectacle",
       entries:[
-        {name:"Smiljan Radić",domain:"ARCHITECTURE",score:9.1,tier:"HEIRWAVE",heat:49,direction:"up",flags:["FIND","BLADE"]},
+        {name:"Smiljan Radić",domain:"ARCHITECTURE",score:9.1,tier:"HEIRWAVE",heat:49,direction:"up",flags:["FIND"]},
         {name:"Industry — S4",domain:"TV",score:8.3,tier:"CROWN",heat:71,direction:"up",flags:["ROOMS_RIGHT"]},
-        {name:"Esoteric Ebb",domain:"GAMES",score:7.8,tier:"FLAME",heat:38,direction:"up",flags:["FIND","BLADE"]},
+        {name:"Esoteric Ebb",domain:"GAMES",score:7.8,tier:"FLAME",heat:38,direction:"up",flags:["FIND"]},
         {name:"Isaiah Rashad — It's Been Awful",domain:"MUSIC",score:7.7,tier:"FLAME",heat:55,direction:"up",flags:["FIND"]},
-        {name:"New Maximalism / Archive-as-Currency",domain:"FASHION",score:7.4,tier:"FLAME",heat:64,direction:"up",flags:["BLADE"]}
+        {name:"New Maximalism / Archive-as-Currency",domain:"FASHION",score:7.4,tier:"FLAME",heat:64,direction:"up",flags:[]}
       ]},
     { issue:"2026-06-20-0546", date:"2026-06-20", time:"05:46 ET",
       climate:"Two clocks at once — the last monocultures (World Cup, public spectacle) pull everyone in while everywhere else fragments into micro-tribes; belonging beats reach",
       entries:[
-        {name:"FIFA World Cup 2026",domain:"SPORT",score:8.4,tier:"CROWN",heat:96,direction:"up",flags:["ROOMS_RIGHT","BLADE"]},
+        {name:"FIFA World Cup 2026",domain:"SPORT",score:8.4,tier:"CROWN",heat:96,direction:"up",flags:["ROOMS_RIGHT"]},
         {name:"JR — Pont Neuf",domain:"ART",score:8.6,tier:"CROWN",heat:74,direction:"up",flags:["EARNED_SPECTACLE"]},
-        {name:"MIKE",domain:"MUSIC",score:8.3,tier:"CROWN",heat:36,direction:"up",flags:["FIND","BLADE"]},
-        {name:"Tech Spec",domain:"DESIGN",score:7.5,tier:"FLAME",heat:58,direction:"up",flags:["FIND","BLADE"]},
-        {name:"Broadcast-to-Belonging",domain:"SCENE",score:7.7,tier:"FLAME",heat:62,direction:"up",flags:["BLADE"]}
+        {name:"MIKE",domain:"MUSIC",score:8.3,tier:"CROWN",heat:36,direction:"up",flags:["FIND"]},
+        {name:"Tech Spec",domain:"DESIGN",score:7.5,tier:"FLAME",heat:58,direction:"up",flags:["FIND"]},
+        {name:"Broadcast-to-Belonging",domain:"SCENE",score:7.7,tier:"FLAME",heat:62,direction:"up",flags:[]}
       ]},
     { issue:"2026-07-06-0834", date:"2026-07-06", time:"08:34 ET",
       climate:"Stadium spectacle is loud enough to feel like the whole story, but the real export is coming from cities the algorithm still treats as periphery — Lagos chief among them",
@@ -254,12 +400,12 @@ const INDEX_SEED = {
          image:"https://visit.mcachicago.org/wp-content/uploads/2025/10/85_FB_Untitled-Les-tables-de-geographie-reduites-en-un-jeu-de-cartes.webp",
          read:"Two decades of drawings, paintings, and installations built from folklore, fantasy, and Caribbean diasporic myth, now touring ICA Boston to MCA Chicago — museum-earned, not algorithm-earned.",
          benchmark:"Mason Prince — same craft-first, story-driven register, different medium."},
-        {name:"Alewya — \"Zero\"",domain:"MUSIC",score:8.6,tier:"CROWN",heat:34,direction:"up",flags:["FIND","BLADE"],
+        {name:"Alewya — \"Zero\"",domain:"MUSIC",score:8.6,tier:"CROWN",heat:34,direction:"up",flags:["FIND"],
          url:"https://alewya.bandcamp.com/album/zero-1",
          image:"https://f4.bcbits.com/img/a3150029086_7.jpg",
          read:"London underground fused with Egyptian and Ethiopian rhythm, critics reaching for M.I.A.'s Kala as the last time diasporic music re-drew the map this confidently. No feature run, no rollout theater.",
          benchmark:"Jim Legxacy — same instinct to let root and lineage do the talking over reach."},
-        {name:"WAFFLESNCREAM",domain:"FASHION",score:8.3,tier:"CROWN",heat:30,direction:"up",flags:["FIND","BLADE"],
+        {name:"WAFFLESNCREAM",domain:"FASHION",score:8.3,tier:"CROWN",heat:30,direction:"up",flags:["FIND"],
          url:"https://www.wafflesncream.com/",
          image:"https://www.wafflesncream.com/cdn/shop/files/lookbook-01_grande.jpg?v=1743681553",
          read:"A Lagos skate shop since 2012 that never tried to be a brand first — it raised a scene instead, the one that produced Olaolu Slawn and the Motherlan collective. Community before commerce.",
@@ -328,31 +474,131 @@ const CANON_SEED = {
   ]
 };
 
+
 let LEDGER = INDEX_SEED, CANON = CANON_SEED;
 let RECORDS = [];
+const ADMIN = new URLSearchParams(location.search).has("admin");
 const state = { view:"all", q:"", sort:"new", chip:null, find:false };
 const TIER_CLASS = {HEIRWAVE:"t-heir",CROWN:"t-crown",FLAME:"t-flame",TORCH:"t-torch",SPARK:"t-spark",NOISE:"t-noise"};
 const DIR = {up:{c:"u",g:"▲"},down:{c:"d",g:"▼"},flat:{c:"f",g:"▮"}};
+const MONTHS=["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+const DAYS=["SUN","MON","TUE","WED","THU","FRI","SAT"];
 
+/* BLADE is retired — it never appeared on the key and read as noise.
+   Any legacy BLADE flag still sitting in old data is dropped on ingest. */
+const DROP_FLAGS = ["BLADE"];
+function cleanFlags(list){
+  return (list||[]).filter(f=>{
+    const u=String(f).toUpperCase();
+    return !DROP_FLAGS.some(d=>u.includes(d));
+  });
+}
 function flagClass(f){
-  const u=f.toUpperCase();
+  const u=String(f).toUpperCase();
   if(u.includes("HEAT")) return "heat";
-  if(u.includes("BLADE")) return "blade";
   if(u.includes("FIND")) return "";
   return "held";
 }
+function flagLabel(f){return String(f).replace(/_/g," ");}
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function fmtDate(d){
+  if(!d) return "";
+  const p=String(d).split("-"); if(p.length<3) return d;
+  const dt=new Date(Date.UTC(+p[0],+p[1]-1,+p[2]));
+  return `${DAYS[dt.getUTCDay()]} · ${MONTHS[+p[1]-1]} ${+p[2]} ${p[0]}`;
+}
+function initial(n){return String(n||"?").trim().charAt(0).toUpperCase();}
+function artHtml(r,cls){
+  const img = r.image ? `<img src="${esc(r.image)}" alt="${esc(r.name)}" loading="lazy" onerror="this.remove()">`
+                      : `<div class="noart">${esc(initial(r.name))}</div>`;
+  const tag = cls==="story" && r.domain ? `<span class="tag">${esc(String(r.domain).toUpperCase())}</span>` : "";
+  return `<div class="art">${img}${tag}</div>`;
+}
+function railHtml(r){
+  const tc=TIER_CLASS[r.tier]||"";
+  const d=DIR[r.direction]||DIR.flat;
+  const flags=cleanFlags(r.flags).map(f=>`<span class="flag ${flagClass(f)}">${esc(flagLabel(f))}</span>`).join("");
+  return `<div class="rail">
+    <span class="sc">${Number(r.score).toFixed(1)}<small>SCORE</small></span>
+    <span class="tier ${tc}">${esc(r.tier||"")}</span>
+    ${flags}
+    <span class="heatwrap"><span>HEAT ${r.heat}</span>
+      <span class="heatbar"><span class="heatfill" style="width:${Math.min(100,r.heat)}%"></span></span>
+      <span class="dir ${d.c}">${d.g}</span></span>
+  </div>`;
+}
+function linkName(r){
+  return r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name);
+}
 
+/* ── COVER ─────────────────────────────────────────────── */
+function latestIssue(){
+  const iss=(LEDGER.issues||[]).slice();
+  if(!iss.length) return null;
+  iss.sort((a,b)=>String(b.date+(b.time||"")).localeCompare(String(a.date+(a.time||""))));
+  return iss[0];
+}
+function renderCover(){
+  const iss=latestIssue(); if(!iss) return;
+  const ents=(iss.entries||[]).slice().sort((a,b)=>(a.rank||99)-(b.rank||99));
+  const lead=ents[0]; if(!lead) return;
+
+  document.getElementById("issno").textContent = `Issue ${iss.issue!==undefined?iss.issue:""}`.trim();
+  document.getElementById("issdate").innerHTML =
+    `${esc(fmtDate(iss.date))}${iss.time?` · <span class="a">${esc(iss.time)}</span>`:""}`;
+  document.getElementById("forecast").textContent = iss.forecast || iss.climate || "";
+
+  document.getElementById("story").innerHTML = `
+    ${artHtml(lead,"story")}
+    <div class="storytext">
+      <h3>${linkName(lead)}</h3>
+      <div class="dek">${esc(lead.read||"")}</div>
+      ${railHtml(lead)}
+      ${lead.benchmark?`<div class="byline">BENCHMARK IN THE 50 · <b>${esc(lead.benchmark)}</b></div>`:""}
+    </div>`;
+
+  const up=(iss.come_up||[]), dn=(iss.decline||[]);
+  document.getElementById("climatecols").innerHTML = (up.length||dn.length) ? `
+    <div class="col up"><div class="ch">▲ ON THE COME-UP</div><ul>${up.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+    <div class="col dn"><div class="ch">▼ IN DECLINE</div><ul>${dn.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>` : "";
+
+  const rest=ents.slice(1);
+  document.getElementById("featnote").textContent =
+    `${rest.length} MORE · ISSUE ${iss.issue!==undefined?iss.issue:""}`.trim();
+  document.getElementById("features").innerHTML = rest.map(e=>`
+    <article class="feat">
+      ${artHtml(e,"feat")}
+      <div class="dom">${esc(String(e.domain||"").toUpperCase())}</div>
+      <h4>${linkName(e)}</h4>
+      <div class="dek">${esc(e.read||"")}</div>
+      ${railHtml(e)}
+      ${e.benchmark?`<div class="byline">BENCHMARK · <b>${esc(e.benchmark)}</b></div>`:""}
+    </article>`).join("");
+}
+
+/* ── THE 50 RAIL ───────────────────────────────────────── */
+function renderCanonRail(){
+  const ents=(CANON.entries||[]);
+  document.getElementById("canonlist").innerHTML = ents.map(e=>
+    e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.name)}</a>`
+          : `<span>${esc(e.name)}</span>`).join("");
+  const alu=(CANON.alumni||[]).length;
+  document.getElementById("canonmore").innerHTML =
+    `${ents.length} ON THE LIST${alu?` · ${alu} ALUMNI`:""} — <a href="https://50.themusafamily.com" target="_blank" rel="noopener">50.themusafamily.com ↗</a>`;
+}
+
+/* ── ARCHIVE ───────────────────────────────────────────── */
 function build(){
   RECORDS = [];
   (LEDGER.issues||[]).forEach(iss=>{
     (iss.entries||[]).forEach(e=>{
+      const flags=cleanFlags(e.flags);
       RECORDS.push({
         type:"index", name:e.name, domain:e.domain||"", score:e.score,
         tier:e.tier||"", heat:e.heat||0, direction:e.direction||"flat",
-        flags:e.flags||[],
-        date:iss.date, time:iss.time||"", climate:iss.climate||"",
-        find:(e.flags||[]).some(f=>f.toUpperCase().includes("FIND")),
+        flags:flags,
+        date:iss.date, time:iss.time||"", climate:iss.climate||iss.forecast||"",
+        find:flags.some(f=>String(f).toUpperCase().includes("FIND")),
         gap:Math.round((e.score*10)-(e.heat||0)),
         read:e.read||"", benchmark:e.benchmark||"",
         url:e.url||"", image:e.image||"",
@@ -364,7 +610,8 @@ function build(){
     RECORDS.push({type:"canon", name:e.name, lane:e.lane||"", url:e.url||"", date:"", flags:[]});
   });
   (CANON.alumni||[]).forEach(a=>{
-    RECORDS.push({type:"alumni", name:a.name, lane:a.lane||"", url:a.url||"", date:a.tenure_out||"", tenure_in:a.tenure_in||"", why:a.why||"", flags:[]});
+    RECORDS.push({type:"alumni", name:a.name, lane:a.lane||"", url:a.url||"", date:a.tenure_out||"",
+      tenure_in:a.tenure_in||"", why:a.why||"", flags:[]});
   });
 }
 
@@ -409,20 +656,19 @@ function sortRecs(list){
 function cardIndex(r){
   const tc=TIER_CLASS[r.tier]||"";
   const d=DIR[r.direction]||DIR.flat;
-  const flags=(r.flags||[]).map(f=>`<span class="flag ${flagClass(f)}">${esc(f)}</span>`).join("");
-  const nameHtml = r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name);
-  const previewHtml = r.image ? `<div class="preview"><img src="${esc(r.image)}" alt="${esc(r.name)}" loading="lazy"><span class="cap">${esc(r.name)}</span></div>` : "";
+  const flags=(r.flags||[]).map(f=>`<span class="flag ${flagClass(f)}">${esc(flagLabel(f))}</span>`).join("");
+  const previewHtml = r.image ? `<div class="preview"><img src="${esc(r.image)}" alt="${esc(r.name)}" loading="lazy" onerror="this.closest('.preview').remove()"><span class="cap">${esc(r.name)}</span></div>` : "";
   const swapHtml = r.promoted
     ? `<div class="promobadge">★ ENTERED THE 50 — ${esc(r.promoted.into_lane||"")} · ${esc(r.promoted.date||"")}</div>`
-    : `<a class="swapbtn" href="https://admin.themusafamily.com/swap?issue=${encodeURIComponent(r.issue)}&name=${encodeURIComponent(r.name)}&domain=${encodeURIComponent(r.domain)}&url=${encodeURIComponent(r.url||"")}" target="_blank" rel="noopener" onclick="event.stopPropagation()">SWAP → 50</a>`;
+    : (ADMIN ? `<a class="swapbtn" href="https://admin.themusafamily.com/swap?issue=${encodeURIComponent(r.issue)}&name=${encodeURIComponent(r.name)}&domain=${encodeURIComponent(r.domain)}&url=${encodeURIComponent(r.url||"")}" target="_blank" rel="noopener" onclick="event.stopPropagation()">SWAP → 50</a>` : "");
   return `<div class="card ${r.find?"find":""}">
     <div class="ctop">
       <span class="kind k-idx">INDEX</span>
-      <span class="nm">${nameHtml}</span>
+      <span class="nm">${linkName(r)}</span>
       <span class="when">${esc(r.date)}</span>
     </div>
     <div class="scorerow">
-      <span class="score">${r.score.toFixed(1)}</span>
+      <span class="score">${Number(r.score).toFixed(1)}</span>
       <span class="tier ${tc}">${esc(r.tier)}</span>
       ${flags}
       <span class="dom">${esc(r.domain)}</span>
@@ -430,6 +676,7 @@ function cardIndex(r){
         <span class="heatbar"><span class="heatfill" style="width:${Math.min(100,r.heat)}%"></span></span>
         <span class="dir ${d.c}">${d.g}</span></span>
     </div>
+    <div class="xhint">TAP TO READ →</div>
     <div class="xp">
       <div class="xread">${r.read?esc(r.read):`<span class="nrec">— original taste read not recovered for this issue —</span>`}</div>
       ${r.benchmark?`<div class="xbench"><b>BENCHMARK:</b> ${esc(r.benchmark)}</div>`:""}
@@ -445,7 +692,7 @@ function cardCanon(r){
   return `<div class="card canon">
     <div class="ctop">
       <span class="kind k-can">50</span>
-      <span class="nm">${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>`:esc(r.name)}</span>
+      <span class="nm">${linkName(r)}</span>
       <span class="lane">${esc(r.lane)}</span>
     </div>
     <div class="canline">CANON · THE MUSA 50 — ${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(host)} ↗</a>`:"—"}</div>
@@ -457,7 +704,7 @@ function cardAlumni(r){
   return `<div class="card alumni">
     <div class="ctop">
       <span class="kind k-alu">ALUMNI</span>
-      <span class="nm">${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>`:esc(r.name)}</span>
+      <span class="nm">${linkName(r)}</span>
       <span class="lane">${esc(r.lane)}</span>
     </div>
     <div class="canline">ALUMNI${r.date?` · ${esc(r.date)}`:""}${r.why?` — ${esc(r.why)}`:""}${r.url?` · <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(host)} ↗</a>`:""}</div>
@@ -470,8 +717,7 @@ function renderChips(){
     lanes().forEach(l=>{const on=state.chip&&state.chip.kind==="lane"&&state.chip.val===l;
       html+=`<button class="chip lane ${on?"on":""}" data-kind="lane" data-val="${esc(l)}">${esc(l)}</button>`;});
   } else {
-    const ft=state.find?"on":"";
-    html+=`<button class="chip find ${ft}" data-kind="find">◆ FINDS ONLY</button>`;
+    html+=`<button class="chip find ${state.find?"on":""}" data-kind="find">◆ FINDS ONLY</button>`;
     tiers().forEach(t=>{const on=state.chip&&state.chip.kind==="tier"&&state.chip.val===t;
       html+=`<button class="chip tier ${on?"on":""}" data-kind="tier" data-val="${esc(t)}">${esc(t)}</button>`;});
     domains().forEach(dm=>{const on=state.chip&&state.chip.kind==="dom"&&state.chip.val===dm;
@@ -489,19 +735,23 @@ function render(){
   const aluTotal=RECORDS.filter(r=>r.type==="alumni").length;
   const issues=(LEDGER.issues||[]).length;
   document.getElementById("stat").innerHTML =
-    `<b>${shown.length}</b> shown · <span class="a">${idxTotal}</span> index reads across <b>${issues}</b> issues · <span class="a">${canTotal}</span> on the 50${aluTotal?` · <span class="a">${aluTotal}</span> alumni`:""}`;
+    `<b>${shown.length}</b> shown · <span class="a">${idxTotal}</span> reads across <b>${issues}</b> issues · <span class="a">${canTotal}</span> on the 50${aluTotal?` · <span class="a">${aluTotal}</span> alumni`:""}`;
   const res=document.getElementById("results");
   if(!shown.length){res.innerHTML=`<div class="empty">— nothing in the archive matches —</div>`;return;}
-  res.innerHTML=shown.map((r,i)=>{
-    const el=r.type==="index"?cardIndex(r):r.type==="alumni"?cardAlumni(r):cardCanon(r);
-    return el.replace('class="card', `style="animation-delay:${Math.min(i*22,420)}ms" class="fade card`);
-  }).join("");
+  res.innerHTML=shown.map(r=>
+    r.type==="index"?cardIndex(r):r.type==="alumni"?cardAlumni(r):cardCanon(r)
+  ).join("");
 }
 
+function renderAll(){ build(); renderCover(); renderCanonRail(); render(); }
+
+/* ── EVENTS ────────────────────────────────────────────── */
 document.getElementById("results").addEventListener("click",e=>{
   if(e.target.closest("a"))return;
-  const t=e.target.closest(".climate-toggle"); if(!t)return;
-  const card=t.closest(".card"); if(card) card.classList.toggle("climate-open");
+  const t=e.target.closest(".climate-toggle");
+  if(t){const c=t.closest(".card"); if(c) c.classList.toggle("climate-open"); return;}
+  const card=e.target.closest(".card");
+  if(card && !card.classList.contains("canon") && !card.classList.contains("alumni")) card.classList.toggle("open");
 });
 document.querySelectorAll(".tg").forEach(b=>b.addEventListener("click",()=>{
   document.querySelectorAll(".tg").forEach(x=>x.classList.remove("on"));
@@ -521,8 +771,19 @@ q.addEventListener("input",()=>{state.q=q.value.trim();clear.classList.toggle("o
 clear.addEventListener("click",()=>{q.value="";state.q="";clear.classList.remove("on");render();q.focus();});
 document.getElementById("sort").addEventListener("change",e=>{state.sort=e.target.value;render();});
 
+/* nav active state */
+const secs=["theindex","the50","key","archive"];
+addEventListener("scroll",()=>{
+  let cur=secs[0];
+  secs.forEach(id=>{const el=document.getElementById(id);
+    if(el && el.getBoundingClientRect().top<160) cur=id;});
+  document.querySelectorAll(".nav a").forEach(a=>
+    a.classList.toggle("here", a.getAttribute("href")==="#"+cur));
+},{passive:true});
+
+/* ── BOOT ──────────────────────────────────────────────── */
 async function boot(){
-  build(); render();
+  renderAll();
   const set=live=>{document.getElementById("src").innerHTML =
     live?`SOURCE: <b>LIVE</b>`:`<span class="snap">SOURCE: <b>SNAPSHOT</b></span>`;};
   set(false);
@@ -535,7 +796,7 @@ async function boot(){
     let got=false;
     if(lg&&lg.issues){LEDGER=lg;got=true;}
     if(cn&&cn.entries){CANON=cn;got=true;}
-    if(got){build();render();set(true);}
+    if(got){renderAll();set(true);}
   }catch(err){ /* stay on snapshot */ }
 }
 boot();

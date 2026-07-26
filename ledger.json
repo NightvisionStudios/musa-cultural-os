@@ -19,8 +19,7 @@
           "heat": 52,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "read": "Canon-tier installation work, #1 on the ArtReview Power 100, still under-clocked in U.S. feeds.",
           "url": "https://www.whitecube.com/artists/ibrahim-mahama",
@@ -34,8 +33,7 @@
           "heat": 44,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "read": "PR rap auteur the English-speaking room hasn't caught up to yet.",
           "url": "https://music.apple.com/us/album/omakase/6771082594",
@@ -63,8 +61,7 @@
           "heat": 78,
           "direction": "flat",
           "flags": [
-            "HEAT>WORK",
-            "BLADE"
+            "HEAT>WORK"
           ],
           "read": "Real cultural object, but attention runs ahead of the work; influence-tier not depth-tier. Watch if heat converts or evaporates.",
           "benchmark": "orbits the pop-culture-engine lane without entering",
@@ -77,9 +74,7 @@
           "tier": "FLAME",
           "heat": 66,
           "direction": "up",
-          "flags": [
-            "BLADE"
-          ],
+          "flags": [],
           "read": "The pivot from quiet luxury to expressive clarity and taste-as-currency; the climate the board sits inside — and the premise The Index runs on.",
           "benchmark": "the operating principle behind the 50, not a neighbor in it"
         }
@@ -99,10 +94,9 @@
           "heat": 49,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
-          "read": "The 2026 Pritzker, architecture's quietest radical. Blade: the prize sits under an Epstein-linked cloud; the work transcends the institution stamping it.",
+          "read": "The 2026 Pritzker, architecture's quietest radical. The tension: the prize sits under an Epstein-linked cloud; the work transcends the institution stamping it.",
           "url": "https://www.pritzkerprize.com/laureates/smiljan-radic-clarke"
         },
         {
@@ -127,8 +121,7 @@
           "heat": 38,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "read": "Indie Disco Elysium-lineage CRPG critics say outclasses its forebear in places; ideas-first, low mainstream heat.",
           "benchmark": "the 50's ideas / AI-tools lane — first CRPG slot",
@@ -159,9 +152,7 @@
           "tier": "FLAME",
           "heat": 64,
           "direction": "up",
-          "flags": [
-            "BLADE"
-          ],
+          "flags": [],
           "read": "Full-cycle pivot off quiet luxury; layered, referential expression with archive/resale as the real flex — access over logo.",
           "benchmark": "the aesthetic shift the 50's design desks track"
         }
@@ -207,9 +198,7 @@
           "tier": "CROWN",
           "heat": 0,
           "direction": "flat",
-          "flags": [
-            "BLADE"
-          ],
+          "flags": [],
           "heat_recovered": false,
           "url": "https://www.hbomax.com/shows/industry/9e51c88c-7a28-40ee-8269-e16572e02a07",
           "image": "https://beam-images.warnermediacdn.com/2026-01/Industry-S4-KA-16x9.jpg?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com"
@@ -221,9 +210,7 @@
           "tier": "FLAME",
           "heat": 0,
           "direction": "flat",
-          "flags": [
-            "BLADE"
-          ],
+          "flags": [],
           "heat_recovered": false
         },
         {
@@ -253,8 +240,7 @@
           "heat": 96,
           "direction": "up",
           "flags": [
-            "ROOMS_RIGHT",
-            "BLADE"
+            "ROOMS_RIGHT"
           ],
           "graded": "2026-06-27",
           "note": "HELD — the monoculture-vs-fragmentation read held; heat stayed maxed. Room was correct.",
@@ -281,8 +267,7 @@
           "heat": 36,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "graded": "2026-06-27",
           "heat_now": 42,
@@ -298,8 +283,7 @@
           "heat": 58,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ]
         },
         {
@@ -309,9 +293,7 @@
           "tier": "FLAME",
           "heat": 62,
           "direction": "up",
-          "flags": [
-            "BLADE"
-          ]
+          "flags": []
         }
       ]
     },
@@ -329,8 +311,7 @@
           "heat": 45,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "One54",
           "read": "Akinola Davies Jr's Cannes-competing British-Nollywood debut. Diaspora at the root, festival-grade. The clearest FIND on the board.",
@@ -360,8 +341,7 @@
           "heat": 58,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Mixtape Classics",
           "read": "Cassette-soul made playable; the mixtape's original curation instinct, now in your hands.",
@@ -376,8 +356,7 @@
           "heat": 80,
           "direction": "up",
           "flags": [
-            "ROOMS_RIGHT",
-            "BLADE"
+            "ROOMS_RIGHT"
           ],
           "benchmark": "Joe Freshgoods / Denim Tears",
           "read": "The honest counter-read. adidas/World Cup made him loud, and the thesis earned it. Cleared the gate despite the mega-collab anti-pattern because the work carries a real argument — which is exactly why it's ROOM'S RIGHT, not a find.",
@@ -391,9 +370,7 @@
           "tier": "FLAME",
           "heat": 63,
           "direction": "up",
-          "flags": [
-            "BLADE"
-          ],
+          "flags": [],
           "benchmark": "Free Game / Players Magazine",
           "read": "Book-club-as-venue, gatekept by attention not money. Transmission gone physical."
         }
@@ -413,8 +390,7 @@
           "heat": 38,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "underground-rap lane head (Chris Crack / Starlito / Kenny Mason)",
           "read": "Self-cut loops, 32 minutes, the luxury-grime blueprint sharpened. Moved rap forward while the scoreboard argued. Arguably enters the 50.",
@@ -429,8 +405,7 @@
           "heat": 55,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "One54 / editorial-taste",
           "read": "Curation-as-gatekeeping, diaspora as the center of gravity, cross-cutting art/sound/design/politics at once.",
@@ -474,8 +449,7 @@
           "heat": 34,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "CD Masterizzato (cross-lane energy — analog craft as stance)",
           "read": "Hand-cranked 16mm, the analog grain is the point; arthouse-quiet, which is the gap.",
@@ -574,8 +548,7 @@
           "heat": 61,
           "direction": "up",
           "flags": [
-            "ROOMS_RIGHT",
-            "BLADE"
+            "ROOMS_RIGHT"
           ],
           "benchmark": "Denim Tears / A Ma Maniere",
           "url": "https://finance.hermes.com/en/publications/grace-wales-bonner-joins-hermes-creative-director-mens-ready-wear/",
@@ -589,8 +562,7 @@
           "heat": 34,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Chris Crack / Starlito",
           "url": "https://music.apple.com/us/album/656/1870984094",
@@ -618,8 +590,7 @@
           "heat": 58,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "One54",
           "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams/cabo-verde/team-news"
@@ -631,9 +602,7 @@
           "tier": "FLAME",
           "heat": 55,
           "direction": "up",
-          "flags": [
-            "BLADE"
-          ],
+          "flags": [],
           "benchmark": "Free Game / Monocle"
         }
       ]
@@ -723,8 +692,7 @@
           "heat": 45,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "url": "https://www.panafricanbiennale.org/",
           "image": "http://static1.squarespace.com/static/68850d8363f1ff0207429b1e/t/68fec2e0d9443222b58dfe8e/1761526496507/Screenshot+2025-10-26+at+8.54.42%E2%80%AFPM.png?format=1500w"
@@ -737,8 +705,7 @@
           "heat": 52,
           "direction": "up",
           "flags": [
-            "ROOMS_RIGHT",
-            "BLADE"
+            "ROOMS_RIGHT"
           ],
           "url": "https://store.steampowered.com/app/3255890/Relooted/",
           "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3255890/b7441465b0d2a6e496fbc8869cd93df3ec9c3c36/capsule_616x353.jpg?t=1771833572"
@@ -751,8 +718,7 @@
           "heat": 33,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "url": "https://injuryreserve.bandcamp.com/album/my-ghosts-go-ghost",
           "image": "https://f4.bcbits.com/img/a2609335608_5.jpg"
@@ -810,8 +776,7 @@
           "heat": 29,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "The Shed",
           "read": "First continent-wide architecture biennale — infrastructure, not exhibition.",
@@ -826,8 +791,7 @@
           "heat": 34,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Kenny Mason",
           "read": "Ex-Injury Reserve; third board appearance — the room still hasn't paid it.",
@@ -842,8 +806,7 @@
           "heat": 31,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Free Game",
           "read": "Internet essay on taste and AI — the discourse the Index runs inside."
@@ -879,8 +842,7 @@
           "heat": 78,
           "direction": "up",
           "flags": [
-            "ROOMS_RIGHT",
-            "BLADE"
+            "ROOMS_RIGHT"
           ],
           "read": "The room already knew this was canon; the World Cup just gave it a stage.",
           "url": "https://walesbonner.com/collections/adidas-originals-by-wales-bonner"
@@ -893,8 +855,7 @@
           "heat": 41,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "read": "New album named after a Glenn Ligon painting, shot for New Balance's Made in UK line — streams haven't caught up yet.",
           "url": "https://space-afrika.bandcamp.com/",
@@ -908,8 +869,7 @@
           "heat": 33,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "read": "First continent-wide architecture biennale, curated by Omar Degan, still under the radar.",
           "url": "https://www.panafricanbiennale.org/",
@@ -954,8 +914,7 @@
           "heat": 22,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Black Film Archive",
           "read": "Aleshea Harris put her own play on screen — twin sisters, a debt of scars, revenge written in scripture cadence — and it opened in May to near silence. Two-time Tony winner Kara Young opposite Mallori Johnson, Sterling K. Brown and Janelle Monáe in the frame, and most critics still don't know it exists. The room missed a canon entry in real time.",
@@ -984,8 +943,7 @@
           "heat": 26,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Noname Book Club",
           "read": "A working master — Rollins Band, Defunkt, decades of sessions — tracing how Africa's musical inheritance became the operating system of everything on your speakers. Theory from inside the craft, not above it. The curator's textbook, priced like a quiet release.",
@@ -1069,8 +1027,7 @@
           "heat": 34,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "url": "https://alewya.bandcamp.com/album/zero-1",
           "image": "https://f4.bcbits.com/img/a3150029086_7.jpg",
@@ -1085,8 +1042,7 @@
           "heat": 30,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "url": "https://www.wafflesncream.com/",
           "image": "https://www.wafflesncream.com/cdn/shop/files/lookbook-01_grande.jpg?v=1743681553",
@@ -1152,9 +1108,7 @@
           "tier": "CROWN",
           "heat": 82,
           "direction": "up",
-          "flags": [
-            "BLADE"
-          ],
+          "flags": [],
           "benchmark": "One54",
           "url": "https://www.zee5.com/",
           "read": "Three years of certification war, 127 cut demands, forced retitles — then an uncut global stream July 3, and India's own platform deleted it from the domestic catalogue inside 48 hours. It's still up everywhere else: the diaspora is the distribution now. A film about a man who documented disappearances, getting disappeared — the ban is the co-sign."
@@ -1242,8 +1196,7 @@
           "heat": 26,
           "direction": "flat",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Denim Tears",
           "url": "https://imane-ayissi.com/en/pages/collections-imane-ayissi",
@@ -1344,8 +1297,7 @@
           "heat": 84,
           "direction": "up",
           "flags": [
-            "ROOMS_RIGHT",
-            "BLADE"
+            "ROOMS_RIGHT"
           ],
           "benchmark": "Karhu",
           "url": "https://rahulmishra.in/pages/devi-fall-26",
@@ -1440,8 +1392,7 @@
           "heat": 17,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Chris Crack (direct confirmation -- co-star on the 50)",
           "url": "https://rateyourmusic.com/release/ep/girl-talk-michael-christmas-chris-crack/dont-come-to-my-house-sharing-your-location/",
@@ -1576,8 +1527,7 @@
           "heat": 26,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Black Film Archive (editorial-taste — memory & preservation as the whole point)",
           "url": "https://www.berlinale.de/en/2026/programme/202616228.html",
@@ -1607,8 +1557,7 @@
           "heat": 40,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Jim Legxacy (underground-rap — British diasporic auteur pushing the sound somewhere new)",
           "url": "https://tricky.bandcamp.com/album/different-when-its-silent-2",
@@ -1638,8 +1587,7 @@
           "heat": 18,
           "direction": "flat",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Tamera (heritage-craft-product — a made object whose worth is its lineage, not its logo)",
           "url": "https://craftprize.loewe.com/en/craftprize2026",
@@ -1662,8 +1610,7 @@
           "heat": 24,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "One54 (global-diaspora — the African story carried at full scale on a platform its maker controls)",
           "url": "https://www.somimusic.com/",
@@ -1695,8 +1642,7 @@
           "heat": 16,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Black Film Archive (editorial-taste — a field building its own record-keeping instead of waiting to be catalogued)",
           "url": "https://africainternationaldesignawards.com/a-global-stage-revealing-exceptional-talents-from-africa-and-beyond-aida-awards-winners-2026/",
@@ -1728,8 +1674,7 @@
           "heat": 79,
           "direction": "up",
           "flags": [
-            "HEAT>WORK",
-            "BLADE"
+            "HEAT>WORK"
           ],
           "benchmark": "Moises AI (creator-ai-tools — tools judged by what they hand the maker, not what they announce)",
           "url": "https://www.musicbusinessworldwide.com/record-industry-proposes-ai-labeling-system-for-streaming-platforms/",
@@ -1753,8 +1698,7 @@
           "heat": 31,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "One54 (global-diaspora — the diaspora story told at full scale, on its own terms, by the person it belongs to)",
           "url": "https://lidopimienta.bandcamp.com/album/caribenya",
@@ -1770,8 +1714,7 @@
           "heat": 12,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Tamera (heritage-craft-product — material that carries its lineage in the hand, not as a motif)",
           "url": "https://www.moadsf.org/exhibitions/ancestral-echoes",
@@ -1803,8 +1746,7 @@
           "heat": 22,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Karhu (heritage-craft-product — heritage engineering re-cut for now, never worn as costume)",
           "url": "https://londondesignfestival.com/stories/a-first-look-at-ldf26",
@@ -1860,8 +1802,7 @@
           "heat": 33,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Project a Black Planet (design-studio — the Pan-African survey built as an argument, then hung)",
           "url": "https://press.moma.org/exhibition/architects-of-liberation-modernism-in-western-africa/",
@@ -1893,8 +1834,7 @@
           "heat": 61,
           "direction": "flat",
           "flags": [
-            "ROOM'S RIGHT",
-            "BLADE"
+            "ROOM'S RIGHT"
           ],
           "benchmark": "KB (design-studio — object-making where the reference is the block, not the market)",
           "url": "https://chicago.suntimes.com/art/2026/06/16/norman-teague-bench-obama-presidential-center",
@@ -1910,8 +1850,7 @@
           "heat": 13,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Derschutze (diasporic-fashion — a thesis-first label that makes the room come to it)",
           "url": "https://www.lvmh.com/en/news-lvmh/2026-lvmh-prize-for-young-fashion-designers-13th-edition",
@@ -1951,8 +1890,7 @@
           "heat": 24,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Noname Book Club (global-diaspora — build the institution instead of petitioning one)",
           "url": "https://marianneboeskygallery.com/exhibitions/346-nxthvn-cohort-07-material-conditions-of-becoming/press_release_text/",
@@ -1968,8 +1906,7 @@
           "heat": 17,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Players Magazine (editorial-taste — popular image-making held to the standard of canon)",
           "url": "https://www.rencontres-arles.com/en/expositions/2026/paul-kodjo",
@@ -1984,9 +1921,7 @@
           "tier": "FLAME",
           "heat": 31,
           "direction": "up",
-          "flags": [
-            "BLADE"
-          ],
+          "flags": [],
           "benchmark": "Y Combinator (builder-dev — capital plus a curriculum, and terms worth reading twice)",
           "url": "https://blog.google/products-and-platforms/platforms/google-play/indie-games-fund-africa/",
           "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/indiegamesfund_socialshare.max-1440x810.png",
@@ -2001,8 +1936,7 @@
           "heat": 74,
           "direction": "up",
           "flags": [
-            "HEAT>WORK",
-            "BLADE"
+            "HEAT>WORK"
           ],
           "benchmark": "Koala Sampler (creator-ai-tools — hands the maker something and asks for nothing back)",
           "url": "https://celebrityaccess.com/2026/06/27/suno-launches-spark-program-to-help-independent-artists/",
@@ -2042,13 +1976,12 @@
           "heat": 13,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Noname Book Club (global-diaspora — build the institution instead of petitioning one)",
           "url": "https://hyperallergic.com/revisiting-35-years-of-an-iconic-newark-artist-led-space/",
           "image": "https://storage.ghost.io/c/51/f8/51f871d8-b6be-4a73-b958-0ca4fff0110a/content/images/size/w1200/2026/07/Quick-to-see-Smith--1--2-1.jpg",
-          "read": "Newark Museum of Art, Oct 15 – Jun 30 2027: 66 works, 43 artists, one storefront. Guyanese artists Victor Davson and Carl E. Hazlewood started Aljira in 1983, sixteen years after the Newark Rebellion and a decade after the city’s first Black-owned gallery. They showed Dawoud Bey, Firelei Báez and Jeffrey Gibson before the institutions did, ran a program called Emerge, and took a US show to the biennial in Cuenca in 1994. Then the 2008 debt caught them and in 2018 they closed without warning. Davson has been keeping the archive alive himself since. The blade: the museum four blocks away is now mounting the survey the space could not afford to survive to see.",
+          "read": "Newark Museum of Art, Oct 15 – Jun 30 2027: 66 works, 43 artists, one storefront. Guyanese artists Victor Davson and Carl E. Hazlewood started Aljira in 1983, sixteen years after the Newark Rebellion and a decade after the city’s first Black-owned gallery. They showed Dawoud Bey, Firelei Báez and Jeffrey Gibson before the institutions did, ran a program called Emerge, and took a US show to the biennial in Cuenca in 1994. Then the 2008 debt caught them and in 2018 they closed without warning. Davson has been keeping the archive alive himself since. And the museum four blocks away is now mounting the survey the space could not afford to survive to see.",
           "verdict": "PENDING"
         },
         {
@@ -2075,13 +2008,12 @@
           "heat": 18,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Koala Sampler (creator-ai-tools — the cheap tool that quietly becomes the standard)",
           "url": "https://musictech.com/news/gear/audiotool-3-nexus/",
           "image": "https://musictech.com/wp-content/uploads/2026/07/Audiotool-3@2000x1500-1068x801.jpg",
-          "read": "Sixteen years in a browser tab — Flash in 2010, HTML5 in 2017, and on Jul 8 a full rewrite. Real-time multiplayer production, any device, free. The part that matters is NEXUS: an open-source SDK so anyone can build instruments, effects, visualisers and hardware bridges into the DAW instead of waiting on a vendor’s plugin format. Splice, Ujam and Fraunhofer signed on; a hackathon with BBC R&D runs to Aug 23. The blade cuts both ways — an open SDK is worth nothing until developers actually show up, and the graveyard of open plugin platforms is well populated. But if a generation learns to make records in a tab, the tab is the studio.",
+          "read": "Sixteen years in a browser tab — Flash in 2010, HTML5 in 2017, and on Jul 8 a full rewrite. Real-time multiplayer production, any device, free. The part that matters is NEXUS: an open-source SDK so anyone can build instruments, effects, visualisers and hardware bridges into the DAW instead of waiting on a vendor’s plugin format. Splice, Ujam and Fraunhofer signed on; a hackathon with BBC R&D runs to Aug 23. It cuts both ways — an open SDK is worth nothing until developers actually show up, and the graveyard of open plugin platforms is well populated. But if a generation learns to make records in a tab, the tab is the studio.",
           "verdict": "PENDING"
         },
         {
@@ -2116,8 +2048,7 @@
           "heat": 12,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Noname Book Club (global-diaspora — build the network yourself instead of petitioning the institution)",
           "url": "https://hyperallergic.com/a-living-memorial-to-palestinian-activist-alex-odeh-takes-flight/",
@@ -2165,7 +2096,6 @@
           "heat": 71,
           "direction": "down",
           "flags": [
-            "BLADE",
             "HEAT>WORK"
           ],
           "benchmark": "Black Film Archive (editorial-taste — provenance is the argument; strip the record and you destroy the work)",
@@ -2206,8 +2136,7 @@
           "heat": 9,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Black Film Archive (editorial-taste — the canon gets kept by whoever bothers to catalogue it first)",
           "url": "https://www.dezeen.com/2026/07/20/dakar-bubble-houses-andrea-ferro/",
@@ -2255,8 +2184,7 @@
           "heat": 8,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Noname Book Club (global-diaspora — reading as reclamation, not consumption)",
           "url": "https://blacklawrencepress.com/books/heart-eater-a-memoir-of-immigration-belonging-and-how-we-find-ourselves-in-language/",
@@ -2296,8 +2224,7 @@
           "heat": 14,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Dame Atlas (heritage-craft-product — the object carries the lineage; the form is the archive)",
           "url": "https://www.whitechapelgallery.org/exhibitions/gabriel-chaile-archaeology-of-memory/",
@@ -2329,8 +2256,7 @@
           "heat": 16,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Chris Crack (underground-rap — prolific, gatekept, drops on his own clock)",
           "url": "https://bigghostlimited.bandcamp.com/album/blood-of-the-lamb",
@@ -2346,8 +2272,7 @@
           "heat": 29,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Robert Gallardo (design-studio — one maker's obsessive, specific world over scale)",
           "url": "https://store.steampowered.com/app/2275300/Folk_Emerging/",
@@ -2387,8 +2312,7 @@
           "heat": 18,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Black Film Archive (editorial-taste — the Black cinematic record built and kept by the people it belongs to)",
           "url": "https://whatkeptmeup.com/nigerian-film-news/damilola-orimogunjes-dear-ajayi-sets-world-premiere-at-venice-2026/",
@@ -2436,8 +2360,7 @@
           "heat": 22,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Monocle (editorial-taste — the print object built to be shelved, quiet authority over reach)",
           "url": "https://record-magazine.com/store/issue-11",
@@ -2453,8 +2376,7 @@
           "heat": 63,
           "direction": "flat",
           "flags": [
-            "HEAT>WORK",
-            "BLADE"
+            "HEAT>WORK"
           ],
           "benchmark": "Chris Crack (underground-rap — the absurd title as its own aesthetic, output as discipline, allergic to polish)",
           "url": "https://music.apple.com/us/album/better-than-mcdonalds/6790605233",
@@ -2528,8 +2450,7 @@
           "heat": 45,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Jim Legxacy",
           "verdict": "PENDING"
@@ -2580,8 +2501,7 @@
           "heat": 24,
           "direction": "up",
           "flags": [
-            "FIND",
-            "BLADE"
+            "FIND"
           ],
           "benchmark": "Chris Crack",
           "verdict": "PENDING",
