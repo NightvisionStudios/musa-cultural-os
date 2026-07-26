@@ -252,7 +252,7 @@
       "entries": [
         {
           "name": "FIFA World Cup 2026",
-          "domain": "SPORT",
+          "domain": "SPORTS",
           "score": 8.4,
           "tier": "CROWN",
           "heat": 96,
@@ -629,7 +629,7 @@
         },
         {
           "name": "Cape Verde — World Cup Run",
-          "domain": "SPORT",
+          "domain": "SPORTS",
           "score": 8.0,
           "tier": "CROWN",
           "heat": 58,

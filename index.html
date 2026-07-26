@@ -569,9 +569,9 @@ function permalink(r){ return r.slug ? `/i/${r.slug}/` : ""; }
 /* Filter chips run on the canonical domain only. Sub-labels like
    "MUSIC · UNDERGROUND RAP" are kept for display but never become their own chip —
    that's what turned this row into 40-odd ragged buttons. */
-const DOMAIN_ALIAS={INTERNET:"SCENE","CREATOR-AI":"TECH","PUBLIC ART":"ART",PHOTOGRAPHY:"ART"};
+const DOMAIN_ALIAS={INTERNET:"SCENE","CREATOR-AI":"TECH","PUBLIC ART":"ART",PHOTOGRAPHY:"ART",SPORT:"SPORTS"};
 const DOMAINS=["ARCHITECTURE","ART","BOOKS","CRAFT","DESIGN","EDITORIAL","FASHION",
-  "FILM","GAMES","IDEAS","MUSIC","SCENE","SPORT","TECH","TV"];
+  "FILM","GAMES","IDEAS","MUSIC","SCENE","SPORTS","TECH","TV"];
 function canonDomain(s){
   let h=String(s||"").split(/[·|\/]/)[0].trim().toUpperCase();
   h=DOMAIN_ALIAS[h]||h;

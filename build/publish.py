@@ -156,9 +156,10 @@ DOMAIN_ALIAS = {
     "CREATOR-AI": "TECH",
     "PUBLIC ART": "ART",
     "PHOTOGRAPHY": "ART",
+    "SPORT": "SPORTS",
 }
 DOMAINS = ["ARCHITECTURE","ART","BOOKS","CRAFT","DESIGN","EDITORIAL","FASHION",
-           "FILM","GAMES","IDEAS","MUSIC","SCENE","SPORT","TECH","TV"]
+           "FILM","GAMES","IDEAS","MUSIC","SCENE","SPORTS","TECH","TV"]
 
 def canon_domain(s):
     head = re.split(r"[·|/]", str(s or ""))[0].strip().upper()
