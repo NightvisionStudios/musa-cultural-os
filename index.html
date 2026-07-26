@@ -79,8 +79,8 @@ display:flex;gap:22px;align-items:center;padding:13px 0;border-bottom:1px solid 
 color:var(--fg);max-width:22ch;max-width:none}
 .forecast em{font-style:italic;color:var(--sand)}
 
-.story{margin-top:34px;display:grid;grid-template-columns:1fr;gap:22px}
-.story .art{position:relative;width:100%;aspect-ratio:16/9;border-radius:10px;overflow:hidden;
+.story{margin-top:34px;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:30px;align-items:start}
+.story .art{position:relative;width:100%;aspect-ratio:1/1;border-radius:10px;overflow:hidden;
 border:1px solid var(--line);background:linear-gradient(135deg,#1a1815,#0f0e0c)}
 .story .art img{width:100%;height:100%;object-fit:cover;display:block}
 .story .art .noart{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
@@ -125,7 +125,7 @@ padding:9px 0;border-top:1px solid var(--line)}
 
 /* ── FEATURES ─────────────────────────────────────────────── */
 .features{display:grid;grid-template-columns:1fr 1fr;gap:30px 26px}
-.feat .art{position:relative;width:100%;aspect-ratio:4/3;border-radius:9px;overflow:hidden;
+.feat .art{position:relative;width:100%;aspect-ratio:1/1;border-radius:9px;overflow:hidden;
 border:1px solid var(--line);background:linear-gradient(135deg,#1a1815,#0f0e0c);margin-bottom:15px}
 .feat .art img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
 .feat:hover .art img{transform:scale(1.032)}
@@ -239,6 +239,10 @@ background:var(--panel2);border:1px solid var(--line);border-radius:4px;cursor:p
 .climate-body{display:none;font-family:var(--text);font-size:15px;line-height:1.6;color:#a39e90;
 margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
 .card.climate-open .climate-body{display:block}
+.more{display:flex;justify-content:center;margin-top:18px}
+.morebtn{background:var(--panel);border:1px solid var(--line);color:var(--mut);font-family:var(--mono);
+font-size:10px;letter-spacing:.2em;padding:12px 26px;border-radius:6px;cursor:pointer;transition:.15s}
+.morebtn:hover{color:var(--fg);border-color:#3a3526}
 .empty{text-align:center;color:var(--mut);font-family:var(--mono);font-size:12px;letter-spacing:.1em;padding:50px 0}
 
 /* ── FOOTER ───────────────────────────────────────────────── */
@@ -255,7 +259,8 @@ footer .ft b{font-family:var(--mono);font-size:9.5px;color:#b8b09c;letter-spacin
   .nav{gap:15px;overflow-x:auto;white-space:nowrap}
   .climate{grid-template-columns:1fr}
   .features{grid-template-columns:1fr;gap:34px}
-  .story .art{aspect-ratio:3/2}
+  .story{grid-template-columns:1fr;gap:20px}
+  .story .art{aspect-ratio:1/1}
   .controls{top:41px}
   .rule{margin:42px 0 18px}.rule h2{font-size:21px}
   .rule .note{display:none}
@@ -348,6 +353,7 @@ footer .ft b{font-family:var(--mono);font-size:9.5px;color:#b8b09c;letter-spacin
 </div>
 <div class="stat" id="stat"></div>
 <div class="results" id="results"></div>
+<div class="more" id="more"></div>
 </section>
 
 <footer class="fade">
@@ -478,7 +484,8 @@ const CANON_SEED = {
 let LEDGER = INDEX_SEED, CANON = CANON_SEED;
 let RECORDS = [];
 const ADMIN = new URLSearchParams(location.search).has("admin");
-const state = { view:"all", q:"", sort:"new", chip:null, find:false };
+const PAGE = 24;
+const state = { view:"all", q:"", sort:"new", chip:null, find:false, limit:PAGE };
 const TIER_CLASS = {HEIRWAVE:"t-heir",CROWN:"t-crown",FLAME:"t-flame",TORCH:"t-torch",SPARK:"t-spark",NOISE:"t-noise"};
 const DIR = {up:{c:"u",g:"▲"},down:{c:"d",g:"▼"},flat:{c:"f",g:"▮"}};
 const MONTHS=["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
@@ -509,8 +516,10 @@ function fmtDate(d){
 }
 function initial(n){return String(n||"?").trim().charAt(0).toUpperCase();}
 function artHtml(r,cls){
-  const img = r.image ? `<img src="${esc(r.image)}" alt="${esc(r.name)}" loading="lazy" onerror="this.remove()">`
-                      : `<div class="noart">${esc(initial(r.name))}</div>`;
+  const fb = `<div class=&quot;noart&quot;>${esc(initial(r.name))}</div>`;
+  const img = r.image
+    ? `<img src="${esc(r.image)}" alt="${esc(r.name)}" loading="lazy" onerror="this.parentNode.insertAdjacentHTML('afterbegin','${fb}');this.remove()">`
+    : `<div class="noart">${esc(initial(r.name))}</div>`;
   const tag = cls==="story" && r.domain ? `<span class="tag">${esc(String(r.domain).toUpperCase())}</span>` : "";
   return `<div class="art">${img}${tag}</div>`;
 }
@@ -737,10 +746,15 @@ function render(){
   document.getElementById("stat").innerHTML =
     `<b>${shown.length}</b> shown · <span class="a">${idxTotal}</span> reads across <b>${issues}</b> issues · <span class="a">${canTotal}</span> on the 50${aluTotal?` · <span class="a">${aluTotal}</span> alumni`:""}`;
   const res=document.getElementById("results");
-  if(!shown.length){res.innerHTML=`<div class="empty">— nothing in the archive matches —</div>`;return;}
-  res.innerHTML=shown.map(r=>
+  if(!shown.length){res.innerHTML=`<div class="empty">— nothing in the archive matches —</div>`;
+    document.getElementById("more").innerHTML="";return;}
+  const page=shown.slice(0,state.limit);
+  res.innerHTML=page.map(r=>
     r.type==="index"?cardIndex(r):r.type==="alumni"?cardAlumni(r):cardCanon(r)
   ).join("");
+  const left=shown.length-page.length;
+  document.getElementById("more").innerHTML = left>0
+    ? `<button class="morebtn" id="morebtn">SHOW ${Math.min(left,PAGE)} MORE · ${left} LEFT</button>` : "";
 }
 
 function renderAll(){ build(); renderCover(); renderCanonRail(); render(); }
@@ -755,21 +769,24 @@ document.getElementById("results").addEventListener("click",e=>{
 });
 document.querySelectorAll(".tg").forEach(b=>b.addEventListener("click",()=>{
   document.querySelectorAll(".tg").forEach(x=>x.classList.remove("on"));
-  b.classList.add("on"); state.view=b.dataset.view; state.chip=null; state.find=false; render();
+  b.classList.add("on"); state.view=b.dataset.view; state.chip=null; state.find=false; state.limit=PAGE; render();
 }));
 document.getElementById("chips").addEventListener("click",e=>{
   const c=e.target.closest(".chip"); if(!c) return;
   const kind=c.dataset.kind;
-  if(kind==="find"){state.find=!state.find; render(); return;}
+  if(kind==="find"){state.find=!state.find; state.limit=PAGE; render(); return;}
   const val=c.dataset.val;
   if(state.chip&&state.chip.kind===kind&&state.chip.val===val) state.chip=null;
   else state.chip={kind,val};
-  render();
+  state.limit=PAGE; render();
 });
 const q=document.getElementById("q"), clear=document.getElementById("clear");
-q.addEventListener("input",()=>{state.q=q.value.trim();clear.classList.toggle("on",!!state.q);render();});
-clear.addEventListener("click",()=>{q.value="";state.q="";clear.classList.remove("on");render();q.focus();});
-document.getElementById("sort").addEventListener("change",e=>{state.sort=e.target.value;render();});
+q.addEventListener("input",()=>{state.q=q.value.trim();clear.classList.toggle("on",!!state.q);state.limit=PAGE;render();});
+clear.addEventListener("click",()=>{q.value="";state.q="";clear.classList.remove("on");state.limit=PAGE;render();q.focus();});
+document.getElementById("sort").addEventListener("change",e=>{state.sort=e.target.value;state.limit=PAGE;render();});
+document.getElementById("more").addEventListener("click",e=>{
+  if(e.target.closest("#morebtn")){state.limit+=PAGE;render();}
+});
 
 /* nav active state */
 const secs=["theindex","the50","key","archive"];
