@@ -57,9 +57,15 @@ a{color:inherit}
 /* ── MASTHEAD ─────────────────────────────────────────────── */
 .masthead{display:flex;align-items:center;gap:16px;padding-bottom:20px;border-bottom:1px solid var(--line)}
 .mark{width:52px;height:52px;color:var(--fg);flex:none}
-.wordmark{font-family:var(--serif);font-size:38px;line-height:.95;letter-spacing:.05em}
-.wordmark .thin{color:var(--sand)}
-.mh-sub{font-family:var(--mono);font-size:9px;letter-spacing:.34em;color:var(--mut);margin-top:6px}
+/* The wordmark is the real MUSA blackletter, traced from the logo artwork —
+   an external SVG so the 34KB of path data is fetched once, not inlined per page. */
+.lockup{display:flex;align-items:center;gap:16px;text-decoration:none;color:inherit;
+border-radius:6px;transition:opacity .15s}
+.lockup:hover{opacity:.78}
+.lockup:focus-visible{outline:1px solid var(--amber);outline-offset:6px}
+.lock{display:block}
+.wordmark{display:block;height:34px;width:auto}
+.mh-sub{display:block;font-family:var(--mono);font-size:9px;letter-spacing:.34em;color:var(--mut);margin-top:7px}
 .mh-right{margin-left:auto;text-align:right;font-family:var(--mono);font-size:9px;letter-spacing:.16em;color:var(--mut);line-height:1.9}
 .mh-right b{color:var(--amber);font-weight:500}
 .mh-right .snap b{color:var(--mut2)}
@@ -275,7 +281,7 @@ footer .ft b{font-family:var(--mono);font-size:9.5px;color:#b8b09c;letter-spacin
 
 @media(max-width:760px){
   body{padding:18px 15px 60px}
-  .wordmark{font-size:30px}
+  .wordmark{height:26px}
   .mark{width:42px;height:42px}
   .mh-right{font-size:8.5px}
   .nav{gap:15px;overflow-x:auto;white-space:nowrap}
@@ -295,11 +301,13 @@ footer .ft b{font-family:var(--mono);font-size:9.5px;color:#b8b09c;letter-spacin
 </g></defs></svg>
 
 <header class="masthead fade">
-<svg class="mark" viewBox="180 320 660 360"><use href="#heirwave-paths"/></svg>
-<div class="lock">
-  <div class="wordmark">MUSA</div>
-  <div class="mh-sub">THE MUSA FAMILY · HEIRWAVE</div>
-</div>
+<a class="lockup" href="/" aria-label="MUSA — The Index, home">
+  <svg class="mark" viewBox="180 320 660 360" aria-hidden="true"><use href="#heirwave-paths"/></svg>
+  <span class="lock">
+    <img class="wordmark" src="/musa-wordmark.svg" alt="MUSA" width="118" height="34">
+    <span class="mh-sub">THE MUSA FAMILY · HEIRWAVE</span>
+  </span>
+</a>
 <div class="mh-right" id="src">SOURCE: SNAPSHOT</div>
 </header>
 

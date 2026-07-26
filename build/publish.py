@@ -69,9 +69,12 @@ background:repeating-linear-gradient(0deg,rgba(255,255,255,.013) 0 1px,transpare
 a{{color:inherit}}
 .masthead{{display:flex;align-items:center;gap:14px;padding-bottom:18px;border-bottom:1px solid var(--line)}}
 .mark{{width:42px;height:42px;color:var(--fg);flex:none}}
-.wordmark{{font-family:var(--serif);font-size:30px;letter-spacing:.05em;line-height:.95}}
-.wordmark a{{text-decoration:none;color:var(--fg)}}
-.mh-sub{{font-family:var(--mono);font-size:8.5px;letter-spacing:.32em;color:var(--mut);margin-top:5px}}
+.lockup{{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;transition:opacity .15s}}
+.lockup:hover{{opacity:.78}}
+.lockup:focus-visible{{outline:1px solid var(--amber);outline-offset:6px}}
+.lock{{display:block}}
+.wordmark{{display:block;height:30px;width:auto}}
+.mh-sub{{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.32em;color:var(--mut);margin-top:6px}}
 .back{{margin-left:auto;font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--mut);text-decoration:none}}
 .back:hover{{color:var(--fg)}}
 .eyebrow{{font-family:var(--mono);font-size:9.5px;letter-spacing:.22em;color:var(--mut);margin:34px 0 14px}}
@@ -118,8 +121,13 @@ footer b{{font-family:var(--mono);font-size:9px;color:#b8b09c;letter-spacing:.2e
 </head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="heirwave-paths">{heir}</g></defs></svg>
 <header class="masthead">
-<svg class="mark" viewBox="180 320 660 360"><use href="#heirwave-paths"/></svg>
-<div><div class="wordmark"><a href="/">MUSA</a></div><div class="mh-sub">THE MUSA FAMILY · HEIRWAVE</div></div>
+<a class="lockup" href="/" aria-label="MUSA — The Index, home">
+  <svg class="mark" viewBox="180 320 660 360" aria-hidden="true"><use href="#heirwave-paths"/></svg>
+  <span class="lock">
+    <img class="wordmark" src="/musa-wordmark.svg" alt="MUSA" width="104" height="30">
+    <span class="mh-sub">THE MUSA FAMILY · HEIRWAVE</span>
+  </span>
+</a>
 <a class="back" href="/">← THE INDEX</a>
 </header>
 <div class="eyebrow">ISSUE {issue} &nbsp;·&nbsp; <span class="a">{date}</span> &nbsp;·&nbsp; {domain}</div>

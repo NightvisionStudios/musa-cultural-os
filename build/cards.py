@@ -24,6 +24,18 @@ def font(path,size):
     if k not in _fc: _fc[k]=ImageFont.truetype(path,size)
     return _fc[k]
 
+_word=None
+def wordmark(height):
+    """The real MUSA blackletter, rasterised from the same SVG the site serves —
+    so a share card in a feed carries the actual logo, not a serif stand-in."""
+    global _word
+    if _word is None:
+        _word = open(os.path.join(HERE, "..", "musa-wordmark.svg")).read()
+    m = re.search(r'viewBox="0 0 (\d+) (\d+)"', _word)
+    w = int(height * int(m.group(1)) / int(m.group(2)))
+    png = cairosvg.svg2png(bytestring=_word.encode(), output_width=w*2, output_height=height*2)
+    return Image.open(io.BytesIO(png)).convert("RGBA").resize((w, height), Image.LANCZOS)
+
 _heir=None
 def heirwave(height, color=FG):
     """Rasterise the canonical Heirwave mark at a given pixel height."""
@@ -106,8 +118,7 @@ def card(entry, issue, W, H, out, name_size, read_lines, read_size=19, anchor="c
 
     # ── masthead
     hh=p(38); mark=heirwave(hh); im.paste(mark,(M,M),mark)
-    fs=font(SERIF,p(40))
-    d.text((M+mark.size[0]+p(14), M-p(6)),"MUSA",font=fs,fill=FG)
+    wm=wordmark(p(30)); im.paste(wm,(M+mark.size[0]+p(14), M+p(5)),wm)
     fm=font(MONO,p(15))
     right="THE INDEX  ·  ISSUE %s"%issue.get("issue","")
     tracked(d,(W-M-tw(d,right,fm,2.2), M+p(11)),right,fm,MUT,2.2)
