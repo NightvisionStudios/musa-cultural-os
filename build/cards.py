@@ -129,7 +129,7 @@ def card(entry, issue, W, H, out, name_size, read_lines, read_size=19, anchor="c
         y=top; slack=(by-p(30))-(y+blockH)
         if slack>0: y+=int(slack*0.46)
 
-    tracked(d,(M,y),str(entry.get("domain","")).upper(),fd,AMBER,4.2)
+    tracked(d,(M,y),str(entry.get("domain_detail") or entry.get("domain","")).upper(),fd,AMBER,4.2)
     y+=p(38)
     for ln in nlines:
         d.text((M,y),ln,font=fn,fill=FG); y+=lh

@@ -6,7 +6,7 @@
   },
   "issues": [
     {
-      "issue": "2026-06-17-0638",
+      "issue": 1,
       "date": "2026-06-17",
       "time": "06:38 ET",
       "climate": "Restraint bleeding out; expressive clarity, craft, and gatekept taste taking the bid",
@@ -83,10 +83,11 @@
           "benchmark": "the operating principle behind the 50, not a neighbor in it",
           "slug": "taste-as-gatekeeping"
         }
-      ]
+      ],
+      "issue_id": "2026-06-17-0638"
     },
     {
-      "issue": "2026-06-17-0702",
+      "issue": 2,
       "date": "2026-06-17",
       "time": "07:02 ET",
       "climate": "Center is hollow; authority migrating to the edges — quiet radicals, original work over sequels, slow-built craft over spectacle",
@@ -166,10 +167,11 @@
           "benchmark": "the aesthetic shift the 50's design desks track",
           "slug": "new-maximalism-archive-as-currency"
         }
-      ]
+      ],
+      "issue_id": "2026-06-17-0702"
     },
     {
-      "issue": "2026-06-18-2236",
+      "issue": 3,
       "date": "2026-06-18",
       "time": "22:36 ET",
       "recovered": true,
@@ -239,10 +241,11 @@
           "heat_recovered": false,
           "slug": "the-2016-throwback"
         }
-      ]
+      ],
+      "issue_id": "2026-06-18-2236"
     },
     {
-      "issue": "2026-06-20-0546",
+      "issue": 4,
       "date": "2026-06-20",
       "time": "05:46 ET",
       "climate": "Two clocks at once — the last monocultures (World Cup, public spectacle) pull everyone in while everywhere else fragments into micro-tribes; belonging beats reach",
@@ -315,10 +318,11 @@
           "flags": [],
           "slug": "broadcast-to-belonging"
         }
-      ]
+      ],
+      "issue_id": "2026-06-20-0546"
     },
     {
-      "issue": "2026-06-23-2356",
+      "issue": 5,
       "date": "2026-06-23",
       "time": "23:56 ET",
       "climate": "Field tilting from broadcast to transmission — freshest signal in what you sit with or get let into: diaspora auteurs, cassette-soul, reading rooms, thesis-driven design; loud center running on fumes",
@@ -399,10 +403,11 @@
           "read": "Book-club-as-venue, gatekept by attention not money. Transmission gone physical.",
           "slug": "the-reading-room"
         }
-      ]
+      ],
+      "issue_id": "2026-06-23-2356"
     },
     {
-      "issue": "2026-06-25-0424",
+      "issue": 6,
       "date": "2026-06-25",
       "time": "04:24 ET",
       "climate": "Memory and lineage over scale — diasporic curation, sample-built rap, analog craft, mixtape nostalgia all take the bid while sequel-logic and hype-without-thesis go hollow; depth that remembers beats reach that forgets",
@@ -485,10 +490,11 @@
           "url": "https://en.wikipedia.org/wiki/Rose_of_Nevada",
           "slug": "mark-jenkin-cornish-trilogy-closer"
         }
-      ]
+      ],
+      "issue_id": "2026-06-25-0424"
     },
     {
-      "issue": "2026-06-26-1048",
+      "issue": 7,
       "date": "2026-06-26",
       "time": "10:48 ET",
       "climate": "Diaspora as center of gravity — transmission over spectacle",
@@ -567,10 +573,11 @@
           "url": "http://www.tia-clark.com/",
           "slug": "t-clark-debut-collection"
         }
-      ]
+      ],
+      "issue_id": "2026-06-26-1048"
     },
     {
-      "issue": "2026-06-27-1749",
+      "issue": 8,
       "date": "2026-06-27",
       "time": "17:49 ET",
       "climate": "Center still draws the crowd (World Cup, the blockbuster scoreboard) but authority slid to the edge — diasporic auteurs and curators rebuilding the canon from the margins inward",
@@ -645,10 +652,11 @@
           "benchmark": "Free Game / Monocle",
           "slug": "breadth-over-blockbuster"
         }
-      ]
+      ],
+      "issue_id": "2026-06-27-1749"
     },
     {
-      "issue": "2026-07-02-1054",
+      "issue": 9,
       "date": "2026-07-02",
       "time": "10:54 ET",
       "climate": "",
@@ -697,7 +705,7 @@
         },
         {
           "name": "Splice",
-          "domain": "CREATOR-AI",
+          "domain": "TECH",
           "score": 7.8,
           "tier": "FLAME",
           "heat": 0,
@@ -721,10 +729,11 @@
           "read": "Diaspora books + salon — no algorithm feeds you this shelf; lowest heat on the board.",
           "slug": "loving-room"
         }
-      ]
+      ],
+      "issue_id": "2026-07-02-1054"
     },
     {
-      "issue": "2026-07-02-2315",
+      "issue": 10,
       "date": "2026-07-02",
       "time": "23:15 ET",
       "climate": "Diasporic authority moving from commentary to infrastructure — a continental biennale, a repatriation heist game, a museum survey of Black design — while streetwear cycles the same collab loop and AI-music floods the middle",
@@ -796,10 +805,11 @@
           "url": "https://houseofaama.com/",
           "slug": "house-of-aama-folk-grounds"
         }
-      ]
+      ],
+      "issue_id": "2026-07-02-2315"
     },
     {
-      "issue": "2026-07-04-1236",
+      "issue": 11,
       "date": "2026-07-04",
       "time": "12:36 ET",
       "climate": "Institutional and critical authority migrating toward work that insists on being read on its own terms — diasporic, myth-rooted, unbothered by mainstream legibility",
@@ -881,10 +891,11 @@
           "image": "https://www.nardosdesign.com/cdn/shop/files/Main_Page_2_1200x1200.jpg?v=1744139187",
           "slug": "nardos-imam-the-infinite-banquet"
         }
-      ]
+      ],
+      "issue_id": "2026-07-04-1236"
     },
     {
-      "issue": "2026-07-04-1356",
+      "issue": 12,
       "date": "2026-07-04",
       "time": "13:56 ET",
       "climate": "Ownership is the new drop — archives, biennials, and bookshelves pulling more heat than any single release; Afro-Atlantic craft quietly outscores the loudest collabs",
@@ -958,10 +969,11 @@
           "url": "https://www.paramountplus.com/shows/the-chi/",
           "slug": "the-chi-final-season"
         }
-      ]
+      ],
+      "issue_id": "2026-07-04-1356"
     },
     {
-      "issue": "2026-07-05-1227",
+      "issue": 13,
       "date": "2026-07-05",
       "time": "12:27 ET",
       "climate": "Mid-year split: the loudest rooms are pricing anticipation as the product while the first half's most complete work ships without a press cycle — mastery is outrunning marketing",
@@ -1044,10 +1056,11 @@
           "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1875580/ba1e750e24c1a6218b22a4777a4020d967b8f1e1/capsule_616x353.jpg?t=1780605554",
           "slug": "mina-the-hollower"
         }
-      ]
+      ],
+      "issue_id": "2026-07-05-1227"
     },
     {
-      "issue": "2026-07-06-0834",
+      "issue": 14,
       "date": "2026-07-06",
       "time": "08:34 ET",
       "climate": "Stadium spectacle is loud enough to feel like the whole story, but the real export is coming from cities the algorithm still treats as periphery — Lagos chief among them",
@@ -1134,10 +1147,11 @@
           "benchmark": "Karhu — heritage craft revisited with the same patience, different continent.",
           "slug": "shihara-yuta-ishihara"
         }
-      ]
+      ],
+      "issue_id": "2026-07-06-0834"
     },
     {
-      "issue": "2026-07-07-1441",
+      "issue": 15,
       "date": "2026-07-07",
       "time": "14:41 ET",
       "climate": "The fight moved to memory — museums canonize the underground's founders while a state deletes a film in real time; whoever holds the archive sets the price",
@@ -1218,7 +1232,8 @@
           "image": "https://kindredstorieshtx.com/cdn/shop/files/9780063388413.jpg?v=1777925599",
           "slug": "kendra-allen-good-morning-means-i-love-you"
         }
-      ]
+      ],
+      "issue_id": "2026-07-07-1441"
     },
     {
       "issue_id": "2026-07-13-1332",
@@ -1323,7 +1338,8 @@
           "image": "https://d13jj08vfqimqg.cloudfront.net/uploads/film/photo_1/7042/medium_They_Fight-Clean-16x9-01.jpg",
           "slug": "they-fight-sheldon-candis"
         }
-      ]
+      ],
+      "issue": 16
     },
     {
       "issue_id": "2026-07-15-2005",
@@ -1431,7 +1447,8 @@
           "image": "https://images.squarespace-cdn.com/content/v1/696280129ac0f832cee1be9b/dd7f2596-7645-420a-9359-96733336fc5e/runner+ASHTON+LATTIMORE.png",
           "slug": "ashton-lattimore-runner"
         }
-      ]
+      ],
+      "issue": 17
     },
     {
       "issue_id": "2026-07-16-1050",
@@ -1518,7 +1535,8 @@
           "image": "https://cdn.shopify.com/s/files/1/0444/7856/2463/files/A9820D22-D8FF-4953-B9BD-71D20328B4BA.jpg?v=1617546731",
           "slug": "la-reunion-studio"
         }
-      ]
+      ],
+      "issue": 18
     },
     {
       "issue_id": "2026-07-16-1530",
@@ -1606,7 +1624,8 @@
           "image": "https://fablstyle.com/wp-content/uploads/2026/07/00-banner-thebe-magugu-faculty-press.webp",
           "slug": "the-death-of-african-fashion"
         }
-      ]
+      ],
+      "issue": 19
     },
     {
       "issue_id": "2026-07-17-2214",
@@ -1694,7 +1713,8 @@
           "image": "",
           "slug": "fadekemi-ogunsanya-we-are-not-lying-your-language-is-not-enough"
         }
-      ]
+      ],
+      "issue": 20
     },
     {
       "issue_id": "2026-07-18-0632",
@@ -1772,7 +1792,7 @@
         },
         {
           "name": "The AI Label",
-          "domain": "TECH · SCENE",
+          "domain": "TECH",
           "score": 5.4,
           "tier": "SPARK",
           "heat": 79,
@@ -1785,9 +1805,11 @@
           "image": "",
           "read": "Eight bodies (RIAA, IFPI, Recording Academy, SAG-AFTRA and others) proposed AI-Generated / AI-Assisted tags on Jul 10, riding DDEX. TIDAL cut royalty eligibility on wholly-AI tracks Jul 15. But it is voluntary and self-reported — a blank field travels as nothing. Deezer reports 44% of daily uploads machine-made. EU AI Act Article 50 lands Aug 2.",
           "verdict": "PENDING",
-          "slug": "the-ai-label"
+          "slug": "the-ai-label",
+          "domain_detail": "TECH · SCENE"
         }
-      ]
+      ],
+      "issue": 21
     },
     {
       "issue_id": "2026-07-18-1928",
@@ -1880,7 +1902,8 @@
           "verdict": "PENDING",
           "slug": "go-north-gazuntype"
         }
-      ]
+      ],
+      "issue": 22
     },
     {
       "issue_id": "2026-07-19-2155",
@@ -1973,7 +1996,8 @@
           "verdict": "PENDING",
           "slug": "yoshita-1967-anil-padia"
         }
-      ]
+      ],
+      "issue": 23
     },
     {
       "issue_id": "2026-07-20-1402",
@@ -2017,7 +2041,7 @@
         },
         {
           "name": "Paul Kodjo — Photoromance",
-          "domain": "PHOTOGRAPHY",
+          "domain": "ART",
           "score": 8.7,
           "tier": "CROWN",
           "heat": 17,
@@ -2049,7 +2073,7 @@
         },
         {
           "name": "Suno Spark",
-          "domain": "TECH · SCENE",
+          "domain": "TECH",
           "score": 5.1,
           "tier": "SPARK",
           "heat": 74,
@@ -2062,9 +2086,11 @@
           "image": "",
           "read": "An artist-development program from an AI music platform: grants, mentorship, marketing for unsigned singers, songwriters and producers releasing under their own names. Artists keep creative control, commercial rights, and their own distributor — all of that is real. Then the fine print bars participants from portraying Suno negatively \"during the Term and thereafter,\" with no end date. That is not artist development, that is buying silence at a discount, from exactly the people with the most standing to speak. HEAT>WORK — the announcement is louder than the offer.",
           "verdict": "PENDING",
-          "slug": "suno-spark"
+          "slug": "suno-spark",
+          "domain_detail": "TECH · SCENE"
         }
-      ]
+      ],
+      "issue": 24
     },
     {
       "issue_id": "2026-07-20-2244",
@@ -2142,7 +2168,7 @@
         },
         {
           "name": "Spotify — “About the Song”",
-          "domain": "INTERNET",
+          "domain": "SCENE",
           "score": 3.2,
           "tier": "NOISE",
           "heat": 76,
@@ -2157,7 +2183,8 @@
           "verdict": "PENDING",
           "slug": "spotify-about-the-song"
         }
-      ]
+      ],
+      "issue": 25
     },
     {
       "issue_id": "2026-07-21-0935",
@@ -2167,7 +2194,7 @@
       "entries": [
         {
           "name": "The Stolen Dove — Jon Rubin",
-          "domain": "PUBLIC ART · MEMORY",
+          "domain": "ART",
           "score": 9.0,
           "tier": "HEIRWAVE",
           "heat": 12,
@@ -2180,11 +2207,12 @@
           "image": "https://storage.ghost.io/c/51/f8/51f871d8-b6be-4a73-b958-0ca4fff0110a/content/images/size/w1200/2026/07/HelenawithDoveDec2025_PhotoPatrickShartzer_CourtesyJonRubinandGCAC.jpg",
           "read": "Khalil Bendib's 1994 bronze of Alex Odeh — Palestinian-American poet, ADC organizer, assassinated by pipe bomb in Santa Ana in 1985, case still officially unsolved — has been vandalized for thirty years. Last December Jon Rubin removed the dove again, with the family's blessing, turning the vandalism into method. The dove now travels: dinners, a Passover seder, a Hollywood house gallery, next the Bay Area and Pittsburgh. Every host keeps a replica. A flock instead of a plinth. It returns to the statue in fall 2027 carrying every room it sat in.",
           "verdict": "PENDING",
-          "slug": "the-stolen-dove-jon-rubin"
+          "slug": "the-stolen-dove-jon-rubin",
+          "domain_detail": "ART · MEMORY"
         },
         {
           "name": "Material Prophecies: Craft as Divination",
-          "domain": "ART · CRAFT",
+          "domain": "ART",
           "score": 8.4,
           "tier": "CROWN",
           "heat": 15,
@@ -2197,7 +2225,8 @@
           "image": "https://storage.ghost.io/c/51/f8/51f871d8-b6be-4a73-b958-0ca4fff0110a/content/images/size/w1200/2026/07/04_April-Bey_MP.jpg",
           "read": "Eight artists at the Armory Center for the Arts, Pasadena, working in materials pre-loaded with belief — mud and masa, unglazed devotional clay, crushed velvet, rose quartz. Emmanuel Louisnord Desir, vanessa german, April Bey, Joel Gaitan, Jackie Amézquita. The strongest works refuse the curatorial thesis, which is the tell that the material is doing the thinking.",
           "verdict": "PENDING",
-          "slug": "material-prophecies-craft-as-divination"
+          "slug": "material-prophecies-craft-as-divination",
+          "domain_detail": "ART · CRAFT"
         },
         {
           "name": "Brian Ennals & Blockhead — Boatshoes",
@@ -2218,7 +2247,7 @@
         },
         {
           "name": "The Repurposing Trade — Ziwiye Plaques on the Red Carpet",
-          "domain": "IDEAS · HERITAGE",
+          "domain": "IDEAS",
           "score": 7.6,
           "tier": "FLAME",
           "heat": 71,
@@ -2231,11 +2260,12 @@
           "image": "https://storage.ghost.io/c/51/f8/51f871d8-b6be-4a73-b958-0ca4fff0110a/content/images/size/w1200/2026/07/GettyImages-2284724535.jpg",
           "read": "Two 3,000-year-old Iranian gold discs drilled and set in gold and diamonds for an Odyssey photocall. The backlash came from archaeologists before fashion critics. The plaques trace to the Ziwiye hoard, looted in 1947 before excavation. The celebrity is not the story — the market routinely restrings Egyptian beads, detaches reliefs, and paints over Songye and Luba figures, selling the alteration as added value. Repurposing is one-way.",
           "verdict": "PENDING",
-          "slug": "the-repurposing-trade-ziwiye-plaques-on-the-red-carpet"
+          "slug": "the-repurposing-trade-ziwiye-plaques-on-the-red-carpet",
+          "domain_detail": "IDEAS · HERITAGE"
         },
         {
           "name": "The Natural-Fibre Turn",
-          "domain": "FASHION · MATERIALS",
+          "domain": "FASHION",
           "score": 6.4,
           "tier": "TORCH",
           "heat": 66,
@@ -2248,9 +2278,11 @@
           "image": "",
           "read": "Polyester became a lightning rod this month, shoppers across the political spectrum reading fibre labels over microplastics, heat, and quality. A mainstream consumer wave, which is why it scores where it does — but the room landed on what the craft end never stopped saying. Watch the greenwash reflex: recycled polyester and cotton blends are already being staged as the answer.",
           "verdict": "PENDING",
-          "slug": "the-natural-fibre-turn"
+          "slug": "the-natural-fibre-turn",
+          "domain_detail": "FASHION · MATERIALS"
         }
-      ]
+      ],
+      "issue": 26
     },
     {
       "issue_id": "2026-07-21-1434",
@@ -2260,7 +2292,7 @@
       "entries": [
         {
           "name": "Andrea Ferro — Dakar's Bubble Houses",
-          "domain": "ARCHITECTURE · PHOTOGRAPHY",
+          "domain": "ARCHITECTURE",
           "score": 8.8,
           "tier": "CROWN",
           "heat": 9,
@@ -2273,11 +2305,12 @@
           "image": "https://static.dezeen.com/uploads/2026/07/dakar-bubble-houses-domes-andrea-ferro-photography_dezeen_2364_hero_4.jpg",
           "read": "Dakar once held the world's largest cluster of Airform domes — 1,200 sprayed-concrete bubbles built fast and cheap under late-colonial housing pressure, bioclimatic before the word sold. Fewer than 100 remain. Ferro, an architect who left architecture for a camera, spent months in Ouakam shooting them as they stand: absorbed into new builds, half-demolished, still occupied. No nostalgia filter. He photographs the boy at the window, not the dome.",
           "verdict": "PENDING",
-          "slug": "andrea-ferro-dakar-s-bubble-houses"
+          "slug": "andrea-ferro-dakar-s-bubble-houses",
+          "domain_detail": "ARCHITECTURE · PHOTOGRAPHY"
         },
         {
           "name": "Ego Reach We All (Our Time Will Come) — Amartei Armar",
-          "domain": "FILM · DEBUT",
+          "domain": "FILM",
           "score": 8.3,
           "tier": "CROWN",
           "heat": 11,
@@ -2290,11 +2323,12 @@
           "image": "https://www.ghanamma.com/wp-content/uploads/2026/07/Amartei-Armar-and-Yemoh-Ike.webp",
           "read": "World premiere in Locarno's Concorso Cineasti del Presente (Aug 5–15). Armar expanded his 2018 short Vagabonds into a 105-minute feature shot entirely in Ghana with local cast and crew, posted in France, produced by Yemoh Ike. Built through Cannes Focus CoPro, Red Sea and the Atlas Workshop without letting the labs relocate the film.",
           "verdict": "PENDING",
-          "slug": "ego-reach-we-all-our-time-will-come-amartei-armar"
+          "slug": "ego-reach-we-all-our-time-will-come-amartei-armar",
+          "domain_detail": "FILM · DEBUT"
         },
         {
           "name": "Awon & The Other Guys — Solidified",
-          "domain": "MUSIC · UNDERGROUND RAP",
+          "domain": "MUSIC",
           "score": 7.9,
           "tier": "FLAME",
           "heat": 14,
@@ -2307,11 +2341,12 @@
           "image": "https://f4.bcbits.com/img/0032460716_23.jpg",
           "read": "Ten tracks, twenty-six minutes, one production unit. Awon handed the full board to D.C.'s The Other Guys on HiPNOTT — melodic boom-bap, ominous low end, features held to DJ Eveready and Rob Cave. 'Ice Rink' is the thesis. Founded his own label in 2014 and still sets his own release calendar.",
           "verdict": "PENDING",
-          "slug": "awon-and-the-other-guys-solidified"
+          "slug": "awon-and-the-other-guys-solidified",
+          "domain_detail": "MUSIC · UNDERGROUND RAP"
         },
         {
           "name": "Heart Eater — 신 선 영 Sun Yung Shin",
-          "domain": "BOOKS · MEMOIR",
+          "domain": "BOOKS",
           "score": 8.1,
           "tier": "CROWN",
           "heat": 8,
@@ -2324,11 +2359,12 @@
           "image": "https://blacklawrencepress.com/wp-content/uploads/Heart-Eater-Final.jpg",
           "read": "Out July 28 on Black Lawrence, 350 pages, inaugural title of the Immigrant Writing Series. Built as 'field notes' — short essays each logging one encounter with a word about race, kinship or citizenship, cut with photographs and documents. Shin interrogates the gumiho and turns the figure back on the adoption industry. Five poetry collections before the memoir; the order matters.",
           "verdict": "PENDING",
-          "slug": "heart-eater-sun-yung-shin"
+          "slug": "heart-eater-sun-yung-shin",
+          "domain_detail": "BOOKS · MEMOIR"
         },
         {
           "name": "The Collab Ledger — 2026's Logo Swaps",
-          "domain": "FASHION · STREETWEAR",
+          "domain": "FASHION",
           "score": 5.4,
           "tier": "SPARK",
           "heat": 82,
@@ -2341,9 +2377,11 @@
           "image": "",
           "read": "Supreme × MM6, NIGO's Air Force 1, Swatch × Audemars Piguet. Half of 2026's most-covered fashion moments are two logos occupying the same garment, reported as year-defining. A collab is a distribution trick, not an idea. The ones that last carry a thesis into the object. Heat is real and will stay real; the work underneath is thinner than the noise.",
           "verdict": "PENDING",
-          "slug": "the-collab-ledger-2026-s-logo-swaps"
+          "slug": "the-collab-ledger-2026-s-logo-swaps",
+          "domain_detail": "FASHION · STREETWEAR"
         }
-      ]
+      ],
+      "issue": 27
     },
     {
       "issue_id": "2026-07-22-1531",
@@ -2353,7 +2391,7 @@
       "entries": [
         {
           "name": "Gabriel Chaile — Archaeology of Memory",
-          "domain": "ART · SCULPTURE",
+          "domain": "ART",
           "score": 8.7,
           "tier": "CROWN",
           "heat": 14,
@@ -2366,11 +2404,12 @@
           "image": "https://www.whitechapelgallery.org/wp-content/uploads/2026/01/Gabriel-Chaile-Studio-Portrait.jpg",
           "read": "Chaile's first London institutional solo, on now at Whitechapel through Sep 6. Monumental adobe figures built from local organic clay, reinterpreting the ceremonial forms of north-west Argentina and holding ceramics he scavenged from the East End — a 'migrant collection' where the journey of the object mirrors the journey of the people. He calls it the genealogy of form. The ovens don't just sit there; in past shows they bake and feed. Craft as canon-keeping, not nostalgia.",
           "verdict": "PENDING",
-          "slug": "gabriel-chaile-archaeology-of-memory"
+          "slug": "gabriel-chaile-archaeology-of-memory",
+          "domain_detail": "ART · SCULPTURE"
         },
         {
           "name": "The Winds of Maracaibo — María Elena Morán",
-          "domain": "BOOKS · DIASPORA FICTION",
+          "domain": "BOOKS",
           "score": 8.3,
           "tier": "CROWN",
           "heat": 10,
@@ -2383,11 +2422,12 @@
           "image": "https://cdn2.penguin.com.au/covers/400/9780593803943.jpg",
           "read": "Out Jul 28. Morán — Venezuelan, based in Brazil — won Spain's Café Gijón Prize for this (as Volver a cuándo); now it lands in English, translated by Madeline Jones. A mother cleaning houses in a Porto Alegre storage room gets the text that her ex has taken their daughter across the border. Told through the whole family, dead relatives included. Lyrical, seething, and specific — a furious reversal of the American Dream, not a generalization about a crisis.",
           "verdict": "PENDING",
-          "slug": "the-winds-of-maracaibo-maria-elena-moran"
+          "slug": "the-winds-of-maracaibo-maria-elena-moran",
+          "domain_detail": "BOOKS · DIASPORA FICTION"
         },
         {
           "name": "Mickey Diamond x Big Ghost Ltd — Blood Of The Lamb",
-          "domain": "MUSIC · UNDERGROUND RAP",
+          "domain": "MUSIC",
           "score": 8.1,
           "tier": "CROWN",
           "heat": 16,
@@ -2400,11 +2440,12 @@
           "image": "https://f4.bcbits.com/img/a2841479745_5.jpg",
           "read": "The third chapter of the 'Wolf, Sheep & Goat' series. Detroit's Mickey Diamond over a full board from Big Ghost Ltd — booming kicks, church organs flipped into horror-film boom-bap, gospel choirs turned rugged. 'Stigmata' opens on generational-wealth talk; Daniel Son pulls up on 'PREYers.' He gets in the spiritual bag without preaching — the edge is that it's reverent and grimy at once. Self-paced, self-released, no campaign.",
           "verdict": "PENDING",
-          "slug": "mickey-diamond-x-big-ghost-ltd-blood-of-the-lamb"
+          "slug": "mickey-diamond-x-big-ghost-ltd-blood-of-the-lamb",
+          "domain_detail": "MUSIC · UNDERGROUND RAP"
         },
         {
           "name": "Folk Emerging — Curious Dynamics",
-          "domain": "GAMES · SOLO DEV",
+          "domain": "GAMES",
           "score": 7.4,
           "tier": "FLAME",
           "heat": 29,
@@ -2417,11 +2458,12 @@
           "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2275300/6e4d98f6245acf5405fd883e8041a81a1773b83b/capsule_616x353.jpg?t=1778497826",
           "read": "A stone-age 4X from one EU-based solo developer — demo out now, full game this summer. You lead nomadic families across a procedurally simulated Pleistocene: heritable traits, evolving cultural norms, a tech tree from controlled fire to the first cities. Rock Paper Shotgun called it the most intriguing 4X in a while precisely because it declines to fully become one — 'the first five turns of Civilization, made into a game.' A game about the origin of culture, built the way the 50 respects: one person, deep and specific.",
           "verdict": "PENDING",
-          "slug": "folk-emerging-curious-dynamics"
+          "slug": "folk-emerging-curious-dynamics",
+          "domain_detail": "GAMES · SOLO DEV"
         },
         {
           "name": "AZ — Doe Or Die III",
-          "domain": "MUSIC · BOOM BAP",
+          "domain": "MUSIC",
           "score": 8.4,
           "tier": "CROWN",
           "heat": 68,
@@ -2434,9 +2476,11 @@
           "image": "https://shop.massappeal.com/cdn/shop/files/dcf4091867afc5918d5bbdfafa3103f5_1024x.png?v=1777948712",
           "read": "The counter-read: high heat the room got correct. AZ closes his trilogy 30 years after the 1995 debut — the first voice on Nas's Illmatic, reunited with Nas here on 'Surprise,' over K-Def, Buckwild, Large Professor, Statik. This isn't a find and it isn't noise. It's a master technician who never chased a trend getting his flowers on time. Heat's settled since May; the bars don't need it to move.",
           "verdict": "PENDING",
-          "slug": "az-doe-or-die-iii"
+          "slug": "az-doe-or-die-iii",
+          "domain_detail": "MUSIC · BOOM BAP"
         }
-      ]
+      ],
+      "issue": 28
     },
     {
       "issue_id": "2026-07-23-1253",
@@ -2446,7 +2490,7 @@
       "entries": [
         {
           "name": "Dear Ajayi — Damilola Orimogunje",
-          "domain": "FILM · AUTEUR",
+          "domain": "FILM",
           "score": 8.7,
           "tier": "CROWN",
           "heat": 18,
@@ -2459,11 +2503,12 @@
           "image": "https://whatkeptmeup.com/wp-content/uploads/2026/07/Website-43.webp",
           "read": "Announced yesterday. The first Nigerian production ever to enter the Giornate degli Autori competition at Venice — ten films pulled from 1,036 submissions across 114 countries. Eight years from script to the Lido. Two estranged sisters in 1990s southwestern Nigeria, forced under one roof to care for a paralysed mother; dialogue in English, Yoruba, French and Igbo. Bimbo Akintola and Tosin Adeyemi lead, Re Olunuga scores, and Orimogunje's own 2o9ine Films — the house behind All the Colours of the World Are Between Black and White — produced it. The gate opened this week. The film had been done for a year.",
           "verdict": "PENDING",
-          "slug": "dear-ajayi-damilola-orimogunje"
+          "slug": "dear-ajayi-damilola-orimogunje",
+          "domain_detail": "FILM · AUTEUR"
         },
         {
           "name": "Widline Cadet — Seremoni Disparisyon",
-          "domain": "ART · PHOTOGRAPHY",
+          "domain": "ART",
           "score": 8.8,
           "tier": "CROWN",
           "heat": 15,
@@ -2476,11 +2521,12 @@
           "image": "https://mam.imgix.net/mam-org/exhibitions/26_widline-cadet/hero.png",
           "read": "On now at the Milwaukee Art Museum through Aug 9 — her first US museum solo, and the first full hang of a nearly decade-long project. Cadet started photographing her extended family because the ancestral images simply did not exist. When access to Haiti narrowed, she turned the camera on herself and the people within reach and called the result a living archive. Doubling, repetition, staged intimacy, prints installed in ways that refuse to behave like documents. The archive she was told wasn't there, she built — then finished it, then waited.",
           "verdict": "PENDING",
-          "slug": "widline-cadet-seremoni-disparisyon"
+          "slug": "widline-cadet-seremoni-disparisyon",
+          "domain_detail": "ART · PHOTOGRAPHY"
         },
         {
           "name": "Cosmos — Lucia Odoom",
-          "domain": "BOOKS · DIASPORA FICTION",
+          "domain": "BOOKS",
           "score": 8.3,
           "tier": "CROWN",
           "heat": 10,
@@ -2493,11 +2539,12 @@
           "image": "https://dauntbookspublishing.co.uk/wp-content/uploads/2025/12/Cosmos_PB_Final-1200x630.jpg",
           "read": "Out this month from Daunt Books, translated from the Danish by Hunter Simpson. Odoom is Danish-Ghanaian, a music critic at Politiken, granddaughter of a man who left Ghana for Denmark in the sixties. Her debut is built entirely from WhatsApp messages: Cosmos, a bottle collector sleeping in Copenhagen parks, writing to his sister, his aunt and his pastor back in Woe. No replies are included — he is working the world out for himself as much as describing it. He meets Elizabeth in an African hair salon. Then he disappears. A novella about needing to be of use to people you cannot reach.",
           "verdict": "PENDING",
-          "slug": "cosmos-lucia-odoom"
+          "slug": "cosmos-lucia-odoom",
+          "domain_detail": "BOOKS · DIASPORA FICTION"
         },
         {
           "name": "Record Culture — Issue 11",
-          "domain": "EDITORIAL · PRINT",
+          "domain": "EDITORIAL",
           "score": 8.0,
           "tier": "CROWN",
           "heat": 22,
@@ -2510,11 +2557,12 @@
           "image": "https://static1.squarespace.com/static/562a9362e4b0b34525be9ae4/56df0009c6fc08e7cff013b7/69c2070d2189ed203c331467/1779819813196/Record_11_2026_Cover.jpg?format=1500w",
           "read": "Back after four years of nothing. 208 pages perfect bound, plus two supplement booklets — Nicky Siano on a life in the room, and a day inside Audio-Technica shot by Kento Mori. Jean Touitou, Nicolas Godin, OKO DJ, Ariel Zetina, Fraser Cooke, Kiki Kudo. €28. No reviews — the whole format is a bet that a long interview about how someone actually works still reads in a decade. Print that returns on its own schedule is a different animal from print that never stopped: the silence was the edit.",
           "verdict": "PENDING",
-          "slug": "record-culture-issue-11"
+          "slug": "record-culture-issue-11",
+          "domain_detail": "EDITORIAL · PRINT"
         },
         {
           "name": "Gangrene — Better Than McDonald's",
-          "domain": "MUSIC · UNDERGROUND RAP",
+          "domain": "MUSIC",
           "score": 7.2,
           "tier": "FLAME",
           "heat": 63,
@@ -2527,9 +2575,11 @@
           "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e5/36/f1/e536f182-97c3-5498-eefa-dca4bcc3462d/199316697841_cover.jpg/1200x630wp-60.jpg",
           "read": "The Alchemist and Oh No's fifth as Gangrene, out Jul 17 — eleven tracks, with Estee Nack, Boldy James, Armand Hammer, Rome Streetz, Ab-Soul, Meyhem Lauren and Wildchild. The premise still holds: two producers who both rap, choosing loops on the basis of how ugly they are, each handing the other the beat no paying client would take. But this one landed lighter than the catalogue — writers who love the duo are calling it their least favourite, and the deliberately AI-looking cover (hand-painted, Al insists) ate more oxygen than the record did. Prolific is not the same as necessary. The honest counter-read on this board.",
           "verdict": "PENDING",
-          "slug": "gangrene-better-than-mcdonald-s"
+          "slug": "gangrene-better-than-mcdonald-s",
+          "domain_detail": "MUSIC · UNDERGROUND RAP"
         }
-      ]
+      ],
+      "issue": 29
     },
     {
       "issue": 30,
@@ -2539,7 +2589,7 @@
         {
           "rank": 1,
           "name": "Lynette Yiadom-Boakye — Many A Moonlit Caveat",
-          "domain": "Art",
+          "domain": "ART",
           "url": "https://brooklynrail.org/2026/06/artseen/lynette-yiadom-boakye-many-a-moonlit-caveat",
           "image": "https://studio.brooklynrail.org/assets/79edbbfb-bb49-4f75-96f1-38d8670fa940.jpg",
           "score": 9.2,
@@ -2556,7 +2606,7 @@
         {
           "rank": 2,
           "name": "Theophilio",
-          "domain": "Fashion",
+          "domain": "FASHION",
           "url": "https://theophilio.com/pages/about-us",
           "image": "https://theophilio.com/cdn/shop/files/OHP_THEO_5337_6v_FIN_sRGB_dd722565-1b72-49da-964e-d0ca95e79049.jpg?v=1682047501",
           "score": 8.3,
@@ -2573,7 +2623,7 @@
         {
           "rank": 3,
           "name": "Black Zombie — Maya Annik Bedward",
-          "domain": "Film",
+          "domain": "FILM",
           "url": "https://povmagazine.com/the-roots-of-black-zombie/",
           "image": "https://povmagazine.com/wp-content/uploads/2026/03/BZ-STL46.jpg",
           "score": 7.8,
@@ -2590,7 +2640,7 @@
         {
           "rank": 4,
           "name": "Speedtest — Pedro Chediak",
-          "domain": "Music",
+          "domain": "MUSIC",
           "url": "https://daily.bandcamp.com/scene-report/brazil-uk-garage-feature",
           "image": "https://f4.bcbits.com/img/0046261647_171.jpg",
           "score": 7.4,
@@ -2607,7 +2657,7 @@
         {
           "rank": 5,
           "name": "Odu: Ancestral Nexus — Odu Studios",
-          "domain": "Games",
+          "domain": "GAMES",
           "url": "https://store.steampowered.com/app/3733610/",
           "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3733610/1d66eed3b25a1b2f8fda5eb478e233f073e23ffd/header.jpg",
           "score": 7.2,
@@ -2633,7 +2683,8 @@
         "AI-hype content with nothing under the hood",
         "Legacy-rock nostalgia reissue cycle"
       ],
-      "climate": "Diaspora work isn't asking to be seen this week — it's rewriting the source material before anyone else gets a take, from the horror reel to the drum pattern to the character sheet."
+      "climate": "Diaspora work isn't asking to be seen this week — it's rewriting the source material before anyone else gets a take, from the horror reel to the drum pattern to the character sheet.",
+      "issue_id": "2026-07-24-1452"
     },
     {
       "issue": 31,
@@ -2643,7 +2694,7 @@
         {
           "rank": 1,
           "name": "Rosco P Coldchain & Nicholas Craven — Play With Something Safe",
-          "domain": "Music",
+          "domain": "MUSIC",
           "url": "https://nicholascraven.bandcamp.com/album/play-with-something-safe",
           "image": "https://f4.bcbits.com/img/a2696760643_5.jpg",
           "score": 8.6,
@@ -2661,7 +2712,7 @@
         {
           "rank": 2,
           "name": "Blu & Exile — Time Heals Everything",
-          "domain": "Music",
+          "domain": "MUSIC",
           "url": "https://bluandexile.bandcamp.com/album/time-heals-everything",
           "image": "https://f4.bcbits.com/img/a3856796124_5.jpg",
           "score": 8.3,
@@ -2679,7 +2730,7 @@
         {
           "rank": 3,
           "name": "Dao — Alain Gomis",
-          "domain": "Film",
+          "domain": "FILM",
           "url": "https://www.cinemadureel.org/en/film/dao-2/",
           "image": "https://www.cinemadureel.org/wp-content/uploads/2026/03/ss-dao-2-alain-gomis---les-films-du-wordo---srab-films.jpg",
           "score": 7.9,
@@ -2697,7 +2748,7 @@
         {
           "rank": 4,
           "name": "Beatmakers of L.A. Underground Hip Hop",
-          "domain": "Books",
+          "domain": "BOOKS",
           "url": "https://medium.com/@prkrpubs/new-book-beatmakers-of-l-a-underground-hip-hop-1fd9cafca244",
           "image": "https://miro.medium.com/v2/resize:fill:1200:632/g:fp:0.5:0.1/1*vgUireKvQiwSc3hzzhKrHQ.jpeg",
           "score": 7.7,
@@ -2715,7 +2766,7 @@
         {
           "rank": 5,
           "name": "Suez Studio",
-          "domain": "Fashion",
+          "domain": "FASHION",
           "url": "https://suezstudio.com/pages/about",
           "image": "https://suezstudio.com/cdn/shop/files/22.jpg?v=1730116968",
           "score": 7.3,
@@ -2742,7 +2793,8 @@
         "Nostalgia tours dressed as reinvention",
         "Hype-cycle debuts with no craft under the hood"
       ],
-      "climate": "The heaviest work this cycle isn't chasing the room — it's settling old scores, from a Philly voice back from a fourteen-year sentence to a beat scene finally getting its own written history."
+      "climate": "The heaviest work this cycle isn't chasing the room — it's settling old scores, from a Philly voice back from a fourteen-year sentence to a beat scene finally getting its own written history.",
+      "issue_id": "2026-07-25-1822"
     }
   ],
   "holding": [

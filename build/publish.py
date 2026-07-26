@@ -144,6 +144,60 @@ Read against <a href="/#the50">THE 50</a> — the canon and the gate.</footer>
 """
 
 
+
+# ── Domain taxonomy ────────────────────────────────────────────────────────────
+# Domains had drifted into 41 distinct strings — case variants ("ART" / "Art") and
+# free-text sub-labels ("MUSIC · UNDERGROUND RAP") each spawned their own filter
+# chip. Canon is the part before the "·", uppercased, run through the alias table.
+# The sub-label is kept as `domain_detail` because it's good editorial texture —
+# it just shouldn't be a filter.
+DOMAIN_ALIAS = {
+    "INTERNET": "SCENE",        # the skill's pool calls this lane Internet/Scene
+    "CREATOR-AI": "TECH",
+    "PUBLIC ART": "ART",
+    "PHOTOGRAPHY": "ART",
+}
+DOMAINS = ["ARCHITECTURE","ART","BOOKS","CRAFT","DESIGN","EDITORIAL","FASHION",
+           "FILM","GAMES","IDEAS","MUSIC","SCENE","SPORT","TECH","TV"]
+
+def canon_domain(s):
+    head = re.split(r"[·|/]", str(s or ""))[0].strip().upper()
+    head = DOMAIN_ALIAS.get(head, head)
+    return head if head in DOMAINS else (head or "")
+
+def normalise_domains(led):
+    changed = 0
+    for iss in led.get("issues", []):
+        for en in iss.get("entries", []):
+            raw = str(en.get("domain","") or "").strip()
+            canon = canon_domain(raw)
+            if not canon: continue
+            detail = " · ".join(p.strip().upper() for p in re.split(r"·", raw)[1:]).strip()
+            if detail: en["domain_detail"] = "%s · %s" % (canon, detail)
+            elif "domain_detail" in en and canon_domain(en["domain_detail"]) == canon and "·" not in en["domain_detail"]:
+                en.pop("domain_detail", None)
+            if raw != canon: changed += 1
+            en["domain"] = canon
+    return changed
+
+
+def normalise_issue_numbers(led):
+    """`issue` started life as a timestamp string ("2026-06-17-0638") and only became
+    a number at issue 30, so 14 issues rendered as "ISSUE " with nothing after it.
+    Number every issue chronologically and keep the timestamp in `issue_id`, which is
+    what the holding registry references."""
+    rows = sorted(led.get("issues", []),
+                  key=lambda i: str(i.get("date","")) + str(i.get("time","")))
+    fixed = 0
+    for n, iss in enumerate(rows, 1):
+        old = iss.get("issue")
+        if isinstance(old, str) and not str(old).isdigit():
+            iss.setdefault("issue_id", old)
+        iss.setdefault("issue_id", "%s-%s" % (iss.get("date",""), str(iss.get("time","")).replace(":","")[:4]))
+        if iss.get("issue") != n:
+            iss["issue"] = n; fixed += 1
+    return fixed
+
 def bench_map(canon):
     """A benchmark names somebody on THE 50 — build a longest-match lookup so the
     name is clickable on the permalink page too."""
@@ -174,6 +228,10 @@ def bench_html(b, bmap):
 def build(commit_slugs=True):
     led = json.load(open(os.path.join(ROOT, "ledger.json"), encoding="utf-8"))
     canon = json.load(open(os.path.join(ROOT, "musa-50.json"), encoding="utf-8"))
+    n = normalise_domains(led)
+    if n: print("domains normalised on %d entries" % n)
+    f = normalise_issue_numbers(led)
+    if f: print("issue numbers assigned/corrected on %d issues" % f)
     bmap = bench_map(canon)
     heir = open(os.path.join(ROOT, "build", "heirwave.svg"), encoding="utf-8").read()
     paths = re.findall(r'<path[^>]*d="([^"]+)"', heir)
@@ -239,7 +297,7 @@ def build(commit_slugs=True):
             name=e(en.get("name","")), desc=e(desc), url=e(url),
             card=e("%s/cards/%s-og.jpg" % (BASE, slug)),
             issue=e(iss.get("issue","")), date=e(fmt_date(iss.get("date"))),
-            domain=e(str(en.get("domain","")).upper()),
+            domain=e(str(en.get("domain_detail") or en.get("domain","")).upper()),
             art=art, read=e(read), score=e("%.1f" % float(en.get("score",0))),
             tier=e(tier), tclass=TIER_CLASS.get(tier,""), flags=flags,
             heat=e(en.get("heat",0)), heatw=min(100,int(en.get("heat",0) or 0)),

@@ -189,9 +189,15 @@ font-size:10.5px;letter-spacing:.15em;padding:7px 13px;border-radius:6px;cursor:
 .sortwrap{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;color:var(--mut)}
 #sort{background:var(--panel);border:1px solid var(--line);color:var(--fg);font-family:var(--mono);
 font-size:10px;letter-spacing:.1em;padding:6px 8px;border-radius:6px;cursor:pointer;outline:none}
-.chips{display:flex;gap:6px;margin-top:9px;flex-wrap:wrap}
+.chips{margin-top:10px}
+.chiprow{display:flex;align-items:flex-start;gap:10px;margin-top:7px}
+.chiplbl{font-family:var(--mono);font-size:8.5px;letter-spacing:.24em;color:var(--mut2);
+width:54px;flex:none;padding-top:6px;text-align:right}
+.chipset{display:flex;gap:5px;flex-wrap:wrap;flex:1;min-width:0}
+.chip .n{opacity:.5;margin-left:6px;font-size:8.5px;letter-spacing:.06em}
+.chip.on .n{opacity:.7}
 .chip{background:var(--panel2);border:1px solid var(--line);color:var(--mut);font-family:var(--mono);
-font-size:9.5px;letter-spacing:.13em;padding:5px 9px;border-radius:4px;cursor:pointer;transition:.15s}
+font-size:9.5px;letter-spacing:.13em;padding:6px 10px;border-radius:4px;cursor:pointer;transition:.15s;white-space:nowrap}
 .chip:hover{color:var(--fg)}
 .chip.on{color:#1a1610;font-weight:600}
 .chip.on.tier{background:var(--amber);border-color:var(--amber)}
@@ -278,6 +284,7 @@ footer .ft b{font-family:var(--mono);font-size:9.5px;color:#b8b09c;letter-spacin
   .story{grid-template-columns:1fr;gap:20px}
   .story .art{aspect-ratio:1/1}
   .controls{top:41px}
+  .chiprow{gap:7px}.chiplbl{width:44px;font-size:7.5px;letter-spacing:.18em}
   .rule{margin:42px 0 18px}.rule h2{font-size:21px}
   .rule .note{display:none}
 }
@@ -536,7 +543,8 @@ function artHtml(r,cls){
   const img = r.image
     ? `<img src="${esc(r.image)}" alt="${esc(r.name)}" loading="lazy" onerror="this.parentNode.insertAdjacentHTML('afterbegin','${fb}');this.remove()">`
     : `<div class="noart">${esc(initial(r.name))}</div>`;
-  const tag = cls==="story" && r.domain ? `<span class="tag">${esc(String(r.domain).toUpperCase())}</span>` : "";
+  const lbl = r.domain_detail || r.domainFull || r.domain || "";
+  const tag = cls==="story" && lbl ? `<span class="tag">${esc(String(lbl).toUpperCase())}</span>` : "";
   return `<div class="art">${img}${tag}</div>`;
 }
 function railHtml(r){
@@ -558,6 +566,18 @@ function permalink(r){ return r.slug ? `/i/${r.slug}/` : ""; }
 /* A benchmark names somebody on THE 50. Resolve it against the live canon so the
    name is clickable wherever it appears — longest match wins, and a benchmark that
    is prose rather than a name ("the literary-craft lane of the 50") stays plain. */
+/* Filter chips run on the canonical domain only. Sub-labels like
+   "MUSIC · UNDERGROUND RAP" are kept for display but never become their own chip —
+   that's what turned this row into 40-odd ragged buttons. */
+const DOMAIN_ALIAS={INTERNET:"SCENE","CREATOR-AI":"TECH","PUBLIC ART":"ART",PHOTOGRAPHY:"ART"};
+const DOMAINS=["ARCHITECTURE","ART","BOOKS","CRAFT","DESIGN","EDITORIAL","FASHION",
+  "FILM","GAMES","IDEAS","MUSIC","SCENE","SPORT","TECH","TV"];
+function canonDomain(s){
+  let h=String(s||"").split(/[·|\/]/)[0].trim().toUpperCase();
+  h=DOMAIN_ALIAS[h]||h;
+  return DOMAINS.includes(h)?h:h;
+}
+
 let BENCH_MAP=[];
 function benchNorm(s){
   return String(s).normalize("NFKD").replace(/[\u0300-\u036f]/g,"")
@@ -628,7 +648,7 @@ function renderCover(){
   document.getElementById("features").innerHTML = rest.map(e=>`
     <article class="feat">
       ${artHtml(e,"feat")}
-      <div class="dom">${esc(String(e.domain||"").toUpperCase())}</div>
+      <div class="dom">${esc(String(e.domain_detail||e.domain||"").toUpperCase())}</div>
       <h4>${linkName(e)}</h4>
       <div class="dek">${esc(e.read||"")}</div>
       ${railHtml(e)}
@@ -654,7 +674,7 @@ function build(){
     (iss.entries||[]).forEach(e=>{
       const flags=cleanFlags(e.flags);
       RECORDS.push({
-        type:"index", name:e.name, domain:e.domain||"", score:e.score,
+        type:"index", name:e.name, domain:canonDomain(e.domain), domainFull:(e.domain_detail||e.domain||""), score:e.score,
         tier:e.tier||"", heat:e.heat||0, direction:e.direction||"flat",
         flags:flags,
         date:iss.date, time:iss.time||"", climate:iss.climate||iss.forecast||"",
@@ -675,10 +695,18 @@ function build(){
   });
 }
 
-function domains(){return [...new Set(RECORDS.filter(r=>r.type==="index").map(r=>r.domain).filter(Boolean))].sort();}
+function domains(){
+  const c={};
+  RECORDS.filter(r=>r.type==="index"&&r.domain).forEach(r=>{c[r.domain]=(c[r.domain]||0)+1;});
+  return Object.entries(c).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]));
+}
 function tiers(){const order=["HEIRWAVE","CROWN","FLAME","TORCH","SPARK","NOISE"];
   const have=new Set(RECORDS.filter(r=>r.type==="index").map(r=>r.tier));return order.filter(t=>have.has(t));}
-function lanes(){return [...new Set(RECORDS.filter(r=>r.type==="canon"||r.type==="alumni").map(r=>r.lane).filter(Boolean))].sort();}
+function lanes(){
+  const c={};
+  RECORDS.filter(r=>(r.type==="canon"||r.type==="alumni")&&r.lane).forEach(r=>{c[r.lane]=(c[r.lane]||0)+1;});
+  return Object.entries(c).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]));
+}
 
 function matches(r){
   if(state.view==="index" && r.type!=="index") return false;
@@ -692,7 +720,7 @@ function matches(r){
     if(c.kind==="lane" && !((r.type==="canon"||r.type==="alumni") && r.lane===c.val)) return false;
   }
   if(state.q){
-    const hay=[r.name,r.domain,r.lane,r.tier,r.climate,r.read,r.benchmark,r.why,(r.flags||[]).join(" "),r.type]
+    const hay=[r.name,r.domain,r.domainFull,r.lane,r.tier,r.climate,r.read,r.benchmark,r.why,(r.flags||[]).join(" "),r.type]
       .filter(Boolean).join(" ").toLowerCase();
     if(!hay.includes(state.q.toLowerCase())) return false;
   }
@@ -731,7 +759,7 @@ function cardIndex(r){
       <span class="score">${Number(r.score).toFixed(1)}</span>
       <span class="tier ${tc}">${esc(r.tier)}</span>
       ${flags}
-      <span class="dom">${esc(r.domain)}</span>
+      <span class="dom">${esc(r.domainFull||r.domain)}</span>
       <span class="heatwrap"><span>HEAT ${r.heat}</span>
         <span class="heatbar"><span class="heatfill" style="width:${Math.min(100,r.heat)}%"></span></span>
         <span class="dir ${d.c}">${d.g}</span></span>
@@ -773,16 +801,25 @@ function cardAlumni(r){
 }
 
 function renderChips(){
-  const wrap=document.getElementById("chips"); let html="";
+  const wrap=document.getElementById("chips");
+  const row=(label,html)=>html?`<div class="chiprow"><span class="chiplbl">${label}</span><span class="chipset">${html}</span></div>`:"";
+  const n=v=>`<span class="n">${v}</span>`;
+  let html="";
   if(state.view==="canon"||state.view==="alumni"){
-    lanes().forEach(l=>{const on=state.chip&&state.chip.kind==="lane"&&state.chip.val===l;
-      html+=`<button class="chip lane ${on?"on":""}" data-kind="lane" data-val="${esc(l)}">${esc(l)}</button>`;});
+    html+=row("LANE", lanes().map(([l,c])=>{
+      const on=state.chip&&state.chip.kind==="lane"&&state.chip.val===l;
+      return `<button class="chip lane ${on?"on":""}" data-kind="lane" data-val="${esc(l)}">${esc(l)}${n(c)}</button>`;
+    }).join(""));
   } else {
-    html+=`<button class="chip find ${state.find?"on":""}" data-kind="find">◆ FINDS ONLY</button>`;
-    tiers().forEach(t=>{const on=state.chip&&state.chip.kind==="tier"&&state.chip.val===t;
-      html+=`<button class="chip tier ${on?"on":""}" data-kind="tier" data-val="${esc(t)}">${esc(t)}</button>`;});
-    domains().forEach(dm=>{const on=state.chip&&state.chip.kind==="dom"&&state.chip.val===dm;
-      html+=`<button class="chip dom ${on?"on":""}" data-kind="dom" data-val="${esc(dm)}">${esc(dm)}</button>`;});
+    html+=row("SHOW", `<button class="chip find ${state.find?"on":""}" data-kind="find">◆ FINDS ONLY</button>`);
+    html+=row("TIER", tiers().map(t=>{
+      const on=state.chip&&state.chip.kind==="tier"&&state.chip.val===t;
+      return `<button class="chip tier ${on?"on":""}" data-kind="tier" data-val="${esc(t)}">${esc(t)}</button>`;
+    }).join(""));
+    html+=row("DOMAIN", domains().map(([dm,c])=>{
+      const on=state.chip&&state.chip.kind==="dom"&&state.chip.val===dm;
+      return `<button class="chip dom ${on?"on":""}" data-kind="dom" data-val="${esc(dm)}">${esc(dm)}${n(c)}</button>`;
+    }).join(""));
   }
   wrap.innerHTML=html;
 }
