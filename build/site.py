@@ -98,6 +98,8 @@ letter-spacing:.12em;color:var(--mut);margin-left:auto}}
 .dir{{font-size:11px}}.dir.u{{color:var(--green)}}.dir.d{{color:var(--red)}}.dir.f{{color:var(--mut)}}
 .bench{{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--mut);margin-top:16px}}
 .bench b{{color:var(--sand);font-weight:500}}
+.benchlink{{color:var(--sand);text-decoration:none;border-bottom:1px dotted #5a5446;transition:.15s}}
+.benchlink:hover{{color:var(--yellow2);border-bottom-color:var(--yellow2)}}
 .src{{display:inline-block;margin-top:22px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;
 color:var(--yellow);border:1px solid #4a3f22;border-radius:4px;padding:10px 16px;text-decoration:none}}
 .src:hover{{color:var(--yellow2);border-color:var(--yellow2)}}
@@ -141,8 +143,38 @@ Read against <a href="/#the50">THE 50</a> — the canon and the gate.</footer>
 </body></html>
 """
 
+
+def bench_map(canon):
+    """A benchmark names somebody on THE 50 — build a longest-match lookup so the
+    name is clickable on the permalink page too."""
+    out=[]
+    for grp in (canon.get("entries") or [], canon.get("alumni") or []):
+        for c in grp:
+            k=bench_norm(c.get("name",""))
+            if c.get("url") and len(k)>=4: out.append((k, c["name"], c["url"]))
+    out.sort(key=lambda t: -len(t[0]))
+    return out
+
+def bench_norm(s):
+    s = unicodedata.normalize("NFKD", str(s))
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
+
+def bench_html(b, bmap):
+    if not b: return ""
+    hay = " " + bench_norm(b) + " "
+    for k, name, url in bmap:
+        if (" " + k + " ") in hay:
+            i = b.lower().find(name.lower())
+            a = ('<a class="benchlink" href="%s" target="_blank" rel="noopener" '
+                 'title="On THE MUSA 50">%s</a>') % (e(url), e(name))
+            return a if i < 0 else e(b[:i]) + a + e(b[i+len(name):])
+    return e(b)
+
 def build(commit_slugs=True):
     led = json.load(open(os.path.join(ROOT, "ledger.json"), encoding="utf-8"))
+    canon = json.load(open(os.path.join(ROOT, "musa-50.json"), encoding="utf-8"))
+    bmap = bench_map(canon)
     heir = open(os.path.join(ROOT, "build", "heirwave.svg"), encoding="utf-8").read()
     paths = re.findall(r'<path[^>]*d="([^"]+)"', heir)
     heir_defs = "".join('<path fill="currentColor" d="%s"/>' % d for d in paths)
@@ -193,7 +225,7 @@ def build(commit_slugs=True):
         d = en.get("direction","flat")
         art = ('<figure class="art"><img src="%s" alt="%s" loading="lazy"></figure>' % (e(en["image"]), e(en.get("name","")))) if en.get("image") else ""
         srclink = ('<a class="src" href="%s" target="_blank" rel="noopener">GO TO THE SOURCE ↗</a>' % e(en["url"])) if en.get("url") else ""
-        bench = ('<div class="bench">BENCHMARK IN THE 50 · <b>%s</b></div>' % e(en["benchmark"])) if en.get("benchmark") else ""
+        bench = ('<div class="bench">BENCHMARK IN THE 50 · <b>%s</b></div>' % bench_html(en["benchmark"], bmap)) if en.get("benchmark") else ""
         jsonld = json.dumps({
             "@context":"https://schema.org","@type":"Article",
             "headline": en.get("name",""), "description": desc,

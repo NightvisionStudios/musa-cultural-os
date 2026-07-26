@@ -219,6 +219,9 @@ border:1px solid var(--line);border-radius:3px;padding:2px 6px;flex:none}
 .score{font-family:var(--serif);font-size:26px;line-height:1}
 .lane{font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:var(--sand);
 border:1px solid #3a3526;border-radius:3px;padding:3px 8px;margin-left:auto;flex:none}
+.benchlink{color:var(--sand);text-decoration:none;border-bottom:1px dotted #5a5446;transition:.15s}
+.benchlink:hover{color:var(--yellow2);border-bottom-color:var(--yellow2)}
+.byline .benchlink{color:var(--sand)}
 .canline{font-family:var(--mono);font-size:10px;color:var(--mut);margin-top:9px;letter-spacing:.04em;line-height:1.7}
 .canline a{color:var(--yellow);text-decoration:none}.canline a:hover{color:var(--yellow2)}
 .xp{display:none;margin-top:11px;padding-top:11px;border-top:1px solid var(--line)}
@@ -552,6 +555,30 @@ function railHtml(r){
 /* Headlines go to the entry's own page — that page carries the OG card and links
    out to the source. Canon/alumni have no page, so they still link straight out. */
 function permalink(r){ return r.slug ? `/i/${r.slug}/` : ""; }
+/* A benchmark names somebody on THE 50. Resolve it against the live canon so the
+   name is clickable wherever it appears — longest match wins, and a benchmark that
+   is prose rather than a name ("the literary-craft lane of the 50") stays plain. */
+let BENCH_MAP=[];
+function benchNorm(s){
+  return String(s).normalize("NFKD").replace(/[\u0300-\u036f]/g,"")
+    .toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+}
+function buildBenchMap(){
+  BENCH_MAP=[];
+  const add=(n,u)=>{const k=benchNorm(n); if(u&&k.length>=4) BENCH_MAP.push({k,name:n,url:u});};
+  (CANON.entries||[]).forEach(e=>add(e.name,e.url));
+  (CANON.alumni||[]).forEach(a=>add(a.name,a.url));
+  BENCH_MAP.sort((a,b)=>b.k.length-a.k.length);
+}
+function benchLink(b){
+  if(!b) return "";
+  const hay=" "+benchNorm(b)+" ";
+  const hit=BENCH_MAP.find(m=>hay.includes(" "+m.k+" "));
+  if(!hit) return esc(b);
+  const i=b.toLowerCase().indexOf(hit.name.toLowerCase());
+  const a=`<a class="benchlink" href="${esc(hit.url)}" target="_blank" rel="noopener" title="On THE MUSA 50" onclick="event.stopPropagation()">${esc(hit.name)}</a>`;
+  return i<0 ? a : esc(b.slice(0,i))+a+esc(b.slice(i+hit.name.length));
+}
 function linkName(r){
   const p=permalink(r);
   if(p)     return `<a href="${p}">${esc(r.name)}</a>`;
@@ -587,7 +614,7 @@ function renderCover(){
       <h3>${linkName(lead)}</h3>
       <div class="dek">${esc(lead.read||"")}</div>
       ${railHtml(lead)}
-      <div class="byline">${lead.benchmark?`BENCHMARK IN THE 50 · <b>${esc(lead.benchmark)}</b>`:""}${lead.url?` &nbsp;·&nbsp; ${sourceLink(lead)}`:""}</div>
+      <div class="byline">${lead.benchmark?`BENCHMARK IN THE 50 · <b>${benchLink(lead.benchmark)}</b>`:""}${lead.url?` &nbsp;·&nbsp; ${sourceLink(lead)}`:""}</div>
     </div>`;
 
   const up=(iss.come_up||[]), dn=(iss.decline||[]);
@@ -605,7 +632,7 @@ function renderCover(){
       <h4>${linkName(e)}</h4>
       <div class="dek">${esc(e.read||"")}</div>
       ${railHtml(e)}
-      <div class="byline">${e.benchmark?`BENCHMARK · <b>${esc(e.benchmark)}</b>`:""}${e.url?` &nbsp;·&nbsp; ${sourceLink(e)}`:""}</div>
+      <div class="byline">${e.benchmark?`BENCHMARK · <b>${benchLink(e.benchmark)}</b>`:""}${e.url?` &nbsp;·&nbsp; ${sourceLink(e)}`:""}</div>
     </article>`).join("");
 }
 
@@ -712,7 +739,7 @@ function cardIndex(r){
     <div class="xhint">TAP TO READ →</div>
     <div class="xp">
       <div class="xread">${r.read?esc(r.read):`<span class="nrec">— original taste read not recovered for this issue —</span>`}</div>
-      ${r.benchmark?`<div class="xbench"><b>BENCHMARK:</b> ${esc(r.benchmark)}</div>`:""}
+      ${r.benchmark?`<div class="xbench"><b>BENCHMARK:</b> ${benchLink(r.benchmark)}</div>`:""}
       ${previewHtml}
       <div class="xlinks">${r.slug?`<a class="readbtn" href="/i/${r.slug}/">READ THE FULL ENTRY →</a>`:""}${sourceLink(r)}</div>
       ${swapHtml}
@@ -782,7 +809,7 @@ function render(){
     ? `<button class="morebtn" id="morebtn">SHOW ${Math.min(left,PAGE)} MORE · ${left} LEFT</button>` : "";
 }
 
-function renderAll(){ build(); renderCover(); renderCanonRail(); render(); }
+function renderAll(){ buildBenchMap(); build(); renderCover(); renderCanonRail(); render(); }
 
 /* ── EVENTS ────────────────────────────────────────────── */
 document.getElementById("results").addEventListener("click",e=>{
