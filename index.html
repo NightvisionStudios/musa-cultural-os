@@ -744,7 +744,7 @@ function render(){
   const aluTotal=RECORDS.filter(r=>r.type==="alumni").length;
   const issues=(LEDGER.issues||[]).length;
   document.getElementById("stat").innerHTML =
-    `<b>${shown.length}</b> shown · <span class="a">${idxTotal}</span> reads across <b>${issues}</b> issues · <span class="a">${canTotal}</span> on the 50${aluTotal?` · <span class="a">${aluTotal}</span> alumni`:""}`;
+    `<b>${shown.length}</b> in view · <span class="a">${idxTotal}</span> reads across <b>${issues}</b> issues · <span class="a">${canTotal}</span> on the 50${aluTotal?` · <span class="a">${aluTotal}</span> alumni`:""}`;
   const res=document.getElementById("results");
   if(!shown.length){res.innerHTML=`<div class="empty">— nothing in the archive matches —</div>`;
     document.getElementById("more").innerHTML="";return;}
