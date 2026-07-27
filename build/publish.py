@@ -8,6 +8,7 @@ Writes the slug back onto each ledger entry so the magazine can link to it."""
 import json, os, re, sys, unicodedata, html, shutil
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import cards
+import share
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 BASE = "https://archive.themusafamily.com"
@@ -155,7 +156,8 @@ footer b{{font-family:var(--mono);font-size:9px;color:#b8b09c;letter-spacing:.2e
 <div class="also"><div class="lbl">ALSO IN <a class="isslink" href="/issues/#i{issue}">ISSUE {issue}</a></div>{also}</div>
 <footer><b>THE MUSA FAMILY · HEIRWAVE</b>
 Scores and heat are editorial taste reads, not metrics. Every call is dated, kept, and never quietly rewritten.
-Read against <a href="/#the50">THE 50</a> — the canon and the gate. Browse <a href="/issues/">every issue</a>.</footer>
+Read against <a href="/#the50">THE 50</a> — the canon and the gate. Browse <a href="/issues/">every issue</a>
+or grab the <a href="/share/">share cards</a>.</footer>
 <script>
 (function(){{
   var b=document.getElementById("goback");
@@ -308,7 +310,8 @@ footer b{{font-family:var(--mono);font-size:9px;color:#b8b09c;letter-spacing:.2e
 {rows}
 <footer><b>THE MUSA FAMILY · HEIRWAVE</b>
 Scores and heat are editorial taste reads, not metrics. Every call is dated, kept, and never quietly rewritten.
-Read against <a href="/#the50">THE 50</a> — the canon and the gate.</footer>
+Read against <a href="/#the50">THE 50</a> — the canon and the gate.
+Every call is also cut as a <a href="/share/">share card</a>.</footer>
 </body></html>
 """
 
@@ -462,6 +465,10 @@ def build(commit_slugs=True):
     open(os.path.join(issdir, "index.html"), "w", encoding="utf-8").write(
         ISSUES_PAGE.format(base=BASE, count=len(issues), calls=calls,
                            heir=heir_defs, rows="\n".join(rows)))
+
+    # ── /share/ — the card room: every call as a ready-to-post image ──
+    ncards = share.build_share(led, heir_defs, ROOT)
+    print("share cards listed: %d" % ncards)
 
     # sitemap + robots
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
