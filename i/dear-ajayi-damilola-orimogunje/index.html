@@ -70,6 +70,12 @@ letter-spacing:.12em;color:var(--mut);margin-left:auto}
 .src{display:inline-block;margin-top:22px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;
 color:var(--yellow);border:1px solid #4a3f22;border-radius:4px;padding:10px 16px;text-decoration:none}
 .src:hover{color:var(--yellow2);border-color:var(--yellow2)}
+.goback{display:block;width:fit-content;margin-top:14px;font-family:var(--mono);font-size:10px;
+letter-spacing:.16em;color:var(--mut);border:1px solid var(--line);border-radius:4px;
+padding:10px 16px;text-decoration:none;transition:.15s}
+.goback:hover{color:var(--fg);border-color:#4a463c}
+.isslink{color:var(--amber);text-decoration:none;border-bottom:1px dotted #3a2f1c}
+.isslink:hover{color:var(--yellow2);border-bottom-color:var(--yellow2)}
 .also{margin-top:52px;border-top:1px solid var(--line);padding-top:20px}
 .also .lbl{font-family:var(--mono);font-size:9px;letter-spacing:.22em;color:var(--mut);margin-bottom:14px}
 .also a{display:block;font-family:var(--serif);font-size:19px;color:var(--fg2);text-decoration:none;
@@ -132,8 +138,21 @@ footer b{font-family:var(--mono);font-size:9px;color:#b8b09c;letter-spacing:.2em
 </div>
 <div class="bench">BENCHMARK IN THE 50 · <b><a class="benchlink" href="https://blackfilmarchive.com/" target="_blank" rel="noopener" title="On THE MUSA 50">Black Film Archive</a> (editorial-taste — the Black cinematic record built and kept by the people it belongs to)</b></div>
 <a class="src" href="https://whatkeptmeup.com/nigerian-film-news/damilola-orimogunjes-dear-ajayi-sets-world-premiere-at-venice-2026/" target="_blank" rel="noopener">GO TO THE SOURCE ↗</a>
-<div class="also"><div class="lbl">ALSO IN ISSUE 29</div><a href="/i/widline-cadet-seremoni-disparisyon/">Widline Cadet — Seremoni Disparisyon<span>ART · 8.8</span></a><a href="/i/cosmos-lucia-odoom/">Cosmos — Lucia Odoom<span>BOOKS · 8.3</span></a><a href="/i/record-culture-issue-11/">Record Culture — Issue 11<span>EDITORIAL · 8.0</span></a><a href="/i/gangrene-better-than-mcdonald-s/">Gangrene — Better Than McDonald&#x27;s<span>MUSIC · 7.2</span></a></div>
+<a class="goback" id="goback" href="/">← BACK TO THE ARCHIVE</a>
+<div class="also"><div class="lbl">ALSO IN <a class="isslink" href="/issues/#i29">ISSUE 29</a></div><a href="/i/widline-cadet-seremoni-disparisyon/">Widline Cadet — Seremoni Disparisyon<span>ART · 8.8</span></a><a href="/i/cosmos-lucia-odoom/">Cosmos — Lucia Odoom<span>BOOKS · 8.3</span></a><a href="/i/record-culture-issue-11/">Record Culture — Issue 11<span>EDITORIAL · 8.0</span></a><a href="/i/gangrene-better-than-mcdonald-s/">Gangrene — Better Than McDonald&#x27;s<span>MUSIC · 7.2</span></a></div>
 <footer><b>THE MUSA FAMILY · HEIRWAVE</b>
 Scores and heat are editorial taste reads, not metrics. Every call is dated, kept, and never quietly rewritten.
-Read against <a href="/#the50">THE 50</a> — the canon and the gate.</footer>
+Read against <a href="/#the50">THE 50</a> — the canon and the gate. Browse <a href="/issues/">every issue</a>.</footer>
+<script>
+(function(){
+  var b=document.getElementById("goback");
+  if(!b||!document.referrer||history.length<2) return;
+  try{
+    var r=new URL(document.referrer);
+    if(r.origin!==location.origin||r.href===location.href) return;
+  }catch(e){ return; }
+  b.textContent="\u2190 BACK";
+  b.addEventListener("click",function(ev){ev.preventDefault();history.back();});
+})();
+</script>
 </body></html>

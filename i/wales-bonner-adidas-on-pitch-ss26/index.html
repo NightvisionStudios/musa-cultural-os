@@ -70,6 +70,12 @@ letter-spacing:.12em;color:var(--mut);margin-left:auto}
 .src{display:inline-block;margin-top:22px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;
 color:var(--yellow);border:1px solid #4a3f22;border-radius:4px;padding:10px 16px;text-decoration:none}
 .src:hover{color:var(--yellow2);border-color:var(--yellow2)}
+.goback{display:block;width:fit-content;margin-top:14px;font-family:var(--mono);font-size:10px;
+letter-spacing:.16em;color:var(--mut);border:1px solid var(--line);border-radius:4px;
+padding:10px 16px;text-decoration:none;transition:.15s}
+.goback:hover{color:var(--fg);border-color:#4a463c}
+.isslink{color:var(--amber);text-decoration:none;border-bottom:1px dotted #3a2f1c}
+.isslink:hover{color:var(--yellow2);border-bottom-color:var(--yellow2)}
 .also{margin-top:52px;border-top:1px solid var(--line);padding-top:20px}
 .also .lbl{font-family:var(--mono);font-size:9px;letter-spacing:.22em;color:var(--mut);margin-bottom:14px}
 .also a{display:block;font-family:var(--serif);font-size:19px;color:var(--fg2);text-decoration:none;
@@ -132,8 +138,21 @@ footer b{font-family:var(--mono);font-size:9px;color:#b8b09c;letter-spacing:.2em
 </div>
 
 <a class="src" href="https://walesbonner.com/collections/adidas-originals-by-wales-bonner" target="_blank" rel="noopener">GO TO THE SOURCE ↗</a>
-<div class="also"><div class="lbl">ALSO IN ISSUE 12</div><a href="/i/space-afrika/">Space Afrika<span>MUSIC · 8.7</span></a><a href="/i/pan-african-biennale-nairobi/">Pan-African Biennale — Nairobi<span>ARCHITECTURE · 8.3</span></a><a href="/i/black-owned-bookstore-resurgence/">Black-Owned Bookstore Resurgence<span>BOOKS · 8.0</span></a><a href="/i/the-chi-final-season/">The Chi — Final Season<span>TV · 6.6</span></a></div>
+<a class="goback" id="goback" href="/">← BACK TO THE ARCHIVE</a>
+<div class="also"><div class="lbl">ALSO IN <a class="isslink" href="/issues/#i12">ISSUE 12</a></div><a href="/i/space-afrika/">Space Afrika<span>MUSIC · 8.7</span></a><a href="/i/pan-african-biennale-nairobi/">Pan-African Biennale — Nairobi<span>ARCHITECTURE · 8.3</span></a><a href="/i/black-owned-bookstore-resurgence/">Black-Owned Bookstore Resurgence<span>BOOKS · 8.0</span></a><a href="/i/the-chi-final-season/">The Chi — Final Season<span>TV · 6.6</span></a></div>
 <footer><b>THE MUSA FAMILY · HEIRWAVE</b>
 Scores and heat are editorial taste reads, not metrics. Every call is dated, kept, and never quietly rewritten.
-Read against <a href="/#the50">THE 50</a> — the canon and the gate.</footer>
+Read against <a href="/#the50">THE 50</a> — the canon and the gate. Browse <a href="/issues/">every issue</a>.</footer>
+<script>
+(function(){
+  var b=document.getElementById("goback");
+  if(!b||!document.referrer||history.length<2) return;
+  try{
+    var r=new URL(document.referrer);
+    if(r.origin!==location.origin||r.href===location.href) return;
+  }catch(e){ return; }
+  b.textContent="\u2190 BACK";
+  b.addEventListener("click",function(ev){ev.preventDefault();history.back();});
+})();
+</script>
 </body></html>

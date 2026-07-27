@@ -107,6 +107,12 @@ letter-spacing:.12em;color:var(--mut);margin-left:auto}}
 .src{{display:inline-block;margin-top:22px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;
 color:var(--yellow);border:1px solid #4a3f22;border-radius:4px;padding:10px 16px;text-decoration:none}}
 .src:hover{{color:var(--yellow2);border-color:var(--yellow2)}}
+.goback{{display:block;width:fit-content;margin-top:14px;font-family:var(--mono);font-size:10px;
+letter-spacing:.16em;color:var(--mut);border:1px solid var(--line);border-radius:4px;
+padding:10px 16px;text-decoration:none;transition:.15s}}
+.goback:hover{{color:var(--fg);border-color:#4a463c}}
+.isslink{{color:var(--amber);text-decoration:none;border-bottom:1px dotted #3a2f1c}}
+.isslink:hover{{color:var(--yellow2);border-bottom-color:var(--yellow2)}}
 .also{{margin-top:52px;border-top:1px solid var(--line);padding-top:20px}}
 .also .lbl{{font-family:var(--mono);font-size:9px;letter-spacing:.22em;color:var(--mut);margin-bottom:14px}}
 .also a{{display:block;font-family:var(--serif);font-size:19px;color:var(--fg2);text-decoration:none;
@@ -145,10 +151,23 @@ footer b{{font-family:var(--mono);font-size:9px;color:#b8b09c;letter-spacing:.2e
 </div>
 {bench}
 {srclink}
-<div class="also"><div class="lbl">ALSO IN ISSUE {issue}</div>{also}</div>
+<a class="goback" id="goback" href="/">← BACK TO THE ARCHIVE</a>
+<div class="also"><div class="lbl">ALSO IN <a class="isslink" href="/issues/#i{issue}">ISSUE {issue}</a></div>{also}</div>
 <footer><b>THE MUSA FAMILY · HEIRWAVE</b>
 Scores and heat are editorial taste reads, not metrics. Every call is dated, kept, and never quietly rewritten.
-Read against <a href="/#the50">THE 50</a> — the canon and the gate.</footer>
+Read against <a href="/#the50">THE 50</a> — the canon and the gate. Browse <a href="/issues/">every issue</a>.</footer>
+<script>
+(function(){{
+  var b=document.getElementById("goback");
+  if(!b||!document.referrer||history.length<2) return;
+  try{{
+    var r=new URL(document.referrer);
+    if(r.origin!==location.origin||r.href===location.href) return;
+  }}catch(e){{ return; }}
+  b.textContent="\\u2190 BACK";
+  b.addEventListener("click",function(ev){{ev.preventDefault();history.back();}});
+}})();
+</script>
 </body></html>
 """
 
@@ -207,6 +226,92 @@ def normalise_issue_numbers(led):
         if iss.get("issue") != n:
             iss["issue"] = n; fixed += 1
     return fixed
+
+ISSUES_PAGE = """<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Every Issue — MUSA · The Index</title>
+<link rel="canonical" href="{base}/issues/">
+<meta name="description" content="{count} issues of THE INDEX, newest first. Every call dated, kept, and scored against THE MUSA 50.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MUSA — The Index">
+<meta property="og:title" content="Every Issue — THE INDEX">
+<meta property="og:description" content="{count} issues of THE INDEX, newest first. Every call dated, kept, and scored against THE MUSA 50.">
+<meta property="og:url" content="{base}/issues/">
+<meta property="og:image" content="{base}/cards/home-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Every Issue — THE INDEX">
+<meta name="twitter:description" content="{count} issues of THE INDEX, newest first.">
+<meta name="twitter:image" content="{base}/cards/home-og.jpg">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif&family=Newsreader:opsz,wght@6..72,300;6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{{--bg:#0a0a0a;--line:#26241f;--fg:#f2ead5;--fg2:#d6cdb8;--mut:#8c887e;--mut2:#6d6a62;
+--green:#3fb56b;--red:#e4533a;--amber:#e8c96d;--sand:#cdbf99;--yellow2:#fff2a0;
+--serif:"Instrument Serif",Georgia,serif;--text:"Newsreader",Georgia,serif;
+--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;}}
+*{{box-sizing:border-box;margin:0;padding:0}}
+html,body{{background:var(--bg);color:var(--fg);font-family:var(--mono);-webkit-font-smoothing:antialiased}}
+body{{max-width:760px;margin:0 auto;padding:22px 20px 70px;position:relative;overflow-x:hidden}}
+body::before{{content:"";position:fixed;inset:0;pointer-events:none;z-index:99;
+background:repeating-linear-gradient(0deg,rgba(255,255,255,.013) 0 1px,transparent 1px 3px)}}
+a{{color:inherit}}
+.masthead{{display:flex;align-items:center;gap:14px;padding-bottom:18px;border-bottom:1px solid var(--line)}}
+.mark{{width:42px;height:42px;color:var(--fg);flex:none}}
+.lockup{{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;transition:opacity .15s}}
+.lockup:hover{{opacity:.78}}
+.wordmark{{display:block;height:30px;width:auto}}
+.mh-sub{{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.32em;color:var(--mut);margin-top:6px}}
+.back{{margin-left:auto;font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--mut);text-decoration:none}}
+.back:hover{{color:var(--fg)}}
+h1{{font-family:var(--serif);font-size:clamp(30px,6vw,46px);line-height:1.13;font-weight:400;margin-top:34px}}
+.lede{{font-family:var(--text);font-size:18px;line-height:1.6;color:var(--fg2);margin-top:14px;max-width:56ch}}
+.tally{{font-family:var(--mono);font-size:9.5px;letter-spacing:.22em;color:var(--mut);margin-top:18px;
+padding-bottom:20px;border-bottom:1px solid var(--line)}}
+.iss{{padding:26px 0;border-bottom:1px solid var(--line);scroll-margin-top:20px}}
+.ihead{{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}}
+.ino{{font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--amber)}}
+.idate{{font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--mut)}}
+.iclim{{font-family:var(--text);font-size:16px;line-height:1.58;color:var(--fg2);margin-top:12px;max-width:62ch}}
+.ients{{margin-top:16px}}
+.ients a{{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;text-decoration:none;
+padding:9px 0;border-top:1px solid #1b1a17}}
+.ients a:first-child{{border-top:none}}
+.inm{{font-family:var(--serif);font-size:18px;color:var(--fg2);line-height:1.25}}
+.ients a:hover .inm{{color:var(--yellow2)}}
+.imeta{{margin-left:auto;font-family:var(--mono);font-size:9px;letter-spacing:.16em;color:var(--mut);white-space:nowrap}}
+.imeta .sc{{color:var(--sand)}}
+footer{{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;
+font-family:var(--text);font-size:14px;color:var(--mut);line-height:1.7}}
+footer b{{font-family:var(--mono);font-size:9px;color:#b8b09c;letter-spacing:.2em;display:block;margin-bottom:7px}}
+@media(max-width:520px){{.imeta{{margin-left:0;width:100%}}}}
+</style>
+</head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="heirwave-paths">{heir}</g></defs></svg>
+<header class="masthead">
+<a class="lockup" href="/" aria-label="MUSA — The Index, home">
+  <svg class="mark" viewBox="180 320 660 360" aria-hidden="true"><use href="#heirwave-paths"/></svg>
+  <span class="lock">
+    <img class="wordmark" src="/musa-wordmark.svg" alt="MUSA" width="104" height="30">
+    <span class="mh-sub">THE MUSA FAMILY · HEIRWAVE</span>
+  </span>
+</a>
+<a class="back" href="/">← THE INDEX</a>
+</header>
+<h1>Every Issue</h1>
+<div class="lede">The full run of THE INDEX, newest first. Five calls an issue, each one scored against THE 50 and kept exactly as it was made.</div>
+<div class="tally">{count} ISSUES &nbsp;·&nbsp; {calls} CALLS</div>
+{rows}
+<footer><b>THE MUSA FAMILY · HEIRWAVE</b>
+Scores and heat are editorial taste reads, not metrics. Every call is dated, kept, and never quietly rewritten.
+Read against <a href="/#the50">THE 50</a> — the canon and the gate.</footer>
+</body></html>
+"""
+
 
 def bench_map(canon):
     """A benchmark names somebody on THE 50 — build a longest-match lookup so the
@@ -331,10 +436,38 @@ def build(commit_slugs=True):
         lead = sorted(issues[0].get("entries", []), key=lambda x: x.get("rank", 99))[0]
         cards.og(lead, issues[0], os.path.join(carddir, "home-og.jpg"))
 
+    # ── /issues/ — the full run, newest first, one anchor per issue ──
+    rows = []; calls = 0
+    for iss in issues:
+        ents = sorted(iss.get("entries", []), key=lambda x: x.get("rank", 99))
+        calls += len(ents)
+        num = iss.get("issue", "")
+        climate = str(iss.get("climate") or iss.get("forecast") or "")
+        stamp = e(fmt_date(iss.get("date")))
+        if iss.get("time"): stamp += " &nbsp;·&nbsp; " + e(iss.get("time"))
+        lines = "".join(
+            '<a href="/i/%s/"><span class="inm">%s</span>'
+            '<span class="imeta">%s &nbsp;·&nbsp; <span class="sc">%.1f</span> %s</span></a>' % (
+                e(en.get("slug")), e(en.get("name")),
+                e(str(en.get("domain_detail") or en.get("domain", "")).upper()),
+                float(en.get("score", 0) or 0), e(str(en.get("tier", "") or "")))
+            for en in ents)
+        rows.append(
+            '<article class="iss" id="i%s">\n'
+            '<div class="ihead"><span class="ino">ISSUE %s</span><span class="idate">%s</span></div>\n'
+            '%s<div class="ients">%s</div>\n</article>'
+            % (e(num), e(num), stamp,
+               ('<div class="iclim">%s</div>' % e(climate)) if climate else "", lines))
+    issdir = os.path.join(ROOT, "issues"); os.makedirs(issdir, exist_ok=True)
+    open(os.path.join(issdir, "index.html"), "w", encoding="utf-8").write(
+        ISSUES_PAGE.format(base=BASE, count=len(issues), calls=calls,
+                           heir=heir_defs, rows="\n".join(rows)))
+
     # sitemap + robots
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-          '<url><loc>%s/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>' % BASE]
+          '<url><loc>%s/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>' % BASE,
+          '<url><loc>%s/issues/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>' % BASE]
     for u, dt in urls:
         sm.append('<url><loc>%s</loc>%s<priority>0.8</priority></url>' % (u, ("<lastmod>%s</lastmod>" % dt) if dt else ""))
     sm.append('</urlset>')
