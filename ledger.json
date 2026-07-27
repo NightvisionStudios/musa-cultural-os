@@ -3293,6 +3293,121 @@
           "slug": "liberty-the-fabric-hall"
         }
       ]
+    },
+    {
+      "issue": 36,
+      "issue_id": "2026-07-27-1801",
+      "date": "2026-07-27",
+      "time": "18:01 ET",
+      "forecast": "Five entries tonight, five people rendering ground they actually stand on: Port Antonio built in Unreal by two brothers from Port Antonio, New York parks mapped in drumless soul loops, 800-year-old Vietnamese bark paper worked in a New York studio, a synthesizer hand-built two units a month in a Polish town of ninety thousand. Authorship of place is doing what budget used to do — and the visitor's establishing shot is losing.",
+      "come_up": [
+        "Place rendered from the inside, not scouted",
+        "Whole pipeline held by two or three people",
+        "Material sourced from the last family still making it"
+      ],
+      "decline": [
+        "The establishing shot filmed by a visitor",
+        "Heritage borrowed as a colour palette",
+        "Scale offered as proof of seriousness"
+      ],
+      "climate": "Authorship of place — the field is paying for work made by people from the ground it depicts, and proximity is beating production budget.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Street Boy — Hemiogenic Studios",
+          "domain": "GAMES",
+          "domain_detail": "GAMES · CARIBBEAN OPEN-WORLD",
+          "url": "https://streetboyja.com/",
+          "image": "https://streetboyja.com/images/og-image.png",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 21,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "global-diaspora lane — One54, with the community-first specificity of MAWN Philly",
+          "read": "Two brothers, Akeem and Tyreik Pennicooke, building an open world out of Port Antonio — the parish they are from. Unreal Engine 5, sixteen players, and a map made of the back roads and coastline of Portland rather than a generic island. The detail that decides it: the dialogue is in Patois, the folklore is Rolling Calf and River Mumma rather than generic obeah set dressing, and vehicles are earned through a landmark hunt across Hope Bay instead of sold. There is a non-lethal path through the whole thing — missions completed by influence and community standing, not body count, which quietly refuses the only template the industry has ever offered a Caribbean setting. Private demo since March, still pre-launch, no publisher, wishlist-stage heat. The idea traces to a 2017 Jamaican documentary the brothers watched. Nine years later they are shipping it themselves.",
+          "verdict": "PENDING",
+          "slug": "street-boy-hemiogenic-studios"
+        },
+        {
+          "rank": 2,
+          "name": "Wiki — Ancient History",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · NY UNDERGROUND RAP",
+          "url": "https://music.apple.com/us/album/ancient-history/1896019015",
+          "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d3/6a/ee/d36aee47-89d9-d07c-6647-008fcb43ad34/5056818809286.png/1200x630wp-60.jpg",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 74,
+          "direction": "▮",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "underground-rap lane — Chris Crack, Kenny Mason",
+          "read": "First fully solo record in seven years, self-released through Wikset, and the beats mostly refuse to keep time — Alchemist grain under Navy Blue and MIKE's post-Earl drift, drums shed entirely in places so the music behaves like memory. \"Park\" is the thesis: a whole song about sitting in the grass watching the morning happen. Six weeks in and the room has fully arrived, so this is not a find — it is a correct consensus, logged as one. Worth the board anyway because the lineage is the point: he has spent a decade calling himself the bridge between boom-bap New York and the kids who came up abstract, and here the production roster proves it instead of him having to.",
+          "verdict": "PENDING",
+          "slug": "wiki-ancient-history"
+        },
+        {
+          "rank": 3,
+          "name": "SinTH2 — Tom Horn",
+          "domain": "CRAFT",
+          "domain_detail": "CRAFT · INSTRUMENT BUILDING",
+          "url": "https://sinth2.com/",
+          "image": "https://sinth2.com/wp-content/uploads/2026/07/IMG_9793.jpg",
+          "score": 7.9,
+          "tier": "FLAME",
+          "heat": 26,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "heritage-craft lane — Karhu, with the operator-tool utility of Koala Sampler",
+          "read": "Premiered 18 July. Sixty voices, five sample-based oscillators, three gigabytes of waveforms — and 120 potentiometers, one physical control per parameter, because the whole argument is that you should never open a menu to change a sound. Solid wood casing, Fatar keys, motion recording on every knob. Built in Piła by Tomasz Rożek and four people: a C++ developer, a panel technician, a carpenter, a graphic designer. Roughly two a month, made to order, colour and mechanics discussed individually, €5,800 to €6,999. You cannot buy it in a shop and they are explicit that they are not a shop. Unit 001 is the builder's own.",
+          "verdict": "PENDING",
+          "slug": "sinth2-tom-horn"
+        },
+        {
+          "rank": 4,
+          "name": "Vy Voi — Steffany Trần",
+          "domain": "DESIGN",
+          "domain_detail": "DESIGN · OBJECTS & LIGHTING",
+          "url": "https://www.wallpaper.com/design-interiors/vy-voi-steffany-tran-designer-profile",
+          "image": "https://cdn.mos.cms.futurecdn.net/fCzTJmEG3Tr2cDaqTtoWMN-1920-80.png",
+          "score": 7.7,
+          "tier": "FLAME",
+          "heat": 31,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "design-studio lane — Mertra, with the heritage-craft lineage of Tamera",
+          "read": "Refugee parents, childhood split between San José and Saigon, industrial design training, then Lippincott and Smart Design — and she left because the briefs were problems to solve rather than things to make. The Rễ Cây lamps use dó, a bark paper produced in Vietnam for over eight hundred years; she went and found one of the few families still making it. Shades shaped from traditional kites and folded banana leaves, ceramic bases glazed in the loose Vietnamese gesture she taught herself at a community centre. Next body of work is 17th-century lacquer. Her line — if we can covet moon jars and Japanese joinery, make room for this too.",
+          "verdict": "PENDING",
+          "slug": "vy-voi-steffany-tran"
+        },
+        {
+          "rank": 5,
+          "name": "Music Seen — Bandcamp Daily",
+          "domain": "EDITORIAL",
+          "domain_detail": "EDITORIAL · FILM MUSIC",
+          "url": "https://daily.bandcamp.com/music-seen/music-seen-1",
+          "image": "https://f4.bcbits.com/img/0046240604_171.jpg",
+          "score": 7.2,
+          "tier": "FLAME",
+          "heat": 14,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "editorial-taste lane — Black Film Archive, with the columnist authority of Monocle",
+          "read": "A new bimonthly column by Elle Carroll, addressed to the overlap between Bandcamp and Letterboxd — a readership that barely gets written for. Issue one runs on Marihiko Hara, who scored Kokuho and put a viola da gamba over the kabuki sequences instead of under them, then defended it: the film is about an artist, not about kabuki. Buried in it is the best thing on the page — Stockhausen answering a CD-R handed over in an autograph line with a letter warning him off sixths and kitsch, and a flat prediction that he would end up scoring films.",
+          "verdict": "PENDING",
+          "slug": "music-seen-bandcamp-daily"
+        }
+      ]
     }
   ],
   "holding": [
@@ -3520,6 +3635,36 @@
     {
       "name": "Liberty — The Fabric Hall",
       "first_issue": "2026-07-27-1152",
+      "first_date": "2026-07-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Street Boy — Hemiogenic Studios",
+      "first_issue": "2026-07-27-1801",
+      "first_date": "2026-07-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Wiki — Ancient History",
+      "first_issue": "2026-07-27-1801",
+      "first_date": "2026-07-27",
+      "resurfaced": []
+    },
+    {
+      "name": "SinTH2 — Tom Horn",
+      "first_issue": "2026-07-27-1801",
+      "first_date": "2026-07-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Vy Voi — Steffany Trần",
+      "first_issue": "2026-07-27-1801",
+      "first_date": "2026-07-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Music Seen — Bandcamp Daily",
+      "first_issue": "2026-07-27-1801",
       "first_date": "2026-07-27",
       "resurfaced": []
     }
