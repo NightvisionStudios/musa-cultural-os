@@ -291,9 +291,15 @@ def build(commit_slugs=True):
                 e(str(f).replace("_"," ")))
             for f in (en.get("flags") or []) if "BLADE" not in str(f).upper())
         d = en.get("direction","flat")
-        art = ('<figure class="art"><img src="%s" alt="%s" loading="lazy" '
+        # Rule 8: every entry carries art. Backfilled entries already point AT the mark, so their
+        # onerror never fires — apply the letterbox styling up front for those, not just on failure.
+        src = en.get("image") or MARK
+        is_mark = (src == MARK)
+        art = ('<figure class="art"><img src="%s" alt="%s" loading="lazy"%s '
                'onerror="this.onerror=null;this.src=\'%s\';this.style.objectFit=\'contain\';this.style.background=\'#0a0a0a\'"></figure>'
-               % (e(en.get("image") or MARK), e(en.get("name","")), MARK))
+               % (e(src), e(en.get("name","")),
+                  ' style="height:320px;object-fit:contain;background:#0a0a0a"' if is_mark else '',
+                  MARK))
         srclink = ('<a class="src" href="%s" target="_blank" rel="noopener">GO TO THE SOURCE ↗</a>' % e(en["url"])) if en.get("url") else ""
         bench = ('<div class="bench">BENCHMARK IN THE 50 · <b>%s</b></div>' % bench_html(en["benchmark"], bmap)) if en.get("benchmark") else ""
         jsonld = json.dumps({
