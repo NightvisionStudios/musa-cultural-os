@@ -2,7 +2,8 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-07-27"
+    "updated": "2026-07-27",
+    "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL."
   },
   "issues": [
     {
@@ -54,7 +55,8 @@
           "read": "Shuggie Bain Booker winner returns, Hebrides-set; craft over noise, quiet heat is the tell.",
           "benchmark": "literary-craft lane of the 50",
           "url": "https://groveatlantic.com/book/john-of-john/",
-          "slug": "douglas-stuart-john-of-john"
+          "slug": "douglas-stuart-john-of-john",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Charli XCX — The Moment",
@@ -69,7 +71,8 @@
           "read": "Real cultural object, but attention runs ahead of the work; influence-tier not depth-tier. Watch if heat converts or evaporates.",
           "benchmark": "orbits the pop-culture-engine lane without entering",
           "url": "https://en.wikipedia.org/wiki/The_Moment_(2026_film)",
-          "slug": "charli-xcx-the-moment"
+          "slug": "charli-xcx-the-moment",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Taste-as-Gatekeeping",
@@ -81,7 +84,8 @@
           "flags": [],
           "read": "The pivot from quiet luxury to expressive clarity and taste-as-currency; the climate the board sits inside — and the premise The Index runs on.",
           "benchmark": "the operating principle behind the 50, not a neighbor in it",
-          "slug": "taste-as-gatekeeping"
+          "slug": "taste-as-gatekeeping",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         }
       ],
       "issue_id": "2026-06-17-0638"
@@ -104,7 +108,8 @@
           ],
           "read": "The 2026 Pritzker, architecture's quietest radical. The tension: the prize sits under an Epstein-linked cloud; the work transcends the institution stamping it.",
           "url": "https://www.pritzkerprize.com/laureates/smiljan-radic-clarke",
-          "slug": "smiljan-radic"
+          "slug": "smiljan-radic",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Industry — S4",
@@ -165,7 +170,8 @@
           "flags": [],
           "read": "Full-cycle pivot off quiet luxury; layered, referential expression with archive/resale as the real flex — access over logo.",
           "benchmark": "the aesthetic shift the 50's design desks track",
-          "slug": "new-maximalism-archive-as-currency"
+          "slug": "new-maximalism-archive-as-currency",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         }
       ],
       "issue_id": "2026-06-17-0702"
@@ -227,7 +233,8 @@
           "direction": "flat",
           "flags": [],
           "heat_recovered": false,
-          "slug": "technical-mono-anti-design"
+          "slug": "technical-mono-anti-design",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "The 2016 Throwback",
@@ -239,7 +246,8 @@
           "flags": [],
           "read": "The disciplined bear call — nostalgia-cycle heat with nothing underneath it.",
           "heat_recovered": false,
-          "slug": "the-2016-throwback"
+          "slug": "the-2016-throwback",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         }
       ],
       "issue_id": "2026-06-18-2236"
@@ -263,7 +271,8 @@
           "graded": "2026-06-27",
           "note": "HELD — the monoculture-vs-fragmentation read held; heat stayed maxed. Room was correct.",
           "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
-          "slug": "fifa-world-cup-2026"
+          "slug": "fifa-world-cup-2026",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "JR — Pont Neuf",
@@ -306,7 +315,8 @@
           "flags": [
             "FIND"
           ],
-          "slug": "tech-spec"
+          "slug": "tech-spec",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Broadcast-to-Belonging",
@@ -316,7 +326,8 @@
           "heat": 62,
           "direction": "up",
           "flags": [],
-          "slug": "broadcast-to-belonging"
+          "slug": "broadcast-to-belonging",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         }
       ],
       "issue_id": "2026-06-20-0546"
@@ -401,7 +412,8 @@
           "flags": [],
           "benchmark": "Free Game / Players Magazine",
           "read": "Book-club-as-venue, gatekept by attention not money. Transmission gone physical.",
-          "slug": "the-reading-room"
+          "slug": "the-reading-room",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         }
       ],
       "issue_id": "2026-06-23-2356"
@@ -473,7 +485,8 @@
           ],
           "benchmark": "Corteiz / Barriers Worldwide / Denim Tears",
           "read": "Belonging outgrowing logos; small on the named brand, real on the engine.",
-          "slug": "diaspora-as-engine-caracas-merch"
+          "slug": "diaspora-as-engine-caracas-merch",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Mark Jenkin — Cornish-Trilogy Closer",
@@ -488,7 +501,8 @@
           "benchmark": "CD Masterizzato (cross-lane energy — analog craft as stance)",
           "read": "Hand-cranked 16mm, the analog grain is the point; arthouse-quiet, which is the gap.",
           "url": "https://en.wikipedia.org/wiki/Rose_of_Nevada",
-          "slug": "mark-jenkin-cornish-trilogy-closer"
+          "slug": "mark-jenkin-cornish-trilogy-closer",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         }
       ],
       "issue_id": "2026-06-25-0424"
@@ -527,7 +541,8 @@
           ],
           "heat_recovered": false,
           "url": "https://yayabey.bandcamp.com/album/fidelity",
-          "slug": "yaya-bey-fidelity"
+          "slug": "yaya-bey-fidelity",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Drunken Noodles",
@@ -571,7 +586,8 @@
           ],
           "heat_recovered": false,
           "url": "http://www.tia-clark.com/",
-          "slug": "t-clark-debut-collection"
+          "slug": "t-clark-debut-collection",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         }
       ],
       "issue_id": "2026-06-26-1048"
@@ -639,7 +655,8 @@
           ],
           "benchmark": "One54",
           "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams/cabo-verde/team-news",
-          "slug": "cape-verde-world-cup-run"
+          "slug": "cape-verde-world-cup-run",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Breadth Over Blockbuster",
@@ -650,7 +667,8 @@
           "direction": "up",
           "flags": [],
           "benchmark": "Free Game / Monocle",
-          "slug": "breadth-over-blockbuster"
+          "slug": "breadth-over-blockbuster",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         }
       ],
       "issue_id": "2026-06-27-1749"
@@ -687,7 +705,8 @@
           "heat_recovered": false,
           "read": "The one honest case where the heat is earned, not overdue.",
           "url": "https://www.adidas.com/us/wales_bonner",
-          "slug": "adidas-wales-bonner-ss26"
+          "slug": "adidas-wales-bonner-ss26",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "LACMA — Imagining Black Diasporas",
@@ -727,7 +746,8 @@
           "flags": [],
           "heat_recovered": false,
           "read": "Diaspora books + salon — no algorithm feeds you this shelf; lowest heat on the board.",
-          "slug": "loving-room"
+          "slug": "loving-room",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         }
       ],
       "issue_id": "2026-07-02-1054"
@@ -790,7 +810,8 @@
           "flags": [
             "FIND"
           ],
-          "slug": "the-nue-black-aesthetic"
+          "slug": "the-nue-black-aesthetic",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "House of Aama — Folk Grounds",
@@ -803,7 +824,8 @@
             "FIND"
           ],
           "url": "https://houseofaama.com/",
-          "slug": "house-of-aama-folk-grounds"
+          "slug": "house-of-aama-folk-grounds",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         }
       ],
       "issue_id": "2026-07-02-2315"
@@ -827,7 +849,8 @@
           "benchmark": "Denim Tears",
           "read": "Mid-career survey consolidating a decade of myth-rooted diasporic painting.",
           "url": "https://visit.mcachicago.org/exhibitions/firelei-baez-2/",
-          "slug": "firelei-baez"
+          "slug": "firelei-baez",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Pan-African Architecture Biennale",
@@ -873,7 +896,8 @@
           ],
           "benchmark": "Free Game",
           "read": "Internet essay on taste and AI — the discourse the Index runs inside.",
-          "slug": "tasteslop-nemesis-memos"
+          "slug": "tasteslop-nemesis-memos",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Nardos Imam — The Infinite Banquet",
@@ -912,7 +936,8 @@
           ],
           "read": "The room already knew this was canon; the World Cup just gave it a stage.",
           "url": "https://walesbonner.com/collections/adidas-originals-by-wales-bonner",
-          "slug": "wales-bonner-adidas-on-pitch-ss26"
+          "slug": "wales-bonner-adidas-on-pitch-ss26",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Space Afrika",
@@ -954,7 +979,8 @@
           "flags": [
             "FIND"
           ],
-          "slug": "black-owned-bookstore-resurgence"
+          "slug": "black-owned-bookstore-resurgence",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "The Chi — Final Season",
@@ -967,7 +993,8 @@
             "HEAT>WORK"
           ],
           "url": "https://www.paramountplus.com/shows/the-chi/",
-          "slug": "the-chi-final-season"
+          "slug": "the-chi-final-season",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         }
       ],
       "issue_id": "2026-07-04-1356"
@@ -991,7 +1018,8 @@
           "benchmark": "Black Film Archive",
           "read": "Aleshea Harris put her own play on screen — twin sisters, a debt of scars, revenge written in scripture cadence — and it opened in May to near silence. Two-time Tony winner Kara Young opposite Mallori Johnson, Sterling K. Brown and Janelle Monáe in the frame, and most critics still don't know it exists. The room missed a canon entry in real time.",
           "url": "https://en.wikipedia.org/wiki/Is_God_Is_(film)",
-          "slug": "is-god-is"
+          "slug": "is-god-is",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Vince Staples — Cry Baby",
@@ -1022,7 +1050,8 @@
           "benchmark": "Noname Book Club",
           "read": "A working master — Rollins Band, Defunkt, decades of sessions — tracing how Africa's musical inheritance became the operating system of everything on your speakers. Theory from inside the craft, not above it. The curator's textbook, priced like a quiet release.",
           "url": "https://www.hachettebookgroup.com/titles/melvin-gibbs/how-black-music-took-over-the-world/9781541603240/",
-          "slug": "melvin-gibbs-how-black-music-took-over-the-world"
+          "slug": "melvin-gibbs-how-black-music-took-over-the-world",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Nicholas Daley",
@@ -1185,7 +1214,8 @@
           "benchmark": "Project a Black Planet",
           "url": "https://camdenartcentre.org/whats-on/resistant-forms",
           "read": "Guyanese-British sculptor of the Windrush generation — biomorphic ceramics, the Plantation Series, Trophies of Empire — a whole grammar of post-war British sculpture the institutions skipped for fifty years. Camden Art Centre finally does the deep dive: 80-plus works, five decades. The room hasn't arrived; the correction is just starting and the work was never what was missing.",
-          "slug": "donald-locke-resistant-forms"
+          "slug": "donald-locke-resistant-forms",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Satluj — Honey Trehan",
@@ -1198,7 +1228,8 @@
           "benchmark": "One54",
           "url": "https://www.zee5.com/",
           "read": "Three years of certification war, 127 cut demands, forced retitles — then an uncut global stream July 3, and India's own platform deleted it from the domestic catalogue inside 48 hours. It's still up everywhere else: the diaspora is the distribution now. A film about a man who documented disappearances, getting disappeared — the ban is the co-sign.",
-          "slug": "satluj-honey-trehan"
+          "slug": "satluj-honey-trehan",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Navy Blue — Sir Render",
@@ -1258,7 +1289,8 @@
           "note": null,
           "graded": null,
           "read": "Ray Carney's last job. Whitehead closes the Harlem Trilogy in Reagan's New York — three stories, '81/'83/'86, skyscrapers rising over people sleeping in the tunnels beneath them. Two Pulitzers already banked and he spent the decade building a crime saga about a fence on 125th: the heist as archive, the archive as heist. PW calls it the greatest New York novel in years; for once the volume matches the work. Canon closing on its own terms.",
-          "slug": "colson-whitehead-cool-machine"
+          "slug": "colson-whitehead-cool-machine",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Zizipho Poswa — iMbewu (The Seed)",
@@ -1501,7 +1533,8 @@
           "benchmark": "Chris Crack (direct confirmation -- co-star on the 50)",
           "url": "https://rateyourmusic.com/release/ep/girl-talk-michael-christmas-chris-crack/dont-come-to-my-house-sharing-your-location/",
           "read": "A plunderphonics mashup veteran walking into underground rap's smallest room instead of sampling it from a distance. Pitchfork caught the announcement; the room hasn't caught the EP.",
-          "slug": "girl-talk-michael-christmas-and-chris-crack-don-t-come-to-my-hou"
+          "slug": "girl-talk-michael-christmas-and-chris-crack-don-t-come-to-my-hou",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png"
         },
         {
           "name": "Dijágo",
@@ -1646,7 +1679,7 @@
           "benchmark": "Black Film Archive (editorial-taste — memory & preservation as the whole point)",
           "url": "https://www.berlinale.de/en/2026/programme/202616228.html",
           "read": "Nine hours, thirty years, five parts. The L.A. Rebellion elder's first feature since <span class=\"a\">Teza</span> turns Italy's 1935 gas-and-fire invasion of Ethiopia into a ballad of refusal — archival footage, eyewitnesses, his own father's plays woven into one panorama of a nation that would not kneel. Berlinale handed him a career Camera in February; it reaches North America as BlackStar's closing night. Made to keep the record from being flattened.",
-          "image": "",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
           "slug": "haile-gerima-black-lions-roman-wolves"
         },
         {
@@ -1710,7 +1743,7 @@
           "benchmark": "Tamera (heritage-craft-product — a made object whose worth is its lineage, not its logo)",
           "url": "https://craftprize.loewe.com/en/craftprize2026",
           "read": "A quilt built as a sentence you have to learn to read. Ogunsanya draws freehand in cassava starch with a feather quill — <span class=\"a\">Adire Eleko</span>, a Yoruba technique going extinct as everyone else switches to stencils — sends the cloth to Kano's centuries-old Kofar Mata indigo pits, then beads the lines back by hand. The border speaks Yoruba proverbs. Cloth as archive, made to outlast the people erasing the method. Loewe shortlisted it; almost no one outside craft clocked it.",
-          "image": "",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
           "slug": "fadekemi-ogunsanya-we-are-not-lying-your-language-is-not-enough"
         }
       ],
@@ -1802,7 +1835,7 @@
           ],
           "benchmark": "Moises AI (creator-ai-tools — tools judged by what they hand the maker, not what they announce)",
           "url": "https://www.musicbusinessworldwide.com/record-industry-proposes-ai-labeling-system-for-streaming-platforms/",
-          "image": "",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
           "read": "Eight bodies (RIAA, IFPI, Recording Academy, SAG-AFTRA and others) proposed AI-Generated / AI-Assisted tags on Jul 10, riding DDEX. TIDAL cut royalty eligibility on wholly-AI tracks Jul 15. But it is voluntary and self-reported — a blank field travels as nothing. Deezer reports 44% of daily uploads machine-made. EU AI Act Article 50 lands Aug 2.",
           "verdict": "PENDING",
           "slug": "the-ai-label",
@@ -1991,7 +2024,7 @@
           ],
           "benchmark": "Derschutze (diasporic-fashion — a thesis-first label that makes the room come to it)",
           "url": "https://www.lvmh.com/en/news-lvmh/2026-lvmh-prize-for-young-fashion-designers-13th-edition",
-          "image": "",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
           "read": "Nairobi womenswear, and the first Kenyan label ever to reach the LVMH Prize final — 2,400 applicants cut to twenty at La Samaritaine, then to nine. Final is Sep 4 at the Fondation Louis Vuitton, jury stacked with Philo, Nigo, Anderson, Chiuri. Arnault's framing for this shortlist was craftsmanship, not novelty, which is the right read. The work is barely documented outside the shortlist itself — that thinness is both the find and the risk. Six weeks to see whether a Nairobi atelier gets the room on its own terms or gets absorbed by it.",
           "verdict": "PENDING",
           "slug": "yoshita-1967-anil-padia"
@@ -2051,7 +2084,7 @@
           ],
           "benchmark": "Players Magazine (editorial-taste — popular image-making held to the standard of canon)",
           "url": "https://www.rencontres-arles.com/en/expositions/2026/paul-kodjo",
-          "image": "",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
           "read": "Arles, La Croisière, through Oct 4 — the first major solo show in France for the Ivorian photographer, curated by Amandine Nana, co-produced with Palais de Tokyo. Back in Abidjan from 1970 he founded MAMEDIS, an avant-garde agency doing photography, cinema and publishing, and from 1971 ran photo-novels in the weekly Ivoire Dimanche — romantic comedies with twists that doubled as a record of a country building its own image. The negatives survive because Ananias Léki Dago's Rencontres du Sud spent fifteen years preserving them, with UCLA's Modern Endangered Archives Program picking it up in 2025. Kodjo died in 2021. The show is what fifteen unpaid years buys.",
           "verdict": "PENDING",
           "slug": "paul-kodjo-photoromance"
@@ -2083,7 +2116,7 @@
           ],
           "benchmark": "Koala Sampler (creator-ai-tools — hands the maker something and asks for nothing back)",
           "url": "https://celebrityaccess.com/2026/06/27/suno-launches-spark-program-to-help-independent-artists/",
-          "image": "",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
           "read": "An artist-development program from an AI music platform: grants, mentorship, marketing for unsigned singers, songwriters and producers releasing under their own names. Artists keep creative control, commercial rights, and their own distributor — all of that is real. Then the fine print bars participants from portraying Suno negatively \"during the Term and thereafter,\" with no end date. That is not artist development, that is buying silence at a discount, from exactly the people with the most standing to speak. HEAT>WORK — the announcement is louder than the offer.",
           "verdict": "PENDING",
           "slug": "suno-spark",
@@ -2275,7 +2308,7 @@
           ],
           "benchmark": "Karhu (heritage-craft-product — the material was always the argument; the market is just reading the tag)",
           "url": "https://www.businessoffashion.com/articles/sustainability/why-consumers-ditching-polyester-for-natural-fibres/",
-          "image": "",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
           "read": "Polyester became a lightning rod this month, shoppers across the political spectrum reading fibre labels over microplastics, heat, and quality. A mainstream consumer wave, which is why it scores where it does — but the room landed on what the craft end never stopped saying. Watch the greenwash reflex: recycled polyester and cotton blends are already being staged as the answer.",
           "verdict": "PENDING",
           "slug": "the-natural-fibre-turn",
@@ -2374,7 +2407,7 @@
           ],
           "benchmark": "Denim Tears (diasporic-fashion — the motif is the argument; without one you have a linkup)",
           "url": "https://www.complex.com/style/a/mike-destefano/best-streetwear-collabs-2026",
-          "image": "",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
           "read": "Supreme × MM6, NIGO's Air Force 1, Swatch × Audemars Piguet. Half of 2026's most-covered fashion moments are two logos occupying the same garment, reported as year-defining. A collab is a distribution trick, not an idea. The ones that last carry a thesis into the object. Heat is real and will stay real; the work underneath is thinner than the noise.",
           "verdict": "PENDING",
           "slug": "the-collab-ledger-2026-s-logo-swaps",
@@ -3088,7 +3121,7 @@
           "domain": "BOOKS",
           "domain_detail": "BOOKS · DIASPORIC MEMOIR",
           "url": "https://www.haymarketbooks.org/books/2756-tending-to-our-wounds",
-          "image": "https://cdn-ed.haymarketbooks.org/images/000008/571/9798888905951-a2cffb97f73574e9b7a532f6d2c20dd7.jpg20251202-66-pv03w1",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
           "score": 7.7,
           "tier": "FLAME",
           "heat": 36,
@@ -3126,7 +3159,7 @@
           "domain": "EDITORIAL",
           "domain_detail": "EDITORIAL · PRINT CULTURE",
           "url": "https://sfartbookfair.com/",
-          "image": "",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
           "score": 7.0,
           "tier": "FLAME",
           "heat": 64,

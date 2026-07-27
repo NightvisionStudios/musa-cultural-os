@@ -11,6 +11,7 @@ import cards
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 BASE = "https://archive.themusafamily.com"
+MARK = "https://archive.themusafamily.com/img/musa-mark.png"  # every entry carries art; missing/broken images fall back to the MUSA mark
 MONTHS=["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"]
 
 def slugify(s, maxlen=64):
@@ -290,7 +291,9 @@ def build(commit_slugs=True):
                 e(str(f).replace("_"," ")))
             for f in (en.get("flags") or []) if "BLADE" not in str(f).upper())
         d = en.get("direction","flat")
-        art = ('<figure class="art"><img src="%s" alt="%s" loading="lazy"></figure>' % (e(en["image"]), e(en.get("name","")))) if en.get("image") else ""
+        art = ('<figure class="art"><img src="%s" alt="%s" loading="lazy" '
+               'onerror="this.onerror=null;this.src=\'%s\';this.style.objectFit=\'contain\';this.style.background=\'#0a0a0a\'"></figure>'
+               % (e(en.get("image") or MARK), e(en.get("name","")), MARK))
         srclink = ('<a class="src" href="%s" target="_blank" rel="noopener">GO TO THE SOURCE ↗</a>' % e(en["url"])) if en.get("url") else ""
         bench = ('<div class="bench">BENCHMARK IN THE 50 · <b>%s</b></div>' % bench_html(en["benchmark"], bmap)) if en.get("benchmark") else ""
         jsonld = json.dumps({
