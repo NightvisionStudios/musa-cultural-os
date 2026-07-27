@@ -3173,6 +3173,121 @@
           "slug": "san-francisco-art-book-fair-2026"
         }
       ]
+    },
+    {
+      "issue": 35,
+      "issue_id": "2026-07-27-1152",
+      "date": "2026-07-27",
+      "time": "11:52 ET",
+      "forecast": "The field is paying for tools and objects that still carry a person's hand: a DAW that never phones home, a serif drawn off a tailor's chalk marks, a São Paulo crew trading dubplates with London. Making is the story again — which is exactly why the department store has arrived to sell it back to you.",
+      "come_up": [
+        "Local-first tools that ask for no account",
+        "A maker's own lineage used as the source file",
+        "Dubplate-style exchange over playlist export"
+      ],
+      "decline": [
+        "The cloud as the price of using a tool",
+        "Making treated as a merchandising category",
+        "The catalogue drop over one finished object"
+      ],
+      "climate": "Hand over pipeline — the tools and objects that keep a person's mark in them are where taste is concentrated, and the mainstream is now buying the tail of that shift.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Sastre — María Ramos",
+          "domain": "DESIGN",
+          "domain_detail": "DESIGN · TYPE",
+          "url": "https://sastre.nmtype.com",
+          "image": "https://www.creativeboom.com/upload/articles/cb/cb71ece960d8436e46702cc9067a6029c2a5982e_944.jpg",
+          "score": 8.5,
+          "tier": "CROWN",
+          "heat": 12,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "design-studio lane — Mason Prince, with the heritage-craft rigour of Karhu",
+          "read": "Eleven years. Ramos began Sastre as a student at Reading in 2014, and NM Type — the foundry she runs with Noel Pretorius — is only now putting it out. The letterforms come from the drawings her father made on fabric in the tailor's workshop her parents ran for more than forty years; the broken structure of those marks became the structure of the face. Five weights, a variable, 663 glyphs, and a set of 25 stitches that work as geometric shapes for building borders and patterns — the family trade shipped as a working typographic system rather than a mood board. Small caps are set monospaced, so the family carries a second voice inside it. Warde called type the clothes words wear; most designers quote the line. This one earned it, and it is arriving with almost no noise around it.",
+          "verdict": "PENDING",
+          "slug": "sastre-maria-ramos"
+        },
+        {
+          "rank": 2,
+          "name": "Congo Boy — Rafiki Fariala",
+          "domain": "FILM",
+          "domain_detail": "FILM · CENTRAL AFRICAN REPUBLIC",
+          "url": "https://www.ateliersvaran.com/en/article/congo-boy-rafiki-fariala-alumnus-ateliers-varan-selected-cannes-festival-2026__29654",
+          "image": "https://www.ateliersvaran.com/storage/files/image/29655/69d92904550fd.jpg",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 41,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "editorial-taste lane — Black Film Archive",
+          "read": "Fariala was born in Uvira and his family fled to Bangui during the Second Congo War. He trained at the Ateliers Varan workshop there and made Nous étudiants, the documentary that took him to the Berlinale in 2022. Congo Boy is his first fiction: a teenager in Bangui chasing a rap career while displacement and his parents' paperwork eat the household. It premiered in Un Certain Regard at Cannes in May and takes its Swiss premiere at Locarno on 11 August. Sango, French, Lingala and Swahili in one film, score written by the director. The room is right about this one — the gap is that outside a festival badge there is still no way to see it.",
+          "verdict": "PENDING",
+          "slug": "congo-boy-rafiki-fariala"
+        },
+        {
+          "rank": 3,
+          "name": "Silverdaw",
+          "domain": "TECH",
+          "domain_detail": "TECH · CREATOR TOOLS",
+          "url": "https://bedroomproducersblog.com/2026/07/20/silverdaw-free/",
+          "image": "https://bedroomproducersblog.com/wp-content/uploads/2026/07/silverdaw.jpg",
+          "score": 7.7,
+          "tier": "FLAME",
+          "heat": 14,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "creator-ai-tools lane — Koala Sampler",
+          "read": "A free, AGPL-licensed Windows DAW built for one job: taking existing audio apart and putting it back together. Slice to the grid, chop non-destructively, tempo and key detected on import, vinyl-style scratch patterns recorded and edited — and stem separation that runs locally, no account, no cloud, nothing leaving the machine. Version 1.2.0, Windows only, VST still on the roadmap. That is the trade: a tool that refuses to become a platform, from a developer who cold-emailed a blog. Sample culture has spent a decade renting its own tools back from the companies that harvested it. This points the other way.",
+          "verdict": "PENDING",
+          "slug": "silverdaw"
+        },
+        {
+          "rank": 4,
+          "name": "2 STEP MAFIA BRASIL — 2SMBR VOL. 1",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · BRAZILIAN UKG",
+          "url": "https://2stepmafiabrasil.bandcamp.com/album/2smbr-vol-1",
+          "image": "https://f4.bcbits.com/img/0038592200_20.jpg",
+          "score": 7.4,
+          "tier": "FLAME",
+          "heat": 22,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "underground-rap lane — Jim Legxacy",
+          "read": "A São Paulo crew's debut compilation — six Brazilian producers working the building blocks of 2-step and UK garage, with the label stating its mission plainly as troca cultural and treating the dubplate as the unit of that trade. CESRV, who first turned heads welding grime to baile funk, is back on it. The tamborzão and the UKG shuffle were always the same argument about drums held in two places at once. This is the version where Brazil holds the pen.",
+          "verdict": "PENDING",
+          "slug": "2-step-mafia-brasil-2smbr-vol-1"
+        },
+        {
+          "rank": 5,
+          "name": "Liberty — The Fabric Hall",
+          "domain": "CRAFT",
+          "domain_detail": "CRAFT · TEXTILES",
+          "url": "https://www.theguardian.com/business/2026/jul/27/liberty-london-store-expands-fabrics-section-sewing-boom-craft-classes",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 6.2,
+          "tier": "TORCH",
+          "heat": 68,
+          "direction": "▲",
+          "flags": [
+            "HEAT>WORK"
+          ],
+          "benchmark": "heritage-craft-product lane — Fortnum & Mason",
+          "read": "The numbers are real: the fabrics floor reopened on 20 July at 4,630 sq ft, up from 1,927, with 2,500 fabrics and 17 specialists; opening day beat target by 35%, fabric sales rose 11% last year, and Crafts Council research has UK craft participation moving from 15% to 20% of adults. The read is what it is being sold as. Liberty's retail director calls making “a modern expression of luxury” — but making is not a luxury category, it is the thing luxury was invented to replace. Heat this loud around a haberdashery is the mainstream arriving late to a shift the quilters and dressmakers were already living in.",
+          "verdict": "PENDING",
+          "slug": "liberty-the-fabric-hall"
+        }
+      ]
     }
   ],
   "holding": [
@@ -3371,6 +3486,36 @@
       "name": "Chris Crispy — Behind The Shades",
       "first_issue": "2026-07-26-1759",
       "first_date": "2026-07-26",
+      "resurfaced": []
+    },
+    {
+      "name": "Sastre — María Ramos",
+      "first_issue": "2026-07-27-1152",
+      "first_date": "2026-07-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Congo Boy — Rafiki Fariala",
+      "first_issue": "2026-07-27-1152",
+      "first_date": "2026-07-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Silverdaw",
+      "first_issue": "2026-07-27-1152",
+      "first_date": "2026-07-27",
+      "resurfaced": []
+    },
+    {
+      "name": "2 STEP MAFIA BRASIL — 2SMBR VOL. 1",
+      "first_issue": "2026-07-27-1152",
+      "first_date": "2026-07-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Liberty — The Fabric Hall",
+      "first_issue": "2026-07-27-1152",
+      "first_date": "2026-07-27",
       "resurfaced": []
     }
   ]
