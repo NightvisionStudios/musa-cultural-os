@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-07-24"
+    "updated": "2026-07-27"
   },
   "issues": [
     {
@@ -3023,6 +3023,121 @@
           "read": "The Internet's drummer steps out from behind the kit for a solo debut, dropping the same day as two of his former bandmates' own records — and the pedigree is doing real work here. The songs themselves are pleasant, laid-back, unresolved in a way that's more shy than intentional. The attention is riding the name on the credits more than the record standing alone.",
           "verdict": "PENDING",
           "slug": "chris-crispy-behind-the-shades"
+        }
+      ]
+    },
+    {
+      "issue": 34,
+      "issue_id": "2026-07-27-0638",
+      "date": "2026-07-27",
+      "time": "06:38 ET",
+      "forecast": "The field is rewarding whatever leaves a physical mark — clay pressed against a body, a colonial reel re-cut by a descendant, a paperback, a fair floor with 160 publishers on it. The object is doing the work again, and circulation alone is no longer proof of anything.",
+      "come_up": [
+        "Print culture as infrastructure, not merch",
+        "Clay and cloth used as testimony",
+        "The archive re-cut by the people in it"
+      ],
+      "decline": [
+        "Feed-first discovery",
+        "Placeless “global” fusion with no home address",
+        "The announcement treated as the work"
+      ],
+      "climate": "Object over circulation — the hand-made, the printed and the re-cut archive are where taste is concentrated.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Ranti Bam — Sacred Groves",
+          "domain": "ART",
+          "domain_detail": "ART · CERAMICS",
+          "url": "https://www.southlondongallery.org/exhibitions/ranti-bam-sacred-groves/",
+          "image": "https://www.southlondongallery.org/wp-content/uploads/2026/03/C596-1-29856-1-e1779111695902.jpg",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 44,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "design-studio / curatorial lane — Project a Black Planet",
+          "read": "Bam makes the Ifas by pressing wet clay against her own body until the vessel collapses, cracks and folds — the mark of a person, not a technique. First solo institutional show, her largest work to date, shown with a new film shot at Ṣun-Ọsogbo, the Yoruba grove for the goddess Osun. The gap is that this is a fully-formed practice arriving with almost no noise around it: Peckham, free entry, open until 23 Aug, and the Venice invitation already in hand.",
+          "verdict": "PENDING",
+          "slug": "ranti-bam-sacred-groves"
+        },
+        {
+          "rank": 2,
+          "name": "Onyeka Igwe — Short Films",
+          "domain": "FILM",
+          "domain_detail": "FILM · ARTIST CINEMA",
+          "url": "https://www.criterionchannel.com/short-films-by-onyeka-igwe",
+          "image": "https://criterion-production.s3.amazonaws.com/Gyg5xp6ZU8aowrWGVLieG2mkv7XX59.jpg",
+          "score": 8.1,
+          "tier": "CROWN",
+          "heat": 27,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "editorial-taste lane — Black Film Archive",
+          "read": "Seven films, 2015–2025, on the Criterion Channel this month — a British-Nigerian artist working the colonial film record from the inside. a so-called archive conjures the images Britain didn't keep; A Radical Duet re-stages 1940s anticolonial London as fiction. Igwe doesn't restore the archive, she cross-examines it. A retrospective this coherent landing on a prestige platform with this little chatter is the whole reason the board exists.",
+          "verdict": "PENDING",
+          "slug": "onyeka-igwe-short-films"
+        },
+        {
+          "rank": 3,
+          "name": "Edna Bonhomme — Tending to Our Wounds",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · DIASPORIC MEMOIR",
+          "url": "https://www.haymarketbooks.org/books/2756-tending-to-our-wounds",
+          "image": "https://cdn-ed.haymarketbooks.org/images/000008/571/9798888905951-a2cffb97f73574e9b7a532f6d2c20dd7.jpg20251202-66-pv03w1",
+          "score": 7.7,
+          "tier": "FLAME",
+          "heat": 36,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "global-diaspora lane — Noname Book Club",
+          "read": "Out 21 Jul on Haymarket. A historian of science reads six cities — Miami, New York, Port-au-Prince, Harlem, Cairo, Berlin — as a record of how each one handled Black bodies, and refuses to let the memoir stay personal. Robin D. G. Kelley's blurb calls the bill past due. Independent press, Berlin-based Haitian-American author, no festival machine behind it — the room hasn't fully arrived yet, but the reviews are already the right reviews.",
+          "verdict": "PENDING",
+          "slug": "edna-bonhomme-tending-to-our-wounds"
+        },
+        {
+          "rank": 4,
+          "name": "Curió Curió — Curió Curió",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · TROPICAL PSYCHEDELIA",
+          "url": "https://daily.bandcamp.com/album-of-the-day/curio-curio-self-titled-review",
+          "image": "https://f4.bcbits.com/img/0046246204_16.jpg",
+          "score": 7.2,
+          "tier": "FLAME",
+          "heat": 25,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "underground-rap lane — Jim Legxacy",
+          "read": "Debut from a Brazilian-German duo — Luiza Monteiro nine years out of Rio, Dustin Braun on analog gear and vintage synths. Built around a question rather than a sound: can you belong to two places at once. '60s samba, disco, an MPB ballad that reads like a lost classic, all cut so it can't be pinned to a city or a decade. Same diaspora-collage instinct as the 50's UK end, other hemisphere.",
+          "verdict": "PENDING",
+          "slug": "curio-curio-curio-curio"
+        },
+        {
+          "rank": 5,
+          "name": "San Francisco Art Book Fair 2026",
+          "domain": "EDITORIAL",
+          "domain_detail": "EDITORIAL · PRINT CULTURE",
+          "url": "https://sfartbookfair.com/",
+          "image": "",
+          "score": 7.0,
+          "tier": "FLAME",
+          "heat": 64,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "editorial-taste lane — Players Magazine",
+          "read": "Closed yesterday after four days at Minnesota Street: tenth edition, 160 exhibitors, 30 international, 48 first-timers, free at the door. The honest call here is ROOM'S RIGHT — this isn't a find, it's a scene that earned its heat over a decade and now functions as distribution infrastructure for presses that would otherwise have none. Note what it isn't: not a trade show, not ticketed, not a brand activation.",
+          "verdict": "PENDING",
+          "slug": "san-francisco-art-book-fair-2026"
         }
       ]
     }
