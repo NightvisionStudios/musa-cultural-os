@@ -50,6 +50,35 @@ def heirwave(height, color=FG):
     im=Image.open(io.BytesIO(png)).convert("RGBA")
     return im.resize((w,height), Image.LANCZOS)
 
+ART=os.path.join(HERE,"..","img","entries")
+
+def art_for(entry):
+    """Local cached artwork for an entry, or None. Never reaches the network —
+    build/fetch_art.py fills img/entries/ from CI, where the network is open."""
+    slug=entry.get("slug")
+    if not slug: return None
+    p_=os.path.join(ART, slug+".jpg")
+    if not os.path.exists(p_): return None
+    try: return Image.open(p_).convert("RGB")
+    except Exception: return None
+
+def cover(im,w,h):
+    """Centre-crop to fill exactly w x h, the way object-fit:cover does."""
+    sw,sh=im.size
+    sc=max(w/float(sw), h/float(sh))
+    nw,nh=max(w,int(sw*sc+.5)),max(h,int(sh*sc+.5))
+    im=im.resize((nw,nh),Image.LANCZOS)
+    x=(nw-w)//2; y=(nh-h)//2
+    return im.crop((x,y,x+w,y+h))
+
+def place_art(im,d,tile_src,x,y,w,h,radius):
+    """Paste artwork with rounded corners and the house hairline border."""
+    tile=cover(tile_src,w,h)
+    mask=Image.new("L",(w,h),0)
+    ImageDraw.Draw(mask).rounded_rectangle([0,0,w-1,h-1],radius=radius,fill=255)
+    im.paste(tile,(x,y),mask)
+    d.rounded_rectangle([x,y,x+w-1,y+h-1],radius=radius,outline=LINE,width=2)
+
 def tw(d,txt,f,ls=0):
     if not txt: return 0
     w=d.textlength(txt,font=f)
@@ -109,7 +138,7 @@ def arrow(d,x,y,size,direction):
     elif direction=="down": d.polygon([(x,y),(x+h,y),(x+h/2,y+h)],fill=c)
     else:                   d.rectangle([x+h*0.22,y+h*0.1,x+h*0.78,y+h*0.9],fill=c)
 
-def card(entry, issue, W, H, out, name_size, read_lines, read_size=19, anchor="center"):
+def card(entry, issue, W, H, out, name_size, read_lines, read_size=19, anchor="center", use_art=False):
     S=W/1200.0                                   # scale everything off the OG width
     p=lambda v:int(round(v*S))
     im=Image.new("RGB",(W,H),BG); d=ImageDraw.Draw(im)
@@ -139,6 +168,16 @@ def card(entry, issue, W, H, out, name_size, read_lines, read_size=19, anchor="c
     else:
         y=top; slack=(by-p(30))-(y+blockH)
         if slack>0: y+=int(slack*0.46)
+
+    # ── artwork fills the field between the masthead rule and the editorial block.
+    # Skipped when there's no cached art or the gap is too shallow to read as an image.
+    if use_art:
+        src=art_for(entry)
+        if src is not None:
+            ax, aw = M, W-2*M
+            ay, ah = ly+p(28), (y-p(34))-(ly+p(28))
+            if ah >= p(240):
+                place_art(im,d,src,ax,ay,aw,ah,p(10))
 
     tracked(d,(M,y),str(entry.get("domain_detail") or entry.get("domain","")).upper(),fd,AMBER,4.2)
     y+=p(38)
@@ -186,4 +225,4 @@ def card(entry, issue, W, H, out, name_size, read_lines, read_size=19, anchor="c
     return out
 
 def og(entry,issue,out):  return card(entry,issue,1200,630,out,name_size=60,read_lines=3,read_size=19)
-def sq(entry,issue,out):  return card(entry,issue,1080,1350,out,name_size=104,read_lines=10,read_size=29,anchor="bottom")
+def sq(entry,issue,out):  return card(entry,issue,1080,1350,out,name_size=104,read_lines=8,read_size=29,anchor="bottom",use_art=True)

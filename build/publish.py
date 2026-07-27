@@ -12,6 +12,7 @@ import share
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 BASE = "https://archive.themusafamily.com"
+FORCE = os.environ.get("MUSA_FORCE_CARDS") == "1"   # rerender every card, ignoring cache
 MARK = "https://archive.themusafamily.com/img/musa-mark.png"  # every entry carries art; missing/broken images fall back to the MUSA mark
 MONTHS=["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"]
 
@@ -377,8 +378,13 @@ def build(commit_slugs=True):
         # cards are deterministic — only render the ones that don't exist yet, so a
         # rebuild doesn't churn 35MB of new blobs into git every run.
         ogp=os.path.join(carddir, slug + "-og.jpg"); sqp=os.path.join(carddir, slug + "-sq.jpg")
-        if not os.path.exists(ogp): cards.og(en, iss, ogp)
-        if not os.path.exists(sqp): cards.sq(en, iss, sqp)
+        artp=os.path.join(ROOT, "img", "entries", slug + ".jpg")
+        # a square is stale once its artwork lands or changes — that's the only
+        # thing that can alter a card whose ledger entry hasn't moved.
+        stale = FORCE or (os.path.exists(artp) and os.path.exists(sqp)
+                          and os.path.getmtime(artp) > os.path.getmtime(sqp))
+        if FORCE or not os.path.exists(ogp): cards.og(en, iss, ogp)
+        if stale or not os.path.exists(sqp): cards.sq(en, iss, sqp)
 
         sibs = [s for s in iss.get("entries", []) if s.get("slug") != slug]
         also = "".join(
