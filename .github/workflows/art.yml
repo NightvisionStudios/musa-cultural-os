@@ -1,0 +1,78 @@
+name: Cache art & rebuild cards
+
+# The build sandbox can't reach the 80+ image hosts the ledger points at.
+# Actions can. So art caching and card rendering happen here, on push, and the
+# results are committed back — nothing to remember, nothing to run by hand.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ledger.json'
+      - 'musa-50.json'
+      - 'build/**'
+      - '.github/workflows/art.yml'
+  workflow_dispatch:
+    inputs:
+      force_cards:
+        description: 'Re-render every card from scratch'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: musa-art
+  cancel-in-progress: false
+
+jobs:
+  art:
+    runs-on: ubuntu-latest
+    env:
+      CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: System deps for cairosvg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf-2.0-0
+
+      - name: Python deps
+        run: pip install --quiet pillow cairosvg
+
+      - name: Cache entry artwork
+        run: python build/fetch_art.py
+
+      - name: Rebuild pages, cards and /share/
+        env:
+          MUSA_FORCE_CARDS: ${{ inputs.force_cards && '1' || '0' }}
+        run: python build/publish.py
+
+      - name: Commit
+        run: |
+          git config user.name  "MUSA Index Bot"
+          git config user.email "index@themusafamily.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "nothing changed"
+            exit 0
+          fi
+          git commit -m "Cache entry art and rebuild cards [skip ci]"
+          git push
+
+      # Optional. Runs only once CLOUDFLARE_API_TOKEN exists in repo secrets —
+      # without it the step is skipped and you deploy by hand as before.
+      - name: Deploy to Cloudflare
+        if: env.CF_TOKEN != ''
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@latest deploy
