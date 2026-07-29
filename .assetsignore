@@ -1,0 +1,7 @@
+# assets.directory is "." — the whole repo is the upload payload. Without this file,
+# .git and the Python build scripts get published at archive.themusafamily.com.
+**/.git
+**/.github
+**/.DS_Store
+**/node_modules
+build
