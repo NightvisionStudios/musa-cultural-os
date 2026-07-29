@@ -3408,6 +3408,121 @@
           "slug": "music-seen-bandcamp-daily"
         }
       ]
+    },
+    {
+      "issue": 37,
+      "issue_id": "2026-07-29-1206",
+      "date": "2026-07-29",
+      "time": "12:06 ET",
+      "forecast": "The strongest work on the field this week is not a launch — it is a syllabus. A month-long architecture studio in Accra, a film festival in its fifty-second summer, a label naming its mill on the garment tag: the transmission systems are outperforming the drops, and the reveal cycle is the only place heat is still running ahead of the work.",
+      "come_up": [
+        "Pedagogy as the venue — studios and festivals out-transmitting launches",
+        "Provenance named on the object — mill, weave and deadstock on the label",
+        "São Paulo bass exporting itself instead of being sampled"
+      ],
+      "decline": [
+        "Pre-alpha teasers spending attention a build has not earned",
+        "Summit-stage group shows curated around a diplomatic theme",
+        "The single-city scene report — the hybrids are already two continents deep"
+      ],
+      "climate": "Teaching over launching — the field is rewarding the institutions that hand something down, and discounting the reveal that has nothing to hand over yet.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Nomadic African Studio 2026 — The New Non-Aligned",
+          "domain": "ARCHITECTURE",
+          "domain_detail": "ARCHITECTURE · PEDAGOGY",
+          "url": "https://www.africanfuturesinstitute.com/nomadic-african-studio-2026",
+          "image": "https://images.squarespace-cdn.com/content/v1/60cf240cfe620145a981d6ba/f7097d94-1aa5-4086-8e74-e5dc33a4b16c/nas-2026-header.webp",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 19,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Noname Book Club",
+          "read": "The African Futures Institute moved its studio to Accra for four weeks and pointed it at the 1950s Non-Aligned Movement — not as nostalgia, but as a working question about what autonomy looks like against digital empires and extractive economies. The framing is the part that lands: not utopia, not collapse, but speculative survival — how housing, labour, energy and ecology get made liveable under pressure. Accra is the correct room for it. The city argued Pan-Africanism into being once already. Sitting through 14 August, and almost nobody outside architecture knows it is happening.",
+          "verdict": "PENDING",
+          "slug": "nomadic-african-studio-2026-the-new-non-aligned"
+        },
+        {
+          "rank": 2,
+          "name": "Newark Black Film Festival — 52nd Edition",
+          "domain": "FILM",
+          "domain_detail": "FILM · FESTIVAL",
+          "url": "https://newarkblackfilmfestival.com/",
+          "image": "https://newarkblackfilmfestival.com/wp-content/uploads/2026/06/NBFF-filmmakers.webp",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 16,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Black Film Archive",
+          "read": "Fifty-two years. Screenings every Wednesday at the Newark Museum of Art, free, running to 5 August. The longest-running Black film festival in the country has been doing the work since 1974 with a committee of volunteers and museum staff picking the slate, and it still travels almost entirely by word of mouth in Essex County. That is the tell. Institutions this old usually calcify or get bought; this one just kept programming. Free admission is not a marketing choice here — it is the thesis.",
+          "verdict": "PENDING",
+          "slug": "newark-black-film-festival-52nd-edition"
+        },
+        {
+          "rank": 3,
+          "name": "badsista",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · BRAZILIAN CLUB",
+          "url": "https://badsista.bandcamp.com",
+          "image": "https://f4.bcbits.com/img/a3591830648_5.jpg",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 52,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Jim Legxacy",
+          "read": "The São Paulo DJ and BANDIDA co-founder is the one Brazilian producers name when asked who moved trap-bass into techno without it reading as a costume change. She has worked with Linn da Quebrada and Kelela; her catalogue runs from ghetto-edit blends to the harder end of the club. São Paulo has been right about her for years — the gap is geographic, not qualitative. Baile funk is filling London rooms while most of the crowd cannot name a single producer, and she is the correction to that.",
+          "verdict": "PENDING",
+          "slug": "badsista"
+        },
+        {
+          "rank": 4,
+          "name": "AHABAN — Ajepomaa Design Gallery",
+          "domain": "FASHION",
+          "domain_detail": "FASHION · GHANA",
+          "url": "https://ajepomaagallery.com/ahaban/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.4,
+          "tier": "FLAME",
+          "heat": 24,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Denim Tears",
+          "read": "Named for the Akan word for leaf. Handwoven Aso Oke, Fugu, organza and cotton batik cut from deadstock pulled out of GTP's mills in Accra — the material sourcing is not a sustainability footnote, it is the argument. Most houses working this lane say heritage and mean print. Ajepomaa names the weave, the mill and the origami pleating technique on the product page, which is the whole difference between a story and a receipt. Priced in cedis first, dollars second. That ordering matters.",
+          "verdict": "PENDING",
+          "slug": "ahaban-ajepomaa-design-gallery"
+        },
+        {
+          "rank": 5,
+          "name": "Project Override — Inuv8 Studios",
+          "domain": "GAMES",
+          "domain_detail": "GAMES · NIGERIA",
+          "url": "https://www.isakaba.com/inuv8-studios-reveals-sci-fi-rpg-project-override/",
+          "image": "https://storage.ghost.io/c/41/49/41499d0c-2aba-44d9-90ee-2f06884f30ea/content/images/2026/06/project-override1.jpg",
+          "score": 6.3,
+          "tier": "TORCH",
+          "heat": 43,
+          "direction": "▮",
+          "flags": [
+            "HEAT>WORK"
+          ],
+          "benchmark": "Moonshots",
+          "read": "Ile-Ife is the right address for a game about a preservation unit waking up after 1,073 failed attempts to override the past — the Yoruba origin city building the archive-that-survives-collapse story is almost too neat. The ability framework, combat systems and narrative tooling are reportedly in. But this is a pre-alpha teaser with no platform, no window and an open call for publishers, and it has already collected more coverage than most shipped African titles get in a year. The lane is real. The read is early. Come back when there is a build.",
+          "verdict": "PENDING",
+          "slug": "project-override-inuv8-studios"
+        }
+      ]
     }
   ],
   "holding": [
@@ -3666,6 +3781,36 @@
       "name": "Music Seen — Bandcamp Daily",
       "first_issue": "2026-07-27-1801",
       "first_date": "2026-07-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Nomadic African Studio 2026 — The New Non-Aligned",
+      "first_issue": "2026-07-29-1206",
+      "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "Newark Black Film Festival — 52nd Edition",
+      "first_issue": "2026-07-29-1206",
+      "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "badsista",
+      "first_issue": "2026-07-29-1206",
+      "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "AHABAN — Ajepomaa Design Gallery",
+      "first_issue": "2026-07-29-1206",
+      "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "Project Override — Inuv8 Studios",
+      "first_issue": "2026-07-29-1206",
+      "first_date": "2026-07-29",
       "resurfaced": []
     }
   ]
