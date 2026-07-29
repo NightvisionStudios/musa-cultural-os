@@ -29,7 +29,6 @@ concurrency:
 jobs:
   art:
     runs-on: ubuntu-latest
-    env:
     steps:
       - uses: actions/checkout@v4
         with:
