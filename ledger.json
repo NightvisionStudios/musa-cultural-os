@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-07-27",
+    "updated": "2026-07-29",
     "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL."
   },
   "issues": [
@@ -3523,6 +3523,124 @@
           "slug": "project-override-inuv8-studios"
         }
       ]
+    },
+    {
+      "issue": 38,
+      "issue_id": "2026-07-29-1740",
+      "date": "2026-07-29",
+      "time": "17:40 ET",
+      "forecast": "Three July releases, three running times: seven minutes out of Croydon on the 8th, twenty-seven out of Detroit on the 10th, seventy-eight out of a California state prison on the 17th. In the galleries the same arithmetic holds — ninety ceramics in Long Island City reading as a single argument, one beaded panel in San Francisco holding an entire migration. Compression is doing the work volume used to do. The long dump still charts; it just stopped meaning anything.",
+      "climate": "Compression over volume: the edit is where authorship now lives, and a release that refuses to end is telling on the room that let it run.",
+      "come_up": [
+        "Fixed-length releases: 7 minutes, 27 minutes, no filler tax",
+        "Artist-owned imprints handling their own distribution — CHRRY, Street Certified",
+        "Hand-material archive work: raku clay, cowrie, Nymo thread"
+      ],
+      "decline": [
+        "The double album as proof of life",
+        "A chart debut mistaken for a verdict on the work",
+        "Weekly singles that exist to keep a catalogue warm"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Akinsanya Kambon — Soul Sessions",
+          "domain": "ART",
+          "domain_detail": "ART · CERAMICS",
+          "url": "https://www.sculpture-center.org/exhibitions/14800/akinsanya-kambon-soul-sessions",
+          "image": "https://www.sculpture-center.org/images/1_AK_SC_May26_164.jpg?w=2000",
+          "score": 8.9,
+          "tier": "CROWN",
+          "heat": 48,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "PanAfrica lane — Project a Black Planet. Kambon's ceramics are the kind of object that show exists to argue for; he sits level with it, not beneath it.",
+          "read": "The title comes from Vietnam. Kambon served with the Marines from 1966 to 1968 as an infantryman and combat illustrator, and the soul sessions were weekly gatherings Black Marines organised to teach each other. He has been running some version of them ever since. He came home, joined the Sacramento chapter of the Black Panther Party as Lieutenant of Culture, and did layout and illustration for The Black Panther. Then thirty years teaching art at Cal State Long Beach, plus free youth programmes out of his own studio. He is eighty. This is his first survey in New York. Over ninety figurative ceramics at SculptureCenter, made from the 1970s to now, fired in raku adapted with eucalyptus leaves and sawdust so the surfaces come out with a metallic sheen no kiln schedule can promise. The show is organised as seven sessions rather than seven decades: Thrones of Resistance, The Middle Passage, Rebellion and Uprising. Works on paper and archival material continue at CARA on West 13th, and the wall text tells you to take the E or F between the two. That instruction is the thesis. The room caught up in 2023 with the Hammer's Mohn Award; the work was finished long before the room arrived. Closes 16 August.",
+          "verdict": "PENDING",
+          "slug": "akinsanya-kambon-soul-sessions"
+        },
+        {
+          "rank": 2,
+          "name": "Bandgang Masoe — M.O.N.E.Y.",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · DETROIT RAP",
+          "url": "https://open.spotify.com/album/1CyYDBIshSI4qnpSvng8jJ",
+          "image": "https://i.scdn.co/image/ab67616d0000b273b72c35a37c7a04fc9316d173",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 26,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "underground-rap lane — Chris Crack. Same instinct for the two-minute song as a finished thought rather than a sketch.",
+          "read": "Fourteen songs, twenty-seven minutes, forty-two seconds. Out 10 July on Street Certified Records, his third project of the year, and not one track overstays its welcome: Rent Due, Bread On My Mind, Don't Forget The Ricc, gone. Masoe has been in the BandGang orbit since the early-2010s Detroit run, and his most-played record is still Fuck a Baecation from 2018, a posse cut he shares with Babyface Ray, who left the lane and became a national name. Masoe stayed and kept the tempo. Twenty-two thousand monthly listeners against two million plays on an eight-year-old feature is the whole Detroit export economy in two numbers.",
+          "requested": true,
+          "verdict": "PENDING",
+          "slug": "bandgang-masoe-m-o-n-e-y"
+        },
+        {
+          "rank": 3,
+          "name": "Javan — Dare You/N2S",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · UK R&B",
+          "url": "https://music.apple.com/gb/album/dare-you-n2s-single/6783437716",
+          "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/d3/05/afd305e2-55fe-6fda-6126-6eff6e2ef2c7/5064020504820_cover.jpg/1200x630wp-60.jpg",
+          "score": 7.3,
+          "tier": "FLAME",
+          "heat": 11,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "underground-rap lane — Jim Legxacy. South London, diasporic, auteur R&B; Javan is a few years back down the same road.",
+          "read": "Javan has settled on a release shape almost nobody uses any more: a double A-side, no album, no rollout, one drop roughly every ten weeks. Dare You/N2S arrived 8 July on his own CHRRY imprint — three songs, seven minutes — his third of 2026 after One More Shot and FATAL ATTRACTION/MAGIC. He was seventeen when Mixtape Madness handed him a Next Up? in June 2019, out of Croydon, and the seven years since have gone entirely into singles with no full-length attempted. The Instagram reads nine and a half thousand followers, seventeen posts, and a bio that says Let God. The gap is that the release discipline is already professional while the audience is still village-sized.",
+          "requested": true,
+          "verdict": "PENDING",
+          "slug": "javan-dare-you-n2s"
+        },
+        {
+          "rank": 4,
+          "name": "Demetri Broxton — Ancestral Echoes: Crops of Empire",
+          "domain": "CRAFT",
+          "domain_detail": "CRAFT · BEADWORK",
+          "url": "https://www.moadsf.org/exhibitions",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.1,
+          "tier": "FLAME",
+          "heat": 15,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "heritage-craft lane — Dame Atlas, Tamera. The material discipline rhymes; the object is a wall, not a product.",
+          "read": "Japanese glass beads, sequins, cowrie shells, recycled glass, 24-karat gold-plated brass, rayon chainette, wool, Nymo thread, serigraph on Japanese sateen cotton, goat-hair canvas, birch board. That is the material list for one panel, 59 by 29 inches. Broxton works from family photographs whose subjects were never named, tracing the move from the American South out to Oakland, and beads the gaps rather than filling them. MoAD's Salon gallery, 685 Mission Street, through 16 August.",
+          "verdict": "PENDING",
+          "slug": "demetri-broxton-ancestral-echoes-crops-of-empire"
+        },
+        {
+          "rank": 5,
+          "name": "Tory Lanez — Made You Think I Was Gone …But",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · MAINSTREAM RAP",
+          "url": "https://en.wikipedia.org/wiki/Made_You_Think_I_Was_Gone_...But",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 4.8,
+          "tier": "NOISE",
+          "heat": 74,
+          "direction": "▼",
+          "flags": [
+            "HEAT>WORK"
+          ],
+          "benchmark": "underground-rap lane — Starlito is the nearest thing on the 50, and it isn't close: comparable output, opposite relationship to editing.",
+          "read": "No interviews, no festival dates, no press run, no artist in the building. The tenth album still opened at No. 35 with roughly 19,700 first-week units, which is a real fact about how distribution works in 2026 and the most interesting thing on offer here. Everything after that is arithmetic: 23 tracks, 78 minutes, split into a rap disc and an R&B disc, his second album of the year, released 17 July on his own One Umbrella from the California Men's Colony, where he is serving ten years for shooting Megan Thee Stallion. Volume is the argument because volume is the only thing available. The 50 rewards taste over reach; this is reach with the taste removed.",
+          "requested": true,
+          "verdict": "PENDING",
+          "slug": "tory-lanez-made-you-think-i-was-gone-but"
+        }
+      ]
     }
   ],
   "holding": [
@@ -3810,6 +3928,36 @@
     {
       "name": "Project Override — Inuv8 Studios",
       "first_issue": "2026-07-29-1206",
+      "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "Akinsanya Kambon — Soul Sessions",
+      "first_issue": "2026-07-29-1740",
+      "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "Bandgang Masoe — M.O.N.E.Y.",
+      "first_issue": "2026-07-29-1740",
+      "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "Javan — Dare You/N2S",
+      "first_issue": "2026-07-29-1740",
+      "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "Demetri Broxton — Ancestral Echoes: Crops of Empire",
+      "first_issue": "2026-07-29-1740",
+      "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "Tory Lanez — Made You Think I Was Gone …But",
+      "first_issue": "2026-07-29-1740",
       "first_date": "2026-07-29",
       "resurfaced": []
     }
