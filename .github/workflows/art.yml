@@ -30,7 +30,6 @@ jobs:
   art:
     runs-on: ubuntu-latest
     env:
-      CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -64,8 +63,14 @@ jobs:
           if git diff --cached --quiet; then
             echo "rebuild produced no changes"
           else
-            git commit -m "Cache entry art and rebuild cards [skip ci]"
+            git commit -m "Cache entry art and rebuild cards [auto]"
           fi
+
+      # NOTE: do NOT put [skip ci] in these commit messages. Cloudflare Workers Builds
+      # (connected to this repo since 2026-07-04) honours it and silently stops deploying,
+      # which is exactly what froze the site on 2026-07-27. GitHub's own loop protection
+      # already prevents GITHUB_TOKEN pushes from re-triggering this workflow, and the
+      # paths this job writes are outside the trigger filter, so [skip ci] buys nothing.
 
       # version.txt must name the commit whose tree actually gets uploaded, so it
       # is written AFTER the rebuild commit exists and committed on top of it.
@@ -77,27 +82,6 @@ jobs:
           date -u +"%Y-%m-%dT%H:%M:%SZ" > version.txt
           git rev-parse --short HEAD >> version.txt
           git add version.txt
-          git commit -m "version: stamp $(git rev-parse --short HEAD) [skip ci]"
+          git commit -m "version: stamp $(git rev-parse --short HEAD) [auto]"
           git push
           echo "stamped:"; cat version.txt
-
-      - name: Deploy to Cloudflare
-        if: env.CF_TOKEN != ''
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: npx --yes wrangler@latest deploy
-
-      # Deploy is the whole point of this workflow. If the secret is missing the
-      # push looks completely successful while the site stays frozen, so fail the
-      # run loudly rather than skipping quietly.
-      - name: Deploy skipped — site NOT live
-        if: env.CF_TOKEN == ''
-        run: |
-          echo "::error title=Not deployed::CLOUDFLARE_API_TOKEN is not set, so the"\
-               "commit landed in git but nothing reached archive.themusafamily.com."
-          echo "Fix once: Settings > Secrets and variables > Actions >"
-          echo "  CLOUDFLARE_API_TOKEN   (Workers Scripts: Edit + Account Settings: Read)"
-          echo "  CLOUDFLARE_ACCOUNT_ID"
-          echo "Until then, deploy by hand: npx wrangler deploy"
-          exit 1
