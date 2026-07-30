@@ -1,8 +1,8 @@
 {
   "_meta": {
     "source": "50.themusafamily.com",
-    "status": "LIVE — 4-name roster swap 2026-07-16 (Igwe Aka→Gr8, Kimi→Dave Hunter, Ankhle John→Jiah, Lelo→KB) + Higgsfield AI→Black Film Archive (2026-07-05) backfilled; 5 outgoing logged to alumni.",
-    "updated": "2026-07-16",
+    "status": "LIVE — 5-name roster swap 2026-07-29 (Dame Atlas→Baby Rose, Vercel→Victony, Kenny Mason→LAAMS, MAWN Philly→Suez Studio, Bonito Flakes→DMN); 5 outgoing logged to alumni.",
+    "updated": "2026-07-29",
     "how_to_update": "When 50.themusafamily.com changes, replace `entries` with the current LIST array (name + url). Re-derive lanes. Keep `_dna` in sync with the list's actual energy.",
     "alumni_rule": "The 50 has memory. On every roster swap, BEFORE removing a name, log the outgoing name to the top-level `alumni` array. Never let a rotated name vanish — the gate keeps a record. Append-only, newest last. This is what makes the 50 read as curated, not edited.",
     "alumni_schema": {
@@ -104,9 +104,9 @@
       "lane": "design-studio"
     },
     {
-      "name": "Dame Atlas",
-      "url": "https://www.instagram.com/dameatlas/?hl=en",
-      "lane": "heritage-craft-product"
+      "name": "Baby Rose",
+      "url": "https://www.babyrose.art/",
+      "lane": "global-diaspora"
     },
     {
       "name": "Moonshots",
@@ -119,9 +119,9 @@
       "lane": "finance-operator"
     },
     {
-      "name": "Vercel",
-      "url": "https://vercel.com/",
-      "lane": "builder-dev"
+      "name": "Victony",
+      "url": "https://www.instagram.com/vict0ny",
+      "lane": "global-diaspora"
     },
     {
       "name": "Black Film Archive",
@@ -149,9 +149,9 @@
       "lane": "creator-ai-tools"
     },
     {
-      "name": "Kenny Mason",
-      "url": "https://en.wikipedia.org/wiki/Kenny_Mason",
-      "lane": "underground-rap"
+      "name": "LAAMS",
+      "url": "https://www.instagram.com/laams.nyc",
+      "lane": "places"
     },
     {
       "name": "Free Game",
@@ -204,9 +204,9 @@
       "lane": "editorial-taste"
     },
     {
-      "name": "MAWN Philly",
-      "url": "https://mawnphilly.com/",
-      "lane": "places"
+      "name": "Suez Studio",
+      "url": "https://suezstudio.com/",
+      "lane": "diasporic-fashion"
     },
     {
       "name": "Overstory NYC",
@@ -219,9 +219,9 @@
       "lane": "design-studio"
     },
     {
-      "name": "Bonito Flakes",
-      "url": "https://anything-from-japan.com/large-and-thick-hana-katsuobushi-bonito-flakes-from-tenpaku-160g",
-      "lane": "heritage-craft-product"
+      "name": "DMN",
+      "url": "https://www.instagram.com/dmn.lens",
+      "lane": "design-studio"
     },
     {
       "name": "Players Magazine",
@@ -306,37 +306,14 @@
   ],
   "alumni": [
     { "name": "Higgsfield AI", "url": "https://higgsfield.ai/", "lane": "creator-ai-tools", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-05", "why": "Replaced by Black Film Archive." },
-    {
-      "name": "Igwe Aka",
-      "url": "https://www.instagram.com/igweaka",
-      "lane": "underground-rap",
-      "tenure_in": "~2026-07-04",
-      "tenure_out": "2026-07-16",
-      "why": "Replaced by Gr8."
-    },
-    {
-      "name": "Kimi",
-      "url": "https://www.kimi.com/",
-      "lane": "creator-ai-tools",
-      "tenure_in": "~2026-07-04",
-      "tenure_out": "2026-07-16",
-      "why": "Replaced by Dave Hunter."
-    },
-    {
-      "name": "Ankhle John",
-      "url": "https://www.instagram.com/ankhnasty",
-      "lane": "underground-rap",
-      "tenure_in": "~2026-07-04",
-      "tenure_out": "2026-07-16",
-      "why": "Replaced by Jiah."
-    },
-    {
-      "name": "Lelo",
-      "url": "https://www.instagram.com/lelothecorpse",
-      "lane": "underground-rap",
-      "tenure_in": "~2026-07-04",
-      "tenure_out": "2026-07-16",
-      "why": "Replaced by KB."
-    }
+    { "name": "Igwe Aka", "url": "https://www.instagram.com/igweaka", "lane": "underground-rap", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-16", "why": "Replaced by Gr8." },
+    { "name": "Kimi", "url": "https://www.kimi.com/", "lane": "creator-ai-tools", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-16", "why": "Replaced by Dave Hunter." },
+    { "name": "Ankhle John", "url": "https://www.instagram.com/ankhnasty", "lane": "underground-rap", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-16", "why": "Replaced by Jiah." },
+    { "name": "Lelo", "url": "https://www.instagram.com/lelothecorpse", "lane": "underground-rap", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-16", "why": "Replaced by KB." },
+    { "name": "Dame Atlas", "url": "https://www.instagram.com/dameatlas/?hl=en", "lane": "heritage-craft-product", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by Baby Rose." },
+    { "name": "Vercel", "url": "https://vercel.com/", "lane": "builder-dev", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by Victony." },
+    { "name": "Kenny Mason", "url": "https://en.wikipedia.org/wiki/Kenny_Mason", "lane": "underground-rap", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by LAAMS." },
+    { "name": "MAWN Philly", "url": "https://mawnphilly.com/", "lane": "places", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by Suez Studio." },
+    { "name": "Bonito Flakes", "url": "https://anything-from-japan.com/large-and-thick-hana-katsuobushi-bonito-flakes-from-tenpaku-160g", "lane": "heritage-craft-product", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by DMN." }
   ]
 }
