@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "50.themusafamily.com",
-    "status": "LIVE — 5-name roster swap 2026-07-29 (Dame Atlas→Baby Rose, Vercel→Victony, Kenny Mason→LAAMS, MAWN Philly→Suez Studio, Bonito Flakes→DMN); 5 outgoing logged to alumni.",
+    "status": "LIVE — 6-name roster swap 2026-07-29 (Dame Atlas→Baby Rose, Vercel→Victony, Kenny Mason→LAAMS, MAWN Philly→Suez Studio, Bonito Flakes→DMN, Delta→Showly); 6 outgoing logged to alumni.",
     "updated": "2026-07-29",
     "how_to_update": "When 50.themusafamily.com changes, replace `entries` with the current LIST array (name + url). Re-derive lanes. Keep `_dna` in sync with the list's actual energy.",
     "alumni_rule": "The 50 has memory. On every roster swap, BEFORE removing a name, log the outgoing name to the top-level `alumni` array. Never let a rotated name vanish — the gate keeps a record. Append-only, newest last. This is what makes the 50 read as curated, not edited.",
@@ -194,9 +194,9 @@
       "lane": "diasporic-fashion"
     },
     {
-      "name": "Delta",
-      "url": "https://apps.apple.com/app/id1048524688",
-      "lane": "creator-ai-tools"
+      "name": "Showly",
+      "url": "https://www.instagram.com/showly54",
+      "lane": "underground-rap"
     },
     {
       "name": "Monocle",
@@ -314,6 +314,7 @@
     { "name": "Vercel", "url": "https://vercel.com/", "lane": "builder-dev", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by Victony." },
     { "name": "Kenny Mason", "url": "https://en.wikipedia.org/wiki/Kenny_Mason", "lane": "underground-rap", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by LAAMS." },
     { "name": "MAWN Philly", "url": "https://mawnphilly.com/", "lane": "places", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by Suez Studio." },
-    { "name": "Bonito Flakes", "url": "https://anything-from-japan.com/large-and-thick-hana-katsuobushi-bonito-flakes-from-tenpaku-160g", "lane": "heritage-craft-product", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by DMN." }
+    { "name": "Bonito Flakes", "url": "https://anything-from-japan.com/large-and-thick-hana-katsuobushi-bonito-flakes-from-tenpaku-160g", "lane": "heritage-craft-product", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by DMN." },
+    { "name": "Delta", "url": "https://apps.apple.com/app/id1048524688", "lane": "creator-ai-tools", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by Showly." }
   ]
 }
