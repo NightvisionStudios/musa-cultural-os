@@ -480,7 +480,10 @@ def build(commit_slugs=True):
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
           '<url><loc>%s/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>' % BASE,
-          '<url><loc>%s/issues/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>' % BASE]
+          '<url><loc>%s/issues/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>' % BASE,
+          # THE 50 is served from this worker too (no separate host). Hand-editing
+          # sitemap.xml would be wiped on the next rebuild, so it belongs here.
+          '<url><loc>%s/the-50/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>' % BASE]
     for u, dt in urls:
         sm.append('<url><loc>%s</loc>%s<priority>0.8</priority></url>' % (u, ("<lastmod>%s</lastmod>" % dt) if dt else ""))
     sm.append('</urlset>')
