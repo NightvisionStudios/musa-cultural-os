@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-07-29",
+    "updated": "2026-07-30",
     "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL."
   },
   "issues": [
@@ -3756,6 +3756,121 @@
           "slug": "the-ai-label-eight-bodies-one-suggestion"
         }
       ]
+    },
+    {
+      "issue": 40,
+      "issue_id": "2026-07-30-0602",
+      "date": "2026-07-30",
+      "time": "06:02 ET",
+      "forecast": "Cape Town, Warsaw, a stretch of coast west of Accra: the three strongest rooms this week are all run by people who declined to let the market set the terms, and the strongest of the three belongs to a painter who builds work he has no intention of selling. Inheritance over invention.",
+      "climate": "Inheritance over invention. Everything that cleared the gate this morning points backwards on purpose: a Xhosa proverb used as a working method, a Ghanaian textile school named after what hands remember, a Nigerian curator seating a Polish abstractionist beside Ndebele geometry and Xhosa clay, a novelist who recorded the audiobook with her own daughter. The one entry asking to be judged on its narrative rather than its record is also the one furthest down the board.",
+      "come_up": [
+        "Material as argument — cow dung and raw pigment on unprimed Belgian linen",
+        "Craft schools over brand incubators — Kokrobitey's fourth intake, Aug 16",
+        "Estates handing the keys to outside curators — Gierowski Foundation, Warsaw"
+      ],
+      "decline": [
+        "The comeback narrative as the product — press cycle outrunning the record",
+        "Novelty as a curatorial default",
+        "African material culture priced as spectacle"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Mawande Ka Zenzile — Indlela Ibuzwa Kwabaphambili",
+          "domain": "ART",
+          "domain_detail": "ART · PAINTING",
+          "url": "https://mg.co.za/friday/2026-07-10-mawande-ka-zenzile-s-indlela-ibuzwa-kwabaphambili-is-an-exhibition-about-listening/",
+          "image": "https://images.newsteam.io/image/400/GbSdY1y2zdQL5HqzgWz9XoKW8zKnN6wTg8eD7zcdcfs8GufZM2P7padydBG1dWtRtpzDGJRBa1XvuUqFG7LZN5TVwV5495uevaocegLdxLLusY9RGYZu6seHmjNrDf1YZXggq6wSuGLhe1VCqHnmw",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 34,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Lauren Halsey",
+          "read": "<i>A river that never dries up, is never celebrated</i> is cow dung and oil stick on unprimed Belgian linen, and the material is the thesis rather than the texture. Ka Zenzile has painted with dung for over a decade; what has changed at Stevenson Cape Town, where the show runs 4 July to 15 August, is that he no longer uses it to argue against Western painting. He uses it as a knowledge system that was always sufficient on its own. He is also a practising traditional healer, and he describes the studio in those terms: incense, pipe smoke, music, the rational mind quieted until a colour flashes. His earlier paintings were representational and politically legible. These are intuitive, and harder to file. <span class=\"a\">The detail that decides it:</span> the show includes installations and interventions that cannot be bought, which he counts as artworks made for the audience's experience rather than for a wall. Inside a commercial gallery, inside a market that rewards African material as spectacle, that is a deliberate cost. Asked what he wants a visitor to leave with, he says art cannot be limited by what is fashionable. Fifteen August is the deadline and Cape Town is the only address.",
+          "verdict": "PENDING",
+          "slug": "mawande-ka-zenzile-indlela-ibuzwa-kwabaphambili"
+        },
+        {
+          "rank": 2,
+          "name": "Valeria Luiselli — Beginning Middle End",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · FICTION",
+          "url": "https://www.penguinrandomhouse.com/books/815828/beginning-middle-end-by-valeria-luiselli/",
+          "image": "https://images2.penguinrandomhouse.com/smedia/9798217208319",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 62,
+          "direction": "up",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Noname Book Club",
+          "read": "Knopf published it on 28 July: 368 pages, thirty-five dollars, a mother and a teenage daughter driving Sicily after a divorce. The audiobook is the tell. Luiselli reads it across eight hours with Maia Enrigue Luiselli, her own daughter, which turns a decade of accusations about autofiction into a production credit. Four generations of women, a grandmother's archaeological dig, migrants met on the roadside: this is the <i>Lost Children Archive</i> method turned on her own family line instead of somebody else's border. <i>Publishers Weekly</i> starred it. The room is correct here, and it took the room four novels to get correct.",
+          "verdict": "PENDING",
+          "slug": "valeria-luiselli-beginning-middle-end"
+        },
+        {
+          "rank": 3,
+          "name": "Kokrobitey Institute — What Hands Remember",
+          "domain": "CRAFT",
+          "domain_detail": "CRAFT · TEXTILES",
+          "url": "https://www.newsghana.com.gh/kokrobitey-hosts-fourth-annual-textiles-workshop/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.9,
+          "tier": "FLAME",
+          "heat": 21,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Material Culture",
+          "read": "The most useful institution in West African fashion this year is not a brand. It is a two-week workshop, 16 to 30 August, at an institute the artist Renée Neblett founded in 1992 on the coast west of Accra. The fourth edition is titled <i>What Hands Remember</i>, and the faculty is the whole argument: practising kente weavers and the textile scholar Seyram Agbleze sit alongside a Nigerian designer and the French designer Soline Charrier. Esi Otoo runs the Esi Sweater Project there, turning textile waste into handwoven garments and paid work for weaving communities. Earlier editions sent participants into Kantamanto market and the landfills behind it to source material. <span class=\"g\">Curriculum, not campaign.</span>",
+          "verdict": "PENDING",
+          "slug": "kokrobitey-institute-what-hands-remember"
+        },
+        {
+          "rank": 4,
+          "name": "Aether Commons — Azu Nwagbogu at the Gierowski Foundation",
+          "domain": "EDITORIAL",
+          "domain_detail": "EDITORIAL · CURATION",
+          "url": "https://artafricamagazine.org/aether-commons-refracted-cosmologies/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 29,
+          "direction": "flat",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Project a Black Planet",
+          "read": "Warsaw is doing what Venice keeps announcing it will do. The Stefan Gierowski Foundation, set up in 2014 by the painter's family to look after his estate, handed the reinterpretation of that estate to Azu Nwagbogu, the Lagos curator behind LagosPhoto and the African Artists' Foundation. Twenty works, eleven artists, running 31 May to 18 October at plac Dąbrowskiego 8/11. Gierowski's canvases are distributed through the rooms as gravitational centres rather than historical anchors: a 1975 geometric painting set against Esther Mahlangu's Ndebele fields, late oils against Mona Hatoum's marbles, Andile Dyalvane and Zizipho Poswa's clay in the same argument as Olafur Eliasson's light. The claim is not that abstraction was secretly African. It is that light was never anybody's property. An estate letting an outside curator rewrite it is rarer than any single object in the room.",
+          "verdict": "PENDING",
+          "slug": "aether-commons-azu-nwagbogu-at-the-gierowski-foundation"
+        },
+        {
+          "rank": 5,
+          "name": "Young M.A — KWEEN",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · NEW YORK RAP",
+          "url": "https://www.thefader.com/2026/07/22/young-ma-interview-kween-sober-ooouuu",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 6.4,
+          "tier": "TORCH",
+          "heat": 71,
+          "direction": "up",
+          "flags": [
+            "HEAT>WORK"
+          ],
+          "benchmark": "Starlito",
+          "read": "Fifteen tracks, independent, 29 May, a decade after “OOOUUU.” The FADER got her on the record on 22 July and the interview is sharper than the album: a bottle a day, a 2023 hospitalisation for liver complications, and “Hennessy Medusa” as the one track where the writing catches the life. <span class=\"r\">Sobriety is not a genre.</span> The record made from the far side of it is the one worth waiting for.",
+          "verdict": "PENDING",
+          "slug": "young-m-a-kween"
+        }
+      ]
     }
   ],
   "holding": [
@@ -4104,6 +4219,36 @@
       "name": "The AI Label — Eight Bodies, One Suggestion",
       "first_issue": "2026-07-29-2006",
       "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "Mawande Ka Zenzile — Indlela Ibuzwa Kwabaphambili",
+      "first_issue": "2026-07-30-0602",
+      "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "Valeria Luiselli — Beginning Middle End",
+      "first_issue": "2026-07-30-0602",
+      "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "Kokrobitey Institute — What Hands Remember",
+      "first_issue": "2026-07-30-0602",
+      "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "Aether Commons — Azu Nwagbogu at the Gierowski Foundation",
+      "first_issue": "2026-07-30-0602",
+      "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "Young M.A — KWEEN",
+      "first_issue": "2026-07-30-0602",
+      "first_date": "2026-07-30",
       "resurfaced": []
     }
   ]
