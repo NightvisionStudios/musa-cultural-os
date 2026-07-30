@@ -3871,6 +3871,123 @@
           "slug": "young-m-a-kween"
         }
       ]
+    },
+    {
+      "issue": 41,
+      "issue_id": "2026-07-30-0737",
+      "date": "2026-07-30",
+      "time": "07:37 ET",
+      "forecast": "The sharpest account of the street economy published this year came from a legal scholar with footnotes, and two of the rappers on this board are narrating the same transaction from inside it. Capture over reform.",
+      "climate": "Capture over reform. Kojo Koram's question is who owns a criminalised economy once it goes legal, and the answer he finds across five continents is whoever already owned everything else. Read the rest of the board against that: two independent rappers building catalogues at a pace no label would fund, a self-taught artist in Los Angeles who took the most commodified cloth in America and treated it as a surface rather than a garment, and a two-person show in Sharjah paid for by the institution hanging it. Ownership is the only story here that is genuinely current.",
+      "come_up": [
+        "Reportage over polemic — five continents, no thesis defended in advance",
+        "Commissioned over rented — Sharjah funding the work it hangs",
+        "The cloth as the surface, not the logo — denim artistry out of Los Angeles"
+      ],
+      "decline": [
+        "Release cadence as a substitute for a record",
+        "Shock titling as a growth strategy",
+        "Legalisation read as justice"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Kojo Koram — The Next Fix",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · POLITICAL ECONOMY",
+          "url": "https://www.penguinrandomhouse.com/books/817625/the-next-fix-by-kojo-koram/",
+          "image": "https://images1.penguinrandomhouse.com/smedia/9781804294123",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 38,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Noname Book Club",
+          "requested": true,
+          "read": "Angola, Louisiana: a plantation that became a prison, and the first stop on a reporting trip that ends with Silicon Valley selling psilocybin as a wellness category. Koram crossed five continents to ask one question, and it is a property question rather than a moral one. When a criminalised substance is rebranded as a commodity, who is standing there to collect? Verso put the American edition out on 28 July, 304 pages, $29.95; John Murray had it in Britain on 4 June. He is a legal scholar, born in Accra and raised on Merseyside, and his first book, <i>Uncommon Wealth</i>, took the English PEN Hessell-Tiltman Prize and an Orwell shortlist for arguing that Britain's post-imperial economy was built by lawyers more than by statesmen. Same method here. Dispensaries now sell the thing that carried life sentences, and the sentences have not been unwound. He refuses the easy version and says so on the jacket: not a polemic for or against legalisation. <span class=\"a\">Note what it isn't:</span> a reform story with an ending. Akala calls the case irrefutable. Koram has worked the podcast circuit all month, <i>This Is Hell!</i> on 28 July, which is most of the reason a Verso title is moving at all.",
+          "verdict": "PENDING",
+          "slug": "kojo-koram-the-next-fix"
+        },
+        {
+          "rank": 2,
+          "name": "Body Quotidian — Laila Majid & Inaam Zafar",
+          "domain": "ART",
+          "domain_detail": "ART · TWO-PERSON SHOW",
+          "url": "https://artafricamagazine.org/where-the-body-lingers-the-poetry-of-ordinary-things/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.7,
+          "tier": "FLAME",
+          "heat": 26,
+          "direction": "flat",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "The Shed",
+          "read": "A misted bathroom mirror, UV-printed, that only completes itself once you stand in front of it. That is Laila Majid's <i>Steam 07</i>, 2026, and it hangs in Gallery 6 at Al Mureijah Square until 20 September beside Inaam Zafar's <i>Mourners</i>. Majid works out of London and shows with Niru Ratnam; Zafar works out of Lahore and shows with Grey Noise. Raja'a Khalid, an assistant curator, put the two of them in one room and let the proximity carry the argument: latex partitions and cat-toy tinsel on one wall, figuration dissolving into grief on the other. Sharjah commissioned Zafar's pieces rather than borrowing them, and entry costs nothing. <span class=\"g\">That ordering matters.</span>",
+          "verdict": "PENDING",
+          "slug": "body-quotidian-laila-majid-and-inaam-zafar"
+        },
+        {
+          "rank": 3,
+          "name": "Janett Kabeh",
+          "domain": "CRAFT",
+          "domain_detail": "CRAFT · DENIM",
+          "url": "https://www.artsy.net/artist/janett-kabeh",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.0,
+          "tier": "FLAME",
+          "heat": 12,
+          "direction": "flat",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Denim Tears",
+          "requested": true,
+          "read": "Denim is the most over-explained cloth in America and the least often treated as a surface. Kabeh, self-taught, based in Los Angeles, came out of fashion design and went sideways into it: stitch as mark-making, pointillism in indigo, silhouettes built from hues of blue rather than printed onto them. She describes the subject as human touch and nostalgic eras, which reads soft until you notice she is making pictures out of the fabric itself rather than pictures on it. The public record is thin, and that is the honest part of this number: an Artsy listing, no dated survey, no institution behind her yet. Downtown Los Angeles opened an 11,000 square-foot Denim Institute Museum in June to enshrine 25 brands. The more interesting work is a few miles away, one person and a needle.",
+          "verdict": "PENDING",
+          "slug": "janett-kabeh"
+        },
+        {
+          "rank": 4,
+          "name": "Meechi Mono — Whoever Listens",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · FLORIDA RAP",
+          "url": "https://open.spotify.com/artist/4KmpPMOSV8ZGqlB0M4Y57f",
+          "image": "https://i.scdn.co/image/ab6761610000e5eb744a1d015483be8078ac410e",
+          "score": 6.6,
+          "tier": "TORCH",
+          "heat": 31,
+          "direction": "up",
+          "flags": [],
+          "benchmark": "Showly",
+          "requested": true,
+          "read": "63,719 monthly listeners, one album deep. Broward County, and the register is the post-Gen-Z one: melodic, aggrieved, closer to confession than to flex. Debut single <i>Blocklist</i> landed 11 July last year; <i>The Viewing</i> has done 614,000 plays with no press cycle behind it. <i>Whoever Listens</i> is the first full statement, and <i>Rita</i> followed it. Early, unproven, moving on its own steam.",
+          "verdict": "PENDING",
+          "slug": "meechi-mono-whoever-listens"
+        },
+        {
+          "rank": 5,
+          "name": "King Hendrick$ — Mob America 2",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · HOUSTON RAP",
+          "url": "https://open.spotify.com/artist/6RiCLOQGyUOBm2H4obkif7",
+          "image": "https://i.scdn.co/image/ab6761610000e5eb73eab5890e22b94f3a8b2950",
+          "score": 6.2,
+          "tier": "TORCH",
+          "heat": 74,
+          "direction": "up",
+          "flags": [
+            "HEAT>WORK"
+          ],
+          "benchmark": "Chris Crack",
+          "requested": true,
+          "read": "<i>Leaving the Lot</i> has 43.4 million plays and earns them; the man can build a hook that sounds like a parking lot at two in the morning. There is real lineage here too. <i>Building Castles on Black Sand</i> got a ChopNotSlop edition this year, which places him inside the DJ Screw succession rather than next to it, and that is a craft decision most rappers at 364,000 monthly listeners would not bother to make. The problem is the count. Eight projects across 2024 and 2025, then <i>Mob America 2</i> and <i>Rari Pedal</i> this year, is a supply schedule rather than a discography, and a song titled <i>Anne Frank</i> is reach dressed as edge. The screw remix proves he knows what a record is. <span class=\"r\">Nothing else on the release calendar behaves like it.</span>",
+          "verdict": "PENDING",
+          "slug": "king-hendrick-mob-america-2"
+        }
+      ]
     }
   ],
   "holding": [
@@ -4248,6 +4365,36 @@
     {
       "name": "Young M.A — KWEEN",
       "first_issue": "2026-07-30-0602",
+      "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "Kojo Koram — The Next Fix",
+      "first_issue": "2026-07-30-0737",
+      "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "Body Quotidian — Laila Majid & Inaam Zafar",
+      "first_issue": "2026-07-30-0737",
+      "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "Janett Kabeh",
+      "first_issue": "2026-07-30-0737",
+      "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "Meechi Mono — Whoever Listens",
+      "first_issue": "2026-07-30-0737",
+      "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "King Hendrick$ — Mob America 2",
+      "first_issue": "2026-07-30-0737",
       "first_date": "2026-07-30",
       "resurfaced": []
     }
