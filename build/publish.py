@@ -344,9 +344,32 @@ def bench_html(b, bmap):
             return a if i < 0 else e(b[:i]) + a + e(b[i+len(name):])
     return e(b)
 
+def normalise_reads(led):
+    """`read` is PLAIN TEXT. Three of the four surfaces that consume it escape it
+    (permalink pages here, the homepage's esc(), the archive drawer) and the fourth
+    draws it with Pillow onto the share cards, so any HTML in the field prints as
+    literal <i> and <span class="a"> on the object people actually see. The daily
+    board template invites emphasis spans; the ledger must never carry them.
+    Strips tags, unescapes entities, collapses whitespace. Self-heals on every run."""
+    n = 0
+    for iss in led.get("issues", []):
+        for en in iss.get("entries", []):
+            r = str(en.get("read", "") or "")
+            if "<" not in r and "&" not in r:
+                continue
+            clean = re.sub(r"<[^>]+>", "", r)
+            clean = html.unescape(clean)
+            clean = re.sub(r"[ \t]{2,}", " ", clean).strip()
+            if clean != r:
+                en["read"] = clean
+                n += 1
+    return n
+
 def build(commit_slugs=True):
     led = json.load(open(os.path.join(ROOT, "ledger.json"), encoding="utf-8"))
     canon = json.load(open(os.path.join(ROOT, "musa-50.json"), encoding="utf-8"))
+    r = normalise_reads(led)
+    if r: print("markup stripped from read on %d entries" % r)
     n = normalise_domains(led)
     if n: print("domains normalised on %d entries" % n)
     f = normalise_issue_numbers(led)

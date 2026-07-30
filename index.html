@@ -528,6 +528,12 @@ const DAYS=["SUN","MON","TUE","WED","THU","FRI","SAT"];
    Any legacy BLADE flag still sitting in old data is dropped on ingest. */
 const MARK = "https://archive.themusafamily.com/img/musa-mark.png";
 const DROP_FLAGS = ["BLADE"];
+/* `read` is plain text. Legacy rows carry stray board markup (<i>, <span class="a">),
+   and every read here goes through esc(), so those tags would print literally.
+   Stripped on ingest rather than edited out of history. */
+function plainRead(s){
+  return String(s||"").replace(/<[^>]+>/g,"").replace(/[ \t]{2,}/g," ").trim();
+}
 function cleanFlags(list){
   return (list||[]).filter(f=>{
     const u=String(f).toUpperCase();
@@ -641,7 +647,7 @@ function renderCover(){
     ${artHtml(lead,"story")}
     <div class="storytext">
       <h3>${linkName(lead)}</h3>
-      <div class="dek">${esc(lead.read||"")}</div>
+      <div class="dek">${esc(plainRead(lead.read))}</div>
       ${railHtml(lead)}
       <div class="byline">${lead.benchmark?`BENCHMARK IN THE 50 · <b>${benchLink(lead.benchmark)}</b>`:""}${lead.url?` &nbsp;·&nbsp; ${sourceLink(lead)}`:""}</div>
     </div>`;
@@ -659,7 +665,7 @@ function renderCover(){
       ${artHtml(e,"feat")}
       <div class="dom">${esc(String(e.domain_detail||e.domain||"").toUpperCase())}</div>
       <h4>${linkName(e)}</h4>
-      <div class="dek">${esc(e.read||"")}</div>
+      <div class="dek">${esc(plainRead(e.read))}</div>
       ${railHtml(e)}
       <div class="byline">${e.benchmark?`BENCHMARK · <b>${benchLink(e.benchmark)}</b>`:""}${e.url?` &nbsp;·&nbsp; ${sourceLink(e)}`:""}</div>
     </article>`).join("");
@@ -689,7 +695,7 @@ function build(){
         date:iss.date, time:iss.time||"", climate:iss.climate||iss.forecast||"",
         find:flags.some(f=>String(f).toUpperCase().includes("FIND")),
         gap:Math.round((e.score*10)-(e.heat||0)),
-        read:e.read||"", benchmark:e.benchmark||"",
+        read:plainRead(e.read), benchmark:e.benchmark||"",
         url:e.url||"", image:e.image||MARK, slug:e.slug||"",
         issue:iss.issue_id||iss.issue||"", promoted:e.promoted_to_50||null
       });
