@@ -3641,6 +3641,121 @@
           "slug": "tory-lanez-made-you-think-i-was-gone-but"
         }
       ]
+    },
+    {
+      "issue": 39,
+      "issue_id": "2026-07-29-2006",
+      "date": "2026-07-29",
+      "time": "20:06 ET",
+      "forecast": "What failed this week was enforcement, not taste: eight trade bodies proposed an AI label for streaming and left compliance to whoever volunteers, while the work that held its shape arrived in small signed units — 96 pages from Penguin, a 12HP module with an open SDK, one drum pattern six years deep. Authorship over announcement.",
+      "climate": "Authorship over announcement. Every object that cleared the gate tonight names a person you could write a letter to: a Chicago poet, a São Paulo producer, a four-person module shop, a designer who cuts her own knots. The loudest item on the board names a committee, and the committee made compliance optional.",
+      "come_up": [
+        "Open-SDK instruments — Hermetic Modular on the Electrosmith Daisy",
+        "Brazilian 2-step and brime — CESRV, Speedtest, 2 STEP MAFIA BRASIL",
+        "Poetry as a $20 object — Penguin Poets' summer list"
+      ],
+      "decline": [
+        "Voluntary industry standards — the eight-body AI label",
+        "The AI download as a product — TIDAL delisting, Udio's walled garden",
+        "Debut campaigns with no mill behind them"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Phillip B. Williams — Lift Every Voice",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · POETRY",
+          "url": "https://www.penguinrandomhouse.com/books/777602/lift-every-voice-by-phillip-b-williams/",
+          "image": "https://images4.penguinrandomhouse.com/smedia/9780143138860",
+          "score": 8.5,
+          "tier": "CROWN",
+          "heat": 24,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Noname Book Club",
+          "read": "Ninety-six pages, twenty dollars, three hours read aloud by the author, out July 14 on Penguin Poets. Williams came up in Chicago, went through Cave Canem, and has spent a decade collecting the kind of prizes that usually pull a poet toward the lecture circuit: the Kate Tufts for <i>Thief in the Interior</i>, a Whiting, a Lambda, an American Book Award for <i>Mutiny</i>, then <i>Ours</i> in 2024, a novel-length act of conjure. <i>Lift Every Voice</i> goes the other way. It is short, and the compression is the achievement. The poems set a mother who knew seven ways to say one word under her breath against a grandmother whose smile reflects the world, then land on what Williams calls the impossible lift of forgiveness. Nobody scores a book of poems on volume, which is why it takes the cover: the object is small, priced for anybody, answerable to no committee, and it will outlast every product announced this month. Penguin already has it flagged a best seller in pre-order, so the room is arriving. It has not arrived. Get there before the syllabi do.",
+          "verdict": "PENDING",
+          "slug": "phillip-b-williams-lift-every-voice"
+        },
+        {
+          "rank": 2,
+          "name": "CESRV — BRIME!! / FRONT 2 DA BACK",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · BRIME / SÃO PAULO GARAGE",
+          "url": "https://daily.bandcamp.com/scene-report/brazil-uk-garage-feature",
+          "image": "https://f4.bcbits.com/img/0046261647_171.jpg",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 37,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Jim Legxacy",
+          "read": "Brime was never a crossover. When CESRV pressed <i>BRIME!</i> to vinyl in 2020 with Febem and Fleezus — the first Brazilian grime record on wax — the sleeve carried the 2012 Club World Cup final, Corinthians over Chelsea, and the argument was settled in the image before a bar landed: São Paulo was taking London's 140 and keeping it. Six years and one sequel later (<i>BRIME!!</i>, six tracks, April 1, Beatwise / EMPIRE) he surfaces on the 2 STEP MAFIA BRASIL compilation with \"FRONT 2 DA BACK,\" pointing the tamborzão at American garage instead. The scene he started is now big enough for outsiders to file reports on. He is still the one moving the reference.",
+          "verdict": "PENDING",
+          "slug": "cesrv-brime-front-2-da-back"
+        },
+        {
+          "rank": 3,
+          "name": "Torishéju — When It Rains, It Pours",
+          "domain": "FASHION",
+          "domain_detail": "FASHION · DIASPORIC TAILORING",
+          "url": "https://usa.10magazine.com/fendi-fall-2026-ads-10-things-jul-17/",
+          "image": "https://usa.10magazine.com/wp-content/uploads/2026/07/2026_03_TORISHEJU_01_TAIRA_056-f2.jpeg",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 63,
+          "direction": "up",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Denim Tears",
+          "read": "Boiled wool and duchesse satin, tied and bound until the knot distorts the body underneath it. Torishéju Dumi has shown since 2023 on deadstock and a Yoruba reference chain, and her first fall campaign puts both on film, Sølve Sundsbø shooting, Ellie-Grace Cummings styling. Apple helped pay for it, which is where the honest note goes: a debut campaign is a marketing object, not a collection, and the coats and cardigans revisiting Yorubaland dress are the part still standing in five years. The room is right about her. It got there on the clothes rather than the credits.",
+          "verdict": "PENDING",
+          "slug": "torisheju-when-it-rains-it-pours"
+        },
+        {
+          "rank": 4,
+          "name": "Alchemy Lab — Hermetic Modular",
+          "domain": "TECH",
+          "domain_detail": "TECH · EURORACK / OPEN SDK",
+          "url": "https://hermeticmodular.com/modules/alchemy-lab",
+          "image": "https://producer.news/images/articles/hermetic-modular-s-alchemy-lab-is-an-open-sdk-eurorack-platform.webp",
+          "score": 7.4,
+          "tier": "FLAME",
+          "heat": 15,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Koala Sampler",
+          "read": "Most build-your-own-module ambition dies at the breadboard. Alchemy Lab is 12HP around an Electrosmith Daisy — 480 MHz, 64 MB of SDRAM — with six CV jacks fully exposed to an open-source hardware abstraction layer, 102 addressable LEDs, and a delay launching beside it that stretches to sixteen seconds. The detail that decides it: no price, no ship date. Platform first, product later.",
+          "verdict": "PENDING",
+          "slug": "alchemy-lab-hermetic-modular"
+        },
+        {
+          "rank": 5,
+          "name": "The AI Label — Eight Bodies, One Suggestion",
+          "domain": "IDEAS",
+          "domain_detail": "IDEAS · MUSIC POLICY",
+          "url": "https://www.techtimes.com/articles/320432/20260714/ai-music-labels-land-tomorrow-industry-rules-remain-voluntary-incomplete.htm",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 5.4,
+          "tier": "SPARK",
+          "heat": 82,
+          "direction": "up",
+          "flags": [
+            "HEAT>WORK"
+          ],
+          "benchmark": "Leveraging AI",
+          "read": "On July 10 eight organisations — the RIAA, IFPI, the Recording Academy, SAG-AFTRA, A2IM, WIN, IMPALA and the Human Artistry Campaign — proposed two streaming tags, AI-GENERATED and AI-ASSISTED, modelled on the explicit-content marker. Five days later TIDAL stopped paying royalties on tracks it reads as fully synthetic. One of those is a rule. The other is a suggestion, written that way on purpose: platforms opt in. So the same file can earn full royalties on one service, get demoted on the second and disappear from the third without a note changing. Note what it isn't: a floor. The independent artist this is meant to protect still has no answer on Spotify, and this week a man was due in a New York court over eight million dollars of streaming fraud that ran seven years before anyone stopped it. The disclosure conversation is loud and it is correct. The enforcement is a press release.",
+          "verdict": "PENDING",
+          "slug": "the-ai-label-eight-bodies-one-suggestion"
+        }
+      ]
     }
   ],
   "holding": [
@@ -3958,6 +4073,36 @@
     {
       "name": "Tory Lanez — Made You Think I Was Gone …But",
       "first_issue": "2026-07-29-1740",
+      "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "Phillip B. Williams — Lift Every Voice",
+      "first_issue": "2026-07-29-2006",
+      "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "CESRV — BRIME!! / FRONT 2 DA BACK",
+      "first_issue": "2026-07-29-2006",
+      "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "Torishéju — When It Rains, It Pours",
+      "first_issue": "2026-07-29-2006",
+      "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "Alchemy Lab — Hermetic Modular",
+      "first_issue": "2026-07-29-2006",
+      "first_date": "2026-07-29",
+      "resurfaced": []
+    },
+    {
+      "name": "The AI Label — Eight Bodies, One Suggestion",
+      "first_issue": "2026-07-29-2006",
       "first_date": "2026-07-29",
       "resurfaced": []
     }
