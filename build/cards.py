@@ -62,18 +62,25 @@ def art_for(entry):
     try: return Image.open(p_).convert("RGB")
     except Exception: return None
 
-def cover(im,w,h):
-    """Centre-crop to fill exactly w x h, the way object-fit:cover does."""
+def cover(im,w,h,focus="center"):
+    """Crop to fill exactly w x h, the way object-fit:cover does.
+
+    `focus` sets the vertical anchor. The art band on a square card is ~2:1, so a
+    portrait source centre-cropped loses both ends — on a photograph that means the
+    head. "top" keeps the top of the frame, which is where faces and subjects sit."""
     sw,sh=im.size
     sc=max(w/float(sw), h/float(sh))
     nw,nh=max(w,int(sw*sc+.5)),max(h,int(sh*sc+.5))
     im=im.resize((nw,nh),Image.LANCZOS)
-    x=(nw-w)//2; y=(nh-h)//2
+    x=(nw-w)//2
+    if focus=="top":      y=0
+    elif focus=="bottom": y=nh-h
+    else:                 y=(nh-h)//2
     return im.crop((x,y,x+w,y+h))
 
-def place_art(im,d,tile_src,x,y,w,h,radius):
+def place_art(im,d,tile_src,x,y,w,h,radius,focus="center"):
     """Paste artwork with rounded corners and the house hairline border."""
-    tile=cover(tile_src,w,h)
+    tile=cover(tile_src,w,h,focus)
     mask=Image.new("L",(w,h),0)
     ImageDraw.Draw(mask).rounded_rectangle([0,0,w-1,h-1],radius=radius,fill=255)
     im.paste(tile,(x,y),mask)
@@ -177,7 +184,13 @@ def card(entry, issue, W, H, out, name_size, read_lines, read_size=19, anchor="c
             ax, aw = M, W-2*M
             ay, ah = ly+p(28), (y-p(34))-(ly+p(28))
             if ah >= p(240):
-                place_art(im,d,src,ax,ay,aw,ah,p(10))
+                # explicit art_focus wins; otherwise portrait sources anchor to the
+                # top, since that is where the subject is in almost every photograph.
+                foc=entry.get("art_focus")
+                if foc not in ("top","center","bottom"):
+                    sw_,sh_=src.size
+                    foc="top" if sh_/float(sw_) >= 1.2 else "center"
+                place_art(im,d,src,ax,ay,aw,ah,p(10),foc)
 
     tracked(d,(M,y),str(entry.get("domain_detail") or entry.get("domain","")).upper(),fd,AMBER,4.2)
     y+=p(38)
