@@ -167,6 +167,11 @@ background:var(--panel2);border:1px solid var(--line);border-radius:5px;padding:
 font-family:var(--text);font-size:16px;line-height:1.7;color:var(--fg2)}
 .keybox b{color:var(--fg);font-weight:500}
 .keybox .kfind{color:var(--green)}.keybox .knoise{color:var(--red)}
+.keyflags{display:flex;flex-direction:column;gap:9px;margin:16px 0}
+.keyflag{font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;border:1px solid #2f3a28;
+border-radius:3px;padding:3px 7px;margin-right:10px;white-space:nowrap;color:var(--green)}
+.keyflag.kright{color:var(--amber);border-color:#3a2f1c}
+.keyflag.kloud{color:var(--red);border-color:#3a2020}
 .keytiers{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
 .keytier{font-family:var(--mono);border:1px solid var(--line);border-radius:6px;padding:9px 14px;
 font-size:10px;letter-spacing:.1em;flex:1 1 190px}
@@ -347,7 +352,13 @@ footer .ft b{font-family:var(--mono);font-size:9.5px;color:#b8b09c;letter-spacin
 <!-- ═══ THE KEY ═══ -->
 <div class="rule fade" id="key"><h2>The Key</h2><span class="ln"></span><span class="note">HOW TO READ A SCORE</span></div>
 <section class="keybox fade">
-<b>MUSA SCORE</b> (1–10) is the taste read — where a name sits against the canon. <b>HEAT</b> (0–100) is how loud the room is right now. The gap between them is the whole point: high score, low heat is a <b class="kfind">FIND</b> — taste ahead of the room. High heat, low score is <b class="knoise">NOISE</b>. When both run high and the room is right, that's earned. <b>BENCHMARK</b> names the nearest neighbour in the 50, so no score floats.
+<b>MUSA SCORE</b> (1–10) is the taste read — where a name sits against the canon. <b>HEAT</b> (0–100) is how loud the room is right now. The gap between the two is the whole point, and every card carries a flag naming which way that gap runs:
+<div class="keyflags">
+<span class="keyflag kfind">FIND</span> the score is ahead of the room.
+<span class="keyflag kright">ROOM'S RIGHT</span> the room is loud, and the room is correct.
+<span class="keyflag kloud">ROOM'S LOUD</span> the room is louder than the work.
+</div>
+A score under 5 is <b class="knoise">NOISE</b> outright. <b>BENCHMARK</b> names the nearest neighbour in the 50, so no score floats.
 <div class="keytiers">
 <span class="keytier kt-heir">HEIRWAVE 9–10 · CANON</span>
 <span class="keytier kt-crown">CROWN 8–8.9 · MASTERY</span>
@@ -405,7 +416,7 @@ const INDEX_SEED = {
         {name:"Ibrahim Mahama",domain:"ART",score:9.0,tier:"HEIRWAVE",heat:52,direction:"up",flags:["FIND"]},
         {name:"Álvaro Díaz — Omakase",domain:"MUSIC",score:8.1,tier:"CROWN",heat:44,direction:"up",flags:["FIND"]},
         {name:"Douglas Stuart — John of John",domain:"BOOKS",score:8.2,tier:"CROWN",heat:40,direction:"up",flags:["FIND"]},
-        {name:"Charli XCX — The Moment",domain:"FILM",score:6.6,tier:"TORCH",heat:78,direction:"flat",flags:["HEAT>WORK"]},
+        {name:"Charli XCX — The Moment",domain:"FILM",score:6.6,tier:"TORCH",heat:78,direction:"flat",flags:["ROOM'S LOUD"]},
         {name:"Taste-as-Gatekeeping",domain:"SCENE",score:7.6,tier:"FLAME",heat:66,direction:"up",flags:[]}
       ]},
     { issue:"2026-06-17-0702", date:"2026-06-17", time:"07:02 ET",

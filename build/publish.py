@@ -97,6 +97,10 @@ border-top:1px solid var(--line);border-bottom:1px solid var(--line)}}
 .flag{{font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;color:var(--green);
 border:1px solid #2f3a28;border-radius:3px;padding:3px 7px}}
 .flag.held{{color:var(--amber);border-color:#3a2f1c}}.flag.heat{{color:var(--red);border-color:#3a2020}}
+.flagkey{{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;color:var(--mut);
+line-height:1.75;margin:14px 0 0}}
+.flagkey b{{font-weight:400;color:var(--fg)}}
+.flagkey .kf{{color:var(--green)}}.flagkey .kr{{color:var(--amber)}}.flagkey .kl{{color:var(--red)}}
 .heatwrap{{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:9.5px;
 letter-spacing:.12em;color:var(--mut);margin-left:auto}}
 .heatbar{{width:74px;height:5px;background:#1c1a16;border-radius:3px;overflow:hidden}}
@@ -151,6 +155,7 @@ footer b{{font-family:var(--mono);font-size:9px;color:#b8b09c;letter-spacing:.2e
     <span class="heatbar"><span class="heatfill" style="width:{heatw}%"></span></span>
     <span class="dir {dc}">{dg}</span></span>
 </div>
+{flagkey}
 {bench}
 {srclink}
 <a class="goback" id="goback" href="/">← BACK TO THE ARCHIVE</a>
@@ -488,11 +493,26 @@ def build(commit_slugs=True):
             desc = "%s — scored %s against THE MUSA 50." % (en.get("name",""), en.get("score",""))
         url = "%s/i/%s/" % (BASE, slug)
         tier = str(en.get("tier","") or "")
+        # Every flag on a card must be explained in plain words on the same page.
+        # Colour class + one-line gloss, keyed off the canonical flag name.
+        FLAGDEF = {
+            "FIND":        ("",     "kf", "the score is ahead of the room."),
+            "ROOM'S RIGHT":("held", "kr", "the room is loud, and the room is correct."),
+            "ROOM'S LOUD": ("heat", "kl", "the room is louder than the work."),
+        }
+        def _fdef(f):
+            k = str(f).replace("_"," ").upper().strip()
+            return k, FLAGDEF.get(k, ("held", "kr", ""))
+        _live = [f for f in (en.get("flags") or []) if "BLADE" not in str(f).upper()]
         flags = "".join(
-            '<span class="flag %s">%s</span>' % (
-                "heat" if "HEAT" in str(f).upper() else ("" if "FIND" in str(f).upper() else "held"),
-                e(str(f).replace("_"," ")))
-            for f in (en.get("flags") or []) if "BLADE" not in str(f).upper())
+            '<span class="flag %s">%s</span>' % (_fdef(f)[1][0], e(_fdef(f)[0]))
+            for f in _live)
+        _rows = []
+        for f in _live:
+            k, (_cls, kcls, gloss) = _fdef(f)
+            if gloss:
+                _rows.append('<b class="%s">%s</b> — %s' % (kcls, e(k), e(gloss)))
+        flagkey = ('<p class="flagkey">%s</p>' % "<br>".join(_rows)) if _rows else ""
         d = en.get("direction","flat")
         # Rule 8: every entry carries art. Backfilled entries already point AT the mark, so their
         # onerror never fires — apply the letterbox styling up front for those, not just on failure.
@@ -520,7 +540,7 @@ def build(commit_slugs=True):
             issue=e(iss.get("issue","")), date=e(fmt_date(iss.get("date"))),
             domain=e(str(en.get("domain_detail") or en.get("domain","")).upper()),
             art=art, read=e(read), score=e("%.1f" % float(en.get("score",0))),
-            tier=e(tier), tclass=TIER_CLASS.get(tier,""), flags=flags,
+            tier=e(tier), tclass=TIER_CLASS.get(tier,""), flags=flags, flagkey=flagkey,
             heat=e(en.get("heat",0)), heatw=min(100,int(en.get("heat",0) or 0)),
             dc={"up":"u","down":"d"}.get(d,"f"), dg={"up":"▲","down":"▼"}.get(d,"▮"),
             bench=bench, srclink=srclink, also=also, heir=heir_defs, jsonld=jsonld)
