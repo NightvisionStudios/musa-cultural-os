@@ -2,7 +2,7 @@
 """MUSA share-card renderer. Typographic cards — no source photos, so every card
 reads as a MUSA object in a feed rather than as somebody else's artwork."""
 import os, re, io
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageChops
 import cairosvg
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -145,97 +145,218 @@ def arrow(d,x,y,size,direction):
     elif direction=="down": d.polygon([(x,y),(x+h,y),(x+h/2,y+h)],fill=c)
     else:                   d.rectangle([x+h*0.22,y+h*0.1,x+h*0.78,y+h*0.9],fill=c)
 
-def card(entry, issue, W, H, out, name_size, read_lines, read_size=19, anchor="center", use_art=False):
-    S=W/1200.0                                   # scale everything off the OG width
-    p=lambda v:int(round(v*S))
-    im=Image.new("RGB",(W,H),BG); d=ImageDraw.Draw(im)
-    M=p(64)                                      # margin
-    d.rectangle([M-p(22),M-p(22),W-M+p(22),H-M+p(22)],outline=LINE,width=max(1,p(1)))
+# ── redesigned share cards (2026-07-31) ────────────────────────────────────
+# Direction: art edge-to-edge, duotoned into the MUSA palette, hard gold rule,
+# editorial block below. Anton replaces Instrument Serif as the display face —
+# it is already the display font on og_50.py, and Instrument Serif had become the
+# house style of AI-generated design, which is the one thing a MUSA card can't read as.
 
-    # ── masthead
-    hh=p(38); mark=heirwave(hh); im.paste(mark,(M,M),mark)
-    wm=wordmark(p(30)); im.paste(wm,(M+mark.size[0]+p(14), M+p(5)),wm)
-    fm=font(MONO,p(15))
-    right="THE INDEX  ·  ISSUE %s"%issue.get("issue","")
-    tracked(d,(W-M-tw(d,right,fm,2.2), M+p(11)),right,fm,MUT,2.2)
-    ly=M+hh+p(24)
-    d.line([(M,ly),(W-M,ly)],fill=LINE,width=max(1,p(1)))
+ANTON = os.path.join(FONTS, "Anton-Regular.ttf")
+READ_FG = "#bdb6a6"          # was #a39e90 — too dim to survive a feed
+CHROME  = "#9a9488"          # labels and footer, lifted from #6d6a62
 
-    # ── measure the editorial block first so it can sit optically centred
-    by=H-M-p(124)                                # bottom rail (score row)
-    fd=font(MONOM,p(17))
-    fn=font(SERIF,p(name_size)); lh=int(p(name_size)*1.05)
-    fr=font(MONO,p(read_size)); rlh=int(p(read_size)*1.72)
-    nlines=wrap(d,entry.get("name",""),fn,W-2*M,3)
-    rlines=wrap(d,entry.get("read",""),fr,W-2*M,read_lines)
-    blockH=p(38)+len(nlines)*lh+p(14)+len(rlines)*rlh
-    top=ly+p(40)
-    if anchor=="bottom":                          # headline sits low, editorial-cover style
-        y=max(top, by-p(48)-blockH)
-    else:
-        y=top; slack=(by-p(30))-(y+blockH)
-        if slack>0: y+=int(slack*0.46)
 
-    # ── artwork fills the field between the masthead rule and the editorial block.
-    # Skipped when there's no cached art or the gap is too shallow to read as an image.
-    if use_art:
-        src=art_for(entry)
-        if src is not None:
-            ax, aw = M, W-2*M
-            ay, ah = ly+p(28), (y-p(34))-(ly+p(28))
-            if ah >= p(240):
-                # explicit art_focus wins; otherwise portrait sources anchor to the
-                # top, since that is where the subject is in almost every photograph.
-                foc=entry.get("art_focus")
-                if foc not in ("top","center","bottom"):
-                    sw_,sh_=src.size
-                    foc="top" if sh_/float(sw_) >= 1.2 else "center"
-                place_art(im,d,src,ax,ay,aw,ah,p(10),foc)
+def duotone(im, strength=0.55):
+    """Push source art toward the house palette so a card reads as a MUSA object
+    in a feed rather than as somebody else's artwork (Rule: cards are ours)."""
+    if strength <= 0: return im.convert("RGB")
+    g = ImageOps.autocontrast(ImageOps.grayscale(im), cutoff=1)
+    tone = ImageOps.colorize(g, black="#0a0908", mid="#6b5a38", white="#f4ecd8")
+    return Image.blend(im.convert("RGB"), tone, strength)
 
-    tracked(d,(M,y),str(entry.get("domain_detail") or entry.get("domain","")).upper(),fd,AMBER,4.2)
-    y+=p(38)
-    for ln in nlines:
-        d.text((M,y),ln,font=fn,fill=FG); y+=lh
-    y+=p(14)
-    for ln in rlines:
-        d.text((M,y),ln,font=fr,fill="#a39e90"); y+=rlh
 
-    d.line([(M,by),(W-M,by)],fill=LINE,width=max(1,p(1)))
-    sy=by+p(22)
-    sc=("%.1f"%float(entry.get("score",0)))
-    fsc=font(SERIF,p(72))
-    d.text((M,sy-p(14)),sc,font=fsc,fill=FG)
-    x=M+d.textlength(sc,font=fsc)+p(14)
-    fl=font(MONO,p(14))
-    tracked(d,(x,sy+p(30)),"SCORE",fl,MUT,2.4); x+=tw(d,"SCORE",fl,2.4)+p(18)
-    t=str(entry.get("tier","")).upper()
-    if t: x=chip(d,x,sy+p(6),t,TIER_COLOR.get(t,FG),TIER_BORDER.get(t,LINE),fs=p(17))+p(10)
-    for f_ in [f for f in (entry.get("flags") or []) if "BLADE" not in str(f).upper()]:
-        lbl=str(f_).replace("_"," ").upper()
-        col=RED if "HEAT" in lbl else (GREEN if "FIND" in lbl else AMBER)
-        bor="#3a2020" if "HEAT" in lbl else ("#2f3a28" if "FIND" in lbl else "#3a2f1c")
-        x=chip(d,x,sy+p(6),lbl,col,bor,fs=p(17))+p(10)
+def scrim(im, start=0.66, power=2.4, top=0.24):
+    """Vertical gradients top and bottom so the masthead and the gold rule always
+    land on a dark floor, whatever the artwork is doing underneath."""
+    w, h = im.size
+    ramp = Image.new("L", (1, h)); px = ramp.load()
+    for y in range(h):
+        t = y / float(h - 1)
+        px[0, y] = int(255 * min(1.0, ((t - start) / (1 - start)) ** power)) if t > start else 0
+    mask = ramp.resize((w, h))
+    if top:
+        tr = Image.new("L", (1, h)); tp = tr.load()
+        for y in range(h):
+            t = y / float(h - 1)
+            tp[0, y] = int(255 * (max(0.0, 1 - t / top) ** 1.6) * 0.85) if t < top else 0
+        mask = ImageChops.lighter(mask, tr.resize((w, h)))
+    return Image.composite(Image.new("RGB", (w, h), (6, 6, 5)), im, mask)
 
-    # heat, right aligned
-    heat=int(entry.get("heat",0) or 0)
-    fh=font(MONO,p(16)); ht="HEAT %d"%heat
-    bw=p(150); asz=p(15)
-    hx=W-M-bw-p(14)-asz
-    tracked(d,(hx-tw(d,ht,fh,2.2)-p(12), sy+p(16)),ht,fh,MUT,2.2)
-    heatbar(d,hx,sy+p(22),heat,w=bw,h=p(8))
-    arrow(d,hx+bw+p(14),sy+p(19),asz,entry.get("direction","flat"))
 
-    # ── footer
-    fy=H-M-p(14)
-    ff=font(MONO,p(15))
-    bench=entry.get("benchmark","")
-    if bench: tracked(d,(M,fy),("BENCHMARK  ·  "+bench).upper(),ff,MUT2,2.6)
-    site="ARCHIVE.THEMUSAFAMILY.COM"
-    tracked(d,(W-M-tw(d,site,ff,2.6),fy),site,ff,MUT2,2.6)
+def grain(im, sigma=8, opacity=20):
+    n = Image.effect_noise(im.size, sigma).convert("L")
+    return Image.blend(im, ImageChops.overlay(im, Image.merge("RGB", (n, n, n))), opacity / 100.0)
 
-    im=scanlines(im)
-    im.save(out,"JPEG",quality=84,optimize=True,progressive=True)
+
+_mark = None
+def art_panel(entry, w, h):
+    """Artwork cropped to fill, or the MUSA mark contained on black. Rule 8: the
+    image field is never empty, and the mark is never stretched."""
+    global _mark
+    src = art_for(entry)
+    if src is not None:
+        sw, sh = src.size
+        foc = entry.get("art_focus")
+        if foc not in ("top", "center", "bottom"):
+            foc = "top" if sh / float(sw) >= 1.2 else "center"
+        return duotone(cover(src, w, h, foc), 0.55), False
+    if _mark is None:
+        m = Image.open(os.path.join(HERE, "..", "img", "musa-mark.png")).convert("RGBA")
+        _mark = m
+    tile = Image.new("RGB", (w, h), BG)
+    s = min(w * 0.40 / _mark.size[0], h * 0.40 / _mark.size[1])
+    m = _mark.resize((max(1, int(_mark.size[0] * s)), max(1, int(_mark.size[1] * s))), Image.LANCZOS)
+    tile.paste(m, ((w - m.size[0]) // 2, (h - m.size[1]) // 2), m)
+    return tile, True
+
+
+def short_bench(b):
+    """Just the canon name. The full benchmark sentence never fit, and on every
+    card it ran straight through the site URL — overlapping glyphs, shipped 431 times."""
+    b = str(b or "").strip()
+    for s in (" — ", " – ", " - ", ", ", " · "):
+        if s in b:
+            b = b.split(s)[0]; break
+    return b.strip().rstrip(".")
+
+
+def _masthead(im, d, W, M, y, issue, hh=40, wmh=32, fs=17):
+    mark = heirwave(hh); im.paste(mark, (M, y), mark)
+    wm = wordmark(wmh); im.paste(wm, (M + mark.size[0] + int(hh * 0.4), y + int(hh * 0.13)), wm)
+    fm = font(MONO, fs)
+    r = "ISSUE %s" % issue.get("issue", "")
+    tracked(d, (W - M - tw(d, r, fm, 2.4), y + int(hh * 0.3)), r, fm, CHROME, 2.4)
+
+
+def _fit(d, name, read, boxw, top, floor, sizes, read_sizes=(3, 2), name_lines=3,
+         read_px=26, lhf=0.95):
+    """Step the headline down until the editorial block clears the rail. 431 cards
+    with titles from 6 to 90 characters — the layout has to fit itself or it breaks."""
+    for size in sizes:
+        fn = font(ANTON, size); lh = int(size * lhf)
+        nl = wrap(d, name.upper(), fn, boxw, name_lines)
+        for rmax in read_sizes:
+            fr = font(MONO, read_px); rlh = int(read_px * 1.6)
+            rl = wrap(d, read, fr, boxw, rmax)
+            if top + int(size * 0.42) + len(nl) * lh + 24 + len(rl) * rlh <= floor:
+                return fn, nl, lh, fr, rl, rlh, size
+    fn = font(ANTON, sizes[-1]); lh = int(sizes[-1] * lhf)
+    fr = font(MONO, read_px)
+    return (fn, wrap(d, name.upper(), fn, boxw, name_lines), lh,
+            fr, wrap(d, read, fr, boxw, 1), int(read_px * 1.6), sizes[-1])
+
+
+def _score_rail(d, entry, x, y, boxw, score_px=96, chip_fs=21, heat=True, bw=160):
+    sc = "%.1f" % float(entry.get("score", 0))
+    fsc = font(ANTON, score_px)
+    d.text((x, y - int(score_px * 0.20)), sc, font=fsc, fill=AMBER)
+    cx = x + d.textlength(sc, font=fsc) + int(score_px * 0.19)
+    fl = font(MONO, 18)
+    tracked(d, (cx, y + int(score_px * 0.46)), "SCORE", fl, CHROME, 2.6)
+    c2 = cx + tw(d, "SCORE", fl, 2.6) + 22
+    t = str(entry.get("tier", "")).upper()
+    if t: c2 = chip(d, c2, y + 16, t, TIER_COLOR.get(t, FG), TIER_BORDER.get(t, LINE), fs=chip_fs) + 12
+    for f_ in [z for z in (entry.get("flags") or []) if "BLADE" not in str(z).upper()]:
+        lbl = str(f_).replace("_", " ").upper()
+        col = RED if "HEAT" in lbl else (GREEN if "FIND" in lbl else AMBER)
+        bor = "#3a2020" if "HEAT" in lbl else ("#2f3a28" if "FIND" in lbl else "#3a2f1c")
+        c2 = chip(d, c2, y + 16, lbl, col, bor, fs=chip_fs) + 12
+    if heat:
+        h = int(entry.get("heat", 0) or 0)
+        fh = font(MONO, 19); ht = "HEAT %d" % h; asz = 17
+        hx = x + boxw - bw - 18 - asz
+        tracked(d, (hx - tw(d, ht, fh, 2.4) - 14, y + 20), ht, fh, CHROME, 2.4)
+        heatbar(d, hx, y + 26, h, w=bw, h=10)
+        arrow(d, hx + bw + 18, y + 23, asz, entry.get("direction", "flat"))
+
+
+def _footer(d, entry, x, y, boxw, fs=20):
+    """Benchmark left, site right — clamped so they can never collide again."""
+    ff = font(MONO, fs)
+    site = "ARCHIVE.THEMUSAFAMILY.COM"
+    sw = tw(d, site, ff, 2.8)
+    tracked(d, (x + boxw - sw, y), site, ff, CHROME, 2.8)
+    b = short_bench(entry.get("benchmark"))
+    if not b: return
+    txt = ("BENCHMARK · " + b).upper()
+    avail = boxw - sw - 48
+    while tw(d, txt, ff, 2.8) > avail and len(txt) > 14:
+        txt = txt[:-2]
+    if tw(d, txt, ff, 2.8) <= avail:
+        tracked(d, (x, y), txt, ff, CHROME, 2.8)
+
+
+def sq(entry, issue, out, W=1080, H=1350):
+    """Instagram card — art on top, gold rule, editorial below."""
+    M, AH = 68, 700
+    im = Image.new("RGB", (W, H), BG)
+    panel, is_mark = art_panel(entry, W, AH)
+    im.paste(scrim(panel, 0.66, 2.4, 0.24) if not is_mark else panel, (0, 0))
+    d = ImageDraw.Draw(im)
+    d.line([(0, AH), (W, AH)], fill=AMBER, width=3)
+    _masthead(im, d, W, M, M, issue)
+
+    rail = H - M - 158
+    top = AH + 52
+    boxw = W - 2 * M
+    fk = font(MONOM, 21)
+    tracked(d, (M, top), str(entry.get("domain_detail") or entry.get("domain", "")).upper(),
+            fk, AMBER, 4.6)
+    fn, nl, lh, fr, rl, rlh, _ = _fit(d, str(entry.get("name", "")), str(entry.get("read", "")),
+                                      boxw, top, rail - 26, (108, 98, 90, 82, 74, 66, 60))
+    y = top + 42
+    for ln in nl:
+        d.text((M, y), ln, font=fn, fill=FG); y += lh
+    y += 24
+    for ln in rl:
+        d.text((M, y), ln, font=fr, fill=READ_FG); y += rlh
+
+    d.line([(M, rail), (W - M, rail)], fill="#33302a", width=1)
+    _score_rail(d, entry, M, rail + 26, boxw)
+    _footer(d, entry, M, H - M - 4, boxw)
+    return _save(grain(scanlines(im, 6)), out)
+
+
+def og(entry, issue, out, W=1200, H=630):
+    """Link-unfurl card — same language, rotated: art left, gold rule, editorial right."""
+    M, AW = 52, 470
+    im = Image.new("RGB", (W, H), BG)
+    panel, is_mark = art_panel(entry, AW, H)
+    if not is_mark:
+        panel = scrim(panel, 0.72, 2.2, 0.0)
+    im.paste(panel, (0, 0))
+    d = ImageDraw.Draw(im)
+    d.rectangle([AW, 0, AW + 2, H], fill=AMBER)
+
+    x = AW + 3 + 46
+    boxw = W - M - x
+    mark = heirwave(32); im.paste(mark, (x, M), mark)
+    wm = wordmark(26); im.paste(wm, (x + mark.size[0] + 13, M + 4), wm)
+    fm = font(MONO, 16)
+    r = "ISSUE %s" % issue.get("issue", "")
+    tracked(d, (x + boxw - tw(d, r, fm, 2.4), M + 10), r, fm, CHROME, 2.4)
+
+    rail = H - M - 120
+    top = M + 32 + 34
+    fk = font(MONOM, 18)
+    tracked(d, (x, top), str(entry.get("domain_detail") or entry.get("domain", "")).upper(),
+            fk, AMBER, 4.2)
+    fn, nl, lh, fr, rl, rlh, _ = _fit(d, str(entry.get("name", "")), str(entry.get("read", "")),
+                                      boxw, top, rail - 20, (76, 68, 60, 54, 48, 42),
+                                      read_sizes=(2, 1), read_px=20)
+    y = top + 36
+    for ln in nl:
+        d.text((x, y), ln, font=fn, fill=FG); y += lh
+    y += 18
+    for ln in rl:
+        d.text((x, y), ln, font=fr, fill=READ_FG); y += rlh
+
+    d.line([(x, rail), (x + boxw, rail)], fill="#33302a", width=1)
+    _score_rail(d, entry, x, rail + 20, boxw, score_px=68, chip_fs=18, heat=False)
+    _footer(d, entry, x, H - M - 2, boxw, fs=16)
+    return _save(grain(scanlines(im, 6)), out)
+
+
+def _save(im, out):
+    im.save(out, "JPEG", quality=88, optimize=True, progressive=True)
     return out
-
-def og(entry,issue,out):  return card(entry,issue,1200,630,out,name_size=60,read_lines=3,read_size=19)
-def sq(entry,issue,out):  return card(entry,issue,1080,1350,out,name_size=104,read_lines=8,read_size=29,anchor="bottom",use_art=True)
