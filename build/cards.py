@@ -211,7 +211,10 @@ def art_panel(entry, w, h):
 
 
 def short_bench(b):
-    """Just the canon name. The full benchmark sentence never fit, and on every
+    """RETIRED 2026-07-31 — no longer called; benchmarks are off the cards entirely.
+    Kept only so an older caller fails loudly rather than silently. See _footer.
+
+    Just the canon name. The full benchmark sentence never fit, and on every
     card it ran straight through the site URL — overlapping glyphs, shipped 431 times."""
     b = str(b or "").strip()
     for s in (" — ", " – ", " - ", ", ", " · "):
@@ -271,19 +274,19 @@ def _score_rail(d, entry, x, y, boxw, score_px=96, chip_fs=21, heat=True, bw=160
 
 
 def _footer(d, entry, x, y, boxw, fs=20):
-    """Benchmark left, site right — clamped so they can never collide again."""
+    """Site URL only, right-aligned.
+
+    BENCHMARK IS RETIRED FROM CARDS (2026-07-31). A card travels alone — into a
+    feed, a group chat, somebody's DMs — with none of the framing the archive
+    gives it. Stripped to a canon surname it read as a flat comparison rather
+    than a placement, which is a good way to confuse a reader and insult a
+    subject. The benchmark still runs on the permalink and in the Card Room,
+    where THE KEY and the linked 50 are right there to carry it. Do not add it
+    back to the image."""
     ff = font(MONO, fs)
     site = "ARCHIVE.THEMUSAFAMILY.COM"
     sw = tw(d, site, ff, 2.8)
     tracked(d, (x + boxw - sw, y), site, ff, CHROME, 2.8)
-    b = short_bench(entry.get("benchmark"))
-    if not b: return
-    txt = ("BENCHMARK · " + b).upper()
-    avail = boxw - sw - 48
-    while tw(d, txt, ff, 2.8) > avail and len(txt) > 14:
-        txt = txt[:-2]
-    if tw(d, txt, ff, 2.8) <= avail:
-        tracked(d, (x, y), txt, ff, CHROME, 2.8)
 
 
 def sq(entry, issue, out, W=1080, H=1350):
