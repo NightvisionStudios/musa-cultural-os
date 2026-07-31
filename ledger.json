@@ -3,7 +3,35 @@
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
     "updated": "2026-07-30",
-    "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL."
+    "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL.",
+    "approved_repeats": [
+      {
+        "name": "Álvaro Díaz — Omakase",
+        "approved": "2026-07-30",
+        "why": "pre-rule repeat, grandfathered when the no-repeat gate was added; logged, not hidden"
+      },
+      {
+        "name": "Mixtape",
+        "approved": "2026-07-30",
+        "why": "pre-rule repeat, grandfathered when the no-repeat gate was added; logged, not hidden"
+      },
+      {
+        "name": "LACMA — Imagining Black Diasporas",
+        "approved": "2026-07-30",
+        "why": "pre-rule repeat, grandfathered when the no-repeat gate was added; logged, not hidden"
+      },
+      {
+        "name": "By Storm — My Ghosts Go Ghost",
+        "approved": "2026-07-30",
+        "why": "pre-rule repeat, grandfathered when the no-repeat gate was added; logged, not hidden"
+      },
+      {
+        "name": "Pan-African Architecture Biennale",
+        "approved": "2026-07-30",
+        "why": "pre-rule repeat, grandfathered when the no-repeat gate was added; logged, not hidden"
+      }
+    ],
+    "no_repeat_rule": "A name is never featured twice. build/publish.py hard-fails on any repeat not listed in _meta.approved_repeats. The holding registry is synced automatically on every build and is an index of past calls, never the source of truth — the issues array is."
   },
   "issues": [
     {
@@ -4541,6 +4569,864 @@
       "name": "Chapter 3 — Vanessa Lee",
       "first_issue": "2026-07-30-2029",
       "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "Ibrahim Mahama",
+      "first_issue": "2026-06-17-0638",
+      "first_date": "2026-06-17",
+      "resurfaced": []
+    },
+    {
+      "name": "Douglas Stuart — John of John",
+      "first_issue": "2026-06-17-0638",
+      "first_date": "2026-06-17",
+      "resurfaced": []
+    },
+    {
+      "name": "Charli XCX — The Moment",
+      "first_issue": "2026-06-17-0638",
+      "first_date": "2026-06-17",
+      "resurfaced": []
+    },
+    {
+      "name": "Taste-as-Gatekeeping",
+      "first_issue": "2026-06-17-0638",
+      "first_date": "2026-06-17",
+      "resurfaced": []
+    },
+    {
+      "name": "Smiljan Radić",
+      "first_issue": "2026-06-17-0702",
+      "first_date": "2026-06-17",
+      "resurfaced": []
+    },
+    {
+      "name": "Industry — S4",
+      "first_issue": "2026-06-17-0702",
+      "first_date": "2026-06-17",
+      "resurfaced": []
+    },
+    {
+      "name": "Esoteric Ebb",
+      "first_issue": "2026-06-17-0702",
+      "first_date": "2026-06-17",
+      "resurfaced": []
+    },
+    {
+      "name": "Isaiah Rashad — It's Been Awful",
+      "first_issue": "2026-06-17-0702",
+      "first_date": "2026-06-17",
+      "resurfaced": []
+    },
+    {
+      "name": "New Maximalism / Archive-as-Currency",
+      "first_issue": "2026-06-17-0702",
+      "first_date": "2026-06-17",
+      "resurfaced": []
+    },
+    {
+      "name": "Schrödinger's Call",
+      "first_issue": "2026-06-18-2236",
+      "first_date": "2026-06-18",
+      "resurfaced": []
+    },
+    {
+      "name": "Industry S4",
+      "first_issue": "2026-06-18-2236",
+      "first_date": "2026-06-18",
+      "resurfaced": []
+    },
+    {
+      "name": "Technical Mono / Anti-Design",
+      "first_issue": "2026-06-18-2236",
+      "first_date": "2026-06-18",
+      "resurfaced": []
+    },
+    {
+      "name": "The 2016 Throwback",
+      "first_issue": "2026-06-18-2236",
+      "first_date": "2026-06-18",
+      "resurfaced": []
+    },
+    {
+      "name": "FIFA World Cup 2026",
+      "first_issue": "2026-06-20-0546",
+      "first_date": "2026-06-20",
+      "resurfaced": []
+    },
+    {
+      "name": "JR — Pont Neuf",
+      "first_issue": "2026-06-20-0546",
+      "first_date": "2026-06-20",
+      "resurfaced": []
+    },
+    {
+      "name": "MIKE",
+      "first_issue": "2026-06-20-0546",
+      "first_date": "2026-06-20",
+      "resurfaced": []
+    },
+    {
+      "name": "Tech Spec",
+      "first_issue": "2026-06-20-0546",
+      "first_date": "2026-06-20",
+      "resurfaced": []
+    },
+    {
+      "name": "Broadcast-to-Belonging",
+      "first_issue": "2026-06-20-0546",
+      "first_date": "2026-06-20",
+      "resurfaced": []
+    },
+    {
+      "name": "iAMLYRIC",
+      "first_issue": "2026-06-23-2356",
+      "first_date": "2026-06-23",
+      "resurfaced": []
+    },
+    {
+      "name": "The Reading Room",
+      "first_issue": "2026-06-23-2356",
+      "first_date": "2026-06-23",
+      "resurfaced": []
+    },
+    {
+      "name": "Barbican — Pan-African Survey",
+      "first_issue": "2026-06-25-0424",
+      "first_date": "2026-06-25",
+      "resurfaced": []
+    },
+    {
+      "name": "Diaspora-as-Engine / Caracas Merch",
+      "first_issue": "2026-06-25-0424",
+      "first_date": "2026-06-25",
+      "resurfaced": []
+    },
+    {
+      "name": "Mark Jenkin — Cornish-Trilogy Closer",
+      "first_issue": "2026-06-25-0424",
+      "first_date": "2026-06-25",
+      "resurfaced": []
+    },
+    {
+      "name": "Project a Black Planet",
+      "first_issue": "2026-06-26-1048",
+      "first_date": "2026-06-26",
+      "resurfaced": []
+    },
+    {
+      "name": "Drunken Noodles",
+      "first_issue": "2026-06-26-1048",
+      "first_date": "2026-06-26",
+      "resurfaced": []
+    },
+    {
+      "name": "Willy Chavarria × adidas",
+      "first_issue": "2026-06-26-1048",
+      "first_date": "2026-06-26",
+      "resurfaced": []
+    },
+    {
+      "name": "T Clark — Debut Collection",
+      "first_issue": "2026-06-26-1048",
+      "first_date": "2026-06-26",
+      "resurfaced": []
+    },
+    {
+      "name": "Grace Wales Bonner → Hermès",
+      "first_issue": "2026-06-27-1749",
+      "first_date": "2026-06-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Roc Marciano — 656",
+      "first_issue": "2026-06-27-1749",
+      "first_date": "2026-06-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Cape Verde — World Cup Run",
+      "first_issue": "2026-06-27-1749",
+      "first_date": "2026-06-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Breadth Over Blockbuster",
+      "first_issue": "2026-06-27-1749",
+      "first_date": "2026-06-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Adidas × Wales Bonner SS26",
+      "first_issue": "2026-07-02-1054",
+      "first_date": "2026-07-02",
+      "resurfaced": []
+    },
+    {
+      "name": "Splice",
+      "first_issue": "2026-07-02-1054",
+      "first_date": "2026-07-02",
+      "resurfaced": []
+    },
+    {
+      "name": "LOVING ROOM",
+      "first_issue": "2026-07-02-1054",
+      "first_date": "2026-07-02",
+      "resurfaced": []
+    },
+    {
+      "name": "Relooted",
+      "first_issue": "2026-07-02-2315",
+      "first_date": "2026-07-02",
+      "resurfaced": []
+    },
+    {
+      "name": "The Nue Black Aesthetic",
+      "first_issue": "2026-07-02-2315",
+      "first_date": "2026-07-02",
+      "resurfaced": []
+    },
+    {
+      "name": "House of Aama — Folk Grounds",
+      "first_issue": "2026-07-02-2315",
+      "first_date": "2026-07-02",
+      "resurfaced": []
+    },
+    {
+      "name": "Tasteslop — Nemesis Memos",
+      "first_issue": "2026-07-04-1236",
+      "first_date": "2026-07-04",
+      "resurfaced": []
+    },
+    {
+      "name": "Nardos Imam — The Infinite Banquet",
+      "first_issue": "2026-07-04-1236",
+      "first_date": "2026-07-04",
+      "resurfaced": []
+    },
+    {
+      "name": "Wales Bonner × adidas — On Pitch SS26",
+      "first_issue": "2026-07-04-1356",
+      "first_date": "2026-07-04",
+      "resurfaced": []
+    },
+    {
+      "name": "Space Afrika",
+      "first_issue": "2026-07-04-1356",
+      "first_date": "2026-07-04",
+      "resurfaced": []
+    },
+    {
+      "name": "Pan-African Biennale — Nairobi",
+      "first_issue": "2026-07-04-1356",
+      "first_date": "2026-07-04",
+      "resurfaced": []
+    },
+    {
+      "name": "Black-Owned Bookstore Resurgence",
+      "first_issue": "2026-07-04-1356",
+      "first_date": "2026-07-04",
+      "resurfaced": []
+    },
+    {
+      "name": "The Chi — Final Season",
+      "first_issue": "2026-07-04-1356",
+      "first_date": "2026-07-04",
+      "resurfaced": []
+    },
+    {
+      "name": "Is God Is",
+      "first_issue": "2026-07-05-1227",
+      "first_date": "2026-07-05",
+      "resurfaced": []
+    },
+    {
+      "name": "Vince Staples — Cry Baby",
+      "first_issue": "2026-07-05-1227",
+      "first_date": "2026-07-05",
+      "resurfaced": []
+    },
+    {
+      "name": "Melvin Gibbs — How Black Music Took Over the World",
+      "first_issue": "2026-07-05-1227",
+      "first_date": "2026-07-05",
+      "resurfaced": []
+    },
+    {
+      "name": "Nicholas Daley",
+      "first_issue": "2026-07-05-1227",
+      "first_date": "2026-07-05",
+      "resurfaced": []
+    },
+    {
+      "name": "My Father's Shadow — Akinola Davies Jr.",
+      "first_issue": "2026-07-06-0834",
+      "first_date": "2026-07-06",
+      "resurfaced": []
+    },
+    {
+      "name": "Firelei Báez — mid-career survey",
+      "first_issue": "2026-07-06-0834",
+      "first_date": "2026-07-06",
+      "resurfaced": []
+    },
+    {
+      "name": "Alewya — \"Zero\"",
+      "first_issue": "2026-07-06-0834",
+      "first_date": "2026-07-06",
+      "resurfaced": []
+    },
+    {
+      "name": "WAFFLESNCREAM",
+      "first_issue": "2026-07-06-0834",
+      "first_date": "2026-07-06",
+      "resurfaced": []
+    },
+    {
+      "name": "Shihara — Yuta Ishihara",
+      "first_issue": "2026-07-06-0834",
+      "first_date": "2026-07-06",
+      "resurfaced": []
+    },
+    {
+      "name": "NIGO — From Japan with Love",
+      "first_issue": "2026-07-07-1441",
+      "first_date": "2026-07-07",
+      "resurfaced": []
+    },
+    {
+      "name": "Donald Locke — Resistant Forms",
+      "first_issue": "2026-07-07-1441",
+      "first_date": "2026-07-07",
+      "resurfaced": []
+    },
+    {
+      "name": "Satluj — Honey Trehan",
+      "first_issue": "2026-07-07-1441",
+      "first_date": "2026-07-07",
+      "resurfaced": []
+    },
+    {
+      "name": "Navy Blue — Sir Render",
+      "first_issue": "2026-07-07-1441",
+      "first_date": "2026-07-07",
+      "resurfaced": []
+    },
+    {
+      "name": "Kendra Allen — Good Morning Means I Love You",
+      "first_issue": "2026-07-07-1441",
+      "first_date": "2026-07-07",
+      "resurfaced": []
+    },
+    {
+      "name": "Colson Whitehead — Cool Machine",
+      "first_issue": "2026-07-13-1332",
+      "first_date": "2026-07-13",
+      "resurfaced": []
+    },
+    {
+      "name": "Zizipho Poswa — iMbewu (The Seed)",
+      "first_issue": "2026-07-13-1332",
+      "first_date": "2026-07-13",
+      "resurfaced": []
+    },
+    {
+      "name": "Imane Ayissi — Ozouandam Ollat",
+      "first_issue": "2026-07-13-1332",
+      "first_date": "2026-07-13",
+      "resurfaced": []
+    },
+    {
+      "name": "Phiik & Lungs — People Are Not Your Friends",
+      "first_issue": "2026-07-13-1332",
+      "first_date": "2026-07-13",
+      "resurfaced": []
+    },
+    {
+      "name": "They Fight — Sheldon Candis",
+      "first_issue": "2026-07-13-1332",
+      "first_date": "2026-07-13",
+      "resurfaced": []
+    },
+    {
+      "name": "Raz Fresco — \"WHY EQUALS SELF\"",
+      "first_issue": "2026-07-15-2005",
+      "first_date": "2026-07-15",
+      "resurfaced": []
+    },
+    {
+      "name": "Rudy Loewe — \"Intimacies of Care\"",
+      "first_issue": "2026-07-15-2005",
+      "first_date": "2026-07-15",
+      "resurfaced": []
+    },
+    {
+      "name": "Rahul Mishra — \"Devi: The Eternal Muse\"",
+      "first_issue": "2026-07-15-2005",
+      "first_date": "2026-07-15",
+      "resurfaced": []
+    },
+    {
+      "name": "Studio NEiDA — The Falcon Cinema",
+      "first_issue": "2026-07-15-2005",
+      "first_date": "2026-07-15",
+      "resurfaced": []
+    },
+    {
+      "name": "Ashton Lattimore — \"Runner\"",
+      "first_issue": "2026-07-15-2005",
+      "first_date": "2026-07-15",
+      "resurfaced": []
+    },
+    {
+      "name": "Ideas of Africa: Portraiture and Political Imagination",
+      "first_issue": "2026-07-16-1050",
+      "first_date": "2026-07-16",
+      "resurfaced": []
+    },
+    {
+      "name": "BlackStar Film Festival 2026",
+      "first_issue": "2026-07-16-1050",
+      "first_date": "2026-07-16",
+      "resurfaced": []
+    },
+    {
+      "name": "Girl Talk, Michael Christmas & Chris Crack -- Don't Come To My House Sharing Your Location",
+      "first_issue": "2026-07-16-1050",
+      "first_date": "2026-07-16",
+      "resurfaced": []
+    },
+    {
+      "name": "Dijágo",
+      "first_issue": "2026-07-16-1050",
+      "first_date": "2026-07-16",
+      "resurfaced": []
+    },
+    {
+      "name": "La Réunion Studio",
+      "first_issue": "2026-07-16-1050",
+      "first_date": "2026-07-16",
+      "resurfaced": []
+    },
+    {
+      "name": "Nduduzo Makhathini -- The Myth We Choose",
+      "first_issue": "2026-07-16-1530",
+      "first_date": "2026-07-16",
+      "resurfaced": []
+    },
+    {
+      "name": "Fatimah Asghar -- Daughter of the Mountains",
+      "first_issue": "2026-07-16-1530",
+      "first_date": "2026-07-16",
+      "resurfaced": []
+    },
+    {
+      "name": "Ayobola Kekere-Ekun -- Let Us Go Where the Ones Who Sleep Dance",
+      "first_issue": "2026-07-16-1530",
+      "first_date": "2026-07-16",
+      "resurfaced": []
+    },
+    {
+      "name": "Shamikha Malik -- Aam",
+      "first_issue": "2026-07-16-1530",
+      "first_date": "2026-07-16",
+      "resurfaced": []
+    },
+    {
+      "name": "The Death of 'African Fashion'",
+      "first_issue": "2026-07-16-1530",
+      "first_date": "2026-07-16",
+      "resurfaced": []
+    },
+    {
+      "name": "Haile Gerima — Black Lions – Roman Wolves",
+      "first_issue": "2026-07-17-2214",
+      "first_date": "2026-07-17",
+      "resurfaced": []
+    },
+    {
+      "name": "Peterson Kamwathi — Tabula Rasa",
+      "first_issue": "2026-07-17-2214",
+      "first_date": "2026-07-17",
+      "resurfaced": []
+    },
+    {
+      "name": "Tricky — Different When It's Silent",
+      "first_issue": "2026-07-17-2214",
+      "first_date": "2026-07-17",
+      "resurfaced": []
+    },
+    {
+      "name": "Stephanie Wambugu — Lonely Crowds",
+      "first_issue": "2026-07-17-2214",
+      "first_date": "2026-07-17",
+      "resurfaced": []
+    },
+    {
+      "name": "Fadekemi Ogunsanya — We Are Not Lying, Your Language is Not Enough",
+      "first_issue": "2026-07-17-2214",
+      "first_date": "2026-07-17",
+      "resurfaced": []
+    },
+    {
+      "name": "Somi — What Does It Take to Bloom?",
+      "first_issue": "2026-07-18-0632",
+      "first_date": "2026-07-18",
+      "resurfaced": []
+    },
+    {
+      "name": "Hurvin Anderson — Tate Britain",
+      "first_issue": "2026-07-18-0632",
+      "first_date": "2026-07-18",
+      "resurfaced": []
+    },
+    {
+      "name": "AIDA Awards — Cotonou, Jul 24–25",
+      "first_issue": "2026-07-18-0632",
+      "first_date": "2026-07-18",
+      "resurfaced": []
+    },
+    {
+      "name": "West Side Familia — Taylor Hosking",
+      "first_issue": "2026-07-18-0632",
+      "first_date": "2026-07-18",
+      "resurfaced": []
+    },
+    {
+      "name": "The AI Label",
+      "first_issue": "2026-07-18-0632",
+      "first_date": "2026-07-18",
+      "resurfaced": []
+    },
+    {
+      "name": "Lido Pimienta — Caribenya",
+      "first_issue": "2026-07-18-1928",
+      "first_date": "2026-07-18",
+      "resurfaced": []
+    },
+    {
+      "name": "Demetri Broxton — Ancestral Echoes",
+      "first_issue": "2026-07-18-1928",
+      "first_date": "2026-07-18",
+      "resurfaced": []
+    },
+    {
+      "name": "Nia Archives — Emotional Junglist",
+      "first_issue": "2026-07-18-1928",
+      "first_date": "2026-07-18",
+      "resurfaced": []
+    },
+    {
+      "name": "The Pangolin Shield — Studio Saar × Atelier One",
+      "first_issue": "2026-07-18-1928",
+      "first_date": "2026-07-18",
+      "resurfaced": []
+    },
+    {
+      "name": "Go North — gazuntype",
+      "first_issue": "2026-07-18-1928",
+      "first_date": "2026-07-18",
+      "resurfaced": []
+    },
+    {
+      "name": "Chuck Strangers — Glory of the King's Hand",
+      "first_issue": "2026-07-19-2155",
+      "first_date": "2026-07-19",
+      "resurfaced": []
+    },
+    {
+      "name": "Architects of Liberation: Modernism in Western Africa",
+      "first_issue": "2026-07-19-2155",
+      "first_date": "2026-07-19",
+      "resurfaced": []
+    },
+    {
+      "name": "American Pachuco: The Legend of Luis Valdez",
+      "first_issue": "2026-07-19-2155",
+      "first_date": "2026-07-19",
+      "resurfaced": []
+    },
+    {
+      "name": "Norman Teague — the Obama Center benches",
+      "first_issue": "2026-07-19-2155",
+      "first_date": "2026-07-19",
+      "resurfaced": []
+    },
+    {
+      "name": "YOSHITA 1967 — Anil Padia",
+      "first_issue": "2026-07-19-2155",
+      "first_date": "2026-07-19",
+      "resurfaced": []
+    },
+    {
+      "name": "FAUZIA — I Was Here For a Moment",
+      "first_issue": "2026-07-20-1402",
+      "first_date": "2026-07-20",
+      "resurfaced": []
+    },
+    {
+      "name": "NXTHVN Cohort 07 — Material Conditions of Becoming",
+      "first_issue": "2026-07-20-1402",
+      "first_date": "2026-07-20",
+      "resurfaced": []
+    },
+    {
+      "name": "Paul Kodjo — Photoromance",
+      "first_issue": "2026-07-20-1402",
+      "first_date": "2026-07-20",
+      "resurfaced": []
+    },
+    {
+      "name": "Google Play Indie Games Fund — Africa",
+      "first_issue": "2026-07-20-1402",
+      "first_date": "2026-07-20",
+      "resurfaced": []
+    },
+    {
+      "name": "Suno Spark",
+      "first_issue": "2026-07-20-1402",
+      "first_date": "2026-07-20",
+      "resurfaced": []
+    },
+    {
+      "name": "Paul R. Williams — The Archive Year",
+      "first_issue": "2026-07-20-2244",
+      "first_date": "2026-07-20",
+      "resurfaced": []
+    },
+    {
+      "name": "Dreamtime in Newark: Aljira and the Making of Global Contemporary Art",
+      "first_issue": "2026-07-20-2244",
+      "first_date": "2026-07-20",
+      "resurfaced": []
+    },
+    {
+      "name": "foodman — HIKARIGASASHIKOMU",
+      "first_issue": "2026-07-20-2244",
+      "first_date": "2026-07-20",
+      "resurfaced": []
+    },
+    {
+      "name": "Audiotool 3.0 + NEXUS",
+      "first_issue": "2026-07-20-2244",
+      "first_date": "2026-07-20",
+      "resurfaced": []
+    },
+    {
+      "name": "Spotify — “About the Song”",
+      "first_issue": "2026-07-20-2244",
+      "first_date": "2026-07-20",
+      "resurfaced": []
+    },
+    {
+      "name": "The Stolen Dove — Jon Rubin",
+      "first_issue": "2026-07-21-0935",
+      "first_date": "2026-07-21",
+      "resurfaced": []
+    },
+    {
+      "name": "Material Prophecies: Craft as Divination",
+      "first_issue": "2026-07-21-0935",
+      "first_date": "2026-07-21",
+      "resurfaced": []
+    },
+    {
+      "name": "Brian Ennals & Blockhead — Boatshoes",
+      "first_issue": "2026-07-21-0935",
+      "first_date": "2026-07-21",
+      "resurfaced": []
+    },
+    {
+      "name": "The Repurposing Trade — Ziwiye Plaques on the Red Carpet",
+      "first_issue": "2026-07-21-0935",
+      "first_date": "2026-07-21",
+      "resurfaced": []
+    },
+    {
+      "name": "The Natural-Fibre Turn",
+      "first_issue": "2026-07-21-0935",
+      "first_date": "2026-07-21",
+      "resurfaced": []
+    },
+    {
+      "name": "Andrea Ferro — Dakar's Bubble Houses",
+      "first_issue": "2026-07-21-1434",
+      "first_date": "2026-07-21",
+      "resurfaced": []
+    },
+    {
+      "name": "Ego Reach We All (Our Time Will Come) — Amartei Armar",
+      "first_issue": "2026-07-21-1434",
+      "first_date": "2026-07-21",
+      "resurfaced": []
+    },
+    {
+      "name": "Awon & The Other Guys — Solidified",
+      "first_issue": "2026-07-21-1434",
+      "first_date": "2026-07-21",
+      "resurfaced": []
+    },
+    {
+      "name": "Heart Eater — 신 선 영 Sun Yung Shin",
+      "first_issue": "2026-07-21-1434",
+      "first_date": "2026-07-21",
+      "resurfaced": []
+    },
+    {
+      "name": "The Collab Ledger — 2026's Logo Swaps",
+      "first_issue": "2026-07-21-1434",
+      "first_date": "2026-07-21",
+      "resurfaced": []
+    },
+    {
+      "name": "Gabriel Chaile — Archaeology of Memory",
+      "first_issue": "2026-07-22-1531",
+      "first_date": "2026-07-22",
+      "resurfaced": []
+    },
+    {
+      "name": "The Winds of Maracaibo — María Elena Morán",
+      "first_issue": "2026-07-22-1531",
+      "first_date": "2026-07-22",
+      "resurfaced": []
+    },
+    {
+      "name": "Mickey Diamond x Big Ghost Ltd — Blood Of The Lamb",
+      "first_issue": "2026-07-22-1531",
+      "first_date": "2026-07-22",
+      "resurfaced": []
+    },
+    {
+      "name": "Folk Emerging — Curious Dynamics",
+      "first_issue": "2026-07-22-1531",
+      "first_date": "2026-07-22",
+      "resurfaced": []
+    },
+    {
+      "name": "AZ — Doe Or Die III",
+      "first_issue": "2026-07-22-1531",
+      "first_date": "2026-07-22",
+      "resurfaced": []
+    },
+    {
+      "name": "Dear Ajayi — Damilola Orimogunje",
+      "first_issue": "2026-07-23-1253",
+      "first_date": "2026-07-23",
+      "resurfaced": []
+    },
+    {
+      "name": "Widline Cadet — Seremoni Disparisyon",
+      "first_issue": "2026-07-23-1253",
+      "first_date": "2026-07-23",
+      "resurfaced": []
+    },
+    {
+      "name": "Cosmos — Lucia Odoom",
+      "first_issue": "2026-07-23-1253",
+      "first_date": "2026-07-23",
+      "resurfaced": []
+    },
+    {
+      "name": "Record Culture — Issue 11",
+      "first_issue": "2026-07-23-1253",
+      "first_date": "2026-07-23",
+      "resurfaced": []
+    },
+    {
+      "name": "Gangrene — Better Than McDonald's",
+      "first_issue": "2026-07-23-1253",
+      "first_date": "2026-07-23",
+      "resurfaced": []
+    },
+    {
+      "name": "Lynette Yiadom-Boakye — Many A Moonlit Caveat",
+      "first_issue": "2026-07-24-1452",
+      "first_date": "2026-07-24",
+      "resurfaced": []
+    },
+    {
+      "name": "Theophilio",
+      "first_issue": "2026-07-24-1452",
+      "first_date": "2026-07-24",
+      "resurfaced": []
+    },
+    {
+      "name": "Black Zombie — Maya Annik Bedward",
+      "first_issue": "2026-07-24-1452",
+      "first_date": "2026-07-24",
+      "resurfaced": []
+    },
+    {
+      "name": "Speedtest — Pedro Chediak",
+      "first_issue": "2026-07-24-1452",
+      "first_date": "2026-07-24",
+      "resurfaced": []
+    },
+    {
+      "name": "Odu: Ancestral Nexus — Odu Studios",
+      "first_issue": "2026-07-24-1452",
+      "first_date": "2026-07-24",
+      "resurfaced": []
+    },
+    {
+      "name": "Rosco P Coldchain & Nicholas Craven — Play With Something Safe",
+      "first_issue": "2026-07-25-1822",
+      "first_date": "2026-07-25",
+      "resurfaced": []
+    },
+    {
+      "name": "Blu & Exile — Time Heals Everything",
+      "first_issue": "2026-07-25-1822",
+      "first_date": "2026-07-25",
+      "resurfaced": []
+    },
+    {
+      "name": "Dao — Alain Gomis",
+      "first_issue": "2026-07-25-1822",
+      "first_date": "2026-07-25",
+      "resurfaced": []
+    },
+    {
+      "name": "Beatmakers of L.A. Underground Hip Hop",
+      "first_issue": "2026-07-25-1822",
+      "first_date": "2026-07-25",
+      "resurfaced": []
+    },
+    {
+      "name": "Suez Studio",
+      "first_issue": "2026-07-25-1822",
+      "first_date": "2026-07-25",
+      "resurfaced": []
+    },
+    {
+      "name": "Ranti Bam — Sacred Groves",
+      "first_issue": "2026-07-27-0638",
+      "first_date": "2026-07-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Onyeka Igwe — Short Films",
+      "first_issue": "2026-07-27-0638",
+      "first_date": "2026-07-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Edna Bonhomme — Tending to Our Wounds",
+      "first_issue": "2026-07-27-0638",
+      "first_date": "2026-07-27",
+      "resurfaced": []
+    },
+    {
+      "name": "Curió Curió — Curió Curió",
+      "first_issue": "2026-07-27-0638",
+      "first_date": "2026-07-27",
+      "resurfaced": []
+    },
+    {
+      "name": "San Francisco Art Book Fair 2026",
+      "first_issue": "2026-07-27-0638",
+      "first_date": "2026-07-27",
       "resurfaced": []
     }
   ]

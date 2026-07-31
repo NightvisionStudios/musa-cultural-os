@@ -365,6 +365,70 @@ def normalise_reads(led):
                 n += 1
     return n
 
+def approved_repeats(led):
+    """Names the operator has explicitly cleared to appear more than once.
+    Lives in _meta.approved_repeats: [{name, approved, why}]. Nothing else may repeat."""
+    return {a["name"] for a in led.get("_meta", {}).get("approved_repeats", [])}
+
+
+def enforce_no_repeats(led):
+    """HARD GATE. A name is never featured twice unless the operator approved it.
+
+    This fails the build. It does not warn, and it does not silently disambiguate the
+    slug — a colliding slug used to ship a clean-looking `-2` page, which is how repeats
+    got through unnoticed. To approve a re-feature, add the name to
+    _meta.approved_repeats with a date and a reason, then re-run."""
+    where = {}
+    for iss in led["issues"]:
+        for en in iss["entries"]:
+            where.setdefault(en["name"], []).append(
+                "issue %s (%s)" % (iss.get("issue"), iss.get("issue_id")))
+    ok = approved_repeats(led)
+    bad = {n: v for n, v in where.items() if len(v) > 1 and n not in ok}
+    if bad:
+        lines = ["", "REPEAT BLOCKED — build stopped. %d name(s) featured more than once:" % len(bad)]
+        for n, v in sorted(bad.items()):
+            lines.append("  %s" % n)
+            for w in v:
+                lines.append("      %s" % w)
+        lines += ["",
+                  "A name is never featured twice (SKILL.md Rule 7).",
+                  "Either remove the duplicate entry, or — if the operator approved it —",
+                  "add to ledger.json _meta.approved_repeats:",
+                  '  {"name": "<exact name>", "approved": "YYYY-MM-DD", "why": "<reason>"}',
+                  ""]
+        raise SystemExit("\n".join(lines))
+    n_ok = sum(1 for v in where.values() if len(v) > 1)
+    print("no-repeat gate: %d unique names across %d entries, clean%s"
+          % (len(where), sum(len(v) for v in where.values()),
+             " (%d approved repeat(s))" % n_ok if n_ok else ""))
+
+
+def sync_holding(led):
+    """Keep the holding registry complete automatically, so it can never drift again.
+    Every featured name gets a record stamped with its FIRST appearance; approved
+    re-features are appended as resurfaces against that original call."""
+    reg = {h["name"]: h for h in led.setdefault("holding", [])}
+    ok = approved_repeats(led)
+    added = res = 0
+    for iss in led["issues"]:
+        for en in iss["entries"]:
+            n = en["name"]
+            if n not in reg:
+                reg[n] = {"name": n, "first_issue": iss.get("issue_id"),
+                          "first_date": iss.get("date"), "resurfaced": []}
+                led["holding"].append(reg[n]); added += 1
+            elif reg[n].get("first_issue") != iss.get("issue_id") and n in ok:
+                seen = {r.get("date") for r in reg[n].setdefault("resurfaced", [])}
+                if iss.get("date") not in seen:
+                    reg[n]["resurfaced"].append(
+                        {"date": iss.get("date"), "note": "approved re-feature"})
+                    res += 1
+    if added or res:
+        print("holding registry synced: +%d name(s), +%d resurface(s)" % (added, res))
+    return added or res
+
+
 def build(commit_slugs=True):
     led = json.load(open(os.path.join(ROOT, "ledger.json"), encoding="utf-8"))
     canon = json.load(open(os.path.join(ROOT, "musa-50.json"), encoding="utf-8"))
@@ -374,6 +438,8 @@ def build(commit_slugs=True):
     if n: print("domains normalised on %d entries" % n)
     f = normalise_issue_numbers(led)
     if f: print("issue numbers assigned/corrected on %d issues" % f)
+    enforce_no_repeats(led)
+    sync_holding(led)
     bmap = bench_map(canon)
     heir = open(os.path.join(ROOT, "build", "heirwave.svg"), encoding="utf-8").read()
     paths = re.findall(r'<path[^>]*d="([^"]+)"', heir)
