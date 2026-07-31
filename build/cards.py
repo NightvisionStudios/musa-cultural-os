@@ -364,3 +364,125 @@ def og(entry, issue, out, W=1200, H=630):
 def _save(im, out):
     im.save(out, "JPEG", quality=88, optimize=True, progressive=True)
     return out
+
+
+# ── THE KEY card ────────────────────────────────────────────────────────────
+# A permanent explainer card, pinned to the top of /share/. Built to be saved
+# and posted as slide two behind any entry card, so it has to teach the whole
+# premise cold: the gap between SCORE and HEAT is the read, and a high score
+# sitting on low heat is the point of the whole board.
+
+KEY_FLAGS = [
+    ("FIND",         GREEN, "#2f3a28", "the score is ahead of the room."),
+    ("ROOM'S RIGHT", AMBER, "#3a2f1c", "the room is loud, and the room is correct."),
+    ("ROOM'S LOUD",  RED,   "#3a2020", "the room is louder than the work."),
+]
+
+
+def _key_masthead(im, d, W, M, y, right="THE KEY", hh=40, wmh=32, fs=17):
+    mark = heirwave(hh); im.paste(mark, (M, y), mark)
+    wm = wordmark(wmh); im.paste(wm, (M + mark.size[0] + int(hh * 0.4), y + int(hh * 0.13)), wm)
+    fm = font(MONO, fs)
+    tracked(d, (W - M - tw(d, right, fm, 2.4), y + int(hh * 0.3)), right, fm, AMBER, 2.4)
+
+
+def _gapdemo(d, x, y, boxw):
+    """The premise, drawn rather than argued: a tall score over a short heat bar."""
+    fl = font(MONOM, 22); fv = font(MONOM, 26)
+    barx, barw = x + 132, boxw - 132 - 96
+    for i, (lab, val, pct, col) in enumerate(
+            [("SCORE", "8.4", 84, AMBER), ("HEAT", "22", 22, MUT)]):
+        yy = y + i * 62
+        tracked(d, (x, yy + 3), lab, fl, MUT if i else FG, 3.0)
+        d.rounded_rectangle([barx, yy + 4, barx + barw, yy + 20], radius=8, fill="#1c1a16")
+        fw = int(barw * pct / 100)
+        d.rounded_rectangle([barx, yy + 4, barx + fw, yy + 20], radius=8,
+                            fill=AMBER if i == 0 else "#4a463d")
+        tracked(d, (barx + barw + 22, yy), val, fv, col, 1.4)
+    return y + 124
+
+
+def keycard(out, W=1080, H=1350):
+    M = 68
+    im = Image.new("RGB", (W, H), BG)
+    d = ImageDraw.Draw(im)
+    boxw = W - 2 * M
+
+    _key_masthead(im, d, W, M, M)
+    d.line([(M, M + 74), (W - M, M + 74)], fill=AMBER, width=3)
+
+    y = M + 118
+    tracked(d, (M, y), "HOW TO READ THE INDEX", font(MONOM, 21), MUT, 4.6)
+
+    # Hero. Anton, tight leading, the payoff line in green.
+    y += 58
+    fh = font(ANTON, 140)
+    for line, col in [("HIGH SCORE.", FG), ("LOW HEAT.", FG), ("THAT'S A FIND.", GREEN)]:
+        d.text((M, y), line, font=fh, fill=col)
+        y += 132
+
+    y += 46
+    fb = font(MONO, 27)
+    body = ("The work already holds up. The room hasn't arrived yet. "
+            "You get put onto it before it gets loud, which is the entire point of the board.")
+    for ln in wrap(d, body, fb, boxw, 4):
+        d.text((M, y), ln, font=fb, fill=SAND); y += 40
+
+    # Draw the gap so it reads without the paragraph.
+    y += 34
+    d.rounded_rectangle([M, y, W - M, y + 196], radius=10, outline=LINE, width=2)
+    yy = _gapdemo(d, M + 34, y + 34, boxw - 68)
+    tracked(d, (M + 34, yy + 6), "THE GAP IS THE READ", font(MONOM, 19), AMBER, 4.0)
+    y += 196 + 44
+
+    # The other two calls, so a stranger can read any card in the feed.
+    fg_ = font(MONO, 22)
+    for lab, col, bor, gloss in KEY_FLAGS:
+        endx = chip(d, M, y, lab, col, bor, fs=19, padx=11, pady=8, ls=1.6)
+        d.text((endx + 18, y + 8), gloss, font=fg_, fill=MUT)
+        y += 56
+
+    ff = font(MONO, 20)
+    tracked(d, (M, H - M - 14), "ARCHIVE.THEMUSAFAMILY.COM", ff, MUT2, 3.4)
+    return _save(grain(scanlines(im, 6)), out)
+
+
+def keycard_og(out, W=1200, H=630):
+    """Landscape twin of the key card, for X / iMessage unfurl."""
+    M = 56
+    im = Image.new("RGB", (W, H), BG)
+    d = ImageDraw.Draw(im)
+    split = 620
+    d.line([(split, 0), (split, H)], fill=AMBER, width=3)
+
+    _key_masthead(im, d, split - 24, M, M, right="THE KEY", hh=34, wmh=27, fs=15)
+
+    y = M + 96
+    fh = font(ANTON, 92)
+    for line, col in [("HIGH SCORE.", FG), ("LOW HEAT.", FG), ("THAT'S A FIND.", GREEN)]:
+        d.text((M, y), line, font=fh, fill=col)
+        y += 88
+
+    fb = font(MONO, 21)
+    y += 26
+    for ln in wrap(d, "The room hasn't arrived yet. You hear it before it gets loud.",
+                   fb, split - M - 40, 2):
+        d.text((M, y), ln, font=fb, fill=SAND); y += 31
+
+    tracked(d, (M, H - M - 6), "ARCHIVE.THEMUSAFAMILY.COM", font(MONO, 17), MUT2, 3.0)
+
+    # Right column: the gap, then the three calls.
+    rx = split + 46
+    rw = W - rx - M
+    tracked(d, (rx, M + 6), "HOW TO READ THE INDEX", font(MONOM, 17), MUT, 3.8)
+    yy = _gapdemo(d, rx, M + 54, rw)
+    tracked(d, (rx, yy + 2), "THE GAP IS THE READ", font(MONOM, 16), AMBER, 3.4)
+
+    y = yy + 56
+    fg_ = font(MONO, 17)
+    for lab, col, bor, gloss in KEY_FLAGS:
+        chip(d, rx, y, lab, col, bor, fs=15, padx=9, pady=6, ls=1.4)
+        for ln in wrap(d, gloss, fg_, rw, 1):
+            d.text((rx, y + 36), ln, font=fg_, fill=MUT)
+        y += 74
+    return _save(grain(scanlines(im, 6)), out)

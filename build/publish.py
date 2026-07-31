@@ -554,6 +554,11 @@ def build(commit_slugs=True):
         lead = sorted(issues[0].get("entries", []), key=lambda x: x.get("rank", 99))[0]
         cards.og(lead, issues[0], os.path.join(carddir, "home-og.jpg"))
 
+    # THE KEY — permanent explainer card pinned to /share/. Rebuilt every run so
+    # it can never drift from the flag definitions it is teaching.
+    cards.keycard(os.path.join(carddir, "the-key-sq.jpg"))
+    cards.keycard_og(os.path.join(carddir, "the-key-og.jpg"))
+
     # ── /issues/ — the full run, newest first, one anchor per issue ──
     rows = []; calls = 0
     for iss in issues:

@@ -63,6 +63,21 @@ font-family:var(--mono);font-size:9px;letter-spacing:.14em;padding:6px 10px;curs
 .chip.on{color:var(--amber);border-color:#3a2f1c;background:#16140f}
 .tally{font-family:var(--mono);font-size:9px;letter-spacing:.22em;color:var(--mut2);margin-top:10px}
 
+/* ── the key, pinned ── */
+.keypin{display:flex;gap:18px;align-items:center;margin-top:22px;padding:16px;
+background:var(--panel);border:1px dashed var(--line);border-radius:10px}
+.keypin img{display:block;width:112px;flex:none;border-radius:6px;border:1px solid var(--line)}
+.keypin .kbody{min-width:0}
+.keypin .klab{font-family:var(--mono);font-size:9px;letter-spacing:.22em;color:var(--amber)}
+.keypin .ktxt{font-family:var(--mono);font-size:11px;line-height:1.65;color:var(--mut);margin-top:7px}
+.keypin .ktxt b{color:var(--fg2);font-weight:400}
+.keypin .kacts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.keypin .kacts a{font-family:var(--mono);font-size:9px;letter-spacing:.14em;color:var(--mut);
+text-decoration:none;border:1px solid var(--line);border-radius:3px;padding:7px 11px;white-space:nowrap}
+.keypin .kacts a:hover{color:var(--amber);border-color:#3a2f1c}
+@media(max-width:520px){.keypin{flex-direction:column;align-items:flex-start}
+.keypin img{width:100%;max-width:220px;align-self:center}}
+
 /* ── grid ── */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:14px;margin-top:22px}
 .tile{display:block;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--panel);
@@ -153,6 +168,21 @@ footer b{font-family:var(--mono);font-size:9px;color:#b8b09c;letter-spacing:.2em
 
 <h1>The Card Room</h1>
 <div class="lede">Every call ever made, already cut to size. Tap one to send it straight to the feed, save the file, or take the caption with it.</div>
+
+<section class="keypin">
+  <a href="/cards/the-key-sq.jpg" target="_blank" rel="noopener">
+    <img src="/cards/the-key-sq.jpg" alt="THE KEY — how to read a MUSA score" loading="eager" decoding="async">
+  </a>
+  <div class="kbody">
+    <div class="klab">THE KEY · SLIDE TWO</div>
+    <div class="ktxt">Save this and run it behind any card. <b>A high score sitting on low heat is a FIND</b> — the work already holds up, the room hasn't arrived, and you're getting put onto it before it gets loud. That gap is the whole board.</div>
+    <div class="kacts">
+      <a href="/cards/the-key-sq.jpg" download="musa-the-key-sq.jpg">SAVE 1080×1350</a>
+      <a href="/cards/the-key-og.jpg" download="musa-the-key-og.jpg">SAVE 1200×630</a>
+      <a href="/#key">READ THE FULL KEY ↗</a>
+    </div>
+  </div>
+</section>
 
 <div class="controls">
   <div class="searchrow">
