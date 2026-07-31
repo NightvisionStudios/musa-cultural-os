@@ -3988,6 +3988,121 @@
           "slug": "king-hendrick-mob-america-2"
         }
       ]
+    },
+    {
+      "issue": 42,
+      "issue_id": "2026-07-30-2029",
+      "date": "2026-07-30",
+      "time": "20:29 ET",
+      "forecast": "A reed that Senegalese farmers pay to clear out of the river is now the insulation in Dakar's best new walls, and almost everything strong on this board was built from something already lying around. Reclamation over import.",
+      "climate": "Reclamation over import. Worofila's answer to a concrete city is a weed nobody wanted and soil dug from the site; Shannon Sanders' answer to the American family novel is a deed and four dead relatives who will not stop talking; DJ Doggo's answer to the UK garage revival is to produce it in Lisbon and press it in Rio rather than shipping it back to London. Read the counter-read the same way. Locarno is showing thirteen African films and 233 films in total, and that ratio is the festival's actual position on the continent, whatever the press release says. What looks weak this week is anything that had to be bought in.",
+      "come_up": [
+        "Compressed earth and typha written as a spec, not a gesture",
+        "Catalogue numbers over rollouts: Lisbon produces, Rio presses",
+        "The ancestor as narrator and the deed as the plot"
+      ],
+      "decline": [
+        "The regional strand standing in for a programme",
+        "Concrete's borrowed prestige",
+        "Earth building filed under nostalgia"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Worofila",
+          "domain": "ARCHITECTURE",
+          "domain_detail": "ARCHITECTURE · EARTH BUILDING",
+          "url": "https://www.africarebirth.com/nzinga-mboup-the-senegalese-architect-asking-why-africa-ever-stopped-building-with-earth/",
+          "image": "https://www.africarebirth.com/content/images/2026/07/HFhcA_cWYAAB0YG.jpeg",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 22,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Lauren Halsey — an argument made in the material of the place, at building scale",
+          "read": "Typha is a cattail that has choked the Senegal River valley for decades, a green tide farmers pay to clear. Worofila weaves it into wall panels, lays it into ceiling mats and mixes it into adobe, because the stem is honeycombed with air and insulates better than most of what gets imported. The Dakar practice, founded in 2019 by Nzinga B. Mboup and Nicolas Rondet and named for the Fann-Hock street where its office sits, builds in compressed earth blocks in a city that wears a concrete skin. Facades step out in fine horizontal ridges so each course throws a blade of shade onto the one below it: the building cools itself with geometry and nothing else. The portfolio is not boutique. Houses at Sendou and Ngor, sixteen stations on Dakar's regional rail line, an eco-pavilion for the environment ministry, and the earth work on Kéré's Goethe-Institut Dakar, which opened 18 April. Mboup trained in Pretoria, passed through Adjaye Associates, and co-authored two studies of how Dakar actually houses itself. Next comes a gallery in Benin City raised in the Benin Kingdom's cob technique and a training centre at Sebikotane, so the method leaves the studio. That ordering matters.",
+          "verdict": "PENDING",
+          "slug": "worofila"
+        },
+        {
+          "rank": 2,
+          "name": "The Great Wherever — Shannon Sanders",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · LITERARY FICTION",
+          "url": "https://www.bookreporter.com/reviews/the-great-wherever",
+          "image": "https://www.bookreporter.com/sites/default/files/imagecache/book_main/covers/The%20Great%20Wherever.jpg",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 66,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Noname Book Club — the same insistence that the reading is about land, money and who kept the receipts",
+          "read": "Four ghosts narrate the parts of the story the living have agreed to forget. Sanders' first novel, out 7 July on Henry Holt at 416 pages, turns on a deed: a Tennessee farm bought by Thomas Lamb, one of the first Black landowners in his community, inherited a century later by a thirty-two-year-old gig worker in Washington with debt to clear. The room caught this one correctly. Starred reviews at Kirkus, Publishers Weekly and Booklist, a Book of the Month pick, summer lists at NPR, Esquire and People. What earns it is the voice rather than the premise. The dead are petty, funny and specific, passing judgment on romantic and sartorial decisions alike, which is exactly what keeps an inheritance saga from setting into a thesis.",
+          "verdict": "PENDING",
+          "slug": "the-great-wherever-shannon-sanders"
+        },
+        {
+          "rank": 3,
+          "name": "DJ Doggo — Ésselou / Latido Ao Luar",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · LUSOPHONE CLUB",
+          "url": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/sselou-latido-ao-luar",
+          "image": "https://f4.bcbits.com/img/a0351017947_5.jpg",
+          "score": 7.2,
+          "tier": "FLAME",
+          "heat": 11,
+          "direction": "▮",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Jim Legxacy — the same splice instinct, minus the songs; Doggo works instrumental and lets the drum carry the argument",
+          "read": "Two tracks, catalogue 40FM096, out 12 November 2025 on the Rio label 40% Foda/Maneiríssimo. Diogo Vasconcelos produces from Lisbon and presses in Brazil, which is the whole idea: the garage shuffle travels south, the funk drum comes back north, and neither end is the guest. Bandcamp's 23 July scene report finally put the axis on the record. Almost nobody outside it has looked yet.",
+          "verdict": "PENDING",
+          "slug": "dj-doggo-esselou-latido-ao-luar"
+        },
+        {
+          "rank": 4,
+          "name": "Open Doors Screenings 2026 — Locarno",
+          "domain": "FILM",
+          "domain_detail": "FILM · FESTIVAL PROGRAMMING",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/locarno-2026-films-pardi-di-domani-open-doors-screenings-1236634144/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.0,
+          "tier": "FLAME",
+          "heat": 46,
+          "direction": "▲",
+          "flags": [
+            "HEAT>WORK"
+          ],
+          "benchmark": "Black Film Archive — which does the same curatorial work permanently, without needing a host festival's calendar",
+          "read": "The strand itself is genuinely programmed, which is what makes the arithmetic sting. Delphine Jeanneret and Ibee Ndaw have assembled thirteen films from twelve African countries for Locarno's 79th edition, 5 to 15 August, mixing fiction, documentary and hybrid work and asking to be sat with rather than sampled; the world premiere of Aymar Esse's La kora de mon père and the Swiss premiere of Ique Langa's The Prophet are in it. Then the numbers. Locarno is running 233 films from 69 countries with 103 world premieres, and the Piazza Grande belongs to Olivia Wilde and James Gray. A continent-wide focus that fits inside a sidebar is a focus a festival can quietly drop next August.",
+          "verdict": "PENDING",
+          "slug": "open-doors-screenings-2026-locarno"
+        },
+        {
+          "rank": 5,
+          "name": "Chapter 3 — Vanessa Lee",
+          "domain": "SCENE",
+          "domain_detail": "SCENE · BOOKSHOP",
+          "url": "https://missionlocal.org/2026/07/bayview-buzz-wine-bar-city-grant-oewd-vacant-storefront-properly-seasoned/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 6.8,
+          "tier": "TORCH",
+          "heat": 5,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "LAAMS — a small room that functions as infrastructure for a neighbourhood rather than a destination for visitors",
+          "read": "4512 Third Street, Bayview, between La Salle Avenue and Third. Vanessa Lee, who already runs Smoke Soul Kitchen, has filed to open Chapter 3 there: a bookstore and cafe in a district that has spent years with the Linda Brooks-Burton Library as its only dependable source of books. Lee went to school in the Fillmore, a five-minute walk from Marcus Books, and that lineage is not decoration. Chapter 3 is one of nine Bayview storefronts funded this year through the city's Storefront Opportunity Grants, arriving just after a Renaissance Entrepreneurship Center and Harvard Business School study of the Third Street corridor recommended precisely this. A permit is not a ribbon. Come back when the door opens.",
+          "verdict": "PENDING",
+          "slug": "chapter-3-vanessa-lee"
+        }
+      ]
     }
   ],
   "holding": [
@@ -4395,6 +4510,36 @@
     {
       "name": "King Hendrick$ — Mob America 2",
       "first_issue": "2026-07-30-0737",
+      "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "Worofila",
+      "first_issue": "2026-07-30-2029",
+      "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "The Great Wherever — Shannon Sanders",
+      "first_issue": "2026-07-30-2029",
+      "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "DJ Doggo — Ésselou / Latido Ao Luar",
+      "first_issue": "2026-07-30-2029",
+      "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "Open Doors Screenings 2026 — Locarno",
+      "first_issue": "2026-07-30-2029",
+      "first_date": "2026-07-30",
+      "resurfaced": []
+    },
+    {
+      "name": "Chapter 3 — Vanessa Lee",
+      "first_issue": "2026-07-30-2029",
       "first_date": "2026-07-30",
       "resurfaced": []
     }
