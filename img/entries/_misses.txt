@@ -1,5 +1,5 @@
 # entries whose art could not be fetched — these stay typographic
 alewya-zero	https://f4.bcbits.com/img/a3150029086_7.jpg	HTTP Error 404: Not Found
-firelei-baez-mid-career-survey	https://visit.mcachicago.org/wp-content/uploads/2025/10/85_FB_Untitled-Les-tables-de-geographie-reduites-en-un-jeu-de-cartes.webp	cannot identify image file <_io.BytesIO object at 0x7f0a552d8d10>
-iamlyric	https://iamlyricofficial.com/assets/img/og.jpg	cannot identify image file <_io.BytesIO object at 0x7f0a555e6f20>
+firelei-baez-mid-career-survey	https://visit.mcachicago.org/wp-content/uploads/2025/10/85_FB_Untitled-Les-tables-de-geographie-reduites-en-un-jeu-de-cartes.webp	cannot identify image file <_io.BytesIO object at 0x7f7a0e3c8cc0>
+iamlyric	https://iamlyricofficial.com/assets/img/og.jpg	cannot identify image file <_io.BytesIO object at 0x7f7a0e3ca750>
 nicholas-daley	https://nicholasdaley.net/cdn/shop/files/social-image.jpg?v=11336	HTTP Error 404: Not Found
