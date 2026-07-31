@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-07-30",
+    "updated": "2026-07-31",
     "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL.",
     "approved_repeats": [
       {
@@ -4244,6 +4244,122 @@
           "slug": "nina-protocol-the-soundcloud-migration"
         }
       ]
+    },
+    {
+      "issue": 44,
+      "issue_id": "2026-07-31-1553",
+      "date": "2026-07-31",
+      "time": "15:53 ET",
+      "forecast": "Accra spent this month building the institution London keeps convening panels about. Manju Journal, nine years a magazine, filed a nonprofit arm on 7 July and put a two-day textile workshop on the calendar for 20 August; the fund follows in 2027. The same instinct runs the length of this board. A Detroit rapper releases sixteen tracks with one guest on them. A Los Angeles singer spends the film budget on the song nobody streamed. Ownership over placement.",
+      "climate": "Ownership over placement. Every entry here is holding onto a piece of the process that the industry standard says to outsource. Iman Europe financed a short film for the album cut with twenty-six thousand plays instead of the one with 1.6 million, which is a decision about what an album is for. BandGang Lonnie Bands put out a sixteen-track record with a single feature on it, in a scene where the guest list is the marketing plan. Richmond Orlando Mensah turned a publication into a funder rather than waiting for a Western foundation to notice Accra. Read the bottom of the board against that. Ian Woods still cuts every piece by hand with a blade, and the hand is now aimed at Olympic sportswear and the most photographed faces alive, which is the one place on this board where the method outruns the subject. The measure this week is not who got the placement. It is who kept the thing after the placement was over.",
+      "come_up": [
+        "The deep cut as the single: filming the 26,000-play song, not the 1.6-million one",
+        "Publications filing as institutions — Manju's 7 July conversion is the template",
+        "One guest across sixteen tracks: the record that doesn't rent an audience"
+      ],
+      "decline": [
+        "Placement as a career: the feature verse that outstreams your own catalogue forty to one",
+        "A gatekept method pointed at the most reproduced images on earth",
+        "Press for the scene with no structure underneath it"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Iman Europe — Ego Death (The Official Short Film)",
+          "domain": "FILM",
+          "domain_detail": "FILM · MUSIC VIDEO",
+          "url": "https://www.youtube.com/watch?v=0YzH2ePR07o",
+          "image": "https://i.scdn.co/image/ab67616d0000b273eb3bf641edaa3637fb777826",
+          "score": 8.1,
+          "tier": "CROWN",
+          "heat": 16,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Baby Rose — nearest on the 50 by voice and independence, though Iman Europe owns the release apparatus outright",
+          "read": "On Spotify, ego death has 26,634 plays. Two entries up the same artist page, and so it's so. has 1.64 million. She made the film for the first one. Ego death is track five on Chrysalis, out 19 September 2025 on Good Soil Productions: fifteen tracks, every one of them built with Kaelin Ellis, which makes it a record rather than a folder of singles. The short film went up on her YouTube in the last week of July; Stanisland wrote it up on the 29th. Her own framing is a question about who wins between the ego and the self, and the film is built to answer it rather than to decorate the track. The arithmetic is the point. An artist sitting on a 1.6-million-stream song spent the production money on the 26,000-stream one, which tells you what she thinks an album is. She ran artist relations at Sound.xyz before this, so she knows exactly what the platform math recommends. She did it anyway. Come back in November and see whether the film moved the number.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "iman-europe-ego-death-the-official-short-film"
+        },
+        {
+          "rank": 2,
+          "name": "Djamel White — All Them Dogs",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · DEBUT FICTION",
+          "url": "https://thebookerprizes.com/the-booker-library/books/all-them-dogs",
+          "image": "https://thebookerprizes.com/sites/default/files/styles/social_share_canvas/public/2026-07/All%20Them%20Dogs_Jacket_NEW-2.jpg?itok=xB2fihTe",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 70,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Noname Book Club is the nearest thing on the 50, and it isn't close; the 50 carries no literary-fiction lane at all",
+          "read": "John Murray, 26 March 2026, 240 pages, a six-way auction behind it. Tony Ward comes back to West Dublin after five years away, takes work under an enforcer called Flute Walsh, and finds the pull is not towards the job. White is 28, managed a tattoo shop, lives in Lucan where the book is set, and grew the novel out of a short story written in the first lockdown. The Booker longlisted it on 28 July from 163 submissions and he is the youngest name on the list. Note what carries it: not the plot, which is standard gangland, but the vernacular, handled with enough precision that the judges led on the dialogue rather than the violence.",
+          "verdict": "PENDING",
+          "slug": "djamel-white-all-them-dogs"
+        },
+        {
+          "rank": 3,
+          "name": "New Africa Cultural Initiative",
+          "domain": "EDITORIAL",
+          "domain_detail": "EDITORIAL · PLATFORM TO INSTITUTION",
+          "url": "https://www.artnews.com/art-news/news/new-africa-cultural-initiative-founding-interview-1234793957/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.7,
+          "tier": "FLAME",
+          "heat": 12,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Black Film Archive — the same move, one person's archive hardening into an institution",
+          "read": "Manju Journal spent nine years documenting Ghanaian and pan-African creative work. On 7 July it filed a nonprofit arm and started programming instead. First cohort: 20 and 21 August in Accra at the Foundation for Contemporary Art, Zohra Opoku leading on textiles and archival photography, her first time running one. Lagos in October, Dakar in November, Abidjan in December. The unrestricted fund is promised for 2027, which is the part to check.",
+          "verdict": "PENDING",
+          "slug": "new-africa-cultural-initiative"
+        },
+        {
+          "rank": 4,
+          "name": "BandGang Lonnie Bands — Motor City Slicker",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · DETROIT RAP",
+          "url": "https://open.spotify.com/album/4KaIBAJafMxhRyFDOBFeIM",
+          "image": "https://i.scdn.co/image/ab67616d0000b273cd0611f37fe786cb215764c8",
+          "score": 7.5,
+          "tier": "FLAME",
+          "heat": 21,
+          "direction": "▮",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Starlito — the same independent arithmetic, run over a decade and a half",
+          "read": "Sixteen tracks, forty-two minutes, one feature. KEY! turns up on Super Fancy and nobody else turns up at all, which on a 2026 Detroit rap album is close to a policy statement. Out 29 April on Antimedia and Roundvalley through Create Music Group. Delante Landrum has been doing this since he was thirteen, when BandGang formed around Six Mile Bronx on the west side, and the titles still read like a ledger: Det Blues, Detroit River pt 2, Charge It To The Game, Skeechy Lil Artist. The gap is in the streaming column. His biggest song by a distance is Homicide, where he is a guest on somebody else's record, at nearly 25 million plays; the cuts on this album sit in the low thousands. The catalogue he owns is the one nobody counts.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "bandgang-lonnie-bands-motor-city-slicker"
+        },
+        {
+          "rank": 5,
+          "name": "Ian Woods",
+          "domain": "ART",
+          "domain_detail": "ART · HAND-CUT COLLAGE",
+          "url": "https://www.ianwoodsart.com/",
+          "image": "https://static1.squarespace.com/static/5faab5daa2bd0c285be6e05d/63cba7fcb0d3cf0931c199cf/69dd5a8ae8c53572a3ee3c71/1776114356861/Photo+Apr+13+2026%2C+3+23+57+PM.jpg?format=1500w",
+          "score": 7.2,
+          "tier": "FLAME",
+          "heat": 44,
+          "direction": "▮",
+          "flags": [],
+          "benchmark": "Robert Gallardo — the exact neighbour: Instagram-built, collage-rooted, working the seam between art and commerce",
+          "read": "The method has not changed since 2020 and the method is the whole argument: two printed images stacked, a pattern drawn on the top sheet, an X-Acto blade through both, glue, and a face that reads as two faces at once. Illinois born, Dallas raised, working out of Palm Bay. The New York Times Book Review put his jacket for Elias Canetti's I Want to Keep Smashing Myself Until I Am Whole, designed by Alex Merto at Picador, among the best covers of 2022. His project list now opens with Nike's Winter Olympics, Neymar's PUMA Future 9s, Shinola and the Jordan AJ40. The blade is gatekept. What it cuts is the most reproduced imagery on earth, and that is where the score settles.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "ian-woods"
+        }
+      ]
     }
   ],
   "holding": [
@@ -5565,6 +5681,31 @@
     {
       "name": "Nina Protocol — The SoundCloud Migration",
       "first_issue": "2026-07-31-1151",
+      "first_date": "2026-07-31"
+    },
+    {
+      "name": "Iman Europe — Ego Death (The Official Short Film)",
+      "first_issue": "2026-07-31-1553",
+      "first_date": "2026-07-31"
+    },
+    {
+      "name": "Djamel White — All Them Dogs",
+      "first_issue": "2026-07-31-1553",
+      "first_date": "2026-07-31"
+    },
+    {
+      "name": "New Africa Cultural Initiative",
+      "first_issue": "2026-07-31-1553",
+      "first_date": "2026-07-31"
+    },
+    {
+      "name": "BandGang Lonnie Bands — Motor City Slicker",
+      "first_issue": "2026-07-31-1553",
+      "first_date": "2026-07-31"
+    },
+    {
+      "name": "Ian Woods",
+      "first_issue": "2026-07-31-1553",
       "first_date": "2026-07-31"
     }
   ]
