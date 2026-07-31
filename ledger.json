@@ -4360,6 +4360,118 @@
           "slug": "ian-woods"
         }
       ]
+    },
+    {
+      "issue": 45,
+      "issue_id": "2026-07-31-1950",
+      "date": "2026-07-31",
+      "time": "19:50 ET",
+      "forecast": "The only finished object on this board is a dress. Everything else is advance work: 106 seconds ahead of an album called Starlife, sixteen compiled tracks ahead of a debut called OSSHLAND, one viral record ahead of a catalogue, a browser beta at 69 pounds ahead of a plugin due in the fourth quarter. Finished small over promised large.",
+      "climate": "Finished small over promised large. Four of these five are advance work for something that has not shipped, so the read is which fragment stands up alone. Surf7's GOOSE COAT has 3.09 million Spotify plays and his next-biggest song has 252,000, which is a hit rather than a catalogue. Victony issued SLICK on his own OUTLAWVILLE imprint, licensed out rather than signed away, and then filled it with 106 seconds. Black Fortune spent nine months building Osshland into a vocabulary his audience actually speaks and still has not released the album it points at. Tim Exile discontinued one modular system in April and sold version 0.1 of its replacement in July, with the usable build promised for the fourth quarter. Against all of that, an Accra atelier cut a whole collection out of mill offcuts and hung it on a rail. It can be bought, worn and judged today, which this week is the rarer achievement.",
+      "come_up": [
+        "Mill deadstock cut as the good cloth rather than the compromise",
+        "Own-imprint releases: licensing distribution out instead of signing yourself in",
+        "Builders leaving the big host to own their own stack"
+      ],
+      "decline": [
+        "The 106-second single working as an album announcement",
+        "One song at 3.09 million plays and the catalogue at a twelfth of it",
+        "Version 0.1 sold at full intent while the finished build waits on a quarter"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Ajepomaa Gallery — AHABAN",
+          "domain": "FASHION",
+          "domain_detail": "FASHION · ACCRA ATELIER",
+          "url": "https://ajepomaagallery.com/shop/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 11,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "diasporic-fashion lane, nearest is Derschutze; the material discipline runs closer to Tamera",
+          "read": "The cloth starts as mill offcuts. AHABAN, named for the Akan word for leaf and built around what is left of Ghana's forests and waterways, is cut from handwoven Aso Oke and Fugu alongside cotton batik made from deadstock sourced out of GTP's mills, which puts the collection's material story in a warehouse most designers write off. The convention in luxury is to treat deadstock as a limitation and say so in the press release. Ajepomaa Mensah treats it as the good cloth and spends the hours on construction instead: knife, box, bias and sunburst pleats, origami folds worked into a batik that was never engineered to hold a shape. She has run the house out of Accra since February 2010 and sells it from 53 Adjiringano Road, from ₵1,288 for the Kenya top to ₵3,888 for the Halima dress, shipping free inside Ghana. Sixteen years in one city, no runway theatrics, and a rail of finished garments you can buy this afternoon.",
+          "verdict": "PENDING",
+          "slug": "ajepomaa-gallery-ahaban"
+        },
+        {
+          "rank": 2,
+          "name": "Victony — SLICK",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · AFRO-FUSION",
+          "url": "https://www.instagram.com/reel/DZ9pOGDs6Lf/?hl=en",
+          "image": "https://i.scdn.co/image/ab67616d0000b273b1356b443072b4f8615af24d",
+          "score": 7.2,
+          "tier": "FLAME",
+          "heat": 66,
+          "direction": "▲",
+          "flags": [],
+          "benchmark": "already on the 50 in the global-diaspora lane; the honest test inside it is Baby Rose",
+          "read": "One minute forty-six seconds. SLICK landed on 8 July with the phonogram line reading OUTLAWVILLE, Victony's own imprint, and Encore holding the licence, which is a more interesting sentence than the song: at twenty-five, four years after Soweto made him portable, he is renting distribution rather than being absorbed by it. Ozedikus and Dera The Boy build the track from electronic texture over loose live percussion and leave the voice on top with nothing to fight. An influencer, Amma, opens it. It is well made and it is thin, a mood sustained for the length of a lift ride, and its job is to keep Starlife warm next to FRE$H. He is already in the 50. This is not the record that tests the seat.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "victony-slick"
+        },
+        {
+          "rank": 3,
+          "name": "Black Fortune — Road To Osshland: The Series",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · DMV RAP",
+          "url": "https://www.instagram.com/blackfortune",
+          "image": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages221/v4/af/b0/3a/afb03a1b-6da5-82e9-aec6-a275e0a05b48/ami-identity-2f33fbfc21cc3a4bd593926c82e694a4-2026-04-03T18-44-09.404Z_cropped.png/1200x630cw.png",
+          "score": 6.9,
+          "tier": "TORCH",
+          "heat": 41,
+          "direction": "▲",
+          "flags": [],
+          "benchmark": "underground-rap lane, nearest in method is Chris Crack, who built a country out of a catalogue with no major behind him",
+          "read": "Osshland was a vocabulary before it was a place. Black Fortune, out of Landover, Maryland, has been extending the OSSH lexicon since OsshWop in 2018, through a near-fatal stabbing and the record he made after it, and on 8 May he compiled the four Road To Osshland EPs into a sixteen-track set with an interactive world attached. The guest list is loud: Denzel Curry, BIA, SleazyWorld Go, Doe Boy, Babyfxce E, Baby Kia. But the world is the achievement and the records read as evidence for it, which is the wrong way round. OSSHLAND, the debut all sixteen tracks point at, is still unreleased.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "black-fortune-road-to-osshland-the-series"
+        },
+        {
+          "rank": 4,
+          "name": "Karst — Tim Exile",
+          "domain": "TECH",
+          "domain_detail": "TECH · MUSIC TOOLS",
+          "url": "https://synthanatomy.com/2026/07/karst-is-tim-exile-s-own-reaktor-style-modular-audio-environment.html",
+          "image": "https://synthanatomy.com/wp-content/uploads/2026/07/Karst-Tim-Exile-modular-environment.jpg",
+          "score": 6.6,
+          "tier": "TORCH",
+          "heat": 22,
+          "direction": "▮",
+          "flags": [],
+          "benchmark": "creator-ai-tools lane, nearest is Koala Sampler, which shipped small and then stayed shipped",
+          "read": "In April he shipped a modular system built on Reaktor. On 28 July he discontinued it and sold its replacement. Karst is Tim Exile leaving Native Instruments entirely: a node-based environment that autoconnects without cables, gives every instrument a generative DNA that passes clocks and triggers downstream, and folds composition and performance into the patching rather than treating them as the next step. He made the backers whole, which matters. What they got for it is version 0.1, browser-only, cloud-saved, at £69 against a £99 list, with the standalone and the plugin promised for the fourth quarter and new instruments arriving weekly. The instinct is right and the ledger is thin: two systems in four months, one of them already retired.",
+          "verdict": "PENDING",
+          "slug": "karst-tim-exile"
+        },
+        {
+          "rank": 5,
+          "name": "Surf7 — GOOSE COAT",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · PHILADELPHIA RAP",
+          "url": "https://www.youtube.com/watch?v=YlP-e2Yfp6c",
+          "image": "https://i.scdn.co/image/ab67616d0000b273bb7501948c31c708da577b5e",
+          "score": 6.5,
+          "tier": "TORCH",
+          "heat": 78,
+          "direction": "▲",
+          "flags": [
+            "HEAT>WORK"
+          ],
+          "benchmark": "underground-rap lane, nearest is Showly; the difference is an audience built one release at a time",
+          "read": "Philadelphia decided this one. GOOSE COAT, self-released on 4 June with Surf7 holding both the copyright and the phonogram, has 3.09 million Spotify plays; his next-best song has 252,000. Meek Mill came for the remix on 24 July over a Beatsbyjxckk beat, and that version sits at 161,000. A city legend cosigning a hit is not the same thing as a second record.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "surf7-goose-coat"
+        }
+      ]
     }
   ],
   "holding": [
@@ -5356,7 +5468,12 @@
       "name": "Go North — gazuntype",
       "first_issue": "2026-07-18-1928",
       "first_date": "2026-07-18",
-      "resurfaced": []
+      "resurfaced": [
+        {
+          "date": "2026-07-31",
+          "note": "called at zero reviews ten days out in issue 22; shipped on schedule 28 July, $14.99, Steam and Xbox Series X|S the same day, Switch pending"
+        }
+      ]
     },
     {
       "name": "Chuck Strangers — Glory of the King's Hand",
@@ -5707,6 +5824,36 @@
       "name": "Ian Woods",
       "first_issue": "2026-07-31-1553",
       "first_date": "2026-07-31"
+    },
+    {
+      "name": "Ajepomaa Gallery — AHABAN",
+      "first_issue": "2026-07-31-1950",
+      "first_date": "2026-07-31",
+      "resurfaced": []
+    },
+    {
+      "name": "Victony — SLICK",
+      "first_issue": "2026-07-31-1950",
+      "first_date": "2026-07-31",
+      "resurfaced": []
+    },
+    {
+      "name": "Black Fortune — Road To Osshland: The Series",
+      "first_issue": "2026-07-31-1950",
+      "first_date": "2026-07-31",
+      "resurfaced": []
+    },
+    {
+      "name": "Karst — Tim Exile",
+      "first_issue": "2026-07-31-1950",
+      "first_date": "2026-07-31",
+      "resurfaced": []
+    },
+    {
+      "name": "Surf7 — GOOSE COAT",
+      "first_issue": "2026-07-31-1950",
+      "first_date": "2026-07-31",
+      "resurfaced": []
     }
   ]
 }
