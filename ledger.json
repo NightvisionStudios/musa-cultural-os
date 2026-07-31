@@ -4131,6 +4131,119 @@
           "slug": "chapter-3-vanessa-lee"
         }
       ]
+    },
+    {
+      "issue": 43,
+      "issue_id": "2026-07-31-1151",
+      "date": "2026-07-31",
+      "time": "11:51 ET",
+      "forecast": "What failed this week failed politely. Nina Protocol spent five years telling independent artists they could own their distribution, moved fifty thousand dollars in total, and was folded into SoundCloud on 22 July with the rails left behind. Everything that held up on this board arrived with its teeth already out. Friction over finish.",
+      "climate": "Friction over finish. dälek have been making the same argument out of Newark since 1998 and the eighth album states it in forty minutes without a single soft edge; Taring Padi have been printing that argument onto banners out of Yogyakarta since 1998 and hung thirty years of them in a Fitzrovia townhouse this month; Michelle Santiago Cortés spent an essay establishing that research without a verification step is just taste with a bibliography attached. Read the bottom of the board the same way. A book with the sharpest subject in the room arrives wrapped in a healing-journey register, and a platform built on artist ownership got acquired for its writing rather than for its artists. The work that kept an edge on it is the work that survived contact.",
+      "come_up": [
+        "Records that argue: Ipecac's only rap act, eight tracks, no soft landings",
+        "The archive as the asset — SoundCloud bought Nina's criticism, not its rails",
+        "Woodcut and cardboard as distribution: the workshops, not the wall labels"
+      ],
+      "decline": [
+        "Artist ownership pitched as a deck rather than built as a business",
+        "The healing frame bolted onto a structural argument",
+        "Research with the accountability step quietly removed"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "dälek — Brilliance of a Falling Moon",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · EXPERIMENTAL HIP-HOP",
+          "url": "https://dalek.bandcamp.com/album/brilliance-of-a-falling-moon",
+          "image": "https://f4.bcbits.com/img/a1964807385_10.jpg",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 19,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Chris Crack — the nearest thing on the 50, though dälek predate the lane by two decades",
+          "read": "Track six is called I AM A MAN, which is the placard Memphis sanitation workers carried in 1968, and Will Brooks never explains the reference because the record assumes you already have it. Eight tracks, forty minutes, out 27 March on Ipecac as IPC295LP: the eighth dälek album and the leanest, cut at Deadverse Studios across 2024 and 2025, mastered by Alan Douches at West West Side. Brooks and Mike Mare build it from dust-caked breaks, Wu-era strings and a wall of guitar feedback that never resolves, and the title is lifted from Erik Larson's account of Berlin before the war. Two things make it the record of this board rather than a good noise-rap album. dälek have done this from Newark since 1998, which makes them the ancestor of a lane that mostly does not know it has one. And they remain the only hip-hop act on a roster built for noise rock, so the aggression here is structural rather than borrowed. A June vinyl variant ran to 300 worldwide. The gap is that a catalogue this deep is still priced like a curiosity.",
+          "verdict": "PENDING",
+          "slug": "dalek-brilliance-of-a-falling-moon"
+        },
+        {
+          "rank": 2,
+          "name": "Michelle Santiago Cortés — The End of Research",
+          "domain": "IDEAS",
+          "domain_detail": "IDEAS · CRITICISM",
+          "url": "https://artreview.com/the-end-of-research-michelle-santiago-cortes/",
+          "image": "https://backend.artreview.com/wp-content/uploads/2026/07/tik-tok-trio-2.png",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 33,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Free Game — the same gatekeeping instinct, turned on the people who borrowed the word",
+          "read": "OpenAI now sells a half-zip with the word Research embroidered on it in cursive. Santiago Cortés puts that merch drop at the centre of an argument about what the word has come to mean: moodboards, to-be-read lists, TikToks inviting you to spend a research day with someone, a whole leisure economy that borrowed academia's prestige and left the verification behind. Published 24 July in ArtReview. The sharpest turn is on artists, who she places awkwardly close to the scene of the crime once the accountability question is raised, since art has no protocols for verifying anything. It ends where the argument should start: nothing worth calling research survives without a little friction.",
+          "verdict": "PENDING",
+          "slug": "michelle-santiago-cortes-the-end-of-research"
+        },
+        {
+          "rank": 3,
+          "name": "Taring Padi — Rakyat Pasti Menang",
+          "domain": "ART",
+          "domain_detail": "ART · PROTEST GRAPHICS",
+          "url": "https://ibraaz.org/whats-on/taring-padi",
+          "image": "https://ibraaz-website.imgix.net/taring-padi/1999-Suharto-resize.jpg?auto=format&w=1280",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 26,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Lauren Halsey — community-authored work built to leave the gallery, here at protest scale",
+          "read": "93 Mortimer Street, London W1W 7SS, Wednesday to Sunday, eleven until six, running to 22 November. Ibraaz has given its Majlis over to nearly thirty years of banners from a collective founded by art students in Yogyakarta in 1998, in the months after Suharto fell. The title translates as the people united will never be defeated, and the display rotates rather than sitting still, which is the correct way to hang objects built to be carried. The workshops are the actual programme: cardboard puppetry on 11 July, woodcut printing on 12 July, both taught by the collective, because the whole method is reproducible by design. Taring Padi left documenta fifteen in 2022 with more than a thousand puppets and a banner removed over antisemitic imagery, for which they apologised. A thirty-year archive is not a clean object, and hanging it as though it were would have been the cowardly version.",
+          "verdict": "PENDING",
+          "slug": "taring-padi-rakyat-pasti-menang"
+        },
+        {
+          "rank": 4,
+          "name": "Dr. Sarah L. Webb — Colorism",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · SOCIAL SCIENCE",
+          "url": "https://www.hachettebookgroup.com/titles/dr-sarah-l-webb/colorism/9781538772683/",
+          "image": "https://www.hachettebookgroup.com/wp-content/uploads/2026/03/9781538772706.jpg",
+          "score": 6.4,
+          "tier": "TORCH",
+          "heat": 47,
+          "direction": "▲",
+          "flags": [],
+          "benchmark": "Noname Book Club — nearest on the 50 by subject, and nothing like it in register",
+          "read": "Legacy Lit, 7 July, 256 pages, $18.99. Webb has run the Colorism Healing platform for years and the ground covered here is wider than the discourse allows: dating and pop culture, yes, but also access to education, work, social services and politics, across communities of colour and white communities alike. The subject is a blade. The packaging is a healing journey. Only one of those two things travels.",
+          "verdict": "PENDING",
+          "slug": "dr-sarah-l-webb-colorism"
+        },
+        {
+          "rank": 5,
+          "name": "Nina Protocol — The SoundCloud Migration",
+          "domain": "TECH",
+          "domain_detail": "TECH · MUSIC INFRASTRUCTURE",
+          "url": "https://ra.co/news/85625",
+          "image": "https://static.ra.co/images/news/2026/mixcollage-22-jul-2026-11-20-am-9285.jpg",
+          "score": 5.6,
+          "tier": "SPARK",
+          "heat": 62,
+          "direction": "▼",
+          "flags": [
+            "HEAT>WORK"
+          ],
+          "benchmark": "Untitled Stream — the closest thing on the 50 to what Nina was trying to be",
+          "read": "Nina said it would be profitable if it ever reached ten percent of Bandcamp's daily volume. Components ran the arithmetic in July: fifty thousand dollars spent on Nina across its entire five-year life, against a hundred and fifty-one million on Bandcamp in 2025 alone. The platform went dark on 15 July; SoundCloud announced the acquisition on 22 July, terms undisclosed. Read what actually changed hands. Not the Solana marketplace, not the Arweave storage, not the team: the editorial archive and the genre map, which is to say the writing. Nina's most valuable product turned out to be its criticism, and it took a shutdown and a sale to establish that. Migrating artists get a free subscription until December.",
+          "verdict": "PENDING",
+          "slug": "nina-protocol-the-soundcloud-migration"
+        }
+      ]
     }
   ],
   "holding": [
@@ -5428,6 +5541,31 @@
       "first_issue": "2026-07-27-0638",
       "first_date": "2026-07-27",
       "resurfaced": []
+    },
+    {
+      "name": "dälek — Brilliance of a Falling Moon",
+      "first_issue": "2026-07-31-1151",
+      "first_date": "2026-07-31"
+    },
+    {
+      "name": "Michelle Santiago Cortés — The End of Research",
+      "first_issue": "2026-07-31-1151",
+      "first_date": "2026-07-31"
+    },
+    {
+      "name": "Taring Padi — Rakyat Pasti Menang",
+      "first_issue": "2026-07-31-1151",
+      "first_date": "2026-07-31"
+    },
+    {
+      "name": "Dr. Sarah L. Webb — Colorism",
+      "first_issue": "2026-07-31-1151",
+      "first_date": "2026-07-31"
+    },
+    {
+      "name": "Nina Protocol — The SoundCloud Migration",
+      "first_issue": "2026-07-31-1151",
+      "first_date": "2026-07-31"
     }
   ]
 }
