@@ -10,6 +10,7 @@ FONTS = os.path.join(HERE, "fonts")
 SERIF = os.path.join(FONTS, "InstrumentSerif-Regular.ttf")
 MONO  = os.path.join(FONTS, "IBMPlexMono-Regular.ttf")
 MONOM = os.path.join(FONTS, "IBMPlexMono-Medium.ttf")
+MONOB = os.path.join(FONTS, "IBMPlexMono-SemiBold.ttf")
 
 BG="#0a0a0a"; FG="#f2ead5"; MUT="#8c887e"; MUT2="#6d6a62"
 LINE="#26241f"; AMBER="#e8c96d"; SAND="#cdbf99"; GREEN="#3fb56b"; RED="#e4533a"
@@ -423,21 +424,25 @@ def _gapdemo(d, x, y, boxw, step=62, labfs=22, valfs=26, barh=16):
     return y + step * 2
 
 
-def _tierladder(d, x, y, w, nfs=17, rfs=16, dfs=15, gap=9, barh=8):
+def _tierladder(d, x, y, w, nfs=27, rfs=18, dfs=15, gap=9, barh=10):
     """The six tiers as a ladder, so the score on the card lands somewhere.
-    Sized to be read at arm's length on a phone, not squinted at."""
+    Names set in Anton rather than mono: condensed, so it carries twice the
+    height in the same column width, and it reads from a feed thumbnail."""
     n = len(KEY_TIERS)
     seg = (w - gap * (n - 1)) / n
-    fn, fr, fd = font(MONOM, nfs), font(MONOM, rfs), font(MONO, dfs)
+    fn, fr, fd = font(ANTON, nfs), font(MONOB, rfs), font(MONOM, dfs)
+    ny = y + barh + 10
+    ry = ny + int(nfs * 0.82) + 13
+    dy = ry + rfs + 8
     for i, (name, rng, desc) in enumerate(KEY_TIERS):
         sx = int(x + i * (seg + gap))
-        d.rounded_rectangle([sx, y, sx + int(seg), y + barh], radius=3,
+        d.rounded_rectangle([sx, y, sx + int(seg), y + barh], radius=4,
                             fill=TIER_COLOR[name])
-        tracked(d, (sx, y + barh + 12), name, fn, TIER_COLOR[name], 0.9)
-        d.text((sx, y + barh + 12 + nfs + 7), rng, font=fr, fill=FG)
+        tracked(d, (sx, ny), name, fn, TIER_COLOR[name], 0.6)
+        d.text((sx, ry), rng, font=fr, fill=FG)
         if desc:
-            d.text((sx, y + barh + 12 + nfs + 7 + rfs + 6), desc, font=fd, fill=SAND)
-    return y + barh + 12 + nfs + 7 + rfs + 6 + dfs
+            d.text((sx, dy), desc, font=fd, fill=SAND)
+    return dy + dfs
 
 
 def keycard(out, W=1080, H=1350):
@@ -455,10 +460,10 @@ def keycard(out, W=1080, H=1350):
     # Hero. Anton, tight leading, the payoff line in green — the same green as
     # the FIND chip further down, so the eye ties the two together unprompted.
     y += 44
-    fh = font(ANTON, 106)
-    for line, col in [("HIGH SCORE.", FG), ("LOW HEAT.", FG), ("= FIND", GREEN)]:
+    fh = font(ANTON, 102)
+    for line, col in [("HIGH SCORE +", FG), ("LOW HEAT", FG), ("= A FIND", GREEN)]:
         d.text((M, y), line, font=fh, fill=col)
-        y += 90
+        y += 86
 
     y += 24
     fb = font(MONO, 23)
@@ -510,10 +515,10 @@ def keycard_og(out, W=1200, H=630):
     _key_masthead(im, d, split - 24, M, M, right="THE KEY", hh=34, wmh=27, fs=15)
 
     y = M + 92
-    fh = font(ANTON, 88)
-    for line, col in [("HIGH SCORE.", FG), ("LOW HEAT.", FG), ("= FIND", GREEN)]:
+    fh = font(ANTON, 84)
+    for line, col in [("HIGH SCORE +", FG), ("LOW HEAT", FG), ("= A FIND", GREEN)]:
         d.text((M, y), line, font=fh, fill=col)
-        y += 84
+        y += 80
 
     fb = font(MONO, 20)
     y += 20
@@ -521,7 +526,7 @@ def keycard_og(out, W=1200, H=630):
                    fb, split - M - 40, 2):
         d.text((M, y), ln, font=fb, fill=SAND); y += 30
 
-    _tierladder(d, M, H - M - 76, split - M - 30, nfs=14, rfs=13, dfs=12, gap=7, barh=7)
+    _tierladder(d, M, H - M - 88, split - M - 30, nfs=21, rfs=14, dfs=12, gap=7, barh=8)
     tracked(d, (M, H - M + 8), "ARCHIVE.THEMUSAFAMILY.COM", font(MONOM, 16), SAND, 3.0)
 
     # Right column: the definitions, the gap, then the three calls.
