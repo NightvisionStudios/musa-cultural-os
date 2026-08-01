@@ -498,7 +498,7 @@ def build(commit_slugs=True):
         FLAGDEF = {
             "FIND":        ("",     "kf", "the score is ahead of the room."),
             "ROOM'S RIGHT":("held", "kr", "the room is loud, and the room is correct."),
-            "ROOM'S LOUD": ("heat", "kl", "the room is louder than the work."),
+            "ROOM'S EARLY": ("held", "kl", "the room got here before the work did."),
         }
         def _fdef(f):
             k = str(f).replace("_"," ").upper().strip()

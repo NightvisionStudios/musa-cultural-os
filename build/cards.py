@@ -261,9 +261,8 @@ def _score_rail(d, entry, x, y, boxw, score_px=96, chip_fs=21, heat=True, bw=160
     if t: c2 = chip(d, c2, y + 16, t, TIER_COLOR.get(t, FG), TIER_BORDER.get(t, LINE), fs=chip_fs) + 12
     for f_ in [z for z in (entry.get("flags") or []) if "BLADE" not in str(z).upper()]:
         lbl = str(f_).replace("_", " ").upper()
-        _loud = "LOUD" in lbl or "HEAT" in lbl
-        col = RED if _loud else (GREEN if "FIND" in lbl else AMBER)
-        bor = "#3a2020" if _loud else ("#2f3a28" if "FIND" in lbl else "#3a2f1c")
+        col = GREEN if "FIND" in lbl else AMBER
+        bor = "#2f3a28" if "FIND" in lbl else "#3a2f1c"
         c2 = chip(d, c2, y + 16, lbl, col, bor, fs=chip_fs) + 12
     if heat:
         h = int(entry.get("heat", 0) or 0)
@@ -375,7 +374,7 @@ def _save(im, out):
 KEY_FLAGS = [
     ("FIND",         GREEN, "#2f3a28", "the score is ahead of the room."),
     ("ROOM'S RIGHT", AMBER, "#3a2f1c", "the room is loud, and the room is correct."),
-    ("ROOM'S LOUD",  RED,   "#3a2020", "the room is louder than the work."),
+    ("ROOM'S EARLY", AMBER, "#3a2f1c", "the room got here before the work did."),
 ]
 
 
