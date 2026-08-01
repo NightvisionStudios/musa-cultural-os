@@ -357,7 +357,7 @@ footer .ft b{font-family:var(--mono);font-size:9.5px;color:#b8b09c;letter-spacin
 <div class="keyflags">
 <span class="keyflag kfind">FIND</span> the score is ahead of the room.
 <span class="keyflag kright">ROOM'S RIGHT</span> the room is loud, and the room is correct.
-<span class="keyflag kloud">ROOM&#39;S EARLY</span> the room is ahead of what&#39;s landed so far.
+<span class="keyflag kloud">ROOM&#39;S AHEAD</span> the room&#39;s ahead of what&#39;s landed.
 </div>
 A score under 5 is <b class="knoise">NOISE</b> outright. <b>BENCHMARK</b> names the nearest neighbour in the 50, so no score floats.
 <div class="keytiers">
@@ -417,7 +417,7 @@ const INDEX_SEED = {
         {name:"Ibrahim Mahama",domain:"ART",score:9.0,tier:"HEIRWAVE",heat:52,direction:"up",flags:["FIND"]},
         {name:"Álvaro Díaz — Omakase",domain:"MUSIC",score:8.1,tier:"CROWN",heat:44,direction:"up",flags:["FIND"]},
         {name:"Douglas Stuart — John of John",domain:"BOOKS",score:8.2,tier:"CROWN",heat:40,direction:"up",flags:["FIND"]},
-        {name:"Charli XCX — The Moment",domain:"FILM",score:6.6,tier:"TORCH",heat:78,direction:"flat",flags:["ROOM'S EARLY"]},
+        {name:"Charli XCX — The Moment",domain:"FILM",score:6.6,tier:"TORCH",heat:78,direction:"flat",flags:["ROOM'S AHEAD"]},
         {name:"Taste-as-Gatekeeping",domain:"SCENE",score:7.6,tier:"FLAME",heat:66,direction:"up",flags:[]}
       ]},
     { issue:"2026-06-17-0702", date:"2026-06-17", time:"07:02 ET",
@@ -554,7 +554,7 @@ function cleanFlags(list){
 }
 function flagClass(f){
   const u=String(f).toUpperCase();
-  if(u.includes("EARLY")) return "early";
+  if(u.includes("EARLY")||u.includes("AHEAD")) return "early";
   if(u.includes("HEAT")) return "heat";
   if(u.includes("FIND")) return "";
   return "held";
