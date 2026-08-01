@@ -371,11 +371,33 @@ def _save(im, out):
 # premise cold: the gap between SCORE and HEAT is the read, and a high score
 # sitting on low heat is the point of the whole board.
 
+
+# ── THE KEY card ────────────────────────────────────────────────────────────
+# The whole key, carried on one saveable image. Slide two behind any entry
+# card: a reader who has never seen the board should be able to swipe once and
+# understand that a FIND is the compliment, not the consolation.
+#
+# The prose below is the site's own wording, verbatim from THE KEY in
+# index.html. It is duplicated here on purpose and rebuilt on every publish
+# run, so the card can never drift from the definitions it teaches.
+
 KEY_FLAGS = [
     ("FIND",         GREEN, "#2f3a28", "the score is ahead of the room."),
     ("ROOM'S RIGHT", AMBER, "#3a2f1c", "the room is loud, and the room is correct."),
     ("ROOM'S AHEAD", SAND,  "#3a352a", "the room's ahead of what's landed."),
 ]
+
+KEY_TIERS = [("HEIRWAVE", "9–10", "CANON"), ("CROWN", "8–8.9", "MASTERY"),
+             ("FLAME", "7–7.9", "DEPTH"),   ("TORCH", "6–6.9", "INFLUENCE"),
+             ("SPARK", "5–5.9", "FRESH"),   ("NOISE", "<5", "")]
+
+KEY_PROSE = ("MUSA SCORE (1–10) is the taste read — where a name sits against the canon. "
+             "HEAT (0–100) is how loud the room is right now. The gap between the two is the "
+             "whole point, and every card carries a flag naming which way that gap runs:")
+KEY_FLOOR = ("A score under 5 is NOISE outright. BENCHMARK names the nearest neighbour "
+             "in the 50, so no score floats.")
+KEY_HOOK  = ("The work already holds up. The room hasn't arrived yet. You're getting put "
+             "onto it before it gets loud, which is the entire point of the board.")
 
 
 def _key_masthead(im, d, W, M, y, right="THE KEY", hh=40, wmh=32, fs=17):
@@ -385,24 +407,40 @@ def _key_masthead(im, d, W, M, y, right="THE KEY", hh=40, wmh=32, fs=17):
     tracked(d, (W - M - tw(d, right, fm, 2.4), y + int(hh * 0.3)), right, fm, AMBER, 2.4)
 
 
-def _gapdemo(d, x, y, boxw):
+def _gapdemo(d, x, y, boxw, step=62, labfs=22, valfs=26, barh=16):
     """The premise, drawn rather than argued: a tall score over a short heat bar."""
-    fl = font(MONOM, 22); fv = font(MONOM, 26)
+    fl = font(MONOM, labfs); fv = font(MONOM, valfs)
     barx, barw = x + 132, boxw - 132 - 96
     for i, (lab, val, pct, col) in enumerate(
             [("SCORE", "8.4", 84, AMBER), ("HEAT", "22", 22, MUT)]):
-        yy = y + i * 62
+        yy = y + i * step
         tracked(d, (x, yy + 3), lab, fl, MUT if i else FG, 3.0)
-        d.rounded_rectangle([barx, yy + 4, barx + barw, yy + 20], radius=8, fill="#1c1a16")
+        d.rounded_rectangle([barx, yy + 4, barx + barw, yy + 4 + barh], radius=8, fill="#1c1a16")
         fw = int(barw * pct / 100)
-        d.rounded_rectangle([barx, yy + 4, barx + fw, yy + 20], radius=8,
+        d.rounded_rectangle([barx, yy + 4, barx + fw, yy + 4 + barh], radius=8,
                             fill=AMBER if i == 0 else "#4a463d")
         tracked(d, (barx + barw + 22, yy), val, fv, col, 1.4)
-    return y + 124
+    return y + step * 2
+
+
+def _tierladder(d, x, y, w, nfs=13, rfs=12, dfs=11, gap=9):
+    """The six tiers as a ladder, so the score on the card lands somewhere."""
+    n = len(KEY_TIERS)
+    seg = (w - gap * (n - 1)) / n
+    fn, fr, fd = font(MONOM, nfs), font(MONO, rfs), font(MONO, dfs)
+    for i, (name, rng, desc) in enumerate(KEY_TIERS):
+        sx = int(x + i * (seg + gap))
+        d.rounded_rectangle([sx, y, sx + int(seg), y + 6], radius=3,
+                            fill=TIER_COLOR[name])
+        tracked(d, (sx, y + 15), name, fn, TIER_COLOR[name], 0.9)
+        d.text((sx, y + 15 + nfs + 5), rng, font=fr, fill=MUT)
+        if desc:
+            d.text((sx, y + 15 + nfs + 5 + rfs + 4), desc, font=fd, fill=MUT2)
+    return y + 15 + nfs + 5 + rfs + 4 + dfs
 
 
 def keycard(out, W=1080, H=1350):
-    M = 68
+    M = 64
     im = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(im)
     boxw = W - 2 * M
@@ -410,39 +448,53 @@ def keycard(out, W=1080, H=1350):
     _key_masthead(im, d, W, M, M)
     d.line([(M, M + 74), (W - M, M + 74)], fill=AMBER, width=3)
 
-    y = M + 118
-    tracked(d, (M, y), "HOW TO READ THE INDEX", font(MONOM, 21), MUT, 4.6)
+    y = M + 108
+    tracked(d, (M, y), "HOW TO READ A SCORE", font(MONOM, 20), MUT, 4.6)
 
-    # Hero. Anton, tight leading, the payoff line in green.
-    y += 58
-    fh = font(ANTON, 140)
-    for line, col in [("HIGH SCORE.", FG), ("LOW HEAT.", FG), ("THAT'S A FIND.", GREEN)]:
+    # Hero. Anton, tight leading, the payoff line in green — the same green as
+    # the FIND chip further down, so the eye ties the two together unprompted.
+    y += 44
+    fh = font(ANTON, 106)
+    for line, col in [("HIGH SCORE.", FG), ("LOW HEAT.", FG), ("= FIND", GREEN)]:
         d.text((M, y), line, font=fh, fill=col)
-        y += 132
+        y += 94
 
-    y += 46
-    fb = font(MONO, 27)
-    body = ("The work already holds up. The room hasn't arrived yet. "
-            "You get put onto it before it gets loud, which is the entire point of the board.")
-    for ln in wrap(d, body, fb, boxw, 4):
-        d.text((M, y), ln, font=fb, fill=SAND); y += 40
+    y += 24
+    fb = font(MONO, 23)
+    for ln in wrap(d, KEY_HOOK, fb, boxw, 3):
+        d.text((M, y), ln, font=fb, fill=SAND); y += 32
 
-    # Draw the gap so it reads without the paragraph.
-    y += 34
-    d.rounded_rectangle([M, y, W - M, y + 196], radius=10, outline=LINE, width=2)
-    yy = _gapdemo(d, M + 34, y + 34, boxw - 68)
-    tracked(d, (M + 34, yy + 6), "THE GAP IS THE READ", font(MONOM, 19), AMBER, 4.0)
-    y += 196 + 44
+    # The gap drawn, so it reads without the paragraph.
+    y += 26
+    d.rounded_rectangle([M, y, W - M, y + 140], radius=10, outline=LINE, width=2)
+    yy = _gapdemo(d, M + 30, y + 20, boxw - 60, step=48, labfs=19, valfs=23, barh=13)
+    tracked(d, (M + 30, yy + 2), "THE GAP IS THE READ", font(MONOM, 18), AMBER, 4.0)
+    y += 140 + 24
 
-    # The other two calls, so a stranger can read any card in the feed.
+    d.line([(M, y), (W - M, y)], fill=LINE, width=1)
+    y += 22
+
+    fp = font(MONO, 22)
+    for ln in wrap(d, KEY_PROSE, fp, boxw, 4):
+        d.text((M, y), ln, font=fp, fill=MUT); y += 31
+
+    # The three calls, so a stranger can read any card in the feed.
+    y += 16
     fg_ = font(MONO, 22)
     for lab, col, bor, gloss in KEY_FLAGS:
-        endx = chip(d, M, y, lab, col, bor, fs=19, padx=11, pady=8, ls=1.6)
-        d.text((endx + 18, y + 8), gloss, font=fg_, fill=MUT)
-        y += 56
+        endx = chip(d, M, y, lab, col, bor, fs=18, padx=11, pady=8, ls=1.6)
+        d.text((endx + 18, y + 7), gloss, font=fg_, fill=MUT)
+        y += 46
 
-    ff = font(MONO, 20)
-    tracked(d, (M, H - M - 14), "ARCHIVE.THEMUSAFAMILY.COM", ff, MUT2, 3.4)
+    y += 10
+    ff2 = font(MONO, 21)
+    for ln in wrap(d, KEY_FLOOR, ff2, boxw, 2):
+        d.text((M, y), ln, font=ff2, fill=MUT); y += 30
+
+    y = _tierladder(d, M, y + 14, boxw)
+
+    tracked(d, (M, H - M - 16), "ARCHIVE.THEMUSAFAMILY.COM", font(MONO, 19), MUT2, 3.4)
+    assert y < H - M - 22, "key card overflows: content ends at %d" % y
     return _save(grain(scanlines(im, 6)), out)
 
 
@@ -451,37 +503,45 @@ def keycard_og(out, W=1200, H=630):
     M = 56
     im = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(im)
-    split = 620
+    split = 596
     d.line([(split, 0), (split, H)], fill=AMBER, width=3)
 
     _key_masthead(im, d, split - 24, M, M, right="THE KEY", hh=34, wmh=27, fs=15)
 
-    y = M + 96
-    fh = font(ANTON, 92)
-    for line, col in [("HIGH SCORE.", FG), ("LOW HEAT.", FG), ("THAT'S A FIND.", GREEN)]:
+    y = M + 92
+    fh = font(ANTON, 88)
+    for line, col in [("HIGH SCORE.", FG), ("LOW HEAT.", FG), ("= FIND", GREEN)]:
         d.text((M, y), line, font=fh, fill=col)
-        y += 88
+        y += 84
 
-    fb = font(MONO, 21)
-    y += 26
+    fb = font(MONO, 20)
+    y += 20
     for ln in wrap(d, "The room hasn't arrived yet. You hear it before it gets loud.",
                    fb, split - M - 40, 2):
-        d.text((M, y), ln, font=fb, fill=SAND); y += 31
+        d.text((M, y), ln, font=fb, fill=SAND); y += 30
 
-    tracked(d, (M, H - M - 6), "ARCHIVE.THEMUSAFAMILY.COM", font(MONO, 17), MUT2, 3.0)
+    _tierladder(d, M, H - M - 60, split - M - 40, nfs=11, rfs=10, dfs=9, gap=6)
+    tracked(d, (M, H - M + 6), "ARCHIVE.THEMUSAFAMILY.COM", font(MONO, 15), MUT2, 3.0)
 
-    # Right column: the gap, then the three calls.
-    rx = split + 46
+    # Right column: the definitions, the gap, then the three calls.
+    rx = split + 42
     rw = W - rx - M
-    tracked(d, (rx, M + 6), "HOW TO READ THE INDEX", font(MONOM, 17), MUT, 3.8)
-    yy = _gapdemo(d, rx, M + 54, rw)
-    tracked(d, (rx, yy + 2), "THE GAP IS THE READ", font(MONOM, 16), AMBER, 3.4)
+    tracked(d, (rx, M + 4), "HOW TO READ A SCORE", font(MONOM, 16), MUT, 3.8)
 
-    y = yy + 56
-    fg_ = font(MONO, 17)
+    y = M + 36
+    fp = font(MONO, 16)
+    for ln in wrap(d, KEY_PROSE, fp, rw, 5):
+        d.text((rx, y), ln, font=fp, fill=MUT); y += 23
+
+    y += 8
+    yy = _gapdemo(d, rx, y, rw, step=40, labfs=16, valfs=19, barh=11)
+    tracked(d, (rx, yy + 2), "THE GAP IS THE READ", font(MONOM, 14), AMBER, 3.4)
+
+    y = yy + 34
+    fg_ = font(MONO, 15)
     for lab, col, bor, gloss in KEY_FLAGS:
-        chip(d, rx, y, lab, col, bor, fs=15, padx=9, pady=6, ls=1.4)
-        for ln in wrap(d, gloss, fg_, rw, 1):
-            d.text((rx, y + 36), ln, font=fg_, fill=MUT)
-        y += 74
+        endx = chip(d, rx, y, lab, col, bor, fs=13, padx=8, pady=6, ls=1.3)
+        for ln in wrap(d, gloss, fg_, rw - (endx - rx) - 12, 1):
+            d.text((endx + 12, y + 5), ln, font=fg_, fill=MUT)
+        y += 36
     return _save(grain(scanlines(im, 6)), out)

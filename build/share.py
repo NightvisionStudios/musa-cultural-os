@@ -179,7 +179,7 @@ footer b{{font-family:var(--mono);font-size:9px;color:#b8b09c;letter-spacing:.2e
   </a>
   <div class="kbody">
     <div class="klab">THE KEY · SLIDE TWO</div>
-    <div class="ktxt">Save this and run it behind any card. <b>A high score sitting on low heat is a FIND</b> — the work already holds up, the room hasn't arrived, and you're getting put onto it before it gets loud. That gap is the whole board.</div>
+    <div class="ktxt">Save this and run it behind any card — it carries the whole key: score, heat, all three flags and the tier ladder. <b>High score, low heat = FIND</b>: the work already holds up, the room hasn't arrived, and you're getting put onto it before it gets loud. That gap is the whole board.</div>
     <div class="kacts">
       <a href="/cards/the-key-sq.jpg" download="musa-the-key-sq.jpg">SAVE 1080×1350</a>
       <a href="/cards/the-key-og.jpg" download="musa-the-key-og.jpg">SAVE 1200×630</a>
