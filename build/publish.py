@@ -39,6 +39,28 @@ def e(x): return html.escape(str(x if x is not None else ""), quote=True)
 # rendered. Lives under build/, which .assetsignore already keeps out of the
 # Workers Assets upload, but is committed so the state survives a fresh clone.
 STAMP_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "artstamp.json")
+STAMP_VERSION = 2   # v1 hashed artwork only; v2 hashes artwork + the copy cards paint
+
+def load_stamp(carddir, seen):
+    """Read the stamp, or seed it. Seeding treats every entry whose cards already exist as
+    current, so both the first run and a schema bump are no-ops rather than a 460-card
+    rebuild. Returns (mapping, seeded?)."""
+    if os.path.exists(STAMP_PATH):
+        try:
+            with open(STAMP_PATH, encoding="utf-8") as fh: blob = json.load(fh)
+            if isinstance(blob, dict) and blob.get("v") == STAMP_VERSION:
+                return dict(blob.get("cards") or {}), False
+        except Exception: pass
+    seed = {}
+    for slug, (iss, en) in seen.items():
+        if not (os.path.exists(os.path.join(carddir, slug + "-sq.jpg"))
+                and os.path.exists(os.path.join(carddir, slug + "-og.jpg"))): continue
+        seed[slug] = card_digest(en, iss, os.path.join(ROOT, "img", "entries", slug + ".jpg"))
+    return seed, True
+
+def save_stamp(mapping):
+    with open(STAMP_PATH, "w", encoding="utf-8") as fh:
+        json.dump({"v": STAMP_VERSION, "cards": mapping}, fh, indent=0, sort_keys=True)
 
 def art_digest(path):
     """sha256 of an entry's cached artwork, or None when there is no art."""
@@ -48,24 +70,21 @@ def art_digest(path):
         for chunk in iter(lambda: fh.read(1 << 16), b""): h.update(chunk)
     return h.hexdigest()
 
-def load_stamp(carddir, seen_slugs):
-    """Read the stamp. On first run there is no file, so seed it from whatever art
-    is already on disk for entries whose cards exist — that treats the archive as
-    current and keeps the migration a no-op instead of a 460-card rebuild."""
-    if os.path.exists(STAMP_PATH):
-        try:
-            with open(STAMP_PATH, encoding="utf-8") as fh: return json.load(fh), False
-        except Exception: pass
-    seed = {}
-    for slug in seen_slugs:
-        if not os.path.exists(os.path.join(carddir, slug + "-sq.jpg")): continue
-        d = art_digest(os.path.join(ROOT, "img", "entries", slug + ".jpg"))
-        if d: seed[slug] = d
-    return seed, True
+# Every ledger field that cards.py actually paints. Edit the read, the score, a flag or
+# the benchmark and the card must be repainted — before 2026-08-01 nothing but missing-file
+# checks governed this, so a corrected read stayed corrected on the permalink and wrong on
+# the card that actually travels. Extend this tuple if cards.py starts rendering a new field.
+CARD_FIELDS = ("name", "read", "domain", "domain_detail", "score", "tier",
+               "heat", "direction", "flags", "benchmark")
 
-def save_stamp(stamp):
-    with open(STAMP_PATH, "w", encoding="utf-8") as fh:
-        json.dump(stamp, fh, indent=0, sort_keys=True)
+def card_digest(entry, issue, artp):
+    """One digest over the artwork AND the copy the card paints. Either changing is stale."""
+    payload = {k: entry.get(k) for k in CARD_FIELDS}
+    payload["_issue"] = issue.get("issue")
+    payload["_date"] = issue.get("date")
+    payload["_art"] = art_digest(artp)
+    blob = json.dumps(payload, sort_keys=True, ensure_ascii=False, default=str)
+    return hashlib.sha256(blob.encode("utf-8")).hexdigest()
 
 TIER_CLASS={"HEIRWAVE":"t-heir","CROWN":"t-crown","FLAME":"t-flame",
             "TORCH":"t-torch","SPARK":"t-spark","NOISE":"t-noise"}
@@ -501,7 +520,7 @@ def build(commit_slugs=True):
             en["slug"] = slug
 
     # pass 2 — render cards + pages
-    artstamp, seeded = load_stamp(carddir, list(seen.keys()))
+    artstamp, seeded = load_stamp(carddir, seen)
     if seeded: print("art stamp: seeded %d entries from existing cards (no rebuild)" % len(artstamp))
     urls = []
     for slug, (iss, en) in seen.items():
@@ -514,12 +533,11 @@ def build(commit_slugs=True):
         # with the same checkout timestamp and an mtime test reports the whole archive
         # stale, which churned 39MB of byte-different but visually identical squares
         # into a single commit on 2026-08-01. The digest is the only stable signal.
-        digest = art_digest(artp)
+        digest = card_digest(en, iss, artp)
         stale = FORCE or (artstamp.get(slug) != digest)
-        if FORCE or not os.path.exists(ogp) or (stale and os.path.exists(ogp)): cards.og(en, iss, ogp)
-        if stale or not os.path.exists(sqp): cards.sq(en, iss, sqp)
-        if digest is None: artstamp.pop(slug, None)
-        else: artstamp[slug] = digest
+        if FORCE or stale or not os.path.exists(ogp): cards.og(en, iss, ogp)
+        if FORCE or stale or not os.path.exists(sqp): cards.sq(en, iss, sqp)
+        artstamp[slug] = digest
 
         sibs = [s for s in iss.get("entries", []) if s.get("slug") != slug]
         also = "".join(
