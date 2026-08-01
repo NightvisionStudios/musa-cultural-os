@@ -413,9 +413,9 @@ def _gapdemo(d, x, y, boxw, step=62, labfs=22, valfs=26, barh=16):
     fl = font(MONOM, labfs); fv = font(MONOM, valfs)
     barx, barw = x + 132, boxw - 132 - 96
     for i, (lab, val, pct, col) in enumerate(
-            [("SCORE", "8.4", 84, AMBER), ("HEAT", "22", 22, MUT)]):
+            [("SCORE", "8.4", 84, AMBER), ("HEAT", "22", 22, SAND)]):
         yy = y + i * step
-        tracked(d, (x, yy + 3), lab, fl, MUT if i else FG, 3.0)
+        tracked(d, (x, yy + 3), lab, fl, SAND if i else FG, 3.0)
         d.rounded_rectangle([barx, yy + 4, barx + barw, yy + 4 + barh], radius=8, fill="#1c1a16")
         fw = int(barw * pct / 100)
         d.rounded_rectangle([barx, yy + 4, barx + fw, yy + 4 + barh], radius=8,
@@ -455,7 +455,7 @@ def keycard(out, W=1080, H=1350):
     d.line([(M, M + 74), (W - M, M + 74)], fill=AMBER, width=3)
 
     y = M + 108
-    tracked(d, (M, y), "HOW TO READ A SCORE", font(MONOM, 20), MUT, 4.6)
+    tracked(d, (M, y), "HOW TO READ A SCORE", font(MONOM, 20), SAND, 4.6)
 
     # Hero. Anton, tight leading, the payoff line in green — the same green as
     # the FIND chip further down, so the eye ties the two together unprompted.
@@ -463,39 +463,40 @@ def keycard(out, W=1080, H=1350):
     fh = font(ANTON, 102)
     for line, col in [("HIGH SCORE +", FG), ("LOW HEAT", FG), ("= A FIND", GREEN)]:
         d.text((M, y), line, font=fh, fill=col)
-        y += 86
+        y += 83
 
-    y += 24
-    fb = font(MONO, 23)
+    # The payoff line was sitting on top of this paragraph. It needs room.
+    y += 70
+    fb = font(MONOM, 22)
     for ln in wrap(d, KEY_HOOK, fb, boxw, 3):
-        d.text((M, y), ln, font=fb, fill=SAND); y += 32
+        d.text((M, y), ln, font=fb, fill=FG); y += 31
 
     # The gap drawn, so it reads without the paragraph.
     y += 26
     d.rounded_rectangle([M, y, W - M, y + 132], radius=10, outline=LINE, width=2)
     yy = _gapdemo(d, M + 30, y + 18, boxw - 60, step=46, labfs=19, valfs=23, barh=13)
     tracked(d, (M + 30, yy + 2), "THE GAP IS THE READ", font(MONOM, 18), AMBER, 4.0)
-    y += 132 + 22
+    y += 132 + 18
 
     d.line([(M, y), (W - M, y)], fill=LINE, width=1)
     y += 22
 
-    fp = font(MONO, 22)
+    fp = font(MONOM, 23)
     for ln in wrap(d, KEY_PROSE, fp, boxw, 4):
-        d.text((M, y), ln, font=fp, fill=MUT); y += 31
+        d.text((M, y), ln, font=fp, fill=FG); y += 32
 
     # The three calls, so a stranger can read any card in the feed.
-    y += 16
-    fg_ = font(MONO, 22)
+    y += 18
+    fg_ = font(MONOM, 22)
     for lab, col, bor, gloss in KEY_FLAGS:
         endx = chip(d, M, y, lab, col, bor, fs=18, padx=11, pady=8, ls=1.6)
-        d.text((endx + 18, y + 7), gloss, font=fg_, fill=MUT)
-        y += 46
+        d.text((endx + 18, y + 7), gloss, font=fg_, fill=SAND)
+        y += 44
 
-    y += 8
-    ff2 = font(MONO, 22)
+    y += 10
+    ff2 = font(MONOM, 22)
     for ln in wrap(d, KEY_FLOOR, ff2, boxw, 2):
-        d.text((M, y), ln, font=ff2, fill=SAND); y += 31
+        d.text((M, y), ln, font=ff2, fill=FG); y += 30
 
     y = _tierladder(d, M, y + 14, boxw)
 
@@ -515,16 +516,16 @@ def keycard_og(out, W=1200, H=630):
     _key_masthead(im, d, split - 24, M, M, right="THE KEY", hh=34, wmh=27, fs=15)
 
     y = M + 92
-    fh = font(ANTON, 84)
+    fh = font(ANTON, 80)
     for line, col in [("HIGH SCORE +", FG), ("LOW HEAT", FG), ("= A FIND", GREEN)]:
         d.text((M, y), line, font=fh, fill=col)
-        y += 80
+        y += 76
 
-    fb = font(MONO, 20)
-    y += 20
+    fb = font(MONOM, 20)
+    y += 42
     for ln in wrap(d, "The room hasn't arrived yet. You hear it before it gets loud.",
                    fb, split - M - 40, 2):
-        d.text((M, y), ln, font=fb, fill=SAND); y += 30
+        d.text((M, y), ln, font=fb, fill=FG); y += 30
 
     _tierladder(d, M, H - M - 88, split - M - 30, nfs=21, rfs=14, dfs=12, gap=7, barh=8)
     tracked(d, (M, H - M + 8), "ARCHIVE.THEMUSAFAMILY.COM", font(MONOM, 16), SAND, 3.0)
@@ -532,22 +533,22 @@ def keycard_og(out, W=1200, H=630):
     # Right column: the definitions, the gap, then the three calls.
     rx = split + 42
     rw = W - rx - M
-    tracked(d, (rx, M + 4), "HOW TO READ A SCORE", font(MONOM, 16), MUT, 3.8)
+    tracked(d, (rx, M + 4), "HOW TO READ A SCORE", font(MONOM, 16), SAND, 3.8)
 
     y = M + 36
-    fp = font(MONO, 16)
+    fp = font(MONOM, 16)
     for ln in wrap(d, KEY_PROSE, fp, rw, 5):
-        d.text((rx, y), ln, font=fp, fill=MUT); y += 23
+        d.text((rx, y), ln, font=fp, fill=FG); y += 23
 
     y += 8
     yy = _gapdemo(d, rx, y, rw, step=40, labfs=16, valfs=19, barh=11)
     tracked(d, (rx, yy + 2), "THE GAP IS THE READ", font(MONOM, 14), AMBER, 3.4)
 
     y = yy + 34
-    fg_ = font(MONO, 15)
+    fg_ = font(MONOM, 15)
     for lab, col, bor, gloss in KEY_FLAGS:
         endx = chip(d, rx, y, lab, col, bor, fs=13, padx=8, pady=6, ls=1.3)
         for ln in wrap(d, gloss, fg_, rw - (endx - rx) - 12, 1):
-            d.text((endx + 12, y + 5), ln, font=fg_, fill=MUT)
+            d.text((endx + 12, y + 5), ln, font=fg_, fill=SAND)
         y += 36
     return _save(grain(scanlines(im, 6)), out)
