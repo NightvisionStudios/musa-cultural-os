@@ -5,7 +5,7 @@
    /cards/<slug>-sq.jpg  — 1080x1350 card (Instagram)
    /sitemap.xml, /robots.txt
 Writes the slug back onto each ledger entry so the magazine can link to it."""
-import json, os, re, sys, unicodedata, html, shutil
+import json, os, re, sys, unicodedata, html, shutil, hashlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import cards
 import share
@@ -33,6 +33,39 @@ def fmt_date(d):
         return str(d or "")
 
 def e(x): return html.escape(str(x if x is not None else ""), quote=True)
+
+# ---- card art stamp -------------------------------------------------------
+# Maps slug -> sha256 of img/entries/<slug>.jpg at the time its cards were last
+# rendered. Lives under build/, which .assetsignore already keeps out of the
+# Workers Assets upload, but is committed so the state survives a fresh clone.
+STAMP_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "artstamp.json")
+
+def art_digest(path):
+    """sha256 of an entry's cached artwork, or None when there is no art."""
+    if not os.path.exists(path): return None
+    h = hashlib.sha256()
+    with open(path, "rb") as fh:
+        for chunk in iter(lambda: fh.read(1 << 16), b""): h.update(chunk)
+    return h.hexdigest()
+
+def load_stamp(carddir, seen_slugs):
+    """Read the stamp. On first run there is no file, so seed it from whatever art
+    is already on disk for entries whose cards exist — that treats the archive as
+    current and keeps the migration a no-op instead of a 460-card rebuild."""
+    if os.path.exists(STAMP_PATH):
+        try:
+            with open(STAMP_PATH, encoding="utf-8") as fh: return json.load(fh), False
+        except Exception: pass
+    seed = {}
+    for slug in seen_slugs:
+        if not os.path.exists(os.path.join(carddir, slug + "-sq.jpg")): continue
+        d = art_digest(os.path.join(ROOT, "img", "entries", slug + ".jpg"))
+        if d: seed[slug] = d
+    return seed, True
+
+def save_stamp(stamp):
+    with open(STAMP_PATH, "w", encoding="utf-8") as fh:
+        json.dump(stamp, fh, indent=0, sort_keys=True)
 
 TIER_CLASS={"HEIRWAVE":"t-heir","CROWN":"t-crown","FLAME":"t-flame",
             "TORCH":"t-torch","SPARK":"t-spark","NOISE":"t-noise"}
@@ -468,18 +501,25 @@ def build(commit_slugs=True):
             en["slug"] = slug
 
     # pass 2 — render cards + pages
+    artstamp, seeded = load_stamp(carddir, list(seen.keys()))
+    if seeded: print("art stamp: seeded %d entries from existing cards (no rebuild)" % len(artstamp))
     urls = []
     for slug, (iss, en) in seen.items():
         # cards are deterministic — only render the ones that don't exist yet, so a
         # rebuild doesn't churn 35MB of new blobs into git every run.
         ogp=os.path.join(carddir, slug + "-og.jpg"); sqp=os.path.join(carddir, slug + "-sq.jpg")
         artp=os.path.join(ROOT, "img", "entries", slug + ".jpg")
-        # a square is stale once its artwork lands or changes — that's the only
-        # thing that can alter a card whose ledger entry hasn't moved.
-        stale = FORCE or (os.path.exists(artp) and os.path.exists(sqp)
-                          and os.path.getmtime(artp) > os.path.getmtime(sqp))
-        if FORCE or not os.path.exists(ogp): cards.og(en, iss, ogp)
+        # A card is stale once its artwork CHANGES CONTENT — compared by digest, never
+        # by mtime. Git does not preserve mtimes, so on a fresh clone every file lands
+        # with the same checkout timestamp and an mtime test reports the whole archive
+        # stale, which churned 39MB of byte-different but visually identical squares
+        # into a single commit on 2026-08-01. The digest is the only stable signal.
+        digest = art_digest(artp)
+        stale = FORCE or (artstamp.get(slug) != digest)
+        if FORCE or not os.path.exists(ogp) or (stale and os.path.exists(ogp)): cards.og(en, iss, ogp)
         if stale or not os.path.exists(sqp): cards.sq(en, iss, sqp)
+        if digest is None: artstamp.pop(slug, None)
+        else: artstamp[slug] = digest
 
         sibs = [s for s in iss.get("entries", []) if s.get("slug") != slug]
         also = "".join(
@@ -610,7 +650,9 @@ def build(commit_slugs=True):
         json.dump(led, open(os.path.join(ROOT,"ledger.json"),"w",encoding="utf-8"), indent=2, ensure_ascii=False)
         open(os.path.join(ROOT,"ledger.json"),"a",encoding="utf-8").write("\n")
 
-    print("pages: %d  cards: %d  sitemap urls: %d" % (len(seen), len(seen)*2+1, len(urls)+1))
+    save_stamp(artstamp)
+    print("pages: %d  cards: %d  sitemap urls: %d  art stamped: %d"
+          % (len(seen), len(seen)*2+1, len(urls)+1, len(artstamp)))
     return seen
 
 if __name__ == "__main__":
