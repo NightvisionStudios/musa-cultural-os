@@ -97,10 +97,11 @@ border-top:1px solid var(--line);border-bottom:1px solid var(--line)}}
 .flag{{font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;color:var(--green);
 border:1px solid #2f3a28;border-radius:3px;padding:3px 7px}}
 .flag.held{{color:var(--amber);border-color:#3a2f1c}}.flag.heat{{color:var(--red);border-color:#3a2020}}
+.flag.early{{color:#cdbf99;border-color:#3a352a}}
 .flagkey{{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;color:var(--mut);
 line-height:1.75;margin:14px 0 0}}
 .flagkey b{{font-weight:400;color:var(--fg)}}
-.flagkey .kf{{color:var(--green)}}.flagkey .kr{{color:var(--amber)}}.flagkey .kl{{color:var(--red)}}
+.flagkey .kf{{color:var(--green)}}.flagkey .kr{{color:var(--amber)}}.flagkey .kl{{color:#cdbf99}}
 .heatwrap{{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:9.5px;
 letter-spacing:.12em;color:var(--mut);margin-left:auto}}
 .heatbar{{width:74px;height:5px;background:#1c1a16;border-radius:3px;overflow:hidden}}
@@ -498,7 +499,7 @@ def build(commit_slugs=True):
         FLAGDEF = {
             "FIND":        ("",     "kf", "the score is ahead of the room."),
             "ROOM'S RIGHT":("held", "kr", "the room is loud, and the room is correct."),
-            "ROOM'S EARLY": ("held", "kl", "the room got here before the work did."),
+            "ROOM'S EARLY": ("early", "kl", "the room is ahead of what's landed so far."),
         }
         def _fdef(f):
             k = str(f).replace("_"," ").upper().strip()
