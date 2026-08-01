@@ -423,20 +423,21 @@ def _gapdemo(d, x, y, boxw, step=62, labfs=22, valfs=26, barh=16):
     return y + step * 2
 
 
-def _tierladder(d, x, y, w, nfs=13, rfs=12, dfs=11, gap=9):
-    """The six tiers as a ladder, so the score on the card lands somewhere."""
+def _tierladder(d, x, y, w, nfs=17, rfs=16, dfs=15, gap=9, barh=8):
+    """The six tiers as a ladder, so the score on the card lands somewhere.
+    Sized to be read at arm's length on a phone, not squinted at."""
     n = len(KEY_TIERS)
     seg = (w - gap * (n - 1)) / n
-    fn, fr, fd = font(MONOM, nfs), font(MONO, rfs), font(MONO, dfs)
+    fn, fr, fd = font(MONOM, nfs), font(MONOM, rfs), font(MONO, dfs)
     for i, (name, rng, desc) in enumerate(KEY_TIERS):
         sx = int(x + i * (seg + gap))
-        d.rounded_rectangle([sx, y, sx + int(seg), y + 6], radius=3,
+        d.rounded_rectangle([sx, y, sx + int(seg), y + barh], radius=3,
                             fill=TIER_COLOR[name])
-        tracked(d, (sx, y + 15), name, fn, TIER_COLOR[name], 0.9)
-        d.text((sx, y + 15 + nfs + 5), rng, font=fr, fill=MUT)
+        tracked(d, (sx, y + barh + 12), name, fn, TIER_COLOR[name], 0.9)
+        d.text((sx, y + barh + 12 + nfs + 7), rng, font=fr, fill=FG)
         if desc:
-            d.text((sx, y + 15 + nfs + 5 + rfs + 4), desc, font=fd, fill=MUT2)
-    return y + 15 + nfs + 5 + rfs + 4 + dfs
+            d.text((sx, y + barh + 12 + nfs + 7 + rfs + 6), desc, font=fd, fill=SAND)
+    return y + barh + 12 + nfs + 7 + rfs + 6 + dfs
 
 
 def keycard(out, W=1080, H=1350):
@@ -457,7 +458,7 @@ def keycard(out, W=1080, H=1350):
     fh = font(ANTON, 106)
     for line, col in [("HIGH SCORE.", FG), ("LOW HEAT.", FG), ("= FIND", GREEN)]:
         d.text((M, y), line, font=fh, fill=col)
-        y += 94
+        y += 90
 
     y += 24
     fb = font(MONO, 23)
@@ -466,10 +467,10 @@ def keycard(out, W=1080, H=1350):
 
     # The gap drawn, so it reads without the paragraph.
     y += 26
-    d.rounded_rectangle([M, y, W - M, y + 140], radius=10, outline=LINE, width=2)
-    yy = _gapdemo(d, M + 30, y + 20, boxw - 60, step=48, labfs=19, valfs=23, barh=13)
+    d.rounded_rectangle([M, y, W - M, y + 132], radius=10, outline=LINE, width=2)
+    yy = _gapdemo(d, M + 30, y + 18, boxw - 60, step=46, labfs=19, valfs=23, barh=13)
     tracked(d, (M + 30, yy + 2), "THE GAP IS THE READ", font(MONOM, 18), AMBER, 4.0)
-    y += 140 + 24
+    y += 132 + 22
 
     d.line([(M, y), (W - M, y)], fill=LINE, width=1)
     y += 22
@@ -486,14 +487,14 @@ def keycard(out, W=1080, H=1350):
         d.text((endx + 18, y + 7), gloss, font=fg_, fill=MUT)
         y += 46
 
-    y += 10
-    ff2 = font(MONO, 21)
+    y += 8
+    ff2 = font(MONO, 22)
     for ln in wrap(d, KEY_FLOOR, ff2, boxw, 2):
-        d.text((M, y), ln, font=ff2, fill=MUT); y += 30
+        d.text((M, y), ln, font=ff2, fill=SAND); y += 31
 
     y = _tierladder(d, M, y + 14, boxw)
 
-    tracked(d, (M, H - M - 16), "ARCHIVE.THEMUSAFAMILY.COM", font(MONO, 19), MUT2, 3.4)
+    tracked(d, (M, H - M - 18), "ARCHIVE.THEMUSAFAMILY.COM", font(MONOM, 20), SAND, 3.4)
     assert y < H - M - 22, "key card overflows: content ends at %d" % y
     return _save(grain(scanlines(im, 6)), out)
 
@@ -520,8 +521,8 @@ def keycard_og(out, W=1200, H=630):
                    fb, split - M - 40, 2):
         d.text((M, y), ln, font=fb, fill=SAND); y += 30
 
-    _tierladder(d, M, H - M - 60, split - M - 40, nfs=11, rfs=10, dfs=9, gap=6)
-    tracked(d, (M, H - M + 6), "ARCHIVE.THEMUSAFAMILY.COM", font(MONO, 15), MUT2, 3.0)
+    _tierladder(d, M, H - M - 76, split - M - 30, nfs=14, rfs=13, dfs=12, gap=7, barh=7)
+    tracked(d, (M, H - M + 8), "ARCHIVE.THEMUSAFAMILY.COM", font(MONOM, 16), SAND, 3.0)
 
     # Right column: the definitions, the gap, then the three calls.
     rx = split + 42
