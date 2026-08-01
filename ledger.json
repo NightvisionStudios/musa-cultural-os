@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-07-31",
+    "updated": "2026-08-01",
     "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL.",
     "approved_repeats": [
       {
@@ -4472,6 +4472,119 @@
           "slug": "surf7-goose-coat"
         }
       ]
+    },
+    {
+      "issue": 46,
+      "issue_id": "2026-08-01-0722",
+      "date": "2026-08-01",
+      "time": "07:22 ET",
+      "forecast": "Seattle, Recife, Accra. Nothing on this board is new, and that is the read: a twelve-track album written, produced, mixed, mastered and cover-drawn by one man in one room; a first feature arriving five years after the short that announced it; a first retail sneaker twelve years after four friends started posting outfits. Tenure over arrival.",
+      "come_up": [
+        "Author-of-everything credits: written, produced, mixed, mastered, sleeve, one name",
+        "Recife as a production centre rather than a location: the door Kleber Mendonca Filho left open",
+        "Programmes that hand a teenager a camera and a stipend, then hang the results for seven months"
+      ],
+      "decline": [
+        "The debut read as a beginning rather than a receipt for the decade behind it",
+        "Two Jumpman silhouettes in five months standing in for a collection",
+        "Campaign photography outrunning the body of work it is meant to introduce"
+      ],
+      "climate": "Tenure over arrival. Every object here is somebody's tenth or twelfth or twenty-fifth year, and the useful question is whether the long build shows in the thing itself. AJ Suede has released at pace for a decade and Atomic Justice is the first record where the free association resolves into argument; he handles the boards, the mix, the master and the sleeve. Matheus Farias and Enock Carvalho have worked together thirteen years and sold international rights to their debut before a single public screening. The Studio Museum has run Expanding the Walls since 2001 and hangs seventeen teenagers beside James Van Der Zee. Contemporary Craft gave its main gallery to three artists whose subject is the labour nobody photographs. Against that, Free The Youth put Ghana's eagle on an Air Jordan 16 today and already has a second Jumpman silhouette booked for December, which is a distribution deal moving faster than a catalogue can.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "AJ Suede — Atomic Justice",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · UNDERGROUND RAP",
+          "url": "https://ajsuede.bandcamp.com/album/atomic-justice",
+          "image": "https://f4.bcbits.com/img/a1719279866_5.jpg",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 24,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Chris Crack — the same one-man authorship run at volume, though Suede does the boards as well as the bars",
+          "read": "Written, produced, mixed and mastered by one man in a small room in Seattle, with the sleeve credited to the same name. Atomic Justice went up on Bandcamp on 14 July: twelve tracks, no label line, features held to three. Suede has released at this pace for a decade and the early records ran on free association, one image handing off to the next inside a single bar. The writing here is linear, and that is the change worth naming. On “Able to Be Kane” he notices that the cruellest comments tend to arrive from accounts with scripture in the bio, then leaves the observation alone rather than closing it with a punchline. The production stays overcast throughout: a thudding low end under “Billed Gates”, a piano on “Lifting Gravity” that creeps instead of swelling. The detail that decides it: a rapper who could buy beats for a record this considered, and doesn’t. A vinyl LP and a print are the only physical objects attached. No single, no rollout, no announcement post filed a quarter ahead of the thing itself.",
+          "verdict": "PENDING",
+          "slug": "aj-suede-atomic-justice"
+        },
+        {
+          "rank": 2,
+          "name": "The Riverbank — Matheus Farias & Enock Carvalho",
+          "domain": "FILM",
+          "domain_detail": "FILM · BRAZILIAN AUTEUR",
+          "url": "https://variety.com/2026/film/global/the-riverbank-locarno-festival-mpm-premium-1236823275/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 33,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Black Film Archive — nearest on the 50 by root, though the 50 carries no film lane and that is the honest distance",
+          "read": "Five years after Inabitável played Sundance, Matheus Farias and Enock Carvalho have a first feature, and it goes straight into Locarno’s international competition as a world premiere. A Margem do Rio follows a young Black gay man and former evangelical through Recife, and the pair move it between erotic thriller, tropical noir and something closer to magical realism rather than settling on one. Premium Films and MPM Premium took international sales this week, before a public screening exists to sell. Farias and Carvalho have been partners professionally and privately for thirteen years. Recife did the rest: a decade of work out of Pernambuco made the city legible to programmers, and this is the first debut to walk through that door. Screens 5 to 15 August.",
+          "verdict": "PENDING",
+          "slug": "the-riverbank-matheus-farias-and-enock-carvalho"
+        },
+        {
+          "rank": 3,
+          "name": "Through Motion and Repose: Expanding the Walls 2026",
+          "domain": "ART",
+          "domain_detail": "ART · PHOTOGRAPHY",
+          "url": "https://www.studiomuseum.org/exhibitions/through-motion-and-repose-expanding-the-walls-2026",
+          "image": "https://studiomuseum.imgix.net/images/SorianoChristopher_SuitsattheCorner_2026.jpg",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 14,
+          "direction": "▮",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Noname Book Club — the same instinct, a syllabus treated as the artwork and run for years without a launch",
+          "read": "144 West 125th Street, up through 31 January 2027. Seventeen teenagers from Manhattan, the Bronx and Queens spent eight months inside the Studio Museum three days a week, worked through the James Van Der Zee archive alongside Dawoud Bey and Carrie Mae Weems, and now hang in the same rooms as Van Der Zee’s prints. Each leaves with a digital camera and a stipend; the programme is free and has run since 2001. Christopher Soriano’s Suits at the Corner is a 16 by 20 chromogenic print of men on a street corner, shot close. Nobody here is building a career yet, which is exactly why the pictures are unhurried.",
+          "verdict": "PENDING",
+          "slug": "through-motion-and-repose-expanding-the-walls-2026"
+        },
+        {
+          "rank": 4,
+          "name": "Revolutionary Care — Contemporary Craft",
+          "domain": "CRAFT",
+          "domain_detail": "CRAFT · FIBER & BOOKMAKING",
+          "url": "https://contemporarycraft.org/exhibition/revolutionary-care/exhibition-overview/",
+          "image": "https://contemporarycraft.org/wp-content/uploads/2025/10/AlishaB.jpg",
+          "score": 7.1,
+          "tier": "FLAME",
+          "heat": 11,
+          "direction": "▮",
+          "flags": [],
+          "benchmark": "Project a Black Planet — the nearest thing on the 50 in kind: an argument made in objects rather than wall text",
+          "read": "Amber Doe, Bekezela Mguni and Alisha B Wormsley, Main Gallery, 5645 Butler Street, Pittsburgh, free, to 5 September. Wormsley projects a 22-minute film onto handwoven textiles cut to African American quilting patterns; it was shot across Oakland, Tucson and West Virginia. Mguni spent twenty years organising before she was a name on a wall, and makes books. The show runs in partnership with Sibyls Shrine, a Pittsburgh network of Black artists who mother.",
+          "verdict": "PENDING",
+          "slug": "revolutionary-care-contemporary-craft"
+        },
+        {
+          "rank": 5,
+          "name": "Free The Youth × Air Jordan 16",
+          "domain": "FASHION",
+          "domain_detail": "FASHION · ACCRA STREETWEAR",
+          "url": "https://justfreshkicks.com/free-the-youth-air-jordan-16-iv7638-001/",
+          "image": "https://justfreshkicks.com/wp-content/uploads/2026/06/free-the-youth-air-jordan-16-2026-release-date.webp",
+          "score": 6.4,
+          "tier": "TORCH",
+          "heat": 86,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "Corteiz — the exact neighbour: a collective that built its own release apparatus first and made the swoosh come to it",
+          "read": "Four friends started Free The Youth in Accra in 2014 to give Ghanaian creative work somewhere to be seen, and twelve years on they have put the national eagle on the shroud of an Air Jordan 16, a Wilson Smith III silhouette from 2001 that Jordan Brand has barely touched since. Part of the money goes to youth-led projects and grants for Accra designers. That is a real sentence and it belongs first. Then the arithmetic: pairs go up today at $255 through FTY’s own channels, wider on SNKRS on 15 August, and a Free The Youth Air Jordan 3 is already booked for December. Two Jumpman silhouettes inside five months is a distribution deal doing the work a collection should be doing, and the attention is landing on the shroud rather than on the twelve years. Come back when the next object out of Accra is one they made end to end.",
+          "verdict": "PENDING",
+          "slug": "free-the-youth-air-jordan-16"
+        }
+      ]
     }
   ],
   "holding": [
@@ -5853,6 +5966,36 @@
       "name": "Surf7 — GOOSE COAT",
       "first_issue": "2026-07-31-1950",
       "first_date": "2026-07-31",
+      "resurfaced": []
+    },
+    {
+      "name": "AJ Suede — Atomic Justice",
+      "first_issue": "2026-08-01-0722",
+      "first_date": "2026-08-01",
+      "resurfaced": []
+    },
+    {
+      "name": "The Riverbank — Matheus Farias & Enock Carvalho",
+      "first_issue": "2026-08-01-0722",
+      "first_date": "2026-08-01",
+      "resurfaced": []
+    },
+    {
+      "name": "Through Motion and Repose: Expanding the Walls 2026",
+      "first_issue": "2026-08-01-0722",
+      "first_date": "2026-08-01",
+      "resurfaced": []
+    },
+    {
+      "name": "Revolutionary Care — Contemporary Craft",
+      "first_issue": "2026-08-01-0722",
+      "first_date": "2026-08-01",
+      "resurfaced": []
+    },
+    {
+      "name": "Free The Youth × Air Jordan 16",
+      "first_issue": "2026-08-01-0722",
+      "first_date": "2026-08-01",
       "resurfaced": []
     }
   ]
