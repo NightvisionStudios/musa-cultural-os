@@ -232,22 +232,45 @@ def _masthead(im, d, W, M, y, issue, hh=40, wmh=32, fs=17):
     tracked(d, (W - M - tw(d, r, fm, 2.4), y + int(hh * 0.3)), r, fm, CHROME, 2.4)
 
 
+def _blockgap(fn, name_lines, fr, read_lines, lh, target):
+    """Pixels to advance between the headline block and the read paragraph.
+
+    NEVER go back to a fixed step here. Anton is set at 0.95em leading, which is
+    tighter than the face's own baseline sits inside the em, so after the last
+    headline line `y` has already landed ABOVE that line's ink. A flat +24 then
+    measured out at roughly 5px of real air on a 108px headline and 18px on a
+    60px one — the big cards read as touching. Measure both inks and space from
+    those, so every card in the set gets the same daylight regardless of how far
+    the title had to step down to fit."""
+    if not name_lines or not read_lines:
+        return target
+    ab = fn.getbbox(name_lines[-1])[3]        # headline baseline / ink bottom
+    rt = fr.getbbox(read_lines[0])[1]         # mono's own top padding
+    return max(12, int(target + ab - lh - rt))
+
+
 def _fit(d, name, read, boxw, top, floor, sizes, read_sizes=(3, 2), name_lines=3,
-         read_px=26, lhf=0.95):
+         read_px=26, lhf=0.95, gap=34):
     """Step the headline down until the editorial block clears the rail. 431 cards
-    with titles from 6 to 90 characters — the layout has to fit itself or it breaks."""
+    with titles from 6 to 90 characters — the layout has to fit itself or it breaks.
+
+    `gap` is the target INK gap under the headline, not a raw y-advance; the real
+    advance comes back as the last return value and must be used by the caller."""
     for size in sizes:
         fn = font(ANTON, size); lh = int(size * lhf)
         nl = wrap(d, name.upper(), fn, boxw, name_lines)
         for rmax in read_sizes:
             fr = font(MONO, read_px); rlh = int(read_px * 1.6)
             rl = wrap(d, read, fr, boxw, rmax)
-            if top + int(size * 0.42) + len(nl) * lh + 24 + len(rl) * rlh <= floor:
-                return fn, nl, lh, fr, rl, rlh, size
+            g = _blockgap(fn, nl, fr, rl, lh, gap)
+            if top + int(size * 0.42) + len(nl) * lh + g + len(rl) * rlh <= floor:
+                return fn, nl, lh, fr, rl, rlh, size, g
     fn = font(ANTON, sizes[-1]); lh = int(sizes[-1] * lhf)
     fr = font(MONO, read_px)
-    return (fn, wrap(d, name.upper(), fn, boxw, name_lines), lh,
-            fr, wrap(d, read, fr, boxw, 1), int(read_px * 1.6), sizes[-1])
+    nl = wrap(d, name.upper(), fn, boxw, name_lines)
+    rl = wrap(d, read, fr, boxw, 1)
+    return (fn, nl, lh, fr, rl, int(read_px * 1.6), sizes[-1],
+            _blockgap(fn, nl, fr, rl, lh, gap))
 
 
 def _score_rail(d, entry, x, y, boxw, score_px=96, chip_fs=21, heat=True, bw=160):
@@ -306,12 +329,14 @@ def sq(entry, issue, out, W=1080, H=1350):
     fk = font(MONOM, 21)
     tracked(d, (M, top), str(entry.get("domain_detail") or entry.get("domain", "")).upper(),
             fk, AMBER, 4.6)
-    fn, nl, lh, fr, rl, rlh, _ = _fit(d, str(entry.get("name", "")), str(entry.get("read", "")),
-                                      boxw, top, rail - 26, (108, 98, 90, 82, 74, 66, 60))
+    fn, nl, lh, fr, rl, rlh, _, gap = _fit(d, str(entry.get("name", "")),
+                                           str(entry.get("read", "")),
+                                           boxw, top, rail - 26,
+                                           (108, 98, 90, 82, 74, 66, 60), gap=36)
     y = top + 42
     for ln in nl:
         d.text((M, y), ln, font=fn, fill=FG); y += lh
-    y += 24
+    y += gap
     for ln in rl:
         d.text((M, y), ln, font=fr, fill=READ_FG); y += rlh
 
@@ -345,13 +370,14 @@ def og(entry, issue, out, W=1200, H=630):
     fk = font(MONOM, 18)
     tracked(d, (x, top), str(entry.get("domain_detail") or entry.get("domain", "")).upper(),
             fk, AMBER, 4.2)
-    fn, nl, lh, fr, rl, rlh, _ = _fit(d, str(entry.get("name", "")), str(entry.get("read", "")),
-                                      boxw, top, rail - 20, (76, 68, 60, 54, 48, 42),
-                                      read_sizes=(2, 1), read_px=20)
+    fn, nl, lh, fr, rl, rlh, _, gap = _fit(d, str(entry.get("name", "")),
+                                           str(entry.get("read", "")),
+                                           boxw, top, rail - 20, (76, 68, 60, 54, 48, 42),
+                                           read_sizes=(2, 1), read_px=20, gap=26)
     y = top + 36
     for ln in nl:
         d.text((x, y), ln, font=fn, fill=FG); y += lh
-    y += 18
+    y += gap
     for ln in rl:
         d.text((x, y), ln, font=fr, fill=READ_FG); y += rlh
 
