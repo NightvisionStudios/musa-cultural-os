@@ -4700,6 +4700,123 @@
           "slug": "ken-carson-cartunez"
         }
       ]
+    },
+    {
+      "issue": 48,
+      "issue_id": "2026-08-02T09:16-04:00",
+      "date": "2026-08-02",
+      "time": "09:16 ET",
+      "forecast": "Nothing on this board was settled by a rollout. The week's real argument is about who gets to hold things: a Benin City museum with a finished building and a revoked land title, a sculptor welding in the tradition of the guild families whose plaques are still coming home, a Kingston novel that keeps a 1988 attack on the record. Custody over release.",
+      "come_up": [
+        "Rammed earth as civic architecture",
+        "The 1980s Caribbean back on the record",
+        "Devotional painting priced below its museum footprint"
+      ],
+      "decline": [
+        "The guest list as the marketing plan",
+        "Opening dates announced before consent is settled",
+        "Stream counts standing in for a catalogue"
+      ],
+      "climate": "Custody over release. Every object here is a claim on something somebody else would rather administer. MOWAA's Institute is built, 4,500 square metres of rammed earth, and the Edo State government revoked its certificate of occupancy; the museum now opens by appointment. Favour Jonathan welds in a lineage she traces to the Idumwun-igun-nugboha families on Sakpomba Road, and showed this spring in an exhibition founded on a Dutch museum handing its plaque back to the Oba. Marlon James spent his sixth novel on eight men in a Kingston rehearsal room in 1988 and on what the survivors did after the mob. Gustavo Nazareno framed twenty-four paintings as an offering to a deity rather than a collection for a fair. Against that, MOLIY put out twelve tracks in thirty-two minutes with nine guests on them, three months after a remix cleared a billion streams. The room found her first. What she keeps once the summer ends is the open question.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "How to Grow a Flower from a Supernova — Gustavo Nazareno",
+          "domain": "ART",
+          "domain_detail": "ART · PAINTING",
+          "url": "https://www.operagallery.com/event/gustavo-nazareno-how-to-grow-a-flower-from-a-supernova",
+          "image": "https://www.operagallery.com/storage/exhibitions/_DSC7363.jpg",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 46,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "requested": true,
+          "benchmark": "Project a Black Planet — the 50's diaspora-thesis lane, and Nazareno is that argument held in one hand",
+          "read": "Twenty-four paintings and ten charcoal drawings, hung at Opera Gallery Paris across Haute Couture Week and framed not as a collection but as an offering to Pomba Gira, the Candomblé deity of beauty, seduction and transformation. Nazareno grinds charcoal to dust and builds blacks that keep their detail where oil would flatten; his figures wear garments borrowed from the vocabulary of McQueen and Galliano until the cloth stops behaving like clothing and becomes weather, landscape, veil. He told the gallery the title came from reading about Betelgeuse, and the thought that the star might explode inside his lifetime and be visible from here. Born 1994, studio in São Paulo, family rooted in Umbanda, which is where he says the work started. The institutional record is already long: Museu Afro Brasil in 2023, MAMAM in Recife in 2024, One Becomes Many at the Pérez in Miami, and UNBOUND at the Museum of the African Diaspora in San Francisco, which runs to 16 August. His auction record is $6,985. The gap is that the museums arrived before the market did, which is the correct order and almost never the actual one.",
+          "verdict": "PENDING",
+          "slug": "how-to-grow-a-flower-from-a-supernova-gustavo-nazareno"
+        },
+        {
+          "rank": 2,
+          "name": "The Disappearers — Marlon James",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · CARIBBEAN FICTION",
+          "url": "https://www.penguinrandomhouse.com/books/742603/the-disappearers-by-marlon-james/",
+          "image": "https://images3.penguinrandomhouse.com/smedia/9780593717202",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 68,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Noname Book Club — the 50's reading lane, and this is a shelf entry rather than a season pick",
+          "read": "Kingston, 1988. Eight men who are strangers to one another start rehearsing a play, and the only thing they hold in common is that all of them are gay. A mob finds them. One dies. James gives his sixth novel to what the survivors do next, which is where it gets hard: some chase retribution, some vanish, some decide nothing happened. Booker longlisted on 28 July, his third nomination. The room is correct.",
+          "verdict": "PENDING",
+          "slug": "the-disappearers-marlon-james"
+        },
+        {
+          "rank": 3,
+          "name": "Favour Jonathan",
+          "domain": "ART",
+          "domain_detail": "ART · SCULPTURE",
+          "url": "https://www.favourjonathansart.com/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 16,
+          "direction": "▮",
+          "flags": [
+            "FIND"
+          ],
+          "requested": true,
+          "benchmark": "Lauren Halsey — the 50's public-monument lane, and the nearest neighbour by method as much as subject",
+          "read": "She welds. The pieces come together as patchwork metal, sparks flying, in a practice she traces to the Idumwun-igun-nugboha guild families on Sakpomba Road in Benin City, where she grew up. Her Central Saint Martins degree piece, Ododo and Divinity, a standing female figure with a leopard, went into the school's permanent archive. In 2022 she built a fourteen-metre public sculpture of Ira Aldridge for the National Collection Centre in Coventry, and a memorial to Claudia Jones at the Black Cultural Archives in Brixton. This spring she was one of ten Edo artists in Back to Benin at Museum de Fundatie in Zwolle, an exhibition whose founding act was the museum returning its only Benin plaque to Oba Ewuare II in November 2025. Public commissions at that scale, an archive acquisition, and still no gallery representation.",
+          "verdict": "PENDING",
+          "slug": "favour-jonathan"
+        },
+        {
+          "rank": 4,
+          "name": "MOWAA Institute — Museum of West African Art",
+          "domain": "ARCHITECTURE",
+          "domain_detail": "ARCHITECTURE · INSTITUTION",
+          "url": "https://wearemowaa.org/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.2,
+          "tier": "FLAME",
+          "heat": 41,
+          "direction": "▼",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "The Shed — the 50's places lane, and the comparison is about civic ambition, not scale",
+          "read": "The building is the real thing. Four and a half thousand square metres of locally sourced rammed earth under an in-situ concrete roof, with conservation labs, material science labs and a hundred-seat auditorium, laid out from the spatial logic of Benin City's own earthworks. Adjaye calls it Nigerian modernism and for once the phrase earns itself. Then the politics: protesters broke into the preview on 9 November 2025, the Edo State governor revoked the certificate of occupancy, and the palace disputed the museum's account of its own name. Roughly £40m, with the Getty Foundation, Open Society and the British Museum among the funders. It opens by appointment. Come back when the Oba, the state and the trustees have signed the same piece of paper.",
+          "verdict": "PENDING",
+          "slug": "mowaa-institute-museum-of-west-african-art"
+        },
+        {
+          "rank": 5,
+          "name": "BADDIES <3 MOLIY — MOLIY",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · AFRO-POP",
+          "url": "https://music.apple.com/us/album/baddies-3-moliy/6793701746",
+          "image": "https://notjustok.com/wp-content/uploads/2026/06/IMG_9757.jpeg",
+          "score": 6.3,
+          "tier": "TORCH",
+          "heat": 79,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "Victony — the 50's global-diaspora lane, and the comparison is unflattering on ownership, not on talent",
+          "read": "The hooks survive four continents, and this is the proof of it: twelve tracks, thirty-two minutes, Tyla, Shenseea, Skillibeng, Sarkodie and Yailin La Más Viral spread across them, with ACCRA GIRLS the best thing on the record. MOLIY came up in alté, which is where the interesting Ghanaian-American writing has sat for a decade. The Shake It To The Max remix cleared a billion streams and gamma signed the moment it made. What arrived is a thirty-two-minute project carrying nine guests, which is a compilation more than a catalogue. Victony answered the same question by putting SLICK out on his own imprint and filling it himself. Come back when there is a MOLIY album with three features and forty minutes on it.",
+          "verdict": "PENDING",
+          "slug": "baddies-3-moliy-moliy"
+        }
+      ]
     }
   ],
   "holding": [
@@ -6141,6 +6258,36 @@
       "name": "Ken Carson — cartunez",
       "first_issue": "2026-08-01-2029",
       "first_date": "2026-08-01",
+      "resurfaced": []
+    },
+    {
+      "name": "How to Grow a Flower from a Supernova — Gustavo Nazareno",
+      "first_issue": "2026-08-02T09:16-04:00",
+      "first_date": "2026-08-02",
+      "resurfaced": []
+    },
+    {
+      "name": "The Disappearers — Marlon James",
+      "first_issue": "2026-08-02T09:16-04:00",
+      "first_date": "2026-08-02",
+      "resurfaced": []
+    },
+    {
+      "name": "Favour Jonathan",
+      "first_issue": "2026-08-02T09:16-04:00",
+      "first_date": "2026-08-02",
+      "resurfaced": []
+    },
+    {
+      "name": "MOWAA Institute — Museum of West African Art",
+      "first_issue": "2026-08-02T09:16-04:00",
+      "first_date": "2026-08-02",
+      "resurfaced": []
+    },
+    {
+      "name": "BADDIES <3 MOLIY — MOLIY",
+      "first_issue": "2026-08-02T09:16-04:00",
+      "first_date": "2026-08-02",
       "resurfaced": []
     }
   ]
