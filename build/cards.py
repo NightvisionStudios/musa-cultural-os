@@ -304,9 +304,9 @@ def _footer(d, entry, x, y, boxw, fs=20):
     feed, a group chat, somebody's DMs — with none of the framing the archive
     gives it. Stripped to a canon surname it read as a flat comparison rather
     than a placement, which is a good way to confuse a reader and insult a
-    subject. The benchmark still runs on the permalink and in the Card Room,
-    where THE KEY and the linked 50 are right there to carry it. Do not add it
-    back to the image."""
+    subject. The benchmark still runs on the permalink, where THE KEY and the
+    linked 50 are right there to carry it. It came off the Card Room caption on
+    2026-08-01 for the same reason. Do not add it back to the image."""
     ff = font(MONO, fs)
     site = "ARCHIVE.THEMUSAFAMILY.COM"
     sw = tw(d, site, ff, 2.8)

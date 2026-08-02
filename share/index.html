@@ -238,6 +238,12 @@ const lanes=Object.keys(counts).sort((a,b)=>counts[b]-counts[a]||a.localeCompare
 chips.innerHTML='<button class="chip on" data-lane="">ALL</button>'+
   lanes.map(l=>'<button class="chip" data-lane="'+l+'">'+l+' '+counts[l]+'</button>').join("");
 
+/* BENCHMARK IS OUT OF THE CAPTION (2026-08-01), for the same reason it came
+   off the card image itself a day earlier: a caption travels with the card,
+   away from the archive, and "Benchmark in THE 50 — <surname>" stripped of
+   that framing reads as a flat comparison rather than a placement. The
+   benchmark still runs on the permalink, where THE 50 is one tap away and can
+   carry it. Do not add it back here. */
 function caption(d){
   const L=[];
   L.push(d.name);
@@ -247,7 +253,6 @@ function caption(d){
   let rail=d.score.toFixed(1)+" · "+d.tier;
   if(d.flags && d.flags.length) rail+=" · "+d.flags.join(" · ");
   L.push(rail);
-  if(d.benchmark) L.push("Benchmark in THE 50 — "+d.benchmark);
   L.push("");
   L.push("THE INDEX · Issue "+d.issue+" · "+d.date);
   L.push(BASE.replace("https://","")+"/i/"+d.slug+"/");
