@@ -67,7 +67,7 @@ def cover(im,w,h,focus="center"):
     """Crop to fill exactly w x h, the way object-fit:cover does.
 
     `focus` sets the vertical anchor. The art band on a square card is ~2:1, so a
-    portrait source centre-cropped loses both ends — on a photograph that means the
+    portrait source center-cropped loses both ends — on a photograph that means the
     head. "top" keeps the top of the frame, which is where faces and subjects sit."""
     sw,sh=im.size
     sc=max(w/float(sw), h/float(sh))

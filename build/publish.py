@@ -423,6 +423,44 @@ def normalise_reads(led):
                 n += 1
     return n
 
+_UK_WORDS = re.compile(
+    r"\b(catalogue[ds]?|jewellery|colour(s|ed)?|centre[sd]?|programme[s]?|"
+    r"practis(e|ed|ing)|organis(e|ed|es|ing|ations?)|recognis\w+|criminalis\w+|"
+    r"legalis\w+|subsidis\w+|apologis\w+|hospitalis\w+|travell(ed|ing)|"
+    r"rumour[s]?|rigour|honour[s]?|labour\w*|behaviour\w*|neighbourhood[s]?|"
+    r"licence|favourite[s]?|armour|liveable|metre[s]?|chillies|paralysed|"
+    r"towards|whilst|amongst|grey|judgement|cancelled|labelled|defence|offence)\b",
+    re.IGNORECASE)
+_DAY_FIRST = re.compile(
+    r"\b[0-9]{1,2} (January|February|March|April|May|June|July|August|September|"
+    r"October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)\b")
+
+def lint_us_style(led):
+    """House style is US English (locked 2026-08-02): American spellings and
+    month-first dates ("July 28", "March 26, 2026") in ALL prose. Book reads end
+    with the publication line — "Published <date> by <publisher> — <pages> pages,
+    $<price>" — details never lead the read. Warn-only; nothing is auto-edited."""
+    warned = 0
+    for iss in led.get("issues", []):
+        for en in iss.get("entries", []):
+            for field in ("read", "benchmark"):
+                s = str(en.get(field, "") or "")
+                for pat, label in ((_UK_WORDS, "UK spelling"), (_DAY_FIRST, "day-first date")):
+                    m = pat.search(s)
+                    if m:
+                        print("US-STYLE WARNING: %s '%s' in %s of %s" %
+                              (label, m.group(0), field, en.get("slug") or en.get("name")))
+                        warned += 1
+        for field in ("forecast", "come_up", "decline", "climate"):
+            s = str(iss.get(field, "") or "")
+            for pat, label in ((_UK_WORDS, "UK spelling"), (_DAY_FIRST, "day-first date")):
+                m = pat.search(s)
+                if m:
+                    print("US-STYLE WARNING: %s '%s' in issue %s %s" %
+                          (label, m.group(0), iss.get("issue"), field))
+                    warned += 1
+    return warned
+
 def approved_repeats(led):
     """Names the operator has explicitly cleared to appear more than once.
     Lives in _meta.approved_repeats: [{name, approved, why}]. Nothing else may repeat."""
@@ -496,6 +534,7 @@ def build(commit_slugs=True):
     if n: print("domains normalised on %d entries" % n)
     f = normalise_issue_numbers(led)
     if f: print("issue numbers assigned/corrected on %d issues" % f)
+    lint_us_style(led)
     enforce_no_repeats(led)
     sync_holding(led)
     bmap = bench_map(canon)

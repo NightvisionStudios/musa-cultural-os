@@ -50,7 +50,7 @@ def build():
     t_bot  = t_top + (tb[3] - tb[1])
     t_right = M - 3 + tb[2]
 
-    # gold hairline — the only colour on the card, used sparingly
+    # gold hairline — the only color on the card, used sparingly
     r_y = t_bot + 37
     d.rectangle([M, r_y, M + 96, r_y + 2], fill=C.AMBER)
 

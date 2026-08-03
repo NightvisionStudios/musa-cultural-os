@@ -92,7 +92,7 @@ def normalise(src, dest):
         im = Image.open(src)
     except Exception as exc:
         die("cannot read %s (%s)" % (src, exc))
-    im = ImageOps.exif_transpose(im)          # honour phone rotation, then drop EXIF
+    im = ImageOps.exif_transpose(im)          # honor phone rotation, then drop EXIF
     if im.mode not in ("RGB", "L"):
         im = im.convert("RGB")
     elif im.mode == "L":
