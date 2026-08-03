@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-08-01",
+    "updated": "2026-08-02",
     "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL.",
     "approved_repeats": [
       {
@@ -4934,6 +4934,126 @@
           "slug": "born-from-culture-james-mitchal-fenwick"
         }
       ]
+    },
+    {
+      "issue": 50,
+      "issue_id": "2026-08-02T20:25-04:00",
+      "date": "2026-08-02",
+      "time": "20:25 ET",
+      "forecast": "The two people who wrote most of the best British soul album of the last three years spent this July putting out their own. DAMEDAME* are from Walsall, they wrote and produced the bulk of Jorja Smith's Falling or Flying, and DREAMS ON THE PASSENGER SEAT runs twenty-seven minutes. Everything below sorts on one axis: who has a body of work out, and who is still living off a single. The body over the single.",
+      "come_up": [
+        "Writer-producers releasing under their own names",
+        "The Black Country as its own sound centre",
+        "Twenty-seven-minute albums that finish their argument"
+      ],
+      "decline": [
+        "The cosign standing in for a catalogue",
+        "Debut albums due 'later this year,' every year",
+        "Festival billing outrunning the release schedule"
+      ],
+      "climate": "The body over the single. British R&B has never had a deeper bench of writers and producers, and for most of the last decade the arrangement was that they stayed behind the glass while somebody else fronted the record. That arrangement is being renegotiated in public. Barbara Boko and Edith Nelson wrote and produced the bulk of Falling or Flying and produced on Jim Legxacy's black british music (2025); their own debut landed on 24 July with almost no campaign attached. Nia Smith answered a 2024 debut EP with a second one on 29 May and collected a MOBO Best Newcomer nomination for it. Against that, Tamera has thirteen and a half million plays on a single from 2021 and a debut album that has been arriving 'later this year' for three years running, and Finn Askew has cosigns from SZA, Kehlani and Bieber attached to a seventeen-minute tape. Legxacy is the exception that proves the rule: one new single in the twelve months since BBM, and a festival summer running entirely on a record that came out last July. The room will hold a position on a catalogue. It will not hold one on a promise.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Jim Legxacy",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · UK ALT-R&B",
+          "url": "https://music.apple.com/us/song/idk-idk/1886524286",
+          "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9d/6c/62/9d6c6235-499c-fd1a-bf02-ba4cd531a09e/26UMGIM31059.rgb.jpg/1200x630wp-60.jpg",
+          "score": 8.7,
+          "tier": "CROWN",
+          "heat": 88,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "requested": true,
+          "benchmark": "Jim Legxacy is already the 50's underground-rap anchor; Starlito and Chris Crack are the lane he sets the line for",
+          "read": "Lollapalooza yesterday, Golden Gate Park on the ninth, Victoria Park on the twenty-ninth. The billing is the size of a second album and there isn't one yet. black british music (2025) came out on XL on 18 July last year, ran thirty-four minutes fifty-five, entered the UK chart at 29 and then outlived most of what sat above it; three BRIT nominations and four MOBO nods followed. Since then, one new single. 'idk idk' is two minutes twenty-six, built on a soul loop he produced himself, Natanya on the harmonies, and a line about his late sister that arrives before the second verse. The room is loud and the room is correct. What it does not have yet is the follow-up.",
+          "verdict": "PENDING",
+          "slug": "jim-legxacy"
+        },
+        {
+          "rank": 2,
+          "name": "DREAMS ON THE PASSENGER SEAT — DAMEDAME*",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · SOUL",
+          "url": "https://music.apple.com/ug/album/dreams-on-the-passenger-seat/6778469533",
+          "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/33/12/b33312b4-6c59-7b58-e01d-38f3296301d5/196873069906.jpg/1200x630wp-60.jpg",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 29,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "requested": true,
+          "benchmark": "Jim Legxacy — they produced on black british music (2025), and this is the 50's clearest case of the room hearing the writers years before it hears the artists",
+          "read": "The bulk of Jorja Smith's Falling or Flying was written and produced by two women from Walsall, which is also where Smith is from, and for three years that was most of the public record on Barbara Boko and Edith Nelson. DREAMS ON THE PASSENGER SEAT changes it. Ten songs, twenty-seven minutes and thirty-two seconds, out 24 July on Robots & Humans through Sony UK, and it is the rare producer-to-artist move that does not sound like a demo reel. The instrumentation is played rather than stacked: strings carrying an actual arrangement, basslines that sit off the beat and stay there, transatlantic soul read through UK jazz instead of borrowed wholesale from Atlanta. They debuted as an act in 2023 with 'A STRANGER,' which EA picked up for FC24, and have since produced for Calvin Harris, Tems, Wizkid and Jim Legxacy. The subject matter stays domestic. Somebody cooks for you. Somebody refuses to answer the question. The sadness that never makes it to the story. The gap is that they have been among the most consequential people in British soul for three years and this is the first record with their name at the top of it.",
+          "verdict": "PENDING",
+          "slug": "dreams-on-the-passenger-seat-damedame"
+        },
+        {
+          "rank": 3,
+          "name": "Payback Is A Dog — Nia Smith",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · UK R&B",
+          "url": "https://niasmith.lnk.to/bio",
+          "image": "https://linkstorage.linkfire.com/medialinks/images/001c265a-2a39-4ca3-996d-33c8214a5995/artwork-600x315",
+          "score": 7.9,
+          "tier": "FLAME",
+          "heat": 66,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "requested": true,
+          "benchmark": "Baby Rose — the 50's soul-voice lane, with a Brixton and Kingston accent on it",
+          "read": "'I'm kind of exhausted at the moment,' she told NME from Brixton, a week short of her birthday and a month after Payback Is A Dog landed on 29 May via 0207 Def Jam. The exhaustion is earned. Jools Holland, Glastonbury, a Popcaan remix, an Ivor Novello Rising Star nomination, a MOBO Best Newcomer nod, and an invitation from Prada to Milan. Second EP, second time the room was right.",
+          "verdict": "PENDING",
+          "slug": "payback-is-a-dog-nia-smith"
+        },
+        {
+          "rank": 4,
+          "name": "Tamera",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · R&B",
+          "url": "https://open.spotify.com/track/0V8u1Al9dqSA7f7m3yambp",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.1,
+          "tier": "FLAME",
+          "heat": 37,
+          "direction": "▮",
+          "flags": [
+            "FIND"
+          ],
+          "requested": true,
+          "benchmark": "Victony — the 50's global-diaspora lane; the same Afro-R&B crossing from the other side of the Atlantic",
+          "read": "Thirteen and a half million plays sit on 'Wickedest,' and 'Wickedest' came out in 2021. That is the problem and also the reason to keep watching. Tamera Cuthbert left Gravesend for London in 2017, released Afrodite in 2021 with P2J producing, and has spent this year putting out singles at pace: 'Blessings,' 'Helpless,' 'Sinner,' then 'Undeniable' with Aitch in May. The voice has never been the question. The body of work is. Her debut album has been due 'later this year' via Moonshyne and Big Effect for three years running. Come back when it has a date on it.",
+          "verdict": "PENDING",
+          "slug": "tamera"
+        },
+        {
+          "rank": 5,
+          "name": "BLUEBOY — Finn Askew",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · ALT-POP",
+          "url": "https://www.clashmusic.com/news/finn-askew-reflects-self-awareness-on-new-single-distance/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 6.3,
+          "tier": "TORCH",
+          "heat": 71,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "requested": true,
+          "benchmark": "Nothing on the 50 shares this root. Jim Legxacy is the nearest by geography and it is not close",
+          "read": "BLUEBOY is six songs in seventeen minutes and it knows what it is: pastel, close-miked, woozy, nearer to Mk.gee and Dijon than to anything on daytime radio. Askew is from Wellington in Somerset and played the Jazz Cafe in Camden on 31 July. The distance from the 50 is worth stating plainly: this is bedroom alt-pop with an R&B finish, and the lineage runs through Juice WRLD rather than anything the canon descends from. What the room has is a cosign stack, SZA, Kehlani, Bieber, attached to a run of singles and one seventeen-minute tape. He told Wonderland he wants a darker second tape before the year is out. That is the record that settles it.",
+          "verdict": "PENDING",
+          "slug": "blueboy-finn-askew"
+        }
+      ]
     }
   ],
   "holding": [
@@ -6434,6 +6554,36 @@
     {
       "name": "Born From Culture — James Mitchal Fenwick",
       "first_issue": "2026-08-02T14:05-04:00",
+      "first_date": "2026-08-02",
+      "resurfaced": []
+    },
+    {
+      "name": "Jim Legxacy",
+      "first_issue": "2026-08-02T20:25-04:00",
+      "first_date": "2026-08-02",
+      "resurfaced": []
+    },
+    {
+      "name": "DREAMS ON THE PASSENGER SEAT — DAMEDAME*",
+      "first_issue": "2026-08-02T20:25-04:00",
+      "first_date": "2026-08-02",
+      "resurfaced": []
+    },
+    {
+      "name": "Payback Is A Dog — Nia Smith",
+      "first_issue": "2026-08-02T20:25-04:00",
+      "first_date": "2026-08-02",
+      "resurfaced": []
+    },
+    {
+      "name": "Tamera",
+      "first_issue": "2026-08-02T20:25-04:00",
+      "first_date": "2026-08-02",
+      "resurfaced": []
+    },
+    {
+      "name": "BLUEBOY — Finn Askew",
+      "first_issue": "2026-08-02T20:25-04:00",
       "first_date": "2026-08-02",
       "resurfaced": []
     }
