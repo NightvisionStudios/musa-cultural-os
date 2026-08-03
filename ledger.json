@@ -5054,6 +5054,122 @@
           "slug": "blueboy-finn-askew"
         }
       ]
+    },
+    {
+      "issue": 51,
+      "issue_id": "2026-08-03T08:24-04:00",
+      "date": "2026-08-03",
+      "time": "08:24 ET",
+      "forecast": "On East 91st Street, a handmade listening room has thirteen days left; in Durham, a 244-page theory of diaspora inheritance goes to press; on a Miami promo feed, a rapper's younger brother titled his first visuals ANCESTORS. The claim of the week is lineage over launch: where the sound comes from is the argument now, not where it charts.",
+      "come_up": [
+        "Listening rooms as institutions: handmade hi-fi moving from lofts and record bars onto museum floors",
+        "Sibling economies in rap: brothers shooting, writing, and promoting each other's rollouts",
+        "Open-access university press editions, free to read on publication day"
+      ],
+      "decline": [
+        "Streaming as posture: the playback object that asks for your attention is back on the main floor",
+        "Drill as Chicago's only export; the city's youngest star is cutting Miami bass records",
+        "Blind algorithmic discovery; promo pages and family chains are doing the finding again"
+      ],
+      "climate": "Lineage over launch: a museum-grade listening room in its final days, a Duke theory of diaspora inheritance, and a rap week run on bloodlines.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Art of Noise — Cooper Hewitt",
+          "domain": "DESIGN",
+          "domain_detail": "DESIGN · EXHIBITION",
+          "url": "https://www.cooperhewitt.org/channel/art-of-noise/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 46,
+          "direction": "▼",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Material Culture — craft objects with a listening lineage, shown instead of sold",
+          "read": "Thirteen days left. Art of Noise closes August 16 at Cooper Hewitt after turning the Smithsonian's design museum at 2 East 91st Street into the best listening session in New York: more than 300 works across the entire third floor, a century of objects that taught people how to hear, from the Castiglioni brothers' RR-126 radio-phonograph to the first Walkman and the first iPod, plus Milton Glaser's Dylan poster and Peter Saville's Unknown Pleasures sleeve. The center of gravity sits downstairs, where Brooklyn engineer Devon Turnbull, who builds under the name OJAS, hand-built HiFi Pursuit Listening Room Dream No. 3: a monolithic audio system programmed daily with live operators, a shrine to sitting still. teenage engineering designed the exhibition environment and a custom playback device loaded with New York songs. Museums keep discovering what record shops always knew, and this one wrote it in hardware. The claim underneath the whole show: design is not how music looks. It is how attention gets built.",
+          "verdict": "PENDING",
+          "slug": "art-of-noise-cooper-hewitt"
+        },
+        {
+          "rank": 2,
+          "name": "ffawty",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · MELODIC RAP",
+          "url": "https://open.spotify.com/artist/6rYO569C4mZHQUP7Q2oiDN",
+          "image": "https://i.scdn.co/image/ab6761610000e5ebf44ac0aacd82f554732e2b7e",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 38,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Jim Legxacy — the same diaspora-fusion move, St. Thomas-to-Miami instead of Lagos-to-London",
+          "read": "Three places built the voice: St. Thomas gave it the lilt, Atlanta the melody, Miami the pressure. ffawty writes pain music that can still run a function, and the resume behind the 120,000 monthly listeners is heavier than the number: pen credits on Billboard-charting records for Sexyy Red and Sukihana, a Lyrical Lemonade freestyle, and a 2026 single run from Rock-a-bye to July's HAKUNA MATATA that treats every three weeks like a deadline. Pray For ffawty, the 18-track album from last September, is the body of work the room has not opened yet. The gap is that the co-signs arrived before the audience did.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "ffawty"
+        },
+        {
+          "rank": 3,
+          "name": "Afroindigenization — Catherine A. John",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · THEORY",
+          "url": "https://dukeupress.edu/afroindigenization",
+          "image": "https://assets-us-01.kc-usercontent.com/f7ca9afb-82c2-002a-a423-84e111d5b498/6e7ba205-fe44-4866-9114-49266148199c/978-1-4780-3898-6_pr.jpg",
+          "score": 7.7,
+          "tier": "FLAME",
+          "heat": 8,
+          "direction": "▮",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Black Film Archive — scholarship as taste infrastructure, print instead of screen",
+          "read": "A theory book that treats a krump circle as evidence. Catherine A. John, professor of Africana Studies at the University of Rhode Island, spent decades building the case that indigenous African knowledge survived the Middle Passage as embodied practice, then found it in mermaid lore in Woodside, Jamaica, in the trance states of Los Angeles krump captured in the film Rize, and in the 2014 tournament run of two Black college debaters. Duke is also releasing an open-access edition, free to read on day one, which suits a book about knowledge held in common. Publishes August 25 by Duke University Press — 244 pages, $31.95.",
+          "verdict": "PENDING",
+          "slug": "afroindigenization-catherine-a-john"
+        },
+        {
+          "rank": 4,
+          "name": "Ghetto Love Story — BabyChiefDoit",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · CHICAGO RAP",
+          "url": "https://open.spotify.com/track/6g8cuDwreIt5rLEBlkukQa",
+          "image": "https://i.scdn.co/image/ab67616d0000b27364d676141052c2e389c0b7b3",
+          "score": 7.4,
+          "tier": "FLAME",
+          "heat": 72,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Chris Crack — Chicago auteurs who refuse to stay in one lane",
+          "read": "A Chicago teenager who produces most of his own beats dropped a Miami bass record into the middle of a drill album, and it stuck: 11 million Spotify streams in seven weeks, three verses of neighborhood soap opera in 2:58. Rise Against My Broken Odds, out June 12 on APG, is album three. The room heard this one correctly.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "ghetto-love-story-babychiefdoit"
+        },
+        {
+          "rank": 5,
+          "name": "ANCESTORS — P!MP",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · NEW VISUALS",
+          "url": "https://www.instagram.com/pimpishim/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 5.8,
+          "tier": "SPARK",
+          "heat": 12,
+          "direction": "▲",
+          "flags": [],
+          "benchmark": "Jiah — earliest-stage underground rap, and the distance is a catalog",
+          "read": "The ANCESTORS visuals move right: one performer, one brick wall, a camera by @publicgoat that trusts the face to carry the frame, pushed this week through the Rap Track promo channel with the full video on YouTube. P!MP raps in the same bloodline as ffawty, and the title says the family knows exactly what it is trading on. What exists so far is one strong video and a feed; the streaming footprint is still forming. Come back when there is a body of work to score.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "ancestors-p-mp"
+        }
+      ]
     }
   ],
   "holding": [
@@ -6585,6 +6701,36 @@
       "name": "BLUEBOY — Finn Askew",
       "first_issue": "2026-08-02T20:25-04:00",
       "first_date": "2026-08-02",
+      "resurfaced": []
+    },
+    {
+      "name": "Art of Noise — Cooper Hewitt",
+      "first_issue": "2026-08-03T08:24-04:00",
+      "first_date": "2026-08-03",
+      "resurfaced": []
+    },
+    {
+      "name": "ffawty",
+      "first_issue": "2026-08-03T08:24-04:00",
+      "first_date": "2026-08-03",
+      "resurfaced": []
+    },
+    {
+      "name": "Afroindigenization — Catherine A. John",
+      "first_issue": "2026-08-03T08:24-04:00",
+      "first_date": "2026-08-03",
+      "resurfaced": []
+    },
+    {
+      "name": "Ghetto Love Story — BabyChiefDoit",
+      "first_issue": "2026-08-03T08:24-04:00",
+      "first_date": "2026-08-03",
+      "resurfaced": []
+    },
+    {
+      "name": "ANCESTORS — P!MP",
+      "first_issue": "2026-08-03T08:24-04:00",
+      "first_date": "2026-08-03",
       "resurfaced": []
     }
   ]
