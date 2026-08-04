@@ -3,4 +3,3 @@ alewya-zero	https://f4.bcbits.com/img/a3150029086_7.jpg	HTTP Error 404: Not Foun
 firelei-baez-mid-career-survey	https://visit.mcachicago.org/wp-content/uploads/2025/10/85_FB_Untitled-Les-tables-de-geographie-reduites-en-un-jeu-de-cartes.webp	cannot identify image file <_io.BytesIO object at 0x7fe25ce772e0>
 iamlyric	https://iamlyricofficial.com/assets/img/og.jpg	cannot identify image file <_io.BytesIO object at 0x7fe25ce763e0>
 nicholas-daley	https://nicholasdaley.net/cdn/shop/files/social-image.jpg?v=11336	HTTP Error 404: Not Found
-the-black-shield-wilbert-l-cooper	https://cdn11.bigcommerce.com/s-gjd9kmzlkz/images/stencil/1280x1280/products/283688/3780465/getimage__03408.1785250912.jpg?c=1	HTTP Error 404: Not Found
