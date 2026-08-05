@@ -5400,6 +5400,121 @@
           "slug": "endless-adelene-koh"
         }
       ]
+    },
+    {
+      "issue": 54,
+      "issue_id": "2026-08-05T13:19:00-04:00",
+      "date": "2026-08-05",
+      "time": "13:19 ET",
+      "forecast": "In Salerno, a bathroom that opens onto a Turkish prison. In Brooklyn, a five-year bid counted out as twenty-three and one. On a fourth floor in Harlem, seventeen artists holding the in-between open. What links them is not subject but method: each takes an enclosure and works inside it rather than around it, and those are the strongest objects on this board. The weakest does the reverse, taking a shoe built for a distance and removing the distance. Structure over surface.",
+      "come_up": [
+        "Confinement written as architecture rather than backstory: the cell as a room you can walk into",
+        "The multi-curator show: five names organizing, seventeen artists, no house style imposed",
+        "Aso oke and adire cut as construction, not printed as reference"
+      ],
+      "decline": [
+        "The lifestyle edition that keeps the silhouette and removes the reason for it",
+        "Coming home framed as a comeback rather than an unresolved argument",
+        "The prize longlist read as the whole reception of a book"
+      ],
+      "climate": "Structure over surface: a cell installed in a bathroom, a bid reduced to twenty-three and one, an in-between made into somewhere to stand.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Fade — Studio Museum in Harlem",
+          "domain": "ART",
+          "domain_detail": "ART · GROUP SHOW",
+          "url": "https://www.studiomuseum.org/exhibitions/fade",
+          "image": "https://studiomuseum.imgix.net/images/STUDIO_042726_046.jpg",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 49,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Project a Black Planet — the 50's curatorial entry; Fade runs the same instinct at emerging-artist scale",
+          "read": "144 West 125th Street, fourth-floor gallery, through September 6. Seventeen artists of African and Afro-Latinx descent, born between 1983 and 2000, and most of them working outside New York: New Orleans, Baltimore, Pittsburgh, Chicago. Fade is the sixth of the Studio Museum's “F” shows, a run that opened with Freestyle in 2001 and has been the most reliable early indicator in American art since. Five co-curators assembled it, which is why it carries no single house style. The title does three jobs at once: a cinematic transition, a haircut, a jumper taken going backwards. A month left on it.",
+          "verdict": "PENDING",
+          "slug": "fade-studio-museum-in-harlem"
+        },
+        {
+          "rank": 2,
+          "name": "Sha Hef — Hustlin Ain't a Sin",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · STREET RAP",
+          "url": "https://www.shatterthestandards.com/p/album-review-hustlin-aint-a-sin-by",
+          "image": "https://substackcdn.com/image/fetch/$s_!fnTZ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F826a3366-a062-4612-92ca-b37caa6a1d09_1600x1600.jpeg",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 45,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Starlito — the 50's plainspoken street-rap lane; Hef is the New York cousin, funnier and more devout",
+          "read": "Track twelve is called “LIDS,” and the boast inside it counts hats instead of heads. That is the method of the whole record: a joke doing structural work, set down beside a prayer, with a five-year gun and trafficking sentence sitting under both. Sha Hef came home and did not write a victory lap. He wrote an argument with God about whether the work that fed him disqualifies him from heaven, and he never settles it. Thirteen tracks, out in June on Black Market Records. Harry Fraud produces three, including “Gotti,” and stamps each with his Spanish-language tag; Grimm Doza, Nicholas Craven and 183rd take most of the rest, and none of them crowd him — the beats are floors, not furniture. ANKHLEJOHN turns up on “Cocaine Choir” and carries the church metaphor all the way to the altar, further than Hef will. Jay Worthy, on “Fireflies,” puts him inside somebody else's memory, which is the one thing a rapper cannot do for himself. On “Adding Up” the bid reduces to a single figure: twenty-three and one. The counting on “Gotti” and “LIDS” reads as flexing until you notice it is a man marking days. It closes on “No Discussion,” the only title here that sounds like a verdict.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "sha-hef-hustlin-ain-t-a-sin"
+        },
+        {
+          "rank": 3,
+          "name": "The Renovation — Kenan Orhan",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · FICTION",
+          "url": "https://thebookerprizes.com/the-booker-library/books/the-renovation",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 67,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Noname Book Club — the nearest thing on the 50, and the fit is by reading habit rather than root",
+          "read": "The most literal book on this year's Booker longlist is also the strangest. Dilara, a Turkish exile in a village outside Salerno, hires builders to add a second bathroom so she can care for her father, who has dementia. They install a Turkish prison cell instead, staffed, and somehow wired to a prison in Istanbul. Kenan Orhan writes from Kansas and has not let the Gezi-to-purges decade go; his 2023 story collection was a PEN/Robert W. Bingham finalist. The device reads as a stunt for roughly ten pages and then stops being one. Longlisted July 28 from 163 submissions; shortlist September 22. Hamish Hamilton, March 26, 256 pages, £16.99.",
+          "verdict": "PENDING",
+          "slug": "the-renovation-kenan-orhan"
+        },
+        {
+          "rank": 4,
+          "name": "Africa Fashion Week London 2026",
+          "domain": "FASHION",
+          "domain_detail": "FASHION · AFRICAN DESIGN",
+          "url": "https://businessday.ng/bd-weekender/article/from-aso-oke-to-slow-fashion-meet-the-designers-of-2026-africa-fashion-week-london/",
+          "image": "https://cdn.businessday.ng/wp-content/uploads/2026/07/11-5-scaled.jpg",
+          "score": 6.9,
+          "tier": "TORCH",
+          "heat": 43,
+          "direction": "▲",
+          "flags": [],
+          "benchmark": "Derschutze — diasporic fashion with a thesis; AFWL is the trade floor underneath that lane, not a peer to it",
+          "read": "London supplies the runway; the textile work happens elsewhere. Africa Fashion Week London returns to central London August 17 to 23 for its sixteenth year, founded by Ronke Ademiluyi-Ogunwusi and by now less a show than a trade floor: buyers, retailers, the British Council's Creative DNA program, the Adire Oodua Textile Hub. The names worth the trip are the ones treating heritage cloth as construction rather than print. Klassic Unisex Couture cuts handwoven aso oke and adire into unisex couture. Kente Uncut is a personalised kente developed by Aduhema, a third-year undergraduate. Add an Apron, founded in 2024 by the artist Adéọlá, hand-paints organic cotton and is arguing, in earnest, for the apron as an accessory. Check in December, when the Lagos sister platform runs, and see which of the three has stockists.",
+          "verdict": "PENDING",
+          "slug": "africa-fashion-week-london-2026"
+        },
+        {
+          "rank": 5,
+          "name": "Karhu Mestari Run LS",
+          "domain": "DESIGN",
+          "domain_detail": "DESIGN · FOOTWEAR",
+          "url": "https://us.karhu.com/blogs/news/introducing-the-mestari-run-ls",
+          "image": "https://cdn.shopify.com/s/files/1/0519/4570/1549/files/1.blog_full_image.jpg?v=1784119623",
+          "score": 6.4,
+          "tier": "TORCH",
+          "heat": 58,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "Karhu — already on the 50 for the running archive; this is the shoe that walks away from it",
+          "read": "The Mestari Run LS is well made: refined proportions, cleaner paneling, subtler branding, a campaign shot in Japan, on sale since July 17. It is also the performance shoe with the performance taken out. Karhu turns 110 this year, and its better object of the summer was the Fusion 2.0 OG, a straight tribute to the 1996 original. Come back when the archive team gets the next release.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "karhu-mestari-run-ls"
+        }
+      ]
     }
   ],
   "holding": [
@@ -7020,6 +7135,36 @@
     {
       "name": "Endless — Adelene Koh",
       "first_issue": "2026-08-05T10:47:00-04:00",
+      "first_date": "2026-08-05",
+      "resurfaced": []
+    },
+    {
+      "name": "Fade — Studio Museum in Harlem",
+      "first_issue": "2026-08-05T13:19:00-04:00",
+      "first_date": "2026-08-05",
+      "resurfaced": []
+    },
+    {
+      "name": "Sha Hef — Hustlin Ain't a Sin",
+      "first_issue": "2026-08-05T13:19:00-04:00",
+      "first_date": "2026-08-05",
+      "resurfaced": []
+    },
+    {
+      "name": "The Renovation — Kenan Orhan",
+      "first_issue": "2026-08-05T13:19:00-04:00",
+      "first_date": "2026-08-05",
+      "resurfaced": []
+    },
+    {
+      "name": "Africa Fashion Week London 2026",
+      "first_issue": "2026-08-05T13:19:00-04:00",
+      "first_date": "2026-08-05",
+      "resurfaced": []
+    },
+    {
+      "name": "Karhu Mestari Run LS",
+      "first_issue": "2026-08-05T13:19:00-04:00",
       "first_date": "2026-08-05",
       "resurfaced": []
     }
