@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-08-04",
+    "updated": "2026-08-05",
     "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL.",
     "approved_repeats": [
       {
@@ -5285,6 +5285,121 @@
           "slug": "firstklaz"
         }
       ]
+    },
+    {
+      "issue": 53,
+      "issue_id": "2026-08-05T10:47:00-04:00",
+      "date": "2026-08-05",
+      "time": "10:47 ET",
+      "forecast": "The rollout stopped working this week. Nothing on this board was made fast: a curator spent ten years assembling thirty marbles by a sculptor who died in 1907 and whose masterpieces are still missing; a singer spent five years on twelve songs and put them out on his own label after the deal ended; a bookbinder trained in Japan, then London, then opened a studio in Taiwan to build one ring of folded paper. Duration over drop. The work that took its time is the work the room is finally reading, and the release calendar has nothing useful to say about any of it.",
+      "come_up": [
+        "Artist-owned imprints: catalogs coming back to the maker once the label deal ends",
+        "Decade-scale curatorial projects built from auction rescues rather than existing holdings",
+        "The endband, the training floor, the room tone: the structural detail promoted to the subject"
+      ],
+      "decline": [
+        "The four-week rollout as evidence of seriousness",
+        "The prize shortlist read as the whole of a practice",
+        "The festival premiere treated as a finish line rather than a first screening"
+      ],
+      "climate": "Duration over drop: ten years of curating, five years of mixing, a training floor on the Senegalese coast, all landing in the same week.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Edmonia Lewis: Said in Stone",
+          "domain": "ART",
+          "domain_detail": "ART · SCULPTURE",
+          "url": "https://georgiamuseum.org/exhibitions/edmonia-lewis-said-in-stone/",
+          "image": "https://georgiamuseum.org/wp-content/uploads/2025/10/GMOA_EdmoniaLewis_2024_0001.jpg",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 68,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Lauren Halsey — the 50's sculptor; Lewis is the ancestor that lane never got to cite",
+          "read": "In 2016 Shawnya L. Harris saw a small bust come up at auction and asked her director whether the Georgia Museum of Art could buy it. Ten years later she is co-curator of the first major retrospective Edmonia Lewis has ever had, opening in Athens on August 8 and running to January 3. Roughly thirty marbles, pulled from public and private collections in the United States and abroad, several of them never exhibited anywhere. Lewis was born in Greenbush, New York in 1844, started working in Boston in 1863, and sailed for Rome in 1866 to take a studio off the Piazza di Spagna, becoming the first sculptor of Black and Mississauga descent to win international recognition. She died in 1907 and the work scattered. Some of it was recovered decades later. Some is still missing. The catalog is from the University of Chicago Press; the show goes on to Raleigh next spring. The gap is that the room has spent a century treating Lewis as a biography, and this is the first time it can treat her as a body of work.",
+          "verdict": "PENDING",
+          "slug": "edmonia-lewis-said-in-stone"
+        },
+        {
+          "rank": 2,
+          "name": "I Can See — Nick Hakim",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · SOUL",
+          "url": "https://nickhakim.bandcamp.com/album/i-can-see-2",
+          "image": "https://f4.bcbits.com/img/a0846095485_5.jpg",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 61,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Baby Rose",
+          "read": "The ATO deal ended and a relationship ended, and what came through is twelve songs on Hakim's own Earseed Records, out July 24, distributed by Stem. Five years of work: bedroom demos first, then Sonic Ranch in Tornillo, Texas, then Electric Lady and Sear Sound in New York. Andrew Sarlo co-produced, Heba Kadry mastered. The detail that decides it is what stayed in the mix. An out-of-tune piano. A chair. A car going past outside. Hakim has spent a decade as the producer other people call, and this is the record where his own catalog overtakes the session work. Stereogum made it album of the week.",
+          "verdict": "PENDING",
+          "slug": "i-can-see-nick-hakim"
+        },
+        {
+          "rank": 3,
+          "name": "Atcha Atcha — Mamadou Dia",
+          "domain": "FILM",
+          "domain_detail": "FILM · DOCUMENTARY",
+          "url": "https://lesoleil.sn/actualites/arts-et-culture/cinema-atcha-atcha-de-mamadou-dia-en-premiere-mondiale-au-festival-de-locarno/",
+          "image": "https://lesoleil.sn/wp-content/uploads/2026/08/Atcha-Atcha-.jpeg",
+          "score": 7.9,
+          "tier": "FLAME",
+          "heat": 33,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Black Film Archive",
+          "read": "Locarno opened today and the film worth the trip screens Sunday. Atcha Atcha is Mamadou Dia's first documentary, shot at the École des Sables in Senegal, where dancers from across the continent take a final year of training under Germaine Acogny. It premieres August 9 in Fuori Concorso and is eligible for the Pardo for Change. Dia took the Pardo d'Oro in Cineasti del Presente here in 2019 with Baamum Nafi; Demba went to the Berlinale in 2024; he joined the Academy in 2025. Maayo in Dakar and Les Films du Bilboquet in Paris produced it. Wawkumba Film, run by Oumou Diégane Niang, carries it across the continent, as it did the two features before. A body is an archive somebody has to teach.",
+          "verdict": "PENDING",
+          "slug": "atcha-atcha-mamadou-dia"
+        },
+        {
+          "rank": 4,
+          "name": "Soft Spots — Leila Renee",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · DEBUT FICTION",
+          "url": "https://debutiful.net/2026/08/04/leila-renee-was-shaped-by-toni-morrison-goosebumps-and-the-phantom-tollbooth/",
+          "image": "https://debutiful.net/wp-content/uploads/2026/08/leila_renee_debutiful-1024x731.png",
+          "score": 7.5,
+          "tier": "FLAME",
+          "heat": 40,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Noname Book Club",
+          "read": "Robin Clarke runs from an abusive family to a teaching job in South Bend, Indiana, and the novel is about what she does with the distance. Leila Renee published it Tuesday through HarperCollins. Syracuse MFA, a Fulbright, the Gulf Coast Prize in Fiction, short stories in McSweeney's and the Kenyon Review; Deesha Philyaw blurbed it. Renee began drafting in 2020 while reading Edward P. Jones's The Known World, and names Burger's Daughter for structure, Sula and My Brilliant Friend for the friendship, Luster for a protagonist who keeps walking into her own way. On the nightstand right now: Henry Dumas, the Arkansas writer shot by a New York transit officer in 1968 at thirty-three, whose stories she is reading specifically to keep the name moving. That is the reading list of somebody who intends to write more than one book.",
+          "verdict": "PENDING",
+          "slug": "soft-spots-leila-renee"
+        },
+        {
+          "rank": 5,
+          "name": "Endless — Adelene Koh",
+          "domain": "CRAFT",
+          "domain_detail": "CRAFT · BOOKBINDING",
+          "url": "https://www.thisiscolossal.com/2026/07/adelene-koh-bookbinding-paper-sewing-sculpture-loewe-craft-prize/",
+          "image": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/koh-4.jpg",
+          "score": 7.1,
+          "tier": "FLAME",
+          "heat": 27,
+          "direction": "▮",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Tamera",
+          "read": "An endband is the few millimeters of stitching at the head and tail of a book's spine, usually chosen to disappear. Endless is that stitch let off the leash: folded paper and embroidery thread sewn around a single aluminum wire in English technique from the 18th and 19th centuries, closed into a ring. Koh trained in Japan, then London, and runs dddots out of Taiwan. Thirty finalists, 5,100 entries.",
+          "verdict": "PENDING",
+          "slug": "endless-adelene-koh"
+        }
+      ]
     }
   ],
   "holding": [
@@ -6876,6 +6991,36 @@
       "name": "FirstKlaz",
       "first_issue": "2026-08-04T10:56-04:00",
       "first_date": "2026-08-04",
+      "resurfaced": []
+    },
+    {
+      "name": "Edmonia Lewis: Said in Stone",
+      "first_issue": "2026-08-05T10:47:00-04:00",
+      "first_date": "2026-08-05",
+      "resurfaced": []
+    },
+    {
+      "name": "I Can See — Nick Hakim",
+      "first_issue": "2026-08-05T10:47:00-04:00",
+      "first_date": "2026-08-05",
+      "resurfaced": []
+    },
+    {
+      "name": "Atcha Atcha — Mamadou Dia",
+      "first_issue": "2026-08-05T10:47:00-04:00",
+      "first_date": "2026-08-05",
+      "resurfaced": []
+    },
+    {
+      "name": "Soft Spots — Leila Renee",
+      "first_issue": "2026-08-05T10:47:00-04:00",
+      "first_date": "2026-08-05",
+      "resurfaced": []
+    },
+    {
+      "name": "Endless — Adelene Koh",
+      "first_issue": "2026-08-05T10:47:00-04:00",
+      "first_date": "2026-08-05",
       "resurfaced": []
     }
   ]
