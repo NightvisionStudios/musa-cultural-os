@@ -1,8 +1,8 @@
 {
   "_meta": {
     "source": "50.themusafamily.com",
-    "status": "LIVE — 8-name roster swap 2026-07-29 (Dame Atlas→Baby Rose, Vercel→Victony, Kenny Mason→LAAMS, MAWN Philly→Suez Studio, Bonito Flakes→DMN, Delta→Showly, Seeking Alpha→Material Culture, The Prince of Darkness→Lauren Halsey); 8 outgoing logged to alumni.",
-    "updated": "2026-07-29",
+    "status": "LIVE — 5-name roster swap 2026-08-06 (Project a Black Planet→JJJJound, Jiah→Fetty P Franklin, Leveraging AI→Trend Hunter, Players Magazine→Nataal, DMN→City of God); 5 outgoing logged to alumni.",
+    "updated": "2026-08-06",
     "how_to_update": "When 50.themusafamily.com changes, replace `entries` with the current LIST array (name + url). Re-derive lanes. Keep `_dna` in sync with the list's actual energy.",
     "alumni_rule": "The 50 has memory. On every roster swap, BEFORE removing a name, log the outgoing name to the top-level `alumni` array. Never let a rotated name vanish — the gate keeps a record. Append-only, newest last. This is what makes the 50 read as curated, not edited.",
     "alumni_schema": {
@@ -114,8 +114,8 @@
       "lane": "builder-dev"
     },
     {
-      "name": "Leveraging AI",
-      "url": "https://leveragingai.buzzsprout.com/",
+      "name": "Trend Hunter",
+      "url": "https://www.trendhunter.com/",
       "lane": "finance-operator"
     },
     {
@@ -184,8 +184,8 @@
       "lane": "underground-rap"
     },
     {
-      "name": "Jiah",
-      "url": "https://www.instagram.com/jiahstar",
+      "name": "Fetty P Franklin",
+      "url": "https://www.instagram.com/fettypfranklin",
       "lane": "underground-rap"
     },
     {
@@ -219,13 +219,13 @@
       "lane": "design-studio"
     },
     {
-      "name": "DMN",
-      "url": "https://www.instagram.com/dmn.lens",
-      "lane": "design-studio"
+      "name": "City of God",
+      "url": "https://www.miramax.com/movie/city-of-god/",
+      "lane": "global-diaspora"
     },
     {
-      "name": "Players Magazine",
-      "url": "https://www.instagram.com/players",
+      "name": "Nataal",
+      "url": "https://nataal.com/",
       "lane": "editorial-taste"
     },
     {
@@ -279,8 +279,8 @@
       "lane": "global-diaspora"
     },
     {
-      "name": "Project a Black Planet",
-      "url": "https://www.barbican.org.uk/whats-on/2026/event/project-a-black-planet-the-art-and-culture-of-panafrica",
+      "name": "JJJJound",
+      "url": "https://www.jjjjound.com/",
       "lane": "design-studio"
     },
     {
@@ -305,18 +305,149 @@
     }
   ],
   "alumni": [
-    { "name": "Higgsfield AI", "url": "https://higgsfield.ai/", "lane": "creator-ai-tools", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-05", "why": "Replaced by Black Film Archive." },
-    { "name": "Igwe Aka", "url": "https://www.instagram.com/igweaka", "lane": "underground-rap", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-16", "why": "Replaced by Gr8." },
-    { "name": "Kimi", "url": "https://www.kimi.com/", "lane": "creator-ai-tools", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-16", "why": "Replaced by Dave Hunter." },
-    { "name": "Ankhle John", "url": "https://www.instagram.com/ankhnasty", "lane": "underground-rap", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-16", "why": "Replaced by Jiah." },
-    { "name": "Lelo", "url": "https://www.instagram.com/lelothecorpse", "lane": "underground-rap", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-16", "why": "Replaced by KB." },
-    { "name": "Dame Atlas", "url": "https://www.instagram.com/dameatlas/?hl=en", "lane": "heritage-craft-product", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by Baby Rose." },
-    { "name": "Vercel", "url": "https://vercel.com/", "lane": "builder-dev", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by Victony." },
-    { "name": "Kenny Mason", "url": "https://en.wikipedia.org/wiki/Kenny_Mason", "lane": "underground-rap", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by LAAMS." },
-    { "name": "MAWN Philly", "url": "https://mawnphilly.com/", "lane": "places", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by Suez Studio." },
-    { "name": "Bonito Flakes", "url": "https://anything-from-japan.com/large-and-thick-hana-katsuobushi-bonito-flakes-from-tenpaku-160g", "lane": "heritage-craft-product", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by DMN." },
-    { "name": "Delta", "url": "https://apps.apple.com/app/id1048524688", "lane": "creator-ai-tools", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by Showly." },
-    { "name": "Seeking Alpha", "url": "https://seekingalpha.com/", "lane": "finance-operator", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by Material Culture." },
-    { "name": "The Prince of Darkness", "url": "https://books.apple.com/book/id979135762", "lane": "editorial-taste", "tenure_in": "~2026-07-04", "tenure_out": "2026-07-29", "why": "Replaced by Lauren Halsey." }
+    {
+      "name": "Higgsfield AI",
+      "url": "https://higgsfield.ai/",
+      "lane": "creator-ai-tools",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-07-05",
+      "why": "Replaced by Black Film Archive."
+    },
+    {
+      "name": "Igwe Aka",
+      "url": "https://www.instagram.com/igweaka",
+      "lane": "underground-rap",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-07-16",
+      "why": "Replaced by Gr8."
+    },
+    {
+      "name": "Kimi",
+      "url": "https://www.kimi.com/",
+      "lane": "creator-ai-tools",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-07-16",
+      "why": "Replaced by Dave Hunter."
+    },
+    {
+      "name": "Ankhle John",
+      "url": "https://www.instagram.com/ankhnasty",
+      "lane": "underground-rap",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-07-16",
+      "why": "Replaced by Jiah."
+    },
+    {
+      "name": "Lelo",
+      "url": "https://www.instagram.com/lelothecorpse",
+      "lane": "underground-rap",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-07-16",
+      "why": "Replaced by KB."
+    },
+    {
+      "name": "Dame Atlas",
+      "url": "https://www.instagram.com/dameatlas/?hl=en",
+      "lane": "heritage-craft-product",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-07-29",
+      "why": "Replaced by Baby Rose."
+    },
+    {
+      "name": "Vercel",
+      "url": "https://vercel.com/",
+      "lane": "builder-dev",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-07-29",
+      "why": "Replaced by Victony."
+    },
+    {
+      "name": "Kenny Mason",
+      "url": "https://en.wikipedia.org/wiki/Kenny_Mason",
+      "lane": "underground-rap",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-07-29",
+      "why": "Replaced by LAAMS."
+    },
+    {
+      "name": "MAWN Philly",
+      "url": "https://mawnphilly.com/",
+      "lane": "places",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-07-29",
+      "why": "Replaced by Suez Studio."
+    },
+    {
+      "name": "Bonito Flakes",
+      "url": "https://anything-from-japan.com/large-and-thick-hana-katsuobushi-bonito-flakes-from-tenpaku-160g",
+      "lane": "heritage-craft-product",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-07-29",
+      "why": "Replaced by DMN."
+    },
+    {
+      "name": "Delta",
+      "url": "https://apps.apple.com/app/id1048524688",
+      "lane": "creator-ai-tools",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-07-29",
+      "why": "Replaced by Showly."
+    },
+    {
+      "name": "Seeking Alpha",
+      "url": "https://seekingalpha.com/",
+      "lane": "finance-operator",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-07-29",
+      "why": "Replaced by Material Culture."
+    },
+    {
+      "name": "The Prince of Darkness",
+      "url": "https://books.apple.com/book/id979135762",
+      "lane": "editorial-taste",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-07-29",
+      "why": "Replaced by Lauren Halsey."
+    },
+    {
+      "name": "Project a Black Planet",
+      "url": "https://www.barbican.org.uk/whats-on/2026/event/project-a-black-planet-the-art-and-culture-of-panafrica",
+      "lane": "design-studio",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-08-06",
+      "why": "Replaced by JJJJound."
+    },
+    {
+      "name": "Jiah",
+      "url": "https://www.instagram.com/jiahstar",
+      "lane": "underground-rap",
+      "tenure_in": "2026-07-16",
+      "tenure_out": "2026-08-06",
+      "why": "Replaced by Fetty P Franklin."
+    },
+    {
+      "name": "Leveraging AI",
+      "url": "https://leveragingai.buzzsprout.com/",
+      "lane": "finance-operator",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-08-06",
+      "why": "Replaced by Trend Hunter."
+    },
+    {
+      "name": "Players Magazine",
+      "url": "https://www.instagram.com/players",
+      "lane": "editorial-taste",
+      "tenure_in": "~2026-07-04",
+      "tenure_out": "2026-08-06",
+      "why": "Replaced by Nataal."
+    },
+    {
+      "name": "DMN",
+      "url": "https://www.instagram.com/dmn.lens",
+      "lane": "design-studio",
+      "tenure_in": "2026-07-29",
+      "tenure_out": "2026-08-06",
+      "why": "Replaced by City of God."
+    }
   ]
 }
