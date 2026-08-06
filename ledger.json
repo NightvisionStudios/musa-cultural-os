@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL.",
     "approved_repeats": [
       {
@@ -5515,6 +5515,121 @@
           "slug": "karhu-mestari-run-ls"
         }
       ]
+    },
+    {
+      "issue": 55,
+      "issue_id": "2026-08-06T12:25",
+      "date": "2026-08-06",
+      "time": "12:25 ET",
+      "forecast": "Accra hands its oldest neighborhood over for a week and charges nothing at the gate. New York spends seven years and two floors to get a room back on the Upper West Side. Room over reach: the strongest work on this board is attached to an address, and the loudest gap is a Camera d'Or with nowhere in America to play it.",
+      "climate": "Room over reach: a neighborhood given away for a week, ten thousand square feet bought on Columbus Avenue, a website printed on paper, an album built as somewhere to walk.",
+      "come_up": [
+        "The permanent address: independent publishers and collectives taking rooms instead of renting reach",
+        "Digital-first publications going to print in their fifth year, with the interview archive as the asset",
+        "Records built as places to move through, transitions carrying the structure instead of choruses"
+      ],
+      "decline": [
+        "The Camera d'Or treated as a distribution plan",
+        "The capital campaign announcement read as a program",
+        "The street festival covered as a photo opportunity rather than as fifteen years of community production"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Ben'Imana — Marie-Clémentine Dusabejambo",
+          "domain": "FILM",
+          "domain_detail": "FILM · DEBUT FEATURE",
+          "url": "https://cineuropa.org/en/newsdetail/491569/",
+          "image": "https://cineuropa.org/imgCache/2026/05/08/1778231647886_1360x0570_0x0x0x0_1778231651977.jpg",
+          "score": 8.7,
+          "tier": "CROWN",
+          "heat": 38,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "City of God — the 50's film entry; both put a place on screen through the people who came out of it",
+          "read": "The first word spoken in Ben'Imana is forgiveness, and the woman saying it has her arms locked across her chest. Marie-Clémentine Dusabejambo's debut took the Caméra d'Or at Cannes in May out of Un Certain Regard, and it is the first film by a Rwandan director to enter the festival's official selection. It is set in Kibeho in 2012, the final year of the gacaca courts, the village tribunals convened to try genocidal crimes committed neighbor against neighbor. Vénéranda organizes testimony sessions for the women of the village before they face the court; her sister Suzanne thinks forgiveness cannot be arranged in a room. Clémentine U. Nyirinkindi leads a cast of mostly nonprofessional actors, and the film was made across Rwanda, Gabon, France, Norway and Côte d'Ivoire, in Kinyarwanda throughout. The gap is that the prize for the best first feature at the largest festival in the world has not yet produced an American release, and mk2 was still selling it in May. Watch the fall festival announcements for a distributor.",
+          "verdict": "PENDING",
+          "slug": "ben-imana-marie-clementine-dusabejambo"
+        },
+        {
+          "rank": 2,
+          "name": "Chale Wote 2026",
+          "domain": "SCENE",
+          "domain_detail": "SCENE · STREET FESTIVAL",
+          "url": "https://accradotaltradio.com/chale-wote/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 8.1,
+          "tier": "CROWN",
+          "heat": 62,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Lauren Halsey — public work built out of one neighborhood and addressed to it first",
+          "read": "Jamestown and Osu are handed over from Monday, August 10 to Monday, August 17. The fifteenth Chale Wote runs on a schedule most institutions would not print: artists build the work on site between August 1 and 9, then show it for a week in the street. Entry is free and has been since 2011, when ACCRA [dot] ALT started it with Redd Kat Pictures and the Chale Wote Street Art Projekt. The name is Ga for friend, let's go, and it is also what Ghanaians call the rubber flip-flop, which settles who it was addressed to before anyone flew in. James Fort still stands at the water's edge, the harbor still works, and the murals from earlier years are permanent addresses now.",
+          "verdict": "PENDING",
+          "slug": "chale-wote-2026"
+        },
+        {
+          "rank": 3,
+          "name": "Solar Calf — Patrick Belaga",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · COMPOSITION",
+          "url": "https://patrickbelaga2.bandcamp.com/album/solar-calf",
+          "image": "https://f4.bcbits.com/img/a0921676476_5.jpg",
+          "score": 7.7,
+          "tier": "FLAME",
+          "heat": 27,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Jim Legxacy — the same world-building instinct; the distance is genre, not method",
+          "read": "Nobody needed another record about video games. Patrick Belaga made one about their maps instead. Solar Calf, out July 31 on PAN, is his second solo album and is built as a place rather than a sequence: nine zones, with transitional passages doing the work a chorus usually does. The reference is the geography of the Zelda series, its dungeons and forest enclaves and mountain villages, not Koji Kondo's themes. Belaga is a classically trained cellist, and the palette is woodwind, brass, piano, strings and percussion played live, then re-sampled and cut against itself in the DAW until the natural flow breaks. “Lake” is marimba and cello at almost Balearic tempo. “Upsurge” takes a calm forest theme apart.",
+          "verdict": "PENDING",
+          "slug": "solar-calf-patrick-belaga"
+        },
+        {
+          "rank": 4,
+          "name": "Black Is — Lia J. Latty",
+          "domain": "EDITORIAL",
+          "domain_detail": "EDITORIAL · PHOTOGRAPHY",
+          "url": "https://blackismag.com/",
+          "image": "https://blackismag.com/wp-content/uploads/2026/05/blackis_black_student_legacy_print_issue_november1_2025-15-scaled.jpg",
+          "score": 7.4,
+          "tier": "FLAME",
+          "heat": 12,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Nataal — a diasporic photography publication that took itself to print",
+          "read": "Five years online, then paper. Black Is went to print in May with an issue titled Legacy and Continuity in Black Photographic Practice, launched at Charm City Cultural Cultivation in Waverly over Artscape weekend. Lia J. Latty started the site from Baltimore in January 2021 and still runs it alone. The database of every photographer she has interviewed is the real asset.",
+          "verdict": "PENDING",
+          "slug": "black-is-lia-j-latty"
+        },
+        {
+          "rank": 5,
+          "name": "Aperture — 380 Columbus Avenue",
+          "domain": "ART",
+          "domain_detail": "ART · PHOTOGRAPHY",
+          "url": "https://aperture.org/press-release/aperture-announces-opening-of-new-permanent-home-on-september-18-2026/",
+          "image": "https://aperture.org/wp-content/uploads/2026/06/380-Announcement-FINAL-scaled.jpg",
+          "score": 7.2,
+          "tier": "FLAME",
+          "heat": 55,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "Monocle — an independent publisher that treats a physical address as part of the editorial",
+          "read": "Aperture has published photography for seventy-four years and has not had a gallery of its own since it left West 27th Street in 2019. That ends on September 18, when it opens ten thousand square feet across two floors of an 1886 building at 380 Columbus Avenue and 78th Street, designed by LEVENBETTS, with a bookstore, an events space and the production offices in the same rooms. The inaugural hang, curated by Sarah Meister, is called Aperture Loves New York and leans on Arbus, Robert Frank, Dawoud Bey, Carrie Mae Weems and Deana Lawson. All of that is real. None of it is a program yet. The attention this summer is on a capital campaign and a lease, six weeks ahead of anything being on a wall. Come back on September 18 and look at what is hanging.",
+          "verdict": "PENDING",
+          "slug": "aperture-380-columbus-avenue"
+        }
+      ]
     }
   ],
   "holding": [
@@ -7166,6 +7281,36 @@
       "name": "Karhu Mestari Run LS",
       "first_issue": "2026-08-05T13:19:00-04:00",
       "first_date": "2026-08-05",
+      "resurfaced": []
+    },
+    {
+      "name": "Ben'Imana — Marie-Clémentine Dusabejambo",
+      "first_issue": "2026-08-06T12:25",
+      "first_date": "2026-08-06",
+      "resurfaced": []
+    },
+    {
+      "name": "Chale Wote 2026",
+      "first_issue": "2026-08-06T12:25",
+      "first_date": "2026-08-06",
+      "resurfaced": []
+    },
+    {
+      "name": "Solar Calf — Patrick Belaga",
+      "first_issue": "2026-08-06T12:25",
+      "first_date": "2026-08-06",
+      "resurfaced": []
+    },
+    {
+      "name": "Black Is — Lia J. Latty",
+      "first_issue": "2026-08-06T12:25",
+      "first_date": "2026-08-06",
+      "resurfaced": []
+    },
+    {
+      "name": "Aperture — 380 Columbus Avenue",
+      "first_issue": "2026-08-06T12:25",
+      "first_date": "2026-08-06",
       "resurfaced": []
     }
   ]
