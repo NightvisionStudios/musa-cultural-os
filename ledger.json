@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-08-06",
+    "updated": "2026-08-08",
     "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL.",
     "approved_repeats": [
       {
@@ -5630,6 +5630,123 @@
           "slug": "aperture-380-columbus-avenue"
         }
       ]
+    },
+    {
+      "issue": 56,
+      "issue_id": "2026-08-08T21:08",
+      "date": "2026-08-08",
+      "time": "21:08 ET",
+      "forecast": "The three strongest things on this board were made out of what somebody else was finished with. Salvaged billboard steel in Accra, packing paper off a pleating press in Tokyo, a case of Okinawan cloth whose provenance had been lost for most of a century. Offcut over output, and the loudest name here belongs to a record nobody has heard yet.",
+      "climate": "Offcut over output: billboard steel rebuilt as a canopy, packing waste soaked in wax and turned into stools, fifty Ryukyu textiles finally matched to the prince who sold them. What is loudest is still two weeks from release.",
+      "come_up": [
+        "Salvage as a structural system rather than a sustainability line in a press release",
+        "The annual commission: institutions building a repeating slot instead of a one-off show",
+        "Provenance research published as the exhibition itself"
+      ],
+      "decline": [
+        "The feature-stacked single offered as proof the album is good",
+        "Album trailers carrying more story than the records they announce",
+        "The marquee guest credit banked instead of built on"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Limbo Engawa — TAELON7",
+          "domain": "ARCHITECTURE",
+          "domain_detail": "ARCHITECTURE · PAVILION",
+          "url": "https://www.archdaily.com/1039596/modular-installation-reimagines-unfinished-structures-at-limbo-museum-in-accra-ghana",
+          "image": "https://images.adsttc.com/media/images/69b8/0614/3c49/490b/8042/5d0d/large_jpg/modular-installation-reimagines-unfinished-structures-at-limbo-museum-in-accra-ghana_15.jpg?1773667871",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 44,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "The Shed — the 50's built-culture entry, and the distance is the point: one cost half a billion dollars, the other is cut from roadside advertising",
+          "read": "The canopies are cut from old billboards. TAELON7, the practice Juergen Benson-Strohmayer runs between Austria and West Africa, stripped steel out of Accra's advertising hoardings, sliced it into strips and wove it onto frames light enough for one person to carry and assemble on site. Underneath sit oversized daybeds copied from the woven beds that construction crews already sleep on inside unfinished buildings across the region. The whole assembly went into the Limbo Museum, a 600-square-meter unfinished neo-brutalist estate in Labone that Dominique Petit-Frère and Emil Grip took over rather than completed. Metalwork by Joseph Awumee, weaving led by Briena Montana, support from the Austrian Cultural Forum in Accra. It ran March 12 to April 12; this fall the same components come apart and go back up at Art Omi in Ghent, New York, as a freestanding pavilion in open fields. Petit-Frère has said plainly what it is for: an annual architectural commission in Africa, on the Serpentine model. That is the part worth watching. One pavilion is a project; a commission that returns every year is an institution, and that is the thing she says the continent has not had.",
+          "verdict": "PENDING",
+          "slug": "limbo-engawa-taelon7"
+        },
+        {
+          "rank": 2,
+          "name": "Textiles of Ryukyu Kingdom",
+          "domain": "CRAFT",
+          "domain_detail": "CRAFT · TEXTILE",
+          "url": "https://mingeikan.or.jp/exhibition/special/ex202608?lang=en",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.9,
+          "tier": "FLAME",
+          "heat": 22,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Material Culture — an object valued for the line you can draw from the hand that made it to the hand that kept it",
+          "read": "For ninety years the Japan Folk Crafts Museum has known that its finest Okinawan cloth came through Ryoichi Mizutani, and not which pieces were which. Mizutani, a collaborator in the Mingei movement, bought them on Sōetsu Yanagi's recommendation from Goeku Chosho, fifteenth head of a branch house of the Shō clan that ruled the Ryukyu Kingdom until its independence ended in 1879. This show identifies them. Roughly fifty bingata and woven works, hung with other objects tied to the Shō family, opening August 22 and running to November 3 for the museum's ninetieth anniversary. A prince's wardrobe, cataloged at last, in a building that holds seventeen thousand things and explains almost none of them on the wall.",
+          "verdict": "PENDING",
+          "slug": "textiles-of-ryukyu-kingdom"
+        },
+        {
+          "rank": 3,
+          "name": "The Paper Log: Shell and Core",
+          "domain": "DESIGN",
+          "domain_detail": "DESIGN · MATERIAL RESEARCH",
+          "url": "https://2121designsight.jp/en/gallery3/the_paper_log/",
+          "image": "https://2121designsight.jp/gallery3/the_paper_log/topweb.jpg",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 62,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "JJJJound — the 50's object-first design entry; the Paper Log arrives at the same place from the factory floor instead of the archive",
+          "read": "Tokyo, Thursday, Gallery 3 at 21_21 Design Sight in Akasaka, free, through September 13. The object is a compressed roll of pleated paper eighty centimeters tall, produced as packing waste by Issey Miyake's garment pleating. Ensamble Studio peels it into sculpture; Satoshi Kondo's team soaks it in wax and glue and builds stools. Cut one open and the cross-section rings like a tree.",
+          "verdict": "PENDING",
+          "slug": "the-paper-log-shell-and-core"
+        },
+        {
+          "rank": 4,
+          "name": "nomi. — sweet talk",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · R&B",
+          "url": "https://www.instagram.com/mynameisnomi/",
+          "image": "https://api.stereofox.com/wp-content/uploads/2026/05/ab67616d0000b273deee364e7c93cf0a25802dd9.jpg",
+          "score": 7.3,
+          "tier": "FLAME",
+          "heat": 45,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Baby Rose — a voice with an unusual grain, given room by producers who trust it to carry a track alone",
+          "read": "nomi. sang on Dom Maker's half of MK 3.5, the Mount Kimbie double album Warp put out in November 2022, on a tracklist she shared with slowthai, Danny Brown, James Blake, keiyaA and Liv.e. That credit arrived four years before the catalog did. sweet talk, four songs on earth angel records, landed April 24: a soft, close vocal over drums that hit far harder than the singing suggests, and a guitar figure at the end that comes straight out of Prince. 'what u want' followed on July 10. She played her second show ever last week. The writing is already ahead of the audience.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "nomi-sweet-talk"
+        },
+        {
+          "rank": 5,
+          "name": "Skilla Baby — The Price of Fame",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · DETROIT RAP",
+          "url": "https://www.udiscovermusic.com/news/skilla-baby-the-price-of-fame/",
+          "image": "https://www.udiscovermusic.com/wp-content/uploads/2026/07/skilla-baby-the-price-of-fame.jpg",
+          "score": 6.9,
+          "tier": "TORCH",
+          "heat": 71,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "Starlito — the nearest thing on the 50, and the distance is a major-label rollout Starlito built an entire catalog without",
+          "read": "On May 22, 2025, Skilla Baby was shot three times and crashed his SUV into a building. He recovered. The Price of Fame, out August 21 on Geffen, is built on that, and the cover restages the 1994 photograph of 2Pac leaving a Manhattan courthouse in a wheelchair: a reference earned rather than borrowed. He told XXL this summer the record is for the working man and that he was finished being unrelatable, which is a real pivot from a rapper who came up under Sada Baby making some of the coldest regional records in a city full of them. The reason he sits here rather than higher is that none of it has landed. What is out is the rollout — 50 Cent in the trailer, Chris Brown and Bryson Tiller on 'Face Card,' seven producers on 'Show Me Love' — and his last full-lengths, The Coldest in April and Crack Music 3, are two years back. The room has priced an album it has not heard. Come back on August 21 and score the record instead.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "skilla-baby-the-price-of-fame"
+        }
+      ]
     }
   ],
   "holding": [
@@ -7311,6 +7428,36 @@
       "name": "Aperture — 380 Columbus Avenue",
       "first_issue": "2026-08-06T12:25",
       "first_date": "2026-08-06",
+      "resurfaced": []
+    },
+    {
+      "name": "Limbo Engawa — TAELON7",
+      "first_issue": "2026-08-08T21:08",
+      "first_date": "2026-08-08",
+      "resurfaced": []
+    },
+    {
+      "name": "Textiles of Ryukyu Kingdom",
+      "first_issue": "2026-08-08T21:08",
+      "first_date": "2026-08-08",
+      "resurfaced": []
+    },
+    {
+      "name": "The Paper Log: Shell and Core",
+      "first_issue": "2026-08-08T21:08",
+      "first_date": "2026-08-08",
+      "resurfaced": []
+    },
+    {
+      "name": "nomi. — sweet talk",
+      "first_issue": "2026-08-08T21:08",
+      "first_date": "2026-08-08",
+      "resurfaced": []
+    },
+    {
+      "name": "Skilla Baby — The Price of Fame",
+      "first_issue": "2026-08-08T21:08",
+      "first_date": "2026-08-08",
       "resurfaced": []
     }
   ]
