@@ -5747,6 +5747,122 @@
           "slug": "skilla-baby-the-price-of-fame"
         }
       ]
+    },
+    {
+      "issue": 57,
+      "issue_id": "2026-08-10T14:52",
+      "date": "2026-08-10",
+      "time": "14:52 ET",
+      "forecast": "The strongest signal this week is a lease, not a release: Príncipe holding the keys to its own shop in Lisbon, the V&A spending a whole new museum's opening statement on Black British sound — permanence over promotion, and the room is slow to both.",
+      "climate": "Room over rollout. The week's leaders signed for space: a batida label with a storefront, a new museum opened on an archive, a convenience chain that became national furniture. The release calendar, meanwhile, is running on autopilot.",
+      "come_up": [
+        "Labels and scenes taking leases: the storefront as the new flagship release",
+        "Archival canon-keeping at institutional scale, built on decade-spanning research",
+        "Lisbon batida's long arc from housing-project phones to European club institution"
+      ],
+      "decline": [
+        "The collab calendar on autopilot: box logos on other houses' silhouettes",
+        "Dessert-themed sneakers as a release strategy",
+        "\"Hidden gems\" tourism listicles that never leave the tour-bus radius"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Príncipe Discos",
+          "domain": "SCENE",
+          "domain_detail": "SCENE · LISBOA",
+          "url": "https://ra.co/labels/7543",
+          "image": "https://static.ra.co/images/labels/principe-large.jpg?dateUpdated=1488544473060",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 56,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "requested": true,
+          "benchmark": "City of God — the 50's periphery-to-world diaspora entry; Príncipe is the same journey pressed to vinyl",
+          "read": "Every Príncipe record leaves the building hand-painted. Márcio Matos stencils each sleeve individually, so no two copies of a batida 12-inch are the same object, a label policy held since 2011 across a catalog that rewired Angolan kuduro, Cape Verdean funaná and semba into the percussion language Lisbon's periphery now exports to the world. The sound was born in Quinta do Mocho, a social housing project outside the postcard city, on cracked copies of FruityLoops; DJ Marfox and DJ Nervoso carried it downtown, and four friends pressed it to vinyl when no Portuguese institution would touch it. Now the institution is theirs. Príncipe opened its own shop and venue space in Lisbon and marked the keys with 'Não Estragou Nada,' a compilation running kuduro, tarraxo and batida under one roof, while label nights still pack Musicbox and Lux Frágil, where Xexa played live this March and Marfox, Nervoso and Dariiofox held the floor after her. Mastering is done by Tó Pinheiro da Silva at his home studio. Skip the tiled miradouros: the rarest culture in Lisbon is the kind the city built itself.",
+          "verdict": "PENDING",
+          "slug": "principe-discos"
+        },
+        {
+          "rank": 2,
+          "name": "The Music Is Black: A British Story",
+          "domain": "ART",
+          "domain_detail": "ART · V&A EAST",
+          "url": "https://www.vam.ac.uk/exhibitions/the-music-is-black-a-british-story",
+          "image": "https://www.vam.ac.uk/blog/wp-content/uploads/Jean-Bernard-Sohiez-%E2%80%98Coxsone-Outernational-Sound-System-L-R-Blacker-Dread-Festus-and-Bikey-Dread-%C2%A9-Jean-Bernard-Sohiez-urbanimage.tv_-scaled.jpg",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 48,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Black Film Archive — the 50's canon-keeper; this is the same recovery work at museum scale, for British sound instead of American film",
+          "read": "V&A East opened its five-storey Stratford museum in April and spent the whole first statement on Black British sound: 125 years, four acts, more than 200 objects, 60 of them newly acquired. Jme's Super Nintendo and Mario Paint cartridge from his first 90s experiments sit near Joan Armatrading's childhood guitar and Samuel Coleridge-Taylor's conducting batons from the early 1900s, while a headset runs 120 tracks cut with full access to the BBC archive. Curator Jacqueline Springer built it as canon-keeping rather than nostalgia: lovers rock, 2 Tone, Brit funk, jungle, trip hop, UK garage and grime treated as one continuous engineering project, staged a short walk from the stadium where Dizzee Rascal played the 2012 opening ceremony. It runs to January 3 at £22.50, £10 under 26, and this summer the Olympic Park around it hosts a festival on the same theme with Sadler's Wells East and the BBC.",
+          "verdict": "PENDING",
+          "slug": "the-music-is-black-a-british-story"
+        },
+        {
+          "rank": 3,
+          "name": "Ravyn Lenae — Blue Island",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · CHICAGO",
+          "url": "https://www.clashmusic.com/reviews/ravyn-lenae-blue-island/",
+          "image": "https://www.clashmusic.com/wp-content/uploads/2026/08/Blue-Island-Cover.png",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 86,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "requested": true,
+          "benchmark": "Baby Rose — the 50's alt-R&B voice; Lenae is the neighbor who just moved to a bigger house on the same block",
+          "read": "\"Never Let Me Go\" builds on Chuck Jackson's \"Love of You,\" a 1978 soul record you mostly cannot stream, and ends with Lenae's grandfather on the phone asking whether the albums are selling. They are: \"Love Me Not\" reached No. 5 on the Hot 100 a full year after release, and Blue Island, out August 7 on Atlantic, answers arrival with a pop swing. 2000s indie guitars on \"Handle,\" Doechii kept restrained on \"Babygirl,\" Dominic Fike playing the loyal dog on \"Reputation.\" Critics split on whether the pivot fully commits; the back half settles it, and Clash landed at 8/10. A 22-date North American run opens at Portola on September 20 with Nourished By Time on select dates.",
+          "verdict": "PENDING",
+          "slug": "ravyn-lenae-blue-island"
+        },
+        {
+          "rank": 4,
+          "name": "Tony",
+          "domain": "FILM",
+          "domain_detail": "FILM · A24",
+          "url": "https://deadline.com/2026/08/indie-films-opening-anthony-bourdain-biopic-tony-1237028878/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.3,
+          "tier": "FLAME",
+          "heat": 44,
+          "direction": "▲",
+          "flags": [],
+          "benchmark": "Monocle — nearest thing on the 50 is its editorial-taste lane, and the fit is the subject, not the medium: a cook who became a taste authority",
+          "read": "A24 opened Tony in six theaters across New York and Los Angeles on August 7, with Dominic Sessa as the young Anthony Bourdain and Matt Johnson, who made BlackBerry, directing. An origin story about a line cook becoming a voice people trusted on where to eat and how to travel, released at the size of a limited menu. Wider rooms follow if these fill.",
+          "verdict": "PENDING",
+          "slug": "tony"
+        },
+        {
+          "rank": 5,
+          "name": "7-Eleven Thailand — CP All",
+          "domain": "SCENE",
+          "domain_detail": "SCENE · BANGKOK",
+          "url": "https://travelinstinctoz.com/2026/06/22/bangkok-the-7-eleven-phenomenon/",
+          "image": "https://i0.wp.com/travelinstinctoz.com/wp-content/uploads/2026/06/7Eleven.jpg?fit=1184%2C634&ssl=1",
+          "score": 7.1,
+          "tier": "FLAME",
+          "heat": 78,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "requested": true,
+          "benchmark": "Fortnum & Mason — a nation's pantry as identity; Bangkok got there in 37 years at a fortieth of the price, and it isn't close in tone",
+          "read": "Patpong Road, 1989: one store. Thailand today: more than 15,000, roughly one per 5,000 people, all run by CP All under a license Dallas granted and Bangkok perfected. The croissant toastie is pressed hot by staff on request, the tamago sando runs 29 baht, and the yadom rack by the register sells Poy-Sian and Hong Thai herbal inhalers against the heat. Bill payment, parcels, insurance renewals: a utility that happens to sell dinner, air-conditioned and open all night. The room found it — 7-Eleven hauls are their own genre now, and Nike cut an Air Max 95 in the livery — but the room is right. What it is not is gatekept; fifteen thousand doors is the opposite of a door policy, and the score holds there.",
+          "verdict": "PENDING",
+          "slug": "7-eleven-thailand-cp-all"
+        }
+      ]
     }
   ],
   "holding": [
@@ -7458,6 +7574,36 @@
       "name": "Skilla Baby — The Price of Fame",
       "first_issue": "2026-08-08T21:08",
       "first_date": "2026-08-08",
+      "resurfaced": []
+    },
+    {
+      "name": "Príncipe Discos",
+      "first_issue": "2026-08-10T14:52",
+      "first_date": "2026-08-10",
+      "resurfaced": []
+    },
+    {
+      "name": "The Music Is Black: A British Story",
+      "first_issue": "2026-08-10T14:52",
+      "first_date": "2026-08-10",
+      "resurfaced": []
+    },
+    {
+      "name": "Ravyn Lenae — Blue Island",
+      "first_issue": "2026-08-10T14:52",
+      "first_date": "2026-08-10",
+      "resurfaced": []
+    },
+    {
+      "name": "Tony",
+      "first_issue": "2026-08-10T14:52",
+      "first_date": "2026-08-10",
+      "resurfaced": []
+    },
+    {
+      "name": "7-Eleven Thailand — CP All",
+      "first_issue": "2026-08-10T14:52",
+      "first_date": "2026-08-10",
       "resurfaced": []
     }
   ]
