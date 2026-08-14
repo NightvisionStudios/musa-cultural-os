@@ -5863,6 +5863,123 @@
           "slug": "7-eleven-thailand-cp-all"
         }
       ]
+    },
+    {
+      "issue": 58,
+      "issue_id": "2026-08-14-1039",
+      "date": "2026-08-14",
+      "time": "10:39 ET",
+      "forecast": "Philadelphia, London and a Harlem three years empty are doing more cultural labor this cycle than any release calendar.",
+      "climate": "Room over rollout, again, but this time the room is memory: a festival's 15th year spent on a single life instead of a premiere, a museum curator naming who gets to define the canon before the show even opens, a harpist writing inside a lineage instead of just citing it. The one clear counter-read is a rap catalog that hasn't caught up to its own tour routing yet.",
+      "come_up": [
+        "Archival authorship: BlackStar's 15th year platforms the maker's whole practice, not the clip",
+        "Canon-questioning curation: Charlene Prempeh's Design Museum brief, opening November",
+        "Instrument lineage: Brandee Younger carrying Dorothy Ashby's unfinished songbook forward"
+      ],
+      "decline": [
+        "Comment-count as credibility",
+        "The single without a catalog behind it",
+        "Tribute framing over just writing inside the lineage"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Brandee Younger",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · JAZZ HARP",
+          "url": "http://brandeeyounger.com/",
+          "image": "http://static1.squarespace.com/static/5318f249e4b035ad0337c347/t/680ad12cdbf7125d9b8a39a7/1745539372269/Gadabout-Season_name-yellow.png?format=1500w",
+          "score": 8.7,
+          "tier": "CROWN",
+          "heat": 58,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "requested": true,
+          "benchmark": "a CROWN next to Material Culture — same instinct, carrying an object's whole history forward instead of just citing it",
+          "read": "The most radical thing happening in jazz right now is inheritance, not invention. Brandee Younger's Gadabout Season, the New York Times and NPR pick for best jazz album of 2025, plays like something handed down rather than discovered: she performs on Alice Coltrane's actual harp and carries Dorothy Ashby's unfinished songbook the way a family carries a name. Her prior record, Brand New Life, rebuilt lost Ashby compositions with Pete Rock and 9th Wonder in the room; Gadabout Season drops the tribute framing and just writes inside that lineage, gospel and hip-hop sample logic braided into conservatory technique. She's touring Europe this month, Zürich then Bern, carrying an instrument most jazz rooms still treat as a novelty act. The room caught up before the record did: a Grammy nomination, the 2024 NAACP Image Award, a New York Times profile headlined on the Coltrane harp itself. That's not a gap closing. That's a gap that was never open.",
+          "slug": "brandee-younger",
+          "verdict": "PENDING"
+        },
+        {
+          "rank": 2,
+          "name": "A Life in Art: Through the Eye of Dr. Leslie King Hammond",
+          "domain": "FILM",
+          "domain_detail": "FILM · DOCUMENTARY",
+          "url": "https://hyperallergic.com/six-films-on-art-and-resistance-at-blackstar-film-festival/",
+          "image": "https://storage.ghost.io/c/51/f8/51f871d8-b6be-4a73-b958-0ca4fff0110a/content/images/size/w1200/2026/08/A-Life-in-Art-Through-the-Eye-of-Dr.-Leslie-King-Hammond.jpeg",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 24,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "a CROWN next to Black Film Archive — same curatorial instinct, aimed at a single life instead of a catalog",
+          "read": "BlackStar turned fifteen this August, Aug 6 to 9 in Philadelphia, 91 films deep, and the one that outlasts the festival week is a portrait, not a premiere. A Life in Art: Through the Eye of Dr. Leslie King Hammond, directed by Ben Baker-Lee and her son Rassaan Hammond, follows the art historian who mentored Amy Sherald through the Michelle Obama portrait commission and has spent five decades teaching artists of color how to defend their own work. The lineage runs both directions here: a son documenting the woman who taught a generation how to look. No streaming date yet. Catch it at a festival first.",
+          "slug": "a-life-in-art-through-the-eye-of-dr-leslie-king-hammond",
+          "verdict": "PENDING"
+        },
+        {
+          "rank": 3,
+          "name": "Charlene Prempeh — The Nue Black Aesthetic",
+          "domain": "DESIGN",
+          "domain_detail": "DESIGN · CURATION",
+          "url": "https://www.wallpaper.com/design-interiors/design-events/the-nue-black-aesthetic-maps-the-diasporic-voices-shaping-design-today",
+          "image": "https://cdn.mos.cms.futurecdn.net/wpe4uVFNLPtnupbFVmRLb8-1920-80.jpg",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 30,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "a CROWN next to Nataal — same project, arguing for who gets to define the canon rather than just appearing in it",
+          "read": "What isn't in the Design Museum's new show says as much as what is. Guest curator Charlene Prempeh cut dozens of Black designers she respects from The Nue Black Aesthetic, keeping sixteen whose work shares specific themes rather than a shared identity: more than 100 objects across furniture, architecture, tailoring and sculpture, opening November 6, 2026. Prempeh, author of Now You See Me: An Introduction to 100 Years of Black Design, built the show to argue against the idea of Black design as merely crafty; Bianca Saunders' Met Gala suit for Usher sits inside a section called Rethinking the System, not one called craft. It opens in November. The room hasn't caught up to that argument yet.",
+          "slug": "charlene-prempeh-the-nue-black-aesthetic",
+          "verdict": "PENDING"
+        },
+        {
+          "rank": 4,
+          "name": "Daylight Come",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · BIOGRAPHY",
+          "url": "https://www.penguinrandomhouse.com/books/716426/daylight-come-by-joshua-jelly-schapiro-curated-by-henry-louis-gates-jr/",
+          "image": "https://images4.penguinrandomhouse.com/smedia/9780593652701",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 38,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "a CROWN next to Noname Book Club — same diasporic literary register, memory over hagiography",
+          "read": "Harry Belafonte's been dead three years and just landed on the bestseller list anyway. Daylight Come, Joshua Jelly-Schapiro's biography of the Harlem-born son of Caribbean immigrants who turned calypso into American pop and bankrolled the civil rights movement's road trips, published August 4th at 384 pages. Named a Most Anticipated Book of 2026 by The New York Times before a single copy shipped.",
+          "slug": "daylight-come",
+          "verdict": "PENDING"
+        },
+        {
+          "rank": 5,
+          "name": "Judah Weston",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · UNDERGROUND RAP",
+          "url": "https://music.apple.com/us/album/why-so-much-hate/6783170237",
+          "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/fe/c3/d1fec301-26f3-bb9f-cbda-f89b69c7d7a2/612891101768.jpg/1200x630wp-60.jpg",
+          "score": 6.2,
+          "tier": "TORCH",
+          "heat": 52,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "requested": true,
+          "benchmark": "a TORCH next to Fetty P Franklin — same underground-rap lane, still building the catalog the buzz is asking for",
+          "read": "Judah Weston already has an eight-city East Coast run booked for September, Lexington through Raleigh, off a discography that's mostly loosies. Why So Much Hate, his thirteen-song project with producer IsoKeys, dropped July 17th and plays like a Lower East Side kid working out his own myth in public: a felony arrest at twelve, a single mom and three brothers, the hop between boroughs. \"Thug\" pulled 20K views on a warning-shot video that felt bigger than its number; the comments called him early before the songs had finished cohering into a voice. The tour is real. The catalog isn't a statement yet. Come back after the run and see whether the road turned the loosies into an album.",
+          "slug": "judah-weston",
+          "verdict": "PENDING"
+        }
+      ]
     }
   ],
   "holding": [
@@ -7604,6 +7721,36 @@
       "name": "7-Eleven Thailand — CP All",
       "first_issue": "2026-08-10T14:52",
       "first_date": "2026-08-10",
+      "resurfaced": []
+    },
+    {
+      "name": "Brandee Younger",
+      "first_issue": "2026-08-14-1039",
+      "first_date": "2026-08-14",
+      "resurfaced": []
+    },
+    {
+      "name": "A Life in Art: Through the Eye of Dr. Leslie King Hammond",
+      "first_issue": "2026-08-14-1039",
+      "first_date": "2026-08-14",
+      "resurfaced": []
+    },
+    {
+      "name": "Charlene Prempeh — The Nue Black Aesthetic",
+      "first_issue": "2026-08-14-1039",
+      "first_date": "2026-08-14",
+      "resurfaced": []
+    },
+    {
+      "name": "Daylight Come",
+      "first_issue": "2026-08-14-1039",
+      "first_date": "2026-08-14",
+      "resurfaced": []
+    },
+    {
+      "name": "Judah Weston",
+      "first_issue": "2026-08-14-1039",
+      "first_date": "2026-08-14",
       "resurfaced": []
     }
   ]
