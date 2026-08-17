@@ -6097,6 +6097,123 @@
           "verdict": "PENDING"
         }
       ]
+    },
+    {
+      "issue": 60,
+      "issue_id": "2026-08-17-0800",
+      "date": "2026-08-17",
+      "time": "08:00 ET",
+      "forecast": "What stopped working this week is the release as an event. The objects holding attention are salvage jobs and long installs: a Sudanese cassette library rebuilt in Oakland, a tapestry that has hung in one Cape Town atrium since October, a rap catalog that took eleven records to arrive.",
+      "climate": "Salvage over supply. The week's strongest work was built to outlast the calendar rather than feed it: a war-era discography digitized one cassette at a time, a commission measured in months on view, cover art still drawn by hand now that the prompt is free. The counter-read is a Memphis album released from federal custody, where the attention sits entirely on the case file and the record is the smaller object in the room.",
+      "come_up": [
+        "Salvage archiving: diaspora kids digitizing analog media faster than the institutions can",
+        "The year-long install: commissions measured in months on view, not opening-night traffic",
+        "Hand-drawn cover art as a brand position now that generation costs nothing"
+      ],
+      "decline": [
+        "Generative cover art bolted onto a finished record",
+        "The album as a filing in an ongoing case",
+        "Archive talk with no digitization budget behind it"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Sudan Tapes Archive",
+          "domain": "SCENE",
+          "domain_detail": "SCENE · SUDANESE DIASPORA",
+          "url": "https://www.okayafrica.com/preserving-sonic-heritage-inside-the-sudan-tapes-archive/1437625",
+          "image": "https://image.okayafrica.com/1437640.jpg?imageId=1437640&x=0&y=0&cropw=100&croph=65.82&panox=0&panoy=0&panow=100&panoh=65.82&width=1200&height=683",
+          "score": 8.7,
+          "tier": "CROWN",
+          "heat": 21,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "a CROWN next to Black Film Archive — the same recovery instinct, pointed at cassette tape instead of celluloid",
+          "read": "A $20 cassette-to-USB converter is doing work that Sudan's national institutions can no longer do. Haneen Sidahmed, a Sudanese American archivist in Oakland, started digitizing her father's tapes in lockdown, learning restoration from forum posts written by hobbyists in Wisconsin and Mississippi. That became the Sudan Tapes Archive: her parents' cassettes, tapes she pulled out of Souq Omdurman months before the market burned, and donations from other diaspora families. Since war reached Khartoum in 2023 the museums have been looted and the libraries burned, and archaeologists warned this month that the pyramids at Meroë are deteriorating from neglect. Sidahmed calls it a war on collective memory and treats every restored track as a small reversal. The scholarship is real rather than sentimental. She can tell you that Mahmoud Abdelaziz's Sakat Al-Rabab (1995) was recorded by a Russian orchestra that learned Sudanese repertoire, and that a generation of Sudanese violinists trained under North Korean instructors posted to Khartoum. Her listening parties run outdoors with guiding questions at each station, because the tradition was communal: one family, one tape deck, one tape. The gap is that nobody with a budget is doing this.",
+          "verdict": "PENDING",
+          "slug": "sudan-tapes-archive"
+        },
+        {
+          "rank": 2,
+          "name": "Rome Streetz — Sock It 2 My Pocket",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · STREET RAP",
+          "url": "https://www.albumoftheyear.org/album/1845799-rome-streetz-sock-it-2-my-pocket.php",
+          "image": "https://cdn.albumoftheyear.org/album/1845799-sock-it-2-my-pocket_212422.jpg",
+          "score": 7.7,
+          "tier": "FLAME",
+          "heat": 61,
+          "direction": "▮",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "a FLAME next to Starlito — same lane, a career built on catalog depth rather than one mythologized project",
+          "read": "Eleven records deep, Rome Streetz finally sounds like a man who owns the building. Sock It 2 My Pocket landed on July 17 through Nas's Mass Appeal: fifteen tracks, forty-three minutes, no deluxe edition, with Pete Rock, Havoc, Conductor Williams and 9th Wonder on the loops and Styles P, Lloyd Banks and Westside Gunn passing through. Pitchfork gave it 73; the user score sits at 79 across 1,396 ratings, which is the more useful number for a rapper whose audience buys physical copies rather than streams. London-born, Brooklyn-raised, he still writes like every bar is a debt being collected. The consensus that this is his best since Kiss the Ring is, this time, correct.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "rome-streetz-sock-it-2-my-pocket"
+        },
+        {
+          "rank": 3,
+          "name": "The Procession — Rita Mawuena Benissan",
+          "domain": "ART",
+          "domain_detail": "ART · GHANAIAN REGALIA",
+          "url": "https://zeitzmocaa.museum/exhibition/the-procession/",
+          "image": "https://zeitzmocaa.museum/wp-content/uploads/2026/02/Web-Banner-The-Procession.png",
+          "score": 7.4,
+          "tier": "FLAME",
+          "heat": 33,
+          "direction": "▮",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "a FLAME next to Lauren Halsey — monumental scale built out of community iconography, made with the people whose iconography it is",
+          "read": "Suspended inside a converted 1921 grain silo, nine storeys of sliced concrete, is a tapestry you can see straight through. The Procession went up in the atrium at Zeitz MOCAA in Cape Town on October 25 and comes down October 25, a full year on view: 400kg of sheer fabric and embroidered canvas, patterned with seagulls and palm fronds, drawn from the canopy of royal umbrellas that shade Akan chiefs in public procession. Rita Mawuena Benissan, born in Abidjan in 1995 and trained in apparel and textile design, founded Si Hene in 2020 to preserve Ghanaian chieftaincy culture and worked on the reopening of the National Museum of Ghana in 2022. Thirteen artisans are named as contributors. The crediting is the practice, not a footnote to it.",
+          "verdict": "PENDING",
+          "slug": "the-procession-rita-mawuena-benissan"
+        },
+        {
+          "rank": 4,
+          "name": "Niyi Okeowo",
+          "domain": "DESIGN",
+          "domain_detail": "DESIGN · COVER ART",
+          "url": "https://www.okayafrica.com/the-african-artists-making-music-cover-art-in-the-age-of-ai/1436768",
+          "image": "https://image.okayafrica.com/1436775.jpg?imageId=1436775&x=0&y=0&cropw=100&croph=100&width=1200&height=1200",
+          "score": 7.1,
+          "tier": "FLAME",
+          "heat": 26,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "a FLAME next to Mason Prince — same design-studio register, a house style built on typography and restraint",
+          "read": "Niyi Okeowo starts with the lyrics and ends with a typeface. The Lagos designer behind Fireboy DML's Apollo, Wande Coal's Realms and two volumes of Show Dem Camp's Palmwine Music calls a cover a dialogue between artist and designer, which is a polite way of saying a prompt cannot have one. He also co-founded the magazine Get Unruly and runs creative at Kuda, a Nigerian payments company. The hedge is the read: cover work alone no longer pays.",
+          "verdict": "PENDING",
+          "slug": "niyi-okeowo"
+        },
+        {
+          "rank": 5,
+          "name": "Pooh Shiesty — All Eyes on Shiest",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · MEMPHIS TRAP",
+          "url": "https://www.revolt.tv/article/pooh-shiesty-all-eyes-on-shiest-album",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 5.7,
+          "tier": "SPARK",
+          "heat": 87,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "the nearest thing on the 50 is Fetty P Franklin, and it isn't close — same street register, opposite relationship to scale and to a major label",
+          "read": "Pooh Shiesty can still write a hook that works as threat and prayer at once, and “Last Man Breathin” is the proof: piano, violin, a man counting his own release date against a friend's 75-year sentence. All Eyes on Shiest arrived on August 7 through 1017 Global and Atlantic, sixteen tracks assembled and released while he sits in federal custody in Dallas awaiting a February 22, 2027 trial on kidnapping and robbery charges involving the founder of the label that signed him. Almost all of the attention is on the case file. The record is the smaller object in the room, and it plays like a placeholder cut to fit a news cycle rather than a first album. Come back after the trial date and see whether there is a body of work behind the headline.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "pooh-shiesty-all-eyes-on-shiest"
+        }
+      ]
     }
   ],
   "holding": [
@@ -7899,6 +8016,31 @@
       "first_issue": "2026-08-16-1530",
       "first_date": "2026-08-16",
       "resurfaced": []
+    },
+    {
+      "name": "Sudan Tapes Archive",
+      "first_issue": "2026-08-17-0800",
+      "first_date": "2026-08-17"
+    },
+    {
+      "name": "Rome Streetz — Sock It 2 My Pocket",
+      "first_issue": "2026-08-17-0800",
+      "first_date": "2026-08-17"
+    },
+    {
+      "name": "The Procession — Rita Mawuena Benissan",
+      "first_issue": "2026-08-17-0800",
+      "first_date": "2026-08-17"
+    },
+    {
+      "name": "Niyi Okeowo",
+      "first_issue": "2026-08-17-0800",
+      "first_date": "2026-08-17"
+    },
+    {
+      "name": "Pooh Shiesty — All Eyes on Shiest",
+      "first_issue": "2026-08-17-0800",
+      "first_date": "2026-08-17"
     }
   ]
 }
