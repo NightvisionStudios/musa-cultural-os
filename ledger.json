@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-08-08",
+    "updated": "2026-08-20",
     "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL.",
     "approved_repeats": [
       {
@@ -6214,6 +6214,121 @@
           "slug": "pooh-shiesty-all-eyes-on-shiest"
         }
       ]
+    },
+    {
+      "issue": 61,
+      "issue_id": "2026-08-20-0705",
+      "date": "2026-08-20",
+      "time": "07:05 ET",
+      "forecast": "The strongest work this week is not a debut but a set of severances: a rapper breaking up with his therapist, his barber and his doctor in the same verse; a novelist giving a twenty-year friendship the weight normally reserved for a marriage.",
+      "climate": "Leaving over arriving. The week's two best-written objects are both breakups, and neither is about a lover, which is what makes them useful: each is specific about which relationship is ending and what it cost. Underneath sits a quieter question of custody. Who keeps the material once the scene, the friendship or the label is gone. An Accra archivist answers by repairing the damaged prints by hand; a Madeiran collective answers by building the infrastructure its island never had. The counter-read is a $45 record with no listening history behind it, sold on the ritual of ownership before a single disc has shipped.",
+      "come_up": [
+        "The platonic breakup as a serious literary subject, given the weight usually held back for romance",
+        "Repair as archive method: the damage left visible instead of retouched out",
+        "Peripheral labels underwriting their own scenes when the festival circuit will not"
+      ],
+      "decline": [
+        "The keepsake pressed before anyone has played the song twice",
+        "Eco-material claims standing in for a spec sheet",
+        "African hip hop framed as an arrival story rather than a thirty-year record"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Open Mike Eagle & Kenny Segal — DOOMED!",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · ART RAP",
+          "url": "https://openmikeeagle.bandcamp.com/album/doomed",
+          "image": "https://f4.bcbits.com/img/a4080481202_5.jpg",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 58,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Chris Crack in the underground-rap lane; the same Chicago absurdism, held to one long argument instead of a dozen short ones",
+          "read": "Fifteen tracks in, Open Mike Eagle has broken up with his therapist, his barber and his primary care physician. Only one of those was a romance. DOOMED! landed August 14 on Backwoodz Studioz, the first full-length from two men who have been friends in Los Angeles for almost twenty years and found each other in the orbit of Project Blowed. Segal produces all of it and refuses the beat switch: dusty loops, muted jazz, worn samples kept at a simmer so the comic-book framing has somewhere to land. Seven reviews in, the critical average sits at 81, which is the room agreeing with something it can plainly hear. The track to sit with is \"Unfinished Concrete Initials,\" where the stick breaks before the names are finished and the concrete sets anyway.",
+          "verdict": "PENDING",
+          "slug": "open-mike-eagle-and-kenny-segal-doomed"
+        },
+        {
+          "rank": 2,
+          "name": "Selorm Attikpo — Mending to Preserve",
+          "domain": "ART",
+          "domain_detail": "ART · ACCRA HIP HOP ARCHIVE",
+          "url": "https://www.adamatl.org/events/mending-to-preserve-opening-reception",
+          "image": "https://images.squarespace-cdn.com/content/v1/62cc7f356454ae091c198ba8/fbd13d67-5b18-465b-b2b5-3723c815e663/EKOW+MOFO-FULLISHART-+2019-%2816x24in%29.jpg",
+          "score": 8.1,
+          "tier": "CROWN",
+          "heat": 17,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Black Film Archive — one person's catalog hardening into the institution nobody funded",
+          "read": "The verb in the title is literal. Selorm Attikpo repairs the photographs before he hangs them: damaged prints from three decades of Ghanaian hip hop, physically mended, then shown beside the recordings and the paper that survived with them. Mending to Preserve opens Friday August 21, 6 to 8pm, at the African Diaspora Art Museum of Atlanta on University Avenue in Pittsburgh Yards. Attikpo, who works as Selormjay, founded yoyo tinz in Accra in 2013 and has built a personal archive of roughly 10,000 files on the scene since. He put on Ghana's first hip hop festival in 2018. He has been researching a permanent hip hop museum for Ghana as a Villa Albertine resident, which is what put him in Atlanta: two cities written out of the hip hop story for years, both of which wrote themselves back in. What separates this from the usual archive show is that the damage stays visible. A mended print does not pretend the neglect never happened. It says somebody came back for it. Free, Thursday to Saturday, noon to five.",
+          "verdict": "PENDING",
+          "slug": "selorm-attikpo-mending-to-preserve"
+        },
+        {
+          "rank": 3,
+          "name": "Téa Mutonji — My Person",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · LITERARY FICTION",
+          "url": "https://www.penguinrandomhouse.com/books/808535/my-person-by-tea-mutonji/",
+          "image": "https://images4.penguinrandomhouse.com/cover/9798217180233",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 36,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Noname Book Club — the diasporic reading lane on the 50; this is the novel it would set",
+          "read": "Tania asks Margot to unknow her. They have been best friends for over twenty years, Margot's family owns the apartment Tania lives in, and the request arrives while the two of them are laying the table for their monthly dinner. My Person is Téa Mutonji's first novel, 288 pages, out August 11 from Putnam, seven years after the story collection Shut Up You're Pretty. Mutonji was born in the Democratic Republic of the Congo and raised in Scarborough, and she is exact about the Canadian shape of the problem: prejudice that arrives as extravagant generosity and quietly erodes whoever accepts it. The novel gives a friendship the psychological weight usually held for a marriage, then lets neither woman off.",
+          "verdict": "PENDING",
+          "slug": "tea-mutonji-my-person"
+        },
+        {
+          "rank": 4,
+          "name": "Colectivo Casa Amarela",
+          "domain": "SCENE",
+          "domain_detail": "SCENE · MADEIRA EXPERIMENTAL",
+          "url": "https://daily.bandcamp.com/label-profile/colectivo-casa-amarela-label-profile",
+          "image": "https://f4.bcbits.com/img/0046802356_171.jpg",
+          "score": 7.2,
+          "tier": "FLAME",
+          "heat": 14,
+          "direction": "▮",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "CD Masterizzato — the physical music object as the whole argument, here at 30-copy scale",
+          "read": "Madeira sits closer to Morocco than to Lisbon, and for two decades the island's experimental calendar ran on a single festival programmed mostly for visitors. Colectivo Casa Amarela started in 2015 because the island's own musicians could not get on it. Past forty releases now, mostly cassettes, some in plaster shells sculpted by Mafalda Melim, who runs the label from Lisbon with Bruno Aires. Vomir's first pressing sold out in an hour.",
+          "verdict": "PENDING",
+          "slug": "colectivo-casa-amarela"
+        },
+        {
+          "rank": 5,
+          "name": "Suno Vinyl",
+          "domain": "TECH",
+          "domain_detail": "TECH · AI MUSIC",
+          "url": "https://www.musicbusinessworldwide.com/suno-muscles-into-vinyl-market-plans-to-let-users-press-their-ai-songs-onto-12-inch-records/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 5.2,
+          "tier": "SPARK",
+          "heat": 81,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "Moises AI is the nearest thing on the 50, and the distance is the read: Moises sells work to makers, this sells an object to owners",
+          "read": "Suno has read the room correctly. People want to hold the thing, and a file will not do it, so on August 6 the company opened a waitlist: up to 46 minutes from your library, pressed to a 12-inch black PETG disc, sleeve and labels of your own design, around $45 plus shipping. The pitch reads \"Some songs deserve more than a stream.\" Missing is everything a record buyer asks next. No plant named, no mastering chain, no weight, no tolerances, and nothing shipped yet. A Munich court ruled against the company in GEMA's case this month. The object is doing the argument the catalog has not won. Come back when the first discs land and somebody plays one twice.",
+          "verdict": "PENDING",
+          "slug": "suno-vinyl"
+        }
+      ]
     }
   ],
   "holding": [
@@ -8041,6 +8156,36 @@
       "name": "Pooh Shiesty — All Eyes on Shiest",
       "first_issue": "2026-08-17-0800",
       "first_date": "2026-08-17"
+    },
+    {
+      "name": "Open Mike Eagle & Kenny Segal — DOOMED!",
+      "first_issue": "2026-08-20-0705",
+      "first_date": "2026-08-20",
+      "resurfaced": []
+    },
+    {
+      "name": "Selorm Attikpo — Mending to Preserve",
+      "first_issue": "2026-08-20-0705",
+      "first_date": "2026-08-20",
+      "resurfaced": []
+    },
+    {
+      "name": "Téa Mutonji — My Person",
+      "first_issue": "2026-08-20-0705",
+      "first_date": "2026-08-20",
+      "resurfaced": []
+    },
+    {
+      "name": "Colectivo Casa Amarela",
+      "first_issue": "2026-08-20-0705",
+      "first_date": "2026-08-20",
+      "resurfaced": []
+    },
+    {
+      "name": "Suno Vinyl",
+      "first_issue": "2026-08-20-0705",
+      "first_date": "2026-08-20",
+      "resurfaced": []
     }
   ]
 }
