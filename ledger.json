@@ -6448,6 +6448,125 @@
           "slug": "slawn-the-rolex-multiverse"
         }
       ]
+    },
+    {
+      "issue": 63,
+      "issue_id": "2026-08-21-0908",
+      "date": "2026-08-21",
+      "time": "09:08 ET",
+      "forecast": "The best object on the board this week was stolen: six dilly bags woven from British Museum floor plans, lifted two pounds at a time by a network of friends. Custody over access — the work that held up was made by people taking their material back rather than asking to see it.",
+      "come_up": [
+        "The woven archive: paper turned to string, museum floor plans turned to objects",
+        "Self-written lineage: writers documenting their own pioneers on their own wall",
+        "Buffalo's second bench: hook men stepping out as lead artists"
+      ],
+      "decline": [
+        "Graffiti as ticketed spectacle: €20 entry, gift shop at the exit",
+        "The guest-list album: features stacked where a thesis should be",
+        "Prize coverage that names the top winner and skips the six category winners"
+      ],
+      "climate": "Custody over access. Four of the five entries turn on who is allowed to hold the material: a Larrakia weaver turning stolen museum maps into dilly bags, eleven Philadelphia writers painting their own lineage onto a wall on Willow Street instead of waiting for an institution to do it, a Palestinian archivist working from footage nobody else kept. Against that sits Paris, where fifty years of graffiti is ticketed at €20 with a shop at the exit. The counter-read is not that the Paris show is wrong; it is thorough, and thorough is rare. Collecting a movement and continuing one are simply different jobs, and only one of them is happening on a wall this month.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Jenna Mayilema Lee — Taking back taken",
+          "domain": "CRAFT",
+          "domain_detail": "CRAFT · FIBRE & PAPER",
+          "url": "https://www.abc.net.au/news/2026-08-07/natsiaa-art-awards-winners-ryan-presley-jenna-mayilema-lee/106992592",
+          "image": "https://live-production.wcms.abc-cdn.net.au/92057d882a00070b34a1d3fa0d35d301?impolicy=wcms_crop_resize&cropH=3000&cropW=4000&xPos=0&yPos=1&width=862&height=647",
+          "score": 8.7,
+          "tier": "CROWN",
+          "heat": 31,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "heritage-craft lane — Material Culture, and this sits at the sharper end of it",
+          "read": "Jenna Mayilema Lee spent five years learning to turn paper into string, and the paper she chose was the British Museum's own floor plan. That map carries a suggested donation of two pounds; Lee took one without paying, then had family and friends flying to London take more on her behalf until she had enough to weave six dilly bags. Taking back taken won the $15,000 Work on Paper Award at the Telstra NATSIAAs in Darwin on August 7, one of seven prizes drawn from 64 finalists and 221 entries. Lee is Larrakia, Karrajarri and Wardaman, working in Melbourne and off Country, which is the practical reason the material is paper and not pandanus: following her ancestors means being expert in the resources around you, and hers is a house full of books. The detail that decides it: she describes the collecting network she assembled as not unlike the way empire sent people out to gather world culture. The bags take the form of the objects she used to book appointments to see in museum storerooms. On show at MAGNT until January 24.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "jenna-mayilema-lee-taking-back-taken"
+        },
+        {
+          "rank": 2,
+          "name": "Mohanad Yaqubi — Revolutionaries Never Die",
+          "domain": "FILM",
+          "domain_detail": "FILM · ARCHIVE",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/locarno-2026-awards-winners-monica-bellucci-hong-sang-soo-1236673771/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 8.1,
+          "tier": "CROWN",
+          "heat": 54,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Black Film Archive",
+          "read": "Locarno gave its Filmmakers of the Present special jury prize to a film that was assembled rather than shot. Mohanad Yaqubi works from the archive: the Palestinian director and Subversive Films co-founder built Off Frame (2016) out of Palestinian militant-cinema footage tracked across scattered European holdings, and this one continues that method. The prize landed on August 15, at an edition running 233 films chosen from a record 7,759 submissions. What the jury rewarded is custody rather than coverage. An archivist who spends four years locating a reel and a director who books a shoot are doing different work, and only one of them loses the material by arriving late.",
+          "verdict": "PENDING",
+          "slug": "mohanad-yaqubi-revolutionaries-never-die"
+        },
+        {
+          "rank": 3,
+          "name": "Construction of Style — Mural Arts Philadelphia",
+          "domain": "ART",
+          "domain_detail": "ART · GRAFFITI",
+          "url": "https://muralarts.org/artworks/construction-of-style/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 24,
+          "direction": "▮",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Lauren Halsey",
+          "read": "Eleven writers painted a wall near North 2nd and Willow in Philadelphia and used it to tell their own history. Construction of Style, put together by Phil Asbury for Mural Arts, carries work designed by Dawud Anyabwile of BrothaMan Comics, Sew SM, Distort BAMC, Busta, Rew, Imse, Saoka, Diana Gonzalez, Efrain Herrera and Kien Nguyen, with a final panel honoring Cornbread, Cool Earl, Tity, Sub, Cone ICP and Lewis. Amina Tawasil, the Columbia anthropologist whose fieldwork follows writers across Philadelphia, New York and urban New Jersey, recorded the audio tour. A discipline that has spent sixty years being explained by outsiders here supplies the wall and the commentary both. Free, outdoors, parking on Willow.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "construction-of-style-mural-arts-philadelphia"
+        },
+        {
+          "rank": 4,
+          "name": "GooseByTheWay — Nature Boy",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · STREET RAP",
+          "url": "https://hiphopgoldenage.com/list/july-2026-round-up-the-9-best-hip-hop-albums-of-the-monthjuly-2026-round-up-the-9-best-hip-hop-albums-of-the-month/",
+          "image": "https://hiphopgoldenage.com/wp-content/uploads/2026/08/gooseby-1024x1024.webp",
+          "score": 6.8,
+          "tier": "TORCH",
+          "heat": 18,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Starlito",
+          "read": "A hook man steps out front. Nature Boy, out July 17, runs ten tracks with Conway the Machine anchoring three of them including the opener \"203\", and Fuego Base taking the sharpest verse on \"Walk Ups\". Goose writes money as obligation rather than trophy: back years, fed kids, debts with names attached. Buffalo has a deep bench; this is the season it starts releasing under its own name.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "goosebytheway-nature-boy"
+        },
+        {
+          "rank": 5,
+          "name": "BEYOND THE STREETS Paris",
+          "domain": "ART",
+          "domain_detail": "ART · EXHIBITION",
+          "url": "https://beyondthestreets.com/pages/beyond-the-streets-paris",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 6.2,
+          "tier": "TORCH",
+          "heat": 79,
+          "direction": "▼",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "places lane — The Shed, and the distance is that one commissions while this one collects",
+          "read": "The archival job is done properly here: 3,600 square meters of the Grande Halle de la Villette, more than 100 artists, and ephemera that has spent decades in boxes, running from Futura 2000 and Barry McGee to Vhils and Felipe Pantone. Entry starts at €20 and the exit is a shop assembled with Sarah Andelman. The Paris run closes this month. Attention has concentrated on the survey rather than the practice: fifty years of a discipline gets a ticketed hall, while the writers still working get a wall and a tag on someone's feed. Come back when that same square footage goes to a living crew with a commissioning budget.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "beyond-the-streets-paris"
+        }
+      ]
     }
   ],
   "holding": [
@@ -8330,6 +8449,31 @@
       "name": "Slawn — The Rolex Multiverse",
       "first_issue": "2026-08-20-2255",
       "first_date": "2026-08-20"
+    },
+    {
+      "name": "Jenna Mayilema Lee — Taking back taken",
+      "first_issue": "2026-08-21-0908",
+      "first_date": "2026-08-21"
+    },
+    {
+      "name": "Mohanad Yaqubi — Revolutionaries Never Die",
+      "first_issue": "2026-08-21-0908",
+      "first_date": "2026-08-21"
+    },
+    {
+      "name": "Construction of Style — Mural Arts Philadelphia",
+      "first_issue": "2026-08-21-0908",
+      "first_date": "2026-08-21"
+    },
+    {
+      "name": "GooseByTheWay — Nature Boy",
+      "first_issue": "2026-08-21-0908",
+      "first_date": "2026-08-21"
+    },
+    {
+      "name": "BEYOND THE STREETS Paris",
+      "first_issue": "2026-08-21-0908",
+      "first_date": "2026-08-21"
     }
   ]
 }
