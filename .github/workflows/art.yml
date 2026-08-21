@@ -18,6 +18,10 @@ on:
         description: 'Re-render every card from scratch'
         type: boolean
         default: false
+      artfill_max:
+        description: 'Entries to resolve art for this run (12 is the automatic cap)'
+        type: string
+        default: '12'
 
 permissions:
   contents: write
@@ -45,6 +49,15 @@ jobs:
 
       - name: Python deps
         run: pip install --quiet pillow cairosvg
+
+      # Rule 8: the mark is a floor, not a default. Sessions can't reach most
+      # source hosts, so entries that fell back get their og:image resolved here
+      # and written into the ledger before the art cache runs. Capped per run so
+      # the archive backlog drains over several pushes instead of one huge commit.
+      - name: Resolve entries still on the MUSA mark
+        env:
+          MUSA_ARTFILL_MAX: ${{ inputs.artfill_max || '12' }}
+        run: python build/artfill.py
 
       - name: Cache entry artwork
         run: python build/fetch_art.py
