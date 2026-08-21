@@ -1,0 +1,66 @@
+{
+ "note": "entries artfill could not resolve; retried at most 3 times ever",
+ "updated": "2026-08-21",
+ "misses": {
+  "taste-as-gatekeeping": {
+   "reason": "no source url",
+   "attempts": 3
+  },
+  "new-maximalism-archive-as-currency": {
+   "reason": "no source url",
+   "attempts": 3
+  },
+  "technical-mono-anti-design": {
+   "reason": "no source url",
+   "attempts": 3
+  },
+  "the-2016-throwback": {
+   "reason": "no source url",
+   "attempts": 3
+  },
+  "tech-spec": {
+   "reason": "no source url",
+   "attempts": 3
+  },
+  "broadcast-to-belonging": {
+   "reason": "no source url",
+   "attempts": 3
+  },
+  "the-reading-room": {
+   "reason": "no source url",
+   "attempts": 3
+  },
+  "diaspora-as-engine-caracas-merch": {
+   "reason": "no source url",
+   "attempts": 3
+  },
+  "breadth-over-blockbuster": {
+   "reason": "no source url",
+   "attempts": 3
+  },
+  "loving-room": {
+   "reason": "no source url",
+   "attempts": 3
+  },
+  "the-nue-black-aesthetic": {
+   "reason": "no source url",
+   "attempts": 3
+  },
+  "tasteslop-nemesis-memos": {
+   "reason": "no source url",
+   "attempts": 3
+  },
+  "black-owned-bookstore-resurgence": {
+   "reason": "no source url",
+   "attempts": 3
+  },
+  "keen-streetz": {
+   "attempts": 1,
+   "reason": "no candidate on page"
+  },
+  "tony": {
+   "attempts": 1,
+   "reason": "no candidate on page"
+  }
+ }
+}
