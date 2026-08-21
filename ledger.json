@@ -6329,6 +6329,125 @@
           "slug": "suno-vinyl"
         }
       ]
+    },
+    {
+      "issue": 62,
+      "issue_id": "2026-08-20-2255",
+      "date": "2026-08-20",
+      "time": "22:55 ET",
+      "forecast": "Peckham on Sunday, Ladbroke Grove in three weeks, a Rolex microsite that went live on Tuesday: the first two are the end of something long, the third is the start of a month of drops.",
+      "climate": "Duration over drop. The work holding up this week was built on a clock nobody else was watching: a mural painted straight onto a gallery wall in May and painted over on Sunday, forty years behind a Portobello salon compressed into a six-day retrospective, fifteen songs put out on ten days' notice with no interview attached. Against that sits the release calendar as a medium in itself, twelve one-of-one watches metered across August so the announcement can happen twelve times, and a marketplace whose house label is thirty percent off while its tenants hold price. The counter-read is not that the fast work is bad. It is that attention has concentrated on the placements while the bodies of work behind them stayed the same size.",
+      "come_up": [
+        "The unannounced record: fifteen tracks out on ten days' notice with no interview cycle behind them",
+        "The retrospective assembled by the community it is about, with clients sitting in the curator's chair",
+        "Free shows with a hard closing date, doing what a fair week cannot"
+      ],
+      "decline": [
+        "The one-of-one release schedule, where the drop calendar is the artwork",
+        "Marketplaces whose house label undercuts the tenants it was built to pay",
+        "Placement volume read as a body of work"
+      ],
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Cleo Sol — Gentlewoman",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · UK SOUL",
+          "url": "https://cleosol.bandcamp.com/album/gentlewoman",
+          "image": "https://f4.bcbits.com/img/a2285770469_5.jpg",
+          "score": 8.5,
+          "tier": "CROWN",
+          "heat": 74,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "a CROWN next to Baby Rose — the same diasporic soul register on the 50, held at a lower volume and a longer breath",
+          "read": "There is no press cycle attached to this one. Gentlewoman went up today on Forever Living Originals, ten days after a phone clip announced it: fifteen tracks, Inflo producing, Chronixx and Dave Okumu among the credited writers, no interviews. The absence is the method, not shyness. Heaven and Gold both landed on days' notice in 2023; this one got ten, which still counts as a long runway by her standards, and it lets the record behave like a record instead of a campaign. It is her first solo album since Gold; Sault's Chapter 1 came in January out of the same house, same producer. The songs run on repetition and reassurance rather than hooks, so they improve on the fourth pass and disappear inside a playlist — the album is the unit and she has never pretended otherwise. Fifteen tracks is a lot of calm to ask for in a row, and the honest risk is that calm reads as sameness somewhere around track eleven. The room is loud here and the room is right. The test lands in November: still in rotation, or filed under respected.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "cleo-sol-gentlewoman"
+        },
+        {
+          "rank": 2,
+          "name": "Paulo Nimer Pjota — Encantados",
+          "domain": "ART",
+          "domain_detail": "ART · BRAZILIAN PAINTING",
+          "url": "https://www.southlondongallery.org/exhibitions/paulo-nimer-pjota/",
+          "image": "https://www.southlondongallery.org/wp-content/uploads/2026/03/C596-1-30068.jpg",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 38,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "a CROWN next to Lauren Halsey — monumental work built out of vernacular signage and street iconography, São Paulo instead of South Central",
+          "read": "The mural comes down on Sunday. Pjota painted it directly onto the walls of the South London Gallery's Main Gallery, and when Encantados closes on August 23 it gets covered over: five months up, free, no booking, gone. He describes the method as sampling and means it literally. He was a graffiti writer in São José do Rio Preto before he was a painter, and he builds canvases the way a producer builds a beat — loop a piece of art history, drop something new over it. A speaker stack with reggae written across it. A three-headed animal working a trumpet, a horn and a drum at once. The gallery screened Wild Style in July alongside the show, which is how you know they read it right. Peckham, until Sunday.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "paulo-nimer-pjota-encantados"
+        },
+        {
+          "rank": 3,
+          "name": "Charlotte Mensah — Community Matters",
+          "domain": "CRAFT",
+          "domain_detail": "CRAFT · AFRO HAIR",
+          "url": "https://theindustry.beauty/charlotte-mensah-marks-40-years-in-hair-with-new-exhibition/",
+          "image": "https://theindustry.beauty/wp-content/uploads/2026/08/Untitled-design-2026-08-17T094900.081.png",
+          "score": 7.5,
+          "tier": "FLAME",
+          "heat": 19,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "a FLAME next to Material Culture — heritage craft with a documented lineage, except the object here is a room on Portobello Road",
+          "read": "Splinters, days before her sixteenth birthday. Charlotte Mensah started at the first Black salon in Britain in 1986, trained under Winston Isaacs at the London College of Fashion, and has run Hair Lounge on Portobello Road for twenty-five years. Community Matters opens at Ladbroke Hall on September 8 and closes on the 13th. The detail that decides it: the curator, Madeleine Haddon of V&A East, is a client, and so is the exhibition designer. A retrospective assembled by the people who sat in the chair is a different object from one assembled about them. Forty years, three Afro Hairdresser of the Year titles, first Black woman in the British Hairdressing Hall of Fame. The show is six days long.",
+          "verdict": "PENDING",
+          "slug": "charlotte-mensah-community-matters"
+        },
+        {
+          "rank": 4,
+          "name": "Lowheads",
+          "domain": "FASHION",
+          "domain_detail": "FASHION · UNDERGROUND MARKETPLACE",
+          "url": "https://lowheads.com/",
+          "image": "https://lowheads.com/cdn/shop/files/Lowheads_Square.jpg?v=1757618255",
+          "score": 6.9,
+          "tier": "TORCH",
+          "heat": 66,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "the nearest thing on the 50 is Gr8, and the distance is the read: Gr8 earns authority by cutting the floor down, this earns reach by opening it up",
+          "read": "Los Angeles, two hundred-odd labels, one checkout, and the money goes to the designer. That is the real product: an $85 cut-off from a label nobody has heard of gets ordered, and the person who sewed it gets paid, which is harder to build than a feed. Founded 2020, an apply-to-sell page open to anyone, an iPhone app, a podcast. Then read the footer. The store's own TikTok handle is @cuts_garments — Cuts is the house label — and this week Cuts sits at thirty percent off across the board while the tenant brands hold full price. A landlord who opens a shop in his own building is not only a landlord. The audience showed up for an edit and the edit is now competing with itself. The number to watch is the front page: two hundred brands is a floor, forty is a position.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "lowheads"
+        },
+        {
+          "rank": 5,
+          "name": "Slawn — The Rolex Multiverse",
+          "domain": "ART",
+          "domain_detail": "ART · POP GRAPHIC",
+          "url": "https://pausemag.co.uk/2026/08/olaolu-slawn-and-rolex-unveil-rolex-multiverse/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 6.4,
+          "tier": "TORCH",
+          "heat": 92,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "the nearest thing on the 50 is Corteiz, and it is a drop-logic match rather than a studio one — Clint419 is literally one of the twelve",
+          "read": "Nobody moves an image faster. Slawn's caricatures have been on a BRIT statuette, the FA Cup, Nigeria's World Cup kit and, since Tuesday, a Playboi Carti chain; the Rolex Multiverse puts them on twelve one-of-one watches released one at a time across August. His 2024 Rolex run sold out in four minutes. The placements have traveled further than the paintings. Come back when there is a show with no logo in the room.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "slawn-the-rolex-multiverse"
+        }
+      ]
     }
   ],
   "holding": [
@@ -8186,6 +8305,31 @@
       "first_issue": "2026-08-20-0705",
       "first_date": "2026-08-20",
       "resurfaced": []
+    },
+    {
+      "name": "Cleo Sol — Gentlewoman",
+      "first_issue": "2026-08-20-2255",
+      "first_date": "2026-08-20"
+    },
+    {
+      "name": "Paulo Nimer Pjota — Encantados",
+      "first_issue": "2026-08-20-2255",
+      "first_date": "2026-08-20"
+    },
+    {
+      "name": "Charlotte Mensah — Community Matters",
+      "first_issue": "2026-08-20-2255",
+      "first_date": "2026-08-20"
+    },
+    {
+      "name": "Lowheads",
+      "first_issue": "2026-08-20-2255",
+      "first_date": "2026-08-20"
+    },
+    {
+      "name": "Slawn — The Rolex Multiverse",
+      "first_issue": "2026-08-20-2255",
+      "first_date": "2026-08-20"
     }
   ]
 }
