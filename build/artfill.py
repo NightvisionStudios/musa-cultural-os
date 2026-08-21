@@ -52,6 +52,47 @@ JUNK = re.compile(r"(logo|favicon|sprite|placeholder|default[-_.]|avatar|"
                   r"share[-_]?default|og[-_]?default|social[-_]?card|blank|"
                   r"spacer|1x1|pixel)", re.I)
 
+# Filename tells you nobody named this file after what is in it: a Canva export,
+# a phone screenshot, a CMS auto-name. These are usually a publication's generic
+# article graphic rather than a picture of the subject. Issue 62 shipped
+# "Copy-of-Untitled-1200-x-800-px-7-600x403.png" as the Slawn card — Pause Mag's
+# og:image is a template, and a size check cannot tell that from a photograph.
+# Not fatal on its own: allowed through only when the page ties it to the entry.
+GENERIC = re.compile(r"("
+                     r"copy[-_ ]of[-_ ]untitled|untitled[-_ ]?design|^untitled|"
+                     r"screen[-_ ]?shot|screenshot|unnamed|"
+                     r"^(image|img|photo|pic|file|download|upload)[-_ ]?\d*$|"
+                     r"^\d{2,4}x\d{2,4}$|^(final|new|temp|draft)\d*$|"
+                     r"web[-_ ]?banner|featured[-_ ]?image|hero[-_ ]?image"
+                     r")", re.I)
+
+STOP = {"the", "and", "for", "with", "from", "that", "this", "vol", "feat",
+        "presents", "records", "gallery", "museum", "foundation", "studio",
+        "collective", "project", "issue", "part", "his", "her", "their"}
+
+
+def tokens(name):
+    """Distinctive words from an entry name, for tying an image to its subject."""
+    name = re.sub(r"[—–\-|:/,'\u2019]", " ", (name or "").lower())
+    out = set()
+    for w in re.findall(r"[a-z0-9]{3,}", name):
+        if w in STOP or w.isdigit():
+            continue
+        out.add(w)
+    return out
+
+
+def relevant(url, toks, alts):
+    """Does anything tie this image to the entry? URL path, or its alt text."""
+    path = urlparse(url).path.lower() + " " + (urlparse(url).query or "").lower()
+    slug = re.sub(r"[^a-z0-9]+", " ", path)
+    if any(t in slug for t in toks):
+        return "url"
+    alt = (alts.get(url) or "").lower()
+    if alt and any(t in alt for t in toks):
+        return "alt"
+    return None
+
 # ordered by how much we trust them
 META_PATTERNS = [
     r'<meta[^>]+property=["\']og:image:secure_url["\'][^>]+content=["\']([^"\']+)',
@@ -76,10 +117,14 @@ def get(url, cap=None, accept="*/*"):
 
 
 def candidates(html, base):
-    """og:image first, then twitter, then the biggest-looking inline image."""
-    seen, out = set(), []
+    """og:image first, then twitter, then the biggest-looking inline image.
 
-    def add(u):
+    Returns (ordered_urls, alt_by_url) — alt text is how an anonymously named
+    image proves it is actually about the entry.
+    """
+    seen, out, alts = set(), [], {}
+
+    def add(u, alt=None):
         if not u:
             return
         u = unescape(u.strip())
@@ -90,6 +135,8 @@ def candidates(html, base):
             return
         if urlparse(u).netloc in OURS:
             return
+        if alt:
+            alts.setdefault(u, unescape(alt))
         if u not in seen:
             seen.add(u)
             out.append(u)
@@ -104,16 +151,15 @@ def candidates(html, base):
         for u in re.findall(r'https?://[^"\'\\\s]+', m.group(1)):
             add(u)
 
-    # last resort: inline <img> that isn't obviously chrome
-    if not out:
-        for m in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\']', html[:250_000], re.I):
-            u = m.group(1)
-            if not JUNK.search(u):
-                add(u)
-            if len(out) >= 8:
-                break
+    # every inline <img>, for its alt text as much as for its src
+    for m in re.finditer(r'<img[^>]+>', html[:250_000], re.I):
+        tag = m.group(0)
+        src = re.search(r'\ssrc=["\']([^"\']+)["\']', tag, re.I)
+        alt = re.search(r'\salt=["\']([^"\']*)["\']', tag, re.I)
+        if src and not JUNK.search(src.group(1)):
+            add(src.group(1), alt.group(1) if alt else None)
 
-    return [u for u in out if not JUNK.search(urlparse(u).path)]
+    return [u for u in out if not JUNK.search(urlparse(u).path)], alts
 
 
 def usable(url):
@@ -143,6 +189,50 @@ def usable(url):
     if min(w, h) < MIN_EDGE:
         return None, "small:%dx%d" % (w, h)
     return url, "ok:%dx%d" % (w, h)
+
+
+def suspects(led):
+    """Filled entries whose art looks like a template graphic rather than a picture."""
+    out = []
+    for iss in led.get("issues", []):
+        for e in iss.get("entries", []):
+            img = (e.get("image") or "").strip()
+            if not img or img == MARK:
+                continue
+            base = re.sub(r"\.[a-z0-9]{2,5}$", "", os.path.basename(urlparse(img).path))
+            if GENERIC.search(base) and not relevant(img, tokens(e.get("name")), {}):
+                out.append({"issue": iss.get("issue"), "name": e.get("name"),
+                            "slug": e.get("slug"), "url": e.get("url"), "image": img})
+    return out
+
+
+def audit(fix=False):
+    """Flag already-filled entries the relevance gate would now refuse.
+
+    Pure string work, no network, so it runs anywhere. With --fix the offenders
+    go back to the mark and into the review queue, where a session can resolve
+    them by hand — which is the only thing that reliably beats a template graphic.
+    """
+    led = json.load(open(LEDGER, encoding="utf-8"))
+    bad = suspects(led)
+    byslug = {}
+    for iss in led.get("issues", []):
+        for e in iss.get("entries", []):
+            byslug[e.get("slug") or e.get("name")] = e
+
+    for s_ in bad:
+        print("  SUSPECT i%-3s %-40s %s" % (s_["issue"], (s_["name"] or "")[:40],
+                                            os.path.basename(urlparse(s_["image"]).path)[:52]))
+        if fix:
+            byslug[s_["slug"] or s_["name"]]["image"] = MARK
+    print("audit: %d filled entr%s look like template art"
+          % (len(bad), "y" if len(bad) == 1 else "ies"))
+    print("audit: report only by default — a phone-named file on a label's own page is\n"
+          "       often the real artwork, so confirm before --fix reverts it to the mark")
+    if fix and bad:
+        json.dump(led, open(LEDGER, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        print("audit: reverted to the mark and queued for review")
+    return 0
 
 
 def main():
@@ -200,11 +290,37 @@ def main():
             failed += 1
             continue
 
+        cands, alts = candidates(html, final)
+        toks = tokens(e.get("name"))
+        own = urlparse(final).netloc
+
+        # Score before validating: a tie to the entry is worth more than being
+        # first in the meta block. An anonymously named file with nothing tying
+        # it to the subject is refused outright — that is the Slawn failure, and
+        # a wrong picture is worse than the mark, which at least reads as brand.
+        ranked = []
+        for pos, c in enumerate(cands):
+            tie = relevant(c, toks, alts)
+            base = re.sub(r"\.[a-z0-9]{2,5}$", "", os.path.basename(urlparse(c).path))
+            generic = bool(GENERIC.search(base))
+            selfhosted = urlparse(c).netloc.split(".")[-2:] == own.split(".")[-2:]
+            if generic and not tie:
+                continue
+            score = (3 if tie == "url" else 2 if tie == "alt" else 0)
+            score += 1 if selfhosted else 0
+            score -= pos * 0.1
+            ranked.append((-score, pos, c, tie))
+        ranked.sort()
+
         picked = reason = None
-        for cand in candidates(html, final)[:4]:
+        for _, _, cand, tie in ranked[:4]:
             picked, reason = usable(cand)
             if picked:
+                reason = "%s tie:%s" % (reason, tie or "none")
                 break
+
+        if not picked and not ranked and cands:
+            reason = "only generic art on page (%d rejected)" % len(cands)
 
         if picked:
             e["image"] = picked
@@ -221,15 +337,35 @@ def main():
     if filled:
         json.dump(led, open(LEDGER, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
-    json.dump({"note": "entries artfill could not resolve; retried at most %d times ever" % MAX_ATTEMPTS,
-               "updated": time.strftime("%Y-%m-%d"), "misses": state},
+    # Anything still on the mark that HAS a source is a job for a person, not a
+    # heuristic: a session can look at a picture and say whether it is the right
+    # one. Surfaced here so it can be worked at the top of a run.
+    review = []
+    for iss in led.get("issues", []):
+        for e in iss.get("entries", []):
+            if (e.get("image") or "") in ("", MARK) and (e.get("url") or "").strip():
+                review.append({"issue": iss.get("issue"), "name": e.get("name"),
+                               "slug": e.get("slug"), "url": e.get("url"),
+                               "reason": state.get(e.get("slug") or e.get("name", ""), {})
+                                              .get("reason", "not attempted yet")})
+
+    json.dump({"note": "misses = auto-resolution failed and stops retrying after %d. "
+                       "review = still on the mark but has a source. "
+                       "suspects = filled, but the art looks like a template graphic. "
+                       "Both want a human eye."
+                       % MAX_ATTEMPTS,
+               "updated": time.strftime("%Y-%m-%d"),
+               "review": review, "suspects": suspects(led), "misses": state},
               open(STATE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
     still = sum(1 for iss in led.get("issues", []) for e in iss.get("entries", [])
                 if (e.get("image") or "") in ("", MARK))
-    print("artfill: %d filled, %d missed, %d entries still on the mark" % (filled, failed, still))
+    print("artfill: %d filled, %d missed, %d on the mark, %d queued for review"
+          % (filled, failed, still, len(review)))
     return 0
 
 
 if __name__ == "__main__":
+    if "--audit" in sys.argv:
+        sys.exit(audit(fix="--fix" in sys.argv))
     sys.exit(main())
