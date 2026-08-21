@@ -1,6 +1,374 @@
 {
- "note": "entries artfill could not resolve; retried at most 3 times ever",
+ "note": "misses = auto-resolution failed and stops retrying after 3. review = still on the mark but has a source. suspects = filled, but the art looks like a template graphic. Both want a human eye.",
  "updated": "2026-08-21",
+ "review": [
+  {
+   "issue": 1,
+   "name": "Douglas Stuart — John of John",
+   "slug": "douglas-stuart-john-of-john",
+   "url": "https://groveatlantic.com/book/john-of-john/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 1,
+   "name": "Charli XCX — The Moment",
+   "slug": "charli-xcx-the-moment",
+   "url": "https://en.wikipedia.org/wiki/The_Moment_(2026_film)",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 2,
+   "name": "Smiljan Radić",
+   "slug": "smiljan-radic",
+   "url": "https://www.pritzkerprize.com/laureates/smiljan-radic-clarke",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 4,
+   "name": "FIFA World Cup 2026",
+   "slug": "fifa-world-cup-2026",
+   "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 6,
+   "name": "Mark Jenkin — Cornish-Trilogy Closer",
+   "slug": "mark-jenkin-cornish-trilogy-closer",
+   "url": "https://en.wikipedia.org/wiki/Rose_of_Nevada",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 7,
+   "name": "Yaya Bey — Fidelity",
+   "slug": "yaya-bey-fidelity",
+   "url": "https://yayabey.bandcamp.com/album/fidelity",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 7,
+   "name": "T Clark — Debut Collection",
+   "slug": "t-clark-debut-collection",
+   "url": "http://www.tia-clark.com/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 8,
+   "name": "Cape Verde — World Cup Run",
+   "slug": "cape-verde-world-cup-run",
+   "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams/cabo-verde/team-news",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 9,
+   "name": "Adidas × Wales Bonner SS26",
+   "slug": "adidas-wales-bonner-ss26",
+   "url": "https://www.adidas.com/us/wales_bonner",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 10,
+   "name": "House of Aama — Folk Grounds",
+   "slug": "house-of-aama-folk-grounds",
+   "url": "https://houseofaama.com/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 11,
+   "name": "Firelei Báez",
+   "slug": "firelei-baez",
+   "url": "https://visit.mcachicago.org/exhibitions/firelei-baez-2/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 12,
+   "name": "Wales Bonner × adidas — On Pitch SS26",
+   "slug": "wales-bonner-adidas-on-pitch-ss26",
+   "url": "https://walesbonner.com/collections/adidas-originals-by-wales-bonner",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 12,
+   "name": "The Chi — Final Season",
+   "slug": "the-chi-final-season",
+   "url": "https://www.paramountplus.com/shows/the-chi/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 13,
+   "name": "Is God Is",
+   "slug": "is-god-is",
+   "url": "https://en.wikipedia.org/wiki/Is_God_Is_(film)",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 13,
+   "name": "Melvin Gibbs — How Black Music Took Over the World",
+   "slug": "melvin-gibbs-how-black-music-took-over-the-world",
+   "url": "https://www.hachettebookgroup.com/titles/melvin-gibbs/how-black-music-took-over-the-world/9781541603240/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 15,
+   "name": "Donald Locke — Resistant Forms",
+   "slug": "donald-locke-resistant-forms",
+   "url": "https://camdenartcentre.org/whats-on/resistant-forms",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 15,
+   "name": "Satluj — Honey Trehan",
+   "slug": "satluj-honey-trehan",
+   "url": "https://www.zee5.com/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 16,
+   "name": "Colson Whitehead — Cool Machine",
+   "slug": "colson-whitehead-cool-machine",
+   "url": "https://www.colsonwhitehead.com/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 18,
+   "name": "Girl Talk, Michael Christmas & Chris Crack -- Don't Come To My House Sharing Your Location",
+   "slug": "girl-talk-michael-christmas-and-chris-crack-don-t-come-to-my-hou",
+   "url": "https://rateyourmusic.com/release/ep/girl-talk-michael-christmas-chris-crack/dont-come-to-my-house-sharing-your-location/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 20,
+   "name": "Haile Gerima — Black Lions – Roman Wolves",
+   "slug": "haile-gerima-black-lions-roman-wolves",
+   "url": "https://www.berlinale.de/en/2026/programme/202616228.html",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 20,
+   "name": "Fadekemi Ogunsanya — We Are Not Lying, Your Language is Not Enough",
+   "slug": "fadekemi-ogunsanya-we-are-not-lying-your-language-is-not-enough",
+   "url": "https://craftprize.loewe.com/en/craftprize2026",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 21,
+   "name": "The AI Label",
+   "slug": "the-ai-label",
+   "url": "https://www.musicbusinessworldwide.com/record-industry-proposes-ai-labeling-system-for-streaming-platforms/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 23,
+   "name": "YOSHITA 1967 — Anil Padia",
+   "slug": "yoshita-1967-anil-padia",
+   "url": "https://www.lvmh.com/en/news-lvmh/2026-lvmh-prize-for-young-fashion-designers-13th-edition",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 24,
+   "name": "Paul Kodjo — Photoromance",
+   "slug": "paul-kodjo-photoromance",
+   "url": "https://www.rencontres-arles.com/en/expositions/2026/paul-kodjo",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 24,
+   "name": "Suno Spark",
+   "slug": "suno-spark",
+   "url": "https://celebrityaccess.com/2026/06/27/suno-launches-spark-program-to-help-independent-artists/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 26,
+   "name": "The Natural-Fibre Turn",
+   "slug": "the-natural-fibre-turn",
+   "url": "https://www.businessoffashion.com/articles/sustainability/why-consumers-ditching-polyester-for-natural-fibres/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 27,
+   "name": "The Collab Ledger — 2026's Logo Swaps",
+   "slug": "the-collab-ledger-2026-s-logo-swaps",
+   "url": "https://www.complex.com/style/a/mike-destefano/best-streetwear-collabs-2026",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 34,
+   "name": "Edna Bonhomme — Tending to Our Wounds",
+   "slug": "edna-bonhomme-tending-to-our-wounds",
+   "url": "https://www.haymarketbooks.org/books/2756-tending-to-our-wounds",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 34,
+   "name": "San Francisco Art Book Fair 2026",
+   "slug": "san-francisco-art-book-fair-2026",
+   "url": "https://sfartbookfair.com/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 35,
+   "name": "Liberty — The Fabric Hall",
+   "slug": "liberty-the-fabric-hall",
+   "url": "https://www.theguardian.com/business/2026/jul/27/liberty-london-store-expands-fabrics-section-sewing-boom-craft-classes",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 37,
+   "name": "AHABAN — Ajepomaa Design Gallery",
+   "slug": "ahaban-ajepomaa-design-gallery",
+   "url": "https://ajepomaagallery.com/ahaban/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 38,
+   "name": "Demetri Broxton — Ancestral Echoes: Crops of Empire",
+   "slug": "demetri-broxton-ancestral-echoes-crops-of-empire",
+   "url": "https://www.moadsf.org/exhibitions",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 39,
+   "name": "The AI Label — Eight Bodies, One Suggestion",
+   "slug": "the-ai-label-eight-bodies-one-suggestion",
+   "url": "https://www.techtimes.com/articles/320432/20260714/ai-music-labels-land-tomorrow-industry-rules-remain-voluntary-incomplete.htm",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 40,
+   "name": "Kokrobitey Institute — What Hands Remember",
+   "slug": "kokrobitey-institute-what-hands-remember",
+   "url": "https://www.newsghana.com.gh/kokrobitey-hosts-fourth-annual-textiles-workshop/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 40,
+   "name": "Aether Commons — Azu Nwagbogu at the Gierowski Foundation",
+   "slug": "aether-commons-azu-nwagbogu-at-the-gierowski-foundation",
+   "url": "https://artafricamagazine.org/aether-commons-refracted-cosmologies/",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 40,
+   "name": "Young M.A — KWEEN",
+   "slug": "young-m-a-kween",
+   "url": "https://www.thefader.com/2026/07/22/young-ma-interview-kween-sober-ooouuu",
+   "reason": "not attempted yet"
+  },
+  {
+   "issue": 42,
+   "name": "Open Doors Screenings 2026 — Locarno",
+   "slug": "open-doors-screenings-2026-locarno",
+   "url": "https://www.hollywoodreporter.com/movies/movie-news/locarno-2026-films-pardi-di-domani-open-doors-screenings-1236634144/",
+   "reason": "no candidate on page"
+  },
+  {
+   "issue": 44,
+   "name": "New Africa Cultural Initiative",
+   "slug": "new-africa-cultural-initiative",
+   "url": "https://www.artnews.com/art-news/news/new-africa-cultural-initiative-founding-interview-1234793957/",
+   "reason": "no candidate on page"
+  },
+  {
+   "issue": 45,
+   "name": "Ajepomaa Gallery — AHABAN",
+   "slug": "ajepomaa-gallery-ahaban",
+   "url": "https://ajepomaagallery.com/shop/",
+   "reason": "not-image:text/html"
+  },
+  {
+   "issue": 46,
+   "name": "The Riverbank — Matheus Farias & Enock Carvalho",
+   "slug": "the-riverbank-matheus-farias-and-enock-carvalho",
+   "url": "https://variety.com/2026/film/global/the-riverbank-locarno-festival-mpm-premium-1236823275/",
+   "reason": "no candidate on page"
+  },
+  {
+   "issue": 47,
+   "name": "Cardi B — Ah Ha",
+   "slug": "cardi-b-ah-ha",
+   "url": "https://www.billboard.com/music/rb-hip-hop/cardi-b-ah-ha-first-single-2026-1236306343/",
+   "reason": "no candidate on page"
+  },
+  {
+   "issue": 57,
+   "name": "Tony",
+   "slug": "tony",
+   "url": "https://deadline.com/2026/08/indie-films-opening-anthony-bourdain-biopic-tony-1237028878/",
+   "reason": "no candidate on page"
+  },
+  {
+   "issue": 59,
+   "name": "Keen Streetz",
+   "slug": "keen-streetz",
+   "url": "https://soundcloud.com/keen-streetz",
+   "reason": "no candidate on page"
+  }
+ ],
+ "suspects": [
+  {
+   "issue": 10,
+   "name": "Pan-African Architecture Biennale",
+   "slug": "pan-african-architecture-biennale-2",
+   "url": "https://www.panafricanbiennale.org/",
+   "image": "http://static1.squarespace.com/static/68850d8363f1ff0207429b1e/t/68fec2e0d9443222b58dfe8e/1761526496507/Screenshot+2025-10-26+at+8.54.42%E2%80%AFPM.png?format=1500w"
+  },
+  {
+   "issue": 11,
+   "name": "Pan-African Architecture Biennale",
+   "slug": "pan-african-architecture-biennale",
+   "url": "https://www.panafricanbiennale.org/",
+   "image": "http://static1.squarespace.com/static/68850d8363f1ff0207429b1e/t/68fec2e0d9443222b58dfe8e/1761526496507/Screenshot+2025-10-26+at+8.54.42%E2%80%AFPM.png?format=1500w"
+  },
+  {
+   "issue": 12,
+   "name": "Pan-African Biennale — Nairobi",
+   "slug": "pan-african-biennale-nairobi",
+   "url": "https://www.panafricanbiennale.org/",
+   "image": "http://static1.squarespace.com/static/68850d8363f1ff0207429b1e/t/68fec2e0d9443222b58dfe8e/1761526496507/Screenshot+2025-10-26+at+8.54.42%E2%80%AFPM.png?format=1500w"
+  },
+  {
+   "issue": 20,
+   "name": "Peterson Kamwathi — Tabula Rasa",
+   "slug": "peterson-kamwathi-tabula-rasa",
+   "url": "https://www.ncai254.com/exhibitionpetersonkamwathi",
+   "image": "https://artafricamagazine.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-11.42.16.png"
+  },
+  {
+   "issue": 36,
+   "name": "SinTH2 — Tom Horn",
+   "slug": "sinth2-tom-horn",
+   "url": "https://sinth2.com/",
+   "image": "https://sinth2.com/wp-content/uploads/2026/07/IMG_9793.jpg"
+  },
+  {
+   "issue": 48,
+   "name": "BADDIES <3 MOLIY — MOLIY",
+   "slug": "baddies-3-moliy-moliy",
+   "url": "https://music.apple.com/us/album/baddies-3-moliy/6793701746",
+   "image": "https://notjustok.com/wp-content/uploads/2026/06/IMG_9757.jpeg"
+  },
+  {
+   "issue": 49,
+   "name": "Photography and the Black Arts Movement, 1955–1985",
+   "slug": "photography-and-the-black-arts-movement-1955-1985",
+   "url": "https://www.seegreatart.art/photography-and-the-black-arts-movement/",
+   "image": "https://www.seegreatart.art/wp-content/uploads/2026/07/unnamed-22.jpg"
+  },
+  {
+   "issue": 61,
+   "name": "Suno Vinyl",
+   "slug": "suno-vinyl",
+   "url": "https://www.musicbusinessworldwide.com/suno-muscles-into-vinyl-market-plans-to-let-users-press-their-ai-songs-onto-12-inch-records/",
+   "image": "https://www.musicbusinessworldwide.com/files/2026/08/Screenshot-2026-08-06-at-13.27.00-e1786019290303.jpg"
+  },
+  {
+   "issue": 62,
+   "name": "Charlotte Mensah — Community Matters",
+   "slug": "charlotte-mensah-community-matters",
+   "url": "https://theindustry.beauty/charlotte-mensah-marks-40-years-in-hair-with-new-exhibition/",
+   "image": "https://theindustry.beauty/wp-content/uploads/2026/08/Untitled-design-2026-08-17T094900.081.png"
+  }
+ ],
  "misses": {
   "taste-as-gatekeeping": {
    "reason": "no source url",
@@ -55,10 +423,30 @@
    "attempts": 3
   },
   "keen-streetz": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "no candidate on page"
   },
   "tony": {
+   "attempts": 2,
+   "reason": "no candidate on page"
+  },
+  "cardi-b-ah-ha": {
+   "attempts": 1,
+   "reason": "no candidate on page"
+  },
+  "the-riverbank-matheus-farias-and-enock-carvalho": {
+   "attempts": 1,
+   "reason": "no candidate on page"
+  },
+  "ajepomaa-gallery-ahaban": {
+   "attempts": 1,
+   "reason": "not-image:text/html"
+  },
+  "new-africa-cultural-initiative": {
+   "attempts": 1,
+   "reason": "no candidate on page"
+  },
+  "open-doors-screenings-2026-locarno": {
    "attempts": 1,
    "reason": "no candidate on page"
   }
