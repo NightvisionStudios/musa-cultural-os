@@ -63,7 +63,12 @@ GENERIC = re.compile(r"("
                      r"screen[-_ ]?shot|screenshot|unnamed|"
                      r"^(image|img|photo|pic|file|download|upload)[-_ ]?\d*$|"
                      r"^\d{2,4}x\d{2,4}$|^(final|new|temp|draft)\d*$|"
-                     r"web[-_ ]?banner|featured[-_ ]?image|hero[-_ ]?image"
+                     r"web[-_ ]?banner|featured[-_ ]?image|hero[-_ ]?image|"
+                     r"\blogo\b|wordmark|favicon|site[-_ ]?icon|masthead|\bavatar\b|"
+                     r"podcast|newsletter|subscribe|\bpromo\b|\bsponsor\b|"
+                     r"stocksnap|shutterstock|istock|gettyimages|unsplash|pexels|"
+                     r"placeholder|\bdefault\b|og[-_ ]?image|"
+                     r"\bshare[-_ ]?(image|card|graphic)\b"
                      r")", re.I)
 
 STOP = {"the", "and", "for", "with", "from", "that", "this", "vol", "feat",
