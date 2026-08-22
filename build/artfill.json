@@ -193,44 +193,9 @@
   },
   {
    "issue": 34,
-   "name": "Edna Bonhomme — Tending to Our Wounds",
-   "slug": "edna-bonhomme-tending-to-our-wounds",
-   "url": "https://www.haymarketbooks.org/books/2756-tending-to-our-wounds",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 34,
    "name": "San Francisco Art Book Fair 2026",
    "slug": "san-francisco-art-book-fair-2026",
    "url": "https://sfartbookfair.com/",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 35,
-   "name": "Liberty — The Fabric Hall",
-   "slug": "liberty-the-fabric-hall",
-   "url": "https://www.theguardian.com/business/2026/jul/27/liberty-london-store-expands-fabrics-section-sewing-boom-craft-classes",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 37,
-   "name": "AHABAN — Ajepomaa Design Gallery",
-   "slug": "ahaban-ajepomaa-design-gallery",
-   "url": "https://ajepomaagallery.com/ahaban/",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 38,
-   "name": "Demetri Broxton — Ancestral Echoes: Crops of Empire",
-   "slug": "demetri-broxton-ancestral-echoes-crops-of-empire",
-   "url": "https://www.moadsf.org/exhibitions",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 39,
-   "name": "The AI Label — Eight Bodies, One Suggestion",
-   "slug": "the-ai-label-eight-bodies-one-suggestion",
-   "url": "https://www.techtimes.com/articles/320432/20260714/ai-music-labels-land-tomorrow-industry-rules-remain-voluntary-incomplete.htm",
    "reason": "not attempted yet"
   },
   {
@@ -239,13 +204,6 @@
    "slug": "kokrobitey-institute-what-hands-remember",
    "url": "https://www.newsghana.com.gh/kokrobitey-hosts-fourth-annual-textiles-workshop/",
    "reason": "page:HTTPError"
-  },
-  {
-   "issue": 40,
-   "name": "Young M.A — KWEEN",
-   "slug": "young-m-a-kween",
-   "url": "https://www.thefader.com/2026/07/22/young-ma-interview-kween-sober-ooouuu",
-   "reason": "not attempted yet"
   },
   {
    "issue": 42,
@@ -299,6 +257,13 @@
  ],
  "suspects": [
   {
+   "issue": 8,
+   "name": "Grace Wales Bonner → Hermès",
+   "slug": "grace-wales-bonner-hermes",
+   "url": "https://finance.hermes.com/en/publications/grace-wales-bonner-joins-hermes-creative-director-mens-ready-wear/",
+   "image": "https://finance.hermes.com/static/og-image-aa62bcb6135d7a3f25cd89cde027926f.jpg"
+  },
+  {
    "issue": 10,
    "name": "Pan-African Architecture Biennale",
    "slug": "pan-african-architecture-biennale-2",
@@ -320,11 +285,32 @@
    "image": "http://static1.squarespace.com/static/68850d8363f1ff0207429b1e/t/68fec2e0d9443222b58dfe8e/1761526496507/Screenshot+2025-10-26+at+8.54.42%E2%80%AFPM.png?format=1500w"
   },
   {
+   "issue": 16,
+   "name": "Imane Ayissi — Ozouandam Ollat",
+   "slug": "imane-ayissi-ozouandam-ollat",
+   "url": "https://imane-ayissi.com/en/pages/collections-imane-ayissi",
+   "image": "https://imane-ayissi.com/cdn/shop/files/logo.png?v=1779026465"
+  },
+  {
    "issue": 20,
    "name": "Peterson Kamwathi — Tabula Rasa",
    "slug": "peterson-kamwathi-tabula-rasa",
    "url": "https://www.ncai254.com/exhibitionpetersonkamwathi",
    "image": "https://artafricamagazine.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-11.42.16.png"
+  },
+  {
+   "issue": 26,
+   "name": "The Repurposing Trade — Ziwiye Plaques on the Red Carpet",
+   "slug": "the-repurposing-trade-ziwiye-plaques-on-the-red-carpet",
+   "url": "https://hyperallergic.com/zendayas-earrings-are-part-of-a-much-bigger-problem/",
+   "image": "https://storage.ghost.io/c/51/f8/51f871d8-b6be-4a73-b958-0ca4fff0110a/content/images/size/w1200/2026/07/GettyImages-2284724535.jpg"
+  },
+  {
+   "issue": 36,
+   "name": "Street Boy — Hemiogenic Studios",
+   "slug": "street-boy-hemiogenic-studios",
+   "url": "https://streetboyja.com/",
+   "image": "https://streetboyja.com/images/og-image.png"
   },
   {
    "issue": 36,
@@ -424,27 +410,27 @@
    "reason": "no candidate on page"
   },
   "cardi-b-ah-ha": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "no candidate on page"
   },
   "the-riverbank-matheus-farias-and-enock-carvalho": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "no candidate on page"
   },
   "ajepomaa-gallery-ahaban": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "not-image:text/html"
   },
   "new-africa-cultural-initiative": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "no candidate on page"
   },
   "open-doors-screenings-2026-locarno": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "no candidate on page"
   },
   "kokrobitey-institute-what-hands-remember": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "page:HTTPError"
   }
  }
