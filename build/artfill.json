@@ -1,6 +1,6 @@
 {
  "note": "misses = auto-resolution failed and stops retrying after 3. review = still on the mark but has a source. suspects = filled, but the art looks like a template graphic. Both want a human eye.",
- "updated": "2026-08-21",
+ "updated": "2026-08-22",
  "review": [
   {
    "issue": 1,
@@ -238,14 +238,7 @@
    "name": "Kokrobitey Institute — What Hands Remember",
    "slug": "kokrobitey-institute-what-hands-remember",
    "url": "https://www.newsghana.com.gh/kokrobitey-hosts-fourth-annual-textiles-workshop/",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 40,
-   "name": "Aether Commons — Azu Nwagbogu at the Gierowski Foundation",
-   "slug": "aether-commons-azu-nwagbogu-at-the-gierowski-foundation",
-   "url": "https://artafricamagazine.org/aether-commons-refracted-cosmologies/",
-   "reason": "not attempted yet"
+   "reason": "page:HTTPError"
   },
   {
    "issue": 40,
@@ -423,32 +416,36 @@
    "attempts": 3
   },
   "keen-streetz": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "no candidate on page"
   },
   "tony": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "no candidate on page"
   },
   "cardi-b-ah-ha": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "no candidate on page"
   },
   "the-riverbank-matheus-farias-and-enock-carvalho": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "no candidate on page"
   },
   "ajepomaa-gallery-ahaban": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "not-image:text/html"
   },
   "new-africa-cultural-initiative": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "no candidate on page"
   },
   "open-doors-screenings-2026-locarno": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "no candidate on page"
+  },
+  "kokrobitey-institute-what-hands-remember": {
+   "attempts": 1,
+   "reason": "page:HTTPError"
   }
  }
 }

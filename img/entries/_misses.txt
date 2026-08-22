@@ -2,6 +2,6 @@
 7-eleven-thailand-cp-all	https://i0.wp.com/travelinstinctoz.com/wp-content/uploads/2026/06/7Eleven.jpg?fit=1184%2C634&ssl=1	HTTP Error 404: Not Found
 alewya-zero	https://f4.bcbits.com/img/a3150029086_7.jpg	HTTP Error 404: Not Found
 ben-imana-marie-clementine-dusabejambo	https://cineuropa.org/imgCache/2026/05/08/1778231647886_1360x0570_0x0x0x0_1778231651977.jpg	HTTP Error 403: Forbidden
-firelei-baez-mid-career-survey	https://visit.mcachicago.org/wp-content/uploads/2025/10/85_FB_Untitled-Les-tables-de-geographie-reduites-en-un-jeu-de-cartes.webp	cannot identify image file <_io.BytesIO object at 0x7fdbd8316390>
-iamlyric	https://iamlyricofficial.com/assets/img/og.jpg	cannot identify image file <_io.BytesIO object at 0x7fdbd83166b0>
+firelei-baez-mid-career-survey	https://visit.mcachicago.org/wp-content/uploads/2025/10/85_FB_Untitled-Les-tables-de-geographie-reduites-en-un-jeu-de-cartes.webp	cannot identify image file <_io.BytesIO object at 0x7f91741c8810>
+iamlyric	https://iamlyricofficial.com/assets/img/og.jpg	cannot identify image file <_io.BytesIO object at 0x7f91741caca0>
 nicholas-daley	https://nicholasdaley.net/cdn/shop/files/social-image.jpg?v=11336	HTTP Error 404: Not Found
