@@ -6567,6 +6567,122 @@
           "slug": "beyond-the-streets-paris"
         }
       ]
+    },
+    {
+      "issue": 64,
+      "issue_id": "2026-08-22T12:15",
+      "date": "2026-08-22",
+      "time": "12:15 ET",
+      "forecast": "Two Moroccos this month: in a village an hour up the Ourika valley an architect is rebuilding a school in stone, with the pupils' parents laying the walls, and in a Sandton exhibition hall a Marrakech studio was crowned Africa's designer of the year. Both are Moroccan craft. Only one of them names the masons.",
+      "come_up": [
+        "The named crew: masons, cutters and plasterers credited on the object they made",
+        "Solo billing after a decade of split covers: the writing asked to carry the record alone",
+        "Invented place names doing what real ones cannot: fiction as a way to hold a loss"
+      ],
+      "decline": [
+        "“In collaboration with local artisans” as a credit line",
+        "Craft priced in a convention hall a continent from the workshop",
+        "Reconstruction reported only as units completed"
+      ],
+      "climate": "Naming over branding. Three of the five entries turn on whose name ends up on the object: an architect who puts the pupils' parents on the wall crew at Setti Fatma, a rapper who spent ten years splitting album covers with one producer at a time and finally kept one for himself, a novelist who gives every member of a scattered family their own chapter instead of a narrator. Against that sits a Marrakech studio collecting the continent's design prize of the year with its makers described in the plural and left unnamed. The counter-read is not that the work is thin; the ceramics are good and the workshops are real. It is that the attention arrived at the signature before it arrived at the hands. The fifth entry sits on the same question from the other side: a studio built so that a track has more than one author in it from the first bar.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Salima Naji — the school at Setti Fatma",
+          "domain": "ARCHITECTURE",
+          "domain_detail": "ARCHITECTURE · EARTH & STONE",
+          "url": "https://metropolismag.com/profiles/salima-najis-quest-to-preserve-culture-through-architecture/",
+          "image": "https://metropolismag.com/wp-content/uploads/2025/07/17_c-1-scaled.jpg",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 26,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "heritage-craft lane — Material Culture is the nearest thing on the 50, and the 50 has no architect on it at all",
+          "read": "The masons rebuilding the school at Setti Fatma are the parents of the children who will sit in it. That is Salima Naji's method rather than a detail of it. She is an architect and anthropologist who has spent twenty years restoring the collective granaries of southern Morocco, and who rebuilt the kasbah at Agadir Oufella on a wood-and-stone system rather than the concrete that crushed people there in 1960. Setti Fatma sits an hour up the Ourika valley from Marrakech and was wrecked by the quake of September 8, 2023, three years old in a fortnight. The state's answer across Al Haouz has been volume: official counts put the province past 90 percent of some 24,000 homes rebuilt or repaired, mostly in block and cement. Naji's answer is stone, earth, palm fiber and a crew trained on the job, so the technique stays in the village after she leaves. ARVHA gave her its international prize in January, which is the room arriving late rather than early. Check in September whether the school has pupils in it.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "salima-naji-the-school-at-setti-fatma"
+        },
+        {
+          "rank": 2,
+          "name": "Ransom — The Price of Clarity",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · UNDERGROUND RAP",
+          "url": "https://music.apple.com/us/album/the-price-of-clarity/6798366653",
+          "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9f/7b/6a/9f7b6afc-045e-0c3c-1354-6257117529c1/885288042351.jpg/1200x630wp-60.jpg",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 37,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "underground-rap lane — Starlito, the same career shape: two decades in, no radio record, the catalog is the argument",
+          "read": "Seventeen tracks, fifty-nine minutes, and no producer's name on the cover. That last part is the news. Randy Nicholls has spent most of a decade making albums the other way round — one rapper, one producer, a whole record — with Nicholas Craven, DJ Premier, Conductor Williams, Harry Fraud, V Don and Big Ghost Ltd, four of them in 2025 alone. The Price of Clarity, out August 19 through Momentum Entertainment, is billed as his first official solo album; the last full-length with nobody's name beside his was 2022. The trade-off is audible. A one-producer record has a single weather system, and this one has five or six hands on it and asks the writing to hold the thing together instead. It mostly does. He is forty-five and writes like it, which in a lane built on teenage stamina is the scarcer skill: the subject here is what honesty costs after you have already told the truth about the obvious things. Nobody is playing this on the radio. Nobody was ever going to. Come back in six months and see whether the solo billing sticks or he goes back to splitting the credit.",
+          "verdict": "PENDING",
+          "slug": "ransom-the-price-of-clarity"
+        },
+        {
+          "rank": 3,
+          "name": "Dreams of Ayn Ara — Sara Abou Ghazal",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · FICTION IN TRANSLATION",
+          "url": "https://bookriot.com/books/dreams-of-ayn-ara/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 51,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "global-diaspora lane — Noname Book Club, the same instinct for the small press over the front table",
+          "read": "Every chapter belongs to a different member of the Abu Sukkar family, and the family is scattered: Zein al-Abidin in Stockholm, his son Nidal in Paris, the matriarch Zahra holding what is left, Salwa in Beirut digging backwards through Facebook toward Ayn Ara, the Galilee village they came from. The village is invented. That choice does work a real place name could not, because the subject is not one loss but the shape of it, repeated down four generations from a camp in Shatila. Katharine Halls translates, and her record is the reason to trust the English: Rotten Evidence, The Dove's Necklace, a Banipal prize. The specialist room got here first and got it right, which is the job a small press is for. Feminist Press, August 18, 2026, hardcover, $17.95.",
+          "verdict": "PENDING",
+          "slug": "dreams-of-ayn-ara-sara-abou-ghazal"
+        },
+        {
+          "rank": 4,
+          "name": "Riffle",
+          "domain": "TECH",
+          "domain_detail": "TECH · MAKER TOOLS",
+          "url": "https://musically.com/2026/08/12/startup-riffle-launches-its-multiplayer-music-studio-web-app/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.1,
+          "tier": "FLAME",
+          "heat": 39,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "creator-ai-tools lane — Koala Sampler, the same instinct: an MPC in a place nobody expected one",
+          "read": "The pitch is a grudge. Riffle's founders say a DAW hands you a cockpit when all you wanted was an instrument. Their answer went public on August 12 after three months of early access with 7,000 musicians: browser only, no download, real-time multiplayer on an infinite canvas, and an MPC-style sampler that saves custom kits across boards. The assistant reads your MIDI, which is where it either earns the room or joins it.",
+          "verdict": "PENDING",
+          "slug": "riffle"
+        },
+        {
+          "rank": 5,
+          "name": "LRNCE",
+          "domain": "DESIGN",
+          "domain_detail": "DESIGN · OBJECT & INTERIOR",
+          "url": "https://www.wantedonline.co.za/art-and-design/2026-07-21-made-in-marrakech-the-craft-behind-lrnce/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 6.8,
+          "tier": "TORCH",
+          "heat": 73,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "heritage-craft lane — Tamera; LRNCE is the bigger operation and the more finished object",
+          "read": "LRNCE makes good things. Hand-painted ceramics, zellige, plaster, iron and wood, produced with workshops in and around Marrakech since 2013, the irregularities left in rather than sanded out. Decorex Africa named it Designer of the Year for 2026 and gave it both editions, Cape Town in June and Sandton from July 30 to August 2. The gap is that the credit stops at two names. Laurence Leenaert and Ayoub Boualam are the studio; the potters, the zellige cutters and the plasterers are “Moroccan artisans,” plural and unnamed, in every notice of the award. Come back when a collection ships with the workshops named on it.",
+          "verdict": "PENDING",
+          "slug": "lrnce"
+        }
+      ]
     }
   ],
   "holding": [
@@ -8474,6 +8590,36 @@
       "name": "BEYOND THE STREETS Paris",
       "first_issue": "2026-08-21-0908",
       "first_date": "2026-08-21"
+    },
+    {
+      "name": "Salima Naji — the school at Setti Fatma",
+      "first_issue": "2026-08-22T12:15",
+      "first_date": "2026-08-22",
+      "resurfaced": []
+    },
+    {
+      "name": "Ransom — The Price of Clarity",
+      "first_issue": "2026-08-22T12:15",
+      "first_date": "2026-08-22",
+      "resurfaced": []
+    },
+    {
+      "name": "Dreams of Ayn Ara — Sara Abou Ghazal",
+      "first_issue": "2026-08-22T12:15",
+      "first_date": "2026-08-22",
+      "resurfaced": []
+    },
+    {
+      "name": "Riffle",
+      "first_issue": "2026-08-22T12:15",
+      "first_date": "2026-08-22",
+      "resurfaced": []
+    },
+    {
+      "name": "LRNCE",
+      "first_issue": "2026-08-22T12:15",
+      "first_date": "2026-08-22",
+      "resurfaced": []
     }
   ]
 }
