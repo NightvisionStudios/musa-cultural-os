@@ -6683,6 +6683,121 @@
           "slug": "lrnce"
         }
       ]
+    },
+    {
+      "issue": 65,
+      "issue_id": "2026-08-23-1015",
+      "date": "2026-08-23",
+      "time": "10:15 ET",
+      "forecast": "Two numbers set the board this week: CHF 148,500 for a platinum wristwatch that does not exist yet, and roughly £85,000 a year for a sound system that plays for free on a Notting Hill corner. Both figures are the true cost of an object. Only one of them is a price.",
+      "come_up": [
+        "Published capacity: four watches a year, stated in the release rather than buried in it",
+        "Free entry as an editorial position, not a subsidy — the laureate charging nothing at home",
+        "The two-minute rap song as discipline: twenty-one tracks, forty-nine minutes, no filler"
+      ],
+      "decline": [
+        "The listening room as a museum amenity",
+        "Craft as a campaign word, uncoupled from a bench",
+        "Scarcity produced by allocation rather than by hand speed"
+      ],
+      "climate": "Cost over price. The board splits along one question: what a thing actually costs to make, and who is asked to pay at the door. A two-person Swiss atelier states its capacity at four watches a year and prices accordingly. A West London crew spends £80,000 to £90,000 a season to charge nothing. A Hasselblad laureate brings twenty years of work home to Cape Town and puts free entry on the poster. A Montréal producer files twenty-one tracks he made himself on a small label. The street and the vitrine are not opposites here; both are honest about what the thing took. The counter-read sits between them, where craft that is real keeps arriving in rooms with an admission fee while the tradition behind it plays outdoors next weekend for nothing.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Zanele Muholi — Kanye Nawe",
+          "domain": "ART",
+          "domain_detail": "ART · PHOTOGRAPHY & BRONZE",
+          "url": "https://southernguild.com/exhibitions/kanye-nawe",
+          "image": "https://static.wixstatic.com/media/3558af_671d92aafba04c6aa5ea4573ca098d73~mv2.jpg/v1/fill/w_1000,h_745,al_c,q_85,usm_0.66_1.00_0.01/3558af_671d92aafba04c6aa5ea4573ca098d73~mv2.jpg",
+          "score": 8.9,
+          "tier": "CROWN",
+          "heat": 64,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Lauren Halsey — the same community-as-material logic at institutional scale; Muholi has two decades on it and a bronze foundry behind the photographs",
+          "read": "Entry is free, which is the first fact the show insists on. Kanye Nawe fills the whole of Silo 5 at the V&A Waterfront through September 10: a dense hang of Faces and Phases, work from Only Half the Picture, Being, Mo(u)rning, LiZa and ZaVa, new Somnyama Ngonyama self-portraits, and three bronzes that put a Black queer body into the material usually reserved for generals. The portrait project started in 2006 with Busi Sigasa, photographed at Constitution Hill in Johannesburg, and now runs past 500 participants. Muholi took the Hasselblad Award this year and could have opened anywhere. The work came home and priced admission at nothing.",
+          "verdict": "PENDING",
+          "slug": "zanele-muholi-kanye-nawe"
+        },
+        {
+          "rank": 2,
+          "name": "Mike Shabb — Sewaside IV",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · BOOM BAP",
+          "url": "https://www.albumoftheyear.org/album/1747252-mike-shabb-sewaside-iv.php",
+          "image": "https://cdn.albumoftheyear.org/album/1747252-sewaside-iv_160349.jpg",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 33,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Chris Crack — the same prolific, self-produced, get-in-get-out discipline; Shabb is the more musical of the two right now",
+          "read": "Shabb produced all of it himself. Twenty-one tracks, forty-nine minutes, out August 21 on Blk Music, and the average song runs two minutes and twenty seconds. This is the fourth Sewaside since 2016 and the first where the jazz-rap sampling tightens instead of thinning; the dancehall running under \"Tell Em Again\" is the part his peers cannot copy, because he engineers his own records. ANKHLEJOHN and MIKE turn up. The cover answers KMD's Black Bastards, which tells you what he thinks he is making. Thirty-four user ratings on Album of the Year and no critic score at all: the room has not arrived.",
+          "verdict": "PENDING",
+          "slug": "mike-shabb-sewaside-iv"
+        },
+        {
+          "rank": 3,
+          "name": "Atelier Pieters — Atelier 1 Founders' Series",
+          "domain": "CRAFT",
+          "domain_detail": "CRAFT · WATCHMAKING",
+          "url": "https://monochrome-watches.com/atelier-pieters-atelier-1-founders-series-inaugural-watch-new-indie-watch-brand-tourbillon-dual-planetary-power-reserve-price/",
+          "image": "https://monochrome-watches.com/app/uploads/2026/07/atelier-pieters-Atelier-1-Founders-Series-inaugural-watch-new-indie-watch-brand-tourbillon-dual-planetary-power-reserve-2.jpg",
+          "score": 8.1,
+          "tier": "CROWN",
+          "heat": 17,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Material Culture — the same object-with-a-lineage logic, at roughly a thousand times the ticket",
+          "read": "Two watchmakers, one bench in Les Hauts-Geneveys, four finished watches a year. Maarten Pieters ran complications at Omega and directed WOSTEP for fifteen years; Jessica Pieters taught the finishing there. Their first watch is a platinum tourbillon at CHF 148,500, eight pieces per dial color, first delivery November 2026. The capacity is published rather than implied.",
+          "verdict": "PENDING",
+          "slug": "atelier-pieters-atelier-1-founders-series"
+        },
+        {
+          "rank": 4,
+          "name": "Rampage Sound — Colville Terrace",
+          "domain": "SCENE",
+          "domain_detail": "SCENE · SOUND SYSTEM",
+          "url": "https://www.mneemo.com/blog/notting-hill-carnival-2026-sound-systems/",
+          "image": "https://www.mneemo.com/assets/blog/notting-hill-carnival-2026-sound-systems/hero.jpg?v=8621f4fc",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 41,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Corteiz — the same West London instinct for keeping distribution out of other people's hands; Rampage has been doing it since 1993",
+          "read": "Colville Terrace fills from midday and holds around twenty thousand people by mid-afternoon, which makes Rampage the largest static sound at Notting Hill Carnival and one of the biggest free rooms in Britain. Mike Anthony started it in 1993. DJ Mag reported in 2023 that the crew has put roughly £1.8m into that corner across thirty years, at a running cost of £80,000 to £90,000 a year, to play for nothing; thirty-five other static systems are doing some version of the same arithmetic on August 30 and 31. None of this was in the original festival. Leslie Palmer brought Jamaican-style static sounds in as Carnival's fifth discipline in 1973, and by 1976 the event drew over 150,000 people. The 60th anniversary edition carries an additional £4.66m from City Hall, announced March 27, against an event that returns an estimated £400m a year to London. The gap is that none of that money reaches the sounds. It buys the safety and licensing conditions in which they are permitted to exist, and a license can be pulled after one incident near your stack. Systems run 12pm to 7pm both days, free.",
+          "verdict": "PENDING",
+          "slug": "rampage-sound-colville-terrace"
+        },
+        {
+          "rank": 5,
+          "name": "Devon Turnbull — HiFi Pursuit Listening Room Dream No. 3",
+          "domain": "DESIGN",
+          "domain_detail": "DESIGN · AUDIO",
+          "url": "https://www.si.edu/exhibitions/devon-turnbull-hifi-pursuit-listening-room-dream-no-3:event-exhib-6803",
+          "image": "https://www.si.edu/sites/default/files/exhibitions/Devon-Turnbull-Hifi-Michael-Lavorgna.jpg",
+          "score": 7.0,
+          "tier": "FLAME",
+          "heat": 70,
+          "direction": "▮",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "JJJJound — taste sold as an object and restraint charged as the premium; Turnbull's version at least makes a sound",
+          "read": "For eight months a handmade horn system stood in the Carnegie mansion on East 91st Street and did the thing museums rarely permit, which is ask people to sit down and hear a record end to end. The room closed August 16 after opening in December 2025, the third in a series that began at Lisson Gallery in 2022 and passed through London and SFMOMA. Turnbull builds these properly: the horns are his, the valve amplifiers are his, and the engineering descends directly from Jamaican sound system practice. The attention has concentrated on the room rather than on the tradition standing behind it, and the rooms keep landing in museums, hotel lobbies and Supreme stores. Come back when one of them strings up on a corner and charges nobody.",
+          "verdict": "PENDING",
+          "slug": "devon-turnbull-hifi-pursuit-listening-room-dream-no-3"
+        }
+      ]
     }
   ],
   "holding": [
@@ -8619,6 +8734,36 @@
       "name": "LRNCE",
       "first_issue": "2026-08-22T12:15",
       "first_date": "2026-08-22",
+      "resurfaced": []
+    },
+    {
+      "name": "Zanele Muholi — Kanye Nawe",
+      "first_issue": "2026-08-23-1015",
+      "first_date": "2026-08-23",
+      "resurfaced": []
+    },
+    {
+      "name": "Mike Shabb — Sewaside IV",
+      "first_issue": "2026-08-23-1015",
+      "first_date": "2026-08-23",
+      "resurfaced": []
+    },
+    {
+      "name": "Atelier Pieters — Atelier 1 Founders' Series",
+      "first_issue": "2026-08-23-1015",
+      "first_date": "2026-08-23",
+      "resurfaced": []
+    },
+    {
+      "name": "Rampage Sound — Colville Terrace",
+      "first_issue": "2026-08-23-1015",
+      "first_date": "2026-08-23",
+      "resurfaced": []
+    },
+    {
+      "name": "Devon Turnbull — HiFi Pursuit Listening Room Dream No. 3",
+      "first_issue": "2026-08-23-1015",
+      "first_date": "2026-08-23",
       "resurfaced": []
     }
   ]
