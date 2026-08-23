@@ -1,6 +1,6 @@
 {
  "note": "misses = auto-resolution failed and stops retrying after 3. review = still on the mark but has a source. suspects = filled, but the art looks like a template graphic. Both want a human eye.",
- "updated": "2026-08-22",
+ "updated": "2026-08-23",
  "review": [
   {
    "issue": 1,
@@ -122,81 +122,39 @@
    "reason": "not attempted yet"
   },
   {
-   "issue": 16,
-   "name": "Colson Whitehead — Cool Machine",
-   "slug": "colson-whitehead-cool-machine",
-   "url": "https://www.colsonwhitehead.com/",
-   "reason": "not attempted yet"
-  },
-  {
    "issue": 18,
    "name": "Girl Talk, Michael Christmas & Chris Crack -- Don't Come To My House Sharing Your Location",
    "slug": "girl-talk-michael-christmas-and-chris-crack-don-t-come-to-my-hou",
    "url": "https://rateyourmusic.com/release/ep/girl-talk-michael-christmas-chris-crack/dont-come-to-my-house-sharing-your-location/",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 20,
-   "name": "Haile Gerima — Black Lions – Roman Wolves",
-   "slug": "haile-gerima-black-lions-roman-wolves",
-   "url": "https://www.berlinale.de/en/2026/programme/202616228.html",
-   "reason": "not attempted yet"
+   "reason": "page:HTTPError"
   },
   {
    "issue": 20,
    "name": "Fadekemi Ogunsanya — We Are Not Lying, Your Language is Not Enough",
    "slug": "fadekemi-ogunsanya-we-are-not-lying-your-language-is-not-enough",
    "url": "https://craftprize.loewe.com/en/craftprize2026",
-   "reason": "not attempted yet"
+   "reason": "fetch:InvalidURL"
   },
   {
    "issue": 21,
    "name": "The AI Label",
    "slug": "the-ai-label",
    "url": "https://www.musicbusinessworldwide.com/record-industry-proposes-ai-labeling-system-for-streaming-platforms/",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 23,
-   "name": "YOSHITA 1967 — Anil Padia",
-   "slug": "yoshita-1967-anil-padia",
-   "url": "https://www.lvmh.com/en/news-lvmh/2026-lvmh-prize-for-young-fashion-designers-13th-edition",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 24,
-   "name": "Paul Kodjo — Photoromance",
-   "slug": "paul-kodjo-photoromance",
-   "url": "https://www.rencontres-arles.com/en/expositions/2026/paul-kodjo",
-   "reason": "not attempted yet"
+   "reason": "only generic art on page (1 rejected)"
   },
   {
    "issue": 24,
    "name": "Suno Spark",
    "slug": "suno-spark",
    "url": "https://celebrityaccess.com/2026/06/27/suno-launches-spark-program-to-help-independent-artists/",
-   "reason": "not attempted yet"
+   "reason": "tiny:673b"
   },
   {
    "issue": 26,
    "name": "The Natural-Fibre Turn",
    "slug": "the-natural-fibre-turn",
    "url": "https://www.businessoffashion.com/articles/sustainability/why-consumers-ditching-polyester-for-natural-fibres/",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 27,
-   "name": "The Collab Ledger — 2026's Logo Swaps",
-   "slug": "the-collab-ledger-2026-s-logo-swaps",
-   "url": "https://www.complex.com/style/a/mike-destefano/best-streetwear-collabs-2026",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 34,
-   "name": "San Francisco Art Book Fair 2026",
-   "slug": "san-francisco-art-book-fair-2026",
-   "url": "https://sfartbookfair.com/",
-   "reason": "not attempted yet"
+   "reason": "page:HTTPError"
   },
   {
    "issue": 40,
@@ -430,7 +388,27 @@
    "reason": "no candidate on page"
   },
   "kokrobitey-institute-what-hands-remember": {
-   "attempts": 2,
+   "attempts": 3,
+   "reason": "page:HTTPError"
+  },
+  "the-natural-fibre-turn": {
+   "attempts": 1,
+   "reason": "page:HTTPError"
+  },
+  "suno-spark": {
+   "attempts": 1,
+   "reason": "tiny:673b"
+  },
+  "the-ai-label": {
+   "attempts": 1,
+   "reason": "only generic art on page (1 rejected)"
+  },
+  "fadekemi-ogunsanya-we-are-not-lying-your-language-is-not-enough": {
+   "attempts": 1,
+   "reason": "fetch:InvalidURL"
+  },
+  "girl-talk-michael-christmas-and-chris-crack-don-t-come-to-my-hou": {
+   "attempts": 1,
    "reason": "page:HTTPError"
   }
  }
