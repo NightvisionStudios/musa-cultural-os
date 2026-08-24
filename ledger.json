@@ -6798,6 +6798,121 @@
           "slug": "devon-turnbull-hifi-pursuit-listening-room-dream-no-3"
         }
       ]
+    },
+    {
+      "issue": 66,
+      "issue_id": "2026-08-24-1320",
+      "date": "2026-08-24",
+      "time": "13:20 ET",
+      "forecast": "Hanover, Oran, Boston: a former bathhouse, a CD shop with a scrolling LED banner, a gallery staged as a wedding. The work leading this week arrives knowing exactly where it came from, and it says so in the room's own language. Address over abstraction.",
+      "come_up": [
+        "The source language left in: Hausa over the images, Luganda on the wall label, Kinyarwanda inside the French",
+        "The local shop catalog treated as a repertoire rather than a curiosity",
+        "Exhibitions that premiere before they survey — new work first, back catalog second"
+      ],
+      "decline": [
+        "The calendar slot announced a year before the collection exists",
+        "Heritage used as an adjective instead of as a material",
+        "Prizes priced ahead of the pictures that won them"
+      ],
+      "climate": "Address over abstraction. Four of the five entries can be traced to a street, a shop, a harbour or a camp, and each keeps the language of that place inside the work instead of translating it at the door. Karimah Ashadu leaves her subjects speaking Hausa over footage shot on land reclaimed from the Atlantic within the last few years. Hive Mind's gasba compilation is drawn from one Oran label's own thirty-year catalog rather than from a genre survey. Leilah Babirye titles her sculptures in Luganda and casts them as a wedding party. Gaël Faye writes Rwanda in French and scores it in rap. The counter-read is the entry that has heat but no object yet: a Paris runway slot, sixty looks promised, nothing shown until September 28.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Karimah Ashadu — Crystalline",
+          "domain": "FILM",
+          "domain_detail": "FILM · ARTIST FILM",
+          "url": "https://kestnergesellschaft.de/en/exhibition/112",
+          "image": "https://kestnergesellschaft.de/wf/doc/kestner_gesellschaft_1539DD2-4DD26-2-30_1001.jpg?260611130050",
+          "score": 8.6,
+          "tier": "CROWN",
+          "heat": 24,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "City of God — the nearest film on the 50, and the same instinct: informal economy, young men, camera close enough to hear them breathe",
+          "read": "A found copper water tank, drawn on in one sitting with a line portrait of a man from the film, is the smallest object in Crystalline and the one that explains it. Ashadu calls it Auric Field. It stood outside an informal car wash in Oniru, Lagos, on a strip of land reclaimed from the Atlantic within the last few years, and it does the same work in a gallery that it did in the yard: hold water, mark labor, gather value by being looked at differently. The exhibition is her first institutional solo in Germany. It opens at Kestner Gesellschaft on August 28 and premieres WAVES (2026) in the domed hall of the Goseriedebad, a former public bathhouse. The film follows men washing cars between the lot and the ocean while their voices, in Hausa, account for what brought them south. Eight life-size photographs of the same men, wearing counterfeit designer clothing, have been worked with saltwater, ink, pigment and bleach; as the water evaporates, salt crystals grow across the faces. She took the Silver Lion at Venice in 2024, and Chicago follows in September with shows at the Renaissance Society and the Art Institute. The gap is that the room has priced the prizes and not yet the pictures.",
+          "verdict": "PENDING",
+          "slug": "karimah-ashadu-crystalline"
+        },
+        {
+          "rank": 2,
+          "name": "My Heart is Dust Before Him: 21st Century Gasba from Algeria",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · ALGERIAN GASBA",
+          "url": "https://daily.bandcamp.com/features/my-heart-is-dust-before-him-21st-century-gasba-from-algeria-feature",
+          "image": "https://f4.bcbits.com/img/0046677460_171.jpg",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 16,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "CD Masterizzato — nearest thing on the 50 to this kind of crate-level curation; the difference is that this one went to the shop",
+          "read": "On a backstreet in central Oran there is a store with a yellow sign reading Edition Ahlem and a scrolling LED banner that says you are welcome. Abdelkader Haci has run the label out of it since 1992, writing and composing for his own artists as well as releasing them, while the rest of the Algerian industry chased pop rai. Hive Mind's Marc Teare worked through three decades of that catalog and pulled ten tracks. Gasba takes its name from the Berber reed flute, older than the country; here it cuts through drum machines and Auto-Tune laid on thick enough to make the vocals sound synthetic. Oueld Melal plays across most of it. Vinyl only, and the flute wins every argument on the record.",
+          "verdict": "PENDING",
+          "slug": "my-heart-is-dust-before-him-21st-century-gasba-from-algeria"
+        },
+        {
+          "rank": 3,
+          "name": "Jacaranda — Gaël Faye",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · FRANCOPHONE FICTION",
+          "url": "https://www.penguinrandomhouse.com/books/797169/jacaranda-by-gael-faye/",
+          "image": "https://images1.penguinrandomhouse.com/smedia/9780593979617",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 63,
+          "direction": "up",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Noname Book Club — the same lane, where the reading list and the record collection are kept by the same person",
+          "read": "The most useful thing to know about Jacaranda is that its author has close to a million monthly listeners on Spotify. Gaël Faye is a rapper first by chronology, and the novel moves like one: short takes, a returning refrain, memory handled as a sample rather than a flashback. Milan is twelve and French when a Rwandan cousin arrives with a bandaged head, and the book spends four generations working out what the silence in his mother's house was protecting. It won the Prix Renaudot in 2024 and the Choix Goncourt in twenty-eight countries. Sarah Ardizzone's English lands from Hogarth on August 25 at 272 pages; Faye's own 2022 album Mauve Jacaranda is the other half of the same manuscript.",
+          "verdict": "PENDING",
+          "slug": "jacaranda-gael-faye"
+        },
+        {
+          "rank": 4,
+          "name": "Leilah Babirye — Embaga ya Naki ne Naki",
+          "domain": "ART",
+          "domain_detail": "ART · CERAMIC SCULPTURE",
+          "url": "https://www.icaboston.org/exhibitions/leilah-babirye/",
+          "image": "https://www.icaboston.org/wp-content/uploads/2025/05/Exhibition_Leilah-Babirye_Tuli-Mukwano-We-Are-in-Love.jpg",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 39,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Lauren Halsey — the 50's other sculptor building a community's iconography out of salvage",
+          "read": "Nothing here is polished. Babirye builds heads from carved wood and glazed clay, then dresses them in bicycle chain and inner tube. For the ICA she has cast an entire wedding party: bride, groom, ring bearer, flower girl, each given a role, watched over by charred-wood aunties and ancestors. Opens August 27, runs to January 18. Her first book comes with it.",
+          "verdict": "PENDING",
+          "slug": "leilah-babirye-embaga-ya-naki-ne-naki"
+        },
+        {
+          "rank": 5,
+          "name": "MaXhosa Africa — the Paris runway slot",
+          "domain": "FASHION",
+          "domain_detail": "FASHION · KNITWEAR",
+          "url": "https://www.timeslive.co.za/news/2026-07-25-maxhosa-africa-lands-official-paris-fashion-week-runway-show/",
+          "image": "https://www.timeslive.co.za/resizer/v2/I7Y6SOULINAD3DJ7ECGQYCANLA.jpg?smart=true&auth=7860426417c561555b58187485304172a5ce83162777a5e430ccd280beccbc43&width=1200&height=630",
+          "score": 6.4,
+          "tier": "TORCH",
+          "heat": 77,
+          "direction": "up",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "Denim Tears — thesis-driven diasporic clothing, and the standard MaXhosa's own catalog can already meet",
+          "read": "Sixteen years of knitwear built on Xhosa beadwork geometry is a real body of work, and Laduma Ngxokolo has carried it from a graduation project for amakrwala to Beyoncé's wardrobe without diluting the grammar. So the Fédération de la Haute Couture et de la Mode getting there is earned. It is also, at this moment, a calendar entry and nothing else. MaXhosa has the opening slot of the spring/summer 2027 women's ready-to-wear season on September 28: fifty minutes, sixty looks, and a rand losing ground to the euro while the set gets budgeted. Everything currently loud about this is the booking. Come back on September 28 and count how many of the sixty could hang in a Paris store the following Monday.",
+          "verdict": "PENDING",
+          "slug": "maxhosa-africa-the-paris-runway-slot"
+        }
+      ]
     }
   ],
   "holding": [
@@ -8764,6 +8879,36 @@
       "name": "Devon Turnbull — HiFi Pursuit Listening Room Dream No. 3",
       "first_issue": "2026-08-23-1015",
       "first_date": "2026-08-23",
+      "resurfaced": []
+    },
+    {
+      "name": "Karimah Ashadu — Crystalline",
+      "first_issue": "2026-08-24-1320",
+      "first_date": "2026-08-24",
+      "resurfaced": []
+    },
+    {
+      "name": "My Heart is Dust Before Him: 21st Century Gasba from Algeria",
+      "first_issue": "2026-08-24-1320",
+      "first_date": "2026-08-24",
+      "resurfaced": []
+    },
+    {
+      "name": "Jacaranda — Gaël Faye",
+      "first_issue": "2026-08-24-1320",
+      "first_date": "2026-08-24",
+      "resurfaced": []
+    },
+    {
+      "name": "Leilah Babirye — Embaga ya Naki ne Naki",
+      "first_issue": "2026-08-24-1320",
+      "first_date": "2026-08-24",
+      "resurfaced": []
+    },
+    {
+      "name": "MaXhosa Africa — the Paris runway slot",
+      "first_issue": "2026-08-24-1320",
+      "first_date": "2026-08-24",
       "resurfaced": []
     }
   ]
