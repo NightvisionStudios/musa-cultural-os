@@ -1,6 +1,6 @@
 {
  "note": "misses = auto-resolution failed and stops retrying after 3. review = still on the mark but has a source. suspects = filled, but the art looks like a template graphic. Both want a human eye.",
- "updated": "2026-08-23",
+ "updated": "2026-08-24",
  "review": [
   {
    "issue": 1,
@@ -73,53 +73,32 @@
    "reason": "not attempted yet"
   },
   {
-   "issue": 11,
-   "name": "Firelei Báez",
-   "slug": "firelei-baez",
-   "url": "https://visit.mcachicago.org/exhibitions/firelei-baez-2/",
-   "reason": "not attempted yet"
-  },
-  {
    "issue": 12,
    "name": "Wales Bonner × adidas — On Pitch SS26",
    "slug": "wales-bonner-adidas-on-pitch-ss26",
    "url": "https://walesbonner.com/collections/adidas-originals-by-wales-bonner",
-   "reason": "not attempted yet"
+   "reason": "no candidate on page"
   },
   {
    "issue": 12,
    "name": "The Chi — Final Season",
    "slug": "the-chi-final-season",
    "url": "https://www.paramountplus.com/shows/the-chi/",
-   "reason": "not attempted yet"
+   "reason": "page:HTTPError"
   },
   {
    "issue": 13,
    "name": "Is God Is",
    "slug": "is-god-is",
    "url": "https://en.wikipedia.org/wiki/Is_God_Is_(film)",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 13,
-   "name": "Melvin Gibbs — How Black Music Took Over the World",
-   "slug": "melvin-gibbs-how-black-music-took-over-the-world",
-   "url": "https://www.hachettebookgroup.com/titles/melvin-gibbs/how-black-music-took-over-the-world/9781541603240/",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 15,
-   "name": "Donald Locke — Resistant Forms",
-   "slug": "donald-locke-resistant-forms",
-   "url": "https://camdenartcentre.org/whats-on/resistant-forms",
-   "reason": "not attempted yet"
+   "reason": "undecodable"
   },
   {
    "issue": 15,
    "name": "Satluj — Honey Trehan",
    "slug": "satluj-honey-trehan",
    "url": "https://www.zee5.com/",
-   "reason": "not attempted yet"
+   "reason": "page:HTTPError"
   },
   {
    "issue": 18,
@@ -392,22 +371,38 @@
    "reason": "page:HTTPError"
   },
   "the-natural-fibre-turn": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "page:HTTPError"
   },
   "suno-spark": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "tiny:673b"
   },
   "the-ai-label": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "only generic art on page (1 rejected)"
   },
   "fadekemi-ogunsanya-we-are-not-lying-your-language-is-not-enough": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "fetch:InvalidURL"
   },
   "girl-talk-michael-christmas-and-chris-crack-don-t-come-to-my-hou": {
+   "attempts": 2,
+   "reason": "page:HTTPError"
+  },
+  "satluj-honey-trehan": {
+   "attempts": 1,
+   "reason": "page:HTTPError"
+  },
+  "is-god-is": {
+   "attempts": 1,
+   "reason": "undecodable"
+  },
+  "wales-bonner-adidas-on-pitch-ss26": {
+   "attempts": 1,
+   "reason": "no candidate on page"
+  },
+  "the-chi-final-season": {
    "attempts": 1,
    "reason": "page:HTTPError"
   }
