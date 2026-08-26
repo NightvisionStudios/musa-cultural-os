@@ -6913,6 +6913,123 @@
           "slug": "maxhosa-africa-the-paris-runway-slot"
         }
       ]
+    },
+    {
+      "issue": 67,
+      "issue_id": "2026-08-26-2340",
+      "date": "2026-08-26",
+      "time": "23:40 ET",
+      "forecast": "Brooklyn, Kuwait City, Queens: a photographer who casts on the train, a Gulf quarterly that prints sound, a rapper who cut an album down to handclaps. What leads this week was built by the people who also decide who gets in. Custody over exposure.",
+      "come_up": [
+        "The maker who also keeps the door — curator and practitioner in one body",
+        "Subtraction as a flex: the record stripped to almost nothing and still legible",
+        "Licensing terms treated as a design decision rather than a legal afterthought"
+      ],
+      "decline": [
+        "The scene documented by everyone except the people in it",
+        "Platform terms that take the majority cut and call it distribution",
+        "Heat sourced from a co-sign rather than from the work"
+      ],
+      "climate": "Custody over exposure. Five entries that each hold the keys to their own room — the photographer who casts her own subjects, the party that became a curatorial post, the label that presses its own vinyl, the magazine that owns its region's record, the foundry that rewrote the royalty split. Nobody here is waiting to be let in.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Deana Lawson",
+          "domain": "ART",
+          "domain_detail": "ART · PHOTOGRAPHY",
+          "url": "https://gagosian.com/artists/deana-lawson/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 8.8,
+          "tier": "CROWN",
+          "heat": 58,
+          "direction": "up",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Lauren Halsey — the nearest on the 50, and the same method: the neighborhood supplies the material, the artist supplies the frame, neither is a metaphor for the other",
+          "read": "Lawson casts strangers. She finds them on the train, at a restaurant, at a garage sale, then builds the room around them — decor, lighting, pose all constructed, the resulting picture somewhere between a family album and a staged tableau. It is the least extractive method in a genre built on extraction, because the subject is a collaborator with a say in the frame. Born in Rochester in 1979, she was turned down by Parsons for fashion design and went to Penn State for photography instead; her adviser at RISD was Sarah Charlesworth. She took the Hugo Boss Prize in 2020, the first photographer ever to win it, and the Deutsche Börse in 2022. The survey ran ICA Boston to MoMA PS1 to the High, and the Bourse de Commerce showed her in Paris in 2025. She lives between Los Angeles and Brooklyn and teaches photography at Princeton. The room has fully caught up here — the collections are set, the prizes are in — which is why this is a confirmation and not a find.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "deana-lawson"
+        },
+        {
+          "rank": 2,
+          "name": "Venus X",
+          "domain": "SCENE",
+          "domain_detail": "SCENE · NIGHTLIFE",
+          "url": "https://www.wmagazine.com/story/venus-x-ghe20g0th1k-interview",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 8.5,
+          "tier": "CROWN",
+          "heat": 31,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Free Game — the same lane on the 50: the room where the knowledge circulates is the product, not the flyer",
+          "read": "Jazmin Venus Soto built GHE20G0TH1K on a ten dollar cover and a music policy that cut between dark wave, Chicago footwork, remixed Dirty South rap and girl-group records inside the same hour. The party ran out of a former banquet hall in Greenpoint and the door price was the thesis: a room for marginalized voices that those voices could actually afford to enter. What makes her worth the slot in 2026 is the second act — she curates Warm Up at MoMA PS1, which means the person who made the underground is now the person allocating institutional stage time, and she has kept those two jobs from contradicting each other. Her own description of the network is the useful part: not geographic, a floating thing held together over WhatsApp and SoundCloud, people in different cities playing each other's records and knowing the other exists. That is the structure most scenes now copy without crediting.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "venus-x"
+        },
+        {
+          "rank": 3,
+          "name": "ELUCID — I Guess U Had to Be There",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · UNDERGROUND RAP",
+          "url": "https://backwoodzstudioz.com/pages/elucid",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 22,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Chris Crack — the nearest on the 50: prolific, self-directed, allergic to the version of the song that would travel further",
+          "read": "The lead single is the argument. \"First Light\" is handclaps and almost no instrumentation, which leaves nothing between the listener and the voice — a subtraction most rappers cannot survive. The album runs thirty-two minutes, produced entirely by the Swiss beatmaker Sebb Bash, and came out March 13 on Backwoodz Studioz with Mattie, Estee Nack, Shabaka Hutchings, billy woods and Breeze Brewin passing through. It scored 80 on Metacritic and a nine from Clash. ELUCID was born in Queens, raised on Long Island, and has spent a decade as half of Armand Hammer alongside woods; the deluxe vinyl carries the 48 Hrs EP as a second disc. He toured solo in spring and is out with Armand Hammer this fall. Backwoodz remains the model here — an artist-run label pressing its own vinyl, which is why the catalog holds its value while the co-sign economy churns.",
+          "verdict": "PENDING",
+          "slug": "elucid-i-guess-u-had-to-be-there"
+        },
+        {
+          "rank": 4,
+          "name": "Sonduke",
+          "domain": "EDITORIAL",
+          "domain_detail": "EDITORIAL · INDEPENDENT PUBLISHING",
+          "url": "https://pronthego.com/pages/blog/independent-publishing-in-the-arts-and-timeless-magazines-2026",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.9,
+          "tier": "FLAME",
+          "heat": 12,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Nataal — the same job on the 50: a region writing its own record instead of waiting to be covered",
+          "read": "Founded in Kuwait in 2021 by Hamad Al Mujeem and Malak Al Suwaihel, Sonduke is an independent magazine and digital platform covering experimental art, sound and culture out of the Gulf and the wider SWANA region. The reason it matters is custody. Gulf experimental music has spent two decades being described by people flying in for a biennial, and Sonduke is the version where the documentation is done by people who live inside the scene and will still be there when the fair leaves town. Sound is treated as a primary subject rather than a lifestyle column, which is rare in art publishing anywhere. Low heat outside its region is the whole opportunity: this is the reference the next wave of Gulf writing gets built on top of, and almost nobody outside has opened it yet.",
+          "verdict": "PENDING",
+          "slug": "sonduke"
+        },
+        {
+          "rank": 5,
+          "name": "fonts.xyz",
+          "domain": "DESIGN",
+          "domain_detail": "DESIGN · TYPE",
+          "url": "https://www.creativeboom.com/resources/the-best-new-typefaces-for-july-2026/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.5,
+          "tier": "FLAME",
+          "heat": 44,
+          "direction": "up",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "JJJJound — the nearest on the 50: a taste operation that got to set its own terms instead of renting someone else's shelf",
+          "read": "NaN, the foundry behind custom type for Deezer, Wise and Channel 4, launched fonts.xyz as a platform for independent foundries with terms that read like a position paper: an eighty percent royalty cut to the designer, one all-inclusive license instead of the usual tiered maze, an eighty percent student discount, and a one percent solidarity tax. Font retail has been a platform monopoly for years and the standard royalty split is the reason most independent type designers cannot live on type. Setting the number at eighty is the entire argument. The counter-read is that the room is loud about this right now and the model is unproven at scale — a generous split only matters if the catalog gets deep enough to earn from. Worth watching whether the foundries actually move, not whether designers say they should.",
+          "verdict": "PENDING",
+          "slug": "fonts-xyz"
+        }
+      ]
     }
   ],
   "holding": [
@@ -8909,6 +9026,36 @@
       "name": "MaXhosa Africa — the Paris runway slot",
       "first_issue": "2026-08-24-1320",
       "first_date": "2026-08-24",
+      "resurfaced": []
+    },
+    {
+      "name": "Deana Lawson",
+      "first_issue": "2026-08-26-2340",
+      "first_date": "2026-08-26",
+      "resurfaced": []
+    },
+    {
+      "name": "Venus X",
+      "first_issue": "2026-08-26-2340",
+      "first_date": "2026-08-26",
+      "resurfaced": []
+    },
+    {
+      "name": "ELUCID — I Guess U Had to Be There",
+      "first_issue": "2026-08-26-2340",
+      "first_date": "2026-08-26",
+      "resurfaced": []
+    },
+    {
+      "name": "Sonduke",
+      "first_issue": "2026-08-26-2340",
+      "first_date": "2026-08-26",
+      "resurfaced": []
+    },
+    {
+      "name": "fonts.xyz",
+      "first_issue": "2026-08-26-2340",
+      "first_date": "2026-08-26",
       "resurfaced": []
     }
   ]
