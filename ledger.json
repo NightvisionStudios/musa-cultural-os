@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-08-20",
+    "updated": "2026-08-28",
     "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL.",
     "approved_repeats": [
       {
@@ -7030,6 +7030,121 @@
           "slug": "fonts-xyz"
         }
       ]
+    },
+    {
+      "issue": 68,
+      "issue_id": "2026-08-28-1125",
+      "date": "2026-08-28",
+      "time": "11:25 ET",
+      "forecast": "What stopped working this week was the round number. Not one leader on this board describes itself in millions, in reach, or in anything you would put on a deck. A hundred records pressed. Ten routes added. Three names on a roster. Twenty thousand dollars for a first book. Countable over scalable: the operators leading right now are the ones who can tell you the exact size of the thing they made.",
+      "come_up": [
+        "The exact figure as a form of authority: pressing 200, not \"limited edition\"",
+        "Institutions renaming and repricing themselves on their own terms",
+        "Funding rails built inside a scene rather than flown into it"
+      ],
+      "decline": [
+        "Reach metrics standing in for a description of the work",
+        "Grant cycles arriving faster than the catalog they mean to fund",
+        "The festival sidebar treated as a consolation rather than where discovery sits"
+      ],
+      "climate": "Countable over scalable. Five operators who can name the exact size of what they made: a press run, a prize purse, a roster, a route list, a single film in a sidebar. The number is small enough to check, which is the reason it carries.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "Fused Arrow Records",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · UNDERGROUND RAP",
+          "url": "https://fusedarrow.bandcamp.com/",
+          "image": "https://f4.bcbits.com/img/0046857128_171.jpg",
+          "score": 8.5,
+          "tier": "CROWN",
+          "heat": 21,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Chris Crack — same lane on the 50 and the same instinct that the catalog is the argument; Fused Arrow is the infrastructure version of it",
+          "read": "Between 100 and 300 copies. That is the entire economics of Fused Arrow, the New York label Joe Fusaro runs alongside a corporate operations job: press a small vinyl run, recoup the cost, put money in the artist's pocket, bank the rest for the next record. Fusaro produces as Steel Tipped Dove and has engineered for billy woods, milo, Fat Tony, SKECH185 and Fatboi Sharif, which is how a roster fills itself without a scouting budget. The label name is a play on the pronunciation of his surname. What makes it worth watching is a refusal stated plainly: as a label he has no interest in streaming, treating Spotify as a business card rather than a distribution channel, because fractions of a penny per play do not sustain a rapper. The day job funds the presses. The operations training produces a detailed spreadsheet for every release. The gap is that the underground has argued for a decade about how artists actually get paid, and this is one of the few answers small enough to run. Bandcamp Daily profiled it on August 21. Watch whether the run sizes stay small once the audience stops being small.",
+          "verdict": "PENDING",
+          "slug": "fused-arrow-records"
+        },
+        {
+          "rank": 2,
+          "name": "The Zora Awards — Hurston/Wright Foundation",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · PRIZES",
+          "url": "https://www.hurstonwright.org/awards/legacy-awards/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 8.2,
+          "tier": "CROWN",
+          "heat": 44,
+          "direction": "up",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Noname Book Club — the nearest on the 50, and the same premise: Black readers and writers holding the apparatus that decides what gets read",
+          "read": "The prize changed its name and raised its money in the same year, which is the rarer half of that pair. The Hurston/Wright Foundation has renamed its genre awards for fiction, nonfiction, poetry and debut fiction as The Zoras, in tribute to Zora Neale Hurston, and an anonymous donation has put $20,000 behind the debut fiction win. Finalists were announced in Washington on August 14; the 25th annual Legacy Awards gala runs October 9 at the Martin Luther King Jr. Memorial Library. Introduced in 2001, this was the first national award presented to Black writers by a national organization of Black writers, and it has stayed under that ownership for a quarter century. Naming a debut prize is cheap. Funding one at twenty thousand is the part that changes a writer's year. The room agreeing here is the point rather than the problem.",
+          "verdict": "PENDING",
+          "slug": "the-zora-awards-hurston-wright-foundation"
+        },
+        {
+          "rank": 3,
+          "name": "La Maison du Vent — Auguste Bernard Kouemo Yanghu",
+          "domain": "FILM",
+          "domain_detail": "FILM · FESTIVAL",
+          "url": "https://afrocritik.com/african-filmmakerstitles-feature-83rd-venice-international-film-festival-lineup/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.9,
+          "tier": "FLAME",
+          "heat": 8,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "City of God — nearest on the 50 for the register: a household rearranged from the inside, no explanatory frame bolted on for a foreign audience",
+          "read": "An eighty-year-old woman forms a bond with a young neighbour, and a whole household rearranges around it. That is the premise of Cameroonian director Auguste Bernard Kouemo Yanghu's La Maison du Vent, which plays Orizzonti at the 83rd Venice film festival, September 2 to 12. Orizzonti is the section for debuts and new aesthetic trends, which in practice is where the discoveries sit while the press pack works the Golden Lion titles. The rest of the African selection sits outside the main competition too: Abderrahmane Sissako is in Venice Immersive with Artou, a Mauritanian family carrying out a father's wish to be buried beside his own, and Flora Gomes's 1991 Udju Azul di Yonta screens in Venice Classics. Three placements, none in competition. Come back after September 12 and see which of them actually traveled.",
+          "verdict": "PENDING",
+          "slug": "la-maison-du-vent-auguste-bernard-kouemo-yanghu"
+        },
+        {
+          "rank": 4,
+          "name": "Set De Flo — KILOBAUUD",
+          "domain": "SCENE",
+          "domain_detail": "SCENE · NIGHTLIFE",
+          "url": "https://setdeflo.bandcamp.com/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.6,
+          "tier": "FLAME",
+          "heat": 17,
+          "direction": "up",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Overstory NYC — closest on the 50 for a room whose programming is the product, and the distance is worth stating: the 50 carries no New Orleans dance entry at all",
+          "read": "New Orleans house is not a footnote to bounce. Set De Flo is the underground party and the record label KILOBAUUD built for it, three artists deep and run by the same hands that play it. He recorded as Lil Jodeci for a decade before the name change. Bandcamp Daily ran the scene report this morning, August 28. The party came before the catalog, which is the correct order and the reason the catalog sounds like a room.",
+          "verdict": "PENDING",
+          "slug": "set-de-flo-kilobauud"
+        },
+        {
+          "rank": 5,
+          "name": "Jiwe IO",
+          "domain": "GAMES",
+          "domain_detail": "GAMES · PLATFORMS",
+          "url": "https://jiwe.io/games",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 6.8,
+          "tier": "TORCH",
+          "heat": 51,
+          "direction": "up",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "Moonshots — nearest on the 50 in the builder lane, and the useful comparison: tooling judged by what ships through it, not by what it promises",
+          "read": "Jiwe IO built the thing African developers had been asking for: a crowdfunding rail owned inside the scene, where a studio raises against a stated milestone instead of a vibe. Its first live campaign was Zawadi Games' Ma3 Simulator, a Nairobi matatu driving game, raising for two more buses and ten more routes. That specificity is the good part and it is rare. The timing is the problem, and it is not Jiwe's fault. Google Play's $1m Indie Games Fund for Africa closed applications on July 31. Supercell's first Developer Grants cohort closed on August 9, offering $20,000 to $200,000 equity-free with money landing in December. The capital, the platforms and the conference calendar have all arrived ahead of the shipped catalog they exist to fund. Come back in December, when Supercell names its three to five studios, and count what is actually on the shelf.",
+          "verdict": "PENDING",
+          "slug": "jiwe-io"
+        }
+      ]
     }
   ],
   "holding": [
@@ -9056,6 +9171,36 @@
       "name": "fonts.xyz",
       "first_issue": "2026-08-26-2340",
       "first_date": "2026-08-26",
+      "resurfaced": []
+    },
+    {
+      "name": "Fused Arrow Records",
+      "first_issue": "2026-08-28-1125",
+      "first_date": "2026-08-28",
+      "resurfaced": []
+    },
+    {
+      "name": "The Zora Awards — Hurston/Wright Foundation",
+      "first_issue": "2026-08-28-1125",
+      "first_date": "2026-08-28",
+      "resurfaced": []
+    },
+    {
+      "name": "La Maison du Vent — Auguste Bernard Kouemo Yanghu",
+      "first_issue": "2026-08-28-1125",
+      "first_date": "2026-08-28",
+      "resurfaced": []
+    },
+    {
+      "name": "Set De Flo — KILOBAUUD",
+      "first_issue": "2026-08-28-1125",
+      "first_date": "2026-08-28",
+      "resurfaced": []
+    },
+    {
+      "name": "Jiwe IO",
+      "first_issue": "2026-08-28-1125",
+      "first_date": "2026-08-28",
       "resurfaced": []
     }
   ]
