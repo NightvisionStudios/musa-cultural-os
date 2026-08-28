@@ -1,6 +1,6 @@
 {
  "note": "misses = auto-resolution failed and stops retrying after 3. review = still on the mark but has a source. suspects = filled, but the art looks like a template graphic. Both want a human eye.",
- "updated": "2026-08-24",
+ "updated": "2026-08-28",
  "review": [
   {
    "issue": 1,
@@ -190,6 +190,27 @@
    "slug": "keen-streetz",
    "url": "https://soundcloud.com/keen-streetz",
    "reason": "no candidate on page"
+  },
+  {
+   "issue": 68,
+   "name": "The Zora Awards — Hurston/Wright Foundation",
+   "slug": "the-zora-awards-hurston-wright-foundation",
+   "url": "https://www.hurstonwright.org/awards/legacy-awards/",
+   "reason": "small:199x300"
+  },
+  {
+   "issue": 68,
+   "name": "La Maison du Vent — Auguste Bernard Kouemo Yanghu",
+   "slug": "la-maison-du-vent-auguste-bernard-kouemo-yanghu",
+   "url": "https://afrocritik.com/african-filmmakerstitles-feature-83rd-venice-international-film-festival-lineup/",
+   "reason": "tiny:300b"
+  },
+  {
+   "issue": 68,
+   "name": "Set De Flo — KILOBAUUD",
+   "slug": "set-de-flo-kilobauud",
+   "url": "https://setdeflo.bandcamp.com/",
+   "reason": "small:400x300"
   }
  ],
  "suspects": [
@@ -371,15 +392,15 @@
    "reason": "page:HTTPError"
   },
   "the-natural-fibre-turn": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "page:HTTPError"
   },
   "suno-spark": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "tiny:673b"
   },
   "the-ai-label": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "only generic art on page (1 rejected)"
   },
   "fadekemi-ogunsanya-we-are-not-lying-your-language-is-not-enough": {
@@ -405,6 +426,18 @@
   "the-chi-final-season": {
    "attempts": 1,
    "reason": "page:HTTPError"
+  },
+  "the-zora-awards-hurston-wright-foundation": {
+   "attempts": 1,
+   "reason": "small:199x300"
+  },
+  "la-maison-du-vent-auguste-bernard-kouemo-yanghu": {
+   "attempts": 1,
+   "reason": "tiny:300b"
+  },
+  "set-de-flo-kilobauud": {
+   "attempts": 1,
+   "reason": "small:400x300"
   }
  }
 }
