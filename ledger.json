@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-08-28",
+    "updated": "2026-09-02",
     "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL.",
     "approved_repeats": [
       {
@@ -7145,6 +7145,116 @@
           "slug": "jiwe-io"
         }
       ]
+    },
+    {
+      "issue": 69,
+      "issue_id": "2026-09-02-1240",
+      "date": "2026-09-02",
+      "time": "12:40 ET",
+      "forecast": "Nothing leading this week arrived on schedule. Fifty-one years between Whitney shows. Sixteen years between albums. Fifteen years between novels. A first feature at fifty-six. Interval over output: the work landing hardest right now spent long enough out of view that the field had already filed it under finished, and in none of these is the wait an apology. It is the material.",
+      "come_up": [
+        "Institutions returning to a name they showed once and then dropped for thirty years",
+        "First features from directors in their fifties",
+        "The artist-owned imprint as the natural home for a long-delayed record"
+      ],
+      "decline": [
+        "The annual release cadence treated as evidence of seriousness",
+        "Discovery written as youth, which files out anyone who started at forty",
+        "Opening-week volume standing in for whether the thing holds"
+      ],
+      "climate": "Interval over output. Four of the five arrived after a decade or more of silence, and the fifth is a first museum show for a designer nobody would call emerging. The wait is legible in the objects: a symbolic vocabulary that took thirty years to close, a record loose enough to show every one of the eighteen months it took, a novel that crosses four countries because it had the time to.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "The Lost World: The Art of Minnie Evans",
+          "domain": "ART",
+          "domain_detail": "ART · SELF-TAUGHT",
+          "url": "https://whitney.org/exhibitions/the-lost-world",
+          "image": "https://whitneymedia.org/assets/image/833778/EXME072%20Evans.jpg",
+          "score": 8.7,
+          "tier": "CROWN",
+          "heat": 26,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Lauren Halsey — nearest on the 50 for a dense symbolic surface built out of one specific Black place, and the distance is worth naming: Halsey builds monuments for a neighborhood that is still standing, Evans drew a world she said was destroyed before the Flood",
+          "read": "Evans hung her drawings for sale on the gate at Airlie Gardens, where she worked as gatekeeper, and let visitors decide what they were worth. She made the first one on Good Friday in 1935, in her early forties, after her grandmother died and the visions she had carried since childhood got louder. The Whitney gave her a one-person show in 1975, among the first it gave any Black artist. Then almost nothing for three decades. The Lost World puts more than a hundred drawings, paintings and collages from 1935 to 1981 on Floor 8, organized by the High Museum in Atlanta under Katherine Jentleson, with Barbara Haskell handling the Whitney installation. The hang is chronological, which is the right call: the spare pencil lines of the 1930s tighten into the mandala compositions of the 1960s, and you watch a private vocabulary harden into a system. Christian imagery, Caribbean ancestry, the Jim Crow South and the specific plants of one Wilmington garden, all held in bilateral symmetry. The gap is that a museum can only return to a name it already held; the work itself never went anywhere. Through January 10, 2027.",
+          "slug": "the-lost-world-the-art-of-minnie-evans"
+        },
+        {
+          "rank": 2,
+          "name": "Erykah Badu & The Alchemist — Before The World Blows",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · SOUL",
+          "url": "https://controlfreaq.bandcamp.com/album/before-the-world-blows",
+          "image": "https://f4.bcbits.com/img/a1774260360_5.jpg",
+          "score": 8.3,
+          "tier": "CROWN",
+          "heat": 93,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S RIGHT"
+          ],
+          "benchmark": "Chris Crack — the 50's clearest sample-culture auteur, and the same instinct that legibility is optional; the distance is scale, since Crack is an operator with a shelf of records and Badu is an institution that ships one every sixteen years",
+          "read": "Sixteen years, and the record that ends them is loose on purpose. Badu and Alchemist met at her Birthday Bash in Dallas, cut the album over eighteen months between Dallas and Los Angeles, and road-tested it in phone-free rooms before anyone heard a finished version. It landed August 28 on her own Control FREAQ with Young: an hour and two minutes, sixteen songs and a spoken outro, with Steve Lacy, Thundercat, Earl Sweatshirt, Kamasi Washington, Joi and two Westside Gunn verses. \"Next 2 U\" rebuilds Alchemist's beat for Mobb Deep's \"The Realest\" into a smoking-blunts crush song, which tells you the method: take the hardest thing in his catalog and find the longing inside it. It sprawls. \"Abracadabra\" stops before it develops, and the album would survive losing three tracks. The room is not wrong to be loud here, but it is louder about the return than about the hour.",
+          "slug": "erykah-badu-and-the-alchemist-before-the-world-blows"
+        },
+        {
+          "rank": 3,
+          "name": "The Wreckers — George Makana Clark",
+          "domain": "BOOKS",
+          "domain_detail": "BOOKS · FICTION",
+          "url": "https://www.europaeditions.com/book/9798889662013/the-wreckers",
+          "image": "https://www.europaeditions.com/spool/cover_9798889662013__id2566_w600_t1778054556__1x.jpg",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 18,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "City of God — nearest on the 50 for the register: a violent century told polyphonically from the inside, with no explanatory frame bolted on for a foreign reader",
+          "read": "A stolen will with thirteen bequests on it is the engine. Nuno Bárbaro de Castro — artifact hunter, grave robber, fake veterinarian, agent of Angolan independence — lifts it from the Military History Archives in Lisbon in 1954 and goes hunting the objects, collecting his ancestor's scattered descendants along the way whether or not they want collecting. Clark grew up in Zimbabwe and lives in Portugal; this is his second novel, fifteen years after The Raw Man, and Europa made it the lead title of its autumn list. Angola, Cuba and Louisiana's Angola prison, held inside one document. Published by Europa Editions, September 10 in the UK and September 22 in North America, 350 pages, $28.",
+          "slug": "the-wreckers-george-makana-clark"
+        },
+        {
+          "rank": 4,
+          "name": "The H@llow Man — Kamel Laaridhi",
+          "domain": "FILM",
+          "domain_detail": "FILM · FESTIVAL",
+          "url": "https://sicvenezia.it/en/films/the-hallow-man/",
+          "image": "https://sicvenezia.it/wp-content/uploads/2026/07/sic2026-hallow-man-01.jpg",
+          "score": 7.7,
+          "tier": "FLAME",
+          "heat": 9,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Black Film Archive — the nearest thing on the 50, and the distance is the useful part: the Archive keeps custody of films already made, while Laaridhi is making the object somebody will have to keep custody of later",
+          "read": "Tunisia in 2059: a biochip regulates memory and suppresses emotion, hypnotherapy is illegal, and Taha goes secretly to a hypnotherapist who forges feelings out of poetry for people who can no longer make their own. Under hypnosis he walks into a house with no electricity and a bedbug problem, where three people are preparing a suicide bombing and the leader has ruled that a fetus under three months has no soul. Taha works out that the fetus is him. Laaridhi is 56 and this is his first feature: science at the Faculty of Tunis, then the Maghreb Film Institute, then years lighting buildings and archaeological sites before the camera department, then Inside Productions in 2011. Seventy-nine minutes, in competition at the 41st Critics' Week, public screening 2pm on September 9 in Sala Perla.",
+          "slug": "the-h-llow-man-kamel-laaridhi"
+        },
+        {
+          "rank": 5,
+          "name": "PLATFORM: Simone Brewster",
+          "domain": "DESIGN",
+          "domain_detail": "DESIGN · FURNITURE",
+          "url": "https://designmuseum.org/exhibitions/platform-simone-brewster",
+          "image": "https://designmuseum.org/image/0e8d7c7f-3f5a-417f-8745-6f12008b383c?width=980&height=606",
+          "score": 7.3,
+          "tier": "FLAME",
+          "heat": 22,
+          "direction": "▮",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Denim Tears — nearest on the 50 for an object built to carry a diasporic argument, and it isn't close: the 50 holds no furniture entry at all, and Brewster works one bench at a time in ebonised tulipwood rather than in cotton at scale",
+          "read": "Level 1, four walls, no ticket. Brewster's first museum show is the free floor of the Design Museum, up since February and running to January, and the thing worth the trip is Negrita, a new bench in ebonised tulipwood built on the same structural language as her chaise and side table. From Trinidad to Tottenham, as the wall text puts it. The museum is shut until September 5.",
+          "slug": "platform-simone-brewster"
+        }
+      ]
     }
   ],
   "holding": [
@@ -9201,6 +9311,36 @@
       "name": "Jiwe IO",
       "first_issue": "2026-08-28-1125",
       "first_date": "2026-08-28",
+      "resurfaced": []
+    },
+    {
+      "name": "The Lost World: The Art of Minnie Evans",
+      "first_issue": "2026-09-02-1240",
+      "first_date": "2026-09-02",
+      "resurfaced": []
+    },
+    {
+      "name": "Erykah Badu & The Alchemist — Before The World Blows",
+      "first_issue": "2026-09-02-1240",
+      "first_date": "2026-09-02",
+      "resurfaced": []
+    },
+    {
+      "name": "The Wreckers — George Makana Clark",
+      "first_issue": "2026-09-02-1240",
+      "first_date": "2026-09-02",
+      "resurfaced": []
+    },
+    {
+      "name": "The H@llow Man — Kamel Laaridhi",
+      "first_issue": "2026-09-02-1240",
+      "first_date": "2026-09-02",
+      "resurfaced": []
+    },
+    {
+      "name": "PLATFORM: Simone Brewster",
+      "first_issue": "2026-09-02-1240",
+      "first_date": "2026-09-02",
       "resurfaced": []
     }
   ]
