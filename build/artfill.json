@@ -1,6 +1,6 @@
 {
  "note": "misses = auto-resolution failed and stops retrying after 3. review = still on the mark but has a source. suspects = filled, but the art looks like a template graphic. Both want a human eye.",
- "updated": "2026-08-28",
+ "updated": "2026-09-02",
  "review": [
   {
    "issue": 1,
@@ -56,21 +56,14 @@
    "name": "Cape Verde — World Cup Run",
    "slug": "cape-verde-world-cup-run",
    "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams/cabo-verde/team-news",
-   "reason": "not attempted yet"
+   "reason": "no candidate on page"
   },
   {
    "issue": 9,
    "name": "Adidas × Wales Bonner SS26",
    "slug": "adidas-wales-bonner-ss26",
    "url": "https://www.adidas.com/us/wales_bonner",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 10,
-   "name": "House of Aama — Folk Grounds",
-   "slug": "house-of-aama-folk-grounds",
-   "url": "https://houseofaama.com/",
-   "reason": "not attempted yet"
+   "reason": "page:HTTPError"
   },
   {
    "issue": 12,
@@ -404,40 +397,48 @@
    "reason": "only generic art on page (1 rejected)"
   },
   "fadekemi-ogunsanya-we-are-not-lying-your-language-is-not-enough": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "fetch:InvalidURL"
   },
   "girl-talk-michael-christmas-and-chris-crack-don-t-come-to-my-hou": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "page:HTTPError"
   },
   "satluj-honey-trehan": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "page:HTTPError"
   },
   "is-god-is": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "undecodable"
   },
   "wales-bonner-adidas-on-pitch-ss26": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "no candidate on page"
   },
   "the-chi-final-season": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "page:HTTPError"
   },
   "the-zora-awards-hurston-wright-foundation": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "small:199x300"
   },
   "la-maison-du-vent-auguste-bernard-kouemo-yanghu": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "tiny:300b"
   },
   "set-de-flo-kilobauud": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "small:400x300"
+  },
+  "adidas-wales-bonner-ss26": {
+   "attempts": 1,
+   "reason": "page:HTTPError"
+  },
+  "cape-verde-world-cup-run": {
+   "attempts": 1,
+   "reason": "no candidate on page"
   }
  }
 }
