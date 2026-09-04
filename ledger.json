@@ -7261,7 +7261,7 @@
       "issue_id": "2026-09-03-2154",
       "date": "2026-09-03",
       "time": "21:54 ET",
-      "forecast": "A download counter went live this morning. From today a Suno Pro subscriber can export twenty finished songs a month, sixty on Premier, seven in a lifetime on the free tier, and songs made before today count against the allowance. None of the music changed. The terms did, and that is the shape of the whole board: an open-weight model that is not open for business, a distribution sector quietly bought out from under the word independent, a rapper putting a price on public attention, and the death of the woman who built the most reproduced room on earth without ever owning what it became.",
+      "forecast": "A download counter went live this morning. From today a Suno Pro subscriber can export twenty finished songs a month, sixty on Premier, seven in a lifetime on the free tier, and songs made before today count against the allowance. None of the music changed. The terms did, and that is the shape of the whole board: an open-weight model that is not open for business, a distribution sector quietly bought out from under the word independent, a rapper putting a price on what public attention costs him, and a Los Angeles collective whose eight members keep releasing everywhere except under its own name.",
       "come_up": [
         "Open weights offered as the answer to platform export caps",
         "Independent collectives such as Merlin and ORCA moving on AI licensing before the majors finish litigating",
@@ -7270,7 +7270,7 @@
       "decline": [
         "“Independent” read off the name on the distribution deal",
         "Unlimited downloads treated as a permanent feature of AI music platforms",
-        "The mirrored immersive room as a growth product"
+        "The collective name kept alive long after the sessions that made it"
       ],
       "climate": "Terms over output. What moved this week sat in paperwork rather than in studios: Suno's caps, MiniMax shipping weights under a license that forbids selling the output, STVDIO mapping how many independent distributors now sit inside major-label or private-equity structures, BMG and Concord closing their merger on Monday. Against all of it, the two strongest objects on the board are both a man setting the terms of his own body of work, one across thirty minutes of record and one across twenty-seven minutes in a headset.",
       "entries": [
@@ -7289,33 +7289,13 @@
             "FIND"
           ],
           "benchmark": "Starlito — nearest on the 50 for southern rap kept on the artist's own schedule and written as shift work, with the cost of the labor itemized inside the verses",
-          "read": "Thirty minutes long, and every dollar chased on it arrives with a plea attached. ROPE BURN is JIREH's fourth project since 2022 and the first where the Baton Rouge rapper names what the whole catalog has been circling: effort that reads as ambition on one block and menace on the next, so the striver files a defense alongside the invoice. Over good.will's lo-fi beat on “HURT NOBODY” that becomes the hook, half want and half waiver. The title track runs longest, on a horn-heavy soul sample, and turns into a grievance procedure: injury, indictment, then the price he sets on public attention. ovrkast. produces “AUCTION BLOCK” and takes a verse on it. He told FUXWITHIT in 2024 he would never dance for a camera. Four projects on, he hasn't.",
+          "read": "Thirty minutes long, and every dollar chased on it arrives with a plea attached. ROPE BURN is JIREH's fourth project since 2022 and the first where the Baton Rouge rapper names what the whole catalog has been circling: effort that reads as ambition on one block and menace on the next, so the striver files a defense alongside the invoice. Over good.will's lo-fi beat on “HURT NOBODY” that becomes the hook, half want and half waiver. The title track runs longest, on a horn-heavy soul sample, and turns into a grievance procedure: injury, indictment, then the price he sets on public attention. He told FUXWITHIT in 2024 he would never dance for a camera. Four projects on, he hasn't.",
           "verdict": "PENDING",
           "requested": true,
           "slug": "jireh-rope-burn"
         },
         {
           "rank": 2,
-          "name": "Yayoi Kusama",
-          "domain": "ART",
-          "domain_detail": "ART · INSTALLATION",
-          "url": "https://www.npr.org/2026/08/26/1102916697/yayoi-kusama-high-priestess-of-polka-dots-has-died",
-          "image": "https://media.npr.org/assets/img/2022/06/10/composite_wide-3cba80639d978c026e90b2cd70bc896e43787928.jpg?s=1400&c=85&f=jpeg",
-          "score": 8.3,
-          "tier": "CROWN",
-          "heat": 97,
-          "direction": "▲",
-          "flags": [
-            "ROOM'S RIGHT"
-          ],
-          "benchmark": "Lauren Halsey — nearest on the 50 for one obsessive symbolic vocabulary scaled into architecture you walk inside, and the distance is worth stating: Halsey builds for a named stretch of South Central, Kusama built a room that reads identically in Washington, Tokyo or a mall atrium",
-          "read": "Kusama made the first Infinity Mirror Room in 1965 because hand-sewing hundreds of stuffed protrusions was wrecking her; mirrors did the multiplication her body could not keep doing. She died in a Tokyo hospital on August 14, aged 97, having lived voluntarily in a psychiatric institution since the early 1970s and worked from a studio across the street. Her representative gave multiple organ failure as the cause on the 26th. Around twenty rooms exist and no more will be made. The gap is that they stopped being hers a long time ago: the Hirshhorn counted 475,000 visitors in 2017, and the pop-up “experium” trade that followed was built for the photograph, not the vision.",
-          "verdict": "PENDING",
-          "requested": true,
-          "slug": "yayoi-kusama"
-        },
-        {
-          "rank": 3,
           "name": "Artou — Abderrahmane Sissako",
           "domain": "FILM",
           "domain_detail": "FILM · IMMERSIVE",
@@ -7334,7 +7314,7 @@
           "slug": "artou-abderrahmane-sissako"
         },
         {
-          "rank": 4,
+          "rank": 3,
           "name": "Independent Music 2026 — STVDIO",
           "domain": "EDITORIAL",
           "domain_detail": "EDITORIAL · INDUSTRY RESEARCH",
@@ -7353,12 +7333,32 @@
           "slug": "independent-music-2026-stvdio"
         },
         {
+          "rank": 4,
+          "name": "A Room Full of Mirrors",
+          "domain": "SCENE",
+          "domain_detail": "SCENE · LOS ANGELES COLLECTIVE",
+          "url": "https://www.aroomfullofmirrors.com/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.4,
+          "tier": "FLAME",
+          "heat": 13,
+          "direction": "▮",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Chris Crack — nearest on the 50 by lane, and the fit is deliberately loose: the 50 carries no collective, so the closest thing is one underground rapper releasing on his own clock, which is what each of these eight is currently doing separately",
+          "read": "The name came out of a session. Punch heard eight people from eight different places reflecting each other back on a song called “Believer,” and said out loud that he was standing in a room full of mirrors. A mirrored room, as a form, usually means one person multiplied for a camera; this one means eight who can see themselves in each other. Punch, Daylyt, Nick Grant, Lyric Michelle, Ichiban Don, Billymaree, Jrias Law, Earlee Riser, Hari, and Punch has always insisted it is not a group. Daylyt shoots and edits video, Lyric Michelle directs, which is why Money Bags landed in December 2021 as a film before it was an eight-track EP. The catch is the calendar. The last record under the collective's own name was “105” with Freeway in December 2024, and Punch's 2026 verse went to Nick Grant's album instead.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "a-room-full-of-mirrors"
+        },
+        {
           "rank": 5,
           "name": "MiniMax Music 3",
           "domain": "TECH",
           "domain_detail": "TECH · CREATOR-AI",
           "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
-          "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/MiniMaxAI/MiniMax-Music3.png",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
           "score": 6.6,
           "tier": "TORCH",
           "heat": 71,
@@ -7367,7 +7367,7 @@
             "ROOM'S AHEAD"
           ],
           "benchmark": "Moises AI — nearest on the 50 for audio AI a working producer actually installs, and the difference is the point: Moises sells you a tool, this one hands over the weights and keeps the commercial rights",
-          "read": "You can download this one and run it. MiniMax Music 3 is a 57GB repository on Hugging Face pairing an 8B global model for song structure with a 0.6B local model for frame-level detail and a flow-matching decoder, and it will write a five-minute song with vocals at 32kHz stereo on hardware you own. ComfyUI shipped a template workflow on day one, community GGUF quantizations followed within days, and the model card asks for 24GB of VRAM with CPU offloading down to 8GB. All of that is real, and it landed in the same fortnight as the Suno caps that took effect today. Then read the license. The weights ship under MiniMax's own community terms, which are not an OSI license and do not let you sell what comes out, and no benchmark numbers are published against Suno, Udio, YuE or ACE-Step. Open enough to inspect, not open enough to build on. Come back when the license changes or the numbers appear.",
+          "read": "You can download this one and run it. MiniMax Music 3 is a 57GB repository on Hugging Face pairing an 8B global model for song structure with a 0.6B local model for frame-level detail, and it will write a five-minute song with vocals at 32kHz stereo on hardware you own. ComfyUI shipped a template workflow on day one and community GGUF quantizations followed within days. All of that is real, and it landed in the same fortnight as the Suno caps that took effect today. Then read the license. The weights ship under MiniMax's own community terms, which are not an OSI license and do not let you sell what comes out, and no benchmark numbers are published against Suno, Udio, YuE or ACE-Step. Open enough to inspect, not open enough to build on. Publish the benchmarks, or change the license, and this becomes a different entry.",
           "verdict": "PENDING",
           "requested": true,
           "slug": "minimax-music-3"
@@ -9468,12 +9468,6 @@
       "resurfaced": []
     },
     {
-      "name": "Yayoi Kusama",
-      "first_issue": "2026-09-03-2154",
-      "first_date": "2026-09-03",
-      "resurfaced": []
-    },
-    {
       "name": "Artou — Abderrahmane Sissako",
       "first_issue": "2026-09-03-2154",
       "first_date": "2026-09-03",
@@ -9487,6 +9481,12 @@
     },
     {
       "name": "MiniMax Music 3",
+      "first_issue": "2026-09-03-2154",
+      "first_date": "2026-09-03",
+      "resurfaced": []
+    },
+    {
+      "name": "A Room Full of Mirrors",
       "first_issue": "2026-09-03-2154",
       "first_date": "2026-09-03",
       "resurfaced": []
