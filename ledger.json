@@ -84,7 +84,7 @@
           "benchmark": "literary-craft lane of the 50",
           "url": "https://groveatlantic.com/book/john-of-john/",
           "slug": "douglas-stuart-john-of-john",
-          "image": "https://archive.themusafamily.com/img/musa-mark.png"
+          "image": "https://groveatlantic.com/core/wp-content/themes/groveatlantic/images/image-coming-soon.jpg"
         },
         {
           "name": "Charli XCX — The Moment",
@@ -137,7 +137,7 @@
           "read": "The 2026 Pritzker, architecture's quietest radical. The tension: the prize sits under an Epstein-linked cloud; the work transcends the institution stamping it.",
           "url": "https://www.pritzkerprize.com/laureates/smiljan-radic-clarke",
           "slug": "smiljan-radic",
-          "image": "https://archive.themusafamily.com/img/musa-mark.png"
+          "image": "https://www.pritzkerprize.com/sites/default/files/2026-02/Biography_4.jpg"
         },
         {
           "name": "Industry — S4",
@@ -7338,7 +7338,7 @@
           "domain": "SCENE",
           "domain_detail": "SCENE · LOS ANGELES COLLECTIVE",
           "url": "https://www.aroomfullofmirrors.com/",
-          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "image": "https://cdn.shopify.com/s/files/1/0898/6247/1983/collections/D456991A-4D9A-4411-A5B8-53C7AA12BB0A_1_105_c.jpg?v=1759591612",
           "score": 7.4,
           "tier": "FLAME",
           "heat": 13,
@@ -7358,7 +7358,7 @@
           "domain": "TECH",
           "domain_detail": "TECH · CREATOR-AI",
           "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
-          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/MiniMaxAI/MiniMax-Music3.png",
           "score": 6.6,
           "tier": "TORCH",
           "heat": 71,

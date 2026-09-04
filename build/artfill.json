@@ -4,38 +4,24 @@
  "review": [
   {
    "issue": 1,
-   "name": "Douglas Stuart — John of John",
-   "slug": "douglas-stuart-john-of-john",
-   "url": "https://groveatlantic.com/book/john-of-john/",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 1,
    "name": "Charli XCX — The Moment",
    "slug": "charli-xcx-the-moment",
    "url": "https://en.wikipedia.org/wiki/The_Moment_(2026_film)",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 2,
-   "name": "Smiljan Radić",
-   "slug": "smiljan-radic",
-   "url": "https://www.pritzkerprize.com/laureates/smiljan-radic-clarke",
-   "reason": "not attempted yet"
+   "reason": "undecodable"
   },
   {
    "issue": 4,
    "name": "FIFA World Cup 2026",
    "slug": "fifa-world-cup-2026",
    "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
-   "reason": "not attempted yet"
+   "reason": "no candidate on page"
   },
   {
    "issue": 6,
    "name": "Mark Jenkin — Cornish-Trilogy Closer",
    "slug": "mark-jenkin-cornish-trilogy-closer",
    "url": "https://en.wikipedia.org/wiki/Rose_of_Nevada",
-   "reason": "not attempted yet"
+   "reason": "tiny:742b"
   },
   {
    "issue": 8,
@@ -419,12 +405,24 @@
    "reason": "small:400x300"
   },
   "adidas-wales-bonner-ss26": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "page:HTTPError"
   },
   "cape-verde-world-cup-run": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "no candidate on page"
+  },
+  "mark-jenkin-cornish-trilogy-closer": {
+   "attempts": 1,
+   "reason": "tiny:742b"
+  },
+  "fifa-world-cup-2026": {
+   "attempts": 1,
+   "reason": "no candidate on page"
+  },
+  "charli-xcx-the-moment": {
+   "attempts": 1,
+   "reason": "undecodable"
   }
  }
 }
