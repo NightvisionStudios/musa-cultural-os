@@ -1,6 +1,6 @@
 {
  "note": "misses = auto-resolution failed and stops retrying after 3. review = still on the mark but has a source. suspects = filled, but the art looks like a template graphic. Both want a human eye.",
- "updated": "2026-09-02",
+ "updated": "2026-09-04",
  "review": [
   {
    "issue": 1,
@@ -35,20 +35,6 @@
    "name": "Mark Jenkin — Cornish-Trilogy Closer",
    "slug": "mark-jenkin-cornish-trilogy-closer",
    "url": "https://en.wikipedia.org/wiki/Rose_of_Nevada",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 7,
-   "name": "Yaya Bey — Fidelity",
-   "slug": "yaya-bey-fidelity",
-   "url": "https://yayabey.bandcamp.com/album/fidelity",
-   "reason": "not attempted yet"
-  },
-  {
-   "issue": 7,
-   "name": "T Clark — Debut Collection",
-   "slug": "t-clark-debut-collection",
-   "url": "http://www.tia-clark.com/",
    "reason": "not attempted yet"
   },
   {
@@ -405,39 +391,39 @@
    "reason": "page:HTTPError"
   },
   "satluj-honey-trehan": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "page:HTTPError"
   },
   "is-god-is": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "undecodable"
   },
   "wales-bonner-adidas-on-pitch-ss26": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "no candidate on page"
   },
   "the-chi-final-season": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "page:HTTPError"
   },
   "the-zora-awards-hurston-wright-foundation": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "small:199x300"
   },
   "la-maison-du-vent-auguste-bernard-kouemo-yanghu": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "tiny:300b"
   },
   "set-de-flo-kilobauud": {
-   "attempts": 2,
+   "attempts": 3,
    "reason": "small:400x300"
   },
   "adidas-wales-bonner-ss26": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "page:HTTPError"
   },
   "cape-verde-world-cup-run": {
-   "attempts": 1,
+   "attempts": 2,
    "reason": "no candidate on page"
   }
  }

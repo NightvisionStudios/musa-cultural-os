@@ -570,7 +570,7 @@
           "heat_recovered": false,
           "url": "https://yayabey.bandcamp.com/album/fidelity",
           "slug": "yaya-bey-fidelity",
-          "image": "https://archive.themusafamily.com/img/musa-mark.png"
+          "image": "https://f4.bcbits.com/img/a2116330599_5.jpg"
         },
         {
           "name": "Drunken Noodles",
@@ -615,7 +615,7 @@
           "heat_recovered": false,
           "url": "http://www.tia-clark.com/",
           "slug": "t-clark-debut-collection",
-          "image": "https://archive.themusafamily.com/img/musa-mark.png"
+          "image": "https://images.squarespace-cdn.com/content/v1/568eaddd2399a3d006251d67/61596704-66d1-4c13-b94a-ee37f27e5d0b/CLARK_ALLTHISWANT_HC_CoverReveal_1080x1350_v1.webp"
         }
       ],
       "issue_id": "2026-06-26-1048"
@@ -7358,7 +7358,7 @@
           "domain": "TECH",
           "domain_detail": "TECH · CREATOR-AI",
           "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
-          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/MiniMaxAI/MiniMax-Music3.png",
           "score": 6.6,
           "tier": "TORCH",
           "heat": 71,
