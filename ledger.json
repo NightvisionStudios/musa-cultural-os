@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "The Index memory. Every pull appends an issue on publish. There is no grading pass and no verdicts — scores are final editorial reads. Receipts come from the HOLDING registry: a name is never featured twice; when a past call clears the gate again in a later field scan, a resurface is logged against the original call (date + one-line why). The resurface count IS the receipt.",
     "permanence": "The session filesystem resets. This file in musa-vault (GitHub) is the source of truth — every pull must FETCH it live before building and commit back after publish.",
-    "updated": "2026-09-02",
+    "updated": "2026-09-04",
     "image_rule": "Every entry carries an image. When the source has no usable og:image, or the resolved image is broken, distorted or off-brand, the MUSA mark at /img/musa-mark.png is used instead. Never leave image empty; never invent a URL.",
     "approved_repeats": [
       {
@@ -7373,6 +7373,124 @@
           "slug": "minimax-music-3"
         }
       ]
+    },
+    {
+      "issue": 71,
+      "issue_id": "2026-09-04-2258",
+      "date": "2026-09-04",
+      "time": "22:58 ET",
+      "forecast": "Lagos Island in July, Accra's Kantamanto in September, a Whitney lobby on the 19th: three places where somebody finally holds the pen on their own material. adidas handed a fifty-six-year-old silhouette to a skate collective that built Nigeria's first concrete park; a Ghanaian debut puts the women who carry Europe's discarded clothing on a cinema screen for the first time; a Senegalese American artist traces the uranium under American power back to where it was dug. The quietest name on this board pressed ten tracks through his own company, and the loudest one is still running ahead of her own catalog.",
+      "come_up": [
+        "African collectives holding the pen on Western silhouettes instead of fronting the campaign",
+        "Kayayei labor told by filmmakers who organized alongside it, not about it",
+        "Compact self-released records: thirty minutes, one producer, the artist's own imprint"
+      ],
+      "decline": [
+        "“Inspired by” collaborations where the city supplies the palette and none of the authorship",
+        "Rookie-of-the-month coronations arriving before a full-length does",
+        "Diaspora read as a color story rather than a supply chain"
+      ],
+      "climate": "Authorship over access. What separated the top of this board from the bottom was not budget or reach but who set the terms: waf. treating Lagos as an archive rather than a mood board, Christine Boateng and Hajara Musah Chambas letting a kayayo union form on camera unscripted, Heem releasing through IAMHEEM LLC rather than the label machine he helped build. Access was never the scarce thing. The pen was.",
+      "entries": [
+        {
+          "rank": 1,
+          "name": "waf. × adidas Superstar ADV",
+          "domain": "FASHION",
+          "domain_detail": "FASHION · SKATE STREETWEAR",
+          "url": "https://www.sneakerfreaker.com/releases/waf-adidas-superstar-price-buy-release-date",
+          "image": "https://cdn.sanity.io/images/c1chvb1i/production/7489d8f09ce0cf94e28619106ba24beb3be52573-1960x1320.jpg",
+          "score": 8.4,
+          "tier": "CROWN",
+          "heat": 34,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "diasporic-fashion lane — Corteiz. Same principle: the community first, the allocation as a statement of who it is for.",
+          "read": "The outsole is translucent pink because of what the sky over Lagos Island does around dusk, and the side panels are mesh because the shoe will actually be skated in Nigerian heat. Neither decision is a graphic. That is the distinction waf. is drawing on the first Superstar in fifty-six years designed by an African skate community, and adidas' first collaboration with a Nigerian brand: no flag, no landmark, no cowrie shell. Jomi Marcus-Bello's line for it is treat your context as an archive. Fourteen years ago he, his brother Nifemi and KC Obijiaku were skating whatever Lagos gave them; in 2024 they opened the country's first fully concrete park, on the grounds of a former colonial prison at Freedom Park. The shoe is $110. It went out in limited numbers at adidas Lekki on July 23 and reaches everywhere else on October 12. The gap is that the news cycle has already happened and the drop has not, so the object most people will judge is still six weeks out. Watch whether the global allocation reaches Lagos in real numbers, or whether the city that wrote the shoe ends up buying it back on resale.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "waf-adidas-superstar-adv"
+        },
+        {
+          "rank": 2,
+          "name": "Coumba Samba: Stars and Stripes",
+          "domain": "ART",
+          "domain_detail": "ART · INSTALLATION",
+          "url": "https://whitney.org/exhibitions/coumba-samba",
+          "image": "https://whitneymedia.org/assets/image/833891/WMAA188442_Untitled_design-6_web.png",
+          "score": 8.0,
+          "tier": "CROWN",
+          "heat": 19,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "Lauren Halsey — work at architectural scale that reads a Black social structure out of an apparently neutral form.",
+          "read": "Sept 19 to Jan 18, the Whitney's lobby gallery, one room. Samba takes the visual grammar of modernist abstraction, the flat field and the neutral panel, and reads a supply chain out of it: the African uranium extraction that underwrote American nuclear power. The announcement image is a NASA photograph of an unmanned surveillance plane parked in a hangar at Ames, edited by her. Born in Harlem in 2000, she has shown in Basel, Hamburg, Lisbon and London, and this is her first solo museum presentation anywhere. Rujeko Hockley curated it as a guest, with Antonia Pocock.",
+          "verdict": "PENDING",
+          "slug": "coumba-samba-stars-and-stripes"
+        },
+        {
+          "rank": 3,
+          "name": "Zjili: A Story of Sisterhood and The Burdens of Excess",
+          "domain": "FILM",
+          "domain_detail": "FILM · DEBUT FEATURE",
+          "url": "https://atmos.earth/fashion-and-design/meet-the-women-carrying-the-weight-of-fast-fashion/",
+          "image": "https://archive.themusafamily.com/img/musa-mark.png",
+          "score": 7.9,
+          "tier": "FLAME",
+          "heat": 11,
+          "direction": "▲",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "City of God — a place narrated from inside it. Nearest on the 50, and the distance is that Zjili's subjects helped write it.",
+          "read": "A bale of dead Western clothing weighs about 120 pounds, and at Accra's Kantamanto market it rides on the head of a woman called a kayayo. Christine Boateng and Hajara Musah Chambas built their debut feature around three women whose lives cross there, following Zoya down from a village in the north, and it is the first time kayayei have reached a cinema screen at all. One of the closing scenes is unscripted: a group of them work out, on camera, that they need a union to stop retailers bidding their rates against each other. Written by Marcia Abdul-Korah, Daphne M. Atsutse and Denzel Owoo. World premiere in Discovery, TIFF's first-feature strand, September 10–20. Note what it isn't: a fast-fashion ethics segment with West African labor as B-roll.",
+          "verdict": "PENDING",
+          "slug": "zjili-a-story-of-sisterhood-and-the-burdens-of-excess"
+        },
+        {
+          "rank": 4,
+          "name": "Heem B$F — Bars & Noble 4",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · STREET RAP",
+          "url": "https://www.hhheadz.com/2026/08/heem-bsf-bars-noble-4-album.html",
+          "image": "https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sCnsWUQsBSdHS5jd6kTcJKdYJA8ZjoLw93cDWoKIh1j4XQai1S4XJhlzNKi9MCyF7-6qds_JdXl2T5EKVMgC2pQ_ElWnuxmdDr65uDptmwGIcgaXHznyHC47bFesHBXiiwgpY51pMKQb3GeFr_GRlZt7ev_3PWGoOUWtlJOIAHFXS97RXnNyu91GHmfuN6d9WQmRInYj0jvgwSJUQIfCD04-B0BRtpGsryhygM=w1200-h630-p-k-no-nu",
+          "score": 7.8,
+          "tier": "FLAME",
+          "heat": 15,
+          "direction": "▮",
+          "flags": [
+            "FIND"
+          ],
+          "benchmark": "underground-rap lane — Starlito. Catalog discipline in place of a rollout.",
+          "read": "Thirty-one minutes and forty-nine seconds is the entire record, and the restraint is the argument. Bars & Noble 4 is the fourth installment of Heem's own series inside Black Soprano Family: ten tracks, one producer throughout in Big Bro Wavy, guests held to BenStreetz and Illy Foo, out August 28 on IAMHEEM LLC rather than through the label machine he helped found. Benny commands and Rick Hyde calculates; Heem sits lower and closer, and “The Uptown Story” is where the writing stops performing. Buffalo has produced a decade of this. Almost none of it has needed a rollout.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "heem-b-f-bars-and-noble-4"
+        },
+        {
+          "rank": 5,
+          "name": "kwn — and all pride aside",
+          "domain": "MUSIC",
+          "domain_detail": "MUSIC · R&B",
+          "url": "https://www.nme.com/reviews/album/kwn-and-all-pride-aside-review-3952818",
+          "image": "https://www.nme.com/wp-content/uploads/2026/06/kwn-Credit-Michelle-Helena-Janssen.jpg",
+          "score": 7.2,
+          "tier": "FLAME",
+          "heat": 68,
+          "direction": "▲",
+          "flags": [
+            "ROOM'S AHEAD"
+          ],
+          "benchmark": "Baby Rose — nearest R&B neighbor on the 50, and the distance is one full-length.",
+          "read": "“Heaven In Your Hand” is the real thing: the east Londoner calling out to her late grandfather with her voice pushed past where it is comfortable, the production stepping back to let it crack. She produces herself. Behind the attention sit three EPs, and the BET nomination and the Billboard rookie slot both arrived before any of them added up to an album. Come back when there is one.",
+          "verdict": "PENDING",
+          "requested": true,
+          "slug": "kwn-and-all-pride-aside"
+        }
+      ]
     }
   ],
   "holding": [
@@ -9489,6 +9607,36 @@
       "name": "A Room Full of Mirrors",
       "first_issue": "2026-09-03-2154",
       "first_date": "2026-09-03",
+      "resurfaced": []
+    },
+    {
+      "name": "waf. × adidas Superstar ADV",
+      "first_issue": "2026-09-04-2258",
+      "first_date": "2026-09-04",
+      "resurfaced": []
+    },
+    {
+      "name": "Coumba Samba: Stars and Stripes",
+      "first_issue": "2026-09-04-2258",
+      "first_date": "2026-09-04",
+      "resurfaced": []
+    },
+    {
+      "name": "Zjili: A Story of Sisterhood and The Burdens of Excess",
+      "first_issue": "2026-09-04-2258",
+      "first_date": "2026-09-04",
+      "resurfaced": []
+    },
+    {
+      "name": "Heem B$F — Bars & Noble 4",
+      "first_issue": "2026-09-04-2258",
+      "first_date": "2026-09-04",
+      "resurfaced": []
+    },
+    {
+      "name": "kwn — and all pride aside",
+      "first_issue": "2026-09-04-2258",
+      "first_date": "2026-09-04",
       "resurfaced": []
     }
   ]
